@@ -1,0 +1,13 @@
+[project]
+name = "permis-course"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "fsrs",
+    "pdfplumber",
+    "pypdfium2",
+    "report-renderer @ file:///Users/williammasquelier/Repositories/stromy-org/libs/report-renderer",
+]
+
+[tool.uv]
+dev-dependencies = ["pytest", "ruff", "pyright"]
