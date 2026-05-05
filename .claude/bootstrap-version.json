@@ -1,0 +1,32 @@
+{
+  "bootstrap_commit": "a49d9b235e23cb38e4b883dbfafaa688faebac2f",
+  "bootstrap_date": "2026-05-05T23:22:11.678778+00:00",
+  "skills_version": "2.3",
+  "repo_profile": "unknown",
+  "skills_generated": [
+    "quality-check",
+    "instruction-audit"
+  ],
+  "skill_checksums": {
+    "quality-check": "sha256:c969dafc410af078708ebea2e73bda9d816f91a5650428b806f2b8edae18f175",
+    "instruction-audit": "sha256:0f752d5d4c74d46616dd7240608b4554ab55ce1a064d62b93fa7286d135a7242"
+  },
+  "custom_adaptations": {},
+  "copied_files": [],
+  "adapted_files": [],
+  "files_generated": [
+    "CLAUDE.md",
+    "AGENTS.md",
+    "GEMINI.md",
+    ".claude/rules/dev-patterns.md",
+    ".claude/rules/testing-rules.md",
+    ".claude/settings.json",
+    ".claude/hooks/ruff-check.sh",
+    ".codex/config.toml",
+    ".gemini/settings.json",
+    ".env.example",
+    "docs/overview.md",
+    "docs/development.md",
+    ".github/workflows/ci.yml"
+  ]
+}
