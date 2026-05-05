@@ -1,0 +1,348 @@
+Latitude, longitude, méridiens, parallèles
+Savoir se situer
+L'alignement
+Le relèvement
+Calcul de base
+Symboles élémentaires sur les cartes
+La route à suivre
+Règles d'utilisation des écluses
+> obliquité
+56 31
+Paris
+Nord
+cercle
+polaire
+12327
+** degre
+23,27°
+tropique du cancer
+JZ
+équateur
+tropique du capricorne
+Séclip-
+tique
+cercle
+polaire
+Pôle
+Sud
+Greenwich
++ 180°
++ 180°
+2
+4
+Equateur-
+Déterminer sa position
+en utilisant les repères
+visibles
+Utiliser toutes les
+informations
+disponibles
+Visualisation des amers,
+alignements,
+relèvements,
++ 90°
+00001
++ 90°
+V
+Savoir se situer
+6
+Un degré = la
+circonférence de la
+terre divisée par
+360 = environ 111
+Kms = 60 Milles
+Une minute d'arc
+= 1 Mille
+1/10 de minute
+d'arc = 185 mètres
+Les Coordonnées
+Distance
+Les Coordonnées
+Longitude et Latitude
+Latitude:
+=90° ≤ L≤+S
+Longitude: - 180° ≤ G ≤ +]
+45'
+45'
+:D, = 4.5 M
+36°40'N
+36°40' N-
+25'
+2°30 E
+25
+2°30 E
+L'alignement
+Le navigateur prépare sa route et repère les
+alignements qu'il va suivre pour arriver à bon port
+35'
+9999
+10
+12
+pour faciliter la route des navigateurs Certains
+alignements sont tracés sur les cartes
+bassure de Baas
+L 50°53'000 N
+G 01°33'400 E
+Içi l'alignement à 111° vrai du
+pylone TV par la cathédrale
+Nord
+LISAGE
+lalais, les
+etent pour
+nt du SUD
+NORD
+122°4
+Ridens
+Un alignement se mesure de la mer vers les terres,
+on parle alors de relèvement, le symbole est Z
+*BOU
+LE PORTEL
+OUTREAL
+Le relèvement d'un amer depuis le navire donne la trajectoire sur laquelle se
+situe le navire
+Le relèvement de deux amers depuis le navire donne deux trajectoires à
+l'intersection desquelles le navire se trouve
+16
+la mesure relevée peut être convertie en fonction des nécessités :
+Un homme sur terre relève un amer avec
+son compas de relèvement :
+C'est un Zm
+Il corrige le relèvement en ajoutant la
+Déclinaison (D) qui figure sur la carte →
+Zm + (D) = Zv
+Après correction il peut tracer ce
+relèvement (Zv) sur la carte avec sa règle
+rapporteur et voir ou se situe
+l'alignement.
+Un homme sur un navire relève un amer avec
+son compas de relèvement :
+C'est un Zo, Il corrige ce relèvement compas en
+ajoutant la déviation due aux éléments
+magnétiques du navire :
+Zc +(d)=Zm. Il corrige ensuite le Zm en
+ajoutant la Déclinaison de la carte :
+Zm + (D) = ZV
+Il peut tracer la mesure ainsi obtenu (Zv) sur la
+carte grâce à sa règle rapporteur et voir sur
+quel alignement il se situe
+Donc : Zc +(D+d)= Zv Ou
+Zc + ( W ) = Zv
+W= d+ D
+18
+L'intersection de deux relèvements
+simultanés donnent la position
+approximative du navire.
+L'intersection de trois relèvements
+simultanés précise la position du navire et
+forme un chapeau. Les Z doivent être le
+plus ouverts possible.
+Zv = 50°
+Zv = 325°
+Rf = 90° route du navire
+Il suffit de deux relèvements pris au compas que l'on reportera sur la carte après avoir
+bien entendu effectué les corrections nécessaires Zc + (W) = Zv, pour pouvoir estimer sa
+position.
+La ligne de sonde peut être également d'un grand secours pour se situer
+20
+Calcul de base
+Distance parcourue
+Vitesse * durée du trajet et / 60
+Durée du trajet =
+Distance / Vitesse et * 60
+La vitesse à faire pour arriver dans
+les temps
+Distance / durée et * 60
+Que signifie ce symbole sur la carte :
+A - Port de pêche
+B - Pêche autorisé
+C - Pêche réglementée
+Quel est l'amer qui correspond à ce symbole :
+A- Un château d'eau
+B - Un phare
+C - Un sémaphore
+Feu
+22
+24
+Existence douteuse
+ED
+Sonde douteuse
+40 SD
+Signalé, mais non confirmé
+Rep
+Signalé avec l'année, mais non
+confirmé
+Profondeur signalée, mais non
+confirmée
+( carte à petite échelle)
+Rep (1992)
+35
+60
+Roche à fleur d'eau au zéro
+hydrographique
+5
+Sur des fonds inférieurs à 5 m
+Rocher
+couvrant et
+découvrant
+Roche dangereuse,
+toujours submergée et
+de profondeur inconnue
+1,5
+8,3
+le
+_PYI. T.V.
+6 M 15 sec.
+par la cathédrale
+11T0
+"ZC1"
+(PM)
+navigation |
+Boulogne
+C. Alprech 23
+2.9
+0. 1
+Latérale bâbord
+Un chenal balisé
+6M
+SS
+sifflet
+approche
+Boulogne
+15,5
+3M 4S0C.
+"Ophélie"
+(8,1)
+Latérale tribord
+52./
+Wk
+3,6
+Rocher
+couvrant et
+découvrant
+1,5
+Cote rapportée au
+zéro hydrographique
+Epave submergée de
+profondeur connue
+Epaves - Obstructions
+profondeur inconnue
+Epave dont une partie de la coque
+ou des superstructures sont
+visibles à basse mer
+•Mâts
+Epave dont seul le mat
+est visible à basse mer
+26
+(14)
+3.9
+2,6
+Rade d'Ambleteuse
+серов
+d'explosifs
+13,4
+2
+fort Croi (ruines
+0,6
+M
+6 sec
+0,7 1,1
+Pte de la Crèche
+* 25m
+(14,8
+gare
+aéroglisseur
+du Lineur
+12
+99m *
+LE PORTEL
+HO
+fd
+. de la C
+*
+BO
+28
+La route à suivre
+Route
+fond
+•-* Route surface
+" Cap vrai
+30
+A
+B
+Le plan d'eau se déplace
+sous l'action du courant
+Rs
+route surface
+RI
+Route fond
+Trajectoire A
+vent
+Trajectoire B
+courant
+Cv 40°
+Pour revenir vers ma bonne
+destination je dois corriger
+mon Cap vrai
+32
+Règles d'utilisation des écluses
+Les éclusiers hommes et femmes méritent votre respect, ils ne sont pas là pour vous
+ennuyer et sont tout prêt à vous rendre service si toutefois cela est demandé gentiment et
+poliment.
+Ils assurent toujours le bon fonctionnement de leurs écluses pour votre sécurité.
+L'écluse
+grand gabarit
+les écluses à grand gabarit d'une largeur de 12m pour 185m de
+long, permettent le passage de cargos fluviaux maritimes, de
+barges et autres bateaux de croisière.
+Les instructions doivent être strictement respectées notamment le
+port du gilet de sauvetage obligatoire pour tous. La manœuvre est
+automatique sous le contrôle de l'opérateur situé dans la tour
+surplombant l'écluse.
+l'écluse semi-automatique ou dite "électrique"
+Là, l'éclusier commande entièrement la manœuvre de passage des bateaux. Vous devez
+suivre ses recommandations ou instructions.
+L'écluse manuel
+un éclusier tourne les manivelles et certains plaisanciers et mariniers lui prêtent main forte
+L'éclusage terminé, les portes de sortie sont ouvertes, vous larguez l'amarre et démarrez
+après les péniches (sauf si vous avez l'accord)
+34
+36
+Questions P6
+NOM DU
+CANDIDAT
+A
+Valide
+Vous avez 30 secondes, c'est la dernière proposition qui est prise en compte à l'issue du délai.
+La commande « valide » ne fonctionne pas
+38
+Réponses
+A - Ecluse en préparation d'ouverture
+B - Accès interdit
+C - Navigation interrompu
+A
+B
+C
+B
+A-chaque degré sur l'échelle des Latitudes est divisé en 90
+B - chaque degré sur l'échelle des Latitudes est divisé en 60'
+C - la longitude « G » s'exprime en degrés et minutes d'arc suivie de « W « ou de « E »
+D - la longitude « G » s'exprime en degrés et minutes d'arc suivie de « N « ou de « S »
+A
+B
+C
+D
+B et C
+Quel est l'amer qui correspond à ce symbole :
+A- Un château d'eau
+B - Un phare
+C - Un sémaphore
+A
+B
+C
+B
+A - la Longitude (G) sur la carte se lie sur l'échelle horizontale
+B - la Longitude (G) sur la carte se lie sur l'échelle verticale
+A
+B
+A
+40
