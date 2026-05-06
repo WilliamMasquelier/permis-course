@@ -177,9 +177,13 @@ def main() -> None:
     dry_run = "--check" in args
     filter_slug = next((a for a in args if not a.startswith("--")), None)
 
-    lessons = sorted(LESSONS_DIR.glob("session-*.md")) if LESSONS_DIR.exists() else []
-    if filter_slug:
-        lessons = [l for l in lessons if filter_slug in l.stem]
+    # Support direct file paths (absolute or starting with /)
+    if filter_slug and Path(filter_slug).is_absolute():
+        lessons = [Path(filter_slug)]
+    else:
+        lessons = sorted(LESSONS_DIR.glob("session-*.md")) if LESSONS_DIR.exists() else []
+        if filter_slug:
+            lessons = [l for l in lessons if filter_slug in l.stem]
 
     if not lessons:
         print(f"No lesson files found in {LESSONS_DIR}")
