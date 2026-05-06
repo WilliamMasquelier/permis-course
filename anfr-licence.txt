@@ -1,0 +1,166 @@
+Cadre réservé à l’ANFR
+Astreint Plaisance
+Immatriculation :...................................................................
+Indicatif :...............................................................................
+Réservé ANFR
+MMSI ou ATIS :...................................................................
+SB :........................................................................................
+Type de traitement :..............................................................
+N° Départ :............................................................................
+DEMANDE OU MODIFICATION DE LICENCE
+pour l’utilisation d’une station radioélectrique de navire
+Pièces justificatives à joindre obligatoirement au dossier* :
+*En l’absence des justificatifs demandés, votre dossier vous sera retourné.
+Vous êtes un particulier Vous représentez une entreprise ou une association
+1. Justificatif d’identité : 1. Justificatif d’identité :
+- Copie recto-verso de la carte d’identité Copie recto-verso de la carte d’identité ou du passeport du
+ou responsable de la personne morale ou de son représentant
+- Copie du passeport dûment mandaté pour souscrire le contrat.
+ou
+- Copie du livret de famille 2. Justificatif de l’immatriculation du navire :
+(Aucun autre justificatif d’identité ne sera accepté !)
+Copie du titre de navigation dans le carnet de francisation
+2. Justificatif de l’immatriculation du navire : généralement page 21 (attention, ne pas confondre avec le
+N° de francisation), ou copie de la carte de circulation, ou
+- Copie, du titre de navigation dans le carnet de francisation copie du permis de navigation.
+généralement page 21 (attention, ne pas confondre avec le
+N° de francisation !) 3. Justificatif de la personne morale :
+ou
+- Copie de la carte de circulation Extrait du registre du commerce (extrait Kbis) ou du
+ou répertoire des métiers ou du répertoire national des
+- Copie du permis de navigation entreprises et de leurs établissements (INSEE) datant de
+(ne pas confondre avec le permis mer) moins de 3 mois, ou copie des statuts de l’association.
+Pièces justificatives à fournir pour tout changement de propriétaire d’un navire.
+En plus des pièces exigées dans le tableau ci-dessus joindre à votre dossier :
+- La copie de l’acte de vente du navire faisant l’objet de la présente demande ou la copie de la page du carnet de
+francisation où l’identité du nouveau propriétaire est mentionnée.
+Nom du demandeur : ...........................................................
+Nom du navire : ...........................................................
+Document élaboré et exploité par l’Agence nationale des fréquences pour le compte du ministère de l’écologie,
+du développement et de l’aménagement durables.
+Agence nationale des fréquences – Département licences et certificats
+4 rue Alphonse Matter – BP 8314 – 88108 SAINT-DIE-DES-VOSGES – FRANCE – TELEPHONE : +33 (0)3 29 42 20 68 – TELECOPIE : +33 (0)3 29 42 20 50
+SIEGE : 78 AVENUE DU GENERAL DE GAULLE – BP 400 – 94704 MAISONS-ALFORT CEDEX – FRANCE – TELEPHONE : +33 (0)1 45 18 72 72 – TELECOPIE : +33 (0)1 45 18 73 00 – N° SIREN : 180 053 027 – CODE APE : 751E
+1/4
+
+Les zones grisées sont réservées à l'Agence nationale des fréquences
+1 Demandeur de la licence : (voir pièce à fournir en page 1) S B
+Le demandeur est : le propriétaire du navire (ou du bateau) ou l’utilisateur mandaté *
+* joindre un mandat (autorisation du propriétaire pour effectuer la demande et recevoir la licence) + renseigner la rubrique 2.
+Nom, prénom ou raison sociale M., Mme, Mlle
+Adresse
+Code Postal Bureau distributeur
+Tél (domicile) Tél. (professionnel)
+Portable Télécopie
+Email
+N° à appeler en cas d'urgence : Contact 1
+Contact 2
+Code CIAC A fournir si vous effectuez des appels téléphoniques (navire-terre) par l'intermédiaire de stations côtières étrangères,
+l'autorité comptable correspondant au code CIAC indiqué, procédera au recouvrement de la facture liée à vos communications (informations www.anfr.fr)
+Afin de permettre la coordination et l'organisation efficace des opérations de recherche et de sauvetage en cas d'appel de
+détresse nous communiquons à l'UIT (Union internationale des télécommunications) et aux organismes de secours, CROSS et
+CNES, les informations relatives à la station de navire : MMSI, indicatif, matériel à bord, immatriculation…
+Pour favoriser votre identification en cas d'urgence, des données nominatives sont communiquées aux centres de secours
+(nom, prénom, adresse, coordonnées tél.) sauf si vous en exprimiez explicitement votre désaccord en cochant la case suivante :
+(cid:1)(cid:1)(cid:1)(cid:1)
+Je m'oppose à la communication des données me concernant aux organismes de secours.
+2 Propriétaire * : S B
+* Rubrique à ne renseigner que si le demandeur indiqué ci-dessus n’est pas le propriétaire.
+Nom, prénom ou raison sociale M., Mme, Mlle
+Adresse
+Code Postal Bureau distributeur
+Téléphone Télécopie
+3
+Situation antérieure
+Possédiez-vous auparavant un navire équipé de radio ? OUI NON (aller directement au paragraphe 4)
+Avez-vous transféré votre installation radioélectrique sur votre nouveau navire ? OUI NON
+Nom de l'ancien navire Indicatif F
+Votre ancien navire a-t-il été vendu ? OUI NON Immatriculation
+Si oui, nom de l'acheteur
+Son adresse
+Code postal Bureau distributeur
+2/4
+
+Les zones grisées sont réservées à l'Agence nationale des fréquences
+4 Navire (pièce justificative à fournir relative à l'immatriculation : voir page 1) F
+Immatriculation du navire
+Quartier Numéro Clé
+Le numéro d'immatriculation est indiqué dans le carnet de francisation généralement page 21 (intitulée " titre de navigation "), ou sur la carte de
+circulation ou sur le permis de navigation.
+Nom actuel du navire
+Jauge brute tx ou UMS Longueur m
+Type de navire :
+Distance d’un abri (case à cocher)
+Moins de 6 milles Plus de 6 milles 1 Plaisance 2 Pêche 3 Fluvial
+ou Catégorie de Navigation : 4 Passagers 5 Charge 13 NUC (navire à
+(de 1 à 6) Utilisation collective)
+Port de stationnement
+Date de construction
+5 Description exhaustive de la station radioélectrique
+Vous êtes tenus d'utiliser une installation radioélectrique conforme à la réglementation pertinente en vigueur et dans les conditions prévues par
+celle-ci. Il vous appartient pour cela de vérifier sa conformité en vous reportant au marquage apposé sur le matériel ou sur l'emballage
+accompagné d'une déclaration de conformité, et de l'utiliser conformément à sa destination en consultant la notice d'utilisation, (informations :
+www.anfr.fr)
+Matériel Quantité Marque et référence du matériel (installation radioélectrique complète)
+VHF sans ASN
+VHF avec ASN
+Boîtier VHF ASN
+VHF portative
+BALISE
+BLU avec ou
+sans ASN
+Boîtier BLU ASN
+Inmarsat
+RADAR et
+Transpondeur
+Autres
+6 Informations sur l'attribution du MMSI (Maritime Mobile Service Identity) MMSI :
+Le MMSI est un code numérique de 9 chiffres utilisé dans le cas où votre station radioélectrique décrite ci-dessus comporte un émetteur de
+détresse. Il permet en cas de détresse une identification sûre et rapide du navire. Un MMSI attribué à un navire ne peut être réutilisé sur
+une autre embarcation !
+La VHF avec ASN (Appel Sélectif Numérique) ou DSC en Anglais, la BLU de type MF/HF avec ASN, le matériel Inmarsat (B, C, ou M) ou
+la balise COSPAS-SARSAT nécessitent l'attribution d'un numéro MMSI auprès de l'Agence nationale des fréquences.
+Si le matériel le justifie un MMSI vous sera attribué automatiquement par nos services.
+3/4
+
+7 Observations particulières
+...............................................................................................................................................................................................
+...............................................................................................................................................................................................
+...............................................................................................................................................................................................
+8 Engagements du propriétaire ou de l'utilisateur mandaté
+Toute demande doit être accompagnée des pièces justificatives mentionnées en première page, dans le cas
+contraire votre dossier vous sera retourné.
+Je soussigné(e) (Nom, prénoms)................................................................................................. propriétaire ou toute autre
+personne mandatée pour effectuer la demande de licence du navire décrit au paragraphe 4, certifie l’exactitude des
+renseignements portés précédemment et déclare avoir pris connaissance des dispositions figurant ci-dessous, m’engage à
+les respecter.
+Fait à le
+Signature :
+Le présent document doit être adressé uniquement par courrier à :
+Agence nationale des fréquences
+Départements licences et certificats
+4 rue Alphonse MATTER
+BP 8314
+88108 SAINT-DIE-DES-VOSGES CEDEX
+Pour vous aider dans la rédaction de ce document :
+Téléphone : 03 29 42 20 68
+Télécopie : 03 29 42 20 50
+Site Internet : www.anfr.fr (rubrique radiomaritime)
+Rappel :
+Tout changement (nom du navire, composition de l’installation radioélectrique, propriétaire…) doit être signalé
+par courrier sans délai, en vue de l’établissement d’une nouvelle licence.
+L’Agence nationale des fréquences vous rappelle qu’aucune installation de radiocommunications, obligatoire ou non,
+ne peut être ouverte à l’exploitation à bord d’un navire sans l’obtention de la licence correspondante et l’attribution d’un
+indicatif d’appel. La licence décrit les équipements radioélectriques composant la station de bord. Elle est valable tant
+que la station ne subit pas de modifications justifiant son renouvellement et constitue un document international,
+obligatoire à bord de tout navire équipé d’installation de radiocommunications.
+Une installation radioélectrique ne peut être utilisée que par une personne titulaire du certificat d’opérateur approprié ou
+sous la responsabilité d’un opérateur qualifié présent à bord, pour plus d’informations contacter le 03 29 42 20 74.
+Les informations recueillies font l’objet d’un traitement informatique pour la gestion des licences et identités du service mobile maritime et
+fluvial par l’ANFR et les organismes mentionnés au 1 du présent formulaire. Conformément aux articles 39 et 40 de la loi n° 78-17 du 6 janvier
+1978 modifiée relative aux fichiers et aux libertés, vous disposez d’un droit d’accès et de rectification. Si vous souhaitez exercer ce droit et
+obtenir communication des informations vous concernant, veuillez vous adresser au département licences et certificats de l’ANFR dont les
+coordonnées sont mentionnées ci-dessus.
+Edition Sept. 2007
+4/4
+

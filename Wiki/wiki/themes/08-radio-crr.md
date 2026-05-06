@@ -4,8 +4,8 @@ type: theme
 tags: [radio, crr]
 sources: [../../raw/../Cours 1/anfr-licence.pdf, ../../raw/../Cours 1/anfr-manuel_crr.pdf]
 related: [[05-securite]], [[03-signaux]]
-status: stub
-updated: 2026-05-01
+status: draft
+updated: 2026-05-06
 ---
 
 **Summary:** Certificat Restreint de Radiotéléphoniste — usage de la VHF marine, canaux, ASN/DSC, procédures MAYDAY/PAN-PAN/SÉCURITÉ, alphabet OACI, autorisation ANFR.
@@ -23,3 +23,7 @@ updated: 2026-05-01
 ## Note
 CRR is a separate certificate from the *Permis Côtier* but is needed to
 legally operate a VHF on board. Treat as a parallel track.
+
+## Coverage status (Phase 0.5)
+All 7 concept stubs are now drafted from  and .
+Balisage PDFs (1-Les balises_RECTO, VERSO, identification_balises) are **image-based** — OCR needed for further balisage content.
