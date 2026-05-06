@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" class="{{ 'dark' if dark_mode else '' }}">
+<html lang="fr" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }} — Permis Côtier</title>
+  <title>Session 2 : Priorités et Manœuvres — Permis Côtier</title>
   <style>
     /* === DESIGN SYSTEM TOKENS === */
     :root {
@@ -578,34 +578,10 @@
       .content-card { box-shadow: none; padding: 0; }
     }
   </style>
-  {% if exam_mode %}
-  <script>
-    (function() {
-      const EXAM_DURATION = 2700; // 45 minutes
-      const STORAGE_KEY = 'permis_exam_state';
-      function loadState() {
-        try { const r = localStorage.getItem(STORAGE_KEY); return r ? JSON.parse(r) : null; } catch(e) { return null; }
-      }
-      function saveState(s) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); } catch(e) {} }
-      function fmt(secs) { return String(Math.floor(secs/60)).padStart(2,'0')+':'+String(secs%60).padStart(2,'0'); }
-      window._examInit = function() {
-        let state = loadState();
-        if (!state || !state.startedAt) { state = { startedAt: Date.now(), duration: EXAM_DURATION }; saveState(state); }
-        const timerEl = document.getElementById('timer');
-        function tick() {
-          const remaining = Math.max(0, state.duration - Math.floor((Date.now()-state.startedAt)/1000));
-          if (timerEl) timerEl.textContent = fmt(remaining);
-          if (remaining <= 0) { document.body.classList.add('time-expired'); return; }
-          requestAnimationFrame(() => setTimeout(tick, 1000));
-        }
-        tick();
-      };
-    })();
-  </script>
-  {% endif %}
+  
 </head>
-<body class="{{ 'exam-mode-body' if exam_mode else '' }}">
-  {% if not exam_mode %}
+<body class="">
+  
   <div class="layout">
     <nav id="sidebar">
       <div class="brand">
@@ -632,30 +608,102 @@
     </nav>
     <main id="content">
       <div class="content-card">
-        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>{{ title }}</span></div>
-        <h1>{{ title }}</h1>
-        {{ body }}
+        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 2 : Priorités et Manœuvres</span></div>
+        <h1>Session 2 : Priorités et Manœuvres</h1>
+        <h2>CONCEPT</h2>
+<p>En mer, le navire le moins manœuvrant est privilégié — c'est le principe directeur de toutes les règles de barre (RIPAM). Plus un navire a de mal à modifier sa route, plus les autres doivent s'écarter de lui. Le mnémonique descendant à retenir est <strong>NMSP-VRP-V-M</strong> : Non maître de sa manœuvre, Manœuvre Restreinte, handicapé par son tirant d'eau, Pêche, Voilier, Moteur.</p>
+<p>Voir <span class="wikilink" data-label="Regle De Barre Priorite">concepts/regle-de-barre-priorite</span> pour la hiérarchie complète.</p>
+<h3>Trois cas qu'il faut savoir trancher en une seconde</h3>
+<p><strong>1. Voilier contre voilier — la règle des amures.</strong></p>
+<ul>
+<li>Celui qui reçoit le vent à <strong>bâbord</strong> s'écarte (il a la vergue à droite).</li>
+<li>Si les deux voiliers sont sur la même amure, c'est le <strong>navire au vent</strong> qui s'écarte.</li>
+<li>Voir <span class="wikilink" data-label="Voilier Vs Voilier">concepts/voilier-vs-voilier</span>.</li>
+</ul>
+<p><strong>2. Voilier contre moteur — le voilier est prioritaire.</strong></p>
+<ul>
+<li>Le navire à propulsion mécanique s'écarte ; le voilier maintient cap et vitesse.</li>
+<li><strong>Piège</strong> : un voilier qui tourne son moteur (même avec voiles hissées) <strong>perd</strong> son privilège — il devient un moteur, et doit hisser un cône noir pointe en bas le jour.</li>
+<li>Voir <span class="wikilink" data-label="Voilier Vs Moteur">concepts/voilier-vs-moteur</span>.</li>
+</ul>
+<p><strong>3. Croisement entre deux moteurs — priorité à tribord.</strong></p>
+<ul>
+<li>Mnémonique : « Je viens de droite, je suis prioritaire. »</li>
+<li>Le non-prioritaire manœuvre <strong>nettement, tôt, et passe derrière</strong>.</li>
+<li>Voir <span class="wikilink" data-label="Route Directe Croisement">concepts/route-directe-croisement</span>.</li>
+</ul>
+<h3>Le rattrapage écrase tout</h3>
+<p>Tout navire qui en <strong>rattrape</strong> un autre s'écarte, <strong>quelle que soit sa catégorie</strong> — un voilier qui rattrape un moteur doit s'écarter du moteur. Le rattrapé maintient cap et vitesse.</p>
+<p>Exception : dans un <strong>chenal étroit</strong>, si un gros navire (≥ 20 m) rattrape un voilier, c'est le voilier qui sort du chenal. Voir <span class="wikilink" data-label="Rattrapage">concepts/rattrapage</span>.</p>
+<h3>Détecter un risque d'abordage</h3>
+<p>Le risque existe si le <strong>gisement</strong> (angle du danger par rapport à mon axe) ou le <strong>relèvement</strong> (angle par rapport au Nord) reste <strong>constant</strong> alors que la distance diminue. Constant + rapprochement = collision assurée sans manœuvre.</p>
+<h2>TASK</h2>
+
+<div class="task-block">
+  <div class="task-prompt"><p>Sans regarder vos notes, expliquez qui doit s'écarter dans chacun de ces trois cas : deux voiliers se croisant, un voilier face à un moteur, et un bateau en rattrapage.</p></div>
+  <textarea class="task-input" rows="4" placeholder="Écrivez votre réponse ici…" aria-label="Votre réponse"></textarea>
+  <div class="task-actions">
+    <button class="btn-check" onclick="checkTask(this)">Vérifier ✓</button>
+    <button class="btn-hint" onclick="showHint(this)" data-hint-level="0">Indice 💡</button>
+    <button class="btn-reset" onclick="resetTask(this)">Recommencer ↺</button>
+  </div>
+  <div class="task-feedback hidden"></div>
+</div><h2>HINT_1</h2>
+<p>Pour chaque cas, posez-vous la même question dans cet ordre : qui peut le mieux manœuvrer ? Pour les deux voiliers, regardez le côté d'où vient le vent.</p>
+<h2>HINT_2</h2>
+<p>Voilier-voilier : le mot-clé est <strong>amure</strong> — quel bord reçoit le vent. Voilier-moteur : qui est libre de zigzaguer. Rattrapage : le verbe « rattraper » contient déjà la réponse — celui qui agit, c'est celui qui rejoint l'autre.</p>
+<h2>MISCONCEPTION</h2>
+<ul>
+<li>Beaucoup pensent qu'un voilier est <strong>toujours</strong> prioritaire. Faux : il cède devant la pêche, devant un navire à manœuvre restreinte, et même devant un moteur <strong>s'il est en train de le rattraper</strong>.</li>
+<li>Confusion fréquente entre « bâbord amure » (vent venant de bâbord) et « passer à bâbord ». Ce sont deux choses différentes.</li>
+<li>« Priorité à droite » ne s'applique <strong>qu'entre deux moteurs</strong>. Ce n'est pas une règle universelle.</li>
+</ul>
+<details class="solution-block">
+  <summary>🔍 Voir la solution (après avoir essayé)</summary>
+  <div class="solution-content"><h2>SOLUTION</h2>
+<table>
+<thead>
+<tr>
+<th>Cas</th>
+<th>Qui s'écarte ?</th>
+<th>Pourquoi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deux voiliers, amures différentes</td>
+<td>Celui qui reçoit le vent à <strong>bâbord</strong></td>
+<td>Règle des amures (RIPAM 12)</td>
+</tr>
+<tr>
+<td>Deux voiliers, même amure</td>
+<td>Le <strong>navire au vent</strong></td>
+<td>Il peut abattre plus facilement</td>
+</tr>
+<tr>
+<td>Voilier vs moteur</td>
+<td>Le <strong>moteur</strong></td>
+<td>Voilier privilégié — sauf si voilier au moteur ou rattrapant</td>
+</tr>
+<tr>
+<td>Rattrapage (toute combinaison)</td>
+<td>Le <strong>rattrapant</strong></td>
+<td>Il décide d'engager — il assume</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details><h2>MOTIVATION</h2>
+<p>Jusqu'à <strong>5 questions</strong> sur les règles de barre tombent à l'examen officiel. Sur 30 questions et un seuil à 18, ces 5 points pèsent lourd. Et au-delà de l'examen : ces règles existent parce que la mer est un espace partagé sans ligne blanche au sol. Bien les connaître, c'est savoir lire l'intention de l'autre — et c'est ce qui distingue un plaisancier d'un danger flottant.</p>
+<h2>PREREQUISITES</h2>
+<ul>
+<li><span class="wikilink" data-label="Session 01 Balisage">lessons/session-01-balisage</span></li>
+</ul>
+
       </div>
     </main>
   </div>
-  {% else %}
-  <header id="exam-header">
-    <span class="exam-label">⚓ EXAMEN BLANC</span>
-    <div id="timer">45:00</div>
-    <div id="exam-progress-bar"><div id="exam-progress-fill"></div></div>
-  </header>
-  <main id="content" class="exam-mode">
-    <div class="content-card">
-      <h1>{{ title }}</h1>
-      {{ body }}
-    </div>
-  </main>
-  <div id="score-card" class="hidden">
-    <div id="result-banner"></div>
-    <table id="theme-scores"><thead><tr><th>Thème</th><th>Score</th></tr></thead><tbody></tbody></table>
-    <div id="study-plan"></div>
-  </div>
-  {% endif %}
+  
 
   <script>
     (function() {

@@ -372,6 +372,110 @@
     }
     .wikilink:hover { background: rgba(13, 115, 119, 0.18); }
 
+
+    /* === LIGHTBOX (zoomable images) === */
+    .wiki-image { cursor: zoom-in; }
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.88);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    #lightbox.open { display: flex; }
+    #lightbox img {
+      max-width: 92vw;
+      max-height: 92vh;
+      border-radius: 8px;
+      box-shadow: 0 8px 48px rgba(0,0,0,0.6);
+      object-fit: contain;
+    }
+
+    /* === WIKILINK TOOLTIP === */
+    .wikilink { position: relative; }
+    .wikilink::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--navy);
+      color: #fff;
+      font-family: var(--font-ui);
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+      z-index: 10;
+    }
+    .wikilink:hover::after { opacity: 1; }
+
+    /* === INTERACTIVE TASK BLOCK === */
+    .task-block {
+      background: rgba(13, 115, 119, 0.05);
+      border: 1px solid rgba(13, 115, 119, 0.2);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      margin: 16px 0 24px;
+    }
+    .task-prompt { margin-bottom: 14px; font-weight: 500; }
+    .task-input {
+      width: 100%;
+      min-height: 90px;
+      padding: 10px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      resize: vertical;
+      transition: border-color 0.15s ease;
+      background: var(--surface);
+      color: var(--text);
+    }
+    .task-input:focus { outline: none; border-color: var(--teal); }
+    .task-actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+    .btn-check, .btn-hint, .btn-reset {
+      padding: 8px 18px;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-ui);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-check { background: var(--teal); color: #fff; }
+    .btn-check:hover { background: var(--teal-lt); }
+    .btn-hint { background: rgba(245, 166, 35, 0.15); color: #b07d10; border: 1px solid rgba(245, 166, 35, 0.4); }
+    .btn-hint:hover { background: rgba(245, 166, 35, 0.25); }
+    .btn-reset { background: rgba(0,0,0,0.05); color: var(--muted); }
+    .btn-reset:hover { background: rgba(0,0,0,0.1); }
+    .task-feedback {
+      margin-top: 14px;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-ui);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .task-feedback.hidden { display: none; }
+    .task-feedback.correct { background: rgba(13, 115, 119, 0.1); border-left: 3px solid var(--teal); color: var(--teal); }
+    .task-feedback.partial { background: rgba(245, 166, 35, 0.1); border-left: 3px solid var(--amber); color: #8a6000; }
+    .task-feedback.incorrect { background: rgba(220, 38, 38, 0.06); border-left: 3px solid #dc2626; color: #991b1b; }
+
+    /* === SOLUTION BLOCK (collapsible) === */
+    .solution-block { border-left-color: var(--amber); background: rgba(245,166,35,0.05); }
+    .solution-block summary { color: #8a6000; }
+    .solution-block summary::before { color: #8a6000; }
+    .solution-content { padding: 0 18px 14px; }
+
     /* === EXAM MODE === */
     #exam-header {
       position: sticky;
@@ -521,16 +625,27 @@
 <li>Bâbord (gauche en entrant) : rouge, cylindrique, feux rouge</li>
 <li>Tribord (droit en entrant) : vert, conique, feux vert</li>
 </ul>
-<p>Voir aussi <span class="wikilink">concepts/balisage-iala-region-a</span>, <span class="wikilink">concepts/marques-cardinales</span>.</p>
+<p>Voir aussi <span class="wikilink" data-label="Balisage Iala Region A">concepts/balisage-iala-region-a</span>, <span class="wikilink" data-label="Marques Cardinales">concepts/marques-cardinales</span>.</p>
 <h2>TASK</h2>
-<p>Sans regarder vos notes, décrivez chacune des quatre marques cardinales : forme du topmark, couleur du corps, et signature lumineuse nocturne.</p>
-<h2>HINT_1</h2>
+
+<div class="task-block">
+  <div class="task-prompt"><p>Sans regarder vos notes, décrivez chacune des quatre marques cardinales : forme du topmark, couleur du corps, et signature lumineuse nocturne.</p></div>
+  <textarea class="task-input" rows="4" placeholder="Écrivez votre réponse ici…" aria-label="Votre réponse"></textarea>
+  <div class="task-actions">
+    <button class="btn-check" onclick="checkTask(this)">Vérifier ✓</button>
+    <button class="btn-hint" onclick="showHint(this)" data-hint-level="0">Indice 💡</button>
+    <button class="btn-reset" onclick="resetTask(this)">Recommencer ↺</button>
+  </div>
+  <div class="task-feedback hidden"></div>
+</div><h2>HINT_1</h2>
 <p>Pensez aux points cardinaux de la boussole. Le nom de chaque marque indique de quel côté du danger elle se trouve.</p>
 <h2>HINT_2</h2>
 <p>Les topmarks sont toujours deux cônes. La direction des pointes vous dit tout : Nord = pointes en haut (comme N), Sud = pointes en bas.</p>
 <h2>MISCONCEPTION</h2>
 <p>Les étudiants confondent souvent rouge/vert avec danger/sécurité. Rouge = bâbord (gauche en entrant), pas forcément danger.</p>
-<h2>SOLUTION</h2>
+<details class="solution-block">
+  <summary>🔍 Voir la solution (après avoir essayé)</summary>
+  <div class="solution-content"><h2>SOLUTION</h2>
 <table>
 <thead>
 <tr>
@@ -567,7 +682,8 @@
 </tr>
 </tbody>
 </table>
-<h2>MOTIVATION</h2>
+</div>
+</details><h2>MOTIVATION</h2>
 <p>Jusqu'à 6 questions d'examen portent sur les marques cardinales. Les rater, c'est rater l'examen.</p>
 
       </div>
@@ -613,5 +729,82 @@
       if (typeof window._examInit === 'function') window._examInit();
     })();
   </script>
+
+  <script>
+    // Lightbox
+    document.addEventListener('click', function(e) {
+      const img = e.target.closest('.wiki-image');
+      if (img) {
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        if (lb && lbImg) {
+          lbImg.src = img.src;
+          lbImg.alt = img.alt || '';
+          lb.classList.add('open');
+        }
+        return;
+      }
+      const lb = document.getElementById('lightbox');
+      if (lb && e.target.closest('#lightbox')) {
+        lb.classList.remove('open');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const lb = document.getElementById('lightbox');
+        if (lb) lb.classList.remove('open');
+      }
+    });
+
+    // Task block interactions
+    function checkTask(btn) {
+      const block = btn.closest('.task-block');
+      const input = block.querySelector('.task-input');
+      const feedback = block.querySelector('.task-feedback');
+      const answer = input.value.trim();
+      if (!answer) {
+        feedback.className = 'task-feedback partial';
+        feedback.textContent = 'Écrivez quelque chose avant de vérifier.';
+        feedback.classList.remove('hidden');
+        return;
+      }
+      feedback.className = 'task-feedback partial';
+      feedback.innerHTML = '✓ Réponse enregistrée. Le professeur évaluera votre réponse dans le chat.';
+      feedback.classList.remove('hidden');
+      input.style.borderColor = 'var(--teal)';
+    }
+    function showHint(btn) {
+      const block = btn.closest('.task-block');
+      const feedback = block.querySelector('.task-feedback');
+      const level = parseInt(btn.dataset.hintLevel || '0');
+      const hints = block.querySelectorAll('.hint-text');
+      feedback.classList.remove('hidden');
+      if (level < hints.length) {
+        feedback.className = 'task-feedback partial';
+        feedback.innerHTML = '💡 ' + hints[level].innerHTML;
+        btn.dataset.hintLevel = level + 1;
+        if (level + 1 >= hints.length) btn.textContent = "Plus d'indices";
+      } else {
+        feedback.className = 'task-feedback partial';
+        feedback.textContent = 'Tous les indices ont été affichés. Consultez le professeur dans le chat.';
+      }
+    }
+    function resetTask(btn) {
+      const block = btn.closest('.task-block');
+      const input = block.querySelector('.task-input');
+      const feedback = block.querySelector('.task-feedback');
+      const hintBtn = block.querySelector('.btn-hint');
+      input.value = '';
+      input.style.borderColor = '';
+      feedback.className = 'task-feedback hidden';
+      feedback.textContent = '';
+      if (hintBtn) { hintBtn.dataset.hintLevel = '0'; hintBtn.textContent = 'Indice 💡'; }
+    }
+  </script>
+
+  <div id="lightbox" role="dialog" aria-modal="true">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
 </body>
 </html>

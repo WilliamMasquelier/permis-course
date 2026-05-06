@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" class="{{ 'dark' if dark_mode else '' }}">
+<html lang="fr" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }} — Permis Côtier</title>
+  <title>Session 5 : L'Examen Blanc — Permis Côtier</title>
   <style>
     /* === DESIGN SYSTEM TOKENS === */
     :root {
@@ -578,7 +578,7 @@
       .content-card { box-shadow: none; padding: 0; }
     }
   </style>
-  {% if exam_mode %}
+  
   <script>
     (function() {
       const EXAM_DURATION = 2700; // 45 minutes
@@ -602,43 +602,10 @@
       };
     })();
   </script>
-  {% endif %}
+  
 </head>
-<body class="{{ 'exam-mode-body' if exam_mode else '' }}">
-  {% if not exam_mode %}
-  <div class="layout">
-    <nav id="sidebar">
-      <div class="brand">
-        <span class="anchor">⚓</span>
-        <div>
-          <div class="title">Permis Côtier</div>
-          <div class="subtitle">Classroom</div>
-        </div>
-      </div>
-      <ul class="session-list" id="session-list">
-        <li data-slug="session-01-balisage"><span class="dot locked">·</span><span><span class="num">Session 01</span><span class="name">Le Langage de la Mer</span></span></li>
-        <li data-slug="session-02-regles-barre"><span class="dot locked">·</span><span><span class="num">Session 02</span><span class="name">Priorités et Manœuvres</span></span></li>
-        <li data-slug="session-03-feux-signaux"><span class="dot locked">·</span><span><span class="num">Session 03</span><span class="name">La Nuit et la Brume</span></span></li>
-        <li data-slug="session-04-securite"><span class="dot locked">·</span><span><span class="num">Session 04</span><span class="name">La Sécurité et l'Équipement</span></span></li>
-        <li data-slug="session-05-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">L'Examen Blanc</span></span></li>
-      </ul>
-      <div class="progress-wrap">
-        <div class="progress-label">
-          <span>Progression</span>
-          <span id="progress-count">0 / 5</span>
-        </div>
-        <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
-      </div>
-    </nav>
-    <main id="content">
-      <div class="content-card">
-        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>{{ title }}</span></div>
-        <h1>{{ title }}</h1>
-        {{ body }}
-      </div>
-    </main>
-  </div>
-  {% else %}
+<body class="exam-mode-body">
+  
   <header id="exam-header">
     <span class="exam-label">⚓ EXAMEN BLANC</span>
     <div id="timer">45:00</div>
@@ -646,8 +613,63 @@
   </header>
   <main id="content" class="exam-mode">
     <div class="content-card">
-      <h1>{{ title }}</h1>
-      {{ body }}
+      <h1>Session 5 : L'Examen Blanc</h1>
+      <h2>INSTRUCTIONS</h2>
+<p>Bienvenue à l'examen blanc du Permis Côtier de Plaisance.</p>
+<ul>
+<li><strong>30 questions</strong> sur les 7 thèmes du programme officiel</li>
+<li><strong>45 minutes</strong> — le chronomètre démarre automatiquement</li>
+<li><strong>Seuil de réussite : 18/30</strong> (même barème qu'à l'examen officiel)</li>
+<li>Répondez dans le chat — le professeur évaluera chaque réponse</li>
+</ul>
+<h2>DISTRIBUTION</h2>
+<table>
+<thead>
+<tr>
+<th>Thème</th>
+<th>Questions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Balisage</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Règles de barre</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Feux et signaux</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Signaux visuels</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sécurité</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Navigation</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Pratique</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>30</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>CONSIGNES</h2>
+<p>Le professeur posera les questions une par une dans le chat. Répondez précisément.
+Pas de notes, pas de wiki — c'est un examen blanc.</p>
+<p>Bonne chance ! ⚓</p>
+
     </div>
   </main>
   <div id="score-card" class="hidden">
@@ -655,7 +677,7 @@
     <table id="theme-scores"><thead><tr><th>Thème</th><th>Score</th></tr></thead><tbody></tbody></table>
     <div id="study-plan"></div>
   </div>
-  {% endif %}
+  
 
   <script>
     (function() {
