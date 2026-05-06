@@ -1,0 +1,2633 @@
+MANUEL DE PREPARATION
+A L'EXAMEN DU
+CERTIFICAT RESTREINT DE RADIOTELEPHONISTE
+DU SERVICE MOBILE MARITIME
+(SHORT RANGE CERTIFICATE)
+Tous les droits de traduction, d'adaptation et de reproduction par tous procédés connus et inconnus à ce jour sont
+réservés à l'Agence Nationale des Fréquences pour tous pays. Seules sont autorisées les reproductions intégrales ou
+partielles réservées à l'usage privé du copiste et les courtes citations conformément aux dispositions du code de la
+propriété intellectuelle. Toute autre reproduction ou représentation intégrale ou partielle, par quelque procédé que ce soit,
+des pages du présent fascicule, faite sans l'autorisation de l'Agence Nationale des Fréquences, est illicite et constitue une
+contrefaçon.
+La rédaction de ce manuel a été dirigée par D. Hubert, en relation avec la mission Communication (info@anfr.fr) et
+la section certificats
+Crédits photographiques : pp. 16, 38, 39, 41 : « © SHOM 2004 – Extraits de l’ouvrage Radiocommunications
+maritimes – 924 – RNA – Autorisation de reproduction n°50/2004 », p. 10 : Direction des Affaires Maritimes (DAM)
+1
+Edition décembre 2007
+
+Sommaire
+AVANT-PROPOS 3
+COMMENT S'INSCRIRE A L'EXAMEN 3
+LE LIVRET DE PREPARATION 3
+CHAPITRE I : CONNAISSANCES GENERALES 4
+A. DISPOSITIONS REGLEMENTAIRES ET ADMINISTRATIVES RELATIVES AU SERVICE MOBILE MARITIME 4
+1. Textes internationaux et nationaux réglementant le service mobile maritime 4
+2. Mise en œuvre des dispositions réglementaires 5
+3. Taxation des communications 8
+B. CONNAISSANCES GENERALES DU SERVICE MOBILE MARITIME 9
+1. Catégories de communications dans le service mobile maritime 9
+2. Catégories de stations dans le service mobile maritime 9
+3. Fréquences et voies de la bande VHF marine 10
+4. Sources d'énergie des stations de navire 12
+C. CONNAISSANCES GENERALES DU SERVICE MOBILE MARITIME PAR SATELLITE 13
+1. Le système Inmarsat 13
+2. Les différents services 13
+D. CONNAISSANCES GENERALES DU SMDSM 14
+1. Définition 14
+2. Les neuf fonctions du SMDSM 14
+3. Le concept de zones 14
+4. Les sous-systèmes du SMDSM 15
+5. L'organisation SAR 16
+E. UTILISATION DE L'ALPHABET PHONETIQUE INTERNATIONAL ET DES SIGNAUX DE BASE DU VOCABULAIRE
+NORMALISE DE LA NAVIGATION MARITIME DE L'OMI 17
+1. Utilisation de l'alphabet phonétique international 17
+2. Utilisation de signaux de base du vocabulaire normalisé de l'OMI 17
+CHAPITRE II : LA RADIOTELEPHONIE EN ONDES METRIQUES 18
+A. UTILISATION PRATIQUE DE L’EQUIPEMENT EN ONDES METRIQUES 18
+1. Commandes 18
+2. Appareil VHF portatif 19
+3. Antennes VHF 19
+B. PROCEDURES D’EXPLOITATION DES COMMUNICATIONS RADIOTELEPHONIQUES 20
+1. Communications relatives à la sauvegarde de la vie humaine en mer 20
+2. Correspondance publique 24
+CHAPITRE III : LES SOUS-SYSTEMES DU SMDSM 26
+A. UTILISATION DES INSTALLATIONS ET DES TECHNIQUES D'APPEL SELECTIF NUMERIQUE (ASN) 26
+1. Principes généraux de l'ASN 26
+2. Identités du service mobile maritime (MMSI) 26
+3. Catégories d'appel 26
+4. Les équipements VHF ASN 27
+B. PROCEDURES DES COMMUNICATIONS DE DETRESSE, D'URGENCE ET DE SECURITE DANS LE SMDSM 32
+1. Communications de détresse en VHF ASN 32
+2. Communications d'urgence en VHF ASN 38
+3. Communications de sécurité en VHF ASN 38
+C. PROTECTION DES FREQUENCES DE DETRESSE 40
+1. Comment éviter les interférences préjudiciables 40
+2. Émissions au cours du trafic de détresse 40
+3. Comment empêcher les émissions non autorisées 40
+4. Protocoles et procédures d’essais 40
+5. Bandes de garde VHF. 41
+6. Procédures à suivre en cas d’émission d’une fausse alerte de détresse. 41
+D. RENSEIGNEMENTS SUR LA SECURITE MARITIME (RSM) DANS LE SMDSM 42
+1. Le système NAVTEX 42
+2. Le système SafetyNET 43
+E. SIGNAUX D’ALERTE ET DE LOCALISATION DANS LE SMDSM 44
+1. Radiobalises de localisation des sinistres (RLS, en anglais EPIRB : Emergency Position Indicating Radio
+Beacon) 44
+2. Répondeur radar de recherche et sauvetage (SART : Search and Rescue radar Transponder). 45
+F. COMMUNICATIONS DE CORRESPONDANCE PUBLIQUE PAR ASN 46
+ANNEXES AU MANUEL DE PREPARATION A1
+2
+
+Avant-propos
+Comment s'inscrire à l'examen
+Les candidats doivent adresser à l’Agence Nationale des Fréquences (*) les pièces suivantes :
+• un formulaire de demande d’inscription au CRR du service mobile maritime dûment
+complété et signé (téléchargeable sur notre site www.anfr.fr),
+• une copie de la carte nationale d’identité (recto-verso) ou du passeport ou du livret de
+famille,
+• deux photos récentes (format identité 3,5 cm x 4,5 cm) (inscrire Nom et Prénom au verso),
+• le règlement du droit d'examen par chèque ou par mandat cash.
+Le livret de préparation
+Ce livret s’adresse aux candidats à l’examen du Certificat Restreint de Radiotéléphoniste du service
+mobile maritime (Short Range Certificate). Ce certificat est obligatoire pour tout utilisateur d'une
+station radioélectrique fonctionnant dans la gamme des ondes métriques (VHF) et participant au
+Système Mondial de Détresse et de Sécurité en Mer (SMDSM) sans y être astreint par la
+réglementation internationale.
+L'examen consiste en un questionnaire à choix multiples portant sur le programme de l’examen
+détaillé dans le présent livret. Un exemple de questions d’examen est disponible en annexe 13 de
+ce manuel.
+Depuis 2005, le programme de l’examen intègre des connaissances relatives au SMDSM.
+L’examen ne comporte pas de questions se rapportant aux annexes du complément de ce manuel
+(sauf annexe 7), bien que les informations rapportées soient IMPORTANTES.
+(*) : Agence Nationale des Fréquences
+Département licences et certificats
+tél. : 03 29 42 20 74
+3
+
+Chapitre I : Connaissances générales
+A. Dispositions réglementaires et administratives relatives au service
+mobile maritime
+1. Textes internationaux et nationaux réglementant le service mobile maritime
+1.1 Textes de l'Organisation Maritime Internationale (OMI)
+L'Organisation maritime internationale, dont le siège est à Londres, est une
+institution spécialisée des Nations Unies ayant pour mission principale de
+renforcer la sécurité en mer.
+1.1.1 Convention SOLAS (Safety Of Life At Sea) de 1974 modifiée, chapitre IV
+(radiocommunications).
+Les amendements de 1988 à cette convention internationale ont jeté les bases du SMDSM
+(Système Mondial de Détresse et de Sécurité en Mer ; en anglais, GMDSS : Global Maritime
+Distress and Safety System). Le chapitre IV de la convention énumère les obligations en matière
+d'équipements de radiocommunications.
+1.1.2 Résolutions et recommandations de l'OMI
+Les obligations du chapitre IV sont complétées et précisées par de nombreuses résolutions (à
+caractère contraignant) et recommandations : normes minimales de fonctionnement des divers
+équipements, formation des opérateurs, installations à terre…
+1.1.3 GMDSS Masterplan
+Ce recueil, destiné aux opérateurs du SMDSM est mis à jour régulièrement et inventorie les
+services et les stations côtières, participant au SMDSM, en opération dans le monde entier.
+1.2 Textes de l'Union Internationale des Télécommunications (UIT)
+L'Union internationale des télécommunications, dont le siège est à Genève, est
+une institution spécialisée des Nations Unies ayant notamment pour missions de
+favoriser le développement des télécommunications et de coordonner les
+réseaux et services mondiaux de télécommunications.
+1.2.1 Règlement des radiocommunications (RR)
+Le Règlement des radiocommunications, régulièrement mis à jour, traite
+notamment, dans sa partie maritime, des plans de fréquences, des services, des
+procédures de radiocommunications (détresse et sécurité, correspondance
+publique), des obligations administratives (certificats d'opérateur, licences)…
+1.2.2 Recommandations de l'UIT
+Elles répondent aux résolutions et recommandations de l'OMI en précisant les spécifications
+techniques, les procédures opérationnelles, les mesures de protection des services et équipements
+du SMDSM.
+1.2.3 Nomenclatures de l'UIT
+Ces documents de service, obligatoires à bord des navires astreints au SMDSM, sont publiés
+régulièrement et mis à jour par les administrations des états membres de l'UIT.
+Les principales nomenclatures sont :
+• Liste IV : Nomenclature des stations côtières
+• Liste V : Nomenclature des stations de navire
+• Liste VII A : Liste des indicatifs d'appel et des identités numériques des stations utilisées
+dans les services mobiles maritimes et mobiles maritimes par satellite
+4
+
+1.3 Textes réglementaires applicables
+1.3.1 Règlement annexé à l'arrêté du 23 novembre 1987 modifié relatif à la sécurité
+des navires :
+Ce règlement détaille les obligations des navires professionnels français en matière de
+radiocommunications ainsi que les conditions d'installation et de maintenance des équipements à
+bord.
+Cette réglementation ne s'applique pas aux navires de plaisance !
+1.3.2 Arrêté du 15 juillet 1999 relatif aux prérogatives ainsi qu'aux conditions de
+délivrance des titres nécessaires à l'exercice des fonctions relatives aux radiocommunications dans
+le cadre du Système Mondial de Détresse et de Sécurité en Mer.
+Les certificats concernés sont les suivants :
+en français en anglais
+Certificat Restreint d'Opérateur CRO Restricted Operator's Certificate ROC
+Certificat Spécial d'Opérateur CSO Long Range Certificate LRC
+Certificat Général d'Opérateur CGO General Operator's Certificate GOC
+Certificat de Radioélectronicien First-class Radio Electronic
+CR1
+de 1ère classe Certificate
+1.3.3 Code des postes et des communications électroniques :
+- Licences du service mobile maritime : article L.41-1 (dispositions générales) et articles
+L39-1, L39-5 (dispositions pénales).
+- Certificats d'opérateur du service mobile maritime : article L42-4 (dispositions générales) et
+article D406-12 (certificat d'opérateur dans le service mobile maritime).
+- Equipements radioélectriques : article D406-11.
+Les articles cités ci-dessus sont disponibles à l'annexe 1 du complément à ce manuel.
+2. Mise en œuvre des dispositions réglementaires
+2.1 Autorité du commandant
+Le service radiotéléphonique de la station de navire (voir ch. I, paragraphe B.2.1) est placé sous
+l’autorité du commandant, du patron, du chef de bord ou de la personne responsable du navire
+(art. D406-12 du code des postes et télécommunications électroniques).
+Celui qui détient cette autorité doit exiger du ou des utilisateurs de l’installation radiotéléphonique le
+respect des règles d’exploitation en vigueur.
+Il est lui-même responsable du respect des règles administratives auxquelles est soumise
+l’installation de la station.
+2.2 Licence de station de navire
+Tout propriétaire ou utilisateur d’un navire participant au service mobile maritime doit être en
+possession d’une licence autorisant l’installation et l’exploitation de la station de bord.
+Les postes portatifs sont soumis à cette règle.
+En France, c'est l'Agence Nationale des Fréquences (ANFR) qui gère les licences des stations
+radioélectriques des navires et des bateaux français.
+Les autorités de contrôle en mer (Affaires Maritimes, Gendarmerie, Douanes) peuvent exiger la
+production immédiate de l’original de la licence.
+A l'étranger, diverses administrations ayant le même rôle peuvent avoir la même exigence.
+En France, le défaut de licence est une infraction pénale sanctionnée par l'article L.39-1 3° du code
+des postes et des communications électroniques.
+5
+
+Les informations portées sur la licence comportent :
+Le nom du navire
+L’indicatif d’appel de la
+Les coordonnées du
+station
+titulaire
+L’immatriculation du
+La mention du code
+navire
+d’identification de
+l’autorité comptable, le
+Le MMSI (Maritime cas échéant (voir ch. I
+Mobile Service paragraphe A.3.2)
+Identity) pour les
+navires participant au
+Une description
+SMDSM (voir ch. III,
+succincte des
+paragraphe A.2)
+équipements
+radioélectriques
+2.3 Indicatif d'appel
+Chaque navire ou bateau participant au service radiotéléphonique maritime ou fluvial est doté d’un
+indicatif d’appel. Cet indicatif est unique au monde. Il est délivré avec la première licence attribuée
+au navire ou au bateau et lui restera affecté quels que soient les propriétaires ultérieurs et tant qu'il
+restera sous pavillon français.
+En France, les indicatifs d'appel (ainsi que les MMSI) sont attribués par l'ANFR.
+2.4 Certificat d'opérateur
+Tout utilisateur d'une station radioélectrique doit être titulaire d'un certificat d'opérateur tel que prévu
+par le Règlement des radiocommunications de l'UIT et le code des postes et des communications
+électroniques.
+En fonction de la zone de navigation, des installations et des obligations des navires au regard du
+SMDSM, il est prévu différentes classes de certificats :
+Pour les navires soumis au SMDSM par la réglementation internationale :
+Certificat de Radioélectronicien de 1ère toutes zones; exploitation radio et
+CR1
+classe maintenance des équipements,
+toutes zones; exploitation radio
+Certificat Général d'Opérateur CGO
+seulement,
+zone de couverture VHF
+Certificat Restreint d'Opérateur CRO
+uniquement.
+Pour les navires soumis au SMDSM par la réglementation nationale ou équipés volontairement :
+Certificat Spécial d'Opérateur CSO toutes zones,
+zone de couverture VHF
+Certificat Restreint de Radiotéléphoniste CRR
+uniquement.
+Les certificats d'opérateurs du service mobile maritime sont acceptés dans le service fluvial.
+6
+
+2.5 Inspection des stations
+• Navires astreints
+Un navire est dit "astreint" lorsqu’une réglementation
+internationale et/ou nationale le contraint à être équipé
+d’une station de bord émettrice et réceptrice. La quasi-
+totalité des navires professionnels français (navires de
+charge et de pêche, navires à passagers) et les navires
+de plaisance de plus de 24 mètres font partie de cette
+catégorie.
+La station est soumise à une visite avant sa mise en service afin de vérifier la présence des
+équipements obligatoires, la conformité et le bon fonctionnement de ceux-ci ainsi que la présence
+d'un (ou plusieurs) opérateur(s) qualifié(s).
+Des visites de sécurité seront effectuées ensuite périodiquement.
+En France ces contrôles sont effectués par les agents de l'ANFR, dans le cadre de commissions
+de sécurité placées sous l'autorité des Affaires Maritimes.
+• Navires non astreints
+Les contrôles (visites de mise en service ou visites
+périodiques) ne sont pas obligatoires sur ces navires.
+A l’étranger, les navires, astreints ou non, peuvent être
+soumis à l’obligation de visite par les administrations
+compétentes afin de vérifier la concordance entre la
+licence et la composition de la station de bord. Le
+certificat d’opérateur pourra aussi être demandé.
+2.6 Documents embarqués
+On doit trouver à bord de tout navire :
+(cid:1) la licence d’exploitation (affichée si possible)
+(cid:1) le certificat d’opérateur.
+et pour les navires astreints :
+(cid:1) le dernier rapport d’inspection de la station radioélectrique
+(cid:1) le journal radioélectrique
+2.7 Conformité des équipements
+Les équipements radioélectriques embarqués sur des navires battant pavillon français doivent être
+conformes aux exigences essentielles qui leur sont applicables. Le marquage apposé sur le
+matériel constitue une présomption de conformité.
+Les équipements installés à bord des navires non astreints et des bateaux du service fluvial doivent
+être conformes à la directive communautaire 99/05/CE, dite R&TTE, transposée dans le code des
+postes et des communications électroniques (articles L34-9, R20-1 et suivants).
+Ces matériels doivent au minimum porter le marquage ci-contre qui vaut
+présomption de conformité aux exigences essentielles.
+Les équipements à bord des navires astreints doivent être conformes, selon leurs obligations au
+regard de la réglementation internationale, soit à la directive communautaire 96/98/CE dite "MED"
+(marquage "barre de gouvernail") soit à la directive communautaire R&TTE.
+Les matériels relevant de la directive MED doivent porter le marquage ci-contre
+qui vaut présomption de conformité aux exigences essentielles.
+Cependant, quand l’équipement a été mis sur le marché français avant le 8 avril 2001, il peut avoir
+fait l’objet d’une attestation de conformité par l’Autorité de régulation des télécommunications (ART)
+(ou d'un agrément ou d'une homologation par l'ancienne administration des postes et
+télécommunications), en application de la législation antérieure.
+7
+
+2.8 Protection du secret des correspondances
+La violation du secret des correspondances est un délit, dont les sanctions sont prévues par l'article
+226-15 du code pénal. (voir Annexe 1 du complément de ce manuel).
+Il est d'ailleurs rigoureusement interdit de faire quelque référence que ce soit à une communication
+entendue, par inadvertance ou non, sur une voie radio.
+2.9 Types d'appels et de messages interdits
+La transmission d'appels de détresse faux ou trompeurs est réprimée pénalement (article L39-7 du
+code des postes et des communications électroniques).
+De même est réprimée l'usurpation de l'indicatif d'appel d'une station radioélectrique (article L39-8
+du même code : voir Annexe 1 du complément de ce manuel).
+3. Taxation des communications
+3.1 Système de taxation international
+Les prix des communications radiomaritimes effectuées par l'intermédiaire d'une station côtière
+étrangère (la France, de même qu'un certain nombre d'états européens, n'assure plus de service
+de correspondance publique) sont exprimés en DTS (Droits de Tirage Spéciaux) ou en Francs-Or.
+Les taxes sont recouvrées au niveau national par des autorités comptables, organismes publics
+et/ou privés reconnus par l'administration du pays qui a délivré la licence d'exploitation. Les
+autorités comptables sont notifiées à l'UIT qui en publie la liste afin de permettre aux navires de
+communiquer dans le monde entier.
+Le nombre d'autorités comptables ne doit pas dépasser 25 par pays.
+3.2 Code d'Identification de l'Autorité Comptable (CIAC)
+L'autorité comptable reconnue reçoit un code d'identification, le CIAC, composé de 2 lettres
+correspondant à l'Etat dans lequel elle est domiciliée et de 2 chiffres (par exemple : FR01, FR13 ...).
+Ce code figure sur la licence et doit être communiqué à toute station côtière avant l'établissement
+d'une communication radiotéléphonique.
+8
+
+B. Connaissances générales du service mobile maritime
+1. Catégories de communications dans le service mobile maritime
+1.1 Communications de détresse, d'urgence et de sécurité
+Terminologie :
+(cid:1) alerte de détresse, annonce d’urgence, annonce de sécurité : transmission par appel sélectif
+numérique (ASN).
+(cid:1) appel de détresse, appel d’urgence, appel de sécurité : transmission par radiotéléphonie.
+L'alerte, l’appel et le message de détresse sont émis, sur ordre du
+commandant (ou du patron, ou du chef de bord), lorsqu'un navire ou une
+Détresse
+personne est sous la menace d'un danger grave et imminent et a besoin
+qu'on lui vienne immédiatement en aide.
+L'annonce, l’appel et le message d'urgence sont émis, sur ordre du
+commandant (ou du patron, ou du chef de bord) pour signaler une urgence
+Urgence concernant la sécurité du navire (demande de remorquage suite à une
+avarie,...) ou d'une personne (blessé ou malade à bord, consultation
+médicale…).
+L'annonce, l’appel et le message de sécurité sont émis, sur ordre du
+commandant (ou du patron, ou du chef de bord) pour signaler tout danger lié
+à la sécurité de la navigation (objets dangereux ou épaves à la dérive, phares
+éteints…) et à la météorologie (avis de coup de vent, de tempête, rencontre
+Sécurité
+de vents de force supérieure à 7 Beaufort non signalés dans les bulletins
+réguliers…).
+Ce type de message précède toute émission de Bulletins Météorologiques
+Spéciaux (BMS) et tout AVis URgent aux NAVigateurs (AVURNAV).
+1.2 Correspondance publique
+Si le navire est à portée d'une station côtière opérationnelle, il est possible d'obtenir par
+l'intermédiaire de celle-ci une liaison radiotéléphonique avec un abonné à terre ou un navire hors de
+portée de l'installation radioélectrique de bord (et réciproquement).
+1.3 Communications entre navires
+Les navires peuvent communiquer entre eux sur un certain nombre de fréquences réservées à cet
+effet.
+Par exemple, les voies VHF 6, 8, 72 et 77 sont réservées aux communications navire-navire.
+1.4 Service des opérations portuaires
+Ce service a pour objet la transmission de messages traitant exclusivement de la manœuvre, du
+mouvement et de la sécurité des navires, dans un port ou au voisinage de celui-ci, entre les navires
+et les stations portuaires ou entre navires.
+1.5 Mouvements des navires
+Ce service a pour objet la transmission de messages traitant exclusivement du mouvement des
+navires (hors opérations portuaires) entre stations côtières et stations de navires où entre stations
+de navires.
+2. Catégories de stations dans le service mobile maritime
+Une station du service mobile maritime se compose d'un ou de plusieurs émetteurs ou récepteurs
+permettant d'assurer un service de radiocommunication maritime.
+9
+
+2.1 Station de navire
+C'est une station mobile placée à bord d'un navire qui n'est pas amarré en permanence, autre
+qu'une station d'engin de sauvetage.
+2.2 Station côtière
+C'est une station terrestre du service mobile maritime (il peut s'agir d'une station de correspondance
+publique à but uniquement commercial, d'une station assurant uniquement des missions de
+sécurité, ou bien d'une station assurant ces deux activités).
+2.3 Station portuaire
+C'est une station côtière du service des opérations portuaires.
+2.4 Centres de coordination du sauvetage (CROSS)
+Les Centres Régionaux Opérationnels de Surveillance et de Sauvetage (CROSS) assurent en
+permanence la surveillance des zones maritimes sous leur juridiction, la diffusion des informations
+de sécurité maritime et coordonnent les opérations de recherche et de sauvetage.
+Il y a cinq CROSS en métropole :
+- Gris-Nez (Manche est – Pas de Calais)
+- Jobourg (Manche centrale)
+- Corsen (Manche ouest)
+- Etel ( Atlantique)
+- La Garde (Méditerranée)
+et un sous-CROSS (Aspretto).
+Il y a deux CROSS dans les DOM :
+- CROSSAG (Antilles Guyane)
+- CROSSRU (Océan Indien)
+et un sous-CROSS (Cayenne)
+Source : Direction des Affaires Maritimes (DAM)
+Les CROSS, en cas d'indisponibilité d'un émetteur, peuvent être relayés localement par les
+sémaphores de la Marine nationale.
+3. Fréquences et voies de la bande VHF marine
+3.1 Notion de fréquence
+Toute émission est caractérisée :
+(cid:1) par sa fréquence (f)
+(cid:1) par sa longueur d'onde (λ)
+(cid:1) par sa vitesse de propagation (célérité : c).
+Les ondes radioélectriques se propagent dans l'atmosphère à une vitesse de 300.000 km/s.
+La fréquence se calcule selon la formule suivante : f = c/λ et se mesure en Hertz (Hz). L'unité
+de base étant trop petite, on utilise des multiples :
+1 kHz (kilo Hertz) = 1 000 Hz
+1 MHz (Méga Hertz) = 1 000 kHz = 1 000 000 Hz
+1 GHZ (Giga Hertz) = 1 000 MHz = 1 000 000 000 Hz
+10
+
+On distingue notamment :
+(cid:1) Les ondes hectométriques : MF (Medium Frequency)
+(cid:1) Les ondes décamétriques : HF (High Frequency)
+(cid:1) Les ondes métriques : VHF (Very High Frequency)
+(cid:1) Les ondes décimétriques : UHF (Ultra High Frequency)
+Bande de
+Catégories Abréviation Longueur d’onde
+fréquences
+Ondes hectométriques MF 300 kHz à 3 MHz 1 000 m à 100 m
+Ondes décamétriques HF 3 MHz à 30 MHz 100 m à 10 m
+Ondes métriques VHF 30 MHz à 300 MHz 10 m à 1 m
+Ondes décimétriques UHF 300 MHz à 3 GHz 1 m à 0,1 m
+3.2 Fréquences de la bande VHF marine
+La bande de fréquences VHF internationale, réservée au service radiomaritime, s'étend de
+156 MHz à 162 MHz.
+3.3 Voies simplex et duplex
+Exploitation simplex : une même fréquence (F1 par exemple) est utilisée à l'émission comme à la
+réception (c'est le cas notamment des voies navire–navire). Le mode d'exploitation ne peut se faire
+qu'à l'alternat : les opérateurs transmettent et reçoivent l'un après l'autre.
+F 1
+Exploitation duplex : on utilise deux fréquences différentes à l'émission et à la réception (F3 et F4
+par exemple). Les opérateurs émettent et reçoivent en même temps (comme au téléphone).
+F3
+F4
+Exploitation semi-duplex : l'une des extrémités de la voie (en général, station de navire) est
+exploitée en mode simplex ; l'autre extrémité (en général station terrestre) est exploitée en mode
+duplex. Il n'y a donc pas, pour l'utilisateur d'une station de navire, de différence essentielle entre
+une voie semi-duplex et une voie simplex.
+3.4 Affectation des voies
+- Le tableau de l'annexe 3 du complément de ce manuel détaille, au niveau français, l'affectation
+des voies VHF du service mobile maritime.
+- L'affectation des voies VHF du service mobile fluvial est structurée sous forme de réseau avec une
+puissance réduite en fonction des voies de travail utilisées (voir Annexe 12)
+11
+
+4. Sources d'énergie des stations de navire
+A bord des navires, l'énergie électrique permettant de faire fonctionner les appareils de navigation
+et de radiocommunications provient de plusieurs sources : par exemple du courant continu
+(12 volts, 24 volts) ou du courant alternatif (230 volts).
+Parmi les différentes sources, il convient d’apporter l’attention sur la batterie d'accumulateurs,
+générateur très particulier ayant la propriété d'accumuler de l'énergie électrique en la stockant sous
+forme chimique après une opération de charge. Cette énergie est restituée au fur et à mesure des
+besoins : c'est l'opération de décharge.
+La batterie est l'ultime générateur de courant en cas d'avarie des autres moyens d'énergie.
+4.1 Différents types de batteries
+(cid:1) batteries de type "plomb". Elles sont semi-étanches ou étanches et dites "avec ou sans
+entretien". Ce sont les batteries les plus couramment utilisées.
+(cid:1) batteries de type "cadmium-nickel, fer-nickel ou zinc-argent". Ces batteries ont la
+particularité d'être très robustes. Mais elles sont beaucoup moins répandues que celles
+au plomb car beaucoup plus onéreuses.
+4.2 Charge des batteries au plomb
+Généralement, le courant de charge (en Ampères : A) ne doit pas dépasser le dixième de la
+capacité de la batterie (en ampères-heures AH) voir annexe 11 du complément de ce manuel.
+Ainsi, une batterie de 80 Ah doit être chargée à 8 ampères pendant 10 heures. Les charges plus
+lentes augmentent la capacité de vie de l'accumulateur (ex. : 4 ampères pendant 20 heures).
+(Certains constructeurs de batterie admettent des courants plus importants. Il est recommandé
+d'analyser les fiches techniques des accumulateurs concernés)
+4.3 Entretien des batteries au plomb
+Les batteries au plomb, lorsqu'elles ne sont pas utilisées, ont l'inconvénient de "s'autodécharger".
+Le taux de décharge est variable selon la qualité et le type de fabrication. Il est conseillé de les
+recharger régulièrement pour augmenter leur durée de vie.
+Voici quelques conseils d’entretien des batteries :
+(cid:1) Vérifier le niveau de l'électrolyte. L'appoint doit être fait avec de l'eau distillée (utiliser des
+gants et des lunettes de protection).
+Il ne faut jamais ajouter d'acide (danger de projection de l'électrolyte).
+(cid:1) Contrôler régulièrement la tension aux bornes de la batterie lorsque celle-ci est au repos
+(en l'absence de charge ou d'utilisation).
+(cid:1) Nettoyer régulièrement les cosses de raccordement et les enduire de graisse neutre
+(vaseline).
+Les batteries doivent être placées dans un endroit ventilé, être maintenues propres et sèches et
+reposer dans un bac étanche et inaltérable.
+12
+
+C. Connaissances générales du service mobile maritime par satellite
+1. Le système Inmarsat
+L'organisation internationale Inmarsat (International Mobile Satellite Organisation) exploite, depuis
+1982, un ensemble de satellites offrant des communications mobiles sur terre, sur mer et dans les
+airs. Quatre satellites géostationnaires, fonctionnant dans les bandes des 1,5 et 1,6 GHz, couvrent
+quatre régions océaniques (Atlantique-Est, Atlantique-Ouest, Pacifique, Océan Indien) constituant la
+quasi-totalité du globe à l'exception des pôles.
+2. Les différents services
+Inmarsat offre à la fois des services commerciaux de correspondance publique et des services de
+sécurité (transmission d'alertes et diffusion de renseignements sur la sécurité maritime).
+Les principaux services maritimes actuellement en exploitation sont les suivants :
+STANDARD SMDSM TYPE DE SERVICE OBSERVATIONS
+Analogique, premier standard mis en
+Téléphonie, télex, fax
+Inmarsat A OUI service, il n'est plus commercialisé et sera
+et données
+prochainement supprimé.
+Téléphonie, télex, fax
+Inmarsat B OUI Version numérique d’Inmarsat A
+et données
+Service de messagerie bidirectionnelle
+principalement utilisé pour la gestion de
+Inmarsat C OUI Télex, fax, données flotte et la réception de renseignements
+sur la sécurité maritime, grâce à la
+fonction d'appel de groupe
+Téléphonie, fax Service numérique de téléphonie, existe
+Inmarsat M NON et transmission en version grand public (Mini-M, avec
+de données couverture limitée)
+Service récemment mis en place,
+OUI et Téléphonie, fax et associée à un terminal Inmarsat C, la
+Inmarsat F
+NON données version "F77" répond aux exigences du
+SMDSM.
+13
+
+D. Connaissances générales du SMDSM
+1. Définition
+Le SMDSM est un système de radiocommunications intégré, de couverture mondiale, coordonné au
+niveau international, basé sur des systèmes de télécommunications automatiques et faisant appel à
+de nouvelles technologies (satellites, Appel Sélectif Numérique…) et de nouvelles procédures
+d'exploitation.
+Ses objectifs sont de permettre :
+(cid:1) à tout navire, où qu'il soit, d'assurer les communications indispensables à sa propre
+sécurité et celle des navires qui se trouvent à proximité
+(cid:1) aux organismes chargés des secours d'être avertis rapidement en cas de détresse et
+d'assurer des opérations de recherche et sauvetage coordonnées.
+Ce système a été mis en place à partir de 1992 et est devenu obligatoire au niveau international
+pour tous les navires relevant de la Convention SOLAS (Safety Of Life At Sea) le 1er février 1999.
+En France la quasi-totalité des navires professionnels est astreinte au SMDSM au titre de la
+Convention SOLAS et de la réglementation nationale.
+2. Les neuf fonctions du SMDSM
+Le SMDSM doit assurer les fonctions suivantes :
+1. Emettre des alertes de détresse navire–terre par au moins deux moyens distincts et
+indépendants, utilisant chacun un service de radiocommunication différent.
+2. Recevoir des alertes de détresse terre–navire.
+3. Emettre et recevoir des alertes de détresse navire–navire.
+4. Emettre et recevoir des communications ayant trait à la coordination des opérations de
+recherche et sauvetage.
+5. Emettre et recevoir des communications sur site.
+6. Emettre et recevoir des signaux destinés au repérage.
+7. Emettre et recevoir des renseignements sur la sécurité maritime (RSM).
+8. Emettre et recevoir des communications d'ordre général.
+9. Emettre et recevoir des communications de passerelle à passerelle.
+3. Le concept de zones
+Pour assurer les neuf fonctions du SMDSM, l'OMI a défini quatre zones océaniques correspondant
+aux couvertures des différents moyens de radiocommunication utilisés :
+Zone de couverture d'au moins une station côtière VHF dans laquelle la
+Zone A1 fonction ASN (Appel Sélectif Numérique) est disponible en permanence (portée
+radio : 20 à 30 milles).
+Zone de couverture d'au moins une station côtière MF dans laquelle la fonction
+Zone A2 ASN est disponible en permanence, hors zone A1 (portée radio : 150 à
+300 milles).
+Zone de couverture d'un satellite géostationnaire d'Inmarsat (entre les
+Zone A3
+parallèles 70° N et 70° S), hors zones A1 et A2.
+Zone A4 Zone en dehors des zones A1, A2 et A3 (couverture HF uniquement).
+14
+
+4. Les sous-systèmes du SMDSM
+Pour que les neuf fonctions puissent être assurées, le SMDSM fait appel à différentes
+techniques ou sous-systèmes, ayant chacun leurs limites :
+Pour l’appel et le trafic de détresse et de sécurité
+Radiotéléphonie VHF, MF, HF
+entre navires et stations côtières ou entre navires.
+Pour le trafic de détresse et de sécurité et
+Télégraphie à impression
+HF, MF surtout pour la diffusion des renseignements sur
+directe
+la sécurité maritime (RSM) (NAVTEX).
+Appel Sélectif Numérique VHF, MF, HF Pour l'alerte de détresse.
+Inmarsat Pour l'alerte, le trafic de détresse et la diffusion
+des renseignements sur la sécurité maritime
+Services par satellite (RSM).
+COSPAS-
+Pour l'alerte et la localisation des radiobalises de
+SARSAT
+détresse.
+15
+
+5. L'organisation SAR
+La Convention SAR (Search And Rescue), entrée en vigueur en 1985, a pour objectif la mise en
+place d’un plan international permettant de coordonner les opérations de recherche et sauvetage
+sans tenir compte des frontières.
+Les Mers sont divisées en 13 zones, elles-mêmes subdivisées en régions de recherche et
+sauvetage (SRR : Search and Rescue Regions) placées chacune sous la responsabilité d’un Etat ;
+ce dernier s’engage à assurer la réception des alertes et à diriger les opérations de recherche et
+sauvetage en mettant en place des centres de coordination (MRCC : Maritime Rescue Coordination
+Centre).
+En métropole et outre-mer, les CROSS sont les MRCC responsables des opérations SAR pour leur
+région respective.
+Les CROSS Griz-Nez et La Garde assurent, en plus de leurs missions de MRCC, les fonctions de
+SPOC (SAR Point Of Contact). Ils sont les points de contact des MRCC étrangers qui sollicitent une
+coopération internationale de la France en zone SAR étrangère.
+(© SHOM 2004)
+16
+
+E. Utilisation de l'alphabet phonétique international et des signaux de
+base du vocabulaire normalisé de la navigation maritime de l'OMI
+1. Utilisation de l'alphabet phonétique international
+L'alphabet phonétique international permet de renforcer la compréhension des mots (nom du navire,
+indicatif, abréviation) transmis par radiotéléphonie. On épelle les mots ou les nombres en faisant
+correspondre chaque lettre à un mot convenu dont la première lettre est la même que celle du mot
+à épeler.
+Exemple : le mot "MAT" sera épelé "MIKE, ALFA, TANGO".
+Table d'épellation de l'alphabet phonétique international
+(Appendice 14 du Règlement des radiocommunications)
+Lettre à
+Mot de code Prononciation du mot de code 1
+transmettre
+A...........A..l.f.a...................................A...L.. .F..A..H... .........
+B...........B..r.a..v.o..............................B..RA VO
+C...........C..h..a..rlie ...........................T..C...HAH LI ou CHAR LI
+D...........D..e..l.t.a...............................D. EL TAH
+E...........E..c..h..o...............................È. K O
+F...........F..o..x..trot ...........................F..O...X TROTT
+G...........G...o..lf. ...............................G. OLF
+H...........H..o..t.e.l...............................H. O TÈLL
+I............I.n..d..i.a. ..............................I.N. DI AH
+J...........J..u..li.e.tt .............................D...JOU LI ÈTT
+K...........K..i.l.o.. ................................KI LO
+L...........L..i.m...a ..............................L..I MAH
+M...........M...i.k..e ..............................M..A ÏK
+N...........N..o..v..ember .....................N...O... .V..È..MM BER
+O...........O...s..c.ar ............................O...S.S KAR
+P...........P..a..p..a ..............................P..AH PAH
+Q...........Q...u..e.bec .........................K...É.. .B.EK
+R...........R..o..m..eo ..........................R...O... MI O
+S...........S..i.e..r.ra ............................S...I. ER RAH
+T...........T..a..n..go ............................T..A..NG GO
+U...........U..n..i.f.orm .........................Y...O..U.. NI FORM ou OU NI FORM
+V...........V..i.c..t.or .............................V...IK TAR
+W..........W...h..i.skey ........................O...U...I.S.S KI
+X...........X..-..r.a.y .............................E...KSS RÉ
+Y...........Y..a..n..kee ..........................Y...A..N. G KI
+Z...........Z..u..l.u. ...............................Z.OU LOU
+2. Utilisation de signaux de base du vocabulaire normalisé de l'OMI
+L'OMI a publié en 1985 un petit fascicule bilingue intitulé "Vocabulaire normalisé de la Navigation
+Maritime". Cet ouvrage peut être très utile pour qui navigue près des côtes étrangères, l'anglais
+étant la langue parlée par les opérateurs radio de tous pays.
+Notre propos n'est pas de créer un examen bilingue. Par contre quelques exemples de
+communications en anglais seront inclus dans la partie procédure radiotéléphonique.
+1 Les syllabes accentuées sont soulignées
+17
+
+Chapitre II : la radiotéléphonie en ondes métriques
+A. Utilisation pratique de l’équipement en ondes métriques
+1. Commandes
+§1.1 §1.6
+§1.5
+§1.7
+§1.3
+§1.2
+1.1 Sélection et commandes des voies
+Différents dispositifs existent suivant le type de poste pour sélectionner une voie. Cela peut être un
+bouton rotatif, des touches "Up" et "Down" ou encore des touches "(cid:2)" et "(cid:3)".
+Il existera toujours un bouton ou une touche avec repère 16 permettant d’accéder directement à la
+voie 16.
+1.2 Dispositifs et commandes de double veille
+Ce dispositif, apparaissant souvent sur le poste avec un bouton appelé "DUAL" ou "D W" (Dual
+Watch), permet de veiller la voie de détresse tout en étant positionné sur une autre voie choisie. Le
+poste se positionne sur la voie 16 pendant quelques centièmes de secondes toutes les
+2,5 secondes quel que soit son réglage. Si une émission est alors détectée, il reste positionné sur la
+voie 16 pendant toute la durée de cette émission.
+Ce dispositif permet aux navires non astreints, qui n’ont pas obligation de veiller de manière
+permanente la voie 16, de le faire aussi souvent que possible.
+1.3 Connexion
+Un bouton "marche/arrêt" (POWER) permet d’activer et désactiver l’appareil.
+1.4 Commande d’alternat
+Le combiné raccordé au poste fixe possède une touche PTT (Push To Talk) qui permet d’alterner
+émission et réception. En maintenant la pression sur cette touche, l’appareil est dans le mode
+Emission et il est possible de parler; en relâchant la pression sur cette touche, l’appareil est dans le
+mode réception et il est possible d’écouter.
+1.5 Commande de la puissance de sortie
+Un bouton, généralement appelé "Hi/Lo" (High/Low) offre 2 possibilités :
+- être en mode de puissance normale : 25 watts
+- être en mode de puissance réduite : 1 watt.
+Dans la mesure du possible, dans les zones portuaires, et pour des liaisons où le nombre de voies
+autorisées est minime (exemple : voies de travail navire-navire), il est conseillé d’utiliser la
+puissance réduite pour :
+- éviter les brouillages lors de l’utilisation simultanée de la même voie par plusieurs navires
+éloignés de quelques milles
+- économiser la batterie car ainsi la consommation est moindre.
+1.6 Commande du volume
+Un bouton généralement rotatif permet de régler le niveau de réception BF (volume).
+18
+
+1.7 Commande du squelch
+Le squelch est un dispositif de réglage de la sensibilité de la réception de la VHF. Il force le
+récepteur à être silencieux quand celui-ci ne reçoit aucun signal ou lorsque ce signal est inférieur à
+un certain seuil.
+Comment effectuer le réglage :
+- se placer sur la voie 16
+- régler le squelch au minimum : on entend un bruit de souffle important
+- reprendre doucement le réglage en sens inverse jusqu’au silence complet
+- revenir légèrement en arrière
+- quand le haut-parleur n’émet qu’un "cloc" de temps à autre, le réglage est parfait.
+2. Appareil VHF portatif
+L’appareil VHF portatif peut être équipé des 55 voies disponibles sur un appareil
+VHF fixe. Cependant sa puissance d’émission, qui ne doit pas dépasser 6 watts
+en réduit la portée à une dizaine de milles.
+Il permet de communiquer même en dehors de la passerelle. Si l’appareil doit
+souvent être utilisé à l’extérieur, il sera judicieux de s’équiper d’un appareil
+étanche.
+Ceci a pour avantage de pouvoir être emporté dans le radeau de secours en cas
+d’abandon du navire et de permettre d’alerter et guider les navires proches. Il
+faudra donc s’assurer de la bonne charge de l’accumulateur de l’appareil ou,
+mieux encore, posséder un accumulateur de secours.
+3. Antennes VHF
+L’antenne est un circuit résonnant qui a un double but :
+- en émission, transformer un maximum d’énergie électrique haute fréquence
+en énergie électromagnétique de même fréquence
+- en réception, capter un maximum d’énergie électromagnétique haute
+fréquence et la transformer en énergie électrique de même fréquence
+disponible pour le récepteur.
+Pour remplir ce rôle, l’antenne doit être :
+- dédiée à son équipement
+- conçue pour une utilisation maritime
+- accordée à la bande de fréquences de travail de l’émetteur–récepteur
+- placée, en théorie, à deux longueurs d’onde (soit 4 mètres en VHF) au
+moins de tout objet métallique important.
+L’antenne est généralement de type fouet vertical (dite cierge ou bâton).
+Compte tenu de la propagation en ligne droite des ondes métriques, l’antenne
+sera avantageusement placée le plus haut possible, afin d’assurer la meilleure
+portée.
+Il pourra se révéler très utile de posséder à bord du navire une antenne de
+secours.
+19
+
+B. Procédures d’exploitation des communications radiotéléphoniques
+1. Communications relatives à la sauvegarde de la vie humaine en mer
+La fonction essentielle d’une station radioélectrique maritime est d’assurer la transmission et la
+réception des messages relatifs à la Sauvegarde de la Vie Humaine en mer (SVH).
+Pour faciliter la réception des messages SVH, les émissions sur la fréquence internationale d’appel
+et de détresse (voie 16) devront être réduites au strict minimum.
+Les messages sont de 3 types, reconnaissables à l’utilisation d’un signal d’alarme qui leur est
+propre. Ils s’adressent à tout navire et à toute station côtière.
+Type Priorité Signal d’alarme
+Détresse Absolue MAYDAY
+Urgence 2 PAN PAN
+Sécurité 3 SECURITE
+1.1 Communications de détresse
+• Appel de détresse
+Le signal caractérisant la communication de détresse est : MAYDAY (prononcer "m’aider").
+L’appel de détresse sera formulé, sur la voie 16, de la façon suivante :
+- MAYDAY (trois fois)
+- ICI
+- le nom du navire (trois fois)
+- l’indicatif d’appel du navire (une fois).
+• Texte du message de détresse
+Le texte du message de détresse comportera dans l’ordre les indications suivantes :
+- MAYDAY (une fois)
+- le nom du navire (une fois)
+- l’indicatif d’appel du navire (une fois)
+- la position du navire : absolue (coordonnées géographiques) ou relative (par rapport à
+un point fixe connu)
+- la nature de la détresse
+- le type d’assistance requise
+- le nombre de personnes à bord
+- les intentions du responsable du navire
+- tout renseignement destiné à faciliter les secours.
+Le message sera répété, autant de fois qu’il sera possible, jusqu’à ce qu’une station côtière ou un
+navire ait répondu.
+20
+
+Exemple d’appel et de message de détresse
+en français en anglais
+MAYDAY, MAYDAY, MAYDAY MAYDAY, MAYDAY, MAYDAY
+ICI THIS IS
+CORMORAN, CORMORAN, CORMORAN CORMORAN, CORMORAN, CORMORAN
+FXFA (Foxtrot, X-Ray, Foxtrot, Alfa) FXFA (Foxtrot, X-Ray, Foxtrot, Alfa)
+MAYDAY CORMORAN FXFA MAYDAY CORMORAN FXFA
+Deux milles Ouest Quiberon Two miles West of Quiberon
+Feu à bord Vessel on fire
+Demandons assistance immédiate Require immediate assistance
+5 personnes à bord 5 persons on board
+Quittons le navire Leaving the vessel
+A vous Over
+• Accusé de réception d’un message de détresse :
+À la réception d’un message de détresse, tout navire doit :
+- cesser toute transmission
+- noter soigneusement le contenu du message
+- attendre un certain temps pour permettre à une station côtière de répondre
+- si aucune station n’a répondu dans un délai de cinq minutes, indiquer au navire en
+détresse qu’il a été entendu et qu'il peut lui porter secours
+- essayer, lorsque cela est possible, d’alerter une station côtière ou un centre de secours.
+Cette réponse prendra la forme suivante :
+- MAYDAY (une fois)
+- le nom et l’indicatif du navire en détresse (une fois)
+- ICI
+- Le nom et l’indicatif du navire qui répond (une fois)
+- REÇU MAYDAY (une fois)
+- demande de renseignements complémentaires si besoin est
+- délai de route pour se rendre sur zone, si cela est possible.
+Exemple d’accusé de réception
+en français en anglais
+MAYDAY CORMORAN FXFA MAYDAY CORMORAN FXFA
+ICI THIS IS
+DAUPHIN FFGO DAUPHIN FFGO
+Reçu MAYDAY Received MAYDAY
+Suis à environ un mille au nord de votre We are one mile away from you
+position
+Serai sur zone dans 15 minutes environ We should arrive within 15 minutes
+A vous Over
+21
+
+• Relais d’appel de détresse
+Il se peut qu’un navire doive retransmettre un message de détresse au profit d’un navire non équipé
+de radio ou dont l’appel n’a pas fait l’objet d’un accusé de réception d’une station côtière ou d’un
+autre navire dans un délai de cinq minutes. Cette retransmission sur la voie 16 du message de
+détresse s’effectuera sous la forme suivante :
+- MAYDAY RELAY (trois fois)
+- A TOUS (trois fois)
+- ICI
+- le nom du navire retransmetteur (trois fois)
+- l’indicatif d’appel du navire retransmetteur (une fois)
+- MAYDAY (une fois)
+- le nom et l’indicatif d’appel du navire en détresse (une fois)
+- répétition des renseignements contenus dans le message de détresse.
+Exemple de relais d’appel de détresse
+en français en anglais
+MAYDAY RELAY, MAYDAY RELAY, MAYDAY RELAY, MAYDAY RELAY,
+MAYDAY RELAY MAYDAY RELAY
+A TOUS, A TOUS, A TOUS ALL STATIONS, ALL STATIONS, ALL
+STATIONS
+ICI THIS IS
+DAUPHIN, DAUPHIN, DAUPHIN FFGO DAUPHIN, DAUPHIN, DAUPHIN FFGO
+MAYDAY CORMORAN FXFA MAYDAY CORMORAN FXFA
+Deux milles Ouest Quiberon Two miles West of Quiberon
+Feu à bord Vessel on fire
+Equipage 5 personnes quitte le navire Five persons on board leaving the vessel
+A vous Over
+• Contrôle du trafic de détresse
+La station qui coordonne les opérations de sauvetage (MRCC, station côtière ou unité de
+sauvetage) peut imposer le silence sur la voie 16 aux stations qui pourraient perturber les
+opérations en transmettant à celles-ci le signal « SILENCE MAYDAY ».
+Lorsque les opérations de sauvetage sont terminées, la station qui a coordonné celles-ci transmet
+à toutes les stations, sur la voie 16, un message de fin de détresse se terminant par les mots
+« SILENCE FINI ».
+1.2 Communications d’urgence
+Les communications d’urgence peuvent être adressées à toutes les stations ou à une station
+particulière.
+• Appel d’urgence
+Le signal caractérisant la communication d’urgence est : PAN PAN (prononcer "panne, panne").
+L’appel d’urgence sera formulé sur la voie 16 de la façon suivante :
+- PAN PAN (trois fois)
+- le nom de la station appelée ou l’appel « à tous » (3 fois)
+- ICI
+- le nom du navire (trois fois)
+- l’indicatif du navire (une fois)
+22
+
+• Texte du message d’urgence
+Le texte du message d’urgence comportera dans l’ordre les indications suivantes :
+- la position du navire : absolue (coordonnées géographiques) ou relative (par rapport à un
+point fixe connu)
+- la nature de l’urgence
+- les secours demandés
+- les intentions du responsable du navire
+- tout renseignement destiné à faciliter les secours.
+Exemple d’appel et de message d’urgence
+en français en anglais
+PAN PAN, PAN PAN, PAN PAN PAN PAN, PAN PAN, PAN PAN
+A TOUS, A TOUS, A TOUS ALL STATIONS, ALL STATIONS, ALL
+STATIONS
+ICI THIS IS
+NEPTUNE, NEPTUNE, NEPTUNE NEPTUNE, NEPTUNE, NEPTUNE
+FP4624 FP4624
+Position 20 milles Nord Ouest de Cherbourg 20 miles North West of Cherbourg
+Gouvernail cassé, partons à la dérive Broken rudder, drifting
+Demandons remorquage Require tow
+Voilier coque blanche, 3 personnes à bord White hull yacht, 3 persons on board
+A vous Over
+• Consultation radiomédicale
+Lorsque la santé d’une personne se trouvant à bord du navire se révèle préoccupante, il est
+possible de demander une consultation radiomédicale par le biais d’un message d’urgence. Dans
+ce cas, le navire sera mis en liaison, par une station côtière ou un MRCC, avec le Centre de
+Consultation Médicale Maritime de Toulouse ou de Rome. Le médecin conseillera le bord sur la
+conduite à tenir selon la description des symptômes qui lui aura été communiquée. Une évacuation
+sanitaire pourra être nécessaire.
+1.3 Communications de sécurité
+Les communications de sécurité sont généralement adressées à toutes les stations.
+• Appel de sécurité.
+Le signal caractérisant la communication de sécurité est : SECURITE (prononcer "sécurité").
+L’appel de sécurité sera formulé de la façon suivante :
+- SECURITE (trois fois)
+- ICI
+- le nom du navire (trois fois)
+- l’indicatif du navire (une fois)
+• Texte du message de sécurité.
+Si la durée d’émission de ce texte est brève, le texte du message peut être émis sur la voie 16.
+Sinon, il est conseillé d’indiquer une fréquence de travail sur laquelle sera transmis le texte du
+message.
+23
+
+Le message sera répété jusqu’à ce que le navire ait obtenu l'accusé de réception d’une station
+côtière. Celle-ci se chargera de retransmettre l'information aux services diffusant les AVURNAV
+(AVis URgent aux NAVigateurs).
+Exemple d’appel et de message de sécurité
+SECURITE, SECURITE, SECURITE
+(A TOUS)
+ICI
+RACHEL, RACHEL, RACHEL
+FO8810
+Epave à la dérive un mille au large du Cap Corse
+1.4 Réception de renseignements sur la sécurité maritime par radiotéléphonie en VHF
+En France, les CROSS sont chargés d’assurer la diffusion régulière des bulletins météorologiques
+plusieurs fois par jour. Ces diffusions se font à heure précise sur les voies 79 ou 80 selon la zone.
+Les avis de coup de vent (supérieur à 7 Beaufort en zone côtière des 20 milles) font l’objet de
+Bulletins Météorologiques Spéciaux (BMS). Ils sont diffusés dès réception et répétés toutes les
+heures tant qu’ils sont en cours de validité.
+2. Correspondance publique
+La correspondance publique est une communication d’ordre général et désigne toute
+communication émise ou transmise par un navire qui fait appel à une station côtière pour être relié à
+son correspondant.
+2.1 Appel d’une station côtière en radiotéléphonie
+En France, les stations côtières ont arrêté tout service de correspondance publique le 28 février
+2000 lors de l’abandon de ce service par France Télécom.
+Un certain nombre de stations étrangères sont encore opérationnelles.
+• Demande de liaison
+En règle générale, la demande de la liaison se fait sur la voie 16 sous la forme :
+- identification de la station côtière (trois fois)
+- ICI
+- identification du navire (trois fois).
+On entend par identification : le nom du navire, l'indicatif radio de la station ou les deux à la fois.
+Demande de liaison
+OSTENDE RADIO, OSTENDE RADIO, OSTENDE RADIO
+ICI (THIS IS)
+VIKING, VIKING, VIKING
+Me recevez-vous ? (Do you read me ?)
+La station côtière répond sur la voie 16 en précisant la voie de dégagement sur laquelle s’effectuera
+la communication.
+24
+
+Une fois votre appareil positionné sur cette voie, il vous suffit de passer en émission sans parler en
+appuyant sur la pédale de votre combiné. Dès que votre appel aura été enregistré, une sonnerie de
+retour d’appel se fera entendre et un opérateur vous demandera votre CIAC et le numéro de votre
+correspondant.
+Puis il vous connectera avec celui-ci.
+• Fin de l’appel
+La fin de la communication avec votre correspondant a lieu lorsque celui-ci raccroche son combiné.
+A votre demande, la station côtière vous donnera le coût de la communication.
+2.2 Appel à destination de navires à partir d’une station côtière
+La station côtière contactera le navire sur la voie 16. Puis tous deux définiront une voie de travail.
+25
+
+Chapitre III : les sous-systèmes du SMDSM
+A. Utilisation des installations et des techniques d'appel sélectif
+numérique (ASN)
+1. Principes généraux de l'ASN
+L'ASN (en anglais, DSC : Digital Selective Calling) est un mode de communication rapide et
+automatique utilisant une technique de transmission binaire qui consiste à moduler l'onde radio
+avec deux valeurs : "0" et "1", permettant de transmettre des messages prédéfinis à une vitesse de
+1200 bauds sur VHF.
+Ces derniers seront décodés et directement lisibles sur l'écran d'affichage des récepteurs.
+2. Identités du service mobile maritime (MMSI)
+Pour satisfaire aux techniques de l'ASN et du service mobile par satellite Inmarsat, un moyen
+d'identification des stations a été mis en place.
+Ainsi chaque navire ou station côtière participant au SMDSM possède une identification unique
+composée d'un numéro à 9 chiffres appelé MMSI (Maritime Mobile Service Identity). Ce code doit
+être programmé, de préférence par un professionnel, dans les appareils pour que ceux-ci puissent
+bénéficier des fonctionnalités de l'ASN.
+Un code de trois chiffres, le MID (Maritime Identification Digit), indique la nationalité du navire ou de
+la station côtière.
+L'UIT attribue à chaque état un, ou plusieurs MID, (selon l'importance de la flotte nationale). À ce
+jour, la France métropolitaine possède 3 MID : 226, 227 et 228. Les DOM, les collectivités
+territoriales et les COM (collectivités d’outre-mer) se sont vu attribuer des MID spécifiques (voir
+annexe 4).
+Ex : MMSI d'un navire immatriculé en métropole : 227 250 010
+Le MMSI des stations côtières françaises ou étrangères commence toujours par 00, suivi du MID +
+4 chiffres.
+Ex : MMSI du CROSS Gris-Nez : 00 227 5100
+Il existe 4 catégories de MMSI pour les stations de navires et les stations côtières :
+Catégorie de station MMSI Type Exemple de MMSI
+Stations de navires MID XXX XXX 227 132 120
+Appel de groupe de navires 0MID XXX XX 0227 310 00
+Stations côtières 00MID XXXX 00227 5400
+Appel de groupe de stations côtières 00MID XXXX 00227 4000
+Il existe également des MMSI pour :
+• les aéronefs participant aux opérations de sauvetage en mer : 111 MID XXX
+• les aides à la navigation : 99 MID XXXX
+• les embarcations rattachées à un navire principal : 98 MID XXXX
+3. Catégories d'appel
+Emission et réception ASN sont effectuées en VHF sur la voie 70 (156,5250 MHz).
+Peuvent être transmis sur cette voie :
+- les alertes de détresse et leurs accusés de réception
+- les relais de détresse et leurs accusés de réception
+- les appels pour établir les communications d'urgence et de sécurité
+- les appels pour établir les communications de routine, commerciales ou de demandes de
+renseignements (position, tests, etc.).
+26
+
+4. Les équipements VHF ASN
+4.1 Les différents modèles
+L'émetteur-récepteur VHF ASN est l’assemblage d’un appareil VHF classique et d’un sous-
+ensemble constitué d’un codeur/décodeur d’appel sélectif et d’un récepteur de veille de la voie 70.
+Dans les premiers modèles commercialisés, ces deux modules sont physiquement distincts. Dans
+le premier module est intégrée la VHF avec son alimentation et la prise de l’antenne pour l’émission
+et la réception. Dans le second module sont intégrés le codeur/décodeur d’appel sélectif et le
+récepteur de veille de la voie 70 avec leur propre alimentation et une seconde prise d’antenne
+raccordée sur le récepteur de veille.
+Dans cette catégorie, on trouve des ensembles VHF ASN similaires aux modèles ci-dessous.
+Le boîtier codeur/décodeur/récepteur de veille se caractérise par la présence :
+- du connecteur de l’antenne du récepteur de veille
+- d’une commande d’envoi d’appel de détresse (1)
+- d’un clavier spécifique d’accès aux différentes fonctions de l’appareil (2).
+Boîtier codeur/décodeur Commande d’envoi d’appel de détresse
+(1)
+Récepteur de veille
+Clavier spécifique d’accès aux
+différentes fonctions de l’appareil
+(2)
+VHF
+27
+
+De plus en plus, les constructeurs intègrent les modules VHF, codeur/décodeur et récepteur de
+veille dans le même boîtier. On trouve donc des ensembles identiques à ceux ci-dessous qui se
+différencient d’une VHF classique par la présence :
+- de deux connecteurs d’antenne
+- d’une commande d’envoi d’appel de détresse (1)
+- d’un clavier spécifique d’accès aux différentes fonctions de l’appareil (2).
+(2)
+(1)
+Commande d’envoi d’appel de détresse
+Les constructeurs ont développé, pour les navires non soumis aux règles internationales, des
+modèles plus simples : les VHF ASN de classe D.
+Sur ces modèles, les commandes peuvent être intégrées au combiné et, dans certains cas, le
+récepteur de veille est remplacé par un circuit particulier du récepteur principal. Ces VHF
+fonctionnent généralement avec une seule antenne.
+4.2 Accès aux différentes fonctions
+On retrouve sur une VHF ASN les mêmes fonctions de base que sur une VHF classique (voir
+chapitre II).
+On trouve ensuite des fonctions spécifiques à la VHF ASN :
+- une touche de détresse qui permet l’envoi, par une pression prolongée
+d’au moins 5 secondes, d’un appel de détresse. Afin d'éviter les fausses
+manœuvres, cette touche est protégée par un capot en plastique
+translucide.
+- des touches d’accès aux différents menus. Ces menus sont construits, indépendamment de
+la marque et du type de VHF, sur le même principe.
+28
+
+Les deux tableaux synoptiques qui suivent décrivent les procédures-types d’envoi et de réception
+d’appels d’un émetteur-récepteur VHF ASN de classe D. On trouvera sur ces tableaux les
+fonctionnalités minima d’une VHF de ce type.
+Ensuite des exemples plus détaillés seront présentés.
+Ceux-ci sont donnés à titre indicatif et ne peuvent prétendre à l'universalité. Les différents modèles
+sur le marché possèdent les mêmes fonctionnalités opérationnelles mais n'utilisent pas
+nécessairement les mêmes modes opératoires ni la même terminologie. Il est donc indispensable
+d'examiner attentivement le mode d'emploi de l'appareil.
+29
+
+MENUS D’APPEL PERMETTANT D'ASSURER LES FONCTIONS MINIMALES
+D’UNE VHF ASN CLASSE D
+TRES IMPORTANT
+MENU DSC Le MMSI de la station appelante doit être au préalable codé et figé dans la VHF ASN. Il permet l'auto-identification du navire. Il sera pris en compte par le logiciel interne de
+l'appareil pour être transmis dans tous les différents types d'appels.
+TX CALLS
+APPEL DE DETRESSE
+DISTRESS Nature of distress Undesignated Latitude edit Longitude edit Time edit Send call
+Fire
+GPS info OK
+Flooding
+Suivant le type Collision
+d’appel désiré, Grounding
+valider ou saisir les
+Listing
+différents
+paramètres Sinking
+Adrift
+Abandon ship
+Piracy
+Man over board
+APPEL A TOUS LES NAVIRES
+ALL SHIPS Category Distress Telecomm. 1 Simplex Telecomm. 2 No info Add working channel Ch xx Send call
+Safety
+No comply No Working channel
+Urgency
+APPEL DE STATION PARTICULIERE
+INDIVIDUAL MMSI Category Routine Telecomm. 1 Simplex Telecomm. 2 No info Add working channel Ch xx Send call
+Safety No comply No Working channel
+Urgency
+Distress
+L’accès dans les menus, la sélection, la validation des fonctions, l’annulation de la manœuvre sont spécifiques à chaque constructeur. Dans tous les cas, ces menus
+sont décrits en abréviation anglaise. Pour chaque constructeur de VHF consulter la notice d’utilisation traduite en français
+30
+
+MENU DES APPELS RECUS
+MENU
+Sélectionner la catégorie de
+Lire le message sélectionné
+message à consulter
+N° Date Heure
+1 … 23/ 12/ 03 - 17 : 48 : 23
+ORDINARY
+2- Time : 9:12:50 23 dèc 03
+CALL 2 … 23/ 12/ 03 - 09 : 12 : 50
+Type : individual
+Appel individuel de routine du navire
+From : 227040120
+227040120 qui souhaitait avoir un
+7 … 20/ 12/ 03 - 12 : 41 :13 Cat : Routine
+accusé de réception et proposait la
+ACK : Request
+voie 8 en dégagement
+Tel 1 : NO INFO
+Tel 2 : CH 8
+15 … 05/ 12/ 03 - 16 : 21 : 03 15-Time : 16:21:03 05 déc 03
+Type : All ships
+Appel d’une station côtière qui va
+From : 002275400
+20 … 20/ 12/ 03 - 12 : 41 : 13 diffuser un message de sécurité sur la
+Cat : Safety
+voie 79
+Tel 1 : NO INFO
+Tel 2 : CH79
+DISTRESS 2- Time : 8:22:10 20 dèc 03
+1 … 23/ 12/ 03 - 17 : 48 : 23
+CALL Type : Distress
+2 … 23/ 12/ 03 - 17 : 48 : 23 From : 335458000 Appel de détresse du navire
+MSG : Flooding 335458000 qui a une voie d’eau
+Position : N :43 13 E :006 18
+7 … 23/ 12/ 03 - 17 : 48 : 23
+Time 18 : 15
+15-Time : 11:27:08 30 nov 03
+15 … 23/ 12/ 03 - 17 : 48 : 23
+Type : All Stations
+From : 002275140 Accusé de réception par la station
+Cat : Distress côtière 002275140 de l’appel de
+ACK : Call détresse du navire 227132120 qui
+Telecom : Distress Ackn signale un homme à la mer
+Ship : 227132120
+MSG : Man Over Board
+Position : N :43 13 E : 006 18
+Les appels ASN reçus, de type détresse ou catégorie détresse sont accompagnés d’une alarme sonore. Suivant le constructeur, elle peut être
+associée à des voyants. La désactivation de cette alarme ne sera effective qu’après une action de lecture du message.
+31
+
+B. Procédures des communications de détresse, d'urgence et de
+sécurité dans le SMDSM
+1. Communications de détresse en VHF ASN
+Dans le cadre du SMDSM et en ondes métriques, l’alerte est transmise par ASN sur la voie 70.
+Tout navire en détresse adresse un appel à tous (stations côtières et stations de navires). En
+principe, c'est le centre de coordination de recherche et de sauvetage situé dans la zone de la
+détresse qui répondra à l'appel.
+Le centre de secours traitant la détresse retransmettra l’appel vers les navires susceptibles
+d’assurer le sauvetage, soit directement, soit par l’intermédiaire d’une station côtière.
+1.1 Alerte de détresse
+Les messages d’alerte de détresse, conçus à l’aide de logiciels intégrés aux émetteurs SMDSM,
+sont transmis cinq fois de suite sur la voie 70.
+L’alerte de détresse doit fournir :
+- l’identité de la station mobile en détresse (MMSI)
+- la position.
+D’autre part les renseignements suivants peuvent être fournis :
+- la nature de la détresse
+- l’heure de la détresse (UTC)2
+- l'indication de la classe d’émission qui sera utilisée lors des échanges ultérieurs.
+La position et l’heure peuvent être fournis :
+- soit par l’intermédiaire d’un système de positionnement interfacé (GPS par exemple)
+- soit manuellement.
+La sélection de messages prédéfinis permet de donner des indications quant à la nature de la
+détresse, à savoir :
+En français En anglais
+Indéterminée................................................... UNDESIGNATED
+Incendie, explosion.......................................... FIRE, EXPLOSION
+voie d'eau........................................................ FLOODING
+abordage......................................................... COLLISION
+échouement..................................................... GROUNDING
+gîte, danger de chavirement............................ LISTING, IN DANGER OF CAPSIZING
+navire coule..................................................... SINKING
+navire désemparé et à la dérive....................... DISABLE AND ADRIFT
+abandon de navire........................................... ABANDONING SHIP
+homme à la mer............................................... MAN OVERBOARD
+piraterie/agression et vol à main armée........... PIRACY/ARMED ROBBERY ATTACK
+De plus, il ne faut pas oublier l'existence du dispositif permettant l'envoi d'un message de
+détresse, par pression du bouton poussoir. Dans tous les cas, l'identification du navire (MMSI)
+sera transmise. Si la VHF est raccordée à un système de positionnement, la position et l'heure
+seront également indiquées.
+Par contre, la nature de la détresse ne sera pas transmise (UNDESIGNATED).
+2 UTC : Universal Time Co-ordinated (temps universel coordonné), ex-GMT ("heure de Greenwich").
+32
+
+• Envoi d’une alerte de détresse
+- méthode 1 : message simple :
+Situation :
+- vous êtes à bord du navire THETYS, indicatif FT9876, MMSI 227 132 120
+- votre VHF n’est pas couplée à un GPS
+- vous n’avez pas saisi vos coordonnées.
+Action :
+SCAN STO DEL
+Time : 18.15.35 A ABC 1 DEF 2 GHI 3
+20 Feb 2006 1- Vous appuyez
+MEN DW
+2- La VHF affiche
+P
+F
+r
+o
+e
+r
+s
+5
+s t
+s
+h
+ec
+e
+o
+D
+n
+I
+d
+S
+s
+T
+to
+R E
+tr
+S
+a
+S
+n s
+b
+m
+u
+i
+t
+t
+t on
+B JKL 4 MN 5 OPQ 6
+p
+m
+e
+o
+n
+in
+d
+s
+a n
+s
+t
+u
+5
+r
+s
+le
+a u
+Type : DISTRESS bouton rouge
+MSG : Undesignated C RST 7 UV 8 WX 9
+Position :
+DISTRESS
+Time :
+SHIFT FUNC P
+D YZ 0 16
+ON/OFF Sq VO
+L DISTRESS
+- méthode 2 : message détaillé :
+Situation :
+- vous êtes à bord du navire THETYS, indicatif FT9876, MMSI 227132 120
+- votre VHF est couplée à un GPS.
+Actions résumées :
+1 - vous sélectionnez le menu appel (appui sur la touche "CALL")
+2 - vous sélectionnez le format DISTRESS
+3 - le système vous demande de choisir un type de détresse
+4 - vous sélectionnez : FLOODING (Voie d'eau)
+5 - la VHF affiche le message et vous
+demande de le corriger ou de l’envoyer :
+CANCEL – SEND
+6 – vous sélectionnez envoyer : SEND.
+Actions détaillées :
+Time : 18.15.35 20 Feb 2006 SCAN STO DEL
+CALL A ABC 1 DEF 2 GHI 3
+1- Vous sélectionnez
+le menu appel MEN DW
+16 RECEIVED B JKL 4 MN 5 OPQ 6
+(Appui sur la touche
+"CALL")
+ADD BOOK C RST 7 UV 8 WX 9
+SHIFT FUNC P
+SETUP D YZ 0 16
+ON/OFF Sq VO DISTRESS
+L
+33
+
+Time : 18.15.35 SCAN STO DEL
+2- Vous sélectionnez 20 Feb 2006 DISTRESS A ABC 1 DEF 2 GHI 3
+le format DISTR ESS
+MEN DW
+Select type of Call : INDIVIDUAL B JKL 4 MN 5 OPQ 6
+ALL SHIPS C RST 7 UV 8 WX 9
+SHIFT FUNC P
+CANCEL D YZ 0 16
+VO DISTRESS
+ON/OFF Sq
+L
+Time : 18.15.35 SCAN STO DEL
+3- Le système vous 20 Feb 2006 ACCEPT A ABC 1 DEF 2 GHI 3
+demande de choi sir un
+UNDESIGNATED MEN DW
+type de détresse FIRE, EXPLOSION B JKL 4 MN 5 OPQ 6
+FLOODING
+GROUNDING C RST 7 UV 8 WX 9
+4- Vous sélectionnez LISTING
+FLOODING (voie d'eau) SINKING SHIFT FUNC P
+MORE D YZ 0 16
+VO DISTRESS
+ON/OFF Sq
+L
+5- La VHF affiche le
+message et vous Time : 18.15.35 SCAN STO DEL
+20 Feb 2006 SEND A ABC 1 DEF 2 GHI 3
+demande de le corriger
+ou de l'envoyer : MEN DW
+CANCEL - SEND Type : DISTRESS B JKL 4 MN 5 OPQ 6
+MSG : Flooding
+Position : N : 43 13 E : 006 18 C RST 7 UV 8 WX 9
+6- Vous sélectionnez Time : 18 : 15
+envoyer SEND SHIFT FUNC P
+CANCEL D YZ 0 16
+VO DISTRESS
+ON/OFF Sq
+L
+1.2 Accusé de réception d’une alerte de détresse
+L’accusé de réception d'une alerte de détresse ASN est, en règle générale, effectué par une
+station côtière, en ASN, sur la même voie que la détresse (70) et immédiatement.
+Le format employé est toujours "ALL SHIPS" (appel à tous les navires).
+34
+
+• Attente d’accusé de réception
+Situation :
+- vous avez envoyé une alerte de détresse suivant la méthode 2 précédente
+- votre VHF affiche :
+Waiting for 16
+Distress
+Vous êtes en attente d’un accusé de Acknowledgment
+réception, l’alerte de détresse sera
+Retransmit distress
+renouvelée automatiquement toutes les
+call every 4 minutes
+quatre minutes.
+• Réception d’accusé de réception
+Situation :
+- vous recevez un accusé de réception d’une station qui a reçu votre alerte de détresse
+- alarme sonore
+Distress
+Acknowledgment
+- votre VHF affiche :
+Received
+From : 002275140
+Action :
+1 - dès que vous avez reçu l’accusé de réception, la réémission de l’alerte de détresse est
+stoppée
+Time : 18.17.06 10 oct 03
+Type : All Stations
+From : 002275140
+2 - vous stoppez l’alarme sonore Cat : Distress
+ACK : Call
+et lisez le message reçu :
+Telecom : Distress Ackn
+Ship : 227132120
+MSG : Flooding
+Position : N : 43 13 E : 006 18
+3 - vous sélectionnez la voie 16 :
+4 - vous transmettez votre message de détresse en téléphonie (voir exemple au paragraphe
+1.4 de la page suivante).
+1.3 Réception d’une alerte de détresse
+Situation :
+- vous êtes à bord du navire MISTRAL, indicatif FH2827, MMSI 227 150 630 et vous
+recevez une alerte de détresse.
+Distress
+- la réception d’une alerte de détresse Call
+est signalée par une alarme sonore,
+Received
+votre VHF affiche :
+From : 227132120
+Action :
+Time : 18.15.09 10 oct 03
+- vous stoppez l’alarme sonore et
+vous lisez le message reçu, votre Type : Distress
+VHF affiche : From : 227132120
+MSG : Flooding
+Position : N : 43 13 E : 006 18
+Time : 18 : 15 35
+
+1er Cas : une station côtière accuse réception avant le renouvellement de l’alerte,
+Distress
+Acknowledgment
+1 - votre VHF affiche : Received
+From : 002275140
+Time : 18.17.06 10 oct 03
+2 - vous stoppez l’alarme sonore et Type : All Stations
+From : 002275140
+vous lisez le message reçu, votre VHF
+Cat : Distress
+affiche : ACK : Call
+Tel : Distress Ackn
+Ship : 227132120
+MSG : Flooding
+Position : N : 43 13 E : 006 18
+3 - vous sélectionnez la voie 16 :
+4 - vous écoutez le message de détresse.
+2éme Cas : aucune station n’accuse réception avant le renouvellement de l’alerte,
+Time : 18.15.09 10 oct 03
+1 - votre VHF affiche après la réception
+Type : Distress
+de la deuxième alerte : From : 227132120
+MSG : Flooding
+Position : N : 43 13 E : 006 18
+Time : 18 : 15
+2 - si vous possédez une VHF ASN de classe A ou B, vous
+accusez réception du message de détresse sur la voie 70.
+Sinon, vous sélectionnez la voie 16 :
+- vous écoutez le message de détresse
+- vous accusez réception du message en téléphonie.
+1.4 Traitement des alertes de détresse
+• Message de détresse
+Règle : À la réception d’un accusé de réception par ASN de l'alerte de détresse, le navire en
+détresse doit commencer le message de détresse sur la voie 16.
+Etapes du message Exemple
+Début du message en téléphonie MAYDAY (une seule fois)
+Identification du navire : nom, MMSI, indicatif ICI voilier SIRIUS / 2 2 7 1 5 9 2 8 0 / FH2827
+et toute autre identification
+Position Position à 11h00 locales 43 00 N 06 00 E
+Nature de la détresse et de l’assistance
+Navire en feu demande assistance immédiate
+demandée
+Toute autre information susceptible de Voilier coque bleue – 4 personnes à bord
+faciliter le sauvetage
+Fin du message A vous
+• Trafic de détresse
+À la suite de ces prises de contact, suivra le trafic de détresse sur la voie 16 ; chaque message
+aura en préambule : MAYDAY (une seule fois).
+36
+
+• Relais d’alerte de détresse
+Les stations côtières peuvent, après avoir accusé réception d'une alerte de détresse, émettre un
+relais d’alerte de détresse adressé, selon les cas :
+(cid:1) à tous les navires évoluant dans une zone géographique donnée
+(cid:1) à un groupe de navires
+(cid:1) à un navire particulier.
+La station côtière ayant fait parvenir les informations concernant la détresse au Centre de
+sauvetage (MRCC) associé, devra, à la demande de ce dernier, émettre un relais de détresse,
+adressé à tous les navires (ALL SHIPS)
+Exemple :
+Time : 11.13.06 14 nov 03
+Type : ALL SHIPS
+Cat : DISTRESS
+From : 002275410
+Telecom : DISTRESS RELAY
+Ship : 227625140
+MSG : FIRE
+Position : N 4300 E 06 00
+1.5 Communications sur site
+Ce sont les communications échangées entre les naufragés et les navires ou les aéronefs sur la
+zone de la détresse.
+Ces communications s’effectuent en téléphonie et en VHF.
+Les voies utilisées sont la voie 16 pour le trafic de détresse et la voie 6 ou une voie simplex
+navire - navire pour les communications de moindre importance.
+Il existe des émetteurs portatifs VHF destinés à être utilisés dans les embarcations de
+sauvetage et répondant à des normes techniques spécifiques
+Ce sont les VHF portatives SMDSM qui doivent être, notamment, parfaitement étanches.
+1.6 Coordination SAR
+Les opérations de recherche et de sauvetage de personne en détresse en mer, quel que soit le
+lieu, seront coordonnées par une ou plusieurs organisations SAR agissant en coopération.
+Tout navire en détresse doit appeler systématiquement un centre de coordination de recherche
+et de sauvetage maritime (MRCC), élément central de l’organisation SAR, directement ou
+indirectement via une station côtière.
+Il devra envoyer également le message aux navires susceptibles de se trouver au voisinage en
+utilisant des techniques de transmission automatique (ASN).
+Le MRCC répercutera l’appel et dirigera les navires vers le lieu de la détresse, directement ou
+via une station côtière.
+Le MRCC évaluera tous les renseignements qu’il a en sa possession3 de façon à déterminer la
+phase d’urgence ainsi que l’ampleur des opérations de recherche et de sauvetage nécessaires.
+Il existe trois phases d’urgence :
+(cid:1) la phase d’incertitude lorsqu’un navire n’est pas arrivé à destination ou n’a pas signalé sa
+position comme prévu
+3 Lors de toute demande ou modification de licence, des données nominatives (téléphone, nom, prénom, contacts,…)
+et des informations relatives au navire (immatriculation, matériel de bord, longueur,…) sont communiquées par le
+titulaire à l'Anfr. Ces données sont consultables par les centres de secours et facilitent l'identification en cas d'appel
+de détresse.
+37
+
+(cid:1) la phase d’alerte lorsque les tentatives de contact ont échoué où que les informations
+laissent penser que le navire est en difficulté sans toutefois conduire à un cas de détresse
+(cid:1) la phase de détresse lorsque les renseignements reçus indiquent que le navire est en
+détresse ou lorsque les tentatives de contact sont restées sans résultat.
+2. Communications d'urgence en VHF ASN
+Les radiocommunications d’urgence ont priorité sur toutes les autres communications sauf
+celles de détresse. Elles se déroulent en deux étapes : l’annonce d’urgence émise par appel
+sélectif numérique puis l’appel et le message d’urgence émis en radiotéléphonie.
+2.1 L’annonce d’urgence
+L’annonce d’urgence est effectuée au moyen de l’ASN sur la voie 70. Elle peut être adressée à
+tous, à une station particulière ou à tous les navires dans une zone déterminée.
+Exemple : Type : ALL SHIPS
+Cat : URGENCY
+Ship : 227049330
+Telecom1 : ****
+Telecom2 : CH16
+2.2 L’appel et le message d’urgence
+Les navires et les stations côtières qui reçoivent, par ASN, une annonce d’urgence adressée à
+tous, n’accusent pas réception de l’annonce mais passent à l’écoute de la voie 16 pour recevoir
+l’appel et le message qui prendront la forme suivante :
+PAN PAN (3 fois)
+A TOUS / ALL STATIONS (3 fois)
+ICI / THIS IS
+Nom du navire (3 fois)
+Indicatif d’appel ou toute autre identification, MMSI (une
+fois)
+Texte du message d’urgence (voir partie radiotéléphonie)
+3. Communications de sécurité en VHF ASN
+Les radiocommunications de sécurité ont priorité sur toutes les autres communications sauf
+celles de détresse et d’urgence. Elles se déroulent en deux étapes : l’annonce de sécurité émise
+par appel sélectif numérique puis l’appel et le message de sécurité émis en radiotéléphonie.
+3.1 L’annonce de sécurité
+L’annonce de sécurité est effectuée au moyen de l’ASN sur la voie 70. Elle peut être adressée à
+tous, à une station particulière ou à tous les navires dans une zone déterminée.
+Exemple : Type : ALL SHIPS
+Cat : SAFETY
+Ship : 227049330
+Telecom1 : ****
+Telecom2 : CH1
+38
+
+3.2 L’appel et le message de sécurité
+Les navires et les stations côtières qui reçoivent, par ASN, une annonce de sécurité adressée à
+tous, n’accusent pas réception de l’annonce mais passent à l’écoute de la voie associée (voie 1
+dans l’exemple ci-dessus) afin de recevoir l’appel et le message qui prendront la forme
+suivante :
+SECURITE (3 fois)
+A TOUS / ALL STATIONS (3 fois)
+ICI / THIS IS
+Nom du navire (3 fois)
+Indicatif d’appel ou toute autre identification, MMSI (une fois)
+Texte du message de sécurité (voir partie radiotéléphonie)
+39
+
+C. Protection des fréquences de détresse
+1. Comment éviter les interférences préjudiciables
+1.1 Eviter l’émission de fausses alertes de détresse
+Les navires assurant les fonctions du SMDSM doivent se conformer aux directives destinées à
+éviter les fausses alertes de détresse (Résolution A814 (19) de l'OMI).
+Le matériel utilisé doit être installé de manière à ce qu’il ne soit pas possible de déclencher une
+alerte de détresse accidentellement.
+Des instructions claires et précises sur l’utilisation du matériel doivent être fournies par le
+fabricant ou revendeur et être disponibles à proximité des équipements radioélectriques.
+Les utilisateurs doivent être familiarisés avec le fonctionnement des équipements installés à
+bord, avoir une parfaite connaissance du SMDSM, posséder les certificats requis pour faire
+fonctionner les équipements et savoir prendre toutes les mesures afin d’annuler une fausse
+alerte de détresse et de communiquer avec le MRCC par n’importe quel moyen.
+Des poursuites sont prévues à l’encontre des personnes responsables intentionnellement ou
+par négligence de l’émission de fausses alertes de détresse.
+1.2 État de la voie 70
+L’équipement VHF ASN doit pouvoir assurer une veille efficace sur la voie 70.
+2. Émissions au cours du trafic de détresse
+Toute station entendant une communication de détresse doit cesser immédiatement toute
+émission susceptible de troubler le trafic de détresse et rester en veille sur la fréquence
+d’émission de cette détresse.
+3. Comment empêcher les émissions non autorisées
+Il faut éviter les brouillages sur les fréquences de détresse et de sécurité.
+L’occupation abusive des fréquences de détresse et de sécurité pour des usages autres
+constitue un brouillage préjudiciable, assimilable à une perturbation des fréquences
+radioélectriques.
+Toute émission pouvant causer des brouillages préjudiciables aux communications de détresse,
+d’urgence ou de sécurité sur les fréquences 156,525 MHz (voie 70) et 156,800 MHz (voie 16)
+est interdite.
+Afin de faciliter la réception des appels de détresse, toutes les émissions sur la fréquence
+156,800 MHz (voie 16) doivent être réduites au minimum et ne pas dépasser une minute.
+4. Protocoles et procédures d’essais
+4.1 Essai de l’équipement ASN
+Aucun essai de transmission radiotéléphonique ne doit être effectué sur la voie d’appel ASN en
+ondes métriques (voie 70).
+Il faut utiliser la fonction test interne disponible dans le menu du logiciel.
+Lorsque cela est possible, il est recommandé de faire un essai de transmission ASN avec une
+station côtière ou un autre navire en appel de routine, format individuel.
+4.2 Procédures d’essai en radiotéléphonie
+Le nombre et la durée des émissions d’essai doivent être réduites au minimum sur la voie 16 ; il
+convient, chaque fois que cela est possible, qu'elles soient réalisées sur des antennes
+artificielles et avec une puissance réduite.
+40
+
+Avant d’émettre sur l’une quelconque des fréquences définies pour le trafic de détresse et de
+sécurité, une station doit écouter sur la fréquence envisagée afin d’être certaine qu’aucune
+émission de détresse n’est en cours et que la station appelée n’est pas en communication avec
+une autre station.
+5. Bandes de garde VHF.
+Toute émission effectuée dans la bande 156,7625 - 156,8375 MHz et pouvant causer des
+brouillages préjudiciables aux émissions autorisées des stations du service mobile maritime sur
+156,800 MHz (voie 16) est interdite. De même, toutes les précautions doivent être prises pour
+ne pas causer de brouillage préjudiciable à la voie 70 lorsqu’on utilise les voies 10 et 11.
+6. Procédures à suivre en cas d’émission d’une fausse alerte de détresse.
+Une fausse alerte de détresse émise par ASN en ondes métriques, doit être annulée par ASN si
+l’équipement le permet. Dans tous les cas, les annulations doivent être transmises par
+radiotéléphonie sur la voie 16 :
+Exemple :
+en français en anglais
+A TOUS, A TOUS, A TOUS ALL STATIONS, ALL STATIONS, ALL
+STATIONS
+ICI THIS IS
+NOM du navire (3 fois)
+INDICATIF D’APPEL (une fois)
+MMSI (si alerte par ASN)
+Veuillez annuler mon alerte de
+Please cancel my distress alert of …
+détresse de ….
+DATE, HEURE (UTC)
+- rester en veille sur la voie 16 et répondre aux communications concernant cette alerte de
+détresse, le cas échéant.
+41
+
+D. Renseignements sur la Sécurité Maritime (RSM) dans le SMDSM
+1. Le système NAVTEX
+(© SHOM 2004)
+NAVTEX est un système de diffusion et de réception automatique des RSM au moyen de la
+télégraphie à impression directe à bande étroite.
+Il permet aux navires équipés d’un récepteur spécifique de recevoir automatiquement, sous
+forme imprimée ou sur écran, des alertes de détresse ainsi que des avertissements de
+navigation (AVURNAV) et de météorologie (BMS).
+Il est assuré sur une fréquence unique suivant le service désigné :
+- sur 518 kHz en langue anglaise (service NAVTEX international)
+- sur 490 kHz en langue nationale dans certains pays (services NAVTEX nationaux)
+- sur 4209,5 kHz en ondes décamétriques (service réservé aux zones tropicales).
+La portée des émissions NAVTEX varie de 250 à 400 milles, ce qui limite le système à la
+zone A2.
+• C’est un système d’émissions coordonnées
+Du fait de la fréquence unique utilisée et afin de réduire au minimum les possibilités de
+brouillages entre les stations émettrices à l’intérieur d’une même zone (NAVAREA)4, le groupe
+de coordination NAVTEX de l’Organisation Maritime Internationale veille au respect de la
+distance séparant chaque émetteur et lui attribue un caractère d’identification ; en outre, les
+stations diffusent les messages à tour de rôle suivant un plan d’attribution des horaires
+d’émission
+Les différentes stations NAVTEX fonctionnent à tour de rôle, durant 10 minutes toutes les
+4 heures.
+• C’est un système de réception automatique
+Disposant d’un microprocesseur, d’un décodeur et d’une imprimante intégrés (ou d’un écran),
+les récepteurs NAVTEX permettent à l’opérateur de sélectionner les stations émettrices, de
+recevoir automatiquement les types de messages correspondant exactement à ses besoins, de
+rejeter les messages qui n’intéressent pas le navire et d’identifier ceux qui, en raison de leur
+importance, ne peuvent pas être rejetés.
+4 NAVAREA : abréviation désignant une zone du service mondial d'avertissements de navigation.
+42
+
+Ainsi, les catégories suivantes ne peuvent pas être rejetées :
+- avertissements de navigation (AVURNAV)
+- avertissements météorologiques (BMS)
+- renseignements concernant la recherche et le sauvetage.
+À noter qu’un message reçu correctement ne peut pas faire l’objet d’une nouvelle
+impression.
+En France, le service NAVTEX est assuré par les CROSS La Garde et Corsen.
+Depuis le 1er janvier 2001 ces mêmes organismes diffusent un service NAVTEX national en
+langue française sur la fréquence 490 kHz.
+2. Le système SafetyNET
+(© SHOM 2004)
+C'est un service d'émissions coordonnées et de réception automatique de renseignements sur
+la sécurité maritime, assuré en langue anglaise, dans le cadre du système d’Appel de Groupe
+Amélioré (AGA, en anglais EGC : Enhanced Group Call) d’Inmarsat.
+Reposant sur l’utilisation des satellites géostationnaires d'Inmarsat, il permet la desserte de la
+quasi-totalité des eaux navigables du globe, et notamment les zones non couvertes par le
+service NAVTEX international.
+SafetyNET permet la diffusion de messages à tous les navires naviguant à l’intérieur de zones
+géographiques déterminées.
+Cette possibilité d’émission dans une zone géographique définie est particulièrement utile pour
+la retransmission d’une alerte de détresse station côtière-navire à l’intention de navires se
+trouvant à proximité d’un accident ou pour la diffusion d’un avis de coup de vent local (avis de
+tempête).
+Le système permet la diffusion de messages codés en fonction de leur priorité : détresse,
+urgence, sécurité et routine.
+La zone océanique desservie par le satellite étant étendue, il s’avère utile (et même nécessaire)
+de sélectionner les messages à imprimer et de pouvoir rejeter tous ceux qui sont sans intérêt
+pour le navire à l’exclusion des alertes de détresse et des avertissements concernant la
+météorologie et la navigation. En outre, chaque message étant caractérisé par un indicatif
+différent, sa réimpression demeure impossible.
+Selon les prescriptions de l’OMI, le récepteur AGA (récepteur spécifique ou intégré, en général,
+à une installation Inmarsat C) doit être en mesure de recevoir les renseignements sur la sécurité
+maritime pendant au moins 98 % du temps.
+Une alarme sonore et visuelle, ne pouvant être désactivée que manuellement (après lecture de
+l’information), indique la réception en cours d’un message de détresse ou d’urgence.
+43
+
+E. Signaux d’alerte et de localisation dans le SMDSM
+1. Radiobalises de localisation des sinistres (RLS, en anglais EPIRB :
+Emergency Position Indicating Radio Beacon)
+Depuis le 1er décembre 2006, il n’existe plus qu’un seul système de RLS par satellite : le
+système COSPAS-SARSAT ; le système Inmarsat E, peu répandu, a été abandonné.
+1.1 Enregistrement et codage
+Le codage des radiobalises COSPAS-SARSAT est effectué par un professionnel (installateur en
+radiocommunications, revendeur). En France, c'est le MMSI du navire sur lequel la balise sera
+installée qui est utilisé pour le codage. Aussi, toute RLS doit faire l'objet d'une demande
+d’autorisation auprès de l'ANFR qui délivre MMSI et licence, s'il s'agit d'une première
+installation, ou met à jour la licence existante dans le cas d'une adjonction de matériel.
+1.2 Fonctionnement des balises COSPAS-SARSAT
+Elles existent sous deux versions :
+- balise de survie : portable, avec mise en marche manuelle
+- balise de pont : logée dans un conteneur muni d’un largueur
+hydrostatique, pouvant être mise en marche manuellement ou
+automatiquement.
+Que les balises soient de pont ou de survie, elles transmettent, via
+satellite, une alerte de détresse à destination de stations au sol (LUT :
+Local User Terminal) reliées à des centres de contrôle et de mission
+(MCC) qui valident et distribuent les données d’alerte aux centres de
+sauvetage compétents. En France, le MCC de Toulouse retransmet
+les données d'alerte aux centres de coordination du sauvetage
+concernés (CROSS Gris-Nez pour la métropole).
+Elles fonctionnent sur les fréquences 406 MHz (406,025 ou 406,028
+MHz) et 121,5 MHz5, ce qui permet aux satellites de les identifier et
+de les localiser et aux navires sauveteurs de les repérer en phase
+finale d’approche (radioralliement).
+De couleur jaune ou orange pour faciliter le repérage visuel, étanches à une profondeur de
+10 mètres, elles doivent pouvoir fonctionner pendant 48 heures et être éjectées
+automatiquement de leur conteneur à moins de 4 m de profondeur (RLS de pont).
+La précision de la localisation est de l’ordre de un à deux milles, le temps moyen d’attente de la
+localisation variant en fonction de la latitude de la détresse.
+De plus en plus de balises intègrent désormais un récepteur GPS qui permet d’améliorer la
+localisation.
+1.3 Montage
+La balise devra :
+- dans le cas d'un modèle de pont, être montée sur un support solidaire du pont, se dégager
+librement par un système de largage automatique si le navire coule et se déclencher seule
+- dans le cas d'un modèle de survie, être installée dans le poste de navigation et pouvoir être
+portée par une personne à bord d’une embarcation ou d’un radeau de sauvetage. Elle sera
+déclenchée manuellement.
+5 Pour les navires de plaisance, il existe des modèles à une seule fréquence (406,025 MHz).
+44
+
+1.4 Maintenance
+• Essais
+Un bouton de test incorporé permet d’effectuer des essais sur certains types de RLS, sans
+risque de rayonnement. Une visualisation du fonctionnement est souvent intégrée à la balise
+(émission de flashes).
+• Vérification de la date d’expiration de la batterie
+Le carnet d’entretien de la radiobalise mentionne la date de péremption de la batterie. En outre
+cette dernière est clairement inscrite de manière indélébile sur le corps de la radiobalise. La
+durée de conservation de la batterie varie de quatre à cinq ans en général.
+• Contrôle de la balise
+Il est recommandé de procéder régulièrement à un contrôle de la balise et, éventuellement, de
+son largueur hydrostatique.
+2. Répondeur radar de recherche et sauvetage (SART : Search and Rescue
+radar Transponder).
+(© SHOM 2004)
+2.1 Fonctionnement
+Le répondeur radar est un dispositif récepteur/émetteur automatiquement activé par les
+émissions de tout radar se trouvant dans son voisinage et fonctionnant dans la bande de
+fréquences comprise entre 9200 MHz et 9500 MHz. Il émet, dès réception d’une impulsion
+radar, des signaux caractéristiques apparaissant sur l’écran radar du navire qui l’interroge sous
+la forme d’une série de douze traits régulièrement espacés (trace lumineuse) reconnue
+internationalement comme signal de détresse SAR.
+2.2 Portée d’un émetteur SART
+La portée du SART est d’environ 5 à 10 milles, suivant la hauteur de fonctionnement.
+45
+
+F. Communications de correspondance publique par ASN
+La voie 70, utilisée pour les communications de détresse et de sécurité, peut l’être aussi pour
+les communications de correspondance publique (communication téléphonique avec le réseau
+terrestre commuté par exemple).
+Un appel de correspondance publique à destination d’une station côtière est émis de la façon
+suivante :
+- régler l’émetteur sur la voie 70
+- sélectionner le menu appel
+- sélectionner le format "INDIVIDUAL"
+- composer le MMSI de la station appelée "002050480"
+- sélectionner la catégorie d’appel "ROUTINE"
+- sélectionner la télécommande 1 "DUPLEX"
+- sélectionner la télécommande 2 "no info"
+- éventuellement choisir une voie de trafic "CH 25"
+- éventuellement demander un accusé de réception "Request".
+Time : 09.14.06 15 oct 03
+Type : Individual
+To : 002050480
+Cat : Routine
+La VHF affiche :
+COMM : Duplex
+Tél 2 : No Info
+AD : CH 25
+ACKN : RQ
+SEND CANCEL
+- émettre l’appel "SEND".
+Le message est envoyé. La VHF passe en attente d’accusé de réception (cet appel peut être
+répété si aucun accusé de réception n’est reçu dans les 5 minutes).
+La station côtière adresse au navire, par ASN, un accusé de réception lui précisant la voie de
+trafic à utiliser.
+L’opérateur à bord du navire doit dans ce cas :
+- régler l’équipement VHF sur la voie indiquée
+- commencer la communication sur cette voie sous la forme suivante :
+1. MMSI ou identification de la station appelée
+2. Ici
+3. MMSI ou indicatif d’appel ou identification du navire appelant.
+46
+
+A M P
+NNEXES AU ANUEL DE REPARATION
+A L'EXAMEN DU
+CERTIFICAT RESTREINT DE RADIOTELEPHONISTE
+DU SERVICE MOBILE MARITIME
+(SHORT RANGE CERTIFICATE)
+Tous les droits de traduction, d'adaptation et de reproduction par tous procédés connus et inconnus à ce jour sont
+réservés à l'Agence Nationale des Fréquences pour tous pays. Seules sont autorisées les reproductions intégrales ou
+partielles réservées à l'usage privé du copiste et les courtes citations conformément aux dispositions du code de la
+propriété intellectuelle. Toute autre reproduction ou représentation intégrale ou partielle, par quelque procédé que ce
+soit, des pages du présent fascicule, faite sans l'autorisation de l'Agence Nationale des Fréquences, est illicite et
+constitue une contrefaçon.
+La rédaction de ce manuel a été dirigée par D. Hubert, en relation avec la mission Communication (info@anfr.fr)
+et la section certificats.
+Crédits photographiques : pp. A8, A9 et A10 : « © SHOM 2004 – Extraits de l’ouvrage Radiocommunications
+maritimes – 924 – RNA – Autorisation de reproduction n°50/2004».
+A1
+
+Table des matières
+ANNEXE 1 : EXTRAITS DE LA REGLEMENTATION FRANÇAISE APPLICABLE (SOURCE : www.legifrance.gouv.fr).A3
+ANNEXE 2 : TABLE D’EPELLATION DE L’ALPHABET PHONETIQUE INTERNATIONAL..............................................A5
+ANNEXE 3 : AFFECTATION DES VOIES VHF DU SERVICE MOBILE MARITIME EN FRANCE....................................A6
+ANNEXE 4 : LISTE DES MID (MARITIME IDENTIFICATION DIGITS) ATTRIBUES A LA FRANCE................................A7
+ANNEXE 5 : ZONES OCEANIQUES D’EUROPE OCCIDENTALE...................................................................................A8
+ANNEXE 6 : ZONE DE COUVERTUE INMARSAT............................................................................................................A9
+ANNEXE 7 : LEXIQUE FRANÇAIS-ANGLAIS (VOCABULAIRE NORMALISE DE L’OMI ; EXTRAITS)........................ A11
+ANNEXE 8 : GLOSSAIRE DES PRINCIPAUX SIGLES ET ABREVIATIONS RADIOMARITIMES..................................A13
+ANNEXE 9 : LES DIFFERENTES CLASSES D’ASN.......................................................................................................A15
+ANNEXE 10 : FORMAT DES SEQUENCES D’APPEL ASN...........................................................................................A16
+ANNEXE 11 : NOTIONS ELEMENTAIRES SUR LES BATTERIES AU PLOMB.............................................................A17
+ANNEXE 12 : RADIOTELEPHONIE FLUVIALE...............................................................................................................A19
+ANNEXE 13 : EXEMPLE DE QUESTIONS D’EXAMEN..................................................................................................A20
+Il n’y a pas dans l’examen de questions concernant ces annexes (sauf annexe 7), il est
+néanmoins conseillé de consulter ces informations.
+A2
+
+ANNEXE 1
+EXTRAITS DE LA REGLEMENTATION FRANÇAISE APPLICABLE (SOURCE : www.legifrance.gouv.fr)
+CODE PENAL
+Article 226-15 (Protection du secret des correspondances)
+(Ordonnance nº 2000-916 du 19 septembre 2000 art. 3 Journal Officiel du 22 septembre 2000 en
+vigueur le 1er janvier 2002)
+Le fait, commis de mauvaise foi, d'ouvrir, de supprimer, de retarder ou de détourner des
+correspondances arrivées ou non à destination et adressées à des tiers, ou d'en prendre
+frauduleusement connaissance, est puni d'un an d'emprisonnement et de 45000 euros d'amende.
+Est puni des mêmes peines le fait, commis de mauvaise foi, d'intercepter, de détourner, d'utiliser
+ou de divulguer des correspondances émises, transmises ou reçues par la voie des
+télécommunications ou de procéder à l'installation d'appareils conçus pour réaliser de telles
+interceptions.
+CODE DES POSTES ET DES COMMUNICATIONS ELECTRONIQUES
+Article L39-1 (Dispositions pénales pour défaut de licence)
+(Loi nº 90-1170 du 29 décembre 1990 art. 1 et 9 Journal Officiel du 30 décembre 1990)
+(Loi nº 92-1336 du 16 décembre 1992 art. 322 Journal Officiel du 23 décembre 1992 en vigueur le
+1er mars 1994)
+(Loi nº 96-659 du 26 juillet 1996 art. 9 Journal Officiel du 27 juillet 1996)
+(Ordonnance nº 2001-670 du 25 juillet 2001 art. 25 Journal Officiel du 28 juillet 2001)
+(Loi nº 2004-575 du 21 juin 2004 art. 35 VI Journal Officiel du 22 juin 2004)
+(Loi nº 2004-669 du 9 juillet 2004 art. 19 Journal Officiel du 10 juillet 2004)
+Est puni de six mois d'emprisonnement et de 30000 euros d'amende le fait :
+1º De maintenir un réseau indépendant en violation d'une décision de suspension ou de retrait du
+droit d'établir un tel réseau
+2º De perturber, en utilisant une fréquence, un équipement ou une installation radioélectrique,
+dans des conditions non conformes aux dispositions de l'article L. 34-9 ou sans posséder
+l'autorisation prévue à l'article L. 41-1 ou en dehors des conditions réglementaires générales
+prévues à l'article L. 33-3, les émissions hertziennes d'un service autorisé, sans préjudice de
+l'application de l'article 78 de la loi nº 86-1067 du 30 septembre 1986 relative à la liberté de
+communication
+3º D'utiliser une fréquence, un équipement ou une installation radioélectrique dans des
+conditions non conformes aux dispositions de l'article L. 34-9 ou sans posséder l'autorisation
+prévue à l'article L. 41-1 ou en dehors des conditions réglementaires générales prévues à
+l'article L. 33-3
+4º De commercialiser ou de procéder à l'installation d'appareils conçus pour rendre inopérants
+les téléphones mobiles de tous types, tant pour l'émission que pour la réception, en dehors des
+cas prévus à l'article L. 33-3.
+Article L39-5 (Dispositions pénales pour récidive au défaut de licence)
+(Loi nº 90-1170 du 29 décembre 1990 art. 1 et 9 Journal Officiel du 30 décembre 1990)
+(Loi nº 96-659 du 26 juillet 1996 art. 9 Journal Officiel du 27 juillet 1996)
+En cas de récidive, les peines prévues aux articles L. 39 à L. 39-4 pourront être portées au
+double.
+Article L39-6 (Dispositions pénales pour défaut de licence)
+(Loi nº 90-1170 du 29 décembre 1990 art. 1 et 9 Journal Officiel du 30 décembre 1990)
+(Loi nº 96-659 du 26 juillet 1996 art. 9 Journal Officiel du 27 juillet 1996)
+(Loi nº 2004-669 du 9 juillet 2004 art. 19 Journal Officiel du 10 juillet 2004)
+En cas de condamnation pour l'une des infractions prévues aux articles L. 39 et L. 39-1, le
+tribunal pourra, en outre, prononcer la confiscation des matériels et installations constituant le
+réseau ou permettant la fourniture du service ou en ordonner la destruction aux frais du condamné
+A3
+
+et prononcer l'interdiction, pour une durée de trois années au plus, d'établir un réseau ouvert au
+public ou de fournir au public un service de communications électroniques.
+Article L39-7 (Appels et messages interdits)
+(inséré par Loi nº 2004-669 du 9 juillet 2004 art. 19 9º Journal Officiel du 10 juillet 2004)
+Toute personne qui, sciemment, transmet ou met en circulation, par la voie radioélectrique, des
+signaux ou appels de détresse, faux ou trompeurs, est punie d'un an d'emprisonnement et de
+3750 euros d'amende ou de l'une de ces deux peines seulement.
+Les appareils utilisés par le délinquant ou ses complices peuvent être confisqués.
+Article L39-8 (Usurpation d’indicatif d'appel)
+(inséré par Loi nº 2004-669 du 9 juillet 2004 art. 19 9º, 10º Journal Officiel du 10 juillet 2004)
+Toute personne qui effectue des transmissions radioélectriques en utilisant sciemment un
+indicatif d'appel de la série internationale attribué à une station de l'Etat, ou à une autre station
+autorisée, est punie d'un an d'emprisonnement.
+Article L41-1 (Dispositions générales sur la licence)
+(inséré par Loi nº 2004-669 du 9 juillet 2004 art. 21 I, II Journal Officiel du 10 juillet 2004)
+Sauf dans les cas mentionnés à l'article L. 33-3, l'utilisation de fréquences radioélectriques en
+vue d'assurer soit l'émission, soit à la fois l'émission et la réception de signaux est soumise à
+autorisation administrative.
+Est également soumise à autorisation administrative l'utilisation d'une installation radioélectrique
+en vue d'assurer la réception de signaux transmis sur les fréquences attribuées par le Premier
+ministre, en application de l'article L. 41, pour les besoins de la défense nationale ou de la sécurité
+publique.
+L'utilisation, par les titulaires d'autorisation, de fréquences radioélectriques disponibles sur le
+territoire de la République constitue un mode d'occupation privatif du domaine public de l'Etat.
+Article L42-4 (Dispositions générales sur les certificats d’opérateur)
+(inséré par Loi nº 2004-669 du 9 juillet 2004 art. 22 III Journal Officiel du 10 juillet 2004)
+Le ministre chargé des télécommunications détermine par arrêté les catégories d'installations
+radioélectriques d'émission pour la manœuvre desquelles la possession d'un certificat d'opérateur
+est obligatoire et les conditions d'obtention de ce certificat.
+Le ministre fixe également les modalités d'attribution et de retrait des indicatifs des séries
+internationales utilisées par les stations radioélectriques autorisées en application du présent code.
+Article D406-11 (Conformité du matériel radiomaritime)
+(inséré par Décret nº 2005-399 du 27 avril 2005 art. 8 II, III, IV, X Journal Officiel du 30 avril 2005)
+Les installations radioélectriques établies à bord des navires de commerce, de pêche ou de
+plaisance font l'objet d'une évaluation de leur conformité aux exigences essentielles,
+conformément aux articles L. 34-9, R. 20-1 et suivants.
+L'exploitant du réseau radiomaritime s'assure de la conformité de ces installations aux
+caractéristiques susvisées. Il est consulté sur les demandes d'autorisation temporaire d'usage
+d'installations déjà existantes à bord des navires. Lorsque l'installation d'un navire n'est pas
+conforme aux dispositions du présent article, l'exploitant du réseau peut refuser d'accepter les
+communications entre ses stations côtières et le navire en cause, à l'exception des
+communications de détresse et d'aide médicale.
+Article D406-12 (Obligations liées à l’exploitation d’une station de bord)
+(inséré par Décret nº 2005-399 du 27 avril 2005 art. 8 II, III, IV, XI Journal Officiel du 30 avril 2005)
+Les installations radioélectriques à bord des navires relèvent de l'autorité des capitaines. En
+aucun cas et pour aucun motif, une station de bord ne peut faire usage d'un indicatif d'appel autre
+que celui qui lui a été assigné.
+La manœuvre des installations de radiocommunications maritimes est effectuée par
+l'intermédiaire d'opérateurs titulaires du certificat visé à l'article L. 42-4.
+Les opérateurs d'installations radiomaritimes doivent respecter le secret des correspondances
+conformément à l'article L. 32-3.
+A4
+
+ANNEXE 2
+TABLE D'EPELLATION DE L'ALPHABET PHONETIQUE INTERNATIONAL
+(Appendice 14 du Règlement des radiocommunications)
+Lettre à
+Mot de code Prononciation du mot de code1
+transmettre
+A............ Alfa.................................. AL FAH
+B............ Bravo............................... BRA VO
+C............ Charlie............................. TCHAH LI ou CHAR LI
+D............ Delta................................ DEL TAH
+E............ Echo................................ ÈK O
+F............ Foxtrot............................. FOX TROTT
+G............ Golf................................. GOLF
+H............ Hotel................................ HO TÈLL
+I............. India................................ IN DI AH
+J............. Juliett............................... DJOU LI ÈTT
+K............ Kilo.................................. KI LO
+L............ Lima................................ LI MAH
+M........... Mike................................ MA ÏK
+N............ November........................ NO VÈMM BER
+O............ Oscar.............................. OSS KAR
+P............ Papa................................ PAH PAH
+Q............ Quebec............................ KÉ BEK
+R............ Romeo............................ RO MI O
+S............ Sierra.............................. SI ER RAH
+T............ Tango.............................. TANG GO
+U............ Uniform............................ YOU NI FORM ou OU NI FORM
+V............ Victor............................... VIK TAR
+W........... Whiskey........................... OUISS KI
+X............ X-ray............................... EKSS RÉ
+Y............ Yankee............................ YANG KI
+Z............ Zulu................................. ZOU LOU
+Chiffre ou signe à
+Mot de code Prononciation du mot de code2
+transmettre
+0............ Nadazero ......................... NAH-DAH-ZE-ROH
+1............ Unaone ............................ OU-NAH-OUANN
+2............ Bissotwo.............................B...IS-SO-TOU
+3............ Terrathree ....................... TÉ-RAH-TRI
+4............ Kartefour ......................... KAR-TE-FO-EUR
+5............ Pantafive ......................... PAN-TAH-FA-ÏF
+6............ Soxisix ............................. SOK-SI-SIKS
+7............ Setteseven ...................... SE-TE-SEV'N
+8............ Oktoeight ......................... OK-TOH-EÏT
+9............ Novenine ......................... NO-VE-NAÏ-NEU
+Virgule... Décimale.......................... Decimal DE-SI-MAL
+Point...... Stop ................................. STOP
+(Les stations d'un même pays peuvent utiliser, lorsqu'elles communiquent entre elles, une autre
+table établie par l'administration dont elles dépendent)
+1 Les syllabes accentuées sont soulignées
+2
+Toutes les syllabes sont pareillement accentuées
+A5
+
+ANNEXE 3
+AFFECTATION DES VOIES VHF DU SERVICE MOBILE MARITIME EN FRANCE
+Voies Mode Emission Réception Affectation
+60 D 156,0250 160,6250 CP - RRI
+1 D 156,0500 160,6500 CP - RRI
+61 D 156,0750 160,6750 CP - RRI
+2 D 156,1000 160,7000 CP - RRI
+62 D 156,1250 160,7250 CP - RRI
+3 D 156,1500 160,7500 CROSS et autorités portuaires
+63 D 156,1750 160,7750 CROSS et autorités portuaires
+4 D 156,2000 160,8000 CROSS et autorités portuaires
+64 D 156,2250 160,8250 CROSS et autorités portuaires
+5 D 156,2500 160,8500 Autorités portuaires
+65 D 156,2750 160,8750 CP - RRI
+6 S 156,3000 156,3000 Navire - Navire
+66 D 156,3250 160,9250 CP - RRI
+7 D 156,3500 160,9500 Marine Nationale
+67 S 156,3750 156,3750 CROSS
+8 S 156,4000 156,4000 Navire - Navire
+68 S 156,4250 156,4250 CROSS
+9 S 156,4500 156,4500 Ports de plaisance
+69 S 156,4750 156,4750 Marine Nationale (sémaphores)
+10 S 156,5000 156,5000 Marine Nationale
+70 S 156,5250 156,5250 ASN pour détresse, sécurité et appel
+11 S 156,5500 156,5500 Marine Nationale
+71 S 156,5750 156,5750 Marine Nationale (sémaphores)
+12 S 156,6000 156,6000 Autorités portuaires
+72 S 156,6250 156,6250 Navire - Navire
+13 S 156,6500 156,6500 CROSS et autorités portuaires
+73 S 156,6750 156,6750 Marine Nationale et autorités portuaires
+14 S 156,7000 156,7000 Marine Nationale et autorités portuaires
+74 S 156,7250 156,7250 Marine Nationale et Gendarmerie Maritime
+15 S 156,7500 156,7500 Surveillance des plages
+75 S 156,7750 156,7750 BANDE DE GARDE VOIE 16
+16 S 156,8000 156,8000 APPEL - DETRESSE – SECURITE
+76 S 156,8250 156,8250 BANDE DE GARDE VOIE 16
+17 S 156,8500 156,8500 Marine Nationale, Gendarmerie Maritime et Autorités portuaires
+77 S 156,8750 156,8750 Navire – Navire
+18 D 156,9000 161,5000 CP – RRI
+78 D 156,9250 161,5250 CP - RRI
+19 D 156,9500 161,5500 Autorités portuaires
+79 D 156,9750 161,5750 CROSS et autorités portuaires
+20 D 157,0000 161,6000 Autorités portuaires
+80 D 157,0250 161,6250 CROSS et autorités portuaires
+21 D 157,0500 161,6500 Autorités portuaires
+81 D 157,0750 161,6750 CP - RRI
+22 D 157,1000 161,7000 Autorités portuaires
+82 D 157,1250 161,7250 Marine Nationale et autorités portuaires
+23 D 157,1500 161,7500 CP – RRI et autorités portuaires
+83 D 157,1750 161,7750 Autorités portuaires
+24 D 157,2000 161,8000 CP - RRI
+84 D 157,2250 161,8250 CP - RRI
+25 D 157,2500 161,8500 CP - RRI
+85 D 157,2750 161,8750 Marine Nationale
+26 D 157,3000 161,9000 CP - RRI
+86 D 157,3250 161,9250 Marine Nationale
+27 D 157,3500 161,9500 CP - RRI
+87 S 157,3750 157,3750 CROSS
+28 D 157,4000 162,0000 CP - RRI
+88 S 157,4250 157,4250 CROSS
+AIS1 S 161,975 161,975 Ports (suivi automatique des navires)
+AIS2 S 162,025 162,025 Ports (suivi automatique des navires)
+voies duplex S : simplex / D : duplex
+voies simplex CP : correspondance publique
+voies de sécurité RRI : réseaux radioélectriques indépendants
+bande de garde ASN : Appel Sélectif Numérique
+AIS : Automatic Identification System
+CROSS : Centres Régionaux Opérationnels de Surveillance et de Sauvetage
+A6
+
+ANNEXE 4
+LISTE DES MID (MARITIME IDENTIFICATION DIGIT) ATTRIBUES A LA FRANCE
+• 226 : Métropole
+• 227 : Métropole
+• 228 : Métropole
+• 329 : Guadeloupe
+• 347 : Martinique
+• 361 : St Pierre et Miquelon
+• 501 : Terre Adélie
+• 540 : Nouvelle-Calédonie
+• 546 : Polynésie Française
+• 578 : Wallis et Futuna
+• 607 : Iles St Paul et Amsterdam
+• 618 : Archipel de Crozet et TAAF
+• 635 : Iles Kerguelen et navires inscrits au RIF (Registre
+International Français)
+• 660 : Réunion ; Mayotte
+• 745 : Guyane
+LISTE DES MMSI ATTRIBUES AUX CROSS
+• CROSS Gris-Nez : 00 227 5100
+• CROSS Jobourg : 00 227 5200
+• CROSS Corsen : 00 227 5300
+• CROSS Etel : 00 227 5000
+•
+CROSS La Garde : 00 227 5400
+A7
+
+ANNEXE 5
+ZONES OCEANIQUES D’EUROPE OCCIDENTALE
+(© SHOM 2004)
+A8
+
+(© SHOM 2004)
+A9
+
+ANNEXE 6
+ZONE DE COUVERTURE INMARSAT
+(© SHOM 2004)
+A10
+
+ANNEXE 7
+LEXIQUE FRANÇAIS - ANGLAIS (VOCABULAIRE NORMALISE DE L’OMI ; EXTRAITS)
+1. Détresse (Distress)
+En français En anglais
+Feu à bord ...........................................................I. .am on fire
+Demande assistance immédiate ..........................I. .require immediate assistance
+Voie d’eau............................................................F..looding
+Abordage........................................................... Collision
+Avarie...................................................................D..amage
+Echouement.........................................................G..rounding
+Le navire est échoué............................................T..he ship is aground
+Gîte......................................................................L..ist
+Je risque de chavirer............................................I. .am in danger of capsizing
+Navire en train de couler......................................S..inking
+Désemparé...........................................................D..isabled
+A la dérive ...........................................................A..drift
+Personne à la mer................................................P..erson overboard
+Ma position est.....................................................M..y position is…
+Je vais abandonner le navire................................I will abandon vessel
+J’ai transmis une alerte ASN................................I transmitted a DSC alert
+…personnes resteront à bord...............................…. persons will stay on board
+Attention !.............................................................W.. arning !
+Faire route vers la position…................................Proceed to position…
+Récupérer les survivants......................................P..ick up survivors
+Je viens vous porter assistance............................I. .am coming to your assistance
+Je compte vous atteindre à …heures...................I. .expect to reach you at…hours
+Envoyez un radeau !.............................................S..end a raft !
+Tirer une fusée.....................................................F..ire a rocket
+2. Urgence (Urgency)
+En français En anglais
+Je ne suis pas maître de ma manœuvre............. I am not under command
+J’ai des problèmes de machine/d’hélice............. I have problems with engine/propeller
+Appareil à gouverner.......................................... Steering gear
+Remorqueur....................................................... Tug
+Assistance médicale........................................... Medical assistance
+Consultation radiomédicale................................ Radio medical advice
+A11
+
+3. Sécurité (Safety)
+En français En anglais
+Avis de coup de vent.......................................... Gale warning
+Tempête............................................................. Storm
+Brume................................................................. Mist
+Bouée éteinte.................................................... Unlit buoy
+Mine/conteneur à la dérive................................. Mine/container adrift
+Navire abandonné sans feu................................ Derelict unlit vessel
+Epave dangereuse............................................. Dangerous wreck
+Prévision météo.................................................. Weather forecast
+Les navires doivent s’écarter de …..................... Vessels must keep clear of …
+4. Divers ( Miscellaneous)
+En français En anglais
+Je vous reçois........................................................I. .read you
+Gardez l’écoute sur….............................................S..tand by on …
+Chenal....................................................................F..airway
+Laisser le passage.................................................G..ive way
+Amarrer, mouiller....................................................T..o moor
+Indicatif................................................................ Call sign
+Je bats pavillon…...................................................M..y flag state is…
+Nœud (vitesse).......................................................K..not
+Ma vitesse est de 12, un-deux, nœuds...................M..y speed is 12, one-two, knots
+Heure prévue d’arrivée...........................................E..TA (Estimated Time of Arrival)
+Heure prévue de départ.........................................E..TD (Estimated Time of Departure)
+Tirant d’eau............................................................D..raft
+Franc-bord.............................................................F..reeboard
+Je fais route............................................................I. .am underway
+Au mouillage..........................................................A..t anchor
+Je vous reçois mal/1sur 5.......................................I. .read you bad/one
+Je vous reçois très bien/5 sur 5..............................I. .read you excellent/five
+Passez sur la voie…...............................................C..hange to channel…
+Je vais mouiller à …...............................................I. .will anchor at …
+Port d’escale..........................................................P..ort of call
+Votre poste d’amarrage est libre.............................Y..our berth is clear
+Je maintiens mon cap............................................I. .am keeping course
+A12
+
+ANNEXE 8
+GLOSSAIRE DES PRINCIPAUX SIGLES ET ABREVIATIONS RADIOMARITIMES
+AAIC Accounting Authority Identification Code (voir CIAC)
+ACK Acknowledgement message
+AGA Appel de Groupe Amélioré (voir EGC)
+ANFR Agence Nationale des Fréquences
+AIS Automatic Identification System
+AOR Atlantic Ocean Region (région de l’Océan Atlantique du réseau Inmarsat)
+ART Autorité de Régulation des Télécommunications
+ASN Appel Sélectif Numérique (voir DSC)
+AVURNAV AVis URgent aux NAVigateurs
+BMR Bulletin Météorologique Régulier
+BMS Bulletin Météorologique Spécial
+_________________________
+CES Coast Earth Station : station côtière du réseau Inmarsat ; voir STC
+CGO Certificat Général d'Opérateur (SMDSM) ; voir GOC
+CGR Centre de Gestion des Radiocommunications (ANFR)
+CIAC Code d’Identification de l’Autorité Comptable (voir AAIC)
+COSPAS KOsmicheskaya Sistyema Poiska Avariynych Sudov (KOSPAS) : système de localisation des
+navires en détresse par satellite (Russie) ; voir COSPAS-SARSAT
+COSPAS-SARSAT Programme international de coopération (USA, Canada, France, Russie) d’aide à la recherche
+et au sauvetage par RLS (voir ce mot)
+_________________________
+CRO Certificat Restreint d'Opérateur (SMDSM) ; voir ROC
+CROSS Centre Régional Opérationnel de Surveillance et de Sauvetage ; voir MRCC
+CRR Certificat Restreint de Radiotéléphoniste
+CSO Certificat Spécial d'Opérateur (voir LRC)
+_________________________
+D Duplex (voie)
+DSC Digital Selective Calling (voir ASN)
+DTS Droit de Tirage Spécial (voir SDR)
+_________________________
+E East / Est, longitude Est
+EGC Enhanced Group Call (voir AGA)
+EPIRB Emergency Position-Indicating Radio Beacon (voir RLS)
+_________________________
+GHz Gigahertz
+GMDSS Global Maritime Distress and Safety System (voir SMDSM)
+GOC General Operator’s Certificate (voir CGO)
+_________________________
+HF High Frequency ; hautes fréquences ; ondes courtes (3-30 MHz)
+HOMING Radiolocalisation
+Hz Hertz
+_________________________
+IDBE (télégraphie à) Impression Directe à Bande Etroite (voir NBDP)
+IMN Inmarsat Mobile Number (numéro d’appel de mobile Inmarsat)
+IMO International Maritime Organization (voir OMI)
+INMARSAT INternational MARitime SATellite organisation
+IOR Indian Ocean Region (région de l’Océan Indien du réseau Inmarsat)
+ITU International Telecommunication Union (voir UIT)
+_________________________
+kHz kilohertz
+_________________________
+MAYDAY signal international de détresse en radiotéléphonie
+MCC Mission Control Centre (Centre de Contrôle de Mission COSPAS-SARSAT)
+MED Marine Equipment Directive (directive européenne sur les équipements destinés aux navires
+soumis à la Convention SOLAS ; marquage “roue de gouvernail”)
+METAREA METeorological AREA ; système mondial de diffusion météo, dans lequel les océans sont
+divisés en 16 zones (voir NAVAREA)
+MF Medium Frequency ; ondes moyennes (300 kHz-3 MHz)
+MHz Megahertz
+A13
+
+MID Maritime Identification Digit (chiffre d’identification maritime, contenu dans le MMSI, désignant
+la nationalité du navire ou de la station côtière)
+MMSI Maritime Mobile Service Identity ; identité du service mobile maritime, identifiant unique de
+9 chiffres des navires et stations côtières
+MRCC Maritime Rescue Coordination Centre (centre de coordination du sauvetage maritime ; voir
+CROSS)
+MSI Maritime Safety Information (voir RSM)
+_________________________
+N North / Nord, latitude nord
+NAVAREA NAVigational AREA ; système mondial de diffusion des avertissements de navigation, dans
+lequel les océans sont divisés en 16 zones (voir METAREA)
+NAVTEX NAVigational TelEX ; système IBDE (voir ce mot) en MF de transmission des RSM (voir ce
+mot)
+NBDP Narrow Band Direct Printing ; télégraphie à impression directe à bande étroite (voir IDBE)
+_________________________
+OMI Organisation Maritime Internationale (voir IMO)
+_________________________
+PAN PAN signal international d’urgence en radiotéléphonie
+POR Pacific Ocean Region (région de l’Océan Pacifique du réseau Inmarsat)
+_________________________
+RCC Rescue Coordination Centre (centre de coordination du sauvetage)
+RLS Radiobalise de Localisation des Sinistres (voir EPIRB)
+ROC Restricted Operator’s Certificate (SMDSM) ; voir CRO
+RR Radio Regulations / Règlement des Radiocommunications (de l’UIT)
+RSM Renseignements sur la Sécurité Maritime (voir MSI)
+R&TTE (Directive on) Radio equipment & Telecommunications Terminal Equipment (directive
+européenne s’appliquant aux équipements radio à bord des navires non-SOLAS ; marquage
+“CE”)
+_________________________
+S Simplex (voie)
+S South / Sud, latitude sud
+SafetyNET service de diffusion de RSM (voir ce mot) d’Inmarsat
+SARSAT Search And Rescue Satellite-Aided Tracking ; système de localisation des navires en détresse
+par satellite (USA, Canada, France) ; voir COSPAS-SARSAT
+SART Search And Rescue radar Transponder (répondeur radar de recherche et sauvetage)
+SDR Special Drawing Rights (voir DTS)
+SECURITE signal international de sécurité en radiotéléphonie
+SES Ship Earth station ; station de navire du réseau Inmarsat (voir STN)
+SHOM Service Hydrographique et Océanographique de la Marine ; organisme chargé de l’information
+nautique et, notamment, de l’édition des AVURNAVs pour les zones de surveillance et
+sauvetage sous responsabilité française
+SMDSM Système Mondial de Détresse et de Sécurité en Mer (voir GMDSS)
+SOLAS (Convention on) Safety Of Life At Sea ; convention pour la sauvegarde de la vie humaine en
+mer
+SRC Short Range Certificate
+SRR Search and Rescue Region ; région de recherche et sauvetage
+STC Station Terrienne Côtière (par satellite) ; voir CES
+STN Station Terrienne de Navire (par satellite); vois SES
+SVH Sauvegarde de la Vie Humaine (en mer)
+_________________________
+UHF Ultra High frequency ; ondes décimétriques (300 MHz-3GHz)
+UIT Union Internationale des Télécommunications (voir ITU)
+UTC Universal Time Co-ordinated : temps universel coordonné (ex-GMT)
+_________________________
+VHF Very High frequency ; ondes métriques (30-300 MHz)
+_________________________
+W West / Ouest, longitude ouest
+A14
+
+ANNEXE 9
+LES DIFFERENTES CLASSES D’ASN
+La Recommandation UIT-R M.493-12 distingue aujourd’hui 4 classes d’équipements ASN.
+Celles-ci n’offrent pas toutes les mêmes fonctionnalités et sont destinées à des catégories de
+navires différents. Ainsi, les navires soumis à la Convention SOLAS doivent obligatoirement être
+équipés en classe A ou B. Par contre les autres navires sont libres de choisir la classe de leur
+choix.
+Concernant la détresse, les principales différences sont précisées dans le tableau ci-dessous.
+EMISSION RECEPTION
+Accusé de Accusé de
+réception Relais réception Relais
+Gamme Alerte de Alerte de
+Classe d’alerte de d’alerte de d’alerte de d’alerte de
+d’ondes détresse détresse
+détresse détresse détresse détresse
+A MF / HF /
+X X X X X X
+VHF
+B MF / VHF X X X X X X
+D VHF X X* X X X
+E MF / HF X X* X X X
+* : adressé à une station particulière uniquement
+A15
+
+ANNEXE 10
+FORMAT DES SEQUENCES D’APPEL ASN
+Les formats des séquences d’appel ASN sont donnés par la recommandation UIT R M 493-12. Les
+messages auront tous la même forme et s’enchaîneront de la même façon quelle que soit la VHF
+ASN utilisée. La connaissance des formats facilite l’utilisation de n’importe quelle VHF.
+Le message ASN est une succession de blocs codés, chaque bloc contenant une
+information particulière.
+A B C D E F
+Séquence de Spécificateur Auto
+Suite de points Adresse Catégorie
+calage de format identification
+G H I J K L M
+Fin de Contrôle
+Message 1 Message 2 Message 3 Message 4 X
+séquence d’erreur
+• A, B, L, M : blocs permettant la synchronisation du système et le contrôle des erreurs (ne
+présentent aucun intérêt pour l’utilisateur).
+• C - spécificateur de format : sont définis ici les formats des messages liés aux types d’appels,
+il en existe cinq différents :
+Appel de détresse DISTRESS
+Appel à tous ALL SHIPS
+Appel dans une zone géographique AREA
+Appel de groupe GROUP
+Appel individuel INDIVIDUAL
+• D – Adresse : MMSI du navire, du groupe de navires, de la station ou du groupe de stations
+que l’on souhaite appeler
+• E – Catégorie : donne pour un appel le type d’exploitation auquel il appartient et en détermine
+ainsi la priorité. Il existe quatre catégories :
+Détresse DISTRESS
+Urgence URGENCY
+Sécurité SAFETY
+Routine ROUTINE
+Il faut faire la différence ici entre un appel de détresse et un appel priorité détresse : par exemple,
+un appel de détresse sera un appel au format détresse sans catégorie alors que l’accusé de
+réception à cet appel sera un appel au format appel à tous avec la priorité détresse.
+• F – Auto Identification : MMSI du navire appelant, non accessible par l’opérateur, servi par le
+système.
+• G, H, I, J : blocs contenant des données différentes selon les formats d’appel. On peut y
+trouver le type de détresse, les coordonnées du GPS, l’heure UTC, des informations
+référencées dans deux listes - types appelées Télécommande 1, Télécommande 2 où sont
+notés par exemple les modes simplex ou duplex , le relais de détresse, l’accusé de réception
+de détresse…
+• K - X : blocs non-accessibles à l’opérateur et dans lesquels sont repris, au cours des relais de
+détresse et des accusés de réception de détresse, une partie des informations en provenance
+de l’appel initial.
+A16
+
+ANNEXE 11
+NOTIONS ELEMENTAIRES SUR LES BATTERIES AU PLOMB
+1. Tension d'une batterie.
+La tension d'une batterie est la différence de potentiel existant entre les bornes + et - de celle-ci.
+Elle s'exprime en volts (V).
+Les tensions courantes de batteries sont de 24 volts ou de 12 volts. Dans le cas le plus général
+cela correspond à la tension d'utilisation des appareils du bord.
+Pour mesurer la tension, il faut utiliser un voltmètre. Celui-ci est branché en parallèle sur le circuit
+électrique.
+2. Capacité d'une batterie.
+La capacité d'une batterie est la quantité d'énergie qu'elle peut, théoriquement, restituer après une
+charge complète.
+Cette capacité est exprimée en ampères heure (Ah).
+Exemple : une batterie de 120 Ah peut restituer un courant de 120 ampères pendant 1 heure, de
+12 ampères pendant 10 heures ou de 6 ampères pendant 20 heures.
+Cette notion de capacité peut varier en fonction des paramètres suivants :
+(cid:1) état de la batterie (neuve, usagée, présence de sulfate, manque d'électrolyte, etc.)
+(cid:1) régime de la charge
+(cid:1) régime de la décharge
+(cid:1) température (plus la température est basse, moins la batterie est énergique)
+L'énergie consommée par les appareils électriques est définie par leur conception technique. Si
+l'utilisateur désire que la durée de fonctionnement d'un appareil soit égale à un seuil donné (temps
+t), il faut calculer l'intensité (I) totale consommée, puis la quantité d'électricité (Q) nécessaire. Cela
+correspond à la capacité minimum (Ah) de la batterie à installer :
+soit la formule : Q = I x t
+Q en ampères heure (Ah), t en heures et I en ampères
+Exemple : un émetteur consomme 4 ampères et l'on souhaite qu'il fonctionne pendant 20 heures.
+La capacité minimum de la batterie sera égale à :
+4 A x 20 heures = 80 Ah
+L'intensité I se mesure avec un ampèremètre. Cet appareil est placé en série dans le circuit
+électrique
+3. Vérification de l'état de la batterie
+Pour chaque élément de la batterie, la composition chimique de l'électrolyte varie avec l'état
+général de celle-ci. En observant la concentration de l'électrolyte ou en mesurant la tension totale
+aux bornes, il est assez simple de déterminer l'état de l'accumulateur.
+La concentration se mesure soit avec un pèse-acide, soit avec un densimètre (ou aréomètre).
+L'appareil de mesure peut être gradué en degrés (°Baumé) ou en poids spécifiques (kilogrammes
+par mètre cube). Certains pèse-acides possèdent des zones de couleur indiquant l'état de charge
+de la batterie.
+A17
+
+Exemple de tableau de correspondance pour une batterie de type
+"plomb"
+à température ambiante de 15 Degrés
+Tension moyenne aux Pèse-acide à Etat
+Echelle de mesure du
+bornes Indicateur de considéré
+Echelle de mesure
+couleur
+du pèse-acide
+Batterie Batterie
+de De Kg/m3 ° Baumé
+"12 Volts" "24 volts"
+Mauvais état
+10,8 Volts 21,6 Volts 1160 20° Zone rouge
+(Déchargée)
+13,8 Volts 27,6 Volts 1240 28° Zone verte Bon état
+Très bon état
+15 Volts 30 Volts 1280 32° Zone jaune
+(Fin de charge)
+Avec les batteries à électrolyte gélifié il n'est pas possible de vérifier la charge avec le pèse-acide.
+La vérification peut se faire avec un voltmètre.
+Nota: Il s'agit de mesurer la concentration d'acide de l'électrolyte.
+L'eau pure est à 0° Baumé et 1000 Kg/m3 en poids spécifique.
+L'acide sulfurique pur est à 60° Baumé et 1840 Kg/m3 en poids spécifique.
+A18
+
+ANNEXE 12 :
+RADIOTELEPHONIE FLUVIALE
+Les règles à respecter dans le service mobile radiotéléphonique fluvial sont définies par
+l’Arrangement régional relatif au service radiotéléphonique sur les voies de navigation intérieure5
+en adéquation avec les textes de l’Union Internationale des Télécommunications.
+Les réseaux VHF fluviaux :
+Le service comprend cinq réseaux décrits dans le tableau ci-dessous
+Puissance
+Réseaux Objet des messages Voie d’appel Voie de travail
+maxi
+Voies simplex 6, 8, 13,
+- sécurité des personnes Voie 10 (veille
+72 et 77. Voie 77 (et 72
+Bateau - - navigation permanente avec 2ème
+dans certains pays) 1 watt
+Bateau - sécurité des bateaux poste obligatoire sur
+autorisée pour
+certaines voies d’eau)
+communications privées.
+S’il n’existe qu’une seule
+C’est celle désignée voie, elle servira à l’appel 25 w sauf
+- sécurité des personnes
+comme 1ère voie de la et au trafic. Belgique et
+Informations - navigation
+station appelée lorsque Liaisons avec les stations Pays-Bas
+nautiques - sécurité des bateaux
+plusieurs voies sont terrestres des autorités limitée à
+utilisées par cette station chargées de l’exploitation 1 w
+des voies navigables
+11, 12, 14, 71, 74, 75
+Bateau - - sécurité des personnes
+Liaisons avec les stations
+Autorités - navigation 1 watt
+terrestres des autorités du
+portuaires - sécurité des bateaux
+port
+Radiocomm- Ce réseau permet d’établir des
+unication de radiocommunications à bord d’un bateau ou d’un 15,17 1 watt
+bord convoi
+Ce réseau permet d’établir des liaisons radiotéléphoniques entre un bateau et un abonné
+Correspond-
+du réseau téléphonique via un opérateur. Il n’est plus exploité en France et dans un certain
+ance publique
+nombre de pays européens.
+Sauvegarde de la vie humaine
+(cid:1) La voie 16 est normalement interdite, même loin des côtes.
+(cid:1) Les messages de détresse, d’urgence ou de sécurité seront transmis sur la voie 10 ou toute
+autre voie jugée utile par le patron à bord.
+(cid:1) Aux Pays Bas, dans les estuaires ou les canaux en communication avec la mer, l’écoute de la
+voie 16 est cependant conseillée en raison du voisinage des navires.
+Dans le domaine fluvial, la position du bateau (coordonnées géographiques) sera remplacée par le
+point kilométrique de la situation du bateau qui émet.
+ATIS (Automatic Transmitter Identification System) :
+Toutes les installations radiotéléphoniques de bord, fixes ou portatives, doivent être équipées du
+système d'identification des émetteurs ATIS. L'émission du signal ATIS est automatique et se
+produit après relâchement du commutateur d'émission.
+Les antennes
+Sur certaines voies VHF, la puissance rayonnée par l’antenne est limitée à un watt maximum. De
+ce fait, les antennes dites « à gain » sont interdites également.
+5 Le Guide de la Radiotéléphonie pour la Navigation Intérieure peut être demandé auprès de la Commission
+Centrale pour la Navigation du Rhin au Palais du Rhin à Strasbourg
+A19
+
+ANNEXE 13
+EXEMPLE DE QUESTION D'EXAMEN
+Chapitre 1 : Connaissances générales + SMDSM (partie C et D)
+Partie A : 1. Qui est en France, l’autorité chargée de la gestion des licences de station de navire ?
+A ) Les centres de coordination de sauvetage (CROSS)
+B ) L’Union Internationale des Télécommunications (UIT)
+C ) L’Organisation Maritime Internationale (OMI)
+D ) L’Agence Nationale des Fréquences (ANFR)
+2. Que doit-on trouver à bord d’un navire non-astreint utilisant une VHF ?
+A ) La licence d’exploitation et le CRR
+B ) Le Règlement des radiocommunications (RR) et le CRR
+C ) Le GMDSS Masterplan et la licence d’exploitation
+D ) Le CRR et le journal radio
+Partie B : 3. Un message de détresse est envoyé :
+A ) Lorsqu’une personne est sous la menace d’un danger grave et imminent
+B ) Pour signaler une urgence concernant un blessé ou un malade
+C ) Pour signaler tout danger lié à la sécurité de navigation
+4. Un CROSS est :
+A ) Une station côtière chargée des communications par satellite
+B ) Une association de bénévoles qui participe à la surveillance et aux secours en mer
+C ) Une station côtière chargée de la surveillance et du sauvetage en mer
+5. Les ondes radioélectriques propagées par une VHF sont :
+A ) Hectométriques
+B ) Décamétriques
+C ) Métriques
+D ) Décimétriques
+Partie C : 6. L’Inmarsat C :
+(SMDSM) A ) Est une balise de localisation
+B ) N’est plus commercialisé
+C ) Ne transmet pas la voix
+Partie D : 7. La zone de couverture d’une VHF avec ASN définie dans le cadre du SMDSM est :
+(SMDSM) A ) La zone A1 d’une portée radio de 20 à 30 milles
+B ) La zone A1 d’une portée radio inférieure à 150 milles
+C ) La zone A1 distante de 5 milles d’un abri
+8. Le système Inmarsat couvre les zones :
+A ) A1 seule
+B ) A1 – A2 – A3
+C ) A4 seule
+Partie E : 9. Quelle épellation du mot INMARSAT est correcte?
+A ) India November Mike Alfa Rodeo Sierra Alfa Tango
+B ) India November Mike Alfa Romeo Suzanna Alfa Tango
+C ) India November Mike Alfa Romeo Sierra Alfa Tango
+D ) India November Mike Alfa Romeo Sierra Alfa Tonton
+A20
+
+Chapitre 2 : Radiotéléphonie VHF
+Partie A : 10. La commande du Squelch permet de :
+A ) Réduire la puissance électrique de la VHF de 25 watts à 1 watt
+B ) Veiller la voie de détresse tout en étant positionné sur une autre voie
+C ) Supprimer le bruit de fond tout en conservant le signal supérieur à un certain seuil
+Partie B : 11. Quelle est le message ayant la priorité absolue ?
+A ) Message de détresse
+B ) Message d’urgence
+C ) Message de sécurité
+12. A la réception d’un message de détresse signalant une demande d’assistance
+immédiate, vous devez :
+A ) Demander la position du navire
+B ) Attendre les instructions des Affaires maritimes
+C ) Répondre si aucune station côtière ne l’a fait dans un délai de 5 minutes
+13. Le navire Dan retransmet l’appel de détresse du navire Pierrot :
+Propositions :
+A ) Mayday relay, Mayday relay, Mayday relay B ) Mayday relay, Mayday relay, Mayday relay
+A tous, à tous, à tous A tous, à tous, à tous
+Ici Dan, Dan, Dan FWXL Ici Dan, Dan, Dan FWXL
+Mayday Pierrot FGBC Reçu Mayday Pierrot FGBC
+4 Milles Ouest du Conquet 4 Milles Ouest du Conquet
+Feu à bord Feu à bord
+3 personnes quittent le navire 3 personnes quittent le navire
+A vous ! A vous !
+C ) Relay mayday, Relay mayday, Relay
+Mayday
+Ici Dan Dan Dan FWXL
+Mayday Pierrot FGBC
+4 Milles Ouest du Conquet
+Feu à bord
+3 personnes quittent le navire
+A vous !
+14. Le navire Papi n’est plus maître de sa manœuvre à plusieurs milles des côtes :
+Propositions :
+A ) Pan Pan Pan Pan Pan B ) Mayday Mayday Mayday C ) Safety Safety Safety
+Pan All stations, all stations, all This is Papi Papi Papi
+All stations, all stations, all stations FPTT
+stations This is Papi Papi Papi FPTT Position 54.1 North 2.2
+This is Papi Papi Papi Position 54.1 North 2.2 West West
+FPTT I am not under command I am not under command
+Position 54.1 North 2.2 Require tug assistance Require tug assistance
+West Over Over
+I am not under command
+Require tug assistance
+Over
+15. Quelles sont les voies réservées pour les communications vocales entre navires ?
+A ) 6 – 8 – 72 – 77
+B ) 6 – 16 – 72 – 77
+C ) 6 – 10 – 16
+D ) 1 – 6 – 8 – 15 – 72 – 77
+A21
+
+Chapitre 3 : Sous-systèmes SMDSM
+Partie A : 16. Le MID du MMSI permet d’identifier :
+A ) La zone de navigation d’un navire
+B ) La position du navire
+C ) La nationalité du navire
+Partie B : Image 1
+SCAN STO DEL
+Time : 18. 15 .35 10 Jan 04 DIST RESS A ABC 1 DEF 2 GHI 3
+Select type of call : MEN DW
+INDIV I DUAL B JKL 4 MN 5 OPQ 6
+ALL S HIPS C RST 7 UV 8 WX 9
+SHIFT FUNC P
+0 16
+CANCEL D YZ
+VOL DISTRESS
+ON/OFF Sq
+17. Image 1 : Vous allez quitter votre navire et vous voulez indiquer qu’il est en feu, vous
+devez tout d’abord :
+A ) Appuyer sur le bouton rouge
+B ) Agir sur la touche A
+C ) Agir sur la touche C
+D ) Appuyer sur la touche ON/OFF pour éteindre votre VHF
+18. Image 1 : Vous avez un blessé grave à bord qui nécessite des soins d’urgence, vous
+devez :
+A ) Appuyer sur le bouton rouge
+B ) Agir sur la touche A
+C ) Agir sur la touche C
+D ) Agir sur la touche D
+Partie C : 19. Le signal de détresse d’une balise Cospas-Sarsat est retransmis au centre de
+contrôle et de mission (MCC) :
+A ) Par VHF ASN
+B ) Par Satellite
+C ) Par ondes décamétriques
+20. Un émetteur SART transmet des signaux :
+A ) Dans la bande VHF
+B ) Dans la bande VHF en ASN
+C ) Par satellite Inmarsat
+D ) Dans la bande radar comprise entre 9200 et 9500 MHz
+A22
+
