@@ -52,7 +52,7 @@
     }
     a { color: var(--teal); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s ease; }
     a:hover { border-bottom-color: var(--teal); }
-    img { max-width: 100%; }
+    img { max-width: 100%; height: auto; display: block; }
     hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
 
     /* === LAYOUT === */
@@ -84,10 +84,7 @@
       padding-bottom: 18px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
-    #sidebar .brand .anchor {
-      font-size: 26px;
-      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
-    }
+    #sidebar .brand .anchor { font-size: 26px; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3)); }
     #sidebar .brand .title {
       color: var(--teal-lt);
       font-size: 12px;
@@ -179,6 +176,7 @@
       padding: 56px clamp(28px, 6vw, 80px) 96px;
       max-width: 980px;
       width: 100%;
+      overflow: hidden;
     }
     .content-card {
       background: var(--surface);
@@ -186,6 +184,7 @@
       box-shadow: var(--shadow-md);
       padding: 56px clamp(28px, 5vw, 64px);
       max-width: 860px;
+      overflow: hidden;
     }
     .breadcrumb {
       font-family: var(--font-ui);
@@ -211,12 +210,12 @@
     h2 {
       font-family: var(--font-ui);
       font-weight: 600;
-      font-size: 24px;
+      font-size: 22px;
       line-height: 1.3;
       color: var(--teal);
       border-left: 3px solid var(--teal);
       padding-left: 14px;
-      margin: 48px 0 18px 0;
+      margin: 48px 0 16px 0;
     }
     h3 {
       font-family: var(--font-ui);
@@ -267,6 +266,7 @@
     pre code { background: transparent; color: inherit; padding: 0; }
 
     /* === TABLES === */
+    .content-card { overflow-x: auto; }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -278,12 +278,7 @@
       overflow: hidden;
       box-shadow: var(--shadow-sm);
     }
-    thead {
-      background: var(--teal);
-      color: #fff;
-      position: sticky;
-      top: 0;
-    }
+    thead { background: var(--teal); color: #fff; }
     th {
       text-align: left;
       padding: 12px 16px;
@@ -302,12 +297,11 @@
     tbody tr:last-child td { border-bottom: none; }
 
     /* === CALLOUT CARDS (<details>) === */
-    details, .callout {
+    details {
       margin: 22px 0;
       border-left: 3px solid var(--teal);
       background: rgba(13, 115, 119, 0.06);
       border-radius: var(--radius-md);
-      padding: 0;
       overflow: hidden;
       transition: box-shadow 0.2s ease;
     }
@@ -333,19 +327,33 @@
       display: inline-block;
     }
     details[open] summary::before { transform: rotate(90deg); }
-    details > *:not(summary) {
-      padding: 0 18px 14px 18px;
-    }
+    details > *:not(summary) { padding: 0 18px 14px 18px; }
 
     /* === WIKI IMAGES === */
+    .wiki-image-wrap {
+      display: block;
+      margin: 28px 0;
+      overflow: hidden;
+    }
     .wiki-image {
       display: block;
-      margin: 28px auto;
+      margin: 0 auto;
       max-width: 100%;
+      width: auto;
+      height: auto;
       border-radius: var(--radius-sm);
       box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     }
     html.dark .wiki-image { filter: brightness(0.9); }
+    .wiki-image-caption {
+      text-align: center;
+      font-family: var(--font-ui);
+      font-size: 13px;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: -18px;
+      margin-bottom: 28px;
+    }
 
     /* === WIKILINK BADGES === */
     .wikilink {
@@ -365,7 +373,6 @@
     .wikilink:hover { background: rgba(13, 115, 119, 0.18); }
 
     /* === EXAM MODE === */
-    body.exam-mode-body { background: var(--bg); }
     #exam-header {
       position: sticky;
       top: 0;
@@ -416,10 +423,7 @@
       background: var(--amber);
       animation: flash 0.6s 3;
     }
-    @keyframes flash {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
+    @keyframes flash { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
     /* === SCORE CARD === */
     #score-card {
@@ -443,7 +447,6 @@
     #result-banner.pass { background: var(--teal); color: #fff; }
     #result-banner.fail { background: var(--amber); color: var(--navy); }
 
-    /* === EXAM-MODE LAYOUT (no sidebar) === */
     main.exam-mode {
       max-width: 860px;
       margin: 0 auto;
@@ -453,11 +456,7 @@
     /* === RESPONSIVE === */
     @media (max-width: 900px) {
       .layout { grid-template-columns: 1fr; }
-      #sidebar {
-        position: relative;
-        height: auto;
-        padding: 16px 18px;
-      }
+      #sidebar { position: relative; height: auto; padding: 16px 18px; }
       #sidebar .brand { margin-bottom: 14px; padding-bottom: 12px; }
       .session-list { display: flex; flex-wrap: wrap; gap: 6px; }
       .session-list li { flex: 0 0 auto; padding: 6px 10px; font-size: 12px; }
@@ -490,10 +489,10 @@
       </div>
       <ul class="session-list" id="session-list">
         <li data-slug="session-01-balisage"><span class="dot locked">·</span><span><span class="num">Session 01</span><span class="name">Le Langage de la Mer</span></span></li>
-        <li data-slug="session-02-route"><span class="dot locked">·</span><span><span class="num">Session 02</span><span class="name">Route et Navigation</span></span></li>
-        <li data-slug="session-03-feux"><span class="dot locked">·</span><span><span class="num">Session 03</span><span class="name">Feux de Nuit</span></span></li>
-        <li data-slug="session-04-securite"><span class="dot locked">·</span><span><span class="num">Session 04</span><span class="name">Sécurité et Détresse</span></span></li>
-        <li data-slug="session-05-revision"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">Révision et Examen Blanc</span></span></li>
+        <li data-slug="session-02-regles-barre"><span class="dot locked">·</span><span><span class="num">Session 02</span><span class="name">Priorités et Manœuvres</span></span></li>
+        <li data-slug="session-03-feux-signaux"><span class="dot locked">·</span><span><span class="num">Session 03</span><span class="name">La Nuit et la Brume</span></span></li>
+        <li data-slug="session-04-securite"><span class="dot locked">·</span><span><span class="num">Session 04</span><span class="name">La Sécurité et l'Équipement</span></span></li>
+        <li data-slug="session-05-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">L'Examen Blanc</span></span></li>
       </ul>
       <div class="progress-wrap">
         <div class="progress-label">
@@ -503,7 +502,6 @@
         <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
       </div>
     </nav>
-
     <main id="content">
       <div class="content-card">
         <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 1 : Le Langage de la Mer</span></div>
@@ -517,7 +515,7 @@
 <li>Est : topmark 2 cônes base à base, feux blanc Fl(3) 10s ou Q(3)</li>
 <li>Ouest : topmark 2 cônes tête à tête, feux blanc Fl(9) 15s ou Q(9)</li>
 </ul>
-<p><img src="assets/cardinal-marks-all.png" alt="cardinal-marks-all.png" class="wiki-image"></p>
+<div class="wiki-image-wrap"><img class="wiki-image" src="assets/cardinal-marks-all.png" alt="cardinal-marks-all.png"></div>
 <p><strong>Marques latérales</strong> — balisent les chenaux :</p>
 <ul>
 <li>Bâbord (gauche en entrant) : rouge, cylindrique, feux rouge</li>
@@ -582,53 +580,36 @@
       try {
         const PROGRESS_KEY = 'permis_progress';
         let completed = [];
-        try {
-          const raw = localStorage.getItem(PROGRESS_KEY);
-          if (raw) completed = JSON.parse(raw) || [];
-        } catch (e) {}
-
-        const path = window.location.pathname;
-        const currentSlug = (path.split('/').pop() || '').replace('.html', '');
-
+        try { const r = localStorage.getItem(PROGRESS_KEY); if (r) completed = JSON.parse(r) || []; } catch(e) {}
+        const currentSlug = (window.location.pathname.split('/').pop() || '').replace('.html', '');
         const items = document.querySelectorAll('#session-list li');
-        let prevDone = true;
-        let currentFound = false;
+        let prevDone = true, currentFound = false;
         items.forEach((li, idx) => {
           const slug = li.dataset.slug;
           const dot = li.querySelector('.dot');
           if (!dot) return;
           if (completed.indexOf(slug) !== -1) {
-            dot.className = 'dot done';
-            dot.textContent = '✓';
-            prevDone = true;
+            dot.className = 'dot done'; dot.textContent = '✓'; prevDone = true;
           } else if (slug === currentSlug || (idx === 0 && !currentFound)) {
-            dot.className = 'dot current';
-            dot.textContent = '→';
-            li.classList.add('current');
-            currentFound = true;
+            dot.className = 'dot current'; dot.textContent = '→';
+            li.classList.add('current'); currentFound = true;
             const bc = document.getElementById('breadcrumb-session');
             if (bc) bc.textContent = li.querySelector('.num').textContent;
             prevDone = false;
           } else if (prevDone && idx > 0) {
-            dot.className = 'dot';
-            dot.textContent = '○';
+            dot.className = 'dot'; dot.textContent = '○';
             dot.style.background = 'rgba(255,255,255,0.15)';
             dot.style.color = 'rgba(255,255,255,0.7)';
             prevDone = false;
           } else {
-            dot.className = 'dot locked';
-            dot.textContent = '·';
-            li.classList.add('locked');
+            dot.className = 'dot locked'; dot.textContent = '·'; li.classList.add('locked');
           }
         });
-
-        const count = completed.length;
         const cEl = document.getElementById('progress-count');
         const fEl = document.getElementById('progress-fill');
-        if (cEl) cEl.textContent = count + ' / 5';
-        if (fEl) fEl.style.width = (count * 20) + '%';
-      } catch (e) { console.warn('progress init failed', e); }
-
+        if (cEl) cEl.textContent = completed.length + ' / 5';
+        if (fEl) fEl.style.width = (completed.length * 20) + '%';
+      } catch(e) { console.warn('progress init failed', e); }
       if (typeof window._examInit === 'function') window._examInit();
     })();
   </script>
