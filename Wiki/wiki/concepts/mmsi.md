@@ -2,7 +2,7 @@
 title: MMSI — Maritime Mobile Service Identity
 type: concept
 tags: [radio, crr, mmsi, asn]
-sources: [../../raw/../Cours 1/anfr-manuel_crr.pdf]
+sources: [../../Cours 1/anfr-manuel_crr.pdf]
 related: [[../themes/08-radio-crr]], [[asn-dsc]], [[licence-anfr]], [[canaux-vhf]]
 status: draft
 updated: 2026-05-06

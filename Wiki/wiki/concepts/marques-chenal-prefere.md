@@ -2,7 +2,7 @@
 title: Marques de chenal préféré (bifurcation)
 type: concept
 tags: [balisage, laterales]
-sources: [../../raw/../Cours 2/1-Les balises_RECTO.pdf]
+sources: [../../Cours 2/1-Les balises_RECTO.pdf]
 related: [[marques-laterales]], [[../themes/01-balisage]]
 status: draft
 updated: 2026-05-04

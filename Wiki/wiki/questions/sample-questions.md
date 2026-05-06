@@ -2,7 +2,7 @@
 title: Sample exam questions (pattern reference)
 type: question
 tags: [regles-de-barre, balisage, feux]
-sources: [../../raw/../Cours 1/1-Ex_candidat.pdf, ../../raw/../Cours 2/Q-eval.pdf]
+sources: [../../Cours 1/1-Ex_candidat.pdf, ../../Cours 2/Q-eval.pdf]
 related: [[../themes/02-regles-de-barre]], [[../themes/04-feux]]
 status: draft
 updated: 2026-05-01

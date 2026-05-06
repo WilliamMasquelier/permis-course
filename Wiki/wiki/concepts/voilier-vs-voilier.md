@@ -2,7 +2,7 @@
 title: Priorité entre voiliers (règle des amures)
 type: concept
 tags: [regles-de-barre, colreg]
-sources: [../../raw/../Cours 2/2-regle_de_barre-RECTO.pdf]
+sources: [../../Cours 2/2-regle_de_barre-RECTO.pdf]
 related: [[../themes/02-regles-de-barre]], [[regle-de-barre-priorite]], [[voilier-vs-moteur]]
 status: draft
 updated: 2026-05-01

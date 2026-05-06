@@ -2,7 +2,7 @@
 title: Gilets de sauvetage — normes et choix
 type: concept
 tags: [securite]
-sources: [../../raw/../Cours 2/5-securite-RECTO.pdf, ../../raw/../Cours 2/7-La_pratique-RECTO.pdf]
+sources: [../../Cours 2/5-securite-RECTO.pdf, ../../Cours 2/7-La_pratique-RECTO.pdf]
 related: [[equipement-obligatoire]], [[zones-navigation]]
 status: draft
 updated: 2026-05-01

@@ -2,7 +2,7 @@
 title: QCM Balisage 01 — Feu isophase
 type: question
 tags: [balisage, feux]
-sources: [../../raw/../Cours 2/RECTO-MER_COTIER.pdf]
+sources: [../../Cours 2/RECTO-MER_COTIER.pdf]
 related: [[../concepts/feux-base]]
 status: draft
 updated: 2026-05-01

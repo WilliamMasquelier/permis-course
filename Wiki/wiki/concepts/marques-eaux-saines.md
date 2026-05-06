@@ -2,7 +2,7 @@
 title: Marque d'eaux saines (groupe 2)
 type: concept
 tags: [balisage]
-sources: [../../raw/../Cours 2/1-Les balises_RECTO.pdf]
+sources: [../../Cours 2/1-Les balises_RECTO.pdf]
 related: [[../themes/01-balisage]], [[balisage-iala-region-a]], [[marques-danger-isole]]
 status: draft
 updated: 2026-05-01

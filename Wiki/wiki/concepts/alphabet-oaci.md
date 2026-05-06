@@ -2,7 +2,7 @@
 title: Alphabet phonétique international (OACI / UIT)
 type: concept
 tags: [radio, crr, alphabet]
-sources: [../../raw/../Cours 1/anfr-manuel_crr.pdf]
+sources: [../../Cours 1/anfr-manuel_crr.pdf]
 related: [[../themes/08-radio-crr]], [[canaux-vhf]]
 status: draft
 updated: 2026-05-06

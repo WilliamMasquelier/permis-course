@@ -2,7 +2,7 @@
 title: 01 — Balisage et signalisation maritime
 type: theme
 tags: [balisage]
-sources: [../../raw/../Cours 2/1-Les balises_RECTO.pdf, ../../raw/../Cours 2/1-Les_balises-VERSO.pdf, ../../raw/../Cours 1/yd-0526-le_balisage_des_cotes_et_des_zones_de_loisirs-5_cle244d3c.pdf]
+sources: [../../Cours 2/1-Les balises_RECTO.pdf, ../../Cours 2/1-Les_balises-VERSO.pdf, ../../Cours 1/yd-0526-le_balisage_des_cotes_et_des_zones_de_loisirs-5_cle244d3c.pdf]
 related: [[02-regles-de-barre]], [[06-navigation]]
 status: draft
 updated: 2026-05-01

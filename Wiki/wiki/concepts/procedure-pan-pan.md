@@ -2,7 +2,7 @@
 title: Procédures PAN PAN et SECURITE — urgence et sécurité radio
 type: concept
 tags: [radio, crr, urgence, securite]
-sources: [../../raw/../Cours 1/anfr-manuel_crr.pdf]
+sources: [../../Cours 1/anfr-manuel_crr.pdf]
 related: [[../themes/08-radio-crr]], [[procedure-mayday]], [[asn-dsc]], [[canaux-vhf]], [[securite-vhf-et-cross]]
 status: draft
 updated: 2026-05-06

@@ -2,7 +2,7 @@
 title: Feux des navires de pêche et navires privilégiés
 type: concept
 tags: [feux, regles-de-barre]
-sources: [../../raw/../Cours 2/4-Feux-RECTO.pdf]
+sources: [../../Cours 2/4-Feux-RECTO.pdf]
 related: [[../themes/04-feux]], [[feux-base]], [[regle-de-barre-priorite]]
 status: draft
 updated: 2026-05-01

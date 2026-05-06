@@ -2,7 +2,7 @@
 title: Marques de plage (groupe 3)
 type: concept
 tags: [balisage, plage, securite]
-sources: [../../raw/../Cours 2/1-Les balises_RECTO.pdf]
+sources: [../../Cours 2/1-Les balises_RECTO.pdf]
 related: [[../themes/01-balisage]], [[marques-speciales]]
 status: draft
 updated: 2026-05-04
