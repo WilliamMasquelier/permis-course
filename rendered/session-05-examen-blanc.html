@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Session 1 : Le Langage de la Mer — Permis Côtier</title>
+  <title>Session 5 : L'Examen Blanc — Permis Côtier</title>
   <style>
     /* === DESIGN SYSTEM TOKENS === */
     :root {
@@ -579,115 +579,103 @@
     }
   </style>
   
-</head>
-<body class="">
+  <script>
+    (function() {
+      const EXAM_DURATION = 2700; // 45 minutes
+      const STORAGE_KEY = 'permis_exam_state';
+      function loadState() {
+        try { const r = localStorage.getItem(STORAGE_KEY); return r ? JSON.parse(r) : null; } catch(e) { return null; }
+      }
+      function saveState(s) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); } catch(e) {} }
+      function fmt(secs) { return String(Math.floor(secs/60)).padStart(2,'0')+':'+String(secs%60).padStart(2,'0'); }
+      window._examInit = function() {
+        let state = loadState();
+        if (!state || !state.startedAt) { state = { startedAt: Date.now(), duration: EXAM_DURATION }; saveState(state); }
+        const timerEl = document.getElementById('timer');
+        function tick() {
+          const remaining = Math.max(0, state.duration - Math.floor((Date.now()-state.startedAt)/1000));
+          if (timerEl) timerEl.textContent = fmt(remaining);
+          if (remaining <= 0) { document.body.classList.add('time-expired'); return; }
+          requestAnimationFrame(() => setTimeout(tick, 1000));
+        }
+        tick();
+      };
+    })();
+  </script>
   
-  <div class="layout">
-    <nav id="sidebar">
-      <div class="brand">
-        <span class="anchor">⚓</span>
-        <div>
-          <div class="title">Permis Côtier</div>
-          <div class="subtitle">Classroom</div>
-        </div>
-      </div>
-      <ul class="session-list" id="session-list">
-        <li data-slug="session-01-balisage"><span class="dot locked">·</span><span><span class="num">Session 01</span><span class="name">Le Langage de la Mer</span></span></li>
-        <li data-slug="session-02-regles-barre"><span class="dot locked">·</span><span><span class="num">Session 02</span><span class="name">Priorités et Manœuvres</span></span></li>
-        <li data-slug="session-03-feux-signaux"><span class="dot locked">·</span><span><span class="num">Session 03</span><span class="name">La Nuit et la Brume</span></span></li>
-        <li data-slug="session-04-securite"><span class="dot locked">·</span><span><span class="num">Session 04</span><span class="name">La Sécurité et l'Équipement</span></span></li>
-        <li data-slug="session-05-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">L'Examen Blanc</span></span></li>
-      </ul>
-      <div class="progress-wrap">
-        <div class="progress-label">
-          <span>Progression</span>
-          <span id="progress-count">0 / 5</span>
-        </div>
-        <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
-      </div>
-    </nav>
-    <main id="content">
-      <div class="content-card">
-        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 1 : Le Langage de la Mer</span></div>
-        <h1>Session 1 : Le Langage de la Mer</h1>
-        <h2>CONCEPT</h2>
-<p>Le balisage maritime utilise le système IALA Région A en Europe. Il existe cinq familles de marques.</p>
-<p><strong>Marques cardinales</strong> — indiquent le côté passable par rapport à un danger :</p>
+</head>
+<body class="exam-mode-body">
+  
+  <header id="exam-header">
+    <span class="exam-label">⚓ EXAMEN BLANC</span>
+    <div id="timer">45:00</div>
+    <div id="exam-progress-bar"><div id="exam-progress-fill"></div></div>
+  </header>
+  <main id="content" class="exam-mode">
+    <div class="content-card">
+      <h1>Session 5 : L'Examen Blanc</h1>
+      <h2>INSTRUCTIONS</h2>
+<p>Bienvenue à l'examen blanc du Permis Côtier de Plaisance.</p>
 <ul>
-<li>Nord : topmark 2 cônes pointes en haut, feux blanc Fl(3) 10s ou Q</li>
-<li>Sud : topmark 2 cônes pointes en bas, feux blanc Fl(6)+LFl 15s ou VQ(6)+LFl</li>
-<li>Est : topmark 2 cônes base à base, feux blanc Fl(3) 10s ou Q(3)</li>
-<li>Ouest : topmark 2 cônes tête à tête, feux blanc Fl(9) 15s ou Q(9)</li>
+<li><strong>30 questions</strong> sur les 7 thèmes du programme officiel</li>
+<li><strong>45 minutes</strong> — le chronomètre démarre automatiquement</li>
+<li><strong>Seuil de réussite : 18/30</strong> (même barème qu'à l'examen officiel)</li>
+<li>Répondez dans le chat — le professeur évaluera chaque réponse</li>
 </ul>
-<div class="wiki-image-wrap"><img class="wiki-image" src="assets/cardinal-marks-all.png" alt="cardinal-marks-all.png"></div>
-<p><strong>Marques latérales</strong> — balisent les chenaux :</p>
-<ul>
-<li>Bâbord (gauche en entrant) : rouge, cylindrique, feux rouge</li>
-<li>Tribord (droit en entrant) : vert, conique, feux vert</li>
-</ul>
-<p>Voir aussi <span class="wikilink" data-label="Balisage Iala Region A">concepts/balisage-iala-region-a</span>, <span class="wikilink" data-label="Marques Cardinales">concepts/marques-cardinales</span>.</p>
-<h2>TASK</h2>
-
-<div class="task-block">
-  <div class="task-prompt"><p>Sans regarder vos notes, décrivez chacune des quatre marques cardinales : forme du topmark, couleur du corps, et signature lumineuse nocturne.</p></div>
-  <textarea class="task-input" rows="4" placeholder="Écrivez votre réponse ici…" aria-label="Votre réponse"></textarea>
-  <div class="task-actions">
-    <button class="btn-check" onclick="checkTask(this)">Vérifier ✓</button>
-    <button class="btn-hint" onclick="showHint(this)" data-hint-level="0">Indice 💡</button>
-    <button class="btn-reset" onclick="resetTask(this)">Recommencer ↺</button>
-  </div>
-  <div class="task-feedback hidden"></div>
-</div><h2>HINT_1</h2>
-<p>Pensez aux points cardinaux de la boussole. Le nom de chaque marque indique de quel côté du danger elle se trouve.</p>
-<h2>HINT_2</h2>
-<p>Les topmarks sont toujours deux cônes. La direction des pointes vous dit tout : Nord = pointes en haut (comme N), Sud = pointes en bas.</p>
-<h2>MISCONCEPTION</h2>
-<p>Les étudiants confondent souvent rouge/vert avec danger/sécurité. Rouge = bâbord (gauche en entrant), pas forcément danger.</p>
-<details class="solution-block">
-  <summary>🔍 Voir la solution (après avoir essayé)</summary>
-  <div class="solution-content"><h2>SOLUTION</h2>
+<h2>DISTRIBUTION</h2>
 <table>
 <thead>
 <tr>
-<th>Marque</th>
-<th>Topmark</th>
-<th>Corps</th>
-<th>Feux nuit</th>
+<th>Thème</th>
+<th>Questions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Nord</td>
-<td>↑↑ cônes pointes haut</td>
-<td>Noir-jaune</td>
-<td>Q ou VQ — continu rapide</td>
+<td>Balisage</td>
+<td>6</td>
 </tr>
 <tr>
-<td>Sud</td>
-<td>↓↓ cônes pointes bas</td>
-<td>Jaune-noir</td>
-<td>Q(6)+LFl ou VQ(6)+LFl</td>
+<td>Règles de barre</td>
+<td>5</td>
 </tr>
 <tr>
-<td>Est</td>
-<td>◇ base à base</td>
-<td>Noir-jaune-noir</td>
-<td>Q(3) ou VQ(3) — 3 éclats</td>
+<td>Feux et signaux</td>
+<td>4</td>
 </tr>
 <tr>
-<td>Ouest</td>
-<td>✦ tête à tête</td>
-<td>Jaune-noir-jaune</td>
-<td>Q(9) ou VQ(9) — 9 éclats</td>
+<td>Signaux visuels</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Sécurité</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Navigation</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Pratique</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>30</strong></td>
 </tr>
 </tbody>
 </table>
-</div>
-</details><h2>MOTIVATION</h2>
-<p>Jusqu'à 6 questions d'examen portent sur les marques cardinales. Les rater, c'est rater l'examen.</p>
+<h2>CONSIGNES</h2>
+<p>Le professeur posera les questions une par une dans le chat. Répondez précisément.
+Pas de notes, pas de wiki — c'est un examen blanc.</p>
+<p>Bonne chance ! ⚓</p>
 
-      </div>
-    </main>
+    </div>
+  </main>
+  <div id="score-card" class="hidden">
+    <div id="result-banner"></div>
+    <table id="theme-scores"><thead><tr><th>Thème</th><th>Score</th></tr></thead><tbody></tbody></table>
+    <div id="study-plan"></div>
   </div>
   
 

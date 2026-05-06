@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Session 1 : Le Langage de la Mer — Permis Côtier</title>
+  <title>Session 4 : La Sécurité et l'Équipement — Permis Côtier</title>
   <style>
     /* === DESIGN SYSTEM TOKENS === */
     :root {
@@ -608,28 +608,62 @@
     </nav>
     <main id="content">
       <div class="content-card">
-        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 1 : Le Langage de la Mer</span></div>
-        <h1>Session 1 : Le Langage de la Mer</h1>
+        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 4 : La Sécurité et l'Équipement</span></div>
+        <h1>Session 4 : La Sécurité et l'Équipement</h1>
         <h2>CONCEPT</h2>
-<p>Le balisage maritime utilise le système IALA Région A en Europe. Il existe cinq familles de marques.</p>
-<p><strong>Marques cardinales</strong> — indiquent le côté passable par rapport à un danger :</p>
+<p>La sécurité en mer ne se règle pas au moment du danger — elle se règle <strong>au moment du largage</strong>. L'équipement embarqué, la procédure radio, le réflexe MAYDAY : tout cela doit être su d'avance, parce que dans la panique on ne lit pas une notice.</p>
+<h3>L'équipement obligatoire — un système cumulatif</h3>
+<p>L'arrêté divisé en trois zones définit ce que vous <strong>devez</strong> avoir à bord. Chaque zone supérieure ajoute, ne remplace pas. Voir <span class="wikilink" data-label="Equipement Obligatoire">concepts/equipement-obligatoire</span>.</p>
+<p><strong>Zone Basique (≤ 2 milles d'un abri) — 5 catégories à retenir :</strong></p>
+<ol>
+<li><strong>Flottabilité individuelle</strong> — un <span class="wikilink" data-label="Equipement Gilet">entities/equipement-gilet</span> par personne (ou combinaison portée).</li>
+<li><strong>Repérage et signalisation</strong> — moyen de repérage lumineux (collectif ou individuel).</li>
+<li><strong>Lutte contre l'eau et le feu</strong> — dispositif d'assèchement + extincteur.</li>
+<li><strong>Mouillage et remorquage</strong> — ligne de mouillage/ancre + dispositif de remorquage.</li>
+<li><strong>Secours individuel</strong> — moyen de remonter une personne tombée à l'eau, coupe-circuit pilote.</li>
+</ol>
+<p><strong>Zone Côtière (≤ 6 milles) ajoute :</strong></p>
 <ul>
-<li>Nord : topmark 2 cônes pointes en haut, feux blanc Fl(3) 10s ou Q</li>
-<li>Sud : topmark 2 cônes pointes en bas, feux blanc Fl(6)+LFl 15s ou VQ(6)+LFl</li>
-<li>Est : topmark 2 cônes base à base, feux blanc Fl(3) 10s ou Q(3)</li>
-<li>Ouest : topmark 2 cônes tête à tête, feux blanc Fl(9) 15s ou Q(9)</li>
+<li>3 <span class="wikilink" data-label="Equipement Feux Detresse">entities/equipement-feux-detresse</span> (feux rouges automatiques à main)</li>
+<li>Miroir de signalisation, signal sonore</li>
+<li>Compas magnétique, RIPAM, document balisage, <strong>carte(s) de navigation</strong></li>
 </ul>
-<div class="wiki-image-wrap"><img class="wiki-image" src="assets/cardinal-marks-all.png" alt="cardinal-marks-all.png"></div>
-<p><strong>Marques latérales</strong> — balisent les chenaux :</p>
+<p><strong>Zone Hauturière (&gt; 6 milles) ajoute :</strong></p>
 <ul>
-<li>Bâbord (gauche en entrant) : rouge, cylindrique, feux rouge</li>
-<li>Tribord (droit en entrant) : vert, conique, feux vert</li>
+<li>Harnais, radeau de survie</li>
+<li>Fusées à parachute + fumigènes (ou <span class="wikilink" data-label="Equipement Vhf">entities/equipement-vhf</span> ASN qui les remplace)</li>
+<li>Moyens de point + météo + livre des feux + journal de bord</li>
 </ul>
-<p>Voir aussi <span class="wikilink" data-label="Balisage Iala Region A">concepts/balisage-iala-region-a</span>, <span class="wikilink" data-label="Marques Cardinales">concepts/marques-cardinales</span>.</p>
+<blockquote>
+<p>Le permis côtier vous limite à <strong>6 milles d'un abri</strong> — la zone Hauturière est hors-permis.</p>
+</blockquote>
+<h3>La radio VHF — pourquoi le canal 16</h3>
+<p>La VHF est l'outil de détresse de référence en mer. Le <strong>canal 16</strong> (156,800 MHz) est la voie internationale de <strong>veille, appel et détresse</strong>. Tout navire équipé doit y rester en écoute.</p>
+<p>Une VHF moderne a deux canaux dédiés : <strong>16</strong> (vocal) et <strong>70</strong> (ASN — Appel Sélectif Numérique). L'ASN, si la VHF est couplée à un GPS, transmet <strong>automatiquement</strong> votre MMSI et votre position au CROSS quand vous appuyez 5 secondes sur le bouton rouge. Voir <span class="wikilink" data-label="Securite Vhf Et Cross">concepts/securite-vhf-et-cross</span> et <span class="wikilink" data-label="Asn Dsc">concepts/asn-dsc</span>.</p>
+<h3>MAYDAY — la procédure absolue</h3>
+<p>Quand le danger est grave et imminent (vie en jeu) : <strong>MAYDAY</strong> sur voie 16. Le mot vient du français « m'aider ». Voir <span class="wikilink" data-label="Procedure Mayday">concepts/procedure-mayday</span>.</p>
+<p>Les <strong>5 premiers mots</strong> d'un MAYDAY, dans l'ordre exact, sont :</p>
+<pre><code>MAYDAY  MAYDAY  MAYDAY
+ICI
+[Nom du navire]
+</code></pre>
+<p>Puis vient le contenu :</p>
+<ol>
+<li><strong>Position</strong> (coordonnées ou point connu)</li>
+<li><strong>Nature</strong> de la détresse</li>
+<li><strong>Type d'assistance</strong> demandée</li>
+<li><strong>Nombre de personnes</strong> à bord</li>
+<li><strong>Intentions et infos utiles</strong>, puis « <strong>À vous</strong> »</li>
+</ol>
+<blockquote>
+<p>Pour un danger <strong>moins</strong> grave (panne, urgence sans péril vital) : c'est <strong>PAN-PAN</strong> (3 fois), pas MAYDAY. Voir <span class="wikilink" data-label="Procedure Pan Pan">concepts/procedure-pan-pan</span>.</p>
+</blockquote>
+<h3>Le CROSS — votre interlocuteur</h3>
+<p>Le <strong>CROSS</strong> (Centre Régional Opérationnel de Surveillance et de Sauvetage) coordonne tous les secours en mer en France. Un MAYDAY sur 16 ou une alerte ASN sur 70 lui parvient directement. Il décide des moyens (canot SNSM, hélicoptère, déroutement d'un navire commercial). Voir <span class="wikilink" data-label="Cross Sauvetage">concepts/cross-sauvetage</span>.</p>
 <h2>TASK</h2>
 
 <div class="task-block">
-  <div class="task-prompt"><p>Sans regarder vos notes, décrivez chacune des quatre marques cardinales : forme du topmark, couleur du corps, et signature lumineuse nocturne.</p></div>
+  <div class="task-prompt"><p>Citez les 5 catégories d'équipement obligatoire et énoncez les 5 premiers mots d'un appel MAYDAY sur VHF 16.</p></div>
   <textarea class="task-input" rows="4" placeholder="Écrivez votre réponse ici…" aria-label="Votre réponse"></textarea>
   <div class="task-actions">
     <button class="btn-check" onclick="checkTask(this)">Vérifier ✓</button>
@@ -638,53 +672,38 @@
   </div>
   <div class="task-feedback hidden"></div>
 </div><h2>HINT_1</h2>
-<p>Pensez aux points cardinaux de la boussole. Le nom de chaque marque indique de quel côté du danger elle se trouve.</p>
+<p>Pour les 5 catégories : pensez aux 5 risques fondamentaux en mer — tomber à l'eau, ne pas être vu, prendre l'eau, brûler, dériver. Pour le MAYDAY : c'est un mot répété, suivi d'un seul mot français.</p>
 <h2>HINT_2</h2>
-<p>Les topmarks sont toujours deux cônes. La direction des pointes vous dit tout : Nord = pointes en haut (comme N), Sud = pointes en bas.</p>
+<p>Les 5 catégories répondent à : « Comment je flotte ? Comment on me trouve ? Comment je vide ou j'éteins ? Comment je m'arrête ou me fais tirer ? Comment je sauve quelqu'un ? » — les cinq mots du MAYDAY occupent <strong>deux lignes</strong> : trois fois un même mot, puis une formule de présentation, puis l'identité.</p>
 <h2>MISCONCEPTION</h2>
-<p>Les étudiants confondent souvent rouge/vert avec danger/sécurité. Rouge = bâbord (gauche en entrant), pas forcément danger.</p>
+<ul>
+<li>« PAN-PAN, c'est moins urgent que MAYDAY donc on s'en fiche. » Faux : PAN-PAN est une <strong>urgence</strong> réelle (panne, blessé léger). Mal classer son appel sature le réseau ou empêche les secours d'arriver à temps.</li>
+<li>Croire que les fusées sont <strong>toujours</strong> obligatoires en hauturier : la VHF/ASN les remplace si elle est embarquée et fonctionnelle.</li>
+<li>Oublier que le canal 16 est <strong>réservé à l'appel et à la détresse</strong> — on bascule sur un canal de travail dès qu'on a établi le contact.</li>
+</ul>
 <details class="solution-block">
   <summary>🔍 Voir la solution (après avoir essayé)</summary>
   <div class="solution-content"><h2>SOLUTION</h2>
-<table>
-<thead>
-<tr>
-<th>Marque</th>
-<th>Topmark</th>
-<th>Corps</th>
-<th>Feux nuit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Nord</td>
-<td>↑↑ cônes pointes haut</td>
-<td>Noir-jaune</td>
-<td>Q ou VQ — continu rapide</td>
-</tr>
-<tr>
-<td>Sud</td>
-<td>↓↓ cônes pointes bas</td>
-<td>Jaune-noir</td>
-<td>Q(6)+LFl ou VQ(6)+LFl</td>
-</tr>
-<tr>
-<td>Est</td>
-<td>◇ base à base</td>
-<td>Noir-jaune-noir</td>
-<td>Q(3) ou VQ(3) — 3 éclats</td>
-</tr>
-<tr>
-<td>Ouest</td>
-<td>✦ tête à tête</td>
-<td>Jaune-noir-jaune</td>
-<td>Q(9) ou VQ(9) — 9 éclats</td>
-</tr>
-</tbody>
-</table>
+<p><strong>Les 5 catégories d'équipement Basique :</strong></p>
+<ol>
+<li>Flottabilité individuelle (gilet ou combinaison)</li>
+<li>Repérage lumineux</li>
+<li>Assèchement + extincteur</li>
+<li>Mouillage + remorquage</li>
+<li>Coupe-circuit + dispositif homme à la mer</li>
+</ol>
+<p><strong>Les 5 premiers mots d'un MAYDAY (énoncés dans l'ordre) :</strong></p>
+<blockquote>
+<p><strong>MAYDAY — MAYDAY — MAYDAY — ICI — [Nom du navire].</strong></p>
+</blockquote>
+<p>Le mot « MAYDAY » est répété <strong>trois fois</strong> pour ne laisser aucun doute (interférences, fading). « ICI » introduit l'identification du navire émetteur. Le nom du navire est ensuite répété trois fois, suivi de l'indicatif d'appel.</p>
 </div>
 </details><h2>MOTIVATION</h2>
-<p>Jusqu'à 6 questions d'examen portent sur les marques cardinales. Les rater, c'est rater l'examen.</p>
+<p><strong>4 questions</strong> sur la sécurité tombent à l'examen, et la procédure MAYDAY est régulièrement testée mot pour mot. Au-delà des points : un MAYDAY mal formulé en pleine détresse peut coûter des minutes irremplaçables. Le CROSS reçoit chaque été des appels paniqués sans position et sans nature — chaque fois, il faut rappeler, demander, perdre du temps. La procédure existe pour qu'<strong>en 30 secondes</strong>, le sauveteur sache où venir, quoi apporter, et pour combien de personnes.</p>
+<h2>PREREQUISITES</h2>
+<ul>
+<li><span class="wikilink" data-label="Session 03 Feux Signaux">lessons/session-03-feux-signaux</span></li>
+</ul>
 
       </div>
     </main>

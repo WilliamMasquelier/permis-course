@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" class="">
+<html lang="fr" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Session 1 : Le Langage de la Mer — Permis Côtier</title>
+  <title>Session 3 : La Nuit et la Brume — Permis Côtier</title>
   <style>
     /* === DESIGN SYSTEM TOKENS === */
     :root {
@@ -608,28 +608,145 @@
     </nav>
     <main id="content">
       <div class="content-card">
-        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 1 : Le Langage de la Mer</span></div>
-        <h1>Session 1 : Le Langage de la Mer</h1>
+        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 3 : La Nuit et la Brume</span></div>
+        <h1>Session 3 : La Nuit et la Brume</h1>
         <h2>CONCEPT</h2>
-<p>Le balisage maritime utilise le système IALA Région A en Europe. Il existe cinq familles de marques.</p>
-<p><strong>Marques cardinales</strong> — indiquent le côté passable par rapport à un danger :</p>
+<p>Il fait nuit noire. Le bruit du moteur se mêle au clapot. Devant vous, dans le rideau d'obscurité, trois points lumineux se détachent : un feu blanc en hauteur, un feu rouge à gauche, un feu vert à droite. Ces trois feux racontent une histoire complète — vous voyez un navire à propulsion mécanique qui vient droit sur vous. Le langage des feux est précis : chaque couleur, chaque secteur angulaire, chaque combinaison décrit le type de navire et sa route.</p>
+<h3>Les feux de route — la grammaire de base</h3>
+<p>Tout navire faisant route porte trois feux fondamentaux. Voir <span class="wikilink" data-label="Feux Base">concepts/feux-base</span>.</p>
+<table>
+<thead>
+<tr>
+<th>Feu</th>
+<th>Couleur</th>
+<th>Secteur</th>
+<th>Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="wikilink" data-label="Feu Mat Tete">entities/feu-mat-tete</span></td>
+<td>Blanc</td>
+<td>225°</td>
+<td>Avant + côtés jusqu'à 22,5° derrière le travers</td>
+</tr>
+<tr>
+<td><span class="wikilink" data-label="Feu Cote Babord">entities/feu-cote-babord</span></td>
+<td>Rouge</td>
+<td>112,5°</td>
+<td>Côté gauche</td>
+</tr>
+<tr>
+<td><span class="wikilink" data-label="Feu Cote Tribord">entities/feu-cote-tribord</span></td>
+<td>Vert</td>
+<td>112,5°</td>
+<td>Côté droit</td>
+</tr>
+<tr>
+<td><span class="wikilink" data-label="Feu Poupe">entities/feu-poupe</span></td>
+<td>Blanc</td>
+<td>135°</td>
+<td>Arrière</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>La règle de lecture nocturne :</strong></p>
 <ul>
-<li>Nord : topmark 2 cônes pointes en haut, feux blanc Fl(3) 10s ou Q</li>
-<li>Sud : topmark 2 cônes pointes en bas, feux blanc Fl(6)+LFl 15s ou VQ(6)+LFl</li>
-<li>Est : topmark 2 cônes base à base, feux blanc Fl(3) 10s ou Q(3)</li>
-<li>Ouest : topmark 2 cônes tête à tête, feux blanc Fl(9) 15s ou Q(9)</li>
+<li><strong>Vert + blanc tête</strong> → il se dirige vers ma droite, voie libre.</li>
+<li><strong>Rouge + blanc tête</strong> → il se dirige vers ma gauche, je dois manœuvrer.</li>
+<li><strong>Rouge ET vert ensemble (+ blanc)</strong> → il vient droit sur moi, face à face.</li>
+<li><strong>Blanc seul de poupe</strong> → il s'éloigne, je le rattrape.</li>
 </ul>
-<div class="wiki-image-wrap"><img class="wiki-image" src="assets/cardinal-marks-all.png" alt="cardinal-marks-all.png"></div>
-<p><strong>Marques latérales</strong> — balisent les chenaux :</p>
-<ul>
-<li>Bâbord (gauche en entrant) : rouge, cylindrique, feux rouge</li>
-<li>Tribord (droit en entrant) : vert, conique, feux vert</li>
-</ul>
-<p>Voir aussi <span class="wikilink" data-label="Balisage Iala Region A">concepts/balisage-iala-region-a</span>, <span class="wikilink" data-label="Marques Cardinales">concepts/marques-cardinales</span>.</p>
+</blockquote>
+<p>Mnémonique : « Port wine is red » — Port (bâbord, gauche) = rouge.</p>
+<h3>Les navires privilégiés — feux de travail 360°</h3>
+<p>Un navire qui ne peut pas manœuvrer normalement le signale par des feux <strong>visibles tout autour</strong> (360°), souvent disposés verticalement. Voir <span class="wikilink" data-label="Feux Peche">concepts/feux-peche</span>.</p>
+<table>
+<thead>
+<tr>
+<th>Configuration verticale (360°)</th>
+<th>Identité</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rouge sur blanc</strong></td>
+<td>Navire de pêche au filet</td>
+</tr>
+<tr>
+<td><strong>Blanc sur rouge</strong></td>
+<td>Navire pilote (« casquette blanche, nez rouge »)</td>
+</tr>
+<tr>
+<td><strong>Rouge - blanc - rouge</strong></td>
+<td>Capacité de manœuvre restreinte</td>
+</tr>
+<tr>
+<td><strong>Rouge - rouge</strong></td>
+<td>Non maître de sa manœuvre (avarie)</td>
+</tr>
+</tbody>
+</table>
+<p>Mnémonique : pêcheur = <strong>rouge en haut</strong> ; pilote = <strong>blanc en haut</strong>.</p>
+<h3>Quand on n'y voit plus rien : la brume</h3>
+<p>Sans visibilité, les feux ne servent plus — il faut écouter. Voir <span class="wikilink" data-label="Sons Manoeuvre">concepts/sons-manoeuvre</span>.</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Signal sonore (toutes les 2 minutes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Moteur ayant de l'erre</td>
+<td>1 son <strong>prolongé</strong></td>
+</tr>
+<tr>
+<td>Moteur sans erre</td>
+<td>2 sons <strong>prolongés</strong></td>
+</tr>
+<tr>
+<td>Voilier, navire de pêche, remorqué</td>
+<td>1 prolongé + 2 brefs</td>
+</tr>
+<tr>
+<td>Au mouillage</td>
+<td>Cloche rapide ≈ 5 s par minute</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Bref ≈ 1 s. Prolongé = 4 à 6 s.</p>
+</blockquote>
+<h3>Et les signaux de manœuvre (jour ou nuit)</h3>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Sens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 son bref</td>
+<td>Je gouverne sur <strong>bâbord</strong></td>
+</tr>
+<tr>
+<td>2 sons brefs</td>
+<td>Je gouverne sur <strong>tribord</strong></td>
+</tr>
+<tr>
+<td>3 sons brefs</td>
+<td>Je bats en <strong>arrière</strong></td>
+</tr>
+</tbody>
+</table>
 <h2>TASK</h2>
 
 <div class="task-block">
-  <div class="task-prompt"><p>Sans regarder vos notes, décrivez chacune des quatre marques cardinales : forme du topmark, couleur du corps, et signature lumineuse nocturne.</p></div>
+  <div class="task-prompt"><p>En voyant uniquement les feux d'un navire la nuit, identifiez son type et sa route : rouge à gauche, vert à droite, blanc à l'avant.</p></div>
   <textarea class="task-input" rows="4" placeholder="Écrivez votre réponse ici…" aria-label="Votre réponse"></textarea>
   <div class="task-actions">
     <button class="btn-check" onclick="checkTask(this)">Vérifier ✓</button>
@@ -638,53 +755,27 @@
   </div>
   <div class="task-feedback hidden"></div>
 </div><h2>HINT_1</h2>
-<p>Pensez aux points cardinaux de la boussole. Le nom de chaque marque indique de quel côté du danger elle se trouve.</p>
+<p>Vous voyez <strong>les trois feux à la fois</strong> — ce qui signifie que vous êtes dans le secteur visible de chaque côté <strong>et</strong> de l'avant. Que peut-on en déduire de votre position relative à ce navire ?</p>
 <h2>HINT_2</h2>
-<p>Les topmarks sont toujours deux cônes. La direction des pointes vous dit tout : Nord = pointes en haut (comme N), Sud = pointes en bas.</p>
+<p>Les feux de côté sont étanches : le rouge n'est visible <strong>que</strong> depuis le côté bâbord du navire, jusqu'à 22,5° derrière le travers. Si vous voyez rouge ET vert simultanément, vous êtes forcément… où ?</p>
 <h2>MISCONCEPTION</h2>
-<p>Les étudiants confondent souvent rouge/vert avec danger/sécurité. Rouge = bâbord (gauche en entrant), pas forcément danger.</p>
+<ul>
+<li>« Vert à droite, donc le navire va à droite. » Faux : le vert est à <strong>sa</strong> droite, pas à la vôtre. Si vous voyez son vert, vous voyez son côté tribord — il vous croise par votre gauche.</li>
+<li>Confondre feu de pêche (rouge sur blanc) et feu de pilote (blanc sur rouge) : les deux ont les mêmes couleurs, l'ordre vertical change tout.</li>
+<li>Oublier qu'un voilier au moteur perd son statut et porte les feux d'un moteur — donc un feu de tête de mât blanc.</li>
+</ul>
 <details class="solution-block">
   <summary>🔍 Voir la solution (après avoir essayé)</summary>
   <div class="solution-content"><h2>SOLUTION</h2>
-<table>
-<thead>
-<tr>
-<th>Marque</th>
-<th>Topmark</th>
-<th>Corps</th>
-<th>Feux nuit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Nord</td>
-<td>↑↑ cônes pointes haut</td>
-<td>Noir-jaune</td>
-<td>Q ou VQ — continu rapide</td>
-</tr>
-<tr>
-<td>Sud</td>
-<td>↓↓ cônes pointes bas</td>
-<td>Jaune-noir</td>
-<td>Q(6)+LFl ou VQ(6)+LFl</td>
-</tr>
-<tr>
-<td>Est</td>
-<td>◇ base à base</td>
-<td>Noir-jaune-noir</td>
-<td>Q(3) ou VQ(3) — 3 éclats</td>
-</tr>
-<tr>
-<td>Ouest</td>
-<td>✦ tête à tête</td>
-<td>Jaune-noir-jaune</td>
-<td>Q(9) ou VQ(9) — 9 éclats</td>
-</tr>
-</tbody>
-</table>
+<p>Si vous voyez <strong>rouge à votre gauche, vert à votre droite, et blanc en hauteur</strong>, le navire arrive <strong>face à vous</strong>, route opposée à la vôtre. C'est un navire à propulsion mécanique en route. Vous êtes dans une situation de <strong>face-à-face</strong> au sens RIPAM : les deux navires manœuvrent <strong>chacun sur tribord</strong> pour se croiser bâbord à bâbord. La règle est symétrique — personne n'a la priorité, les deux agissent.</p>
+<p>Si le rouge et le vert sont visibles <strong>sans</strong> feu blanc de tête de mât → c'est un voilier de moins de 20 m (les voiliers ne portent pas de feu de tête de mât).</p>
 </div>
 </details><h2>MOTIVATION</h2>
-<p>Jusqu'à 6 questions d'examen portent sur les marques cardinales. Les rater, c'est rater l'examen.</p>
+<p><strong>4 questions</strong> d'examen portent sur les feux. Mais la valeur réelle dépasse l'examen : les feux sont la seule façon de comprendre l'intention d'un autre navire la nuit. Mal lire un feu, c'est mal lire l'avenir immédiat de la rencontre. À 8 nœuds, on parcourt 4 mètres par seconde — il n'y a pas le temps de douter.</p>
+<h2>PREREQUISITES</h2>
+<ul>
+<li><span class="wikilink" data-label="Session 02 Regles Barre">lessons/session-02-regles-barre</span></li>
+</ul>
 
       </div>
     </main>
