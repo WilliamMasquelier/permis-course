@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+/tmp/
+*.log
+*.bak
+*.tmp
+# Empty OCR artifacts from image-based PDFs
+1-Les_balises-RECTO.txt
+1-Les_balises-VERSO.txt
+identification_balises.txt

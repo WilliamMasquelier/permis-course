@@ -1,0 +1,14 @@
+{
+  "name": "permis-course",
+  "version": "0.1.0",
+  "description": "Permis Côtier de Plaisance — cours interactif avec IA (5 sessions + examen blanc)",
+  "author": "Stromy",
+  "minClaudeCodeVersion": "2.1.49",
+  "skills": [
+    "permis-tutor",
+    "permis-render",
+    "permis-scenario",
+    "permis-exam",
+    "permis-setup"
+  ]
+}
