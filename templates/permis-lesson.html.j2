@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" class="">
+<html lang="fr" class="{{ 'dark' if dark_mode else '' }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Session 1 : Le Langage de la Mer — Permis Côtier</title>
+  <title>{{ title }} — Permis Côtier</title>
   <style>
     /* === DESIGN SYSTEM TOKENS === */
     :root {
@@ -474,10 +474,34 @@
       .content-card { box-shadow: none; padding: 0; }
     }
   </style>
-  
+  {% if exam_mode %}
+  <script>
+    (function() {
+      const EXAM_DURATION = 2700; // 45 minutes
+      const STORAGE_KEY = 'permis_exam_state';
+      function loadState() {
+        try { const r = localStorage.getItem(STORAGE_KEY); return r ? JSON.parse(r) : null; } catch(e) { return null; }
+      }
+      function saveState(s) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); } catch(e) {} }
+      function fmt(secs) { return String(Math.floor(secs/60)).padStart(2,'0')+':'+String(secs%60).padStart(2,'0'); }
+      window._examInit = function() {
+        let state = loadState();
+        if (!state || !state.startedAt) { state = { startedAt: Date.now(), duration: EXAM_DURATION }; saveState(state); }
+        const timerEl = document.getElementById('timer');
+        function tick() {
+          const remaining = Math.max(0, state.duration - Math.floor((Date.now()-state.startedAt)/1000));
+          if (timerEl) timerEl.textContent = fmt(remaining);
+          if (remaining <= 0) { document.body.classList.add('time-expired'); return; }
+          requestAnimationFrame(() => setTimeout(tick, 1000));
+        }
+        tick();
+      };
+    })();
+  </script>
+  {% endif %}
 </head>
-<body class="">
-  
+<body class="{{ 'exam-mode-body' if exam_mode else '' }}">
+  {% if not exam_mode %}
   <div class="layout">
     <nav id="sidebar">
       <div class="brand">
@@ -504,76 +528,30 @@
     </nav>
     <main id="content">
       <div class="content-card">
-        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 1 : Le Langage de la Mer</span></div>
-        <h1>Session 1 : Le Langage de la Mer</h1>
-        <h2>CONCEPT</h2>
-<p>Le balisage maritime utilise le système IALA Région A en Europe. Il existe cinq familles de marques.</p>
-<p><strong>Marques cardinales</strong> — indiquent le côté passable par rapport à un danger :</p>
-<ul>
-<li>Nord : topmark 2 cônes pointes en haut, feux blanc Fl(3) 10s ou Q</li>
-<li>Sud : topmark 2 cônes pointes en bas, feux blanc Fl(6)+LFl 15s ou VQ(6)+LFl</li>
-<li>Est : topmark 2 cônes base à base, feux blanc Fl(3) 10s ou Q(3)</li>
-<li>Ouest : topmark 2 cônes tête à tête, feux blanc Fl(9) 15s ou Q(9)</li>
-</ul>
-<div class="wiki-image-wrap"><img class="wiki-image" src="assets/cardinal-marks-all.png" alt="cardinal-marks-all.png"></div>
-<p><strong>Marques latérales</strong> — balisent les chenaux :</p>
-<ul>
-<li>Bâbord (gauche en entrant) : rouge, cylindrique, feux rouge</li>
-<li>Tribord (droit en entrant) : vert, conique, feux vert</li>
-</ul>
-<p>Voir aussi <span class="wikilink">concepts/balisage-iala-region-a</span>, <span class="wikilink">concepts/marques-cardinales</span>.</p>
-<h2>TASK</h2>
-<p>Sans regarder vos notes, décrivez chacune des quatre marques cardinales : forme du topmark, couleur du corps, et signature lumineuse nocturne.</p>
-<h2>HINT_1</h2>
-<p>Pensez aux points cardinaux de la boussole. Le nom de chaque marque indique de quel côté du danger elle se trouve.</p>
-<h2>HINT_2</h2>
-<p>Les topmarks sont toujours deux cônes. La direction des pointes vous dit tout : Nord = pointes en haut (comme N), Sud = pointes en bas.</p>
-<h2>MISCONCEPTION</h2>
-<p>Les étudiants confondent souvent rouge/vert avec danger/sécurité. Rouge = bâbord (gauche en entrant), pas forcément danger.</p>
-<h2>SOLUTION</h2>
-<table>
-<thead>
-<tr>
-<th>Marque</th>
-<th>Topmark</th>
-<th>Corps</th>
-<th>Feux nuit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Nord</td>
-<td>↑↑ cônes pointes haut</td>
-<td>Noir-jaune</td>
-<td>Q ou VQ — continu rapide</td>
-</tr>
-<tr>
-<td>Sud</td>
-<td>↓↓ cônes pointes bas</td>
-<td>Jaune-noir</td>
-<td>Q(6)+LFl ou VQ(6)+LFl</td>
-</tr>
-<tr>
-<td>Est</td>
-<td>◇ base à base</td>
-<td>Noir-jaune-noir</td>
-<td>Q(3) ou VQ(3) — 3 éclats</td>
-</tr>
-<tr>
-<td>Ouest</td>
-<td>✦ tête à tête</td>
-<td>Jaune-noir-jaune</td>
-<td>Q(9) ou VQ(9) — 9 éclats</td>
-</tr>
-</tbody>
-</table>
-<h2>MOTIVATION</h2>
-<p>Jusqu'à 6 questions d'examen portent sur les marques cardinales. Les rater, c'est rater l'examen.</p>
-
+        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>{{ title }}</span></div>
+        <h1>{{ title }}</h1>
+        {{ body }}
       </div>
     </main>
   </div>
-  
+  {% else %}
+  <header id="exam-header">
+    <span class="exam-label">⚓ EXAMEN BLANC</span>
+    <div id="timer">45:00</div>
+    <div id="exam-progress-bar"><div id="exam-progress-fill"></div></div>
+  </header>
+  <main id="content" class="exam-mode">
+    <div class="content-card">
+      <h1>{{ title }}</h1>
+      {{ body }}
+    </div>
+  </main>
+  <div id="score-card" class="hidden">
+    <div id="result-banner"></div>
+    <table id="theme-scores"><thead><tr><th>Thème</th><th>Score</th></tr></thead><tbody></tbody></table>
+    <div id="study-plan"></div>
+  </div>
+  {% endif %}
 
   <script>
     (function() {
