@@ -52,6 +52,14 @@ def _truthy(val: str | None) -> bool:
 
 # ── Obsidian syntax pre-processing ───────────────────────────────────────────
 
+def _slug_to_label(slug: str) -> str:
+    """Convert 'concepts/marques-cardinales' → 'Marques Cardinales'."""
+    name = slug.split("/")[-1]
+    # Strip optional pipe-alias '|label' if present
+    name = name.split("|")[0]
+    return name.replace("-", " ").title()
+
+
 def _preprocess(md: str) -> str:
     # ![[image.png]] → block div with img (on its own line so markdown-it doesn't wrap in <p>)
     md = re.sub(
@@ -59,9 +67,52 @@ def _preprocess(md: str) -> str:
         lambda m: f'\n\n<div class="wiki-image-wrap"><img class="wiki-image" src="assets/{m.group(1)}" alt="{m.group(1)}"></div>\n\n',
         md,
     )
-    # [[slug]] → <span class="wikilink">slug</span>
-    md = re.sub(r"\[\[([^\]]+)\]\]", r'<span class="wikilink">\1</span>', md)
+    # [[slug]] → <span class="wikilink" data-label="...">slug</span>
+    md = re.sub(
+        r"\[\[([^\]]+)\]\]",
+        lambda m: f'<span class="wikilink" data-label="{_slug_to_label(m.group(1))}">{m.group(1)}</span>',
+        md,
+    )
     return md
+
+
+def _make_task_interactive(html: str) -> str:
+    """Wrap TASK section content in an interactive answer block."""
+    pattern = r'(<h2[^>]*>TASK</h2>\s*)((?:<p>.*?</p>\s*)+)'
+
+    def replacer(m):
+        heading = m.group(1)
+        task_text = m.group(2).strip()
+        return (
+            f'{heading}\n'
+            f'<div class="task-block">\n'
+            f'  <div class="task-prompt">{task_text}</div>\n'
+            f'  <textarea class="task-input" rows="4" placeholder="Écrivez votre réponse ici…" aria-label="Votre réponse"></textarea>\n'
+            f'  <div class="task-actions">\n'
+            f'    <button class="btn-check" onclick="checkTask(this)">Vérifier ✓</button>\n'
+            f'    <button class="btn-hint" onclick="showHint(this)" data-hint-level="0">Indice 💡</button>\n'
+            f'    <button class="btn-reset" onclick="resetTask(this)">Recommencer ↺</button>\n'
+            f'  </div>\n'
+            f'  <div class="task-feedback hidden"></div>\n'
+            f'</div>'
+        )
+
+    return re.sub(pattern, replacer, html, flags=re.DOTALL)
+
+
+def _wrap_solution(html: str) -> str:
+    """Wrap SOLUTION section in a collapsible details block."""
+    pattern = r'(<h2[^>]*>SOLUTION</h2>\s*)(.*?)(?=<h2|$)'
+
+    def replacer(m):
+        return (
+            f'<details class="solution-block">\n'
+            f'  <summary>🔍 Voir la solution (après avoir essayé)</summary>\n'
+            f'  <div class="solution-content">{m.group(1)}{m.group(2)}</div>\n'
+            f'</details>'
+        )
+
+    return re.sub(pattern, replacer, html, flags=re.DOTALL)
 
 
 # ── Render one lesson ─────────────────────────────────────────────────────────
@@ -84,6 +135,8 @@ def render_lesson(lesson_path: Path, output_dir: Path) -> Path:
 
     body_md = _preprocess(body_md)
     html_body = _md_parser.render(body_md)
+    html_body = _make_task_interactive(html_body)
+    html_body = _wrap_solution(html_body)
 
     template = _jinja_env.get_template(TEMPLATE_NAME)
     full_html = template.render(title=title, body=html_body, dark_mode=dark_mode, exam_mode=exam_mode)
