@@ -529,27 +529,7 @@
     }
     @keyframes flash { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
-    /* === SCORE CARD === */
-    #score-card {
-      max-width: 720px;
-      margin: 48px auto;
-      background: var(--surface);
-      border-radius: var(--radius-lg);
-      padding: 40px;
-      box-shadow: var(--shadow-lg);
-    }
-    #score-card.hidden { display: none; }
-    #result-banner {
-      padding: 20px 28px;
-      border-radius: var(--radius-md);
-      font-family: var(--font-ui);
-      font-weight: 700;
-      font-size: 22px;
-      text-align: center;
-      margin-bottom: 28px;
-    }
-    #result-banner.pass { background: var(--teal); color: #fff; }
-    #result-banner.fail { background: var(--amber); color: var(--navy); }
+
 
     main.exam-mode {
       max-width: 860px;
@@ -650,11 +630,7 @@
       {{ body }}
     </div>
   </main>
-  <div id="score-card" class="hidden">
-    <div id="result-banner"></div>
-    <table id="theme-scores"><thead><tr><th>Thème</th><th>Score</th></tr></thead><tbody></tbody></table>
-    <div id="study-plan"></div>
-  </div>
+
   {% endif %}
 
   <script>
