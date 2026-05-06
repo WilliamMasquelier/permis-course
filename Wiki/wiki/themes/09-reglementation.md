@@ -2,7 +2,7 @@
 title: 09 — Réglementation et zones
 type: theme
 tags: [reglementation]
-sources: [../../raw/../Cours 1/8-bande_300m_DK.pdf, ../../raw/../Cours 1/zone_large.pdf, ../../raw/../Cours 1/yd-0525_-_loisirs_nautiques_en_mer-3_cle1dd3c1.pdf]
+sources: [../../Cours 1/8-bande_300m_DK.pdf, ../../Cours 1/zone_large.pdf, ../../Cours 1/yd-0525_-_loisirs_nautiques_en_mer-3_cle1dd3c1.pdf]
 related: [[05-securite]], [[06-navigation]]
 status: stub
 updated: 2026-05-01

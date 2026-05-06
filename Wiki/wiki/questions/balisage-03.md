@@ -2,7 +2,7 @@
 title: QCM Balisage 03 — Tonneau de jauge
 type: question
 tags: [balisage, reglementation]
-sources: [../../raw/../Cours 2/RECTO-MER_COTIER.pdf]
+sources: [../../Cours 2/RECTO-MER_COTIER.pdf]
 related: [[../concepts/zones-navigation]]
 status: draft
 updated: 2026-05-01

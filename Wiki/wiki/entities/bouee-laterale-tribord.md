@@ -2,7 +2,7 @@
 title: Bouée latérale tribord
 type: entity
 tags: [balisage]
-sources: [../../raw/../Cours 2/1-Les balises_RECTO.pdf]
+sources: [../../Cours 2/1-Les balises_RECTO.pdf]
 related: [[../concepts/marques-laterales]], [[bouee-laterale-babord]]
 status: draft
 updated: 2026-05-01
@@ -10,7 +10,7 @@ updated: 2026-05-01
 
 **Summary:** Balise verte à laisser sur tribord (droite) quand on navigue dans le sens conventionnel (vers le port).
 
-![[bouee-laterale-tribord.png]]
+_⚠ Image manquante : bouee-laterale-tribord.png — à ajouter dans Wiki/assets/images/_
 
 | Attribut | Valeur |
 |----------|--------|

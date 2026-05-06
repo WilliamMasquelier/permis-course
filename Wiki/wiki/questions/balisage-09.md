@@ -2,7 +2,7 @@
 title: QCM Balisage 09 — Chenal préféré tribord en région B
 type: question
 tags: [balisage]
-sources: [../../raw/../Cours 2/RECTO-MER_COTIER.pdf]
+sources: [../../Cours 2/RECTO-MER_COTIER.pdf]
 related: [[../concepts/marques-laterales], [[../concepts/balisage-iala-region-a]]]
 status: draft
 updated: 2026-05-01

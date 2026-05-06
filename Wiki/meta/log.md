@@ -40,3 +40,35 @@ Tracks the growth and health of the Permis Bateau wiki.
 ### Concept count: 59 → 66
 ### Entity count: 6 (unchanged)
 ### Question count: 44 (unchanged)
+
+## LINT 2026-05-06 (Phase 1)
+- Concept files: 66
+- Entity files: 18 (was 6 — 13 new entities created)
+- Question files: 44
+- Stub concepts remaining: 0
+- Draft concepts: 39
+
+### Entity files created
+- `bouee-danger-isole.md` — Marque de danger isolé (Fl(2), 2 sphères noires)
+- `bouee-eaux-saines.md` — Marque d'eaux saines (Iso/Oc/LFl/Morse A, 1 sphère rouge)
+- `bouee-speciales.md` — Marque spéciale (Fl.Y, croix jaune)
+- `bouee-chenal-prefere-bb.md` — Chenal préféré passage bâbord (Fl(2+1)R)
+- `bouee-chenal-prefere-tb.md` — Chenal préféré passage tribord (Fl(2+1)G)
+- `feu-mat-tete.md` — Feu blanc de tête de mât, 225°
+- `feu-cote-babord.md` — Feu rouge bâbord, 112,5°
+- `feu-cote-tribord.md` — Feu vert tribord, 112,5°
+- `feu-poupe.md` — Feu blanc de poupe, 135°
+- `equipement-gilet.md` — Gilet 150N, EN ISO 12402-3
+- `equipement-vhf.md` — VHF portative, canaux 16/70
+- `equipement-feux-detresse.md` — Pyrotechnie, validité 3 ans
+
+### Image refs fixed
+- `bouee-cardinale-est.png` → `cardinal-marks-all.png` + caption note
+- `bouee-cardinale-nord.png` → `cardinal-marks-all.png` + caption note
+- `bouee-cardinale-ouest.png` → `cardinal-marks-all.png` + caption note
+- `bouee-cardinale-sud.png` → `cardinal-marks-all.png` + caption note
+- `bouee-laterale-babord.png` → placeholder warning (no replacement image available)
+- `bouee-laterale-tribord.png` → placeholder warning (no replacement image available)
+
+### Source paths fixed
+- 62 files: removed `raw/../` pattern from `sources:` frontmatter fields

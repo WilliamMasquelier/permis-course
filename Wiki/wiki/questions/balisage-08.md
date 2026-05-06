@@ -2,7 +2,7 @@
 title: QCM Balisage 08 — Feu blanc 2 éclats groupés — identification
 type: question
 tags: [balisage, feux]
-sources: [../../raw/../Cours 2/VERSO-MER_COTIER.pdf]
+sources: [../../Cours 2/VERSO-MER_COTIER.pdf]
 related: [[../concepts/marques-danger-isole], [[../concepts/marques-eaux-saines]]]
 status: draft
 updated: 2026-05-01

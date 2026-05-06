@@ -2,7 +2,7 @@
 title: QCM Balisage 06 — Vitesse bande 300m et chenaux traversiers
 type: question
 tags: [balisage, reglementation]
-sources: [../../raw/../Cours 2/RECTO-MER_COTIER.pdf]
+sources: [../../Cours 2/RECTO-MER_COTIER.pdf]
 related: [[../concepts/zones-navigation]]
 status: draft
 updated: 2026-05-01

@@ -2,7 +2,7 @@
 title: IALA région A — vue d'ensemble des 4 groupes
 type: concept
 tags: [balisage]
-sources: [../../raw/../Cours 2/1-Les balises_RECTO.pdf]
+sources: [../../Cours 2/1-Les balises_RECTO.pdf]
 related: [[../themes/01-balisage]], [[marques-laterales]], [[marques-danger-isole]], [[marques-eaux-saines]], [[marques-speciales]], [[marques-cardinales]]
 status: draft
 updated: 2026-05-01

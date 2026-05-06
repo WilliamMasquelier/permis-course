@@ -2,7 +2,7 @@
 title: Bouée cardinale Sud
 type: entity
 tags: [balisage]
-sources: [../../raw/../Cours 2/1-Les balises_RECTO.pdf]
+sources: [../../Cours 2/1-Les balises_RECTO.pdf]
 related: [[../concepts/marques-cardinales]]
 status: draft
 updated: 2026-05-01
@@ -12,7 +12,8 @@ updated: 2026-05-01
 
 ## Identification visuelle
 
-![[bouee-cardinale-sud.png]]
+![[cardinal-marks-all.png]]
+_Cardinale sud — repérer le voyant et le corps parmi les quatre cardinales._
 
 | Attribut | Valeur |
 |----------|--------|

@@ -2,7 +2,7 @@
 title: Signaux sonores de manœuvre
 type: concept
 tags: [signaux]
-sources: [../../raw/../Cours 2/3-Les_signaux-RECTO.pdf]
+sources: [../../Cours 2/3-Les_signaux-RECTO.pdf]
 related: [[../themes/03-signaux]], [[sons-avertissement]], [[signaux-detresse]]
 status: draft
 updated: 2026-05-01

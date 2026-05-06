@@ -2,7 +2,7 @@
 title: ASN / DSC — Appel Sélectif Numérique
 type: concept
 tags: [radio, crr, asn, dsc, vhf]
-sources: [../../raw/../Cours 1/anfr-manuel_crr.pdf]
+sources: [../../Cours 1/anfr-manuel_crr.pdf]
 related: [[../themes/08-radio-crr]], [[mmsi]], [[canaux-vhf]], [[procedure-mayday]], [[procedure-pan-pan]]
 status: draft
 updated: 2026-05-06

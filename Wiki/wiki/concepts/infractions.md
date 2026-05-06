@@ -2,7 +2,7 @@
 title: Infractions et amendes en navigation
 type: concept
 tags: [pratique, securite]
-sources: [../../raw/../Cours 2/5-securite-RECTO.pdf, ../../raw/../Cours 2/7-La_pratique-RECTO.pdf]
+sources: [../../Cours 2/5-securite-RECTO.pdf, ../../Cours 2/7-La_pratique-RECTO.pdf]
 related: [[zones-navigation], [[equipement-obligatoire]]]
 status: draft
 updated: 2026-05-01

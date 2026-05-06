@@ -2,7 +2,7 @@
 title: Checklist avant départ
 type: concept
 tags: [pratique]
-sources: [../../raw/../Cours 2/7-La_pratique-RECTO.pdf]
+sources: [../../Cours 2/7-La_pratique-RECTO.pdf]
 related: [[moteur-pratique], [[../themes/07-pratique]]]
 status: draft
 updated: 2026-05-01
