@@ -61,16 +61,25 @@ def _slug_to_label(slug: str) -> str:
 
 
 def _preprocess(md: str) -> str:
-    # ![[image.png]] → block div with img (on its own line so markdown-it doesn't wrap in <p>)
+    # Image embeds with optional alias: ![[image.png]] or ![[image.png|caption]]
     md = re.sub(
-        r"!\[\[([^\]]+)\]\]",
-        lambda m: f'\n\n<div class="wiki-image-wrap"><img class="wiki-image" src="assets/{m.group(1)}" alt="{m.group(1)}"></div>\n\n',
+        r"!\[\[([^\]|#\n]+?)(?:\|([^\]\n]*))?\]\]",
+        lambda m: (
+            f'\n\n<div class="wiki-image-wrap">'
+            f'<img class="wiki-image" src="assets/{m.group(1).strip()}" '
+            f'alt="{(m.group(2) or m.group(1)).strip()}">'
+            f'</div>\n\n'
+        ),
         md,
     )
-    # [[slug]] → <span class="wikilink" data-label="...">slug</span>
+    # Internal wikilinks with optional alias: [[slug]] or [[slug|label]]
     md = re.sub(
-        r"\[\[([^\]]+)\]\]",
-        lambda m: f'<span class="wikilink" data-label="{_slug_to_label(m.group(1))}">{m.group(1)}</span>',
+        r"\[\[([^\]|#\n]+?)(?:\|([^\]\n]*))?\]\]",
+        lambda m: (
+            f'<span class="wikilink" '
+            f'data-label="{_slug_to_label((m.group(2) or m.group(1)).strip())}">' 
+            f'{(m.group(2) or m.group(1)).strip()}</span>'
+        ),
         md,
     )
     return md
