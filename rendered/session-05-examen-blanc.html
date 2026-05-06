@@ -529,27 +529,7 @@
     }
     @keyframes flash { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
-    /* === SCORE CARD === */
-    #score-card {
-      max-width: 720px;
-      margin: 48px auto;
-      background: var(--surface);
-      border-radius: var(--radius-lg);
-      padding: 40px;
-      box-shadow: var(--shadow-lg);
-    }
-    #score-card.hidden { display: none; }
-    #result-banner {
-      padding: 20px 28px;
-      border-radius: var(--radius-md);
-      font-family: var(--font-ui);
-      font-weight: 700;
-      font-size: 22px;
-      text-align: center;
-      margin-bottom: 28px;
-    }
-    #result-banner.pass { background: var(--teal); color: #fff; }
-    #result-banner.fail { background: var(--amber); color: var(--navy); }
+
 
     main.exam-mode {
       max-width: 860px;
@@ -668,15 +648,12 @@
 <h2>CONSIGNES</h2>
 <p>Le professeur posera les questions une par une dans le chat. Répondez précisément.
 Pas de notes, pas de wiki — c'est un examen blanc.</p>
+<p>Le rapport de score est généré par la compétence <code>/permis-exam</code> à la fin de la session d'examen — il n'est pas affiché dans cette page HTML.</p>
 <p>Bonne chance ! ⚓</p>
 
     </div>
   </main>
-  <div id="score-card" class="hidden">
-    <div id="result-banner"></div>
-    <table id="theme-scores"><thead><tr><th>Thème</th><th>Score</th></tr></thead><tbody></tbody></table>
-    <div id="study-plan"></div>
-  </div>
+
   
 
   <script>

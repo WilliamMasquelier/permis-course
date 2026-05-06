@@ -34,4 +34,6 @@ Bienvenue à l'examen blanc du Permis Côtier de Plaisance.
 Le professeur posera les questions une par une dans le chat. Répondez précisément.
 Pas de notes, pas de wiki — c'est un examen blanc.
 
+Le rapport de score est généré par la compétence `/permis-exam` à la fin de la session d'examen — il n'est pas affiché dans cette page HTML.
+
 Bonne chance ! ⚓

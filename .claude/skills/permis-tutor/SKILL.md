@@ -41,37 +41,45 @@ Execute these steps in order. Do not skip steps; do not reorder.
 - Identify `current_lesson` (slug + `.md` filename).
 - Confirm the lesson file exists at `Wiki/wiki/lessons/<current_lesson>`. If not, halt and report.
 
-### 2. Run a quick FSRS review round (max 5 cards)
+### 2. Run a quick FSRS review round (max 10 cards)
 
 - Compute `now = current ISO 8601 UTC timestamp`.
 - Filter `flashcards` for entries where `due <= now`.
-- Take **at most 5** due cards (oldest `due` first). If none, skip to step 3.
+- Take **at most 10** due cards (oldest `due` first). If none, skip to step 3.
 - Tell the student: « Avant de commencer, petite révision rapide — N carte(s) à revoir. »
 - For each card:
   1. Ask the question (the card's slug labels the concept; pose a recall question on it).
   2. Wait for the student's answer.
-  3. Rate the answer on the FSRS 1–4 scale:
-     - **1 (Again)** — wrong / blank
-     - **2 (Hard)** — partial, struggled
-     - **3 (Good)** — correct, normal effort
-     - **4 (Easy)** — correct, immediate
+  3. **You (Claude) rate the answer** — do not ask the student to rate it:
+     - **4 (Easy)** — correct, immediate recall, confident
+     - **3 (Good)** — correct with normal effort
+     - **2 (Hard)** — partially correct or hesitated significantly
+     - **1 (Again)** — wrong or blank
+     Give brief encouraging feedback, then move to the next card.
   4. Update the card in `student-progress.json`:
      - Increment `reps`.
      - Apply a simple FSRS-lite update: stability *= {0.5, 1.0, 1.5, 2.5}[rating-1]; clamp ≥ 0.5.
      - Set `due = now + stability days`.
      - Append a row to `review_log`: `{ "concept": "<slug>", "rating": <n>, "ts": "<now>" }`.
 - Save `student-progress.json` after each card (resilient to crashes).
-- Cap the round at 5 cards even if more are due — don't make it feel like homework.
+- Cap the round at 10 cards even if more are due — don't make it feel like homework.
 
 ### 3. Start the local HTTP server
 
-- Try ports in order: 8080, 8081, 8082.
-- Run in background:
-  ```bash
-  python -m http.server <port> --directory rendered/ &
-  ```
-- Capture the PID. Note the chosen port.
-- If all three ports are busy, fall back to printing the file URL (`file://...`) and ask the student to open it manually.
+Try ports in order: 8080, 8081, 8082. For the first available port:
+
+```bash
+python -m http.server <port> --directory rendered/ > /tmp/permis-server.log 2>&1 &
+echo $! > /tmp/permis-server.pid
+```
+
+Wait for the port to be ready before proceeding (mandatory — Playwright can fire before the socket is listening):
+
+```bash
+for i in $(seq 1 10); do nc -z localhost <port> && break || sleep 0.5; done
+```
+
+If all three ports are busy, print the file URL (`file:///<absolute-path>/rendered/<slug>.html`) and ask the student to open it manually. Continue without a server.
 
 ### 4. Open the lesson in the browser
 
@@ -79,9 +87,11 @@ Execute these steps in order. Do not skip steps; do not reorder.
 - Open via Playwright MCP: call `browser_navigate` with that URL.
 - If Playwright fails (MCP unavailable, browser launch error), print the URL and instruct the student to open it manually. Continue.
 
-### 5. Load lesson content + RTRI prompt
+### 5. Load lesson content + linked concepts + RTRI prompt
 
 - Read the full content of `Wiki/wiki/lessons/<current_lesson>` into context.
+- Parse the `## CONCEPT` section of the lesson file. Extract all wikilinks of the form `[[concepts/<slug>]]` and `[[entities/<slug>]]`.
+- For each linked slug, read the corresponding file from `Wiki/wiki/concepts/<slug>.md` or `Wiki/wiki/entities/<slug>.md` if it exists. Load each into context. This typically adds 5–8 concept files (~6,000 tokens total). **Do not load the entire wiki** — only directly-linked files.
 - Read `.claude/skills/permis-tutor/prompts/tutor-system-prompt.md`.
 - Substitute placeholders:
   - `{lesson_title}` ← title from frontmatter.
@@ -96,25 +106,39 @@ Execute these steps in order. Do not skip steps; do not reorder.
 - Watch for `## MISCONCEPTION` patterns and redirect proactively.
 - End **every** response with exactly one reflective question.
 
-### 7. Detect the completion sentinel
+### 7. Advance the lesson when mastery is demonstrated
 
-- After every model response you produce, scan the output for the exact phrase `Prêt pour la suite` on its own line.
-- When detected:
-  1. Mark the lesson complete: append `current_lesson` (slug without `.md`) to `completed_lessons` in `student-progress.json`.
-  2. Generate FSRS flashcards for every wikilink in the `## CONCEPT` section that points at `concepts/...` or `entities/...`. For each new card not already in `flashcards`:
+When you have determined that the student has genuinely satisfied the `## TASK` requirement (do not rush — verify mastery, not just engagement), execute the following sequence **all in the same response turn**:
+
+1. Output the sentinel phrase on its own line:
+   ```
+   Prêt pour la suite
+   ```
+2. Immediately — in the same turn, without waiting — call Bash to update `Wiki/meta/student-progress.json`:
+   - Append `current_lesson` slug (without `.md`) to `completed_lessons`.
+   - Create FSRS flashcards for every `concepts/...` or `entities/...` wikilink found in the lesson's `## CONCEPT` section. For each not already in `flashcards`:
      ```json
-     { "due": "<now>", "stability": 1, "difficulty": 5, "reps": 0 }
+     { "due": "<now_iso_utc>", "stability": 1, "difficulty": 5, "reps": 0 }
      ```
-  3. Identify the next lesson by scanning `Wiki/wiki/lessons/` sorted alphabetically — pick the first uncompleted `session-NN-*.md`. Set `current_lesson` to that filename.
-  4. Save `student-progress.json`.
-  5. Kill the HTTP server: `pkill -f "http.server 808"` (or kill the captured PID).
-  6. If a next lesson exists: announce « Session terminée — on enchaîne sur la suivante » and loop back to step 3 with the new `current_lesson`.
-  7. If no lessons remain: congratulate the student in French and suggest running `/permis-exam` for the mock exam (Session 5 — `exam_mode: true`).
+   - Set `current_lesson` to the next uncompleted `session-NN-*.md` (alphabetical order from `Wiki/wiki/lessons/`), or `null` if all lessons are done.
+   - Save the file.
+3. Kill the HTTP server: `kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid`
+4. If a next lesson exists:
+   - Announce: « Session terminée — on enchaîne sur la suivante. »
+   - Start a new HTTP server for the next lesson (step 3 of the workflow) and open it with `browser_navigate`.
+5. If no lessons remain:
+   - Congratulate the student in French.
+   - Suggest `/permis-exam` for the mock exam.
+
+**Never output `Prêt pour la suite` prematurely.** The student must have correctly and fully answered the `## TASK`. A partial answer or "I think I understand" does not qualify.
 
 ### 8. Cleanup on session end
 
-- On any user exit (`/exit`, "stop", "j'arrête"), or any abnormal termination: always run `pkill -f "http.server 808"` to free ports.
-- Save `student-progress.json` one final time.
+On any user exit (`/exit`, "stop", "j'arrête"), or any abnormal termination:
+```bash
+kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid
+```
+Save `student-progress.json` one final time.
 
 ## Error handling
 
