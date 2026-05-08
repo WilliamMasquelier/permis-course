@@ -1,10 +1,15 @@
 ---
 title: "Session 4 : La Sécurité et l'Équipement"
+type: lesson
 lesson_order: 4
 prerequisites: ["session-03-feux-signaux"]
 difficulty: intermediate
 dark_mode: false
 exam_mode: false
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 ## CONCEPT
@@ -14,6 +19,8 @@ La sécurité en mer ne se règle pas au moment du danger — elle se règle **a
 ### L'équipement obligatoire — un système cumulatif
 
 L'arrêté divisé en trois zones définit ce que vous **devez** avoir à bord. Chaque zone supérieure ajoute, ne remplace pas. Voir [[concepts/equipement-obligatoire]].
+
+![[securite-zones-armement.svg]]
 
 **Zone Basique (≤ 2 milles d'un abri) — 5 catégories à retenir :**
 
@@ -101,7 +108,7 @@ Le mot « MAYDAY » est répété **trois fois** pour ne laisser aucun doute (in
 
 ## MOTIVATION
 
-**4 questions** sur la sécurité tombent à l'examen, et la procédure MAYDAY est régulièrement testée mot pour mot. Au-delà des points : un MAYDAY mal formulé en pleine détresse peut coûter des minutes irremplaçables. Le CROSS reçoit chaque été des appels paniqués sans position et sans nature — chaque fois, il faut rappeler, demander, perdre du temps. La procédure existe pour qu'**en 30 secondes**, le sauveteur sache où venir, quoi apporter, et pour combien de personnes.
+La sécurité est une matière de réflexes. Au-delà des points d'examen, un MAYDAY mal formulé en pleine détresse peut coûter des minutes irremplaçables. La procédure existe pour qu'en 30 secondes le sauveteur sache où venir, quoi apporter, et pour combien de personnes.
 
 ## PREREQUISITES
 

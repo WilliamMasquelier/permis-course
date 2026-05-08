@@ -1,48 +1,65 @@
-# Permis Course — research sandbox
+# Permis Côtier Course
 
-Isolated exploration of the LLM-wiki + interactive-course pattern, using
-the *Permis Bateau* corpus at `~/Documents/Permis Bateau/` as the test
-case. **Not committed** (this folder is gitignored via `research/`).
+Local AI-assisted course for the French **Permis Plaisance Option Côtière**.
+The repo combines a structured Obsidian-style wiki, rendered HTML lessons,
+Claude Code skills, spaced-repetition state, scenarios, and a mock exam flow.
 
-## Contents
+## What It Does
 
+- Teaches the course through `/permis-tutor`.
+- Opens rendered lesson pages from `rendered/`.
+- Tracks learner progress in `Wiki/meta/student-progress.json`.
+- Generates scenario exercises with `/permis-scenario`.
+- Runs a 40-question mock exam with `/permis-exam`.
+- Maintains the underlying curriculum in `Wiki/wiki/`.
+
+## Quick Start
+
+```text
+/permis-setup
+/permis-tutor
 ```
-permis-course/
-└── PLAN.md              # end-to-end course plan, generic + Permis example
+
+If lesson HTML is missing or stale:
+
+```text
+/permis-render
 ```
 
-The `wiki-builder` skill itself lives at `.claude/skills/wiki-builder/`
-(committed, org-level — not Permis-specific). This folder only holds
-the Permis-flavored exploration of how to use it.
+## Repository Layout
 
-## Status
+```text
+raw/                  Original course inputs and extracted text
+Wiki/                 Curated learning wiki and learner state
+Wiki/wiki/lessons/    Source Markdown for learner-facing lessons
+Wiki/assets/images/   Visual assets copied into rendered HTML
+rendered/             Generated HTML lesson pages
+scripts/              Renderers, validators, and legacy extraction helpers
+templates/            HTML templates
+docs/                 Maintainer and source-freshness documentation
+.claude/skills/       Claude Code slash-command skills
+```
 
-- **Test vault** lives at `/Users/williammasquelier/Documents/Permis Bateau/Wiki/`
-  (outside this repo, scaffolded with 9 theme MOCs + 1 worked-example
-  concept + sample questions + flashcards).
-- **`PLAN.md`** sketches a five-layer stack (vault → tutor → content
-  → website → multi-modal) using *Permis Bateau* as the running
-  example. Generalizes to any course/curriculum.
+## Current Exam Model
 
-## What to decide later
+The official theory exam changed on **June 1, 2022** from 30 to 40 questions.
+Current official guidance says the exam has **40 questions** and **5 errors
+are admitted**. This repo therefore uses **35/40** as the mock-exam pass
+threshold.
 
-- Promote `wiki-builder` to `.claude/skills/` (org-level) vs.
-  `~/.claude/skills/` (user-level personal tool).
-- Whether to author the `<topic>-tutor` companion skill before or after
-  the wiki-builder eval.
-- Whether *Permis Bateau* warrants a dedicated `permis-bateau-tutor`
-  user-level skill or stays an ad-hoc study aid.
-- Whether to package the pattern (wiki-builder + tutor + content
-  template) as a reusable "course-kit" plugin alongside the existing
-  client plugins.
+See [docs/source-freshness.md](docs/source-freshness.md) for the official
+sources and last verification date.
 
-## Promotion path (when ready)
+## Intended Use
 
-1. Run `wiki-builder` on the *Permis Bateau* folder to completion
-   (full ingest of all PDFs + audio transcription).
-2. Author `permis-bateau-tutor` skill at `~/.claude/skills/`.
-3. First study sessions; iterate on both skills based on real use.
-4. If the pattern proves out: `git mv research/permis-course/wiki-builder .claude/skills/`,
-   add a catalog.json entry if applicable, link from `CLAUDE.md`.
-5. Move `PLAN.md` to `infra-docs/ai/` if it becomes org-level guidance,
-   or discard if superseded by the skill itself.
+Use this as a study companion, not as a legal source. The tutor and lessons
+should always cite or trace back to wiki notes and raw source material. For
+exam registration, eligibility, fees, and regulatory changes, rely on current
+official sources from the French Ministry of the Sea and ANFR.
+
+## Maintenance
+
+- Keep raw material under `raw/`; do not put course inputs at repo root.
+- Update `docs/source-freshness.md` when checking official rules.
+- Run the wiki health check before trusting new generated content.
+- Promote wiki notes from `draft` to `reviewed` only after human/source review.

@@ -1,10 +1,15 @@
 ---
 title: "Session 3 : La Nuit et la Brume"
+type: lesson
 lesson_order: 3
 prerequisites: ["session-02-regles-barre"]
 difficulty: intermediate
 dark_mode: true
 exam_mode: false
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 ## CONCEPT
@@ -14,6 +19,8 @@ Il fait nuit noire. Le bruit du moteur se mêle au clapot. Devant vous, dans le 
 ### Les feux de route — la grammaire de base
 
 Tout navire faisant route porte trois feux fondamentaux. Voir [[concepts/feux-base]].
+
+![[feux-secteurs-route.svg]]
 
 | Feu | Couleur | Secteur | Position |
 |-----|---------|---------|----------|
@@ -90,7 +97,7 @@ Si le rouge et le vert sont visibles **sans** feu blanc de tête de mât → c'e
 
 ## MOTIVATION
 
-**4 questions** d'examen portent sur les feux. Mais la valeur réelle dépasse l'examen : les feux sont la seule façon de comprendre l'intention d'un autre navire la nuit. Mal lire un feu, c'est mal lire l'avenir immédiat de la rencontre. À 8 nœuds, on parcourt 4 mètres par seconde — il n'y a pas le temps de douter.
+Les feux et signaux se travaillent comme une langue visuelle : vous voyez une combinaison, vous traduisez immédiatement en type de navire, route probable et action à tenir. À 8 nœuds, on parcourt environ 4 mètres par seconde — il n'y a pas le temps de douter.
 
 ## PREREQUISITES
 

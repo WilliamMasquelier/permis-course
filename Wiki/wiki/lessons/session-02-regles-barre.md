@@ -1,10 +1,15 @@
 ---
 title: "Session 2 : Priorités et Manœuvres"
+type: lesson
 lesson_order: 2
 prerequisites: ["session-01-balisage"]
 difficulty: beginner
 dark_mode: false
 exam_mode: false
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 ## CONCEPT
@@ -12,6 +17,8 @@ exam_mode: false
 En mer, le navire le moins manœuvrant est privilégié — c'est le principe directeur de toutes les règles de barre (RIPAM). Plus un navire a de mal à modifier sa route, plus les autres doivent s'écarter de lui. Le mnémonique descendant à retenir est **NMSP-VRP-V-M** : Non maître de sa manœuvre, Manœuvre Restreinte, handicapé par son tirant d'eau, Pêche, Voilier, Moteur.
 
 Voir [[concepts/regle-de-barre-priorite]] pour la hiérarchie complète.
+
+![[regles-croisement-rattrapage.svg]]
 
 ### Trois cas qu'il faut savoir trancher en une seconde
 
@@ -69,7 +76,7 @@ Voilier-voilier : le mot-clé est **amure** — quel bord reçoit le vent. Voili
 
 ## MOTIVATION
 
-Jusqu'à **5 questions** sur les règles de barre tombent à l'examen officiel. Sur 30 questions et un seuil à 18, ces 5 points pèsent lourd. Et au-delà de l'examen : ces règles existent parce que la mer est un espace partagé sans ligne blanche au sol. Bien les connaître, c'est savoir lire l'intention de l'autre — et c'est ce qui distingue un plaisancier d'un danger flottant.
+Les règles de barre pèsent lourd dans l'examen, mais elles servent surtout à éviter l'hésitation en situation réelle. En mer, il n'y a ni ligne blanche ni priorité routière universelle : la bonne décision dépend du type de navire, de l'angle de rencontre et de la capacité de manœuvre.
 
 ## PREREQUISITES
 

@@ -561,7 +561,7 @@
   {% if exam_mode %}
   <script>
     (function() {
-      const EXAM_DURATION = 2700; // 45 minutes
+      const EXAM_DURATION = 1800; // Local 30-minute practice timer.
       const STORAGE_KEY = 'permis_exam_state';
       function loadState() {
         try { const r = localStorage.getItem(STORAGE_KEY); return r ? JSON.parse(r) : null; } catch(e) { return null; }
@@ -600,12 +600,15 @@
         <li data-slug="session-02-regles-barre"><span class="dot locked">·</span><span><span class="num">Session 02</span><span class="name">Priorités et Manœuvres</span></span></li>
         <li data-slug="session-03-feux-signaux"><span class="dot locked">·</span><span><span class="num">Session 03</span><span class="name">La Nuit et la Brume</span></span></li>
         <li data-slug="session-04-securite"><span class="dot locked">·</span><span><span class="num">Session 04</span><span class="name">La Sécurité et l'Équipement</span></span></li>
-        <li data-slug="session-05-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">L'Examen Blanc</span></span></li>
+        <li data-slug="session-05-navigation"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">Carte, Cap et Météo</span></span></li>
+        <li data-slug="session-06-pratique-reglementation"><span class="dot locked">·</span><span><span class="num">Session 06</span><span class="name">Départ, Zones et Conduite</span></span></li>
+        <li data-slug="session-07-radio-vhf"><span class="dot locked">·</span><span><span class="num">Session 07</span><span class="name">VHF, CROSS et Alertes</span></span></li>
+        <li data-slug="session-08-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 08</span><span class="name">L'Examen Blanc</span></span></li>
       </ul>
       <div class="progress-wrap">
         <div class="progress-label">
           <span>Progression</span>
-          <span id="progress-count">0 / 5</span>
+          <span id="progress-count">0 / 8</span>
         </div>
         <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
       </div>
@@ -665,8 +668,9 @@
         });
         const cEl = document.getElementById('progress-count');
         const fEl = document.getElementById('progress-fill');
-        if (cEl) cEl.textContent = completed.length + ' / 5';
-        if (fEl) fEl.style.width = (completed.length * 20) + '%';
+        const totalSessions = 8;
+        if (cEl) cEl.textContent = completed.length + ' / ' + totalSessions;
+        if (fEl) fEl.style.width = Math.min(100, (completed.length / totalSessions) * 100) + '%';
       } catch(e) { console.warn('progress init failed', e); }
       if (typeof window._examInit === 'function') window._examInit();
     })();

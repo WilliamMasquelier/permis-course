@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Session 2 : Priorités et Manœuvres — Permis Côtier</title>
+  <title>Session 7 : VHF, CROSS et Alertes — Permis Côtier</title>
   <style>
     /* === DESIGN SYSTEM TOKENS === */
     :root {
@@ -591,95 +591,63 @@
     </nav>
     <main id="content">
       <div class="content-card">
-        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 2 : Priorités et Manœuvres</span></div>
-        <h1>Session 2 : Priorités et Manœuvres</h1>
+        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 7 : VHF, CROSS et Alertes</span></div>
+        <h1>Session 7 : VHF, CROSS et Alertes</h1>
         <h2>CONCEPT</h2>
-<p>En mer, le navire le moins manœuvrant est privilégié — c'est le principe directeur de toutes les règles de barre (RIPAM). Plus un navire a de mal à modifier sa route, plus les autres doivent s'écarter de lui. Le mnémonique descendant à retenir est <strong>NMSP-VRP-V-M</strong> : Non maître de sa manœuvre, Manœuvre Restreinte, handicapé par son tirant d'eau, Pêche, Voilier, Moteur.</p>
-<p>Voir <span class="wikilink" data-label="Regle De Barre Priorite">concepts/regle-de-barre-priorite</span> pour la hiérarchie complète.</p>
-<div class="wiki-image-wrap"><img class="wiki-image" src="assets/regles-croisement-rattrapage.svg" alt="regles-croisement-rattrapage.svg"></div>
-<h3>Trois cas qu'il faut savoir trancher en une seconde</h3>
-<p><strong>1. Voilier contre voilier — la règle des amures.</strong></p>
+<p>La VHF est un outil de sécurité, pas un téléphone de confort. Le permis plaisance permet l'usage d'une VHF dans les eaux territoriales françaises ; le CRR reste le cadre radio plus large, notamment hors de ce périmètre. Voir <span class="wikilink" data-label="Canaux Vhf">concepts/canaux-vhf</span>, <span class="wikilink" data-label="Securite Vhf Et Cross">concepts/securite-vhf-et-cross</span>, <span class="wikilink" data-label="Asn Dsc">concepts/asn-dsc</span>, <span class="wikilink" data-label="Mmsi">concepts/mmsi</span>, <span class="wikilink" data-label="Procedure Mayday">concepts/procedure-mayday</span> et <span class="wikilink" data-label="Procedure Pan Pan">concepts/procedure-pan-pan</span>.</p>
+<div class="wiki-image-wrap"><img class="wiki-image" src="assets/vhf-mayday-flow.svg" alt="vhf-mayday-flow.svg"></div>
+<h3>Les canaux à connaître</h3>
 <ul>
-<li>Celui qui reçoit le vent à <strong>bâbord</strong> s'écarte (il a la vergue à droite).</li>
-<li>Si les deux voiliers sont sur la même amure, c'est le <strong>navire au vent</strong> qui s'écarte.</li>
-<li>Voir <span class="wikilink" data-label="Voilier Vs Voilier">concepts/voilier-vs-voilier</span>.</li>
+<li><strong>16</strong> : veille, appel et détresse en phonie.</li>
+<li><strong>70</strong> : ASN/DSC, appels numériques de détresse ou sélectifs.</li>
+<li><strong>6, 8, 72, 77</strong> : communications inter-navires selon usage.</li>
+<li><strong>13</strong> : sécurité de navigation dans certains contextes.</li>
 </ul>
-<p><strong>2. Voilier contre moteur — le voilier est prioritaire.</strong></p>
-<ul>
-<li>Le navire à propulsion mécanique s'écarte ; le voilier maintient cap et vitesse.</li>
-<li><strong>Piège</strong> : un voilier qui tourne son moteur (même avec voiles hissées) <strong>perd</strong> son privilège — il devient un moteur, et doit hisser un cône noir pointe en bas le jour.</li>
-<li>Voir <span class="wikilink" data-label="Voilier Vs Moteur">concepts/voilier-vs-moteur</span>.</li>
-</ul>
-<p><strong>3. Croisement entre deux moteurs — priorité à tribord.</strong></p>
-<ul>
-<li>Mnémonique : « Je viens de droite, je suis prioritaire. »</li>
-<li>Le non-prioritaire manœuvre <strong>nettement, tôt, et passe derrière</strong>.</li>
-<li>Voir <span class="wikilink" data-label="Route Directe Croisement">concepts/route-directe-croisement</span>.</li>
-</ul>
-<h3>Le rattrapage écrase tout</h3>
-<p>Tout navire qui en <strong>rattrape</strong> un autre s'écarte, <strong>quelle que soit sa catégorie</strong> — un voilier qui rattrape un moteur doit s'écarter du moteur. Le rattrapé maintient cap et vitesse.</p>
-<p>Exception : dans un <strong>chenal étroit</strong>, si un gros navire (≥ 20 m) rattrape un voilier, c'est le voilier qui sort du chenal. Voir <span class="wikilink" data-label="Rattrapage">concepts/rattrapage</span>.</p>
-<h3>Détecter un risque d'abordage</h3>
-<p>Le risque existe si le <strong>gisement</strong> (angle du danger par rapport à mon axe) ou le <strong>relèvement</strong> (angle par rapport au Nord) reste <strong>constant</strong> alors que la distance diminue. Constant + rapprochement = collision assurée sans manœuvre.</p>
+<p>Voir <span class="wikilink" data-label="Canaux Vhf">concepts/canaux-vhf</span>.</p>
+<h3>MAYDAY, PAN-PAN, SÉCURITÉ</h3>
+<p><strong>MAYDAY</strong> : danger grave et imminent, vie en jeu.<br />
+<strong>PAN-PAN</strong> : urgence réelle sans péril vital immédiat.<br />
+<strong>SÉCURITÉ</strong> : message concernant la sécurité de navigation ou la météo.</p>
+<p>Un MAYDAY commence strictement :</p>
+<pre><code>MAYDAY MAYDAY MAYDAY
+ICI
+[Nom du navire]
+</code></pre>
+<p>Puis : position, nature de la détresse, assistance demandée, nombre de personnes, intentions, informations utiles, « À vous ».</p>
+<h3>ASN, MMSI et position</h3>
+<p>L'ASN sur canal 70 transmet une alerte numérique. Si la VHF est reliée au GPS, l'alerte contient l'identité MMSI et la position. Le bouton rouge ne remplace pas la phonie : après l'alerte, il faut parler sur le canal 16 si possible.</p>
+<h3>Le CROSS</h3>
+<p>Le CROSS coordonne les secours en mer en France. Il écoute, qualifie la situation et engage les moyens adaptés. Voir <span class="wikilink" data-label="Cross Sauvetage">concepts/cross-sauvetage</span>.</p>
 <h2>TASK</h2>
 
 <div class="task-block">
-  <div class="task-prompt"><p>Sans regarder vos notes, expliquez qui doit s'écarter dans chacun de ces trois cas : deux voiliers se croisant, un voilier face à un moteur, et un bateau en rattrapage.</p></div>
+  <div class="task-prompt"><p>Expliquez la différence entre MAYDAY et PAN-PAN, citez les canaux 16 et 70, puis donnez les trois premières informations à transmettre après l'identification du navire.</p></div>
   <textarea class="task-input" rows="4" placeholder="Écrivez votre réponse ici…" aria-label="Votre réponse"></textarea>
   <div class="task-actions">
     <button class="btn-check" onclick="checkTask(this)">Vérifier ✓</button>
     <button class="btn-hint" onclick="showHint(this)" data-hint-level="0">Indice 💡</button>
     <button class="btn-reset" onclick="resetTask(this)">Recommencer ↺</button>
   </div>
-  <div class="hint-text hidden"><p>Pour chaque cas, posez-vous la même question dans cet ordre : qui peut le mieux manœuvrer ? Pour les deux voiliers, regardez le côté d'où vient le vent.</p></div>
-<div class="hint-text hidden"><p>Voilier-voilier : le mot-clé est <strong>amure</strong> — quel bord reçoit le vent. Voilier-moteur : qui est libre de zigzaguer. Rattrapage : le verbe « rattraper » contient déjà la réponse — celui qui agit, c'est celui qui rejoint l'autre.</p></div>
+  <div class="hint-text hidden"><p>MAYDAY = vie en danger. PAN-PAN = urgence sans péril vital immédiat. Les canaux se répartissent entre voix et numérique.</p></div>
+<div class="hint-text hidden"><p>Après le nom du navire, le sauveteur a besoin de savoir où aller, ce qui se passe, et quel type d'aide envoyer.</p></div>
   <div class="task-feedback hidden"></div>
 </div><h2>MISCONCEPTION</h2>
 <ul>
-<li>Beaucoup pensent qu'un voilier est <strong>toujours</strong> prioritaire. Faux : il cède devant la pêche, devant un navire à manœuvre restreinte, et même devant un moteur <strong>s'il est en train de le rattraper</strong>.</li>
-<li>Confusion fréquente entre « bâbord amure » (vent venant de bâbord) et « passer à bâbord ». Ce sont deux choses différentes.</li>
-<li>« Priorité à droite » ne s'applique <strong>qu'entre deux moteurs</strong>. Ce n'est pas une règle universelle.</li>
+<li>Appuyer sur le bouton ASN puis se taire : l'alerte numérique doit être complétée par un message vocal si possible.</li>
+<li>Utiliser le canal 16 pour discuter après contact : on bascule sur un canal de travail.</li>
+<li>Confondre urgence et détresse : PAN-PAN n'est pas banal, MAYDAY est vital.</li>
 </ul>
 <details class="solution-block">
   <summary>🔍 Voir la solution (après avoir essayé)</summary>
   <div class="solution-content"><h2>SOLUTION</h2>
-<table>
-<thead>
-<tr>
-<th>Cas</th>
-<th>Qui s'écarte ?</th>
-<th>Pourquoi</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Deux voiliers, amures différentes</td>
-<td>Celui qui reçoit le vent à <strong>bâbord</strong></td>
-<td>Règle des amures (RIPAM 12)</td>
-</tr>
-<tr>
-<td>Deux voiliers, même amure</td>
-<td>Le <strong>navire au vent</strong></td>
-<td>Il peut abattre plus facilement</td>
-</tr>
-<tr>
-<td>Voilier vs moteur</td>
-<td>Le <strong>moteur</strong></td>
-<td>Voilier privilégié — sauf si voilier au moteur ou rattrapant</td>
-</tr>
-<tr>
-<td>Rattrapage (toute combinaison)</td>
-<td>Le <strong>rattrapant</strong></td>
-<td>Il décide d'engager — il assume</td>
-</tr>
-</tbody>
-</table>
+<p>MAYDAY signale un danger grave et imminent avec vie en jeu. PAN-PAN signale une urgence sans péril vital immédiat. Le canal <strong>16</strong> sert à la veille, l'appel et la détresse en phonie ; le canal <strong>70</strong> sert à l'ASN/DSC.</p>
+<p>Après l'identification, les premières informations utiles sont : <strong>position</strong>, <strong>nature de la détresse ou de l'urgence</strong>, <strong>assistance demandée</strong>. Viennent ensuite le nombre de personnes à bord, les intentions et toute information utile.</p>
 </div>
 </details><h2>MOTIVATION</h2>
-<p>Les règles de barre pèsent lourd dans l'examen, mais elles servent surtout à éviter l'hésitation en situation réelle. En mer, il n'y a ni ligne blanche ni priorité routière universelle : la bonne décision dépend du type de navire, de l'angle de rencontre et de la capacité de manœuvre.</p>
+<p>La radio est l'un des rares outils qui transforment une situation isolée en secours coordonné. Bien choisir MAYDAY ou PAN-PAN, donner une position claire, et garder le canal 16 propre peut changer l'issue d'un incident.</p>
 <h2>PREREQUISITES</h2>
 <ul>
-<li><span class="wikilink" data-label="Session 01 Balisage">lessons/session-01-balisage</span></li>
+<li><span class="wikilink" data-label="Session 06 Pratique Reglementation">lessons/session-06-pratique-reglementation</span></li>
 </ul>
 
       </div>

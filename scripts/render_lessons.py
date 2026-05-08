@@ -87,7 +87,7 @@ def _preprocess(md: str) -> str:
 
 def _make_task_interactive(html: str) -> str:
     """Wrap TASK section content in an interactive answer block."""
-    pattern = r'(<h2[^>]*>TASK</h2>\s*)((?:<p>.*?</p>\s*)+)'
+    pattern = r'(<h2[^>]*>TASK</h2>\s*)(.*?)(?=<h2|$)'
 
     def replacer(m):
         heading = m.group(1)
@@ -107,6 +107,22 @@ def _make_task_interactive(html: str) -> str:
         )
 
     return re.sub(pattern, replacer, html, flags=re.DOTALL)
+
+
+def _wire_hints(html: str) -> str:
+    """Hide HINT sections and attach them to the task hint button."""
+    hints: list[str] = []
+
+    def collect_hint(m: re.Match[str]) -> str:
+        hints.append(m.group(2).strip())
+        return ""
+
+    html = re.sub(r'(<h2[^>]*>HINT_[12]</h2>\s*)(.*?)(?=<h2|$)', collect_hint, html, flags=re.DOTALL)
+    if not hints:
+        return html
+
+    hint_nodes = "\n".join(f'<div class="hint-text hidden">{hint}</div>' for hint in hints)
+    return html.replace('<div class="task-feedback hidden"></div>', f'{hint_nodes}\n  <div class="task-feedback hidden"></div>', 1)
 
 
 def _wrap_solution(html: str) -> str:
@@ -145,6 +161,7 @@ def render_lesson(lesson_path: Path, output_dir: Path) -> Path:
     body_md = _preprocess(body_md)
     html_body = _md_parser.render(body_md)
     html_body = _make_task_interactive(html_body)
+    html_body = _wire_hints(html_body)
     html_body = _wrap_solution(html_body)
 
     template = _jinja_env.get_template(TEMPLATE_NAME)
