@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Manœuvre Homme à la mer — Crash Stop">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#0d7377"/></marker>
+    <marker id="arrRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#ef4444"/></marker>
+  </defs>
+  <rect width="800" height="500" fill="#d4ecf7"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <!-- Title -->
+    <text x="400" y="35" text-anchor="middle" fill="#1a2e4a" font-size="22" font-weight="700">Manœuvre HAM — Crash Stop</text>
+
+    <!-- Wind arrow -->
+    <text x="700" y="75" fill="#1a2e4a" font-size="14" font-weight="700">Vent</text>
+    <path d="M740 85 L740 155" stroke="#1a2e4a" stroke-width="3" stroke-dasharray="6 3"/>
+    <text x="746" y="125" fill="#888" font-size="16">↓</text>
+
+    <!-- Boat initial position -->
+    <polygon points="200,200 185,225 215,225" fill="#1a2e4a"/>
+    <text x="160" y="195" fill="#1a2e4a" font-size="12">Bateau</text>
+
+    <!-- HAM drops here -->
+    <circle cx="280" cy="215" r="14" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+    <text x="298" y="220" fill="#ef4444" font-size="14" font-weight="700">HAM</text>
+    <text x="218" y="244" fill="#1a2e4a" font-size="11">① Chute à l'eau</text>
+
+    <!-- Step 1: Bear away (abattre) -->
+    <path d="M200 200 Q200 130 240 100" stroke="#0d7377" stroke-width="3" stroke-dasharray="8 4" marker-end="url(#arr)"/>
+    <text x="210" y="140" fill="#0d7377" font-size="12" font-weight="700">② Abattre</text>
+    <text x="205" y="155" fill="#0d7377" font-size="11">(barre au vent)</text>
+
+    <!-- Step 2: Foc backed -->
+    <text x="250" y="95" fill="#1a2e4a" font-size="12">③ Laisser foc contre</text>
+    <text x="250" y="110" fill="#1a2e4a" font-size="11">(écoute non choquée)</text>
+
+    <!-- Step 3: Boat hove to near MOB -->
+    <polygon points="280,215 265,240 295,240" fill="#0d7377" transform="rotate(20, 280, 215)"/>
+    <text x="300" y="260" fill="#0d7377" font-size="12">④ Bateau en panne</text>
+    <text x="300" y="276" fill="#0d7377" font-size="11">près du naufragé</text>
+
+    <!-- Curved arrow showing boat trajectory -->
+    <path d="M240 100 Q320 80 380 120 Q420 145 400 215" stroke="#0d7377" stroke-width="3" marker-end="url(#arr)" fill="none"/>
+    <text x="400" y="115" fill="#0d7377" font-size="11" font-style="italic">Dérive naturelle</text>
+    <text x="400" y="130" fill="#0d7377" font-size="11" font-style="italic">vers le naufragé</text>
+
+    <!-- Sequence box -->
+    <rect x="480" y="70" width="280" height="230" rx="8" fill="rgba(255,255,255,0.85)" stroke="#1a2e4a" stroke-width="1"/>
+    <text x="620" y="95" text-anchor="middle" fill="#1a2e4a" font-size="14" font-weight="700">Séquence Crash Stop</text>
+    <text x="495" y="120" fill="#1a2e4a" font-size="12">① Jeter bouée + désigner veilleur</text>
+    <text x="495" y="142" fill="#1a2e4a" font-size="12">② Abattre brusquement (barre au vent)</text>
+    <text x="495" y="164" fill="#1a2e4a" font-size="12">③ Laisser l'écoute de foc en place</text>
+    <text x="495" y="186" fill="#1a2e4a" font-size="11" fill-opacity="0.7">  → foc contro = mise en panne auto</text>
+    <text x="495" y="208" fill="#1a2e4a" font-size="12">④ Bateau s'immobilise près du HAM</text>
+    <text x="495" y="230" fill="#1a2e4a" font-size="12">⑤ Approcher finement au moteur si besoin</text>
+    <line x1="495" y1="242" x2="750" y2="242" stroke="#ccc" stroke-width="1"/>
+    <text x="495" y="260" fill="#0d7377" font-size="12" font-weight="700">Avantages</text>
+    <text x="495" y="278" fill="#1a2e4a" font-size="11">✓ Garde le naufragé à portée de vue</text>
+    <text x="495" y="293" fill="#1a2e4a" font-size="11">✓ Simple (peu d'équipage)</text>
+    <text x="495" y="308" fill="#1a2e4a" font-size="11">✓ Idéal de nuit ou par mauvaise visibilité</text>
+
+    <!-- Warning box -->
+    <rect x="480" y="330" width="280" height="55" rx="8" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="1"/>
+    <text x="495" y="352" fill="#ef4444" font-size="12" font-weight="700">⚠ Couper le moteur</text>
+    <text x="495" y="370" fill="#1a2e4a" font-size="11">avant que le naufragé soit à proximité</text>
+
+    <!-- Footer -->
+    <text x="400" y="490" text-anchor="middle" fill="#888" font-size="10">Source: Complete Yachtmaster ch.31 — raw/books/complete-yachtmaster-cunliffe.pdf</text>
+  </g>
+</svg>

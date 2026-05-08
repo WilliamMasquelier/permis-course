@@ -75,7 +75,26 @@ Every `wiki/` note requires frontmatter: `title`, `type`, `tags`, `sources`, `re
 
 `Wiki/meta/student-progress.json` tracks the current lesson, completed lessons, FSRS flashcard state, and review log. Skills read/write this file to implement spaced-repetition review.
 
-### Claude Code skills (`.claude/skills/`)
+### Plugin structure
+
+This repo is a Claude Code plugin distributed via `WilliamMasquelier/permis-course-marketplace`.
+
+| Location | Purpose |
+|----------|---------|
+| `.claude-plugin/plugin.json` | Plugin manifest — consumed by Claude Code's plugin system |
+| `skills/permis-*/` | **Plugin skills** — loaded when the plugin is installed in Cowork |
+| `.claude/skills/permis-*/` | Dev copies of the same skills — loaded in local Claude Code CLI sessions |
+
+The two skill locations are intentionally kept in sync. When updating a skill, update both copies.
+
+**Installing in Cowork:**
+```
+/plugin marketplace add WilliamMasquelier/permis-course-marketplace
+/plugin install permis-course
+cd ~/.claude/plugins/cache/permis-course && uv sync
+```
+
+**Skills:**
 
 | Skill | Trigger | What it does |
 |-------|---------|--------------|
@@ -84,6 +103,7 @@ Every `wiki/` note requires frontmatter: `title`, `type`, `tags`, `sources`, `re
 | `permis-scenario` | `/permis-scenario` | Branching navigation scenario with COLREGs debrief |
 | `permis-exam` | `/permis-exam` | 40-question mock exam (pass threshold: 35/40) |
 | `permis-setup` | `/permis-setup` | Verify prerequisites |
+| `permis-author` | `/permis-author` | Teacher/author mode — edit lessons and wiki |
 
 ### Module map
 

@@ -11,11 +11,17 @@ dependencies = [
     "pyobjc-framework-quartz>=12.1",
     "pyobjc-framework-vision>=12.1",
     "pypdfium2",
-    "report-renderer @ file:///Users/williammasquelier/Repositories/stromy-org/libs/report-renderer",
 ]
 
 [dependency-groups]
-dev = ["pytest", "ruff", "pyright"]
+dev = [
+    "pytest",
+    "ruff",
+    "pyright",
+    # report-renderer is a private Stromy lib — only needed to regenerate HTML output.
+    # Students install via uv sync (no --dev needed); authors run uv sync --dev.
+    "report-renderer @ file:///Users/williammasquelier/Repositories/stromy-org/libs/report-renderer",
+]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]

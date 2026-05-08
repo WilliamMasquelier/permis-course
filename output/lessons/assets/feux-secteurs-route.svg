@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Secteurs des feux de route d'un navire à moteur">
+  <rect width="900" height="420" fill="#0a0f14"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <text x="54" y="48" fill="#14a0a5" font-size="25" font-weight="700">Lire les feux de route</text>
+    <text x="54" y="78" fill="#9ca3af" font-size="15">Ce que vous voyez révèle votre position relative et la route de l'autre navire.</text>
+    <g transform="translate(130,140)">
+      <path d="M180 0 A180 180 0 0 1 350 238 L180 180 Z" fill="#1f7a3a" opacity=".8"/>
+      <path d="M180 0 A180 180 0 0 0 10 238 L180 180 Z" fill="#9b1c31" opacity=".85"/>
+      <path d="M10 238 A180 180 0 0 0 350 238 L180 180 Z" fill="#e5e7eb" opacity=".75"/>
+      <path d="M180 180 L180 18" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+      <path d="M180 180 L78 232" stroke="#ef4444" stroke-width="7" stroke-linecap="round"/>
+      <path d="M180 180 L282 232" stroke="#22c55e" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="180" cy="180" r="28" fill="#1a2e4a" stroke="#fff" stroke-width="3"/>
+      <text x="157" y="187" fill="#fff" font-size="17" font-weight="700">NAV</text>
+    </g>
+    <g fill="#e0e8f0" font-size="16">
+      <text x="560" y="150" font-weight="700" fill="#fff">Signaux clés</text>
+      <circle cx="570" cy="190" r="8" fill="#ef4444"/><circle cx="600" cy="190" r="8" fill="#22c55e"/><circle cx="630" cy="190" r="8" fill="#fff"/>
+      <text x="660" y="196">Rouge + vert + blanc : face à face</text>
+      <circle cx="570" cy="235" r="8" fill="#ef4444"/><circle cx="600" cy="235" r="8" fill="#fff"/>
+      <text x="660" y="241">Rouge + blanc : il passe vers ma gauche</text>
+      <circle cx="570" cy="280" r="8" fill="#22c55e"/><circle cx="600" cy="280" r="8" fill="#fff"/>
+      <text x="660" y="286">Vert + blanc : il passe vers ma droite</text>
+      <circle cx="570" cy="325" r="8" fill="#fff"/>
+      <text x="660" y="331">Blanc seul de poupe : je le rattrape</text>
+    </g>
+  </g>
+</svg>

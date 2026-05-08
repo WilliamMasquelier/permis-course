@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan du cours — Permis Côtier · Golfe de Fethiye</title>
+  <style>
+    :root {
+      --navy: #1a2e4a;
+      --navy-deep: #0e1e30;
+      --teal: #0d7377;
+      --teal-lt: #14a0a5;
+      --teal-pale: rgba(13,115,119,0.08);
+      --amber: #f5a623;
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --text: #18202e;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(15,23,42,0.06);
+      --shadow-md: 0 4px 16px rgba(15,23,42,0.10);
+      --font-body: Georgia, 'Times New Roman', serif;
+      --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'SF Mono', 'Courier New', Courier, monospace;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-ui);
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* === HERO === */
+    .hero {
+      background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 55%, #1a3a5c 100%);
+      color: #fff;
+      padding: 64px clamp(24px, 8vw, 120px) 56px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M0 30 Q15 20 30 30 Q45 40 60 30' stroke='rgba(255,255,255,0.04)' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+      background-size: 60px 60px;
+    }
+    .hero-inner { position: relative; max-width: 860px; }
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--teal-lt);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin: 0 0 16px;
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.6;
+      max-width: 560px;
+      margin-bottom: 32px;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .stat { display: flex; flex-direction: column; gap: 2px; }
+    .stat-num { font-size: 28px; font-weight: 800; color: var(--teal-lt); letter-spacing: -0.02em; font-family: var(--font-mono); }
+    .stat-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.45); }
+
+    /* === PROGRESS BANNER === */
+    .progress-banner {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px clamp(24px, 8vw, 120px);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-family: var(--font-ui);
+      font-size: 14px;
+    }
+    .progress-bar-wrap { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; max-width: 360px; }
+    .progress-bar-fill { height: 100%; background: linear-gradient(90deg, var(--teal), var(--teal-lt)); transition: width 0.5s ease; }
+    .progress-text { color: var(--muted); white-space: nowrap; }
+
+    /* === MODULES GRID === */
+    .modules-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px clamp(16px, 5vw, 80px) 96px;
+    }
+
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .module-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      border: 1px solid var(--border);
+    }
+    .module-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+    .module-card-header {
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .module-num-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--navy);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+      flex-shrink: 0;
+      font-family: var(--font-mono);
+    }
+    .module-card-header .mod-info { flex: 1; min-width: 0; }
+    .module-card-header .mod-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+    .module-card-header .mod-meta {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .session-list-index {
+      padding: 10px 0;
+      list-style: none;
+      margin: 0;
+    }
+    .session-list-index li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 9px 20px;
+      transition: background 0.14s;
+      cursor: pointer;
+      border-left: 3px solid transparent;
+    }
+    .session-list-index li:hover { background: var(--teal-pale); border-left-color: var(--teal-lt); }
+    .session-list-index li.completed { opacity: 0.65; }
+    .s-code-idx {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--muted);
+      flex-shrink: 0;
+      width: 24px;
+    }
+    .s-name-idx {
+      font-size: 14px;
+      color: var(--text);
+      flex: 1;
+      line-height: 1.3;
+    }
+    .s-duration-idx {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .s-check { color: var(--teal); font-size: 12px; margin-left: 4px; }
+
+    /* === PROLOGUE/EPILOGUE FULL WIDTH === */
+    .module-card.full-width { grid-column: 1 / -1; }
+    .module-card.full-width .session-list-index {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .module-card.full-width .session-list-index li {
+      flex: 1 1 280px;
+    }
+
+    /* === SECTION HEADING === */
+    .section-heading {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      .modules-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">⚓ Permis Côtier — Cours complet</div>
+    <h1>Golfe de Fethiye<br>Été 2026</h1>
+    <p class="hero-sub">Un voyage, dix jours, un gulet. Du départ de Göcek jusqu'aux tombeaux lyciens de Fethiye — apprendre à naviguer en vivant le voyage.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">21</span>
+        <span class="stat-label">Sessions</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">14h</span>
+        <span class="stat-label">de contenu</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">8</span>
+        <span class="stat-label">Modules</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="progress-banner" id="progress-banner">
+  <span class="progress-text" id="progress-text">0 sessions complétées</span>
+  <div class="progress-bar-wrap">
+    <div class="progress-bar-fill" id="prog-fill" style="width: 0%"></div>
+  </div>
+  <span id="progress-pct" style="font-size:13px;color:var(--muted)">0%</span>
+</div>
+
+<main class="modules-section">
+  <div class="section-heading">Modules du cours</div>
+  <div class="modules-grid" id="modules-grid">
+    
+    <div class="module-card full-width">
+      <div class="module-card-header">
+        <div class="module-num-badge">0</div>
+        <div class="mod-info">
+          <div class="mod-title">Prologue — Le Départ</div>
+          <div class="mod-meta">1 session · 20 min</div>
+        </div>
+      </div>
+      <ul class="session-list-index">
+        
+        <li data-url="module-0/session-0-0-prologue.html" data-slug="session-0-0-prologue" onclick="location.href='module-0/session-0-0-prologue.html'">
+          <span class="s-code-idx">0.0</span>
+          <span class="s-name-idx">Bienvenue à Göcek</span>
+          <span class="s-duration-idx">20min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="module-card ">
+      <div class="module-card-header">
+        <div class="module-num-badge">1</div>
+        <div class="mod-info">
+          <div class="mod-title">Le Bateau et ses Règles</div>
+          <div class="mod-meta">3 sessions · 115 min</div>
+        </div>
+      </div>
+      <ul class="session-list-index">
+        
+        <li data-url="module-1/session-1-1-vocabulaire-bateau.html" data-slug="session-1-1-vocabulaire-bateau" onclick="location.href='module-1/session-1-1-vocabulaire-bateau.html'">
+          <span class="s-code-idx">1.1</span>
+          <span class="s-name-idx">Le Voilier — Vocabulaire et Gréement</span>
+          <span class="s-duration-idx">35min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-1/session-1-2-regles-de-barre.html" data-slug="session-1-2-regles-de-barre" onclick="location.href='module-1/session-1-2-regles-de-barre.html'">
+          <span class="s-code-idx">1.2</span>
+          <span class="s-name-idx">Les Règles de Barre — Priorités et Croisements</span>
+          <span class="s-duration-idx">40min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-1/session-1-3-feux-signaux.html" data-slug="session-1-3-feux-signaux" onclick="location.href='module-1/session-1-3-feux-signaux.html'">
+          <span class="s-code-idx">1.3</span>
+          <span class="s-name-idx">Feux de Navigation et Signaux</span>
+          <span class="s-duration-idx">40min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="module-card ">
+      <div class="module-card-header">
+        <div class="module-num-badge">2</div>
+        <div class="mod-info">
+          <div class="mod-title">Lire la Mer</div>
+          <div class="mod-meta">3 sessions · 110 min</div>
+        </div>
+      </div>
+      <ul class="session-list-index">
+        
+        <li data-url="module-2/session-2-1-balisage-iala.html" data-slug="session-2-1-balisage-iala" onclick="location.href='module-2/session-2-1-balisage-iala.html'">
+          <span class="s-code-idx">2.1</span>
+          <span class="s-name-idx">Le Balisage IALA — Les Cinq Familles</span>
+          <span class="s-duration-idx">40min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-2/session-2-2-carte-marine.html" data-slug="session-2-2-carte-marine" onclick="location.href='module-2/session-2-2-carte-marine.html'">
+          <span class="s-code-idx">2.2</span>
+          <span class="s-name-idx">La Carte Marine — Lecture et Symboles</span>
+          <span class="s-duration-idx">40min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-2/session-2-3-phares-amers.html" data-slug="session-2-3-phares-amers" onclick="location.href='module-2/session-2-3-phares-amers.html'">
+          <span class="s-code-idx">2.3</span>
+          <span class="s-name-idx">Phares, Secteurs et Amers</span>
+          <span class="s-duration-idx">30min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="module-card ">
+      <div class="module-card-header">
+        <div class="module-num-badge">3</div>
+        <div class="mod-info">
+          <div class="mod-title">Naviguer</div>
+          <div class="mod-meta">4 sessions · 170 min</div>
+        </div>
+      </div>
+      <ul class="session-list-index">
+        
+        <li data-url="module-3/session-3-1-compas-cap-route.html" data-slug="session-3-1-compas-cap-route" onclick="location.href='module-3/session-3-1-compas-cap-route.html'">
+          <span class="s-code-idx">3.1</span>
+          <span class="s-name-idx">Compas, Cap et Route — Les Trois Nords</span>
+          <span class="s-duration-idx">45min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-3/session-3-2-marees-courants.html" data-slug="session-3-2-marees-courants" onclick="location.href='module-3/session-3-2-marees-courants.html'">
+          <span class="s-code-idx">3.2</span>
+          <span class="s-name-idx">Marées et Courants — La Méditerranée et l'Atlantique</span>
+          <span class="s-duration-idx">45min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-3/session-3-3-point-estime-gps.html" data-slug="session-3-3-point-estime-gps" onclick="location.href='module-3/session-3-3-point-estime-gps.html'">
+          <span class="s-code-idx">3.3</span>
+          <span class="s-name-idx">Point Estimé et GPS — Savoir Où Vous Êtes</span>
+          <span class="s-duration-idx">40min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-3/session-3-4-routage-pilotage.html" data-slug="session-3-4-routage-pilotage" onclick="location.href='module-3/session-3-4-routage-pilotage.html'">
+          <span class="s-code-idx">3.4</span>
+          <span class="s-name-idx">Routage et Pilotage Côtier</span>
+          <span class="s-duration-idx">40min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="module-card ">
+      <div class="module-card-header">
+        <div class="module-num-badge">4</div>
+        <div class="mod-info">
+          <div class="mod-title">Manœuvrer</div>
+          <div class="mod-meta">3 sessions · 115 min</div>
+        </div>
+      </div>
+      <ul class="session-list-index">
+        
+        <li data-url="module-4/session-4-1-voile-theorie.html" data-slug="session-4-1-voile-theorie" onclick="location.href='module-4/session-4-1-voile-theorie.html'">
+          <span class="s-code-idx">4.1</span>
+          <span class="s-name-idx">La Voile — Théorie, Allures et Réglages</span>
+          <span class="s-duration-idx">40min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-4/session-4-2-manoeuvres.html" data-slug="session-4-2-manoeuvres" onclick="location.href='module-4/session-4-2-manoeuvres.html'">
+          <span class="s-code-idx">4.2</span>
+          <span class="s-name-idx">Manœuvres — Virement, Empannage, Accostage</span>
+          <span class="s-duration-idx">40min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-4/session-4-3-mouillage.html" data-slug="session-4-3-mouillage" onclick="location.href='module-4/session-4-3-mouillage.html'">
+          <span class="s-code-idx">4.3</span>
+          <span class="s-name-idx">Mouillage, Ancrage et Amarrage</span>
+          <span class="s-duration-idx">35min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="module-card ">
+      <div class="module-card-header">
+        <div class="module-num-badge">5</div>
+        <div class="mod-info">
+          <div class="mod-title">Sécurité</div>
+          <div class="mod-meta">4 sessions · 160 min</div>
+        </div>
+      </div>
+      <ul class="session-list-index">
+        
+        <li data-url="module-5/session-5-1-meteo.html" data-slug="session-5-1-meteo" onclick="location.href='module-5/session-5-1-meteo.html'">
+          <span class="s-code-idx">5.1</span>
+          <span class="s-name-idx">Météo Marine — Lire le Ciel et les Bulletins</span>
+          <span class="s-duration-idx">45min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-5/session-5-2-securite-equipement.html" data-slug="session-5-2-securite-equipement" onclick="location.href='module-5/session-5-2-securite-equipement.html'">
+          <span class="s-code-idx">5.2</span>
+          <span class="s-name-idx">Équipement de Sécurité — L'Armement Obligatoire</span>
+          <span class="s-duration-idx">35min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-5/session-5-3-urgences.html" data-slug="session-5-3-urgences" onclick="location.href='module-5/session-5-3-urgences.html'">
+          <span class="s-code-idx">5.3</span>
+          <span class="s-name-idx">Urgences à Bord — HAM, Incendie, Voie d'Eau</span>
+          <span class="s-duration-idx">45min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-5/session-5-4-visibilite-reduite.html" data-slug="session-5-4-visibilite-reduite" onclick="location.href='module-5/session-5-4-visibilite-reduite.html'">
+          <span class="s-code-idx">5.4</span>
+          <span class="s-name-idx">Visibilité Réduite — Brouillard et Navigation Nocturne</span>
+          <span class="s-duration-idx">35min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="module-card ">
+      <div class="module-card-header">
+        <div class="module-num-badge">6</div>
+        <div class="mod-info">
+          <div class="mod-title">Radio et Réglementation</div>
+          <div class="mod-meta">2 sessions · 75 min</div>
+        </div>
+      </div>
+      <ul class="session-list-index">
+        
+        <li data-url="module-6/session-6-1-radio-vhf.html" data-slug="session-6-1-radio-vhf" onclick="location.href='module-6/session-6-1-radio-vhf.html'">
+          <span class="s-code-idx">6.1</span>
+          <span class="s-name-idx">VHF Marine — MAYDAY, PAN PAN et Canal 16</span>
+          <span class="s-duration-idx">40min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+        <li data-url="module-6/session-6-2-reglementation.html" data-slug="session-6-2-reglementation" onclick="location.href='module-6/session-6-2-reglementation.html'">
+          <span class="s-code-idx">6.2</span>
+          <span class="s-name-idx">Documents, Licence et Réglementation</span>
+          <span class="s-duration-idx">35min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="module-card full-width">
+      <div class="module-card-header">
+        <div class="module-num-badge">7</div>
+        <div class="mod-info">
+          <div class="mod-title">Épilogue et Examen Blanc</div>
+          <div class="mod-meta">1 session · 60 min</div>
+        </div>
+      </div>
+      <ul class="session-list-index">
+        
+        <li data-url="module-7/session-7-0-epilogue.html" data-slug="session-7-0-epilogue" onclick="location.href='module-7/session-7-0-epilogue.html'">
+          <span class="s-code-idx">7.0</span>
+          <span class="s-name-idx">Épilogue — Retour à Göcek et Examen Blanc</span>
+          <span class="s-duration-idx">60min</span>
+          <span class="s-check" style="display:none">✓</span>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+</main>
+
+<script>
+(function() {
+  const PROGRESS_KEY = 'permis_course_progress_v2';
+  let completed = [];
+  try { const r = localStorage.getItem(PROGRESS_KEY); if (r) completed = JSON.parse(r) || []; } catch(e) {}
+
+  const TOTAL = 21;
+
+  document.querySelectorAll('.session-list-index li').forEach(function(li) {
+    const slug = li.dataset.slug;
+    if (completed.includes(slug)) {
+      li.classList.add('completed');
+      const check = li.querySelector('.s-check');
+      if (check) check.style.display = 'inline';
+    }
+  });
+
+  const pct = Math.round((completed.length / TOTAL) * 100);
+  const ptEl = document.getElementById('progress-text');
+  const fillEl = document.getElementById('prog-fill');
+  const pctEl = document.getElementById('progress-pct');
+  if (ptEl) ptEl.textContent = completed.length + ' session' + (completed.length !== 1 ? 's' : '') + ' complétée' + (completed.length !== 1 ? 's' : '') + ' sur ' + TOTAL;
+  if (fillEl) fillEl.style.width = pct + '%';
+  if (pctEl) pctEl.textContent = pct + '%';
+})();
+</script>
+</body>
+</html>
