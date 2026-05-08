@@ -2,7 +2,12 @@
   "name": "permis-course",
   "version": "0.2.0",
   "description": "Permis Côtier de Plaisance — 21 sessions across 8 modules with Socratic AI tutor, spaced repetition, scenarios, and mock exam. Optimized for Cowork with inline HTML lesson artifacts.",
-  "author": "Stromy",
+  "author": {
+    "name": "WilliamMasquelier"
+  },
+  "repository": "https://github.com/WilliamMasquelier/permis-course",
+  "license": "MIT",
+  "keywords": ["sailing", "permis-cotier", "french", "learning", "spaced-repetition"],
   "minClaudeCodeVersion": "2.1.49",
   "skills": [
     "permis-tutor",

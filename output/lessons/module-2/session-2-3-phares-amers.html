@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.3 — Phares, Secteurs et Amers · Permis Côtier</title>
+  <style>
+    /* === DESIGN TOKENS === */
+    :root {
+      --navy: #1a2e4a;
+      --navy-deep: #0e1e30;
+      --teal: #0d7377;
+      --teal-lt: #14a0a5;
+      --teal-pale: rgba(13,115,119,0.08);
+      --amber: #f5a623;
+      --amber-soft: rgba(245,166,35,0.12);
+      --red: #dc2626;
+      --red-soft: rgba(220,38,38,0.08);
+      --green: #059669;
+      --green-soft: rgba(5,150,105,0.08);
+      --blue-soft: rgba(59,130,246,0.08);
+      --purple-soft: rgba(139,92,246,0.08);
+      --purple: #7c3aed;
+      --bg: #f0f4f9;
+      --surface: #ffffff;
+      --text: #18202e;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 3px rgba(15,23,42,0.06);
+      --shadow-md: 0 4px 16px rgba(15,23,42,0.10);
+      --shadow-lg: 0 12px 40px rgba(15,23,42,0.16);
+      --font-body: 'Georgia', 'Times New Roman', serif;
+      --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'SF Mono', 'Courier New', Courier, monospace;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --sidebar-width: 290px;
+      --topbar-h: 56px;
+    }
+
+    /* === RESET === */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    html, body { margin: 0; padding: 0; height: 100%; }
+    body {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.82;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { color: var(--teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; height: auto; display: block; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 3em 0; }
+
+    /* === MOBILE TOP BAR === */
+    #topbar {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--topbar-h);
+      background: var(--navy-deep);
+      z-index: 200;
+      align-items: center;
+      padding: 0 16px;
+      gap: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    #hamburger {
+      width: 36px; height: 36px;
+      display: flex; flex-direction: column;
+      justify-content: center; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+      flex-shrink: 0;
+    }
+    #hamburger span {
+      display: block; height: 2px; border-radius: 1px;
+      background: rgba(255,255,255,0.75);
+      transition: all 0.25s;
+    }
+    #hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    #hamburger.open span:nth-child(2) { opacity: 0; }
+    #hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    #topbar-title {
+      flex: 1; font-family: var(--font-ui); font-size: 13px;
+      font-weight: 600; color: rgba(255,255,255,0.85);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    #topbar-progress-ring {
+      width: 32px; height: 32px; flex-shrink: 0;
+    }
+
+    /* Sidebar overlay on mobile */
+    #sidebar-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 299;
+    }
+    #sidebar-overlay.open { display: block; }
+
+    /* === LAYOUT === */
+    .layout {
+      display: grid;
+      grid-template-columns: var(--sidebar-width) 1fr;
+      min-height: 100vh;
+    }
+
+    /* === SIDEBAR === */
+    #sidebar {
+      background: var(--navy-deep);
+      color: #c8d6e8;
+      padding: 0;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      font-family: var(--font-ui);
+      display: flex;
+      flex-direction: column;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.1) transparent;
+      z-index: 300;
+      transition: transform 0.3s ease;
+    }
+    #sidebar::-webkit-scrollbar { width: 4px; }
+    #sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+
+    /* Desktop sidebar collapse toggle */
+    #sidebar-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 50%;
+      left: var(--sidebar-width);
+      transform: translate(-50%, -50%) translateX(-1px);
+      width: 20px; height: 44px;
+      background: var(--navy-deep);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+      z-index: 301;
+      color: rgba(255,255,255,0.4);
+      font-size: 10px;
+      transition: left 0.3s, color 0.2s;
+      line-height: 1;
+    }
+    #sidebar-toggle:hover { color: rgba(255,255,255,0.8); }
+
+    body.sidebar-collapsed {
+      --sidebar-width: 0px;
+    }
+    body.sidebar-collapsed #sidebar { transform: translateX(-290px); }
+    body.sidebar-collapsed #sidebar-toggle { left: 20px; }
+    body.sidebar-collapsed #sidebar-toggle .toggle-arrow { transform: rotate(180deg); }
+    .toggle-arrow { transition: transform 0.3s; display: inline-block; }
+
+    .sidebar-header {
+      padding: 22px 20px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .sidebar-header .anchor { font-size: 22px; }
+    .sidebar-header .brand-text .title {
+      color: var(--teal-lt);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .sidebar-header .brand-text .subtitle {
+      color: rgba(255,255,255,0.35);
+      font-size: 10px;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    .sidebar-index-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 10px 14px 2px;
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      transition: all 0.15s;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .sidebar-index-link:hover { color: var(--teal-lt); border-color: rgba(20,160,165,0.3); text-decoration: none; background: rgba(20,160,165,0.06); }
+
+    .sidebar-nav { padding: 8px 0 24px; flex: 1; }
+
+    .module-group { margin-bottom: 2px; }
+    .module-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px 6px;
+      cursor: pointer;
+      user-select: none;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.38);
+      transition: color 0.15s;
+    }
+    .module-header:hover { color: rgba(255,255,255,0.65); }
+    .module-header.has-current { color: var(--teal-lt); }
+    .module-header .mod-num {
+      width: 18px; height: 18px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.06);
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      font-size: 9px; flex-shrink: 0;
+    }
+    .module-header.has-current .mod-num { background: rgba(20,160,165,0.25); color: var(--teal-lt); }
+    .module-header .chevron { margin-left: auto; font-size: 8px; transition: transform 0.2s; }
+    .module-header.open .chevron { transform: rotate(90deg); }
+
+    .session-items { padding-left: 0; list-style: none; margin: 0; }
+    .session-items.collapsed { display: none; }
+
+    .session-item {
+      display: flex; align-items: flex-start;
+      gap: 10px;
+      padding: 7px 14px 7px 30px;
+      font-size: 12.5px;
+      color: rgba(255,255,255,0.60);
+      cursor: pointer;
+      transition: all 0.14s;
+      border-left: 2px solid transparent;
+      line-height: 1.35;
+    }
+    .session-item:hover { color: rgba(255,255,255,0.88); background: rgba(255,255,255,0.03); }
+    .session-item.current {
+      color: #fff;
+      background: rgba(20,160,165,0.12);
+      border-left-color: var(--teal-lt);
+    }
+    .session-item.done { opacity: 0.58; }
+    .session-item .s-code {
+      flex-shrink: 0; font-size: 10px;
+      color: rgba(255,255,255,0.28); margin-top: 2px;
+      font-family: var(--font-mono);
+    }
+    .session-item.current .s-code { color: var(--teal-lt); }
+    .session-item .s-name { display: block; }
+    .session-item .s-duration { display: block; font-size: 10px; color: rgba(255,255,255,0.25); margin-top: 1px; }
+
+    .sidebar-progress {
+      padding: 14px 16px 18px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      flex-shrink: 0;
+    }
+    .progress-label {
+      display: flex; justify-content: space-between;
+      font-size: 10px; color: rgba(255,255,255,0.38);
+      letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+    .progress-bar { height: 3px; background: rgba(255,255,255,0.06); border-radius: 2px; overflow: hidden; }
+    .progress-fill { height: 100%; background: linear-gradient(90deg, var(--teal) 0%, var(--teal-lt) 100%); transition: width 0.4s ease; }
+
+    /* === MAIN CONTENT === */
+    main#content {
+      padding: 40px clamp(16px, 3vw, 56px) 80px;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .content-card {
+      background: var(--surface);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      padding: 52px clamp(24px, 4vw, 72px) 60px;
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    /* Session meta header */
+    .session-meta {
+      display: flex; align-items: center;
+      gap: 10px; margin-bottom: 22px;
+      font-family: var(--font-ui); flex-wrap: wrap;
+    }
+    .meta-badge {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 999px;
+    }
+    .meta-module { background: var(--teal-pale); color: var(--teal); }
+    .meta-code { background: rgba(26,46,74,0.08); color: var(--navy); }
+    .meta-duration { color: var(--muted); font-size: 12px; margin-left: auto; }
+
+    /* Audio player */
+    .lesson-audio-wrap {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--teal-pale);
+      border: 1px solid rgba(13,115,119,0.2);
+      border-radius: var(--radius-md);
+      padding: 10px 16px;
+      margin-bottom: 32px;
+      font-family: var(--font-ui);
+    }
+    .lesson-audio-wrap audio { flex: 1; height: 36px; }
+    .audio-label { font-size: 12px; color: var(--teal); font-weight: 600; white-space: nowrap; }
+
+    /* === TYPOGRAPHY === */
+    h1 {
+      font-family: var(--font-ui); font-weight: 800;
+      font-size: clamp(28px, 3.5vw, 40px);
+      line-height: 1.12; letter-spacing: -0.025em;
+      color: var(--navy); margin: 0 0 40px 0;
+    }
+    h2 {
+      font-family: var(--font-ui); font-weight: 700;
+      font-size: 22px; color: var(--navy);
+      border-left: 4px solid var(--teal);
+      padding-left: 14px;
+      margin: 56px 0 18px; line-height: 1.3;
+    }
+    h3 {
+      font-family: var(--font-ui); font-weight: 600;
+      font-size: 18px; color: var(--teal);
+      margin: 34px 0 12px;
+    }
+    h4 {
+      font-family: var(--font-ui); font-weight: 600;
+      font-size: 15px; color: var(--navy);
+      margin: 24px 0 8px;
+    }
+    p { margin: 0 0 1.15em 0; }
+    strong { color: var(--navy); font-weight: 700; }
+    em { color: var(--teal); font-style: italic; }
+    blockquote {
+      margin: 1.5em 0; padding: 14px 20px;
+      border-left: 4px solid var(--amber);
+      background: var(--amber-soft);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-style: italic;
+    }
+    blockquote p:last-child { margin-bottom: 0; }
+    ul, ol { padding-left: 1.7em; margin: 0 0 1.2em 0; }
+    li { margin-bottom: 0.38em; }
+    li::marker { color: var(--teal); }
+    code {
+      font-family: var(--font-mono); font-size: 0.87em;
+      padding: 2px 6px; background: var(--teal-pale);
+      color: var(--teal); border-radius: 4px;
+    }
+    pre {
+      background: var(--navy-deep); color: #e0e8f0;
+      padding: 18px 22px; border-radius: var(--radius-md);
+      overflow-x: auto; font-family: var(--font-mono);
+      font-size: 14px; line-height: 1.55;
+    }
+    pre code { background: transparent; color: inherit; padding: 0; }
+
+    /* === TABLES === */
+    .table-wrap { overflow-x: auto; margin: 24px 0; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+    table {
+      width: 100%; border-collapse: collapse;
+      font-family: var(--font-ui); font-size: 14.5px;
+      border-radius: var(--radius-md); overflow: hidden;
+      min-width: 400px;
+    }
+    thead { background: var(--navy); color: #fff; }
+    th { text-align: left; padding: 12px 16px; font-weight: 600; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; }
+    td { padding: 11px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    tbody tr:nth-child(even) { background: rgba(13,115,119,0.025); }
+    tbody tr:hover { background: rgba(13,115,119,0.06); transition: background 0.15s; }
+    tbody tr:last-child td { border-bottom: none; }
+
+    /* === CALLOUT BLOCKS === */
+    .callout {
+      margin: 28px 0; border-radius: var(--radius-md);
+      overflow: hidden; box-shadow: var(--shadow-sm);
+    }
+    .callout-label {
+      font-family: var(--font-ui); font-size: 11px;
+      font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; padding: 9px 18px;
+    }
+    .callout-body { padding: 4px 18px 16px; }
+    .callout-body p:last-child { margin-bottom: 0; }
+
+    .callout-scene {
+      background: linear-gradient(135deg, #0e1e30 0%, #1a2e4a 100%);
+      color: #d4e6f4; border-left: 4px solid var(--teal-lt);
+    }
+    .callout-scene .callout-label { color: var(--teal-lt); }
+    .callout-scene .callout-body { color: #c8d8e8; font-style: italic; line-height: 1.78; }
+    .callout-scene strong { color: #e8f4ff; }
+    .callout-scene em { color: var(--teal-lt); font-style: normal; }
+
+    .callout-golfe {
+      background: var(--teal-pale); border-left: 4px solid var(--teal);
+    }
+    .callout-golfe .callout-label { color: var(--teal); }
+
+    .callout-attention {
+      background: var(--amber-soft); border-left: 4px solid var(--amber);
+    }
+    .callout-attention .callout-label { color: #9a6310; }
+
+    /* Mini-quiz becomes interactive */
+    .callout-quiz {
+      background: rgba(26,46,74,0.04);
+      border: 1px solid rgba(26,46,74,0.12);
+      border-left: 4px solid var(--navy);
+    }
+    .callout-quiz .callout-label { color: var(--navy); }
+
+    /* MCQ options inside quiz callouts */
+    .callout-quiz ol, .callout-quiz ul {
+      padding-left: 0; list-style: none; margin: 8px 0 12px;
+    }
+    .callout-quiz li {
+      padding: 8px 14px; border-radius: var(--radius-sm);
+      border: 1px solid rgba(26,46,74,0.12);
+      margin-bottom: 6px; cursor: pointer;
+      transition: all 0.15s; font-size: 16px;
+      font-family: var(--font-ui);
+      background: var(--surface); color: var(--text);
+      user-select: none;
+    }
+    .callout-quiz li::marker { content: none; }
+    .callout-quiz li:hover { border-color: var(--teal); background: var(--teal-pale); }
+    .callout-quiz li.selected { border-color: var(--teal); background: var(--teal-pale); color: var(--teal); font-weight: 600; }
+    .callout-quiz li.selected::before { content: "✓ "; }
+
+    .callout-transition {
+      background: transparent; border: 1px dashed var(--border);
+      border-left: 3px solid var(--muted);
+    }
+    .callout-transition .callout-label { color: var(--muted); }
+    .callout-transition .callout-body { font-style: italic; color: var(--muted); }
+
+    .callout-savoir {
+      background: var(--green-soft); border-left: 4px solid var(--green);
+    }
+    .callout-savoir .callout-label { color: var(--green); }
+
+    /* === QUIZ ANSWERS === */
+    .quiz-answer {
+      margin: 6px 0;
+      border-left: 3px solid var(--teal);
+      background: var(--teal-pale);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+    .quiz-answer summary {
+      list-style: none; cursor: pointer;
+      padding: 8px 14px;
+      font-family: var(--font-ui); font-size: 13px;
+      font-weight: 600; color: var(--teal);
+      user-select: none;
+    }
+    .quiz-answer summary::-webkit-details-marker { display: none; }
+    .quiz-answer summary::before { content: "▶  "; font-size: 9px; }
+    .quiz-answer[open] summary::before { content: "▼  "; }
+    .quiz-answer > *:not(summary) { padding: 0 14px 10px; }
+
+    /* === IMAGES === */
+    .wiki-image-wrap {
+      margin: 36px 0;
+      text-align: center;
+    }
+    .wiki-image-wrap figcaption {
+      font-family: var(--font-ui); font-size: 13px;
+      color: var(--muted); margin-top: 10px;
+      font-style: italic; text-align: center;
+    }
+    .wiki-image {
+      display: inline-block;
+      max-width: 100%;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      cursor: zoom-in;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .wiki-image:hover { box-shadow: var(--shadow-lg); transform: scale(1.005); }
+
+    /* Full-width image variant */
+    .wiki-image-wrap.full { margin: 40px -20px; }
+    .wiki-image-wrap.full .wiki-image { border-radius: 0; max-width: calc(100% + 40px); width: calc(100% + 40px); }
+
+    /* === VIDEO EMBEDS === */
+    .video-wrap {
+      position: relative; padding-bottom: 56.25%;
+      height: 0; overflow: hidden;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      margin: 32px 0;
+    }
+    .video-wrap iframe {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+    .video-caption {
+      font-family: var(--font-ui); font-size: 13px;
+      color: var(--muted); margin-top: 8px;
+      font-style: italic; text-align: center;
+    }
+
+    /* === WIKILINK BADGES === */
+    .wikilink {
+      display: inline-block; font-family: var(--font-mono);
+      font-size: 11px; padding: 1px 7px;
+      background: var(--teal-pale); color: var(--teal);
+      border: 1px solid rgba(13,115,119,0.25);
+      border-radius: 999px; vertical-align: baseline;
+      line-height: 1.6; margin: 0 2px; position: relative;
+      cursor: default;
+    }
+    .wikilink::after {
+      content: attr(data-label);
+      position: absolute; bottom: 125%; left: 50%;
+      transform: translateX(-50%);
+      background: var(--navy); color: #fff;
+      font-family: var(--font-ui); font-size: 11px;
+      padding: 4px 10px; border-radius: 4px;
+      white-space: nowrap; pointer-events: none;
+      opacity: 0; transition: opacity 0.15s; z-index: 10;
+    }
+    .wikilink:hover::after { opacity: 1; }
+
+    /* === LIGHTBOX === */
+    #lightbox {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 1000;
+      align-items: center; justify-content: center;
+      cursor: zoom-out;
+      opacity: 0; transition: opacity 0.25s;
+    }
+    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox-inner {
+      position: relative; max-width: 94vw; max-height: 94vh;
+      display: flex; flex-direction: column; align-items: center; gap: 14px;
+    }
+    #lightbox img {
+      max-width: 92vw; max-height: 82vh;
+      border-radius: 10px; object-fit: contain;
+      box-shadow: 0 8px 60px rgba(0,0,0,0.7);
+      cursor: default;
+    }
+    #lightbox-caption {
+      color: rgba(255,255,255,0.7); font-family: var(--font-ui);
+      font-size: 14px; font-style: italic; text-align: center;
+      max-width: 600px;
+    }
+    #lightbox-close {
+      position: fixed; top: 20px; right: 24px;
+      width: 40px; height: 40px;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50%; color: #fff; font-size: 18px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; z-index: 1001;
+      transition: background 0.2s;
+    }
+    #lightbox-close:hover { background: rgba(255,255,255,0.2); }
+    #lightbox-prev, #lightbox-next {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      width: 44px; height: 44px;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50%; color: #fff; font-size: 18px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; z-index: 1001; transition: background 0.2s;
+    }
+    #lightbox-prev { left: 20px; }
+    #lightbox-next { right: 20px; }
+    #lightbox-prev:hover, #lightbox-next:hover { background: rgba(255,255,255,0.18); }
+
+    /* === ANSWER COLLECTION PANEL === */
+    #answers-fab {
+      position: fixed; bottom: 28px; right: 24px;
+      width: 52px; height: 52px;
+      background: var(--navy); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; z-index: 400;
+      box-shadow: var(--shadow-lg);
+      color: var(--teal-lt); font-size: 20px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+    }
+    #answers-fab:hover { transform: scale(1.08); box-shadow: 0 8px 32px rgba(15,23,42,0.25); }
+    #answers-fab .fab-badge {
+      position: absolute; top: -4px; right: -4px;
+      min-width: 18px; height: 18px;
+      background: var(--teal-lt); border-radius: 9px;
+      color: #fff; font-size: 10px; font-family: var(--font-ui);
+      font-weight: 700; display: none;
+      align-items: center; justify-content: center; padding: 0 4px;
+    }
+    #answers-fab .fab-badge.show { display: flex; }
+
+    #answers-panel {
+      display: none; position: fixed; bottom: 90px; right: 24px;
+      width: min(400px, calc(100vw - 40px));
+      background: var(--surface); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg); z-index: 400;
+      font-family: var(--font-ui);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    #answers-panel.open { display: block; }
+    .answers-header {
+      background: var(--navy); color: #fff;
+      padding: 14px 18px; display: flex;
+      align-items: center; gap: 10px;
+      font-size: 13px; font-weight: 600;
+    }
+    .answers-header .close-panel {
+      margin-left: auto; cursor: pointer;
+      color: rgba(255,255,255,0.6); font-size: 18px;
+      background: none; border: none; padding: 0;
+    }
+    .answers-body {
+      max-height: 360px; overflow-y: auto;
+      padding: 14px 18px;
+    }
+    .answer-entry {
+      border-left: 3px solid var(--teal);
+      padding: 8px 12px; margin-bottom: 10px;
+      background: var(--teal-pale); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 13px;
+    }
+    .answer-entry .a-q { color: var(--muted); font-size: 11px; margin-bottom: 3px; }
+    .answer-entry .a-v { color: var(--navy); font-weight: 600; }
+    .answers-empty { color: var(--muted); font-size: 13px; text-align: center; padding: 20px 0; }
+    .answers-footer {
+      padding: 12px 18px; border-top: 1px solid var(--border);
+      display: flex; gap: 10px; justify-content: flex-end;
+    }
+    .btn-export {
+      padding: 7px 14px; background: var(--navy); color: #fff;
+      border: none; border-radius: var(--radius-sm); cursor: pointer;
+      font-size: 12px; font-weight: 600; font-family: var(--font-ui);
+      transition: background 0.15s;
+    }
+    .btn-export:hover { background: var(--teal); }
+    .btn-clear {
+      padding: 7px 14px; background: none; color: var(--muted);
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+      cursor: pointer; font-size: 12px; font-family: var(--font-ui);
+      transition: all 0.15s;
+    }
+    .btn-clear:hover { border-color: var(--red); color: var(--red); }
+
+    /* === PREV/NEXT NAVIGATION === */
+    .session-nav {
+      display: flex; gap: 16px;
+      margin-top: 60px; padding-top: 32px;
+      border-top: 1px solid var(--border);
+      font-family: var(--font-ui);
+    }
+    .nav-btn {
+      flex: 1; display: flex; flex-direction: column;
+      gap: 4px; padding: 18px 22px;
+      border: 1px solid var(--border); border-radius: var(--radius-md);
+      transition: all 0.15s; color: var(--text); min-width: 0;
+    }
+    .nav-btn:hover { border-color: var(--teal); box-shadow: var(--shadow-sm); text-decoration: none; background: var(--teal-pale); }
+    .nav-btn.nav-prev { align-items: flex-start; }
+    .nav-btn.nav-next { align-items: flex-end; text-align: right; }
+    .nav-btn .nav-dir { font-size: 11px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+    .nav-btn .nav-title { font-size: 15px; font-weight: 600; color: var(--navy); line-height: 1.3; }
+    .nav-btn:hover .nav-dir { color: var(--teal); }
+
+    /* === DETAILS / COLLAPSIBLE === */
+    details {
+      margin: 18px 0;
+      border-left: 3px solid var(--teal);
+      background: var(--teal-pale);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    details summary {
+      list-style: none; cursor: pointer;
+      padding: 13px 16px; font-family: var(--font-ui);
+      font-weight: 600; color: var(--teal);
+      display: flex; align-items: center; gap: 8px;
+      user-select: none;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::before { content: "▶"; font-size: 9px; transition: transform 0.2s; display: inline-block; }
+    details[open] summary::before { transform: rotate(90deg); }
+    details > *:not(summary) { padding: 0 16px 14px; }
+
+    /* === SCROLLBAR === */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(26,46,74,0.15); border-radius: 3px; }
+
+    /* === RESPONSIVE — TABLET === */
+    @media (max-width: 1024px) {
+      :root { --sidebar-width: 260px; }
+    }
+
+    /* === RESPONSIVE — MOBILE === */
+    @media (max-width: 768px) {
+      body { font-size: 16.5px; padding-top: var(--topbar-h); }
+      #topbar { display: flex; }
+      #sidebar-toggle { display: none; }
+      .layout { grid-template-columns: 1fr; }
+      #sidebar {
+        position: fixed; top: var(--topbar-h); left: 0;
+        height: calc(100vh - var(--topbar-h));
+        width: 290px;
+        transform: translateX(-100%);
+        z-index: 300;
+      }
+      #sidebar.mobile-open { transform: translateX(0); }
+      body.sidebar-collapsed #sidebar { transform: translateX(-290px); }
+      main#content { padding: 20px 12px 80px; }
+      .content-card { padding: 24px 18px 32px; border-radius: var(--radius-lg); }
+      h1 { font-size: clamp(24px, 6vw, 32px); margin-bottom: 28px; }
+      h2 { font-size: 19px; margin: 40px 0 14px; }
+      .session-nav { flex-direction: column; gap: 10px; }
+      #answers-fab { bottom: 20px; right: 16px; }
+      #answers-panel { right: 16px; bottom: 82px; }
+      #lightbox-prev { left: 8px; }
+      #lightbox-next { right: 8px; }
+    }
+
+    @media (max-width: 480px) {
+      .wiki-image-wrap.full { margin: 32px -18px; }
+      .wiki-image-wrap.full .wiki-image { max-width: calc(100% + 36px); width: calc(100% + 36px); }
+    }
+
+    /* === PRINT === */
+    @media print {
+      #sidebar, #topbar, #lightbox, #answers-fab, #answers-panel, #sidebar-toggle { display: none; }
+      .layout { grid-template-columns: 1fr; }
+      .content-card { box-shadow: none; border-radius: 0; }
+      body { padding-top: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Mobile top bar -->
+<header id="topbar">
+  <button id="hamburger" aria-label="Menu" aria-expanded="false" onclick="toggleMobileSidebar()">
+    <span></span><span></span><span></span>
+  </button>
+  <span id="topbar-title">2.3 · Phares, Secteurs et Amers</span>
+  <svg id="topbar-progress-ring" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="13" stroke="rgba(255,255,255,0.12)" stroke-width="2.5"/>
+    <circle id="ring-progress" cx="16" cy="16" r="13" stroke="#14a0a5" stroke-width="2.5"
+      stroke-dasharray="81.7" stroke-dashoffset="81.7" stroke-linecap="round"
+      transform="rotate(-90 16 16)" style="transition:stroke-dashoffset 0.5s"/>
+  </svg>
+</header>
+<div id="sidebar-overlay" onclick="toggleMobileSidebar()"></div>
+
+<!-- Desktop sidebar collapse toggle -->
+<button id="sidebar-toggle" onclick="toggleDesktopSidebar()" title="Réduire le menu">
+  <span class="toggle-arrow">‹</span>
+</button>
+
+<div class="layout">
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <span class="anchor">⚓</span>
+      <div class="brand-text">
+        <div class="title">Permis Côtier</div>
+        <div class="subtitle">Golfe de Fethiye</div>
+      </div>
+    </div>
+
+    <a href="../index.html" class="sidebar-index-link">← Plan du cours</a>
+
+    <div class="sidebar-nav" id="course-nav">
+      
+      <div class="module-group" data-mod="0">
+        <div class="module-header " onclick="toggleModule(this)">
+          <span class="mod-num">0</span>
+          <span class="mod-title">Prologue — Le Départ</span>
+          <span class="chevron">▶</span>
+        </div>
+        <ul class="session-items collapsed">
+          
+          <li class="session-item "
+              onclick="location.href='../module-0/session-0-0-prologue.html'">
+            <span class="s-code">0.0</span>
+            <span>
+              <span class="s-name">Bienvenue à Göcek</span>
+              <span class="s-duration">20 min</span>
+            </span>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="module-group" data-mod="1">
+        <div class="module-header " onclick="toggleModule(this)">
+          <span class="mod-num">1</span>
+          <span class="mod-title">Le Bateau et ses Règles</span>
+          <span class="chevron">▶</span>
+        </div>
+        <ul class="session-items collapsed">
+          
+          <li class="session-item "
+              onclick="location.href='../module-1/session-1-1-vocabulaire-bateau.html'">
+            <span class="s-code">1.1</span>
+            <span>
+              <span class="s-name">Le Voilier — Vocabulaire et Gréement</span>
+              <span class="s-duration">35 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-1/session-1-2-regles-de-barre.html'">
+            <span class="s-code">1.2</span>
+            <span>
+              <span class="s-name">Les Règles de Barre — Priorités et Croisements</span>
+              <span class="s-duration">40 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-1/session-1-3-feux-signaux.html'">
+            <span class="s-code">1.3</span>
+            <span>
+              <span class="s-name">Feux de Navigation et Signaux</span>
+              <span class="s-duration">40 min</span>
+            </span>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="module-group" data-mod="2">
+        <div class="module-header " onclick="toggleModule(this)">
+          <span class="mod-num">2</span>
+          <span class="mod-title">Lire la Mer</span>
+          <span class="chevron">▶</span>
+        </div>
+        <ul class="session-items collapsed">
+          
+          <li class="session-item "
+              onclick="location.href='session-2-1-balisage-iala.html'">
+            <span class="s-code">2.1</span>
+            <span>
+              <span class="s-name">Le Balisage IALA — Les Cinq Familles</span>
+              <span class="s-duration">40 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='session-2-2-carte-marine.html'">
+            <span class="s-code">2.2</span>
+            <span>
+              <span class="s-name">La Carte Marine — Lecture et Symboles</span>
+              <span class="s-duration">40 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='session-2-3-phares-amers.html'">
+            <span class="s-code">2.3</span>
+            <span>
+              <span class="s-name">Phares, Secteurs et Amers</span>
+              <span class="s-duration">30 min</span>
+            </span>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="module-group" data-mod="3">
+        <div class="module-header " onclick="toggleModule(this)">
+          <span class="mod-num">3</span>
+          <span class="mod-title">Naviguer</span>
+          <span class="chevron">▶</span>
+        </div>
+        <ul class="session-items collapsed">
+          
+          <li class="session-item "
+              onclick="location.href='../module-3/session-3-1-compas-cap-route.html'">
+            <span class="s-code">3.1</span>
+            <span>
+              <span class="s-name">Compas, Cap et Route — Les Trois Nords</span>
+              <span class="s-duration">45 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-3/session-3-2-marees-courants.html'">
+            <span class="s-code">3.2</span>
+            <span>
+              <span class="s-name">Marées et Courants — La Méditerranée et l'Atlantique</span>
+              <span class="s-duration">45 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-3/session-3-3-point-estime-gps.html'">
+            <span class="s-code">3.3</span>
+            <span>
+              <span class="s-name">Point Estimé et GPS — Savoir Où Vous Êtes</span>
+              <span class="s-duration">40 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-3/session-3-4-routage-pilotage.html'">
+            <span class="s-code">3.4</span>
+            <span>
+              <span class="s-name">Routage et Pilotage Côtier</span>
+              <span class="s-duration">40 min</span>
+            </span>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="module-group" data-mod="4">
+        <div class="module-header " onclick="toggleModule(this)">
+          <span class="mod-num">4</span>
+          <span class="mod-title">Manœuvrer</span>
+          <span class="chevron">▶</span>
+        </div>
+        <ul class="session-items collapsed">
+          
+          <li class="session-item "
+              onclick="location.href='../module-4/session-4-1-voile-theorie.html'">
+            <span class="s-code">4.1</span>
+            <span>
+              <span class="s-name">La Voile — Théorie, Allures et Réglages</span>
+              <span class="s-duration">40 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-4/session-4-2-manoeuvres.html'">
+            <span class="s-code">4.2</span>
+            <span>
+              <span class="s-name">Manœuvres — Virement, Empannage, Accostage</span>
+              <span class="s-duration">40 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-4/session-4-3-mouillage.html'">
+            <span class="s-code">4.3</span>
+            <span>
+              <span class="s-name">Mouillage, Ancrage et Amarrage</span>
+              <span class="s-duration">35 min</span>
+            </span>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="module-group" data-mod="5">
+        <div class="module-header " onclick="toggleModule(this)">
+          <span class="mod-num">5</span>
+          <span class="mod-title">Sécurité</span>
+          <span class="chevron">▶</span>
+        </div>
+        <ul class="session-items collapsed">
+          
+          <li class="session-item "
+              onclick="location.href='../module-5/session-5-1-meteo.html'">
+            <span class="s-code">5.1</span>
+            <span>
+              <span class="s-name">Météo Marine — Lire le Ciel et les Bulletins</span>
+              <span class="s-duration">45 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-5/session-5-2-securite-equipement.html'">
+            <span class="s-code">5.2</span>
+            <span>
+              <span class="s-name">Équipement de Sécurité — L'Armement Obligatoire</span>
+              <span class="s-duration">35 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-5/session-5-3-urgences.html'">
+            <span class="s-code">5.3</span>
+            <span>
+              <span class="s-name">Urgences à Bord — HAM, Incendie, Voie d'Eau</span>
+              <span class="s-duration">45 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-5/session-5-4-visibilite-reduite.html'">
+            <span class="s-code">5.4</span>
+            <span>
+              <span class="s-name">Visibilité Réduite — Brouillard et Navigation Nocturne</span>
+              <span class="s-duration">35 min</span>
+            </span>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="module-group" data-mod="6">
+        <div class="module-header " onclick="toggleModule(this)">
+          <span class="mod-num">6</span>
+          <span class="mod-title">Radio et Réglementation</span>
+          <span class="chevron">▶</span>
+        </div>
+        <ul class="session-items collapsed">
+          
+          <li class="session-item "
+              onclick="location.href='../module-6/session-6-1-radio-vhf.html'">
+            <span class="s-code">6.1</span>
+            <span>
+              <span class="s-name">VHF Marine — MAYDAY, PAN PAN et Canal 16</span>
+              <span class="s-duration">40 min</span>
+            </span>
+          </li>
+          
+          <li class="session-item "
+              onclick="location.href='../module-6/session-6-2-reglementation.html'">
+            <span class="s-code">6.2</span>
+            <span>
+              <span class="s-name">Documents, Licence et Réglementation</span>
+              <span class="s-duration">35 min</span>
+            </span>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="module-group" data-mod="7">
+        <div class="module-header " onclick="toggleModule(this)">
+          <span class="mod-num">7</span>
+          <span class="mod-title">Épilogue et Examen Blanc</span>
+          <span class="chevron">▶</span>
+        </div>
+        <ul class="session-items collapsed">
+          
+          <li class="session-item "
+              onclick="location.href='../module-7/session-7-0-epilogue.html'">
+            <span class="s-code">7.0</span>
+            <span>
+              <span class="s-name">Épilogue — Retour à Göcek et Examen Blanc</span>
+              <span class="s-duration">60 min</span>
+            </span>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="sidebar-progress">
+      <div class="progress-label">
+        <span>Progression</span>
+        <span id="progress-count">0 / 21</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main id="content">
+    <div class="content-card">
+      <div class="session-meta">
+        <span class="meta-badge meta-module">Lire la Mer</span>
+        <span class="meta-badge meta-code">Session 2.3</span>
+        <span class="meta-duration">~30 min</span>
+      </div>
+      <h1>Phares, Secteurs et Amers</h1>
+
+      <div class="callout callout-scene"><div class="callout-label">⚓ Scène</div><div class="callout-body">
+<p><strong>Mardi soir, ancré baie de Fethiye. 22h00.</strong></p>
+<p>William est au quart de nuit — une heure, de 21h à 22h. Emmanuel et Christelle dorment dans la cabine avant. Rebecca dort dans la cabine arrière. William est seul dans le cockpit, pour la première fois vraiment responsable. Il regarde l'entrée de la baie. Le phare de Fethiye envoie ses éclats réguliers : flash, flash, pause. Flash, flash, pause.</p>
+<p>Il prend son Bloc de Phares — le livre de référence des feux des côtes turques — et cherche. &quot;Fl(2) 10s 12m 8M.&quot; Deux éclats toutes les 10 secondes, à 12 mètres de hauteur, visible à 8 milles nautiques.</p>
+<p>Il lève les yeux et compte. Flash, flash. Un, deux, trois, quatre, cinq… flash, flash. Dix secondes. Juste.</p>
+<p>Pour la première fois depuis le départ, il se sent vraiment marin.</p>
+</div></div>
+<h2>Comprendre les caractéristiques d'un phare</h2>
+<p>Sur une carte marine, chaque phare est identifié par son <strong>abréviation de caractéristique</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Abréviation</th>
+<th>Signification</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fl</td>
+<td>Feux à éclats (Flash)</td>
+<td>Éclairs courts, obscurité &gt; lumière</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>Scintillant (Quick)</td>
+<td>≥ 50 éclats/min</td>
+</tr>
+<tr>
+<td>VQ</td>
+<td>Très scintillant (Very Quick)</td>
+<td>≥ 100 éclats/min</td>
+</tr>
+<tr>
+<td>Iso</td>
+<td>Isophase</td>
+<td>Lumière = obscurité</td>
+</tr>
+<tr>
+<td>Oc</td>
+<td>À occultations</td>
+<td>Lumière &gt; obscurité</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Feu fixe</td>
+<td>Continu</td>
+</tr>
+<tr>
+<td>LFl</td>
+<td>Éclat long</td>
+<td>Éclat ≥ 2s</td>
+</tr>
+</tbody>
+</table>
+<p>Format complet : <code>Fl(3) 15s 25m 20M</code>
+= 3 éclats en groupe, période 15 secondes, hauteur 25 mètres, portée nominale 20 milles nautiques.</p>
+<p><strong>Comment identifier un feu de nuit :</strong> Quand vous apercevez un feu inconnu à l'horizon, commencez par observer attentivement. Comptez les éclats dans chaque groupe, notez la couleur, et chronométrez la période complète (du début d'un cycle jusqu'au début du suivant). Comparez ensuite avec la carte ou le Livre des Feux pour la zone. Les feux d'une même zone sont conçus pour être inconfondables — mais il faut les identifier avec méthode, jamais à la hâte.</p>
+<p><strong>Portée nominale vs portée géographique :</strong> La <strong>portée nominale</strong> (le &quot;M&quot; dans <code>20M</code>) est la distance à laquelle un feu est visible par visibilité météorologique standard de 10 milles. C'est une mesure d'intensité lumineuse. La <strong>portée géographique</strong> est limitée par la courbure de la Terre : un feu élevé (25 m) et un observateur à 3 m au-dessus de l'eau ont une portée géographique d'environ 19 milles. En pratique, la portée effective est le <strong>minimum des deux</strong> — souvent la portée géographique par temps clair, la portée nominale réduite par la brume. Par nuit de brume légère, un feu puissant peut révéler sa présence par le <em>loom</em> — la lueur diffusée dans les nuages — avant même d'être directement visible.</p>
+<p>Voir <span class="wikilink" data-label="Aide Navigation Phares">concepts/aide-navigation-phares</span>.</p>
+<h2>Phares sectoriels</h2>
+<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/phare-secteurs-colores.svg" alt="phare-secteurs-colores.svg"></div>
+<p>Certains phares émettent différentes couleurs selon le secteur d'observation. Ce système guide les navires dans les chenaux d'approche :</p>
+<ul>
+<li><strong>Secteur blanc</strong> — route sûre, dans l'axe du chenal</li>
+<li><strong>Secteur rouge</strong> — danger à bâbord du chenal (trop à gauche)</li>
+<li><strong>Secteur vert</strong> — danger à tribord du chenal (trop à droite)</li>
+</ul>
+<p><strong>Comment l'utiliser :</strong> En approchant un port de nuit, restez dans le secteur blanc. Si vous entrez dans le rouge, abattez vers tribord. Si vous entrez dans le vert, abattez vers bâbord.</p>
+<p>Les limites exactes de chaque secteur sont publiées dans le <strong>Livre des Feux</strong> (ou Annuaire des Marées pour les feux côtiers) sous forme de degrés vrais. Exemple : <em>secteur blanc de 087° à 104°V, rouge de 064° à 087°V, vert de 104° à 118°V</em>. Sur la carte marine, ces secteurs sont représentés par des arcs colorés rayonnant depuis le symbole du phare.</p>
+<p>La technique nocturne d'approche par secteur est d'une précision redoutable, et elle n'exige aucun instrument hormis votre capacité à distinguer les couleurs. En restant dans le blanc, vous suivez l'axe exact du chenal à chaque instant, automatiquement. C'est un &quot;pilote passif&quot; intégré dans le balisage lumineux — l'une des inventions les plus élégantes de la navigation côtière. Une fois que vous l'avez utilisé une fois pour entrer dans un port de nuit, vous ne voudrez plus jamais approcher à l'estime.</p>
+<p>La notation sur la carte d'un feu sectoriel ressemble à : <code>Fl(2) WRG 12s 14m 10-7M</code> — 2 éclats dans les couleurs blanc/rouge/vert selon le secteur, période 12 secondes, hauteur 14 mètres, portées 10M (blanc) et 7M (rouge/vert).</p>
+<p>Voir <span class="wikilink" data-label="Feux Secteurs Route">concepts/feux-secteurs-route</span>.</p>
+<h2>Les amers</h2>
+<p>Un <strong>amer</strong> (<em>landmark</em>) est tout objet à terre reconnaissable visuellement, identifiable sur la carte, et utilisable pour déterminer ou confirmer une position par relèvement. C'est l'un des outils les plus anciens et les plus fiables de la navigation côtière.</p>
+<p>Un bon amer doit réunir plusieurs qualités : être <strong>unique</strong> dans un secteur d'observation donné (pas de doute possible sur son identification), être clairement représenté sur la carte, être <strong>visible dans les conditions de navigation prévues</strong> (distance, visibilité, angle solaire), et être assez éloigné pour que le relèvement soit précis.</p>
+<p>Types d'amers courants :</p>
+<ul>
+<li>Phares et balises</li>
+<li>Tours, châteaux d'eau</li>
+<li>Clochers, mosquées (en Méditerranée orientale)</li>
+<li>Antennes TV, pylônes</li>
+<li>Ruines, falaises particulières</li>
+</ul>
+<p>En Méditerranée orientale et en Turquie, les <strong>minarets</strong> sont d'excellents amers : ils sont uniques, très visibles, parfaitement représentés sur les cartes portulan, et ils n'ont pas la fâcheuse habitude des phares de tomber en panne. Les <strong>tombeaux lyciens</strong> de Fethiye sont taillés dans la falaise à 100 mètres au-dessus de la mer, visibles à 8 milles par beau temps — et il n'y a rien de semblable dans un rayon de 50 milles.</p>
+<p>Évitez d'utiliser comme amers des objets <strong>saisonniers</strong> (guirlandes de vacances, bâches de chantier), <strong>mobiles</strong> (bateaux au mouillage permanents mais pouvant appareiller), ou <strong>non cartographiés</strong> (nouvelles constructions non encore incluses dans l'édition de votre carte).</p>
+<h2>Utiliser les alignements</h2>
+<p><strong>L'alignement</strong> (ou <em>transit</em>) est la ligne droite définie par deux amers vus superposés depuis le navire. C'est l'une des méthodes de navigation les plus précises — pas besoin de compas.</p>
+<p>Pour exploiter un alignement, tracez d'abord la ligne sur la carte : reliez les deux amers identifiés, puis prolongez cette ligne vers la mer. Cette ligne de position est exactement la trajectoire à suivre pour les garder en ligne. Quand les deux amers sont superposés depuis votre bateau, vous êtes précisément sur cette ligne — sans compas, sans GPS, sans marge d'erreur liée à la déviation de l'instrument.</p>
+<p>Un alignement peut servir de <strong>ligne de guidage</strong> (entrer dans un port en maintenant deux fanaux en ligne) ou de <strong>ligne de sécurité</strong> (<em>clearing line</em> : tant que les deux amers ne sont pas en ligne, vous êtes du bon côté d'un danger). Il peut même servir à révéler des courants : si vous suivez l'alignement mais que les amers dérivent progressivement d'un côté, c'est le courant qui vous pousse.</p>
+<p>Les <strong>feux d'alignement</strong> (<em>leading lights</em>) sont deux phares spécialement placés à des hauteurs différentes et dans l'axe d'un chenal pour guider les entrées de port de nuit : quand le feu inférieur est exactement sous le feu supérieur, vous êtes dans l'axe. Si le feu inférieur est à gauche du supérieur, vous êtes à droite de l'axe — et vice versa. C'est l'équivalent nocturne du transit de jour.</p>
+<div class="callout callout-golfe"><div class="callout-label">🗺️ Exemple — Golfe de Fethiye</div><div class="callout-body">
+<p><strong>Le phare de Fethiye (Fethiye Feneri) :</strong> Caractéristique <code>Fl(2) 10s 12m 8M</code> sur la jetée nord du port de Fethiye. En approchant de nuit depuis le golfe de Göcek, il est visible à 8 milles. Il est accompagné d'un <strong>feu de secteur</strong> : blanc dans l'axe d'approche, rouge côté rochers de l'ouest.</p>
+<p>Si vous voyez le feu rouge : cap trop à l'ouest, danger rocheux. Abattez vers l'est (tribord) jusqu'à retrouver le blanc.</p>
+<p>[MINI-QUIZ]
+<strong>Question 1 :</strong> La caractéristique <code>Fl(3)G 10s</code> signifie :
+<strong>A)</strong> Trois éclats verts, période de 10 secondes
+<strong>B)</strong> Trois éclats, fond vert, 10 secondes de portée
+<strong>C)</strong> Feu vert fixe, groupe de 3, visible 10 milles
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Fl(3)G = 3 éclats verts, 10s = période totale de 10 secondes. G = Green (vert). La portée serait notée en milles nautiques à la fin (ex: 10M).</p>
+</details><p><strong>Question 2 :</strong> De nuit, vous approchez un chenal et vous voyez le feu de secteur rouge. Que faites-vous ?
+<strong>A)</strong> Vous êtes dans le secteur sûr, continuez
+<strong>B)</strong> Vous êtes trop à bâbord (danger), abattez vers tribord
+<strong>C)</strong> Vous êtes trop à tribord (danger), abattez vers bâbord
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Dans la convention des phares sectoriels, rouge = danger à bâbord du chenal (vous êtes trop à gauche). Abattez vers tribord pour revenir dans le blanc.</p>
+</details><p>[TRANSITION]
+Fethiye au matin ressemble à une carte postale — les tombeaux lyciens orange dans la falaise, les gulets blancs dans le port, les pêcheurs qui rentrent. Mais demain, William doit planifier une route complexe : cap sur Ölüdeniz, à 17 milles au sud-ouest. Il faudra tenir un cap précis, corriger la dérive, penser aux courants.</p>
+<p><strong>Session 3.1 — Compas, Cap et Route : variation, déclinaison, dérive.</strong></p>
+</div></div>
+
+      <!-- Prev/Next navigation -->
+      <nav class="session-nav">
+        
+        <a href="session-2-2-carte-marine.html" class="nav-btn nav-prev">
+          <span class="nav-dir">← Session précédente</span>
+          <span class="nav-title">La Carte Marine — Lecture et Symboles</span>
+        </a>
+        
+        
+        <a href="../module-3/session-3-1-compas-cap-route.html" class="nav-btn nav-next">
+          <span class="nav-dir">Session suivante →</span>
+          <span class="nav-title">Compas, Cap et Route — Les Trois Nords</span>
+        </a>
+        
+      </nav>
+    </div>
+  </main>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true">
+  <button id="lightbox-close" aria-label="Fermer">✕</button>
+  <button id="lightbox-prev" aria-label="Image précédente">‹</button>
+  <button id="lightbox-next" aria-label="Image suivante">›</button>
+  <div id="lightbox-inner">
+    <img id="lightbox-img" src="" alt="">
+    <div id="lightbox-caption"></div>
+  </div>
+</div>
+
+<!-- Answer collection FAB -->
+<button id="answers-fab" aria-label="Mes réponses" onclick="toggleAnswersPanel()">
+  📋
+  <span class="fab-badge" id="fab-badge"></span>
+</button>
+
+<!-- Answers panel -->
+<div id="answers-panel" role="dialog" aria-label="Mes réponses">
+  <div class="answers-header">
+    <span>📋 Mes réponses — 2.3</span>
+    <button class="close-panel" onclick="toggleAnswersPanel()" aria-label="Fermer">✕</button>
+  </div>
+  <div class="answers-body" id="answers-body">
+    <div class="answers-empty">Aucune réponse enregistrée pour cette session.</div>
+  </div>
+  <div class="answers-footer">
+    <button class="btn-clear" onclick="clearAnswers()">Effacer</button>
+    <button class="btn-export" onclick="exportAnswers()">Exporter JSON</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  const PROGRESS_KEY = 'permis_course_progress_v2';
+  const ANSWERS_KEY  = 'permis_answers_v1';
+  const SIDEBAR_KEY  = 'permis_sidebar_collapsed';
+  const SESSION_SLUG = window.location.pathname.split('/').pop().replace('.html','');
+  const TOTAL = 21;
+
+  // ── Progress ──────────────────────────────────────────────────────────
+  let completed = [];
+  try { const r = localStorage.getItem(PROGRESS_KEY); if (r) completed = JSON.parse(r) || []; } catch(e) {}
+
+  // Mark done after 30s dwell
+  setTimeout(function() {
+    if (!completed.includes(SESSION_SLUG)) {
+      completed.push(SESSION_SLUG);
+      try { localStorage.setItem(PROGRESS_KEY, JSON.stringify(completed)); } catch(e) {}
+    }
+    renderProgress();
+  }, 30000);
+
+  function renderProgress() {
+    const pct = Math.min(100, (completed.length / TOTAL) * 100);
+    const countEl = document.getElementById('progress-count');
+    const fillEl  = document.getElementById('progress-fill');
+    const ring    = document.getElementById('ring-progress');
+    if (countEl) countEl.textContent = completed.length + ' / ' + TOTAL;
+    if (fillEl)  fillEl.style.width = pct + '%';
+    if (ring)    ring.style.strokeDashoffset = 81.7 * (1 - pct / 100);
+
+    document.querySelectorAll('.session-item').forEach(function(item) {
+      const url = item.getAttribute('onclick') || '';
+      const m = url.match(/location\.href='([^']+)'/);
+      if (!m) return;
+      const slug = m[1].split('/').pop().replace('.html','');
+      if (completed.includes(slug) && !item.classList.contains('current')) {
+        item.classList.add('done');
+        const code = item.querySelector('.s-code');
+        if (code && !code.textContent.includes('✓')) code.textContent += ' ✓';
+      }
+    });
+  }
+  renderProgress();
+
+  // ── Answers ───────────────────────────────────────────────────────────
+  let allAnswers = {};
+  function loadAnswers() {
+    try { const r = localStorage.getItem(ANSWERS_KEY); if (r) allAnswers = JSON.parse(r) || {}; } catch(e) {}
+    if (!allAnswers[SESSION_SLUG]) allAnswers[SESSION_SLUG] = [];
+  }
+  function saveAnswers() {
+    try { localStorage.setItem(ANSWERS_KEY, JSON.stringify(allAnswers)); } catch(e) {}
+  }
+  function recordAnswer(questionCtx, value) {
+    loadAnswers();
+    const existing = allAnswers[SESSION_SLUG].find(a => a.q === questionCtx);
+    if (existing) { existing.v = value; existing.t = Date.now(); }
+    else allAnswers[SESSION_SLUG].push({ q: questionCtx, v: value, t: Date.now() });
+    saveAnswers();
+    refreshAnswersPanel();
+    updateFabBadge();
+  }
+  loadAnswers();
+
+  // MCQ: make list items in quiz callouts clickable
+  document.querySelectorAll('.callout-quiz ol, .callout-quiz ul').forEach(function(list, listIdx) {
+    const block = list.closest('.callout-quiz');
+    const qLabel = (block.querySelector('p') || block).textContent.trim().slice(0, 60) + '…';
+    const savedEntry = allAnswers[SESSION_SLUG] && allAnswers[SESSION_SLUG].find(a => a.q === qLabel);
+
+    list.querySelectorAll('li').forEach(function(li, i) {
+      li.setAttribute('data-idx', i);
+      if (savedEntry && savedEntry.v === li.textContent.trim()) li.classList.add('selected');
+      li.addEventListener('click', function() {
+        list.querySelectorAll('li').forEach(function(o) { o.classList.remove('selected'); });
+        li.classList.add('selected');
+        recordAnswer(qLabel, li.textContent.trim());
+      });
+    });
+  });
+
+  // Quiz answer inputs: add textarea to quiz callouts that don't have MCQ lists
+  document.querySelectorAll('.callout-quiz').forEach(function(block, i) {
+    if (block.querySelector('ol, ul')) return; // already MCQ
+    const qLabel = (block.querySelector('p') || block).textContent.trim().slice(0, 60) + '…';
+    const ta = document.createElement('textarea');
+    ta.placeholder = 'Votre réponse…';
+    ta.rows = 2;
+    ta.style.cssText = 'width:100%;margin-top:8px;padding:8px 10px;font-size:14px;font-family:var(--font-ui);border:1px solid var(--border);border-radius:6px;resize:vertical;color:var(--text);background:var(--surface);box-sizing:border-box;';
+    const saved = allAnswers[SESSION_SLUG] && allAnswers[SESSION_SLUG].find(a => a.q === qLabel);
+    if (saved) ta.value = saved.v;
+    ta.addEventListener('input', function() { recordAnswer(qLabel, ta.value); });
+    block.querySelector('.callout-body').appendChild(ta);
+  });
+
+  function refreshAnswersPanel() {
+    loadAnswers();
+    const body = document.getElementById('answers-body');
+    const list = allAnswers[SESSION_SLUG] || [];
+    if (!body) return;
+    if (!list.length) {
+      body.innerHTML = '<div class="answers-empty">Aucune réponse enregistrée pour cette session.</div>';
+      return;
+    }
+    body.innerHTML = list.map(function(a) {
+      return '<div class="answer-entry"><div class="a-q">' + escHtml(a.q) + '</div><div class="a-v">' + escHtml(a.v) + '</div></div>';
+    }).join('');
+  }
+  function updateFabBadge() {
+    loadAnswers();
+    const count = (allAnswers[SESSION_SLUG] || []).length;
+    const badge = document.getElementById('fab-badge');
+    if (!badge) return;
+    if (count > 0) { badge.textContent = count; badge.classList.add('show'); }
+    else badge.classList.remove('show');
+  }
+  refreshAnswersPanel();
+  updateFabBadge();
+
+  window.toggleAnswersPanel = function() {
+    const p = document.getElementById('answers-panel');
+    if (p) { p.classList.toggle('open'); refreshAnswersPanel(); }
+  };
+  window.clearAnswers = function() {
+    loadAnswers();
+    allAnswers[SESSION_SLUG] = [];
+    saveAnswers();
+    refreshAnswersPanel();
+    updateFabBadge();
+  };
+  window.exportAnswers = function() {
+    loadAnswers();
+    const data = { session: SESSION_SLUG, exported_at: new Date().toISOString(), answers: allAnswers[SESSION_SLUG] || [] };
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url;
+    a.download = 'reponses-' + SESSION_SLUG + '.json'; a.click();
+    setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
+  };
+
+  function escHtml(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ── Module accordion ──────────────────────────────────────────────────
+  window.toggleModule = function(header) {
+    header.classList.toggle('open');
+    header.nextElementSibling.classList.toggle('collapsed');
+  };
+
+  // ── Desktop sidebar collapse ──────────────────────────────────────────
+  const sidebarCollapsed = localStorage.getItem(SIDEBAR_KEY) === '1';
+  if (sidebarCollapsed) document.body.classList.add('sidebar-collapsed');
+
+  window.toggleDesktopSidebar = function() {
+    document.body.classList.toggle('sidebar-collapsed');
+    localStorage.setItem(SIDEBAR_KEY, document.body.classList.contains('sidebar-collapsed') ? '1' : '0');
+  };
+
+  // ── Mobile sidebar ────────────────────────────────────────────────────
+  window.toggleMobileSidebar = function() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    const burger  = document.getElementById('hamburger');
+    const open = !sidebar.classList.contains('mobile-open');
+    sidebar.classList.toggle('mobile-open', open);
+    overlay.classList.toggle('open', open);
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
+  // ── Lightbox ──────────────────────────────────────────────────────────
+  const images = Array.from(document.querySelectorAll('.wiki-image'));
+  let lbIdx = 0;
+
+  function openLightbox(idx) {
+    lbIdx = idx;
+    const img = images[idx];
+    const lb    = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightbox-img');
+    const lbCap = document.getElementById('lightbox-caption');
+    if (!lb || !lbImg) return;
+    lbImg.src = img.src; lbImg.alt = img.alt || '';
+    if (lbCap) lbCap.textContent = img.getAttribute('data-caption') || img.alt || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    const prev = document.getElementById('lightbox-prev');
+    const next = document.getElementById('lightbox-next');
+    if (prev) prev.style.display = images.length > 1 ? 'flex' : 'none';
+    if (next) next.style.display = images.length > 1 ? 'flex' : 'none';
+  }
+  function closeLightbox() {
+    const lb = document.getElementById('lightbox');
+    if (lb) lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  images.forEach(function(img, idx) { img.addEventListener('click', function() { openLightbox(idx); }); });
+
+  const lbClose = document.getElementById('lightbox-close');
+  const lbPrev  = document.getElementById('lightbox-prev');
+  const lbNext  = document.getElementById('lightbox-next');
+  if (lbClose) lbClose.addEventListener('click', closeLightbox);
+  if (lbPrev)  lbPrev.addEventListener('click', function(e) { e.stopPropagation(); openLightbox((lbIdx - 1 + images.length) % images.length); });
+  if (lbNext)  lbNext.addEventListener('click', function(e) { e.stopPropagation(); openLightbox((lbIdx + 1) % images.length); });
+
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('lightbox');
+    if (lb && lb.classList.contains('open')) {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft' && images.length > 1) openLightbox((lbIdx - 1 + images.length) % images.length);
+      if (e.key === 'ArrowRight' && images.length > 1) openLightbox((lbIdx + 1) % images.length);
+      return;
+    }
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') location.href = 'session-2-2-carte-marine.html';
+    if (e.key === 'ArrowRight') location.href = '../module-3/session-3-1-compas-cap-route.html';
+  });
+
+  // Wrap tables for horizontal scroll on mobile
+  document.querySelectorAll('table').forEach(function(t) {
+    if (t.parentElement.classList.contains('table-wrap')) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'table-wrap';
+    t.parentNode.insertBefore(wrap, t);
+    wrap.appendChild(t);
+  });
+})();
+</script>
+</body>
+</html>

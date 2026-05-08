@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Lecture de carte marine, cap, route et relèvement">
+  <rect width="900" height="420" fill="#eef6fb"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <text x="50" y="48" fill="#1a2e4a" font-size="25" font-weight="700">Carte, cap, route et relèvement</text>
+    <path d="M0 310 C120 270 220 330 330 285 C450 235 560 275 650 230 C750 180 820 205 900 165 L900 420 L0 420 Z" fill="#d8c48f"/>
+    <path d="M70 350 C210 315 330 350 475 300 C625 250 735 250 865 205" fill="none" stroke="#0d7377" stroke-width="4"/>
+    <circle cx="230" cy="250" r="9" fill="#ef4444"/>
+    <text x="246" y="255" fill="#1a2e4a" font-size="15">Amer</text>
+    <path d="M460 320 L610 205" stroke="#1a2e4a" stroke-width="5" marker-end="url(#navArrow)"/>
+    <path d="M460 320 L230 250" stroke="#f5a623" stroke-width="4" stroke-dasharray="10 7"/>
+    <text x="560" y="236" fill="#1a2e4a" font-size="16" font-weight="700">Route fond</text>
+    <text x="330" y="275" fill="#9a6400" font-size="16" font-weight="700">Relèvement</text>
+    <circle cx="460" cy="320" r="25" fill="#fff" stroke="#1a2e4a" stroke-width="3"/>
+    <text x="448" y="326" fill="#1a2e4a" font-size="16" font-weight="700">B</text>
+    <g transform="translate(705 70)">
+      <circle cx="70" cy="70" r="58" fill="#fff" stroke="#1a2e4a" stroke-width="3"/>
+      <text x="70" y="24" text-anchor="middle" fill="#1a2e4a" font-size="14" font-weight="700">N</text>
+      <path d="M70 70 L70 18" stroke="#ef4444" stroke-width="4" marker-end="url(#navArrowRed)"/>
+      <path d="M70 70 L110 108" stroke="#0d7377" stroke-width="4" marker-end="url(#navArrowTeal)"/>
+      <text x="118" y="126" fill="#0d7377" font-size="13">cap</text>
+    </g>
+  </g>
+  <defs>
+    <marker id="navArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1a2e4a"/></marker>
+    <marker id="navArrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#ef4444"/></marker>
+    <marker id="navArrowTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#0d7377"/></marker>
+  </defs>
+</svg>

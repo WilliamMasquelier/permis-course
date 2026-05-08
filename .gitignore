@@ -8,8 +8,9 @@ __pycache__/
 *.bak
 *.tmp
 
-# Generated course output (rebuilt by render_course.py)
-output/
+# Generated course output is committed so the plugin is self-contained.
+# To regenerate: uv sync --dev && uv run python scripts/render_course.py
+# output/
 
 # Rendered legacy HTML assets (copied from Wiki/assets/images/)
 rendered/assets/
