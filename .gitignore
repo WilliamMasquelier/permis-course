@@ -7,6 +7,25 @@ __pycache__/
 *.log
 *.bak
 *.tmp
+
+# Generated course output (rebuilt by render_course.py)
+output/
+
+# Rendered legacy HTML assets (copied from Wiki/assets/images/)
+rendered/assets/
+
+# Raw source material — PDFs, audio, private files; not versioned
+raw/books/*.pdf
+raw/books/*.epub
+raw/course-1/
+raw/course-2/
+raw/extracted-text/
+raw/private/
+
+# Password / Office docs — keep out of git
+*.doc
+*.docx
+
 # Empty OCR artifacts from image-based PDFs
 1-Les_balises-RECTO.txt
 1-Les_balises-VERSO.txt
