@@ -32,3 +32,5 @@ raw/
 1-Les_balises-RECTO.txt
 1-Les_balises-VERSO.txt
 identification_balises.txt
+settings.json
+hooks/
