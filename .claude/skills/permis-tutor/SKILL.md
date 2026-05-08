@@ -152,11 +152,11 @@ On any user exit (`/exit`, "stop", "j'arrête"), or abnormal termination:
 
 ## Error handling
 
-- **Port 8080/8081/8082 all busy** → print URL with `file://` fallback and ask the student to open it manually.
-- **Playwright MCP unavailable** → print the `http://localhost:<port>/...` URL and continue chat-only.
+- **HTML file missing** → run `uv run python scripts/render_course.py` automatically once, then retry.
 - **`student-progress.json` missing** → create it with the default state shown in step 1.
 - **Lesson file missing** → halt, report which slug failed, suggest running `uv run python scripts/render_course.py` and verifying `Wiki/wiki/lessons/`.
-- **HTML file missing** → run `uv run python scripts/render_course.py` automatically once before retrying step 4.
+- **CLI fallback: port busy** → try 8080, 8081, 8082 in order; if all busy, print `file://` URL.
+- **CLI fallback: Playwright unavailable** → print the localhost URL and continue chat-only.
 
 ## Boundaries
 
