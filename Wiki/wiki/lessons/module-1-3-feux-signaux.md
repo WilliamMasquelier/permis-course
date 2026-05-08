@@ -135,17 +135,29 @@ Le **cône black pointe en bas** est la marque la plus fréquente à l'examen et
 > - **Feu tournant régulier** : phare de Fethiye (Fethiye Feneri), caractéristique Fl(2) 10s. Il vous indique la direction de la ville à 12NM au nord-est.
 
 > [MINI-QUIZ]
-> **Question 1 :** Vous voyez de nuit un feu rouge seul, fixe, devant vous. Que signifie-t-il ?
-> **A)** Un bateau venant vers vous, vous voyez son feu de bâbord
-> **B)** Un bateau croisant à tribord de vous
-> **C)** Un bateau au mouillage (feu tout-horizon rouge)
-> **Réponse:** A — Un feu rouge seul signifie que vous voyez le feu de côté bâbord d'un navire. Selon son orientation exacte, il peut venir vers vous ou croiser. Approchez avec prudence.
+> **Question 1 :** De nuit, vous voyez face à vous un feu rouge et un feu vert côte à côte, plus un feu blanc de tête de mât. Quelle est la situation ?
+> **A)** Un navire au mouillage — feux rouge et vert indiquent son orientation
+> **B)** Un navire à moteur arrivant sensiblement en face — situation de face (head-on)
+> **C)** Un navire s'éloignant de vous — vous voyez ses feux de côté arrière
+> **Réponse:** B — Voir simultanément le feu rouge (bâbord) ET le feu vert (tribord) d'un navire avec un feu de mât blanc signifie qu'il vous fait face. C'est une situation de face : chacun vire à tribord pour se croiser bâbord contre bâbord. Un navire au mouillage montre un seul feu blanc tout-horizon (règle 30), pas de feux de côté.
 >
-> **Question 2 :** Quel est le signal sonore pour "je manœuvre à tribord" en présence d'autres navires en vue ?
-> **A)** 2 sons brefs
-> **B)** 1 son bref
-> **C)** 1 son long
-> **Réponse:** B — Un son bref = "je déverse sur tribord". Deux sons brefs = "je déverse sur bâbord". À mémoriser car c'est une question fréquente à l'examen.
+> **Question 2 :** De nuit, vous voyez un feu rouge seul et fixe, légèrement à tribord de votre axe. Quelle est la situation probable ?
+> **A)** Un navire dont vous voyez le feu de bâbord — il se déplace de votre droite vers votre gauche (ou vient vers vous)
+> **B)** Un navire s'éloignant — le feu rouge arrière s'éteindra bientôt
+> **C)** Un navire au mouillage en difficulté — feu rouge tout-horizon
+> **Réponse:** A — Le feu rouge est le feu de côté bâbord d'un navire (visible à 112,5° depuis l'avant). Si vous le voyez légèrement à tribord, le navire coupe votre route de droite à gauche ou arrive vers vous. Les navires au mouillage ne montrent pas de feu rouge — seulement un feu blanc tout-horizon (sauf navires contraints comme les dragueurs de mines).
+>
+> **Question 3 :** Quel signal sonore émet le *Deniz Rüzgarı* pour indiquer "je vire à tribord" (manœuvre en vue d'un autre navire) ?
+> **A)** Deux sons brefs
+> **B)** Un son bref
+> **C)** Un son long
+> **Réponse:** B — En vue d'un autre navire, un son bref = "je gouverne à tribord" ; deux sons brefs = "je gouverne à bâbord" ; trois sons brefs = "mes machines sont en marche arrière". Un son long sert aux signaux de visibilité réduite, pas en situation de vue.
+>
+> **Question 4 :** La nuit, vous croisez un voilier qui montre un feu rouge sur bâbord, un feu vert sur tribord, et un feu blanc tout en haut de son mât. Ce feu blanc est le signe que ce voilier :
+> **A)** Est en difficulté et demande assistance
+> **B)** Utilise son moteur en plus de ses voiles (feu de tête de mât de navire à propulsion mécanique)
+> **C)** Est à l'ancre
+> **Réponse:** B — Un voilier sous voiles seules montre uniquement ses feux de côté (rouge + vert) et éventuellement un feu de poupe blanc. S'il montre en plus un feu blanc de tête de mât (masthead light), c'est qu'il utilise son moteur — il est alors classé comme navire à propulsion mécanique et perd sa priorité sur les navires à moteur.
 
 > [TRANSITION]
 > La nuit à Tersane est douce — la Coupe du Monde passe sur le téléphone d'Emmanuel depuis le cockpit. William note les feux dans son carnet. Demain matin, départ vers Fethiye — 12 milles au nord-est. Pour y entrer, il faudra lire les bouées. Rebecca, depuis la cabine arrière : "Vous ne pouvez pas juste suivre les autres bateaux ?" Silence. Mais comment lire ces bouées rouges et vertes ? Et cette bizarre marque jaune avec une croix ?

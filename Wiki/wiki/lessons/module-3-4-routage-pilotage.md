@@ -100,11 +100,29 @@ Voir [[concepts/routage-navigation]], [[concepts/pilotage-cotier]].
 > **Relèvement de sécurité :** Tant que la pointe est d'Ölüdeniz reste à plus de 095°M, vous êtes au-dessus des 10 mètres.
 
 > [MINI-QUIZ]
-> **Question 1 :** Qu'est-ce qu'un transit ou alignement de navigation ?
-> **A)** Un cap vrai calculé à partir de deux amers
-> **B)** La ligne définie par deux amers vus superposés — fournit une ligne de position exacte sans compas
-> **C)** Un passage balisé entre deux bouées
-> **Réponse:** B — Un transit (alignement) est la ligne sur laquelle vous vous trouvez quand deux amers sont vus superposés l'un derrière l'autre. Aucun compas nécessaire, très précis.
+> **Question 1 :** Qu'est-ce qu'un transit (alignement) en navigation côtière ?
+> **A)** Le cap vrai calculé en combinant deux relèvements gyroscopiques
+> **B)** La ligne de position obtenue quand deux amers sont vus superposés l'un derrière l'autre
+> **C)** Un passage balisé entre deux bouées cardinales
+> **Réponse:** B — Deux amers superposés définissent une ligne de position précise, sans compas ni GPS. Tant qu'ils restent alignés, vous êtes sur cette ligne. C'est l'outil de pilotage côtier le plus fiable car il ne dépend d'aucun instrument électronique.
+>
+> **Question 2 :** Un relèvement de sécurité dit : "Tant que le cap de la pointe sud de Tersane reste au-dessus de 095°M, vous êtes en eau profonde." Vous lisez 098°M au compas. Que faites-vous ?
+> **A)** Vous êtes en sécurité — 098° > 095°, continuez votre route
+> **B)** Danger immédiat — virez immédiatement car vous avez dépassé le seuil de 095°
+> **C)** Vérifiez le GPS avant de décider — le compas seul n'est pas fiable
+> **Réponse:** A — Le relèvement de sécurité définit une limite de protection : tant que la valeur lue dépasse 095°M, vous restez du bon côté. Avec 098°, vous avez encore 3° de marge. B serait correct si vous lisiez 093° (inférieur à 095°). C est une mauvaise réflexe : les relèvements compas sont parfaitement valides pour les vérifications de sécurité.
+>
+> **Question 3 :** Mehmet dit à William : "Pour entrer dans la crique de Hamam Koyu, maintiens le clocher blanc aligné avec le figuier sur la falaise — c'est la seule route sûre." Quelle est la contrainte de navigation à cet endroit ?
+> **A)** Un secteur de phare rouge à éviter en approchant de nuit
+> **B)** Un transit obligatoire qui protège des hauts-fonds de part et d'autre du chenal d'entrée
+> **C)** Une zone militaire interdite de part et d'autre de l'axe d'entrée
+> **Réponse:** B — Maintenir deux amers superposés (ici : clocher + figuier) garantit de rester dans un couloir sûr entre des hauts-fonds. Ce type d'alignement naturel est typique des entrées de criques méditerranéennes et est souvent plus précis que les balises officielles. Si l'alignement casse (l'un se décale de l'autre), il faut corriger immédiatement.
+>
+> **Question 4 :** Pour tracer une route de Göcek vers Kızılada (cap estimé 180°V) sur la carte, quelle est la première vérification à faire après avoir tracé la route ?
+> **A)** Vérifier que la route passe au moins à 0,5 NM de tout obstacle et sonde inférieure au tirant d'eau + marge
+> **B)** Calculer le cap magnétique et vérifier que le moteur a assez de carburant
+> **C)** Vérifier que la route traverse des zones balisées uniquement
+> **Réponse:** A — La vérification primordiale est la sécurité des fonds : la route doit dégager tous les obstacles avec une marge suffisante (en règle générale, au moins 0,5 NM des dangers répertoriés, davantage en mauvaise visibilité). Le cap magnétique et le carburant (B) sont des étapes suivantes. Les routes non balisées sont parfaitement légales.
 
 > [TRANSITION]
 > Butterfly Valley : des falaises de 300 mètres, une plage de galets, une cascade dans les rochers. L'équipage nage, mange. Rebecca admet que c'est magnifique — "différent des Caraïbes, mais beau." Emmanuel marche jusqu'à la cascade. Christelle prend des photos. William est assis sur un rocher avec son MacBook, une réunion Zoom en 4G. Rebecca le regarde. "Sérieusement ?" Il hausse les épaules. "Cinq minutes." Le vent monte — Mehmet fait remarquer depuis le bateau. "C'est l'Imbat de l'après-midi. Tous les matins calmes, toutes les après-midis qui gonflent. Demain, on profite de ça pour naviguer à la voile."

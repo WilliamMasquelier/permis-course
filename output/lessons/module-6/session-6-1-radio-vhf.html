@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1251,19 +1260,39 @@ Terminé
 <p>En Turquie, la veille du canal 16 est assurée par la <strong>Sahil Güvenlik</strong> (Garde Côtière turque). La procédure est identique aux COLREGs/SOLAS — même langage international.</p>
 <p>En entrant dans les ports turcs, certains requièrent un appel VHF préalable (Port Fethiye : canal 12 pour le VTS).</p>
 <p>Si vous avez un MMSI turc (ou français avec inscription ANFR), le DSC fonctionne également en eaux turques.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Dans quel ordre commencez-vous un appel MAYDAY ?
-<strong>A)</strong> Position, nom du bateau, MAYDAY
-<strong>B)</strong> MAYDAY MAYDAY MAYDAY, puis nom du bateau
-<strong>C)</strong> Canal 16, nature du problème, nom du bateau
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Le mot MAYDAY est répété trois fois en premier, puis le nom du bateau. La position et la nature du problème suivent. La répétition de MAYDAY identifie immédiatement la nature de l'appel aux auditeurs.</p>
-</details><p><strong>Question 2 :</strong> Vous êtes en panne moteur à 3 milles du port, sans vent, avec courant vous poussant vers des rochers à 30 minutes. Quel type d'appel radio faites-vous ?
-<strong>A)</strong> MAYDAY — danger grave et imminent
-<strong>B)</strong> PAN PAN — urgence sans danger immédiat de mort
-<strong>C)</strong> Appel ordinaire sur canal 9
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Si les rochers sont à 30 minutes, vous avez peu de temps et le risque de naufrage est réel et imminent. MAYDAY est approprié. PAN PAN aurait été correct si vous étiez en dérive mais sans danger proche.</p>
-</details><p>[TRANSITION]
-À Fethiye, ils amarrent au quai de la douane. L'officier monte à bord pour vérifier les papiers. Il y a le &quot;Carnet de Navigation&quot; (le <em>Transit Log</em> en Turquie), le livre de bord, les licences radio. Tout est en ordre. Il signe, tamponne, sourit. Quand il repart, Emmanuel dit : &quot;Donc même en vacances, la paperasse nous suit.&quot; Rebecca : &quot;En Martinique, le gendarme maritime venait à bord avec un café.&quot; Emmanuel, amusé. &quot;Et pour naviguer en France ?&quot; demande-t-il. &quot;Quels papiers faut-il ?&quot;</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> William doit émettre un MAYDAY depuis le <em>Deniz Rüzgarı</em>. Dans quel ordre dit-il les éléments ?</p>
+<ul>
+<li><strong>A)</strong> Position, puis &quot;MAYDAY&quot;, puis le nom du bateau</li>
+<li><strong>B)</strong> &quot;MAYDAY MAYDAY MAYDAY&quot;, puis nom du bateau, puis position et nature du problème</li>
+<li><strong>C)</strong> Nom du bateau, puis &quot;MAYDAY&quot;, puis le canal de contact</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Procédure MAYDAY réglementaire : (1) &quot;MAYDAY MAYDAY MAYDAY&quot; — 3 fois, (2) &quot;Ici le Deniz Rüzgarı, Deniz Rüzgarı, Deniz Rüzgarı&quot; — 3 fois, (3) &quot;MAYDAY Deniz Rüzgarı&quot; — 1 fois, (4) Position, (5) Nature du problème, (6) Nombre de personnes à bord, (7) Toute autre information utile. La triple répétition de MAYDAY alerte immédiatement tous les auditeurs.</details>
+<p><strong>Question 2 :</strong> Le <em>Deniz Rüzgarı</em> est en panne moteur à 3 milles des rochers de Kızılada, sans vent, dérivant à 1 nœud vers les rochers (ETA impact 40 minutes). Quel appel radio est approprié ?</p>
+<ul>
+<li><strong>A)</strong> MAYDAY — naufrage imminent dans 40 minutes</li>
+<li><strong>B)</strong> PAN PAN — urgence sérieuse mais le danger n'est pas encore certain</li>
+<li><strong>C)</strong> Appel de routine sur canal 67 au port de Göcek</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Avec un impact dans 40 minutes sans possibilité de manœuvre, le danger est grave et imminent — c'est un MAYDAY. Si la dérive était vers la plage ouverte et que le danger était incertain (B), PAN PAN serait adapté. Un appel ordinaire (C) est inapproprié pour toute situation d'urgence.</details>
+<p><strong>Question 3 :</strong> Après un appel MAYDAY, le CROSS (Centre Régional Opérationnel de Surveillance et de Sauvetage) accuse réception. Que répondez-vous ?</p>
+<ul>
+<li><strong>A)</strong> Remerciez et raccrochez — le CROSS prend en charge</li>
+<li><strong>B)</strong> Confirmez que le MAYDAY est bien reçu, répétez votre position et l'état de votre équipage</li>
+<li><strong>C)</strong> Passez sur le canal 67 pour libérer le canal 16 pour d'autres urgences</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Après l'accusé de réception du CROSS, vous confirmez la réception, répétez votre position si elle a changé, et donnez l'état de l'équipage (blessés, personnes à l'eau…). Restez sur le canal 16 sauf instruction contraire du CROSS. Ne raccrochez jamais sans instruction — le CROSS peut vous guider jusqu'aux secours.</details>
+<p><strong>Question 4 :</strong> Emmanuel entend un MAYDAY sur canal 16 mais le CROSS ne répond pas. Quelle est la procédure à suivre pour les navires qui reçoivent ce MAYDAY ?</p>
+<ul>
+<li><strong>A)</strong> Rester en écoute passive — le CROSS répondra dès qu'il sera disponible</li>
+<li><strong>B)</strong> Tenter de répondre au MAYDAY et relayer l'alerte vers le CROSS si nécessaire</li>
+<li><strong>C)</strong> Changer de canal pour ne pas saturer le 16 avec des réponses multiples</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Si le CROSS ne répond pas dans un délai raisonnable, tout navire entendant un MAYDAY a l'obligation de répondre et d'alerter les secours. La procédure &quot;MAYDAY RELAY&quot; permet de retransmettre un MAYDAY reçu d'un navire en détresse vers le CROSS. La solidarité en mer est une obligation légale et éthique.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>À Fethiye, ils amarrent au quai de la douane. L'officier monte à bord pour vérifier les papiers. Il y a le &quot;Carnet de Navigation&quot; (le <em>Transit Log</em> en Turquie), le livre de bord, les licences radio. Tout est en ordre. Il signe, tamponne, sourit. Quand il repart, Emmanuel dit : &quot;Donc même en vacances, la paperasse nous suit.&quot; Rebecca : &quot;En Martinique, le gendarme maritime venait à bord avec un café.&quot; Emmanuel, amusé. &quot;Et pour naviguer en France ?&quot; demande-t-il. &quot;Quels papiers faut-il ?&quot;</p>
 <p><strong>Session 6.2 — Documents, Licence et Réglementation.</strong></p>
 </div></div>
 

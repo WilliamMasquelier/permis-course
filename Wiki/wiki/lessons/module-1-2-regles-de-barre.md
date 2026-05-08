@@ -122,17 +122,29 @@ Les signaux sonores de manœuvre sont des communications obligatoires entre navi
 Ces signaux seront développés en détail à la session 1.3 avec les signaux de brume.
 
 > [MINI-QUIZ]
-> **Question 1 :** Deux bateaux à moteur se croisent en situation de croisement (l'un voit l'autre sur tribord). Qui est prioritaire ?
-> **A)** Le bateau qui voit l'autre sur tribord (il doit s'écarter)
-> **B)** Le bateau qui est vu par l'autre (il est prioritaire)
-> **C)** Le bateau le plus rapide
-> **Réponse:** B — En situation de croisement, le bateau qui a l'autre sur *tribord* doit s'écarter. Il est "non-prioritaire" (*give-way vessel*). L'autre, vu sur bâbord, maintient son cap.
+> **Question 1 :** Deux bateaux à moteur se croisent. Le bateau A voit le bateau B sur son tribord. Qui est prioritaire ?
+> **A)** Le bateau A — il voit l'autre sur tribord, donc il est protégé
+> **B)** Le bateau B — le bateau A le voit sur tribord et doit s'écarter
+> **C)** Le plus grand des deux bateaux
+> **Réponse:** B — En croisement, le bateau qui voit l'autre sur son tribord est le *give-way vessel* (non-prioritaire) : il doit s'écarter. Le bateau B est vu sur le tribord de A, donc B est le *stand-on vessel* (prioritaire) et maintient son cap. La taille et la vitesse ne jouent aucun rôle dans cette règle.
 >
-> **Question 2 :** Un voilier sous voiles croise un ferry qui suit un chenal étroit et ne peut pas dévier. Qui s'écarte ?
-> **A)** Le ferry, car le voilier est prioritaire
-> **B)** Le voilier, car le ferry est contraint dans le chenal (règle 9)
-> **C)** Les deux dévient à tribord
-> **Réponse:** B — La règle 9 du RIPAM oblige tout navire pouvant le faire à ne pas gêner un navire contraint à rester dans le chenal. La priorité générale du voilier ne s'applique pas ici.
+> **Question 2 :** Le *Deniz Rüzgarı* navigue sous voiles uniquement (moteur coupé) et croise un yacht à moteur. Le yacht est sur tribord du *Deniz Rüzgarı*. Qui s'écarte ?
+> **A)** Le *Deniz Rüzgarı* — il voit le yacht sur tribord, la règle de croisement s'applique
+> **B)** Le yacht à moteur — la règle 18 oblige un navire à propulsion mécanique à céder au voilier sous voiles
+> **C)** Ni l'un ni l'autre — ils maintiennent tous les deux leur cap
+> **Réponse:** B — La règle 18 du RIPAM hiérarchise les catégories : un navire à moteur doit s'écarter devant un voilier sous voiles. La règle de croisement tribord/bâbord s'applique entre navires de même catégorie. Piège d'examen : si le *Deniz Rüzgarı* utilise son moteur, même avec les voiles hissées, il devient un navire à moteur et perd la priorité.
+>
+> **Question 3 :** William rattrape un voilier qui navigue devant lui dans le même sens, légèrement plus lentement. Que dit la règle 13 ?
+> **A)** William est prioritaire car il rattrape — l'autre doit s'écarter
+> **B)** Le voilier rattrapé est prioritaire — William (le rattrapant) doit s'écarter
+> **C)** Les deux virents à tribord pour se séparer
+> **Réponse:** B — La règle 13 est absolue : le navire rattrapant (*overtaking vessel*) doit toujours s'écarter, quelle que soit sa catégorie. Même un voilier rattrapant un moteur doit laisser passer. On est "rattrapant" dès qu'on approche à moins de 22,5° de l'axe de l'arrière de l'autre navire.
+>
+> **Question 4 :** Le ferry de Göcek suit un chenal étroit et signale qu'il ne peut pas dévier. Le *Deniz Rüzgarı* sous voiles s'approche. Que doit faire William ?
+> **A)** Maintenir son cap — le voilier sous voiles est toujours prioritaire sur un navire à moteur
+> **B)** S'écarter et ne pas gêner le ferry contraint dans le chenal (règle 9)
+> **C)** Appeler le ferry sur le VHF 16 et attendre ses instructions
+> **Réponse:** B — La règle 9 du RIPAM oblige tout navire pouvant manœuvrer librement à ne pas gêner un navire contraint à rester dans le chenal (trop gros pour dévier, fond insuffisant hors chenal). Cette règle prime sur la priorité habituelle du voilier. William doit s'écarter bien avant que le ferry ne soit à portée.
 
 > [TRANSITION]
 > La traversée jusqu'à Tersane Island prend 45 minutes. Ils arrivent en fin d'après-midi, se retrouvent à l'ancre dans une baie calme. Le soleil se couche derrière les collines. Les lumières s'allument sur l'eau — d'autres bateaux, au loin.

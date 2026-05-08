@@ -110,17 +110,29 @@ La nuit, les phares sectoriels (blanc/rouge/vert) guident les approches côtièr
 > **Pour information :** En Méditerranée orientale, le brouillard en juillet est rare. En Bretagne ou en Manche, il peut durer plusieurs jours consécutifs. Apprenez ces règles pour les côtes françaises.
 
 > [MINI-QUIZ]
-> **Question 1 :** Vous naviguez sous moteur par visibilité réduite. Quel signal sonore devez-vous émettre et à quelle fréquence ?
-> **A)** 2 sons brefs toutes les 2 minutes
-> **B)** 1 son long toutes les 2 minutes maximum
-> **C)** 5 sons brefs toutes les minutes
-> **Réponse:** B — En route sous moteur par visibilité réduite : 1 son long (≥ 4 secondes) à intervalles ≤ 2 minutes.
+> **Question 1 :** Le *Deniz Rüzgarı* navigue sous moteur par brouillard dense. Quel signal sonore doit-il émettre ?
+> **A)** Deux sons brefs toutes les 2 minutes — signal de navire en route sous voiles
+> **B)** Un son long toutes les 2 minutes maximum — signal de navire à propulsion mécanique en route
+> **C)** Cinq sons brefs dès qu'un autre navire est entendu — signal d'avertissement de danger
+> **Réponse:** B — Règle 35 du RIPAM : navire à propulsion mécanique faisant route en visibilité réduite = 1 son long (4 secondes ou plus) à intervalles ≤ 2 minutes. Deux sons brefs = navire sous voiles ou contraint dans sa manœuvre. Cinq sons brefs = signal d'incompréhension ou de danger immédiat (en vue d'un autre navire, pas en visibilité réduite).
 >
-> **Question 2 :** La nuit, vous voyez un feu de secteur rouge d'un phare portuaire. Quelle action prenez-vous ?
-> **A)** Continuez — rouge = secteur sûr pour ce type de phare
-> **B)** Vous êtes dans un secteur dangereux, abattez vers tribord jusqu'à voir le blanc
-> **C)** Abattez vers bâbord
-> **Réponse:** B — Feu rouge = vous êtes dans le secteur à danger bâbord du chenal (trop à gauche). Abattez vers tribord (vers la droite du chenal) jusqu'à voir le secteur blanc.
+> **Question 2 :** Par brouillard, vous entendez un signal sonore : 1 son long suivi de 2 sons brefs, répété à intervalles réguliers. Quel type de navire vous signale sa présence ?
+> **A)** Un navire à propulsion mécanique en route
+> **B)** Un navire au mouillage (sonnerie de cloche)
+> **C)** Un navire en route sous voiles, ou un navire contraint dans sa manœuvre
+> **Réponse:** C — Règle 35 : 1 son long + 2 sons brefs = navire sous voiles, navire manœuvrant avec difficulté, navire contraint dans sa route, navire en train de pêcher, navire remorqueur. Ce signal alerte les autres navires sur une situation de manœuvrabilité limitée. Le navire au mouillage utilise une cloche (et gong pour les navires > 100m).
+>
+> **Question 3 :** Par brouillard épais au large de Kızılada, William doit réduire la vitesse. Quelle est la règle générale à ce sujet ?
+> **A)** Réduire à la moitié de la vitesse normale — règle des 50%
+> **B)** Naviguer à "vitesse de sécurité" permettant de s'arrêter avant tout obstacle détecté
+> **C)** Stopper complètement et jeter l'ancre jusqu'à la levée du brouillard
+> **Réponse:** B — La règle 6 du RIPAM : "vitesse de sécurité" — aucun chiffre fixe n'est imposé, mais la vitesse doit permettre de stopper avant de heurter un obstacle détecté (visuellement, au radar ou acoustiquement). Les facteurs : visibilité actuelle, densité du trafic, manœuvrabilité du navire, état de la mer. S'arrêter (C) peut créer un danger si d'autres navires arrivent.
+>
+> **Question 4 :** Vous naviguez au radar par visibilité réduite et détectez un écho devant vous à 1 NM, sans mouvement apparent du relèvement. Que faites-vous ?
+> **A)** Maintenez votre route — l'écho immobile indique un navire au mouillage
+> **B)** Risque d'abordage — appliquez les règles de barre, réduisez la vitesse
+> **C)** Vérifiez la calibration du radar — un écho immobile est un signe d'erreur d'instrument
+> **Réponse:** B — Un écho dont le relèvement reste constant pendant que la distance diminue = trajectoires convergentes = risque d'abordage. Cette règle s'applique autant par radar que par observation visuelle. Un navire vraiment au mouillage aurait un écho stable ET une distance stable. Réduisez la vitesse et préparez une manœuvre d'évitement.
 
 > [TRANSITION]
 > Mardi matin, jour 9. Dernière longue navigation de la semaine : retour vers Fethiye. Avant de partir, William doit contacter la capitainerie. Il décroche le VHF. "MAYDAY ou... canal 16 ?"

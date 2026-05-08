@@ -190,17 +190,29 @@ Voir [[concepts/gros-temps-tactique]].
 > Dans le golfe de Göcek, la visibilité est bonne, la houle est faible — conditions favorables. En Atlantique Nord avec une houle de 3 mètres, ce sera beaucoup plus difficile.
 
 > [MINI-QUIZ]
-> **Question 1 :** Immédiatement après qu'une personne est tombée à l'eau, quelle est la PREMIÈRE chose à faire ?
-> **A)** Sauter à l'eau pour aider la personne
-> **B)** Appeler le CROSS sur VHF 16
-> **C)** Jeter la bouée-fer à cheval et désigner un équipier pour garder le contact visuel
-> **Réponse:** C — Les deux premières secondes sont critiques. Lancez la bouée (flottabilité et repérage visuel) et gardez le contact visuel. Ne sautez jamais à l'eau — vous devenez une deuxième victime.
+> **Question 1 :** Christelle trébuche et tombe par-dessus bord au large de Kızılada. Quelle est la PREMIÈRE action à effectuer dans les 3 premières secondes ?
+> **A)** Sauter à l'eau immédiatement pour la rejoindre
+> **B)** Appeler "HOMME À LA MER !" et lancer la bouée fer à cheval en gardant le contact visuel
+> **C)** Appeler le CROSS sur VHF 16 pour demander une aide immédiate
+> **Réponse:** B — Les premières secondes : (1) crier "Homme à la mer !" pour alerter l'équipage, (2) jeter la bouée fer à cheval ou une bouée couronne, (3) désigner quelqu'un pour garder le contact visuel sans le perdre un instant. Ne JAMAIS sauter à l'eau (A) — vous devenez une deuxième victime et l'équipage doit récupérer deux personnes au lieu d'une. L'appel radio (C) vient après la récupération ou si la situation dépasse vos capacités.
 >
-> **Question 2 :** Vous détectez un incendie dans la salle des machines. Quelle est la priorité absolue avant d'utiliser l'extincteur ?
-> **A)** Appeler le CROSS sur VHF 16
-> **B)** Couper le moteur et l'alimentation en carburant
-> **C)** Faire sortir tous les passagers sur le pont
-> **Réponse:** B — Couper le combustible (moteur, gaz, carburant) est la priorité car vous privez l'incendie de son aliment. Ensuite seulement l'extincteur, et simultanément l'évacuation.
+> **Question 2 :** Un incendie est détecté dans le compartiment moteur du *Deniz Rüzgarı*. Dans quel ordre agissez-vous ?
+> **A)** 1. Extincteur, 2. Couper le carburant, 3. Évacuer le cockpit
+> **B)** 1. Couper moteur et alimentation carburant, 2. Fermer les orifices d'air, 3. Extincteur ou CO2 fixe
+> **C)** 1. Appeler le CROSS, 2. Couper le carburant, 3. Extincteur
+> **Réponse:** B — Séquence incendie en salle des machines : (1) couper le moteur et l'alimentation en carburant (priver le feu de combustible), (2) fermer les trappes et ouïes d'aération (priver le feu d'oxygène), (3) utiliser l'extincteur ou le système CO2 fixe SANS ouvrir le compartiment si possible (rouvrir alimente le feu). L'appel radio (C) se fait en parallèle mais n'est pas la première priorité.
+>
+> **Question 3 :** Le *Deniz Rüzgarı* a une voie d'eau dans l'avant de la coque. Mehmet indique une pompe de cale qui débite 30 litres par minute. L'eau entre à 50 litres par minute. Quelle est la bonne décision ?
+> **A)** Pomper à fond — la pompe peut ralentir la progression
+> **B)** Boucher la voie d'eau avec tous les moyens disponibles (coussins, étoupe, coins) PENDANT que quelqu'un pompe
+> **C)** Abandonner immédiatement le bateau — la pompe ne peut pas gérer l'entrée d'eau
+> **Réponse:** B — La pompe de cale est utile mais ici insuffisante (déficit de 20 L/min). La priorité est de réduire l'entrée d'eau par colmatage d'urgence (coussins, serviettes, coin de bois, matelas) pour que la pompe puisse faire face. L'abandon (C) n'est envisageable qu'en dernier recours, quand le bateau ne peut plus être sauvé.
+>
+> **Question 4 :** Quelqu'un à bord souffre de symptômes graves : douleur thoracique irradiant dans le bras gauche, transpiration, pâleur. Quelle est la procédure d'urgence médicale à distance ?
+> **A)** Appeler le CROSS sur VHF 16 et demander une coordination SMUR hélitreuillage
+> **B)** Administrer de l'aspirine et allonger la personne — attendre l'arrivée au port
+> **C)** Appeler le 15 (SAMU) par téléphone mobile — le VHF n'est pas adapté aux urgences médicales
+> **Réponse:** A — En mer, l'urgence médicale se gère via le CROSS sur VHF 16 (canal de détresse) : le CROSS coordonne le médecin régulateur et les secours (hélicoptère, vedette SNSM). En haute mer, le service TMAS (Télémedical Assistance Service) offre une consultation médicale à distance. Le SAMU (C) peut être appelé si la couverture mobile est disponible, mais le VHF est le canal principal en mer.
 
 > [TRANSITION]
 > La nuit à Kızılada est étrange — un voile de brume arrive vers 21h, réduisant la visibilité à 400 mètres. Les feux des autres bateaux sont flous. La Coupe du Monde est en quart de finale sur le téléphone d'Emmanuel — mais il éteint l'écran et préfère écouter Mehmet qui explique calmement les règles de navigation par visibilité réduite.

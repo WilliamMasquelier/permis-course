@@ -109,17 +109,29 @@ Voir [[concepts/gps-cartographie-electronique]], [[concepts/latitude-longitude]]
 > Point estimé : On trace le cap 245° depuis Göcek sur 16.8 NM → tombe à ~36°33.5'N 29°06.2'E — très proche de l'entrée d'Ölüdeniz. Sans GPS, on aurait la position correcte à ±0.5 NM près.
 
 > [MINI-QUIZ]
-> **Question 1 :** Quelle est la différence entre COG (Course Over Ground) et Heading (cap) ?
-> **A)** COG est la direction de la proue ; Heading est la route fond réelle
-> **B)** Heading est la direction de la proue ; COG est la route fond réelle après effet du courant et du vent
-> **C)** Ce sont deux termes pour la même mesure
-> **Réponse:** B — Le Heading est ce que vous tenez au compas (direction de la proue). Le COG est ce que le GPS mesure : la direction réelle du déplacement sur le fond, après que vent et courant ont agi.
+> **Question 1 :** Le GPS du *Deniz Rüzgarı* affiche COG 245°, mais William tient un cap compas de 250°. Quelle explication est la plus vraisemblable ?
+> **A)** Erreur GPS — il faut croire le compas
+> **B)** Un courant ou un vent de travers dérive le bateau de 5° vers bâbord par rapport à son axe
+> **C)** La variation magnétique entre les deux instruments est de 5°
+> **Réponse:** B — COG (Course Over Ground) = direction réelle du déplacement sur le fond, mesurée par GPS. Heading = direction de la proue, lue au compas. Si COG < Heading, le bateau dérive à bâbord (un courant ou vent vient de tribord). La variation magnétique s'applique aux deux de la même façon — elle n'explique pas cet écart.
 >
-> **Question 2 :** Vous prenez trois relèvements simultanés et tracez trois lignes de position. Elles forment un petit triangle. Comment déterminez-vous votre position ?
+> **Question 2 :** Vous prenez trois relèvements simultanés sur trois amers. Les trois lignes de position forment un petit triangle (chapeau). Où placez-vous votre point ?
 > **A)** Au centre géométrique du triangle
-> **B)** Au sommet du triangle le plus proche du point de départ
-> **C)** Au coin du triangle le plus proche du danger, par prudence
-> **Réponse:** C — La méthode du "chapeau triangulaire" place votre position au coin le plus proche du danger. Principe de prudence nautique.
+> **B)** Au coin du triangle le plus proche du danger navigationnel
+> **C)** Au sommet du triangle le plus proche de votre dernier point estimé
+> **Réponse:** B — La règle de prudence nautique : en cas d'incertitude (triangle), on se place au point le plus défavorable, c'est-à-dire le coin du triangle le plus proche du danger (rocher, hauts-fonds). C'est le principe conservateur de la navigation côtière. Le centre géométrique (A) serait statistiquement juste mais négligerait la prudence.
+>
+> **Question 3 :** William a quitté Göcek il y a 2 heures à 6 nœuds cap 220°V, sans courant. Il n'a plus de GPS. Où se trouve-t-il approximativement ?
+> **A)** À 12 NM de Göcek, sur le cap 220°V
+> **B)** À 6 NM de Göcek, sur le cap 220°V
+> **C)** La vitesse GPS et la vitesse fond sont toujours différentes — impossible d'estimer sans GPS
+> **Réponse:** A — Point estimé simple sans courant : Distance = Vitesse × Temps = 6 × 2 = 12 NM. Cap tenu = 220°V. Position estimée : à 12 NM de Göcek dans la direction 220°V. En présence de courant, il faudrait ajouter la composante de dérive. C est faux : sans courant, vitesse fond ≈ vitesse loch.
+>
+> **Question 4 :** À quelle fréquence minimum doit-on noter un point estimé sur la carte lors d'un passage côtier à vue ?
+> **A)** Toutes les 30 minutes minimum — ou plus fréquemment si on approche d'un danger
+> **B)** Uniquement au départ et à l'arrivée — le GPS remplace le suivi manuel
+> **C)** Toutes les 4 heures — comme les quarts de navigation hauturière
+> **Réponse:** A — En navigation côtière, la règle de bonne pratique est de noter un point toutes les 15 à 30 minutes (ou dès qu'on approche d'un danger ou d'un point tournant). Le GPS peut tomber en panne ou se tromper (mauvaise réception, erreur de carte) — maintenir un point estimé papier est la sécurité fondamentale.
 
 > [TRANSITION]
 > Ölüdeniz est magnifique. La lagune bleue, les klipspringers sur les falaises, les voiles de parachute ascensionnel. Mais pour atteindre Butterfly Valley demain, il va falloir un vrai plan de route qui contourne les bas-fonds.

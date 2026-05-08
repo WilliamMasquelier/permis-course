@@ -192,17 +192,29 @@ Voir [[concepts/asn-dsc]], [[concepts/mmsi]].
 > Si vous avez un MMSI turc (ou français avec inscription ANFR), le DSC fonctionne également en eaux turques.
 
 > [MINI-QUIZ]
-> **Question 1 :** Dans quel ordre commencez-vous un appel MAYDAY ?
-> **A)** Position, nom du bateau, MAYDAY
-> **B)** MAYDAY MAYDAY MAYDAY, puis nom du bateau
-> **C)** Canal 16, nature du problème, nom du bateau
-> **Réponse:** B — Le mot MAYDAY est répété trois fois en premier, puis le nom du bateau. La position et la nature du problème suivent. La répétition de MAYDAY identifie immédiatement la nature de l'appel aux auditeurs.
+> **Question 1 :** William doit émettre un MAYDAY depuis le *Deniz Rüzgarı*. Dans quel ordre dit-il les éléments ?
+> **A)** Position, puis "MAYDAY", puis le nom du bateau
+> **B)** "MAYDAY MAYDAY MAYDAY", puis nom du bateau, puis position et nature du problème
+> **C)** Nom du bateau, puis "MAYDAY", puis le canal de contact
+> **Réponse:** B — Procédure MAYDAY réglementaire : (1) "MAYDAY MAYDAY MAYDAY" — 3 fois, (2) "Ici le Deniz Rüzgarı, Deniz Rüzgarı, Deniz Rüzgarı" — 3 fois, (3) "MAYDAY Deniz Rüzgarı" — 1 fois, (4) Position, (5) Nature du problème, (6) Nombre de personnes à bord, (7) Toute autre information utile. La triple répétition de MAYDAY alerte immédiatement tous les auditeurs.
 >
-> **Question 2 :** Vous êtes en panne moteur à 3 milles du port, sans vent, avec courant vous poussant vers des rochers à 30 minutes. Quel type d'appel radio faites-vous ?
-> **A)** MAYDAY — danger grave et imminent
-> **B)** PAN PAN — urgence sans danger immédiat de mort
-> **C)** Appel ordinaire sur canal 9
-> **Réponse:** A — Si les rochers sont à 30 minutes, vous avez peu de temps et le risque de naufrage est réel et imminent. MAYDAY est approprié. PAN PAN aurait été correct si vous étiez en dérive mais sans danger proche.
+> **Question 2 :** Le *Deniz Rüzgarı* est en panne moteur à 3 milles des rochers de Kızılada, sans vent, dérivant à 1 nœud vers les rochers (ETA impact 40 minutes). Quel appel radio est approprié ?
+> **A)** MAYDAY — naufrage imminent dans 40 minutes
+> **B)** PAN PAN — urgence sérieuse mais le danger n'est pas encore certain
+> **C)** Appel de routine sur canal 67 au port de Göcek
+> **Réponse:** A — Avec un impact dans 40 minutes sans possibilité de manœuvre, le danger est grave et imminent — c'est un MAYDAY. Si la dérive était vers la plage ouverte et que le danger était incertain (B), PAN PAN serait adapté. Un appel ordinaire (C) est inapproprié pour toute situation d'urgence.
+>
+> **Question 3 :** Après un appel MAYDAY, le CROSS (Centre Régional Opérationnel de Surveillance et de Sauvetage) accuse réception. Que répondez-vous ?
+> **A)** Remerciez et raccrochez — le CROSS prend en charge
+> **B)** Confirmez que le MAYDAY est bien reçu, répétez votre position et l'état de votre équipage
+> **C)** Passez sur le canal 67 pour libérer le canal 16 pour d'autres urgences
+> **Réponse:** B — Après l'accusé de réception du CROSS, vous confirmez la réception, répétez votre position si elle a changé, et donnez l'état de l'équipage (blessés, personnes à l'eau…). Restez sur le canal 16 sauf instruction contraire du CROSS. Ne raccrochez jamais sans instruction — le CROSS peut vous guider jusqu'aux secours.
+>
+> **Question 4 :** Emmanuel entend un MAYDAY sur canal 16 mais le CROSS ne répond pas. Quelle est la procédure à suivre pour les navires qui reçoivent ce MAYDAY ?
+> **A)** Rester en écoute passive — le CROSS répondra dès qu'il sera disponible
+> **B)** Tenter de répondre au MAYDAY et relayer l'alerte vers le CROSS si nécessaire
+> **C)** Changer de canal pour ne pas saturer le 16 avec des réponses multiples
+> **Réponse:** B — Si le CROSS ne répond pas dans un délai raisonnable, tout navire entendant un MAYDAY a l'obligation de répondre et d'alerter les secours. La procédure "MAYDAY RELAY" permet de retransmettre un MAYDAY reçu d'un navire en détresse vers le CROSS. La solidarité en mer est une obligation légale et éthique.
 
 > [TRANSITION]
 > À Fethiye, ils amarrent au quai de la douane. L'officier monte à bord pour vérifier les papiers. Il y a le "Carnet de Navigation" (le *Transit Log* en Turquie), le livre de bord, les licences radio. Tout est en ordre. Il signe, tamponne, sourit. Quand il repart, Emmanuel dit : "Donc même en vacances, la paperasse nous suit." Rebecca : "En Martinique, le gendarme maritime venait à bord avec un café." Emmanuel, amusé. "Et pour naviguer en France ?" demande-t-il. "Quels papiers faut-il ?"

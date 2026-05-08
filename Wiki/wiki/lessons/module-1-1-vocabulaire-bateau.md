@@ -127,17 +127,29 @@ Cinq nœuds sont indispensables à maîtriser pour le permis côtier et la navig
 Voir [[concepts/cordages-noeuds]], [[concepts/pratique-noeuds-marins]].
 
 > [MINI-QUIZ]
-> **Question 1 :** Quel côté du bateau est bâbord ?
-> **A)** Le côté droit en regardant vers l'avant
-> **B)** Le côté gauche en regardant vers l'avant
-> **C)** Le côté sous le vent
-> **Réponse:** B — Bâbord est le côté gauche, marqué par un feu rouge. Tribord est le côté droit, marqué par un feu vert.
+> **Question 1 :** Quel côté du bateau s'appelle "bâbord" ?
+> **A)** Le côté droit en regardant vers l'avant (la proue)
+> **B)** Le côté gauche en regardant vers l'avant (la proue)
+> **C)** Le côté gauche en regardant vers l'arrière (la poupe)
+> **Réponse:** B — Bâbord est le côté gauche du bateau quand on regarde vers l'avant (la proue). C est un piège classique : si vous vous retournez, votre gauche devient la droite du bateau — mais bâbord reste fixe, côté gauche de l'axe. Bâbord = rouge ; tribord = vert.
 >
-> **Question 2 :** Quelle est la différence entre une drisse et une écoute ?
-> **A)** La drisse hisse les voiles ; l'écoute règle leur orientation
-> **B)** L'écoute hisse les voiles ; la drisse règle leur orientation
-> **C)** Ce sont deux noms pour le même cordage
-> **Réponse:** A — La drisse monte la voile le long du mât. L'écoute, fixée à la bordure de la voile, contrôle son angle par rapport au vent.
+> **Question 2 :** Mehmet demande à William de "hisser le génois". Quel cordage doit-il manœuvrer ?
+> **A)** L'écoute de génois — elle règle l'orientation de la voile
+> **B)** La drisse de génois — elle monte la voile le long de l'étai
+> **C)** Le cunningham — il règle la tension du guindant de la voile
+> **Réponse:** B — La drisse (du verbe "hisser") monte la voile verticalement. L'écoute règle ensuite l'angle de la voile par rapport au vent. Le cunningham est un contrôle de coupe qui tend le guindant, pas un cordage de levage. Sur le *Deniz Rüzgarı*, chaque voile a sa propre drisse et sa propre écoute.
+>
+> **Question 3 :** William doit fixer une défense à la filière rapidement. Quel nœud Mehmet lui recommande-t-il pour un usage provisoire ?
+> **A)** Le nœud de chaise (bowline) — crée une boucle fixe non coulissante
+> **B)** Le nœud de cabestan (clove hitch) — rapide, réglable, facile à défaire
+> **C)** Le tour mort et deux demi-clés — pour les amarrages permanents sous charge
+> **Réponse:** B — Le cabestan se pose rapidement autour d'un cylindre (filière, chandelier) et se défait aisément une fois la tension retirée. C'est le nœud provisoire par excellence en marine. Le nœud de chaise est très fiable mais plus long à nouer ; le tour mort et demi-clés convient pour les amarrages durables sous forte charge variable.
+>
+> **Question 4 :** Le *Deniz Rüzgarı* est un "ketch". Qu'est-ce qui distingue un ketch d'un yawl ?
+> **A)** Le ketch a deux mâts, le mât d'artimon positionné en avant de l'axe du gouvernail
+> **B)** Le ketch a deux mâts, le mât d'artimon positionné en arrière de l'axe du gouvernail
+> **C)** Le ketch n'a qu'un mât mais porte deux voiles (grand-voile et génois)
+> **Réponse:** A — Sur un ketch, le mât d'artimon (mizzenmast) est en avant ou sur l'axe du gouvernail — il est plus grand et plus visible. Sur un yawl, ce mât est en arrière du safran, donc très petit. Le sloop n'a qu'un mât. Sur le *Deniz Rüzgarı*, le mât d'artimon porte la voile d'artimon crème visible depuis le ponton.
 
 > [TRANSITION]
 > "Maintenant tu connais le bateau," dit Mehmet en sautant sur le ponton. "Demain matin, on sort. Et là-bas dans le chenal, il y a des bateaux qui arrivent de partout. Qui passe en premier ?" William note quelque chose sur son téléphone — sa façon de tout documenter, vieille habitude de consultant. Emmanuel : "Bonne question. C'est exactement ce que l'examen va demander."

@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1187,19 +1196,39 @@
 <div class="callout callout-golfe"><div class="callout-label">🗺️ Exemple — Golfe de Fethiye</div><div class="callout-body">
 <p><strong>Le phare de Fethiye (Fethiye Feneri) :</strong> Caractéristique <code>Fl(2) 10s 12m 8M</code> sur la jetée nord du port de Fethiye. En approchant de nuit depuis le golfe de Göcek, il est visible à 8 milles. Il est accompagné d'un <strong>feu de secteur</strong> : blanc dans l'axe d'approche, rouge côté rochers de l'ouest.</p>
 <p>Si vous voyez le feu rouge : cap trop à l'ouest, danger rocheux. Abattez vers l'est (tribord) jusqu'à retrouver le blanc.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> La caractéristique <code>Fl(3)G 10s</code> signifie :
-<strong>A)</strong> Trois éclats verts, période de 10 secondes
-<strong>B)</strong> Trois éclats, fond vert, 10 secondes de portée
-<strong>C)</strong> Feu vert fixe, groupe de 3, visible 10 milles
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Fl(3)G = 3 éclats verts, 10s = période totale de 10 secondes. G = Green (vert). La portée serait notée en milles nautiques à la fin (ex: 10M).</p>
-</details><p><strong>Question 2 :</strong> De nuit, vous approchez un chenal et vous voyez le feu de secteur rouge. Que faites-vous ?
-<strong>A)</strong> Vous êtes dans le secteur sûr, continuez
-<strong>B)</strong> Vous êtes trop à bâbord (danger), abattez vers tribord
-<strong>C)</strong> Vous êtes trop à tribord (danger), abattez vers bâbord
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Dans la convention des phares sectoriels, rouge = danger à bâbord du chenal (vous êtes trop à gauche). Abattez vers tribord pour revenir dans le blanc.</p>
-</details><p>[TRANSITION]
-Fethiye au matin ressemble à une carte postale — les tombeaux lyciens orange dans la falaise, les gulets blancs dans le port, les pêcheurs qui rentrent. Mais demain, William doit planifier une route complexe : cap sur Ölüdeniz, à 17 milles au sud-ouest. Il faudra tenir un cap précis, corriger la dérive, penser aux courants.</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> La caractéristique de feu <code>Fl(3)G 10s 8M</code> signifie :</p>
+<ul>
+<li><strong>A)</strong> Trois éclats verts, période de 10 secondes, portée de 8 milles nautiques</li>
+<li><strong>B)</strong> Trois éclats, fond vert, 10 secondes de flash, visible à 8 km</li>
+<li><strong>C)</strong> Feu vert fixe, groupe de 3 occultations, portée 10 milles, hauteur 8 mètres</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Fl = feu à éclats (<em>flashing</em>) ; (3) = groupe de 3 éclats par période ; G = vert (<em>green</em>) ; 10s = durée totale de la période (éclats + obscurités) ; 8M = portée nominale de 8 milles nautiques. La portée est toujours en milles (M) et la période en secondes (s).</details>
+<p><strong>Question 2 :</strong> De nuit, vous approchez le chenal de Göcek et vous voyez le secteur rouge d'un phare à secteurs. Que faites-vous ?</p>
+<ul>
+<li><strong>A)</strong> Continuez — le rouge indique le chenal sûr pour ce type de feu</li>
+<li><strong>B)</strong> Abattez vers tribord — le rouge signifie que vous êtes trop à bâbord du chenal (danger)</li>
+<li><strong>C)</strong> Abattez vers bâbord — le rouge signifie que vous êtes trop à tribord du chenal</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Convention des feux à secteurs : blanc = chenal sûr, rouge = vous êtes à bâbord du chenal (trop à gauche — danger côté bâbord), vert = vous êtes à tribord du chenal (trop à droite — danger côté tribord). Pour revenir dans le blanc depuis le rouge, virez à tribord.</details>
+<p><strong>Question 3 :</strong> Un phare a une &quot;portée nominale&quot; de 15 milles. Par bonne visibilité (30 milles), combien de milles avant verrez-vous ce phare ?</p>
+<ul>
+<li><strong>A)</strong> 15 milles — la portée nominale est la portée réelle en toutes conditions</li>
+<li><strong>B)</strong> 30 milles — par excellente visibilité on voit plus loin que la portée nominale</li>
+<li><strong>C)</strong> Entre 15 et 30 milles — la portée géographique (liée à la hauteur du phare) peut être limitante</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — La portée nominale est calculée pour une visibilité météorologique de 10 milles nautiques (visibilité de nuit standard). Par visibilité supérieure, la portée réelle peut dépasser la nominale, jusqu'à la portée géographique (distance à laquelle la courbure terrestre cache le phare). En pratique, vérifiez la portée géographique dans l'annuaire des phares.</details>
+<p><strong>Question 4 :</strong> Mehmet pointe vers la côte : &quot;Tu vois ce clocher blanc et ce château derrière lui, alignés ?&quot; William les voit superposés. À quoi leur alignement sert-il ?</p>
+<ul>
+<li><strong>A)</strong> À identifier le mouillage — chaque mouillage a un amer désigné par convention</li>
+<li><strong>B)</strong> À former un transit (alignement) donnant une ligne de position très précise, sans compas</li>
+<li><strong>C)</strong> À évaluer la distance à la côte par la méthode des angles</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Deux amers vus superposés forment un transit (<em>leading line</em>) : une ligne de position précise sans utiliser de compas ni de GPS. Il suffit de rester sur l'alignement pour suivre une route déterminée. C'est une technique fondamentale de pilotage côtier, utilisée notamment pour entrer dans un chenal en gardant les amers superposés.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Fethiye au matin ressemble à une carte postale — les tombeaux lyciens orange dans la falaise, les gulets blancs dans le port, les pêcheurs qui rentrent. Mais demain, William doit planifier une route complexe : cap sur Ölüdeniz, à 17 milles au sud-ouest. Il faudra tenir un cap précis, corriger la dérive, penser aux courants.</p>
 <p><strong>Session 3.1 — Compas, Cap et Route : variation, déclinaison, dérive.</strong></p>
 </div></div>
 

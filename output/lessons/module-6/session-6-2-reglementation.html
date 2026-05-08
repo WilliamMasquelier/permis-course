@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1221,19 +1230,39 @@
 <p>En Turquie, les bateaux étrangers doivent obtenir un <strong>Transit Log</strong> (carnet de passage) à l'entrée dans les eaux turques (en général au premier port d'entrée). Il liste tous les passagers et escales.</p>
 <p>Pour louer un charter en Turquie (comme notre gulet) : le contrat de charter remplace le titre de propriété. La licence radio turque est fournie avec le bateau par l'armateur.</p>
 <p><strong>Si vous naviguez en France à votre retour</strong> : permis côtier obligatoire + CRR si VHF à bord + acte de francisation + assurance RC.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Quelle est la limite de vitesse dans la bande des 300 mètres pour un bateau à moteur ?
-<strong>A)</strong> 3 nœuds
-<strong>B)</strong> 5 nœuds
-<strong>C)</strong> 8 nœuds
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La vitesse est limitée à 5 nœuds dans la bande des 300 mètres des rivages non organisés. Cette règle vise à protéger les nageurs et la faune côtière.</p>
-</details><p><strong>Question 2 :</strong> Le CRR (Certificat Restreint de Radiotéléphoniste) permet de :
-<strong>A)</strong> Conduire un bateau à moteur jusqu'à 6 milles
-<strong>B)</strong> Utiliser la radio VHF de bord, émettre des appels MAYDAY, utiliser le DSC
-<strong>C)</strong> Naviguer jusqu'à 20 milles des côtes
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Le CRR est le brevet radio qui autorise l'utilisation du VHF maritime, y compris les procédures MAYDAY, PAN PAN, et le DSC. Il est distinct du permis côtier mais souvent enseigné en même temps.</p>
-</details><p>[TRANSITION]
-Mercredi matin, dernier jour. Dernier mouillage avant le retour à Fethiye puis Göcek. L'ancre remonte dans la lumière du matin. Une semaine de navigation. William est à la barre. Rebecca, à côté de lui pour la première fois, tient le winch. Elle n'a rien demandé — elle a juste attrapé la manivelle. Emmanuel remarque, ne dit rien. Christelle prend une photo. Tout ce que William a appris, il l'a vécu. Il reste une chose à faire : l'examen blanc.</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Le <em>Deniz Rüzgarı</em> approche d'une plage non organisée en Méditerranée. À quelle vitesse maximum peut-il naviguer dans les 300 derniers mètres ?</p>
+<ul>
+<li><strong>A)</strong> 3 nœuds — limite dans les zones de baignade signalisées</li>
+<li><strong>B)</strong> 5 nœuds — limite dans la bande des 300 mètres des rivages non organisés</li>
+<li><strong>C)</strong> 8 nœuds — limite dans les eaux côtières en dehors des chenaux</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — En France, la vitesse est limitée à 5 nœuds dans la bande des 300 mètres des rivages non organisés (non délimités par des bouées). Cette règle protège les nageurs et les pratiquants de sports nautiques. Dans les plages balisées (zone des 300m avec bouées), l'accès aux moteurs peut être interdit ou restreint selon la commune.</details>
+<p><strong>Question 2 :</strong> Pour utiliser légalement la radio VHF de bord et émettre un MAYDAY, quel document William doit-il posséder en plus du permis côtier ?</p>
+<ul>
+<li><strong>A)</strong> Aucun document supplémentaire — le permis côtier inclut les droits radio</li>
+<li><strong>B)</strong> Le CRR (Certificat Restreint de Radiotéléphoniste) — brevet radio distinct du permis</li>
+<li><strong>C)</strong> Le GMDSS (Global Maritime Distress and Safety System) — obligatoire pour tous les bateaux de plaisance</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Le CRR (ou son équivalent international SRC — Short Range Certificate) est le brevet radio obligatoire pour utiliser légalement la VHF maritime et ses fonctions MAYDAY, PAN PAN, DSC. Il est distinct du permis côtier mais souvent passé simultanément. Le GMDSS (C) est pour les navires professionnels, pas la plaisance légère.</details>
+<p><strong>Question 3 :</strong> Le <em>Deniz Rüzgarı</em> navigue sous pavillon turc. Quels documents doivent obligatoirement être à bord ?</p>
+<ul>
+<li><strong>A)</strong> Uniquement le titre de navigation (carte grise) — les autres documents peuvent rester à terre</li>
+<li><strong>B)</strong> Titre de navigation, assurance, permis du conducteur, et liste de l'équipage avec pièces d'identité</li>
+<li><strong>C)</strong> Uniquement le permis côtier du conducteur principal</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — À bord d'un bateau de plaisance en mer, doivent se trouver : (1) le titre de navigation (immatriculation/carte grise), (2) l'attestation d'assurance, (3) le permis de conduire du skipper (et CRR si radio VHF à bord), (4) les pièces d'identité de l'équipage pour les zones soumises à contrôle douanier. En Turquie, s'y ajoutent les documents de transit/visa.</details>
+<p><strong>Question 4 :</strong> En France, dans quelle zone côtière la navigation des bateaux à moteur est-elle interdite aux heures de baignade (en règle générale) ?</p>
+<ul>
+<li><strong>A)</strong> Dans la bande des 300 mètres — totalement interdite aux bateaux à moteur</li>
+<li><strong>B)</strong> Dans la bande des 300 mètres uniquement dans les zones officiellement délimitées par bouées jaunes</li>
+<li><strong>C)</strong> Dans la bande des 50 mètres — les 300 mètres sont en &quot;vitesse réduite&quot; uniquement</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — L'interdiction de circulation des engins à moteur s'applique aux zones de baignade officiellement délimitées et signalisées par des bouées (zones surveillées). Hors de ces zones balisées, la bande des 300 mètres est en &quot;vitesse réduite 5 nœuds&quot; mais pas interdite. La réglementation varie selon les arrêtés préfectoraux locaux.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Mercredi matin, dernier jour. Dernier mouillage avant le retour à Fethiye puis Göcek. L'ancre remonte dans la lumière du matin. Une semaine de navigation. William est à la barre. Rebecca, à côté de lui pour la première fois, tient le winch. Elle n'a rien demandé — elle a juste attrapé la manivelle. Emmanuel remarque, ne dit rien. Christelle prend une photo. Tout ce que William a appris, il l'a vécu. Il reste une chose à faire : l'examen blanc.</p>
 <p><strong>Session 7.0 — Épilogue et Examen Blanc : récapitulatif du voyage et 40 questions.</strong></p>
 </div></div>
 

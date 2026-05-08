@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1165,14 +1174,39 @@
 <p>Le chenal d'entrée est orienté 075°. Le vent de l'Imbat souffle du 285° — travers légèrement arrière en entrant. Effet pratique : il vous pousse vers le quai nord. Corrigez en avançant légèrement à l'avant tribord pour maintenir l'axe du chenal.</p>
 <p>Le gulet de 44 pieds exige environ 40 mètres de manœuvre pour stopper depuis 3 nœuds. Prévoyez de réduire la vitesse à 200 mètres de votre poste.</p>
 <p>Amarrage en cul-de-sac au ponton F : ancre par l'avant à 20 mètres du quai, marche arrière, amarres de poupe. L'ancre est à 40 mètres dans un fond sableux de 6 m.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> En arrivant à quai avec du vent dans le dos, quelle est la difficulté principale ?
-<strong>A)</strong> Le vent accélère votre approche et rend le freinage difficile
-<strong>B)</strong> Le vent vous ralentit et il faut augmenter la vitesse moteur
-<strong>C)</strong> Le vent n'a aucun effet en marina fermée
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Le vent dans le dos vous pousse vers le quai et accélère l'approche. Approchez toujours contre le vent si possible.</p>
-</details><p>[TRANSITION]
-Ils sont au mouillage le lendemain dans la crique de Hamam Koyu — Cleopatra's Bath, la source thermale naturelle. Christelle nage jusqu'à la plage. &quot;Cléopâtre a vraiment nagé ici ?&quot; Personne ne sait avec certitude. L'histoire dit que oui. La géographie dit que c'est plausible. Rebecca, dans l'eau : &quot;C'est chaud ! L'eau est plus chaude qu'en surface.&quot; Emmanuel : &quot;Source thermale. Quarante degrés.&quot; Rebecca : &quot;OK là je valide. Mieux que les Bahamas.&quot;</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> En approchant d'un ponton avec le vent dans le dos, quelle est la difficulté principale ?</p>
+<ul>
+<li><strong>A)</strong> Le vent accélère l'approche et rend le freinage difficile — risque de choc contre le quai</li>
+<li><strong>B)</strong> Le vent ralentit le bateau et il faut compenser avec plus de moteur</li>
+<li><strong>C)</strong> Le vent n'a pas d'effet significatif en marina fermée</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Le vent dans le dos pousse le bateau vers le quai et rend le contrôle de la vitesse difficile. La règle d'or : approcher toujours face au vent (vent dans le nez) pour pouvoir freiner progressivement avec la marche arrière. C est faux — même en marina, le vent de travers ou de dos est une contrainte majeure pour les bateaux à haute superstructure.</details>
+<p><strong>Question 2 :</strong> Lors d'un virement de bord (passage par le lit du vent), à quel moment le foc (génois) doit-il être passé de l'autre côté ?</p>
+<ul>
+<li><strong>A)</strong> Avant que la proue ne passe dans le lit du vent, en anticipant</li>
+<li><strong>B)</strong> Quand la proue est exactement dans l'axe du vent (milieu du virement)</li>
+<li><strong>C)</strong> Après que la proue est passée et que la voile commence à se remplir de l'autre côté</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — La séquence correcte : (1) lofer jusqu'à ce que la proue passe dans le lit du vent, (2) la grand-voile passe seule grâce au vent, (3) choquer l'écoute du foc dès que la proue franchit l'axe et border l'écoute de l'autre côté pour remplir la voile. Passer le foc trop tôt (A) le coince contre le mât.</details>
+<p><strong>Question 3 :</strong> Mehmet explique l'empannage accidentel à William. Quelle est la manœuvre la plus dangereuse sur un voilier ?</p>
+<ul>
+<li><strong>A)</strong> Le virement de bord au près — la voile peut claquer fortement</li>
+<li><strong>B)</strong> L'empannage involontaire au grand largue ou vent arrière — la bôme peut venir en force</li>
+<li><strong>C)</strong> La mise en panne — arrêt complet du bateau sous voiles</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — L'empannage involontaire est la manœuvre la plus dangereuse : la bôme part brutalement de l'autre côté avec toute la force du vent, pouvant blesser l'équipage ou rompre le gréement. Le virement de bord est contrôlé. La mise en panne est une manœuvre de sécurité volontaire. La prévention de l'empannage : ne jamais naviguer vent arrière exact sans vang ou preventer.</details>
+<p><strong>Question 4 :</strong> À l'approche du ponton F à Göcek, William doit lancer une amarre à un équipier sur le quai. À quel moment du mouvement de lancer libère-t-il le cordage ?</p>
+<ul>
+<li><strong>A)</strong> Avant le lancer, en tenant un bout pour guider la trajectoire</li>
+<li><strong>B)</strong> Au sommet du geste, bras tendu vers l'avant, quand l'amarre est au maximum de son élan</li>
+<li><strong>C)</strong> Après avoir observé que l'équipier est prêt à attraper</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La technique correcte du lancer d'amarre : enrouler quelques spires dans la main de lancer, faire tournoyer légèrement pour prendre de l'élan, libérer au sommet du geste lorsque le bras est tendu vers la cible. C est une condition préalable importante mais ne décrit pas le moment du lancer. A décrit une garde, pas un lancer.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Ils sont au mouillage le lendemain dans la crique de Hamam Koyu — Cleopatra's Bath, la source thermale naturelle. Christelle nage jusqu'à la plage. &quot;Cléopâtre a vraiment nagé ici ?&quot; Personne ne sait avec certitude. L'histoire dit que oui. La géographie dit que c'est plausible. Rebecca, dans l'eau : &quot;C'est chaud ! L'eau est plus chaude qu'en surface.&quot; Emmanuel : &quot;Source thermale. Quarante degrés.&quot; Rebecca : &quot;OK là je valide. Mieux que les Bahamas.&quot;</p>
 <p><strong>Session 4.3 — Mouillage, Amarrage et Ancrage : tenir sur son ancre.</strong></p>
 </div></div>
 

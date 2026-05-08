@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1295,19 +1304,39 @@
 <p><strong>Feu tournant régulier</strong> : phare de Fethiye (Fethiye Feneri), caractéristique Fl(2) 10s. Il vous indique la direction de la ville à 12NM au nord-est.</p>
 </li>
 </ul>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Vous voyez de nuit un feu rouge seul, fixe, devant vous. Que signifie-t-il ?
-<strong>A)</strong> Un bateau venant vers vous, vous voyez son feu de bâbord
-<strong>B)</strong> Un bateau croisant à tribord de vous
-<strong>C)</strong> Un bateau au mouillage (feu tout-horizon rouge)
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Un feu rouge seul signifie que vous voyez le feu de côté bâbord d'un navire. Selon son orientation exacte, il peut venir vers vous ou croiser. Approchez avec prudence.</p>
-</details><p><strong>Question 2 :</strong> Quel est le signal sonore pour &quot;je manœuvre à tribord&quot; en présence d'autres navires en vue ?
-<strong>A)</strong> 2 sons brefs
-<strong>B)</strong> 1 son bref
-<strong>C)</strong> 1 son long
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Un son bref = &quot;je déverse sur tribord&quot;. Deux sons brefs = &quot;je déverse sur bâbord&quot;. À mémoriser car c'est une question fréquente à l'examen.</p>
-</details><p>[TRANSITION]
-La nuit à Tersane est douce — la Coupe du Monde passe sur le téléphone d'Emmanuel depuis le cockpit. William note les feux dans son carnet. Demain matin, départ vers Fethiye — 12 milles au nord-est. Pour y entrer, il faudra lire les bouées. Rebecca, depuis la cabine arrière : &quot;Vous ne pouvez pas juste suivre les autres bateaux ?&quot; Silence. Mais comment lire ces bouées rouges et vertes ? Et cette bizarre marque jaune avec une croix ?</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> De nuit, vous voyez face à vous un feu rouge et un feu vert côte à côte, plus un feu blanc de tête de mât. Quelle est la situation ?</p>
+<ul>
+<li><strong>A)</strong> Un navire au mouillage — feux rouge et vert indiquent son orientation</li>
+<li><strong>B)</strong> Un navire à moteur arrivant sensiblement en face — situation de face (head-on)</li>
+<li><strong>C)</strong> Un navire s'éloignant de vous — vous voyez ses feux de côté arrière</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Voir simultanément le feu rouge (bâbord) ET le feu vert (tribord) d'un navire avec un feu de mât blanc signifie qu'il vous fait face. C'est une situation de face : chacun vire à tribord pour se croiser bâbord contre bâbord. Un navire au mouillage montre un seul feu blanc tout-horizon (règle 30), pas de feux de côté.</details>
+<p><strong>Question 2 :</strong> De nuit, vous voyez un feu rouge seul et fixe, légèrement à tribord de votre axe. Quelle est la situation probable ?</p>
+<ul>
+<li><strong>A)</strong> Un navire dont vous voyez le feu de bâbord — il se déplace de votre droite vers votre gauche (ou vient vers vous)</li>
+<li><strong>B)</strong> Un navire s'éloignant — le feu rouge arrière s'éteindra bientôt</li>
+<li><strong>C)</strong> Un navire au mouillage en difficulté — feu rouge tout-horizon</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Le feu rouge est le feu de côté bâbord d'un navire (visible à 112,5° depuis l'avant). Si vous le voyez légèrement à tribord, le navire coupe votre route de droite à gauche ou arrive vers vous. Les navires au mouillage ne montrent pas de feu rouge — seulement un feu blanc tout-horizon (sauf navires contraints comme les dragueurs de mines).</details>
+<p><strong>Question 3 :</strong> Quel signal sonore émet le <em>Deniz Rüzgarı</em> pour indiquer &quot;je vire à tribord&quot; (manœuvre en vue d'un autre navire) ?</p>
+<ul>
+<li><strong>A)</strong> Deux sons brefs</li>
+<li><strong>B)</strong> Un son bref</li>
+<li><strong>C)</strong> Un son long</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — En vue d'un autre navire, un son bref = &quot;je gouverne à tribord&quot; ; deux sons brefs = &quot;je gouverne à bâbord&quot; ; trois sons brefs = &quot;mes machines sont en marche arrière&quot;. Un son long sert aux signaux de visibilité réduite, pas en situation de vue.</details>
+<p><strong>Question 4 :</strong> La nuit, vous croisez un voilier qui montre un feu rouge sur bâbord, un feu vert sur tribord, et un feu blanc tout en haut de son mât. Ce feu blanc est le signe que ce voilier :</p>
+<ul>
+<li><strong>A)</strong> Est en difficulté et demande assistance</li>
+<li><strong>B)</strong> Utilise son moteur en plus de ses voiles (feu de tête de mât de navire à propulsion mécanique)</li>
+<li><strong>C)</strong> Est à l'ancre</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Un voilier sous voiles seules montre uniquement ses feux de côté (rouge + vert) et éventuellement un feu de poupe blanc. S'il montre en plus un feu blanc de tête de mât (masthead light), c'est qu'il utilise son moteur — il est alors classé comme navire à propulsion mécanique et perd sa priorité sur les navires à moteur.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>La nuit à Tersane est douce — la Coupe du Monde passe sur le téléphone d'Emmanuel depuis le cockpit. William note les feux dans son carnet. Demain matin, départ vers Fethiye — 12 milles au nord-est. Pour y entrer, il faudra lire les bouées. Rebecca, depuis la cabine arrière : &quot;Vous ne pouvez pas juste suivre les autres bateaux ?&quot; Silence. Mais comment lire ces bouées rouges et vertes ? Et cette bizarre marque jaune avec une croix ?</p>
 <p><strong>Session 2.1 — Le Balisage IALA : marques latérales, cardinales, et les cinq familles.</strong></p>
 </div></div>
 

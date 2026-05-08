@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1176,6 +1185,29 @@
 <p><strong>Le temps :</strong> Étés turcs = matin calme, après-midi brise de mer (Imbat) de 10-18 nœuds du SW/NW. Marée quasi-nulle (0,2-0,3 m). Températures 35-40°C à terre, 28-30°C sur l'eau.</p>
 </div></div>
 <p>Les conditions méditerranéennes rendent ce golfe idéal pour l'apprentissage : peu de marée (on le soulignera comme enseignement), visibilité excellente, trafic modéré, fonds repérables à la couleur de l'eau.</p>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Quelle est la limite de distance qu'autorise le permis côtier ?</p>
+<ul>
+<li><strong>A)</strong> 6 milles nautiques des côtes françaises uniquement</li>
+<li><strong>B)</strong> 6 milles nautiques d'un abri, dans toutes les eaux maritimes</li>
+<li><strong>C)</strong> 20 milles nautiques d'un abri</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Le permis plaisance option côtière autorise la navigation jusqu'à 6 milles d'un <em>abri</em> (port, rade ou crique protégée), pas 6 milles des côtes. La distance s'apprécie depuis le refuge le plus proche, et non depuis le trait de côte. L'extension hauturière couvre au-delà.</details>
+<p><strong>Question 2 :</strong> En naviguant dans le golfe de Göcek (Turquie), quelles règles de priorité s'appliquent ?</p>
+<ul>
+<li><strong>A)</strong> Uniquement le droit maritime turc — les règles françaises ne s'appliquent pas à l'étranger</li>
+<li><strong>B)</strong> Les COLREGs (convention internationale), identiques partout en mer</li>
+<li><strong>C)</strong> Aucune règle formelle — chaque skipper adapte à sa convenance</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Les COLREGs (Convention on the International Regulations for Preventing Collisions at Sea, RIPAM en français) s'appliquent universellement dans toutes les eaux internationales, quelle que soit la nationalité du navire. Le permis côtier français prépare directement à naviguer sur la Méditerranée turque.</details>
+<p><strong>Question 3 :</strong> Un mille nautique (NM) vaut exactement :</p>
+<ul>
+<li><strong>A)</strong> 1 000 mètres</li>
+<li><strong>B)</strong> 1 609 mètres (le mile terrestre anglais)</li>
+<li><strong>C)</strong> 1 852 mètres (une minute d'arc de latitude)</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — Le mille nautique = 1 852 m, défini comme la longueur d'une minute d'arc de latitude sur un grand cercle terrestre. Cette définition permet une conversion directe sur la carte marine : l'échelle des latitudes, 1 minute = 1 NM. Le mile terrestre (1 609 m) n'a aucun usage en navigation maritime.</details>
+</div></div>
 <div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
 <p>William pose son carnet — Rebecca est déjà allongée sur le pont avant avec un livre. &quot;Par où on commence ?&quot; demande-t-il. Emmanuel, qui a déjà fait le tour du bateau deux fois, sourit. Mehmet montre le pont. &quot;Par le bateau lui-même. Un bon marin connaît son bateau avant de connaître la mer.&quot;</p>
 <p><strong>Session 1.1 — Le Voilier : vocabulaire, parties du bateau, gréement.</strong></p>

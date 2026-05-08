@@ -162,6 +162,9 @@ def build_manifest(filter_slug: str | None = None) -> tuple[list[ModuleMeta], li
 
 _md_parser = MarkdownIt("commonmark", {"html": True}).enable("table")
 
+# Callout header pattern — includes hyphen for MINI-QUIZ
+_CALLOUT_PAT = re.compile(r"^>\s*\[([A-ZÀÂÇÈÉÊËÎÏÙÛÜ/\- ]+)\]\s*(.*)$")
+
 
 def _slug_to_label(slug: str) -> str:
     name = slug.split("/")[-1].split("|")[0]
@@ -178,52 +181,76 @@ CALLOUT_TYPES = {
 }
 
 
+def _normalize_quiz_options(inner_md: str) -> str:
+    """Convert **A)** … lines to markdown list items so the quiz CSS li styling works."""
+    lines = inner_md.splitlines()
+    result: list[str] = []
+    in_list = False
+    for line in lines:
+        opt_match = re.match(r'^\*\*([A-D])\)\*\*\s+(.*)', line)
+        if opt_match:
+            if not in_list:
+                result.append("")
+                in_list = True
+            result.append(f"- **{opt_match.group(1)})** {opt_match.group(2)}")
+        else:
+            if in_list and line.strip():
+                result.append("")
+                in_list = False
+            result.append(line)
+    return "\n".join(result)
+
+
 def _preprocess_callouts(md: str) -> str:
-    """Convert > [TYPE]\n> content blocks into HTML callout divs."""
+    """Convert > [TYPE] blockquote blocks into HTML callout divs.
+
+    Inner content is rendered immediately (not deferred via markers) so that
+    blank lines inside a callout body don't terminate the outer HTML block and
+    break rendering of subsequent questions.
+    """
     lines = md.splitlines()
     result = []
     i = 0
     while i < len(lines):
         line = lines[i]
-        # Detect callout start: "> [TYPE]" possibly with trailing text
-        callout_match = re.match(r"^>\s*\[([A-ZÀÂÇÈÉÊËÎÏÙÛÜ/ ]+)\]\s*(.*)$", line)
+        callout_match = _CALLOUT_PAT.match(line)
         if callout_match:
             ctype = callout_match.group(1).strip()
             rest_first = callout_match.group(2).strip()
             css_class, label = CALLOUT_TYPES.get(ctype, (f"callout-{ctype.lower().replace(' ', '-')}", ctype))
-            # Collect continuation lines (lines starting with ">")
-            content_lines = []
+            content_lines: list[str] = []
             if rest_first:
                 content_lines.append(rest_first)
             i += 1
-            while i < len(lines) and (lines[i].startswith(">") or lines[i].strip() == ""):
-                if lines[i].startswith(">"):
-                    stripped = lines[i][1:].lstrip(" ")
-                    content_lines.append(stripped)
-                elif lines[i].strip() == "" and i + 1 < len(lines) and lines[i + 1].startswith(">"):
+            while i < len(lines):
+                cur = lines[i]
+                if cur.startswith(">"):
+                    # Stop if this line opens a new callout block
+                    if _CALLOUT_PAT.match(cur):
+                        break
+                    content_lines.append(cur[1:].lstrip(" "))
+                    i += 1
+                elif cur.strip() == "" and i + 1 < len(lines) and lines[i + 1].startswith(">"):
+                    # Blank line between blockquote lines — stop if next line is a new callout
+                    if _CALLOUT_PAT.match(lines[i + 1]):
+                        break
                     content_lines.append("")
+                    i += 1
                 else:
                     break
-                i += 1
             inner_md = "\n".join(content_lines)
-            # Escape the inner content so we can inject it as raw HTML after rendering
-            result.append(f'<div class="callout {css_class}"><div class="callout-label">{label}</div><div class="callout-body">')
-            result.append(f'%%CALLOUT_INNER%%{inner_md}%%CALLOUT_END%%')
-            result.append('</div></div>')
+            if ctype == "MINI-QUIZ":
+                inner_md = _normalize_quiz_options(inner_md)
+            inner_html = _md_parser.render(inner_md).strip()
+            result.append(
+                f'<div class="callout {css_class}">'
+                f'<div class="callout-label">{label}</div>'
+                f'<div class="callout-body">\n{inner_html}\n</div></div>'
+            )
         else:
             result.append(line)
             i += 1
     return "\n".join(result)
-
-
-def _render_callout_inners(html: str) -> str:
-    """Render markdown inside callout blocks."""
-    def render_inner(m: re.Match) -> str:
-        inner_md = m.group(1)
-        rendered = _md_parser.render(inner_md).strip()
-        return rendered
-
-    return re.sub(r"%%CALLOUT_INNER%%(.*?)%%CALLOUT_END%%", render_inner, html, flags=re.DOTALL)
 
 
 def _preprocess_wikilinks(md: str) -> str:
@@ -252,12 +279,13 @@ def _preprocess_wikilinks(md: str) -> str:
 
 
 def _wrap_quiz_answers(html: str) -> str:
-    """Make quiz answer lines collapsible."""
+    """Wrap <p><strong>Réponse :</strong> …</p> blocks in collapsible <details>."""
     return re.sub(
-        r'<strong>Réponse\s*:</strong>(.*?)(?=<br|<p>|<li>|</ul>|</div>|$)',
+        r'<p><strong>Réponse\s*:</strong>(.*?)</p>',
         lambda m: (
             f'<details class="quiz-answer"><summary>Voir la réponse</summary>'
-            f'<strong>Réponse :</strong>{m.group(1)}</details>'
+            f'<strong>Réponse :</strong>{m.group(1)}'
+            f'</details>'
         ),
         html,
         flags=re.DOTALL,
@@ -281,17 +309,16 @@ def _get_jinja_env() -> Environment:
 
 def render_session(session: SessionMeta, all_modules: list[ModuleMeta]) -> Path:
     raw = session.path.read_text(encoding="utf-8")
-    meta, body_md = _parse_frontmatter(raw)
+    _, body_md = _parse_frontmatter(raw)
 
-    # Pre-process
-    body_md = _preprocess_callouts(body_md)
+    # Pre-process: wikilinks first so callout inner rendering sees resolved links
     body_md = _preprocess_wikilinks(body_md)
+    body_md = _preprocess_callouts(body_md)
 
-    # Render markdown (callout inners still tagged)
+    # Render main markdown (callout bodies are already HTML, passed through verbatim)
     html_body = _md_parser.render(body_md)
 
     # Post-process
-    html_body = _render_callout_inners(html_body)
     html_body = _wrap_quiz_answers(html_body)
 
     # Build course nav for sidebar (relative paths from this session's location)
