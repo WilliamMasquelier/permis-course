@@ -20,7 +20,7 @@ dev = [
     "pyright",
     # report-renderer is a private Stromy lib — only needed to regenerate HTML output.
     # Students install via uv sync (no --dev needed); authors run uv sync --dev.
-    "report-renderer @ file:///Users/williammasquelier/Repositories/stromy-org/libs/report-renderer",
+    "report-renderer @ git+ssh://git@github.com/stromy-org/report-renderer.git",
 ]
 
 [tool.pytest.ini_options]
