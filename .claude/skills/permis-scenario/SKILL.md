@@ -23,6 +23,9 @@ Trigger when the student types `/permis-scenario`, asks for "un scénario", "exe
 | `session-02-regles-barre.md` | `regles-barre` |
 | `session-03-feux-signaux.md` | `feux` |
 | `session-04-securite.md` | `securite` |
+| `session-05-navigation.md` | `navigation` |
+| `session-06-pratique-reglementation.md` | `pratique` |
+| `session-07-radio-vhf.md` | `radio-vhf` |
 
 ## Workflow
 
@@ -40,7 +43,7 @@ Then stop — do not proceed.
 
 ### 2. Select concept domains
 
-Map each completed session filename to its concept domain using the table above. You now have a list of available domains.
+Map each completed session filename or slug to its concept domain using the table above. Accept both `session-01-balisage.md` and `session-01-balisage` because older progress ledgers may omit the extension. You now have a list of available domains.
 
 Pick 2–3 concept slugs from **different** completed domains:
 - If 2 domains available: use both

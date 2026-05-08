@@ -45,9 +45,10 @@ Mark as warning (non-blocking) - course works without Playwright.
 
 ### Step 3 - Check rendered HTML files
 
-Check that all 5 session HTML files exist in rendered/:
+Check that all 8 session HTML files exist in rendered/:
 session-01-balisage.html, session-02-regles-barre.html, session-03-feux-signaux.html,
-session-04-securite.html, session-05-examen-blanc.html
+session-04-securite.html, session-05-navigation.html, session-06-pratique-reglementation.html,
+session-07-radio-vhf.html, session-08-examen-blanc.html
 
 If any missing: tell user to run /permis-render first.
 
@@ -65,7 +66,7 @@ Print in French using check/warn/cross emoji:
 ✅ Python 3.13 - OK
 ✅ Dépendances Python (jinja2, markdown_it, fsrs) - OK
 ⚠️ Playwright MCP - Non configuré (mode texte uniquement)
-✅ Fichiers HTML pré-rendus - 5 sessions présentes
+✅ Fichiers HTML pré-rendus - 8 sessions présentes
 ✅ Progression étudiant - Prêt (session 1)
 
 If all OK or only Playwright warning:

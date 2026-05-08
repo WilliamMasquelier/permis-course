@@ -17,15 +17,27 @@ Trigger when the student types `/permis-tutor`, asks to "start the lesson", "lan
   ```json
   {
     "learner": "local-user",
-    "current_lesson": "session-01-balisage.md",
+    "current_lesson": "module-0-0-prologue.md",
     "completed_lessons": [],
     "flashcards": { "concepts/marques-cardinales": { "due": "2026-05-06T00:00:00Z", "stability": 1, "difficulty": 5, "reps": 0 } },
     "review_log": []
   }
   ```
 - `Wiki/wiki/lessons/<slug>.md` — current lesson source (read into context before teaching).
-- `rendered/<slug>.html` — pre-rendered lesson page (created by `scripts/render_lessons.py`).
+- `output/lessons/<module-N>/session-N-M-slug.html` — pre-rendered lesson page (created by `scripts/render_course.py`).
 - `.claude/skills/permis-tutor/prompts/tutor-system-prompt.md` — RTRI system prompt template.
+
+## Slug conventions
+
+Lesson source files follow the pattern `module-{N}-{M}-{slug}.md` (e.g. `module-1-1-vocabulaire-bateau.md`).
+
+To derive the HTML URL from a source filename:
+1. Strip `.md` → `module-1-1-vocabulaire-bateau`
+2. Extract N (first digit after `module-`) → `1`
+3. Replace `module-` prefix with `session-` → `session-1-1-vocabulaire-bateau`
+4. URL path: `module-1/session-1-1-vocabulaire-bateau.html`
+
+Full URL example: `http://localhost:8080/module-1/session-1-1-vocabulaire-bateau.html`
 
 ## Workflow
 
@@ -36,9 +48,9 @@ Execute these steps in order. Do not skip steps; do not reorder.
 - Read `Wiki/meta/student-progress.json`.
 - If the file is missing, create it with the default state:
   ```json
-  { "learner": "local-user", "current_lesson": "session-01-balisage.md", "completed_lessons": [], "flashcards": {}, "review_log": [] }
+  { "learner": "local-user", "current_lesson": "module-0-0-prologue.md", "completed_lessons": [], "flashcards": {}, "review_log": [] }
   ```
-- Identify `current_lesson` (slug + `.md` filename).
+- Identify `current_lesson` (e.g. `module-0-0-prologue.md`).
 - Confirm the lesson file exists at `Wiki/wiki/lessons/<current_lesson>`. If not, halt and report.
 
 ### 2. Run a quick FSRS review round (max 10 cards)
@@ -58,40 +70,41 @@ Execute these steps in order. Do not skip steps; do not reorder.
      Give brief encouraging feedback, then move to the next card.
   4. Update the card in `student-progress.json`:
      - Increment `reps`.
-     - Apply a simple FSRS-lite update: stability *= {0.5, 1.0, 1.5, 2.5}[rating-1]; clamp ≥ 0.5.
+     - Apply a simple FSRS-lite update: `stability *= {0.5, 1.0, 1.5, 2.5}[rating-1]`; clamp ≥ 0.5.
      - Set `due = now + stability days`.
      - Append a row to `review_log`: `{ "concept": "<slug>", "rating": <n>, "ts": "<now>" }`.
 - Save `student-progress.json` after each card (resilient to crashes).
-- Cap the round at 10 cards even if more are due — don't make it feel like homework.
+- Cap the round at 10 cards even if more are due.
 
 ### 3. Start the local HTTP server
 
 Try ports in order: 8080, 8081, 8082. For the first available port:
 
 ```bash
-python -m http.server <port> --directory rendered/ > /tmp/permis-server.log 2>&1 &
+python -m http.server <port> --directory output/lessons/ > /tmp/permis-server.log 2>&1 &
 echo $! > /tmp/permis-server.pid
 ```
 
-Wait for the port to be ready before proceeding (mandatory — Playwright can fire before the socket is listening):
+Wait for the port to be ready:
 
 ```bash
 for i in $(seq 1 10); do nc -z localhost <port> && break || sleep 0.5; done
 ```
 
-If all three ports are busy, print the file URL (`file:///<absolute-path>/rendered/<slug>.html`) and ask the student to open it manually. Continue without a server.
+If all three ports are busy, print the file URL (`file:///<absolute-path>/output/lessons/<html-path>`) and ask the student to open it manually. Continue without a server.
 
 ### 4. Open the lesson in the browser
 
-- Build the URL: `http://localhost:<port>/<slug>.html` where `<slug>` is `current_lesson` without the `.md` extension.
+- Derive the HTML path from `current_lesson` using the slug convention above.
+- Build the URL: `http://localhost:<port>/<module-N>/session-N-M-slug.html`
 - Open via Playwright MCP: call `browser_navigate` with that URL.
-- If Playwright fails (MCP unavailable, browser launch error), print the URL and instruct the student to open it manually. Continue.
+- If Playwright fails, print the URL and instruct the student to open it manually. Continue.
 
 ### 5. Load lesson content + linked concepts + RTRI prompt
 
 - Read the full content of `Wiki/wiki/lessons/<current_lesson>` into context.
-- Parse the `## CONCEPT` section of the lesson file. Extract all wikilinks of the form `[[concepts/<slug>]]` and `[[entities/<slug>]]`.
-- For each linked slug, read the corresponding file from `Wiki/wiki/concepts/<slug>.md` or `Wiki/wiki/entities/<slug>.md` if it exists. Load each into context. This typically adds 5–8 concept files (~6,000 tokens total). **Do not load the entire wiki** — only directly-linked files.
+- Extract all wikilinks of the form `[[concepts/<slug>]]` and `[[entities/<slug>]]` from anywhere in the lesson file.
+- For each linked slug, read the corresponding file from `Wiki/wiki/concepts/<slug>.md` or `Wiki/wiki/entities/<slug>.md` if it exists. Load each into context. **Do not load the entire wiki** — only directly-linked files.
 - Read `.claude/skills/permis-tutor/prompts/tutor-system-prompt.md`.
 - Substitute placeholders:
   - `{lesson_title}` ← title from frontmatter.
@@ -101,14 +114,15 @@ If all three ports are busy, print the file URL (`file:///<absolute-path>/render
 ### 6. Teach the lesson (Socratic mode)
 
 - Greet the student in French. Confirm the lesson title.
-- Walk through the `## CONCEPT` section by asking — never lecturing. Reference wikilinks with `[[concepts/<slug>]]` notation when explaining why an answer is correct.
-- When you reach the `## TASK`, pose it. Wait. If the student stalls, serve `## HINT_1`. After one more failed exchange, serve `## HINT_2`. Only paraphrase the `## SOLUTION` after both hints have failed twice.
-- Watch for `## MISCONCEPTION` patterns and redirect proactively.
+- Walk through the lesson content section by section using questions — never lecturing outright. Reference wikilinks with `[[concepts/<slug>]]` notation when explaining why an answer is correct.
+- Derive 3–5 key concepts from the lesson content to probe: use section headings and bolded terms as your guide.
+- When the student struggles, offer a hint framed as a narrower question. After a second failed exchange, paraphrase the answer as a statement and ask a follow-up question to confirm understanding.
+- Watch for common misconceptions (e.g. inverting bâbord/tribord, confusing cardinal and lateral marks) and redirect proactively.
 - End **every** response with exactly one reflective question.
 
 ### 7. Advance the lesson when mastery is demonstrated
 
-When you have determined that the student has genuinely satisfied the `## TASK` requirement (do not rush — verify mastery, not just engagement), execute the following sequence **all in the same response turn**:
+When you have verified that the student understands the 3–5 key concepts you identified (correct answers, not just engagement), execute the following sequence **all in the same response turn**:
 
 1. Output the sentinel phrase on its own line:
    ```
@@ -116,25 +130,25 @@ When you have determined that the student has genuinely satisfied the `## TASK` 
    ```
 2. Immediately — in the same turn, without waiting — call Bash to update `Wiki/meta/student-progress.json`:
    - Append `current_lesson` slug (without `.md`) to `completed_lessons`.
-   - Create FSRS flashcards for every `concepts/...` or `entities/...` wikilink found in the lesson's `## CONCEPT` section. For each not already in `flashcards`:
+   - Create FSRS flashcards for every `concepts/...` or `entities/...` wikilink found in the lesson. For each not already in `flashcards`:
      ```json
      { "due": "<now_iso_utc>", "stability": 1, "difficulty": 5, "reps": 0 }
      ```
-   - Set `current_lesson` to the next uncompleted `session-NN-*.md` (alphabetical order from `Wiki/wiki/lessons/`), or `null` if all lessons are done.
+   - Set `current_lesson` to the next `module-*.md` in alphabetical order from `Wiki/wiki/lessons/`, or `null` if all lessons are done.
    - Save the file.
 3. Kill the HTTP server: `kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid`
 4. If a next lesson exists:
    - Announce: « Session terminée — on enchaîne sur la suivante. »
-   - Start a new HTTP server for the next lesson (step 3 of the workflow) and open it with `browser_navigate`.
+   - Start a new HTTP server for the next lesson (step 3) and open it with `browser_navigate`.
 5. If no lessons remain:
    - Congratulate the student in French.
    - Suggest `/permis-exam` for the mock exam.
 
-**Never output `Prêt pour la suite` prematurely.** The student must have correctly and fully answered the `## TASK`. A partial answer or "I think I understand" does not qualify.
+**Never output `Prêt pour la suite` prematurely.** The student must have correctly demonstrated understanding of the key concepts. "I think I understand" does not qualify.
 
 ### 8. Cleanup on session end
 
-On any user exit (`/exit`, "stop", "j'arrête"), or any abnormal termination:
+On any user exit (`/exit`, "stop", "j'arrête"), or abnormal termination:
 ```bash
 kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid
 ```
@@ -145,13 +159,13 @@ Save `student-progress.json` one final time.
 - **Port 8080/8081/8082 all busy** → print URL with `file://` fallback and ask the student to open it manually.
 - **Playwright MCP unavailable** → print the `http://localhost:<port>/...` URL and continue chat-only.
 - **`student-progress.json` missing** → create it with the default state shown in step 1.
-- **Lesson file missing** → halt, report which slug failed, suggest running `python scripts/render_lessons.py` and verifying `Wiki/wiki/lessons/`.
-- **`rendered/<slug>.html` missing** → run `python scripts/render_lessons.py` automatically once before retrying step 4.
+- **Lesson file missing** → halt, report which slug failed, suggest running `uv run python scripts/render_course.py` and verifying `Wiki/wiki/lessons/`.
+- **HTML file missing** → run `uv run python scripts/render_course.py` automatically once before retrying step 4.
 
 ## Boundaries
 
 - This skill **only teaches**. It does not write lesson markdown, edit the wiki, or grade beyond the chat session.
-- Never reveal `## SOLUTION` verbatim. Paraphrase only after both hints have failed.
+- Never reveal answers outright — paraphrase only after hinting twice.
 - Never advance to the next lesson without the sentinel — the student must demonstrate mastery.
 - Never modify `BACKLOG.md` (org rule).
 

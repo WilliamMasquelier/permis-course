@@ -1,11 +1,11 @@
 ---
 name: permis-exam
-description: Run a full 30-question Permis Côtier blanc exam with Playwright browser display, per-theme scoring, and a rendered score report. Triggers on /permis-exam, "examen blanc", "mock exam".
+description: Run a full 40-question Permis Côtier blanc exam with Playwright browser display, per-theme scoring, and a rendered score report. Triggers on /permis-exam, "examen blanc", "mock exam".
 ---
 
 # permis-exam
 
-Conducts a complete simulated Permis Côtier de Plaisance written exam. Selects 30 questions from the question bank following the official theme distribution, runs them in strict exam mode (no per-question feedback), calculates the score, writes and renders a score report, then updates student progress.
+Conducts a complete simulated Permis Côtier de Plaisance written exam. Selects 40 questions from the local question bank, runs them in strict exam mode (no per-question feedback), calculates the score, writes and renders a score report, then updates student progress.
 
 ## When to use
 
@@ -55,19 +55,19 @@ When parsing: detect variant by checking for `# Question` section heading. In Va
 - `Wiki/meta/student-progress.json` — read `completed_lessons`, write `exam_results`
 - `Wiki/wiki/questions/` — question bank
 
-## Exam theme distribution (30 questions)
+## Exam theme distribution (40 questions)
 
 | Category (file prefix) | Target count | Available |
 |---|---|---|
-| `balisage` | 6 | 13 |
+| `balisage` | 10 | 13 |
 | `regles-barre` | 5 | 5 |
-| `feux` | 4 | 5 |
-| `securite` | 4 | 5 |
-| `navigation` | 4 | 5 |
-| `signaux` | 4 | 5 |
-| `pratique` | 3 | 5 |
+| `feux` | 5 | 5 |
+| `securite` | 5 | 5 |
+| `navigation` | 5 | 5 |
+| `signaux` | 5 | 5 |
+| `pratique` | 5 | 5 |
 
-If a category has fewer files than the target, use all available files from that category (adjust total accordingly — still report out of 30 in the final score).
+If a category has fewer files than the target, use all available files from that category and top up from remaining unused question files until the set reaches 40 if possible.
 
 Exclude `sample-questions.md` — it is not a real question file.
 
@@ -79,9 +79,9 @@ Execute these steps in order. Do not skip or reorder.
 
 Read `Wiki/meta/student-progress.json`. Count `completed_lessons`.
 
-If fewer than 4 sessions completed, warn the student:
+If fewer than 7 teaching sessions completed, warn the student:
 
-> « Attention : tu n'as complété que N/4 sessions. L'examen blanc couvre toutes les matières. Veux-tu continuer quand même ? (oui/non) »
+> « Attention : tu n'as complété que N/7 sessions d'apprentissage. L'examen blanc couvre toutes les matières. Veux-tu continuer quand même ? (oui/non) »
 
 Wait for confirmation. If "non", stop.
 
@@ -95,13 +95,13 @@ echo $! > /tmp/permis-server.pid
 for i in $(seq 1 10); do nc -z localhost 8080 && break || sleep 0.5; done
 ```
 
-Navigate to `http://localhost:8080/session-05-examen-blanc.html` with `browser_navigate`. Take a screenshot to confirm the timer/exam page is visible.
+Navigate to `http://localhost:8080/session-08-examen-blanc.html` with `browser_navigate`. Take a screenshot to confirm the exam page is visible.
 
 ### 3. Build the question set
 
 Read all files from `Wiki/wiki/questions/`, excluding `sample-questions.md`.
 
-Group files by category prefix (the part before the first `-NN`). For each category, randomly select up to the target count from the table above. Shuffle the 30 selected questions into a random order.
+Group files by category prefix (the part before the first `-NN`). For each category, randomly select up to the target count from the table above. If the selected set has fewer than 40 questions, top up from all unused real question files. Shuffle the 40 selected questions into a random order.
 
 Parse each question file to extract:
 - Question text
@@ -117,19 +117,19 @@ Keep the correct answers and explanations internal — do not include them in wh
 
 Announce:
 
-> « Examen blanc Permis Côtier — 30 questions. Réponds par la lettre (A, B, C ou D). Bonne chance ! »
+> « Examen blanc Permis Côtier — 40 questions. Réponds par la lettre (A, B, C ou D). Bonne chance ! »
 
-For each question (1 to 30):
-- Display: `**Question N/30**` followed by the question text and options
+For each question (1 to 40):
+- Display: `**Question N/40**` followed by the question text and options
 - Wait for the student's single-letter answer
 - Record the answer internally (do not reveal correct/incorrect)
-- Every 5 questions, display a progress marker: `— [N/30 répondues] —`
+- Every 5 questions, display a progress marker: `— [N/40 répondues] —`
 
 Do not provide any feedback, hints, or corrections during the exam. If the student asks for the answer, reply: « En mode examen, je ne peux pas te donner les réponses. Continue ! »
 
 ### 5. Calculate results
 
-After question 30:
+After question 40:
 
 Kill the server:
 ```bash
@@ -137,9 +137,9 @@ kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid
 ```
 
 Calculate:
-- Total score (N/30)
+- Total score (N/40)
 - Per-theme score: correct/total for each category
-- Pass: score >= 18/30
+- Pass: score >= 35/40
 
 Identify wrong answers: for each incorrect question, note the theme and the explanation/Why text with any `[[concepts/slug]]` wikilinks.
 
@@ -152,21 +152,21 @@ Write a markdown score report to `/tmp/permis-score-report.md`:
 title: Résultats Examen Blanc — <date>
 ---
 
-# <REÇU ✓ / RECALÉ ✗> — Score : N/30
+# <REÇU ✓ / RECALÉ ✗> — Score : N/40
 
-> Seuil de réussite : 18/30
+> Seuil de réussite : 35/40 (maximum 5 erreurs)
 
 ## Résultats par thème
 
 | Thème | Score | Résultat |
 |-------|-------|---------|
-| Balisage | N/6 | ✓/✗ |
+| Balisage | N/10 | ✓/✗ |
 | Règles de barre | N/5 | ... |
-| Feux | N/4 | ... |
-| Sécurité | N/4 | ... |
-| Navigation | N/4 | ... |
-| Signaux | N/4 | ... |
-| Pratique | N/3 | ... |
+| Feux | N/5 | ... |
+| Sécurité | N/5 | ... |
+| Navigation | N/5 | ... |
+| Signaux | N/5 | ... |
+| Pratique | N/5 | ... |
 
 ## Plan de révision
 
@@ -211,16 +211,16 @@ Append to `exam_results` in `Wiki/meta/student-progress.json` (create the key as
 {
   "date": "<ISO 8601 UTC timestamp>",
   "score": N,
-  "total": 30,
+  "total": 40,
   "passed": true|false,
   "theme_scores": {
-    "balisage": "N/6",
+    "balisage": "N/10",
     "regles-barre": "N/5",
-    "feux": "N/4",
-    "securite": "N/4",
-    "navigation": "N/4",
-    "signaux": "N/4",
-    "pratique": "N/3"
+    "feux": "N/5",
+    "securite": "N/5",
+    "navigation": "N/5",
+    "signaux": "N/5",
+    "pratique": "N/5"
   }
 }
 ```
@@ -229,7 +229,7 @@ Announce the final result to the student in French, with the pass/fail banner an
 
 ## Pass threshold
 
-18/30 (60%). Below 18: recalé. 18 or above: reçu.
+35/40. Five errors are tolerated; six or more errors means recalé.
 
 ## Rules
 
