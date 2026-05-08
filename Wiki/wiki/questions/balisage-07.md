@@ -2,7 +2,7 @@
 title: QCM Balisage 07 — Région B, pays concernés
 type: question
 tags: [balisage]
-sources: [../../Cours 2/RECTO-MER_COTIER.pdf]
+sources: [raw/course-2/RECTO-MER_COTIER.pdf]
 related: [[../concepts/balisage-iala-region-a]]
 status: draft
 updated: 2026-05-01

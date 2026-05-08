@@ -2,7 +2,7 @@
 title: QCM Balisage 02 — Feu nuit marque groupe 2
 type: question
 tags: [balisage, feux]
-sources: [../../Cours 2/VERSO-MER_COTIER.pdf]
+sources: [raw/course-2/VERSO-MER_COTIER.pdf]
 related: [[../concepts/marques-eaux-saines], [[../concepts/marques-danger-isole]]]
 status: draft
 updated: 2026-05-01

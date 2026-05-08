@@ -2,7 +2,7 @@
 title: Procédure MAYDAY — détresse absolue
 type: concept
 tags: [radio, crr, detresse, securite]
-sources: [../../Cours 1/anfr-manuel_crr.pdf]
+sources: [raw/course-1/anfr-manuel_crr.pdf]
 related: [[../themes/08-radio-crr]], [[procedure-pan-pan]], [[asn-dsc]], [[canaux-vhf]], [[securite-vhf-et-cross]]
 status: draft
 updated: 2026-05-06

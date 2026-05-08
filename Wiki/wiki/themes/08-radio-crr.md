@@ -2,7 +2,7 @@
 title: 08 — Radio (CRR) et VHF
 type: theme
 tags: [radio, crr]
-sources: [../../Cours 1/anfr-licence.pdf, ../../Cours 1/anfr-manuel_crr.pdf]
+sources: [raw/course-1/anfr-licence.pdf, raw/course-1/anfr-manuel_crr.pdf]
 related: [[05-securite]], [[03-signaux]]
 status: draft
 updated: 2026-05-06

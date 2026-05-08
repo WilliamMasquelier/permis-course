@@ -2,10 +2,10 @@
 title: 09 — Réglementation et zones
 type: theme
 tags: [reglementation]
-sources: [../../Cours 1/8-bande_300m_DK.pdf, ../../Cours 1/zone_large.pdf, ../../Cours 1/yd-0525_-_loisirs_nautiques_en_mer-3_cle1dd3c1.pdf]
+sources: [raw/course-1/8-bande_300m_DK.pdf, raw/course-1/zone_large.pdf, raw/course-1/yd-0525_-_loisirs_nautiques_en_mer-3_cle1dd3c1.pdf]
 related: [[05-securite]], [[06-navigation]]
-status: stub
-updated: 2026-05-01
+status: draft
+updated: 2026-05-07
 ---
 
 **Summary:** Bande des 300 mètres, zones réservées baignade, zones de loisirs, vitesse limitée (5 nœuds), documents administratifs (permis, acte de francisation, assurance), pollution et déchets.

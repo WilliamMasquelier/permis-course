@@ -4,6 +4,10 @@ title: "Feux de remorquage"
 theme: "Feux"
 type: concept
 tags: [remorquage, feux-de-remorquage, feu-jaune]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Feux de remorquage

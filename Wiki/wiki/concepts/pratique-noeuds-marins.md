@@ -4,6 +4,10 @@ title: "Les nœuds marins essentiels"
 theme: "La pratique"
 type: concept
 tags: [noeuds, taquet, chaise, cabestan]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Les nœuds marins

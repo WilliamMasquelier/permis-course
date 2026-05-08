@@ -2,7 +2,7 @@
 title: 01 — Balisage et signalisation maritime
 type: theme
 tags: [balisage]
-sources: [../../Cours 2/1-Les balises_RECTO.pdf, ../../Cours 2/1-Les_balises-VERSO.pdf, ../../Cours 1/yd-0526-le_balisage_des_cotes_et_des_zones_de_loisirs-5_cle244d3c.pdf]
+sources: [raw/course-2/1-Les balises_RECTO.pdf, raw/course-2/1-Les_balises-VERSO.pdf, raw/course-2/yd-0526-le_balisage_des_cotes_et_des_zones_de_loisirs-5_cle244d3c.pdf]
 related: [[02-regles-de-barre]], [[06-navigation]]
 status: draft
 updated: 2026-05-01
@@ -27,7 +27,9 @@ updated: 2026-05-01
 - [[../entities/bouee-laterale-tribord]]
 
 ## Common exam questions
-*(see [[../questions]] filtered by `tag:balisage`)*
+- [[../questions/balisage-01]]
+- [[../questions/balisage-02]]
+- [[../questions/balisage-03]]
 
 > **Alerte examen** : jusqu'à 6 questions sur les cardinales à l'examen. Maîtriser parfaitement couleurs, voyants, feux.
 

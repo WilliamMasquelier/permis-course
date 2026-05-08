@@ -2,7 +2,7 @@
 title: QCM Balisage 11 — Sortie de port, bouée verte
 type: question
 tags: [balisage]
-sources: [../../Cours 2/1-Les_balises-VERSO.pdf]
+sources: [raw/course-2/1-Les_balises-VERSO.pdf]
 related: [[../concepts/marques-laterales]]
 status: draft
 updated: 2026-05-04

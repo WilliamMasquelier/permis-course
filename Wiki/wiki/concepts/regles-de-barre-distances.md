@@ -4,6 +4,10 @@ title: "Distances d'éloignement et catégories"
 theme: "Règles de barre"
 type: concept
 tags: [distances, vnm, planche-a-voile, kayak, engin-de-plage]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Distances d'éloignement et engins

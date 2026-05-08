@@ -4,6 +4,10 @@ title: "Coordonnées et mesure des distances"
 theme: "Navigation"
 type: concept
 tags: [latitude, longitude, mille-marin, carte]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Coordonnées et distances sur une carte marine

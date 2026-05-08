@@ -4,6 +4,10 @@ title: "Relèvements, caps et compas"
 theme: "Navigation"
 type: concept
 tags: [compas, relevement, declinaison, deviation]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Relèvements et utilisation du compas

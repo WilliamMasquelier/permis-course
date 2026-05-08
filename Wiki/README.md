@@ -23,7 +23,7 @@ Wiki/
 ├── meta/
 │   ├── index.md           # entry point — start here
 │   └── log.md             # ingest / lint history
-├── raw/                   # read-only pointer to ../Cours 1, ../Cours 2
+├── raw/                   # notes about source inputs stored under raw/
 ├── wiki/                  # LLM-curated knowledge
 │   ├── themes/            # 9 MOCs (chapter overviews)
 │   ├── concepts/          # atomic Zettelkasten notes (the why)
@@ -55,20 +55,19 @@ Wiki/
 
 ## Current state
 
-- 9 theme MOCs (stubs, ready for ingest).
-- 1 worked-example concept (`regle-de-barre-priorite`) demonstrating
-  the full pattern.
-- 1 sample question file showing the Q/A/Why/Source format.
-- 1 sample flashcard set in `output/`.
+- 9 theme MOCs.
+- 60+ concept notes and 18 entity notes.
+- 40+ local question files.
+- 8 student-facing lessons in `wiki/lessons/`.
+- A small visual asset set in `assets/images/`, copied into rendered HTML.
 
-## Next steps for a full build
+## Next steps
 
-1. Pass each `Cours 2/*RECTO/VERSO*.pdf` through an LLM with `SCHEMA.md`
-   in context → produces ~10 concepts and ~5 entities per theme.
-2. Transcribe `Cours 2/*.mp3` (139 files) → ingest into `questions/`.
-3. Run a lint pass (find `status: stub` notes older than 7 days).
-4. Promote stable concepts from `draft` to `reviewed`.
-5. Build the tutor skill (see `EDUCATIONAL-USE.md` §5).
+1. Run the wiki health check after every content-generation pass.
+2. Fix broken or unresolved wikilinks before promoting content.
+3. Promote stable concepts from `draft` to `reviewed` after source review.
+4. Expand the visual asset set for feux, navigation, and practical maneuvers.
+5. Recheck official exam and radio rules yearly; see `../docs/source-freshness.md`.
 
 ## Sources informing this design
 

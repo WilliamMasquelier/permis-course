@@ -2,7 +2,7 @@
 title: CROSS et organisation des secours en mer
 type: concept
 tags: [securite]
-sources: [../../Cours 2/5-securite-RECTO.pdf, ../../Cours 2/7-La_pratique-RECTO.pdf]
+sources: [raw/course-2/5-securite-RECTO.pdf, raw/course-2/7-La_pratique-RECTO.pdf]
 related: [[signaux-detresse]], [[equipement-obligatoire]]
 status: draft
 updated: 2026-05-01

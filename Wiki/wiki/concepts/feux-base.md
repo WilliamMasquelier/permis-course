@@ -2,7 +2,7 @@
 title: Feux de navigation — base (secteurs et portées)
 type: concept
 tags: [feux]
-sources: [../../Cours 2/4-Feux-RECTO.pdf]
+sources: [raw/course-2/4-Feux-RECTO.pdf]
 related: [[../themes/04-feux]], [[feux-moteur]], [[feux-voilier]], [[feux-mouillage]], [[feux-peche]]
 status: draft
 updated: 2026-05-01

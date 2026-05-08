@@ -4,6 +4,10 @@ title: "Priorités entre navires à moteur"
 theme: "Règles de barre"
 type: concept
 tags: [priorite, navire-a-moteur, rattrapant, abordage]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Priorités entre navires à propulsion mécanique

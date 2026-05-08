@@ -4,6 +4,10 @@ title: "Calcul du carburant et entretien moteur"
 theme: "Sécurité"
 type: concept
 tags: [carburant, autonomie, moteur, securite]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Moteur et réserve de carburant

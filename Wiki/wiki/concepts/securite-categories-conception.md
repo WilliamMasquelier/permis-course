@@ -4,6 +4,10 @@ title: "Catégories de conception CE"
 theme: "Sécurité"
 type: concept
 tags: [plaque-signaletique, conception, force-vent, vagues]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Catégories de conception des navires de plaisance

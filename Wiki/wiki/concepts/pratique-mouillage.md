@@ -4,6 +4,10 @@ title: "La technique de mouillage"
 theme: "La pratique"
 type: concept
 tags: [mouillage, ancre, evitage]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Réaliser un mouillage en sécurité

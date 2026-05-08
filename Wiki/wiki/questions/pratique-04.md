@@ -1,7 +1,12 @@
 ---
+title: Question Pratique 04
 id: pratique-04
 theme: "La pratique"
 type: question
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Question

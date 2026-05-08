@@ -4,6 +4,10 @@ title: "Signaux Météo (Avis de tempête) et Échelle de Beaufort"
 theme: "Signaux"
 type: concept
 tags: [meteo, beaufort, vent, semaphore]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Signaux Météo et Échelle de Beaufort

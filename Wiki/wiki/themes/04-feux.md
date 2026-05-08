@@ -2,6 +2,10 @@
 id: 04-feux
 title: "Feux des navires"
 type: theme
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Les Feux des Navires

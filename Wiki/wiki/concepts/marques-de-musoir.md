@@ -2,7 +2,7 @@
 title: Marques de musoir et divers
 type: concept
 tags: [balisage]
-sources: [../../Cours 2/1-Les balises_RECTO.pdf]
+sources: [raw/course-2/1-Les balises_RECTO.pdf]
 related: [[../themes/01-balisage]]
 status: draft
 updated: 2026-05-04

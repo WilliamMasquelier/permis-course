@@ -4,6 +4,10 @@ title: "Les navires privilégiés"
 theme: "Règles de barre"
 type: concept
 tags: [priorite, navire-privilegie, peche, nmm, cmr]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Ordre de priorité (Navires privilégiés)

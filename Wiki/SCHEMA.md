@@ -15,12 +15,12 @@ adapted for educational use.
 
 | Folder | Who writes | What goes in |
 |--------|-----------|--------------|
-| `raw/` | **Human only** — LLM reads, never modifies | Source PDFs, mp3 transcripts, original course material. Immutable. References by symlink/path to `../Cours 1/`, `../Cours 2/`. |
+| `raw/` | **Human only** — LLM reads, never modifies | Source PDFs, extracted text, original course material. Immutable. Course packs live in `raw/course-1/` and `raw/course-2/`; extracted text lives in `raw/extracted-text/`. |
 | `wiki/` | **LLM curated**, human-reviewed | Distilled atomic notes. The "clean" knowledge layer. |
 | `wiki/themes/` | LLM | One MOC (Map of Content) per major topic (balisage, règle de barre, feux, signaux, sécurité, navigation, pratique, radio/CRR). |
 | `wiki/concepts/` | LLM | Atomic Zettelkasten-style notes — one concept per file. |
 | `wiki/entities/` | LLM | Concrete things: specific buoy types, light signals, equipment, regulations, distances. |
-| `wiki/questions/` | LLM | Exam-style Q&A pairs derived from `Cours 2` audio + Q-eval material. |
+| `wiki/questions/` | LLM | Exam-style Q&A pairs derived from `raw/course-2` Q-eval material and course notes. |
 | `output/` | LLM, ephemeral | Generated study artifacts (flashcards, quizzes, study guides). Safe to delete and regenerate. |
 | `meta/` | LLM + human | `index.md`, `log.md`, this `SCHEMA.md`. |
 

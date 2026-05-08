@@ -4,6 +4,10 @@ title: "Priorités entre voiliers"
 theme: "Règles de barre"
 type: concept
 tags: [priorite, voilier, amure, vent]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Priorités entre navires à voile

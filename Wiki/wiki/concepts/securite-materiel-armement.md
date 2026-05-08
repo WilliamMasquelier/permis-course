@@ -4,6 +4,10 @@ title: "Le matériel d'armement et de sécurité"
 theme: "Sécurité"
 type: concept
 tags: [armement, basique, cotier, hauturier]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # L'équipement de sécurité des navires de plaisance

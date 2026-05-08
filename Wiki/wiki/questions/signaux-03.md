@@ -1,7 +1,12 @@
 ---
+title: Question Signaux 03
 id: signaux-03
 theme: "Signaux"
 type: question
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Question

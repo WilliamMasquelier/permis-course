@@ -2,7 +2,7 @@
 title: Mouillage — choisir le lieu et calculer la chaîne
 type: concept
 tags: [pratique]
-sources: [../../Cours 2/7-La_pratique-RECTO.pdf]
+sources: [raw/course-2/7-La_pratique-RECTO.pdf]
 related: [[checklist-depart], [[../themes/07-pratique]]]
 status: draft
 updated: 2026-05-01
@@ -20,7 +20,7 @@ updated: 2026-05-01
 
 ## Longueur de chaîne
 
-*(détails à compléter depuis Cours 1 — stub)*
+*(détails à compléter depuis `raw/course-1` — stub)*
 
 La longueur de chaîne doit être suffisante par rapport à la profondeur (rapport habituel : 3× la profondeur + hauteur de marée pour bonne tenue).
 

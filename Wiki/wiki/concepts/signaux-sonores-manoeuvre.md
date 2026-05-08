@@ -4,6 +4,10 @@ title: "Signaux sonores de manœuvre et d'avertissement"
 theme: "Signaux"
 type: concept
 tags: [signaux-sonores, manoeuvre, depassement, avertissement]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Signaux sonores de manœuvre

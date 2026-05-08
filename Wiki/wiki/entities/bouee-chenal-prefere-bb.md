@@ -2,7 +2,7 @@
 title: Bouée de chenal préféré — passage bâbord
 type: entity
 tags: [balisage]
-sources: [../../Cours 2/1-Les balises_RECTO.pdf]
+sources: [raw/course-2/1-Les balises_RECTO.pdf]
 related: [[../concepts/marques-chenal-prefere]]
 status: draft
 updated: 2026-05-06

@@ -1,7 +1,12 @@
 ---
+title: Question Navigation 04
 id: navigation-04
 theme: "Navigation"
 type: question
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Question

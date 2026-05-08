@@ -2,7 +2,7 @@
 title: Licence de station de navire — ANFR et certificat CRR
 type: concept
 tags: [radio, crr, administratif, anfr]
-sources: [../../Cours 1/anfr-manuel_crr.pdf, ../../Cours 1/anfr-licence.pdf]
+sources: [raw/course-1/anfr-manuel_crr.pdf, raw/course-1/anfr-licence.pdf]
 related: [[../themes/08-radio-crr]], [[mmsi]], [[asn-dsc]]
 status: draft
 updated: 2026-05-06

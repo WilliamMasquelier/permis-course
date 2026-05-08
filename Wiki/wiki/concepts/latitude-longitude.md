@@ -2,7 +2,7 @@
 title: Coordonnées géographiques — latitude et longitude
 type: concept
 tags: [navigation]
-sources: [../../Cours 2/6-La_navigation-RECTO.pdf]
+sources: [raw/course-2/6-La_navigation-RECTO.pdf]
 related: [[carte-marine]], [[cap-route-derive]]
 status: draft
 updated: 2026-05-01

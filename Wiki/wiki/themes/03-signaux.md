@@ -2,6 +2,10 @@
 id: 03-signaux
 title: "Signaux sonores et visuels"
 type: theme
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Signaux

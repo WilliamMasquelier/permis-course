@@ -1,7 +1,12 @@
 ---
+title: Question Securite 05
 id: securite-05
 theme: "Sécurité"
 type: question
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Question

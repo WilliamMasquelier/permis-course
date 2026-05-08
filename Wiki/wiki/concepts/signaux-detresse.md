@@ -4,6 +4,10 @@ title: "Signaux de détresse"
 theme: "Signaux"
 type: concept
 tags: [detresse, secours, vhf, urgence]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Signaux de détresse

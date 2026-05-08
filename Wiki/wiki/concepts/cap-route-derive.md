@@ -2,7 +2,7 @@
 title: Cap, route, dérive et relèvement
 type: concept
 tags: [navigation]
-sources: [../../Cours 2/6-La_navigation-RECTO.pdf]
+sources: [raw/course-2/6-La_navigation-RECTO.pdf]
 related: [[carte-marine]], [[latitude-longitude]]
 status: draft
 updated: 2026-05-01

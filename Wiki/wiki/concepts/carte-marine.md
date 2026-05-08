@@ -2,7 +2,7 @@
 title: Lecture de la carte marine
 type: concept
 tags: [navigation]
-sources: [../../Cours 2/6-La_navigation-RECTO.pdf]
+sources: [raw/course-2/6-La_navigation-RECTO.pdf]
 related: [[latitude-longitude]], [[cap-route-derive], [[../themes/06-navigation]]]
 status: draft
 updated: 2026-05-01
