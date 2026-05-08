@@ -106,6 +106,31 @@ Voir [[Wiki/wiki/questions/]] pour la banque de questions complète.
 > 4. Les questions de balisage et de feux sont visuelles — visualisez mentalement la scène.
 > 5. Les questions de règles de barre ont toujours une logique derrière — retrouvez la règle.
 
+> [MINI-QUIZ]
+> **Question 1 :** En entrant dans le chenal de la marina de Göcek, William voit une bouée rouge conique à droite et une bouée verte cylindrique à gauche. Il vient de la mer. Quel côté garde-t-il chaque bouée ?
+> **A)** Bouée rouge à bâbord (gauche), bouée verte à tribord (droite)
+> **B)** Bouée rouge à tribord (droite), bouée verte à bâbord (gauche)
+> **C)** Les deux côtés sont équivalents — choisir le côté le plus large
+> **Réponse:** B — En système IALA A (Méditerranée, Europe) : en entrant dans le port (en remontant dans le sens conventionnel), la marque de tribord est rouge et se garde à tribord (droite). La marque de bâbord est verte et se garde à bâbord (gauche). Mnémotechnique : "rouge à droite en rentrant" (IALA A). En IALA B (Amériques), c'est l'inverse — "red right returning".
+>
+> **Question 2 :** La veille du départ de Göcek, William relit ses notes. Parmi ces signaux sonores, lequel est FAUX ?
+> **A)** 1 son long par visibilité réduite (navire à moteur en route) = signal correct
+> **B)** 3 sons brefs = "mes machines sont en marche arrière" = signal correct
+> **C)** 4 sons brefs = "je vire à bâbord" = signal correct
+> **Réponse:** C — Il n'existe pas de signal "4 sons brefs". Les signaux de manœuvre en vue d'un autre navire sont : 1 bref = gouverne à tribord, 2 brefs = gouverne à bâbord, 3 brefs = machines en marche arrière, 5 brefs = danger / incompréhension. 4 sons brefs n'a pas de signification réglementaire.
+>
+> **Question 3 :** William récapitule les priorités COLREGs. Laquelle de ces affirmations est CORRECTE ?
+> **A)** Un voilier sous voiles cède toujours le passage à un navire à moteur en situation de croisement
+> **B)** Un navire à moteur cède le passage à un voilier sous voiles — sauf en chenal étroit ou en situation de rattrapage
+> **C)** Le plus petit navire est toujours prioritaire sur le plus grand, quelle que soit la situation
+> **Réponse:** B — Règle 18 : navire à moteur s'écarte devant voilier sous voiles (hors exceptions). Exceptions : règle 9 (chenal étroit — le voilier cède au navire contraint), règle 13 (rattrapage — le rattrapant cède quelle que soit sa catégorie). La taille (C) n'est jamais un critère de priorité dans le RIPAM.
+>
+> **Question 4 :** Au dernier soir, Emmanuel pose la question : "Le tirant d'eau du *Deniz Rüzgarı* est 2 m. La carte indique une sonde de 1,8 m dans une crique. La marée est à +0,5 m au-dessus du zéro hydrographique. Peut-on entrer ?"
+> **A)** Oui — profondeur réelle = 1,8 + 0,5 = 2,3 m, supérieure au tirant de 2 m
+> **B)** Non — la sonde carte est de 1,8 m, inférieure au tirant de 2 m, point
+> **C)** Oui — la marge de 0,3 m est suffisante pour un ketch de 13 m
+> **Réponse:** A — Profondeur réelle = Sonde + Hauteur de marée = 1,8 + 0,5 = 2,3 m. Avec un tirant de 2 m, la marge est de 0,3 m. C'est juste mais mathématiquement possible — en pratique on ajouterait 0,5 m de marge de sécurité supplémentaire sur fond inconnu. B ignore la marée montante. La réponse correcte à l'examen est A (calcul correct), mais la décision prudente ajouterait une marge.
+
 > [SCENE]
 > **Göcek Marina, D-Marin, 10h30.**
 >

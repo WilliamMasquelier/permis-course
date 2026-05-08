@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1234,23 +1243,44 @@
 <p>Voir <span class="wikilink" data-label="Gros Temps Tactique">concepts/gros-temps-tactique</span>.</p>
 <div class="callout callout-attention"><div class="callout-label">⚠️ Attention</div><div class="callout-body">
 <p><strong>L'abandon de navire</strong> est le dernier recours. Un bateau qui flotte est toujours plus visible et plus sûr qu'un radeau de survie. N'abandonnez le bateau que si vous <em>êtes obligés</em> de monter dans le radeau — jamais préventivement si le bateau flotte encore.</p>
-<p>[EXEMPLE GOLFE]
-<strong>Exercice HAM off Yassıca Adaları :</strong></p>
+</div></div>
+<div class="callout callout-golfe"><div class="callout-label">🗺️ Exemple — Golfe de Fethiye</div><div class="callout-body">
+<p><strong>Exercice HAM off Yassıca Adaları :</strong></p>
 <p>Vitesse au moment de l'exercice : 5 nœuds. En 4 secondes de délai, la &quot;victime&quot; (bouteille) s'est éloignée de ~10 mètres. À 5 nœuds réels (8,5 km/h), un naufragé peut être à 50 mètres en moins d'une minute.</p>
 <p>Dans le golfe de Göcek, la visibilité est bonne, la houle est faible — conditions favorables. En Atlantique Nord avec une houle de 3 mètres, ce sera beaucoup plus difficile.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Immédiatement après qu'une personne est tombée à l'eau, quelle est la PREMIÈRE chose à faire ?
-<strong>A)</strong> Sauter à l'eau pour aider la personne
-<strong>B)</strong> Appeler le CROSS sur VHF 16
-<strong>C)</strong> Jeter la bouée-fer à cheval et désigner un équipier pour garder le contact visuel
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — Les deux premières secondes sont critiques. Lancez la bouée (flottabilité et repérage visuel) et gardez le contact visuel. Ne sautez jamais à l'eau — vous devenez une deuxième victime.</p>
-</details><p><strong>Question 2 :</strong> Vous détectez un incendie dans la salle des machines. Quelle est la priorité absolue avant d'utiliser l'extincteur ?
-<strong>A)</strong> Appeler le CROSS sur VHF 16
-<strong>B)</strong> Couper le moteur et l'alimentation en carburant
-<strong>C)</strong> Faire sortir tous les passagers sur le pont
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Couper le combustible (moteur, gaz, carburant) est la priorité car vous privez l'incendie de son aliment. Ensuite seulement l'extincteur, et simultanément l'évacuation.</p>
-</details><p>[TRANSITION]
-La nuit à Kızılada est étrange — un voile de brume arrive vers 21h, réduisant la visibilité à 400 mètres. Les feux des autres bateaux sont flous. La Coupe du Monde est en quart de finale sur le téléphone d'Emmanuel — mais il éteint l'écran et préfère écouter Mehmet qui explique calmement les règles de navigation par visibilité réduite.</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Christelle trébuche et tombe par-dessus bord au large de Kızılada. Quelle est la PREMIÈRE action à effectuer dans les 3 premières secondes ?</p>
+<ul>
+<li><strong>A)</strong> Sauter à l'eau immédiatement pour la rejoindre</li>
+<li><strong>B)</strong> Appeler &quot;HOMME À LA MER !&quot; et lancer la bouée fer à cheval en gardant le contact visuel</li>
+<li><strong>C)</strong> Appeler le CROSS sur VHF 16 pour demander une aide immédiate</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Les premières secondes : (1) crier &quot;Homme à la mer !&quot; pour alerter l'équipage, (2) jeter la bouée fer à cheval ou une bouée couronne, (3) désigner quelqu'un pour garder le contact visuel sans le perdre un instant. Ne JAMAIS sauter à l'eau (A) — vous devenez une deuxième victime et l'équipage doit récupérer deux personnes au lieu d'une. L'appel radio (C) vient après la récupération ou si la situation dépasse vos capacités.</details>
+<p><strong>Question 2 :</strong> Un incendie est détecté dans le compartiment moteur du <em>Deniz Rüzgarı</em>. Dans quel ordre agissez-vous ?</p>
+<ul>
+<li><strong>A)</strong> 1. Extincteur, 2. Couper le carburant, 3. Évacuer le cockpit</li>
+<li><strong>B)</strong> 1. Couper moteur et alimentation carburant, 2. Fermer les orifices d'air, 3. Extincteur ou CO2 fixe</li>
+<li><strong>C)</strong> 1. Appeler le CROSS, 2. Couper le carburant, 3. Extincteur</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Séquence incendie en salle des machines : (1) couper le moteur et l'alimentation en carburant (priver le feu de combustible), (2) fermer les trappes et ouïes d'aération (priver le feu d'oxygène), (3) utiliser l'extincteur ou le système CO2 fixe SANS ouvrir le compartiment si possible (rouvrir alimente le feu). L'appel radio (C) se fait en parallèle mais n'est pas la première priorité.</details>
+<p><strong>Question 3 :</strong> Le <em>Deniz Rüzgarı</em> a une voie d'eau dans l'avant de la coque. Mehmet indique une pompe de cale qui débite 30 litres par minute. L'eau entre à 50 litres par minute. Quelle est la bonne décision ?</p>
+<ul>
+<li><strong>A)</strong> Pomper à fond — la pompe peut ralentir la progression</li>
+<li><strong>B)</strong> Boucher la voie d'eau avec tous les moyens disponibles (coussins, étoupe, coins) PENDANT que quelqu'un pompe</li>
+<li><strong>C)</strong> Abandonner immédiatement le bateau — la pompe ne peut pas gérer l'entrée d'eau</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La pompe de cale est utile mais ici insuffisante (déficit de 20 L/min). La priorité est de réduire l'entrée d'eau par colmatage d'urgence (coussins, serviettes, coin de bois, matelas) pour que la pompe puisse faire face. L'abandon (C) n'est envisageable qu'en dernier recours, quand le bateau ne peut plus être sauvé.</details>
+<p><strong>Question 4 :</strong> Quelqu'un à bord souffre de symptômes graves : douleur thoracique irradiant dans le bras gauche, transpiration, pâleur. Quelle est la procédure d'urgence médicale à distance ?</p>
+<ul>
+<li><strong>A)</strong> Appeler le CROSS sur VHF 16 et demander une coordination SMUR hélitreuillage</li>
+<li><strong>B)</strong> Administrer de l'aspirine et allonger la personne — attendre l'arrivée au port</li>
+<li><strong>C)</strong> Appeler le 15 (SAMU) par téléphone mobile — le VHF n'est pas adapté aux urgences médicales</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — En mer, l'urgence médicale se gère via le CROSS sur VHF 16 (canal de détresse) : le CROSS coordonne le médecin régulateur et les secours (hélicoptère, vedette SNSM). En haute mer, le service TMAS (Télémedical Assistance Service) offre une consultation médicale à distance. Le SAMU (C) peut être appelé si la couverture mobile est disponible, mais le VHF est le canal principal en mer.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>La nuit à Kızılada est étrange — un voile de brume arrive vers 21h, réduisant la visibilité à 400 mètres. Les feux des autres bateaux sont flous. La Coupe du Monde est en quart de finale sur le téléphone d'Emmanuel — mais il éteint l'écran et préfère écouter Mehmet qui explique calmement les règles de navigation par visibilité réduite.</p>
 <p><strong>Session 5.4 — Visibilité Réduite et Navigation Nocturne.</strong></p>
 </div></div>
 

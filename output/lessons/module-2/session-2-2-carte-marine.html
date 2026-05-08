@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1282,19 +1291,39 @@
 <p><strong>Carte Imray T1 (Turkish Waters), extrait zone Göcek :</strong></p>
 <p>Entre Göcek Marina (36°45.3'N 28°57.6'E) et Tersane Island (36°43.5'N 28°58.2'E), la route directe de <strong>148°V</strong> longe le bord ouest des Yassıca Adaları. Les sondes le long du passage varient de 12 à 30 m. Un banc côté est à 5 m est signalé à 36°44.0'N 28°58.8'E — à éviter si vous continuez vers les petites criques de l'est.</p>
 <p>Distance Göcek → Tersane : <strong>2,8 NM</strong> (mesurée sur l'échelle de latitude, soit ~3 minutes d'arc).</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Sur quelle échelle mesurez-vous une distance en milles nautiques sur une carte marine ?
-<strong>A)</strong> Sur l'échelle des longitudes (axe horizontal)
-<strong>B)</strong> Sur l'échelle des latitudes (axe vertical)
-<strong>C)</strong> Indifféremment sur l'une ou l'autre
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — L'échelle des latitudes est la seule valide. 1 minute d'arc = 1 mille nautique. L'échelle des longitudes varie avec la latitude et ne peut pas être utilisée pour mesurer des distances.</p>
-</details><p><strong>Question 2 :</strong> Une sonde notée &quot;~~3~~&quot; (3 barré) sur la carte signifie :
-<strong>A)</strong> Roche qui découvre à 3 mètres au-dessus du zéro hydrographique
-<strong>B)</strong> Profondeur de 3 mètres au zéro hydrographique
-<strong>C)</strong> Erreur de carte corrigée
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Le nombre barré indique une roche qui <em>découvre</em> (emerge at low water), à cette hauteur en mètres au-dessus du zéro hydrographique. C'est un danger à marée haute dans cette zone.</p>
-</details><p>[TRANSITION]
-Depuis l'ancre, William regarde la baie de Fethiye. Les tombeaux lyciens sont découpés dans la falaise. Un phare clignote à l'entrée de la baie. &quot;Comment on lit la caractéristique d'un phare ?&quot; demande-t-il.</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Sur une carte marine, comment mesure-t-on une distance en milles nautiques ?</p>
+<ul>
+<li><strong>A)</strong> Sur l'échelle des longitudes (axe horizontal) — 1 degré = 60 NM</li>
+<li><strong>B)</strong> Sur l'échelle des latitudes (axe vertical) — 1 minute d'arc = 1 NM</li>
+<li><strong>C)</strong> Sur la barre d'échelle graduée imprimée en bas de la carte</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — L'échelle des latitudes (bord gauche/droit de la carte) est la seule valide pour mesurer des distances : 1 minute d'arc de latitude = 1 mille nautique. L'échelle des longitudes se contracte vers les pôles et est inutilisable pour les distances. La barre d'échelle en bas est valide uniquement à la latitude de référence de la carte — moins précise sur les cartes à grande couverture.</details>
+<p><strong>Question 2 :</strong> La sonde &quot;3&quot; soulignée (notation cartographique du SHOM) indique :</p>
+<ul>
+<li><strong>A)</strong> Une roche qui découvre à 3 mètres au-dessus du zéro hydrographique (danger à marée haute)</li>
+<li><strong>B)</strong> Une profondeur de 3 mètres en dessous du zéro hydrographique (fond peu profond)</li>
+<li><strong>C)</strong> Une correction récente de 3 mètres sur la sonde originale</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Le chiffre souligné (<em>underlined figure</em>) signifie que c'est la hauteur en mètres au-dessus du zéro hydrographique à laquelle la roche découvre. C'est un danger : à marée haute ce rocher est immergé mais à marée basse il émerge. Ne pas confondre avec une sonde normale (profondeur sous le zéro hydrographique).</details>
+<p><strong>Question 3 :</strong> Quelle est la signification du symbole &quot;Pa&quot; sur une carte marine à proximité d'un fond ?</p>
+<ul>
+<li><strong>A)</strong> Passage autorisé à cet endroit</li>
+<li><strong>B)</strong> Nature du fond : sable vaseux (<em>Pasty sand</em>) — important pour le mouillage</li>
+<li><strong>C)</strong> Profondeur approximative — donnée non vérifiée</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Les abréviations de nature de fond sont standardisées sur les cartes marines : S = sand (sable), M = mud (vase), Sh = shells (coquilles), Rk = rock (roche), Co = coral (corail), Pa = sand mixed with mud. Ces indications sont cruciales pour choisir l'ancre et évaluer la tenue du mouillage dans le golfe de Göcek.</details>
+<p><strong>Question 4 :</strong> Sur une carte Mercator, deux points de même latitude mais à 10 degrés de longitude de distance. Peut-on mesurer cette distance en utilisant les 10 degrés de longitude directement ?</p>
+<ul>
+<li><strong>A)</strong> Oui — à l'équateur, 1 degré de longitude = 60 NM, quelle que soit la latitude</li>
+<li><strong>B)</strong> Non — la longueur d'un degré de longitude diminue avec la latitude (cos de la latitude)</li>
+<li><strong>C)</strong> Oui — la projection Mercator conserve les angles et donc toutes les distances</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — En projection Mercator, les méridiens sont des droites parallèles verticales, mais la longueur réelle d'un degré de longitude diminue proportionnellement au cosinus de la latitude. À 36°N (golfe de Göcek), 1 degré de longitude ≈ 60 × cos(36°) ≈ 48,5 NM. On ne peut donc jamais utiliser l'axe horizontal pour mesurer des distances.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Depuis l'ancre, William regarde la baie de Fethiye. Les tombeaux lyciens sont découpés dans la falaise. Un phare clignote à l'entrée de la baie. &quot;Comment on lit la caractéristique d'un phare ?&quot; demande-t-il.</p>
 <p><strong>Session 2.3 — Phares et Aides à la Navigation : identifier et utiliser les amers lumineux.</strong></p>
 </div></div>
 

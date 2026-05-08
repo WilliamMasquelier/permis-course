@@ -114,17 +114,29 @@ Voir [[concepts/cordages-noeuds]], [[concepts/accostage-amarrage]].
 > La source thermale (40°C) est à 50 mètres à la nage depuis le mouillage.
 
 > [MINI-QUIZ]
-> **Question 1 :** Vous mouilles par 8 m de fond. Quelle longueur minimale de chaîne filez-vous ?
-> **A)** 8 m (1× la hauteur)
-> **B)** 16 m (2× la hauteur)
-> **C)** 24 m (3× la hauteur d'eau)
-> **Réponse:** C — La règle minimale est 3× la hauteur d'eau totale (fond + tirant d'eau). Par vent fort ou fond difficile, 5× est recommandé.
+> **Question 1 :** Vous mouilles dans la crique de Tersane par 6 m de fond, tirant d'eau 1,5 m. Quelle longueur de chaîne minimum filez-vous (règle des 3×) ?
+> **A)** 18 m (3× le fond seul)
+> **B)** 22,5 m (3× (fond + tirant))
+> **C)** 30 m (5× le fond — recommandé pour tout mouillage)
+> **Réponse:** B — La règle prudente : longueur de chaîne = 3× (profondeur + tirant d'eau) = 3× (6 + 1,5) = 3× 7,5 = 22,5 m. A ne prend pas en compte le tirant d'eau. C (5×) est recommandé par vent fort mais n'est pas le minimum demandé à l'examen. Par fond vaseux ou vent > 20 nœuds, choisir 5×.
 >
-> **Question 2 :** Comment vérifiez-vous que l'ancre tient après le mouillage ?
-> **A)** En tirant sur la chaîne à la main
-> **B)** En prenant deux amers à terre et en vérifiant qu'ils ne bougent pas pendant plusieurs minutes
-> **C)** En regardant si d'autres bateaux autour de vous ont bougé
-> **Réponse:** B — Deux amers en croix permettent de détecter un dérapage de quelques mètres. Un GPS avec alarme de dérapage (anchor alarm) est aussi utile.
+> **Question 2 :** Après avoir mouillé dans la baie de Hamam Koyu, comment William vérifie-t-il que l'ancre tient ?
+> **A)** En tirant fort sur la chaîne avec les mains — si elle ne cède pas, c'est bon
+> **B)** En prenant deux amers à terre en croix et en observant pendant 5 minutes que les alignements ne bougent pas
+> **C)** En regardant si les autres bateaux au mouillage autour de lui ont bougé
+> **Réponse:** B — Deux amers fixes à terre (clocher + antenne, rocher + maison…) vus depuis la poupe et repérés sur les côtés permettent de détecter un dérapage de quelques mètres. A (tirer à la main) est inefficace — la chaîne tient plusieurs tonnes sous moteur, pas à la main. C ne détecte pas un dérapage général de la baie (coup de vent qui touche tout le monde).
+>
+> **Question 3 :** Dans la crique de Göcek, un bateau mouille à 30 mètres de vous. Le vent tourne de 30°. Quel phénomène devez-vous anticiper ?
+> **A)** Rien — un mouillage bien ancré est stable quelle que soit la direction du vent
+> **B)** Un risque d'abordage si les rayons d'évitage des deux bateaux se chevauchent après le changement de direction du vent
+> **C)** Un dérapage de votre ancre car la direction de traction change
+> **Réponse:** B — Lorsque le vent tourne, chaque bateau "évite" (pivote autour de son ancre) en suivant la nouvelle direction du vent. Si deux bateaux ont des rayons d'évitage différents (chaîne différente, différence de longueur de bateau), ils peuvent se retrouver en collision. C'est l'un des principaux risques en baie très peuplée.
+>
+> **Question 4 :** Mehmet explique le mouillage méditerranéen "à la turque" (Med-moor). Quelle est sa particularité par rapport au mouillage classique ?
+> **A)** On mouille l'ancre en avant et on recule pour amarrer la poupe au quai
+> **B)** On mouille l'ancre en arrière et on avance pour amarrer la proue au quai
+> **C)** On se place tribord au quai avec une seule amarre de poupe, sans ancre
+> **Réponse:** A — Le mouillage méditerranéen (Med-moor) : on avance perpendiculairement au quai, on laisse tomber l'ancre en s'approchant, puis on recule pour filer la chaîne et amarrer la poupe au quai. L'ancre maintient la proue au large. C'est la technique standard dans les marinas méditerranéennes où la place en linéaire est limitée.
 
 > [TRANSITION]
 > Le lendemain — dimanche, jour 7 — William consulte la météo. Des nuages à l'horizon, pression en légère baisse. La traversée prévue vers Kızılada peut être plus sportive que prévu. Il est temps d'apprendre à lire le ciel.

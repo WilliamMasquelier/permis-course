@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1192,19 +1201,39 @@ Si vous passez en vert : vous êtes trop à tribord (danger). Lofiez vers bâbor
 <p>Mouillé à l'ancre, vous appliquez : feu de mouillage allumé (blanc tout-horizon). Cloche disponible. Veille sonore active.</p>
 <p>Un bruit de moteur s'approche de tribord. Visibilité 300m. Vous ne voyez rien. Correct à faire : <strong>cinq sons brefs</strong> (signal d'alarme, doute sur l'action d'un autre navire). Puis VHF 16 : appel &quot;Bateau approchant de [position], ici [nom du bateau], veuillez vous identifier.&quot;</p>
 <p><strong>Pour information :</strong> En Méditerranée orientale, le brouillard en juillet est rare. En Bretagne ou en Manche, il peut durer plusieurs jours consécutifs. Apprenez ces règles pour les côtes françaises.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Vous naviguez sous moteur par visibilité réduite. Quel signal sonore devez-vous émettre et à quelle fréquence ?
-<strong>A)</strong> 2 sons brefs toutes les 2 minutes
-<strong>B)</strong> 1 son long toutes les 2 minutes maximum
-<strong>C)</strong> 5 sons brefs toutes les minutes
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — En route sous moteur par visibilité réduite : 1 son long (≥ 4 secondes) à intervalles ≤ 2 minutes.</p>
-</details><p><strong>Question 2 :</strong> La nuit, vous voyez un feu de secteur rouge d'un phare portuaire. Quelle action prenez-vous ?
-<strong>A)</strong> Continuez — rouge = secteur sûr pour ce type de phare
-<strong>B)</strong> Vous êtes dans un secteur dangereux, abattez vers tribord jusqu'à voir le blanc
-<strong>C)</strong> Abattez vers bâbord
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Feu rouge = vous êtes dans le secteur à danger bâbord du chenal (trop à gauche). Abattez vers tribord (vers la droite du chenal) jusqu'à voir le secteur blanc.</p>
-</details><p>[TRANSITION]
-Mardi matin, jour 9. Dernière longue navigation de la semaine : retour vers Fethiye. Avant de partir, William doit contacter la capitainerie. Il décroche le VHF. &quot;MAYDAY ou... canal 16 ?&quot;</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Le <em>Deniz Rüzgarı</em> navigue sous moteur par brouillard dense. Quel signal sonore doit-il émettre ?</p>
+<ul>
+<li><strong>A)</strong> Deux sons brefs toutes les 2 minutes — signal de navire en route sous voiles</li>
+<li><strong>B)</strong> Un son long toutes les 2 minutes maximum — signal de navire à propulsion mécanique en route</li>
+<li><strong>C)</strong> Cinq sons brefs dès qu'un autre navire est entendu — signal d'avertissement de danger</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Règle 35 du RIPAM : navire à propulsion mécanique faisant route en visibilité réduite = 1 son long (4 secondes ou plus) à intervalles ≤ 2 minutes. Deux sons brefs = navire sous voiles ou contraint dans sa manœuvre. Cinq sons brefs = signal d'incompréhension ou de danger immédiat (en vue d'un autre navire, pas en visibilité réduite).</details>
+<p><strong>Question 2 :</strong> Par brouillard, vous entendez un signal sonore : 1 son long suivi de 2 sons brefs, répété à intervalles réguliers. Quel type de navire vous signale sa présence ?</p>
+<ul>
+<li><strong>A)</strong> Un navire à propulsion mécanique en route</li>
+<li><strong>B)</strong> Un navire au mouillage (sonnerie de cloche)</li>
+<li><strong>C)</strong> Un navire en route sous voiles, ou un navire contraint dans sa manœuvre</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — Règle 35 : 1 son long + 2 sons brefs = navire sous voiles, navire manœuvrant avec difficulté, navire contraint dans sa route, navire en train de pêcher, navire remorqueur. Ce signal alerte les autres navires sur une situation de manœuvrabilité limitée. Le navire au mouillage utilise une cloche (et gong pour les navires &gt; 100m).</details>
+<p><strong>Question 3 :</strong> Par brouillard épais au large de Kızılada, William doit réduire la vitesse. Quelle est la règle générale à ce sujet ?</p>
+<ul>
+<li><strong>A)</strong> Réduire à la moitié de la vitesse normale — règle des 50%</li>
+<li><strong>B)</strong> Naviguer à &quot;vitesse de sécurité&quot; permettant de s'arrêter avant tout obstacle détecté</li>
+<li><strong>C)</strong> Stopper complètement et jeter l'ancre jusqu'à la levée du brouillard</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La règle 6 du RIPAM : &quot;vitesse de sécurité&quot; — aucun chiffre fixe n'est imposé, mais la vitesse doit permettre de stopper avant de heurter un obstacle détecté (visuellement, au radar ou acoustiquement). Les facteurs : visibilité actuelle, densité du trafic, manœuvrabilité du navire, état de la mer. S'arrêter (C) peut créer un danger si d'autres navires arrivent.</details>
+<p><strong>Question 4 :</strong> Vous naviguez au radar par visibilité réduite et détectez un écho devant vous à 1 NM, sans mouvement apparent du relèvement. Que faites-vous ?</p>
+<ul>
+<li><strong>A)</strong> Maintenez votre route — l'écho immobile indique un navire au mouillage</li>
+<li><strong>B)</strong> Risque d'abordage — appliquez les règles de barre, réduisez la vitesse</li>
+<li><strong>C)</strong> Vérifiez la calibration du radar — un écho immobile est un signe d'erreur d'instrument</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Un écho dont le relèvement reste constant pendant que la distance diminue = trajectoires convergentes = risque d'abordage. Cette règle s'applique autant par radar que par observation visuelle. Un navire vraiment au mouillage aurait un écho stable ET une distance stable. Réduisez la vitesse et préparez une manœuvre d'évitement.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Mardi matin, jour 9. Dernière longue navigation de la semaine : retour vers Fethiye. Avant de partir, William doit contacter la capitainerie. Il décroche le VHF. &quot;MAYDAY ou... canal 16 ?&quot;</p>
 <p><strong>Session 6.1 — VHF et Procédures Radio : MAYDAY, PAN PAN, canal 16.</strong></p>
 </div></div>
 

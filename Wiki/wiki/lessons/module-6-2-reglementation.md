@@ -136,17 +136,29 @@ La bande des 300 mètres reste réglementée la nuit — la vitesse limite de 5 
 > **Si vous naviguez en France à votre retour** : permis côtier obligatoire + CRR si VHF à bord + acte de francisation + assurance RC.
 
 > [MINI-QUIZ]
-> **Question 1 :** Quelle est la limite de vitesse dans la bande des 300 mètres pour un bateau à moteur ?
-> **A)** 3 nœuds
-> **B)** 5 nœuds
-> **C)** 8 nœuds
-> **Réponse:** B — La vitesse est limitée à 5 nœuds dans la bande des 300 mètres des rivages non organisés. Cette règle vise à protéger les nageurs et la faune côtière.
+> **Question 1 :** Le *Deniz Rüzgarı* approche d'une plage non organisée en Méditerranée. À quelle vitesse maximum peut-il naviguer dans les 300 derniers mètres ?
+> **A)** 3 nœuds — limite dans les zones de baignade signalisées
+> **B)** 5 nœuds — limite dans la bande des 300 mètres des rivages non organisés
+> **C)** 8 nœuds — limite dans les eaux côtières en dehors des chenaux
+> **Réponse:** B — En France, la vitesse est limitée à 5 nœuds dans la bande des 300 mètres des rivages non organisés (non délimités par des bouées). Cette règle protège les nageurs et les pratiquants de sports nautiques. Dans les plages balisées (zone des 300m avec bouées), l'accès aux moteurs peut être interdit ou restreint selon la commune.
 >
-> **Question 2 :** Le CRR (Certificat Restreint de Radiotéléphoniste) permet de :
-> **A)** Conduire un bateau à moteur jusqu'à 6 milles
-> **B)** Utiliser la radio VHF de bord, émettre des appels MAYDAY, utiliser le DSC
-> **C)** Naviguer jusqu'à 20 milles des côtes
-> **Réponse:** B — Le CRR est le brevet radio qui autorise l'utilisation du VHF maritime, y compris les procédures MAYDAY, PAN PAN, et le DSC. Il est distinct du permis côtier mais souvent enseigné en même temps.
+> **Question 2 :** Pour utiliser légalement la radio VHF de bord et émettre un MAYDAY, quel document William doit-il posséder en plus du permis côtier ?
+> **A)** Aucun document supplémentaire — le permis côtier inclut les droits radio
+> **B)** Le CRR (Certificat Restreint de Radiotéléphoniste) — brevet radio distinct du permis
+> **C)** Le GMDSS (Global Maritime Distress and Safety System) — obligatoire pour tous les bateaux de plaisance
+> **Réponse:** B — Le CRR (ou son équivalent international SRC — Short Range Certificate) est le brevet radio obligatoire pour utiliser légalement la VHF maritime et ses fonctions MAYDAY, PAN PAN, DSC. Il est distinct du permis côtier mais souvent passé simultanément. Le GMDSS (C) est pour les navires professionnels, pas la plaisance légère.
+>
+> **Question 3 :** Le *Deniz Rüzgarı* navigue sous pavillon turc. Quels documents doivent obligatoirement être à bord ?
+> **A)** Uniquement le titre de navigation (carte grise) — les autres documents peuvent rester à terre
+> **B)** Titre de navigation, assurance, permis du conducteur, et liste de l'équipage avec pièces d'identité
+> **C)** Uniquement le permis côtier du conducteur principal
+> **Réponse:** B — À bord d'un bateau de plaisance en mer, doivent se trouver : (1) le titre de navigation (immatriculation/carte grise), (2) l'attestation d'assurance, (3) le permis de conduire du skipper (et CRR si radio VHF à bord), (4) les pièces d'identité de l'équipage pour les zones soumises à contrôle douanier. En Turquie, s'y ajoutent les documents de transit/visa.
+>
+> **Question 4 :** En France, dans quelle zone côtière la navigation des bateaux à moteur est-elle interdite aux heures de baignade (en règle générale) ?
+> **A)** Dans la bande des 300 mètres — totalement interdite aux bateaux à moteur
+> **B)** Dans la bande des 300 mètres uniquement dans les zones officiellement délimitées par bouées jaunes
+> **C)** Dans la bande des 50 mètres — les 300 mètres sont en "vitesse réduite" uniquement
+> **Réponse:** B — L'interdiction de circulation des engins à moteur s'applique aux zones de baignade officiellement délimitées et signalisées par des bouées (zones surveillées). Hors de ces zones balisées, la bande des 300 mètres est en "vitesse réduite 5 nœuds" mais pas interdite. La réglementation varie selon les arrêtés préfectoraux locaux.
 
 > [TRANSITION]
 > Mercredi matin, dernier jour. Dernier mouillage avant le retour à Fethiye puis Göcek. L'ancre remonte dans la lumière du matin. Une semaine de navigation. William est à la barre. Rebecca, à côté de lui pour la première fois, tient le winch. Elle n'a rien demandé — elle a juste attrapé la manivelle. Emmanuel remarque, ne dit rien. Christelle prend une photo. Tout ce que William a appris, il l'a vécu. Il reste une chose à faire : l'examen blanc.

@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1197,21 +1206,43 @@
 <p><strong>Hamam Koyu (Cleopatra's Bath, 36°46.8'N 28°58.2'E) :</strong></p>
 <p>Fond sableux, 4–8 m. Bonne tenue. Exposition : NE-E uniquement. L'Imbat vient du SW/NW — donc abri excellent.</p>
 <p>Capacité : une dizaine de bateaux. Convention locale : restez à au moins 50 m les uns des autres. Certains gulets s'amarrent en poupe à un rocher à terre (technique provençale avec une touée) — voir le SVG</p>
+</div></div>
 <div class="wiki-image-wrap"><img class="wiki-image" src="../assets/ancrage-touee.svg" alt="ancrage-touee.svg"></div>
+<blockquote>
 <p>La source thermale (40°C) est à 50 mètres à la nage depuis le mouillage.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Vous mouilles par 8 m de fond. Quelle longueur minimale de chaîne filez-vous ?
-<strong>A)</strong> 8 m (1× la hauteur)
-<strong>B)</strong> 16 m (2× la hauteur)
-<strong>C)</strong> 24 m (3× la hauteur d'eau)
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — La règle minimale est 3× la hauteur d'eau totale (fond + tirant d'eau). Par vent fort ou fond difficile, 5× est recommandé.</p>
-</details><p><strong>Question 2 :</strong> Comment vérifiez-vous que l'ancre tient après le mouillage ?
-<strong>A)</strong> En tirant sur la chaîne à la main
-<strong>B)</strong> En prenant deux amers à terre et en vérifiant qu'ils ne bougent pas pendant plusieurs minutes
-<strong>C)</strong> En regardant si d'autres bateaux autour de vous ont bougé
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Deux amers en croix permettent de détecter un dérapage de quelques mètres. Un GPS avec alarme de dérapage (anchor alarm) est aussi utile.</p>
-</details><p>[TRANSITION]
-Le lendemain — dimanche, jour 7 — William consulte la météo. Des nuages à l'horizon, pression en légère baisse. La traversée prévue vers Kızılada peut être plus sportive que prévu. Il est temps d'apprendre à lire le ciel.</p>
+</blockquote>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Vous mouilles dans la crique de Tersane par 6 m de fond, tirant d'eau 1,5 m. Quelle longueur de chaîne minimum filez-vous (règle des 3×) ?</p>
+<ul>
+<li><strong>A)</strong> 18 m (3× le fond seul)</li>
+<li><strong>B)</strong> 22,5 m (3× (fond + tirant))</li>
+<li><strong>C)</strong> 30 m (5× le fond — recommandé pour tout mouillage)</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La règle prudente : longueur de chaîne = 3× (profondeur + tirant d'eau) = 3× (6 + 1,5) = 3× 7,5 = 22,5 m. A ne prend pas en compte le tirant d'eau. C (5×) est recommandé par vent fort mais n'est pas le minimum demandé à l'examen. Par fond vaseux ou vent &gt; 20 nœuds, choisir 5×.</details>
+<p><strong>Question 2 :</strong> Après avoir mouillé dans la baie de Hamam Koyu, comment William vérifie-t-il que l'ancre tient ?</p>
+<ul>
+<li><strong>A)</strong> En tirant fort sur la chaîne avec les mains — si elle ne cède pas, c'est bon</li>
+<li><strong>B)</strong> En prenant deux amers à terre en croix et en observant pendant 5 minutes que les alignements ne bougent pas</li>
+<li><strong>C)</strong> En regardant si les autres bateaux au mouillage autour de lui ont bougé</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Deux amers fixes à terre (clocher + antenne, rocher + maison…) vus depuis la poupe et repérés sur les côtés permettent de détecter un dérapage de quelques mètres. A (tirer à la main) est inefficace — la chaîne tient plusieurs tonnes sous moteur, pas à la main. C ne détecte pas un dérapage général de la baie (coup de vent qui touche tout le monde).</details>
+<p><strong>Question 3 :</strong> Dans la crique de Göcek, un bateau mouille à 30 mètres de vous. Le vent tourne de 30°. Quel phénomène devez-vous anticiper ?</p>
+<ul>
+<li><strong>A)</strong> Rien — un mouillage bien ancré est stable quelle que soit la direction du vent</li>
+<li><strong>B)</strong> Un risque d'abordage si les rayons d'évitage des deux bateaux se chevauchent après le changement de direction du vent</li>
+<li><strong>C)</strong> Un dérapage de votre ancre car la direction de traction change</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Lorsque le vent tourne, chaque bateau &quot;évite&quot; (pivote autour de son ancre) en suivant la nouvelle direction du vent. Si deux bateaux ont des rayons d'évitage différents (chaîne différente, différence de longueur de bateau), ils peuvent se retrouver en collision. C'est l'un des principaux risques en baie très peuplée.</details>
+<p><strong>Question 4 :</strong> Mehmet explique le mouillage méditerranéen &quot;à la turque&quot; (Med-moor). Quelle est sa particularité par rapport au mouillage classique ?</p>
+<ul>
+<li><strong>A)</strong> On mouille l'ancre en avant et on recule pour amarrer la poupe au quai</li>
+<li><strong>B)</strong> On mouille l'ancre en arrière et on avance pour amarrer la proue au quai</li>
+<li><strong>C)</strong> On se place tribord au quai avec une seule amarre de poupe, sans ancre</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Le mouillage méditerranéen (Med-moor) : on avance perpendiculairement au quai, on laisse tomber l'ancre en s'approchant, puis on recule pour filer la chaîne et amarrer la poupe au quai. L'ancre maintient la proue au large. C'est la technique standard dans les marinas méditerranéennes où la place en linéaire est limitée.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Le lendemain — dimanche, jour 7 — William consulte la météo. Des nuages à l'horizon, pression en légère baisse. La traversée prévue vers Kızılada peut être plus sportive que prévu. Il est temps d'apprendre à lire le ciel.</p>
 <p><strong>Session 5.1 — Météo Marine et Planification : lire les bulletins, comprendre les systèmes.</strong></p>
 </div></div>
 

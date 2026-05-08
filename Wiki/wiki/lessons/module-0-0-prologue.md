@@ -79,6 +79,25 @@ Chaque session prend de 20 à 45 minutes. Le cours complet représente environ 1
 
 Les conditions méditerranéennes rendent ce golfe idéal pour l'apprentissage : peu de marée (on le soulignera comme enseignement), visibilité excellente, trafic modéré, fonds repérables à la couleur de l'eau.
 
+> [MINI-QUIZ]
+> **Question 1 :** Quelle est la limite de distance qu'autorise le permis côtier ?
+> **A)** 6 milles nautiques des côtes françaises uniquement
+> **B)** 6 milles nautiques d'un abri, dans toutes les eaux maritimes
+> **C)** 20 milles nautiques d'un abri
+> **Réponse:** B — Le permis plaisance option côtière autorise la navigation jusqu'à 6 milles d'un *abri* (port, rade ou crique protégée), pas 6 milles des côtes. La distance s'apprécie depuis le refuge le plus proche, et non depuis le trait de côte. L'extension hauturière couvre au-delà.
+>
+> **Question 2 :** En naviguant dans le golfe de Göcek (Turquie), quelles règles de priorité s'appliquent ?
+> **A)** Uniquement le droit maritime turc — les règles françaises ne s'appliquent pas à l'étranger
+> **B)** Les COLREGs (convention internationale), identiques partout en mer
+> **C)** Aucune règle formelle — chaque skipper adapte à sa convenance
+> **Réponse:** B — Les COLREGs (Convention on the International Regulations for Preventing Collisions at Sea, RIPAM en français) s'appliquent universellement dans toutes les eaux internationales, quelle que soit la nationalité du navire. Le permis côtier français prépare directement à naviguer sur la Méditerranée turque.
+>
+> **Question 3 :** Un mille nautique (NM) vaut exactement :
+> **A)** 1 000 mètres
+> **B)** 1 609 mètres (le mile terrestre anglais)
+> **C)** 1 852 mètres (une minute d'arc de latitude)
+> **Réponse:** C — Le mille nautique = 1 852 m, défini comme la longueur d'une minute d'arc de latitude sur un grand cercle terrestre. Cette définition permet une conversion directe sur la carte marine : l'échelle des latitudes, 1 minute = 1 NM. Le mile terrestre (1 609 m) n'a aucun usage en navigation maritime.
+
 > [TRANSITION]
 > William pose son carnet — Rebecca est déjà allongée sur le pont avant avec un livre. "Par où on commence ?" demande-t-il. Emmanuel, qui a déjà fait le tour du bateau deux fois, sourit. Mehmet montre le pont. "Par le bateau lui-même. Un bon marin connaît son bateau avant de connaître la mer."
 >

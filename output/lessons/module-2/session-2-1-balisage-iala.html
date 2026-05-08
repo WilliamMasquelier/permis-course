@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1210,19 +1219,39 @@
 <p>Voir <span class="wikilink" data-label="Marques De Musoir">concepts/marques-de-musoir</span>, <span class="wikilink" data-label="Marques De Plage">concepts/marques-de-plage</span>, <span class="wikilink" data-label="Marques Chenal Prefere">concepts/marques-chenal-prefere</span>.</p>
 <div class="callout callout-golfe"><div class="callout-label">🗺️ Exemple — Golfe de Fethiye</div><div class="callout-body">
 <p><strong>Chenal de Fethiye (Fethiye Limanı) :</strong> En approchant de Fethiye depuis le sud-ouest, le chenal est balisé avec des marques latérales IALA A. Les premières bouées rouges cylindriques (bâbord) vous indiquent la limite ouest du chenal. Une cardinale Nord (noire-jaune, topmarks pointes en haut) marque un rocher immergé à l'entrée — vous passez au nord d'elle. Les fonds dans le chenal principal sont de 8–15 m, largement suffisants pour un gulet.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Vous approchez d'une marque à corps noir-jaune rayé horizontal avec deux cônes pointes vers le haut. Que signifie-t-elle et de quel côté passez-vous ?
-<strong>A)</strong> Cardinale Sud — passez au sud
-<strong>B)</strong> Cardinale Nord — passez au nord
-<strong>C)</strong> Marque d'eaux saines — passez de n'importe quel côté
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Corps noir-jaune avec topmarks pointes en haut = Cardinale Nord. Passez au nord de cette marque.</p>
-</details><p><strong>Question 2 :</strong> Une marque à bandes verticales rouges et blanches avec une sphère rouge en topmark se trouve devant vous. Quelle est la règle ?
-<strong>A)</strong> Danger isolé — ne passez pas
-<strong>B)</strong> Eaux saines — passage possible tout autour
-<strong>C)</strong> Marque latérale bâbord — gardez-la à gauche
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Corps rayé rouge-blanc vertical + sphère rouge = marque d'eaux saines. Eaux navigables tout autour. Souvent placée en tête de chenal.</p>
-</details><p>[TRANSITION]
-Göcek à Fethiye : 12 milles, 1h45 de route. L'équipage est impressionné par les falaises et les tombeaux lyciens visibles depuis l'eau. William, lui, a maintenant les bouées en tête. Mais ce qu'il doit apprendre ensuite, c'est à lire la carte qui lui permet de <em>planifier</em> la route avant de lever l'ancre.</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> En entrant dans la marina de Göcek, vous voyez une bouée rouge cylindrique sur votre bâbord (vous venez de la mer). Que signifie-t-elle et que faites-vous ?</p>
+<ul>
+<li><strong>A)</strong> Marque bâbord (IALA A) — gardez-la à bâbord en entrant au port</li>
+<li><strong>B)</strong> Marque tribord (IALA A) — gardez-la à tribord en entrant au port</li>
+<li><strong>C)</strong> Marque cardinale — passez au nord de cette bouée</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — En système IALA région A (Europe, Méditerranée), la marque bâbord est rouge et cylindrique. Elle se laisse à bâbord quand on remonte dans le sens conventionnel (en entrant au port). La règle mnémotechnique : &quot;rouge à gauche en entrant&quot; (IALA A). En système B (Amériques), c'est l'inverse.</details>
+<p><strong>Question 2 :</strong> Une marque avec un corps noir en haut et jaune en bas, surmontée de deux cônes pointes opposées (l'une vers le haut, l'autre vers le bas), indique :</p>
+<ul>
+<li><strong>A)</strong> Cardinale Est — passez à l'est de cette marque</li>
+<li><strong>B)</strong> Cardinale Ouest — passez à l'ouest de cette marque</li>
+<li><strong>C)</strong> Cardinale Sud — passez au sud de cette marque</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Cardinale Ouest : corps jaune en haut, noir en bas (J-N), topmarks deux cônes pointes opposées (&quot;X&quot; vu de côté, ou sablier). Mémo couleurs : N (nord) = noir au-dessus, S (sud) = jaune au-dessus, E (est) = noir-jaune-noir, W (ouest) = jaune-noir-jaune. Passez toujours du côté indiqué par la marque (ici : à l'ouest).</details>
+<p><strong>Question 3 :</strong> Devant vous : une bouée à rayures verticales rouges et blanches, avec une sphère rouge en topmark. Que signifie-t-elle ?</p>
+<ul>
+<li><strong>A)</strong> Danger isolé — eau peu profonde tout autour, évitez</li>
+<li><strong>B)</strong> Marque d'eaux saines — eau navigable tout autour, souvent placée en tête de chenal</li>
+<li><strong>C)</strong> Marque spéciale (travaux, mouillage interdit) — passez au large</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Corps rayé rouge-blanc vertical + sphère rouge = marque d'eaux saines (<em>safe water mark</em>). Les eaux environnantes sont navigables dans toutes les directions. La marque de danger isolé (à éviter) est noire avec bandes horizontales rouges et deux sphères noires en topmark.</details>
+<p><strong>Question 4 :</strong> Vous longez la côte et apercevez une marque jaune en forme de croix (topmark X). Quelle est sa signification ?</p>
+<ul>
+<li><strong>A)</strong> Cardinale Est — passez à l'est</li>
+<li><strong>B)</strong> Marque de danger isolé</li>
+<li><strong>C)</strong> Marque spéciale — zone réglementée (mouillage, câble, zone militaire…)</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — La marque spéciale est entièrement jaune avec un topmark en X jaune. Elle délimite une zone à signification particulière (zone de mouillage, câble sous-marin, zone militaire, circuit de course…). Elle n'indique pas de danger de navigation mais une réglementation à respecter. Ne pas confondre avec les cardinales (corps bicolore noir/jaune).</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Göcek à Fethiye : 12 milles, 1h45 de route. L'équipage est impressionné par les falaises et les tombeaux lyciens visibles depuis l'eau. William, lui, a maintenant les bouées en tête. Mais ce qu'il doit apprendre ensuite, c'est à lire la carte qui lui permet de <em>planifier</em> la route avant de lever l'ancre.</p>
 <p><strong>Session 2.2 — La Carte Marine : lecture, symboles et mesure de distance.</strong></p>
 </div></div>
 

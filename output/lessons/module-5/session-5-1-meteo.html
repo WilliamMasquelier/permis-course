@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1245,24 +1254,45 @@ Tendance : renforcement NW demain matin
 <li>L'état de la mer à l'extérieur du mouillage (houle de fond ?)</li>
 </ol>
 <p>Ne partez jamais avec une météo que vous ne comprenez pas.</p>
-<p>[EXEMPLE GOLFE]
-<strong>Ce dimanche à Hamam Koyu :</strong></p>
+</div></div>
+<div class="callout callout-golfe"><div class="callout-label">🗺️ Exemple — Golfe de Fethiye</div><div class="callout-body">
+<p><strong>Ce dimanche à Hamam Koyu :</strong></p>
 <p>Baromètre : 1012 hPa (–3 en 12h). Cirrus présents. Windfinder : force 4 cet après-midi, rafales 6 possible.</p>
 <p><strong>Décision de William :</strong> Traversée vers Kızılada (7NM) à 9h, avant que le vent monte. Arrivée estimée 10h30 — avant les 14h annoncés comme plus venteux. Ancrage sous abri des vents dominants (NO). Si le vent monte trop : rester à l'ancre.</p>
 <p><strong>Décision correcte.</strong> Un skipper raisonnable part tôt, s'abrite tôt. &quot;Appareiller à l'aube, mouiller avant le vent&quot; — adage méditerranéen.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Le baromètre chute de 5 hPa en 3 heures. Qu'anticipez-vous ?
-<strong>A)</strong> Un temps stable, la pression se stabilise souvent après une chute rapide
-<strong>B)</strong> Probable coup de vent — la règle est 2 hPa/h pendant 3h → vent force 8+
-<strong>C)</strong> Une simple dépression de faible intensité
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Une chute de pression de ≥ 2 hPa/heure pendant 3 heures est associée à des vents de coup de vent (force 8+). 5 hPa en 3h est au-dessus de ce seuil. Cherchez un abri immédiatement.</p>
-</details><p><strong>Question 2 :</strong> Vous voyez des cirrus en &quot;queues de jument&quot; tôt le matin, suivis d'une couverture croissante d'alto-stratus. Quelle est la signification météo probable ?
-<strong>A)</strong> Anticyclone en approche — beau temps pour 48h
-<strong>B)</strong> Front chaud à 12–24h — dégradation progressive
-<strong>C)</strong> Brouillard radiatif matinal qui se dissipera
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La séquence cirrus → cirro-stratus → alto-stratus → nimbo-stratus est la signature classique de l'approche d'un front chaud. Dégradation en 12–24h.</p>
-</details><p>[TRANSITION]
-La traversée vers Kızılada est belle, mais le vent force à 20 nœuds dès 13h. Ils tiennent deux ris dans la grand-voile. À bord, Christelle cherche la trousse de sécurité. &quot;Où est le gilet de sauvetage ?&quot;</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Le baromètre chute de 6 hPa en 3 heures à Kızılada. Quelle est votre décision ?</p>
+<ul>
+<li><strong>A)</strong> Attendez — une chute de 6 hPa peut être normale en Méditerranée estivale</li>
+<li><strong>B)</strong> Cherchez un abri immédiatement — seuil de coup de vent dépassé (≥ 2 hPa/h pendant 3h)</li>
+<li><strong>C)</strong> Réduisez la toile mais continuez — 6 hPa en 3h correspond à un vent de force 6</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Règle météo : ≥ 2 hPa/heure pendant 3 heures consécutives = coup de vent imminent (force 8+, ≥ 34 nœuds). Ici : 6 hPa / 3 h = 2 hPa/h, le seuil est atteint. La décision correcte est de chercher un abri immédiatement, pas d'attendre la confirmation. En Méditerranée, ces coups de vent peuvent se développer en moins d'une heure.</details>
+<p><strong>Question 2 :</strong> Tôt le matin, William voit des cirrus en &quot;queues de jument&quot;, puis une voile de cirro-stratus qui fait apparaître un halo autour du soleil. Quelle est l'interprétation correcte ?</p>
+<ul>
+<li><strong>A)</strong> Anticyclone en formation — beau temps stable pour 48h</li>
+<li><strong>B)</strong> Front chaud à 12–24h — dégradation progressive avec pluie continue probable</li>
+<li><strong>C)</strong> Brouillard radiatif matinal — se dissipera avant 10h</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La séquence cirrus → cirro-stratus (halo solaire) → alto-stratus → nimbo-stratus est la signature classique de l'approche d'un front chaud. Ce processus dure 12 à 24h avant les précipitations. Le halo solaire ou lunaire dans les cirro-stratus est un indicateur fiable de dégradation dans les 24h.</details>
+<p><strong>Question 3 :</strong> Le bulletin Météo France annonce &quot;vent de NW 20–25 nœuds avec rafales à 35 nœuds&quot;. Quelle force Beaufort correspond à 35 nœuds en rafales ?</p>
+<ul>
+<li><strong>A)</strong> Force 6 (vent frais)</li>
+<li><strong>B)</strong> Force 7 (grand frais)</li>
+<li><strong>C)</strong> Force 8 (coup de vent)</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — L'échelle Beaufort : force 6 = 22–27 nœuds, force 7 = 28–33 nœuds, force 8 = 34–40 nœuds. 35 nœuds = force 8 (coup de vent). À cette vitesse, la navigation côtière devient dangereuse pour les plaisanciers non expérimentés. Les 20–25 nœuds de fond correspondent à force 5–6, les rafales à 35 = force 8.</details>
+<p><strong>Question 4 :</strong> L'Imbat (brise thermique) du golfe de Göcek souffle tous les après-midis de SW à NW, force 3–5. Quelle en est la cause principale ?</p>
+<ul>
+<li><strong>A)</strong> Un phénomène de courants marins locaux qui accélèrent l'air en surface</li>
+<li><strong>B)</strong> Le différentiel de température entre la terre (chaude) et la mer (plus fraîche) — la terre chauffe l'air qui monte, la mer aspire l'air frais</li>
+<li><strong>C)</strong> Les anticyclones estivaux méditerranéens qui créent un flux régulier du nord</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La brise thermique (sea breeze) se développe quand la terre se réchauffe plus vite que la mer. L'air chaud au-dessus de la terre monte, créant une dépression locale qui aspire l'air frais de la mer. Elle commence vers 10–11h et atteint son maximum l'après-midi. Prévisible et régulière en été méditerranéen — idéale pour planifier les sorties voile.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>La traversée vers Kızılada est belle, mais le vent force à 20 nœuds dès 13h. Ils tiennent deux ris dans la grand-voile. À bord, Christelle cherche la trousse de sécurité. &quot;Où est le gilet de sauvetage ?&quot;</p>
 <p><strong>Session 5.2 — Équipement de Sécurité : l'armement obligatoire et son utilisation.</strong></p>
 </div></div>
 

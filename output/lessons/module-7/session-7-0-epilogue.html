@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1304,8 +1313,39 @@
 <li>Les questions de balisage et de feux sont visuelles — visualisez mentalement la scène.</li>
 <li>Les questions de règles de barre ont toujours une logique derrière — retrouvez la règle.</li>
 </ol>
-<p>[SCENE]
-<strong>Göcek Marina, D-Marin, 10h30.</strong></p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> En entrant dans le chenal de la marina de Göcek, William voit une bouée rouge conique à droite et une bouée verte cylindrique à gauche. Il vient de la mer. Quel côté garde-t-il chaque bouée ?</p>
+<ul>
+<li><strong>A)</strong> Bouée rouge à bâbord (gauche), bouée verte à tribord (droite)</li>
+<li><strong>B)</strong> Bouée rouge à tribord (droite), bouée verte à bâbord (gauche)</li>
+<li><strong>C)</strong> Les deux côtés sont équivalents — choisir le côté le plus large</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — En système IALA A (Méditerranée, Europe) : en entrant dans le port (en remontant dans le sens conventionnel), la marque de tribord est rouge et se garde à tribord (droite). La marque de bâbord est verte et se garde à bâbord (gauche). Mnémotechnique : &quot;rouge à droite en rentrant&quot; (IALA A). En IALA B (Amériques), c'est l'inverse — &quot;red right returning&quot;.</details>
+<p><strong>Question 2 :</strong> La veille du départ de Göcek, William relit ses notes. Parmi ces signaux sonores, lequel est FAUX ?</p>
+<ul>
+<li><strong>A)</strong> 1 son long par visibilité réduite (navire à moteur en route) = signal correct</li>
+<li><strong>B)</strong> 3 sons brefs = &quot;mes machines sont en marche arrière&quot; = signal correct</li>
+<li><strong>C)</strong> 4 sons brefs = &quot;je vire à bâbord&quot; = signal correct</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — Il n'existe pas de signal &quot;4 sons brefs&quot;. Les signaux de manœuvre en vue d'un autre navire sont : 1 bref = gouverne à tribord, 2 brefs = gouverne à bâbord, 3 brefs = machines en marche arrière, 5 brefs = danger / incompréhension. 4 sons brefs n'a pas de signification réglementaire.</details>
+<p><strong>Question 3 :</strong> William récapitule les priorités COLREGs. Laquelle de ces affirmations est CORRECTE ?</p>
+<ul>
+<li><strong>A)</strong> Un voilier sous voiles cède toujours le passage à un navire à moteur en situation de croisement</li>
+<li><strong>B)</strong> Un navire à moteur cède le passage à un voilier sous voiles — sauf en chenal étroit ou en situation de rattrapage</li>
+<li><strong>C)</strong> Le plus petit navire est toujours prioritaire sur le plus grand, quelle que soit la situation</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Règle 18 : navire à moteur s'écarte devant voilier sous voiles (hors exceptions). Exceptions : règle 9 (chenal étroit — le voilier cède au navire contraint), règle 13 (rattrapage — le rattrapant cède quelle que soit sa catégorie). La taille (C) n'est jamais un critère de priorité dans le RIPAM.</details>
+<p><strong>Question 4 :</strong> Au dernier soir, Emmanuel pose la question : &quot;Le tirant d'eau du <em>Deniz Rüzgarı</em> est 2 m. La carte indique une sonde de 1,8 m dans une crique. La marée est à +0,5 m au-dessus du zéro hydrographique. Peut-on entrer ?&quot;</p>
+<ul>
+<li><strong>A)</strong> Oui — profondeur réelle = 1,8 + 0,5 = 2,3 m, supérieure au tirant de 2 m</li>
+<li><strong>B)</strong> Non — la sonde carte est de 1,8 m, inférieure au tirant de 2 m, point</li>
+<li><strong>C)</strong> Oui — la marge de 0,3 m est suffisante pour un ketch de 13 m</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Profondeur réelle = Sonde + Hauteur de marée = 1,8 + 0,5 = 2,3 m. Avec un tirant de 2 m, la marge est de 0,3 m. C'est juste mais mathématiquement possible — en pratique on ajouterait 0,5 m de marge de sécurité supplémentaire sur fond inconnu. B ignore la marée montante. La réponse correcte à l'examen est A (calcul correct), mais la décision prudente ajouterait une marge.</details>
+</div></div>
+<div class="callout callout-scene"><div class="callout-label">⚓ Scène</div><div class="callout-body">
+<p><strong>Göcek Marina, D-Marin, 10h30.</strong></p>
 <p>L'ancre remonte. Les amarres sont larguées. Le <em>Deniz Rüzgarı</em> glisse vers son poste au ponton F.</p>
 <p>William passe son dernier cap. La marina est calme — d'autres bateaux partent pour leur journée. Il voit maintenant chaque détail : les feux de direction à l'entrée du chenal, les marques latérales (verte à tribord en entrant), l'anémomètre qui tourne doucement dans le vent matinal.</p>
 <p>Emmanuel est sur le ponton — il a sauté à terre à l'approche, comme un marin. Il attrape l'amarre de proue. Mehmet attrape la poupe.</p>

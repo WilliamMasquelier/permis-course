@@ -156,17 +156,29 @@ Voir [[concepts/moyens-reperage]].
 > 4 gilets 150N automatiques, un par passager + 2 de réserve. Extincteur CO2 en carré + extincteur à poudre en salle des machines. 4 feux parachutes, 4 feux à main (durée 2026). VHF fixe + portatif (canal 16 ouvert en permanence). EPIRB 406 MHz enregistrée (MMSI 271...). Trousse de premiers secours avec manuel RCP.
 
 > [MINI-QUIZ]
-> **Question 1 :** À quelle distance maximale d'un abri peut naviguer un bateau en catégorie de navigation 4 ?
-> **A)** 2 milles nautiques
-> **B)** 6 milles nautiques
-> **C)** 20 milles nautiques
-> **Réponse:** B — Catégorie 4 : jusqu'à 6 milles d'un abri. C'est le niveau couvert par le permis côtier.
+> **Question 1 :** Le *Deniz Rüzgarı* navigue à 5 milles d'un abri. Quelle catégorie de navigation correspond à cette zone ?
+> **A)** Catégorie 3 — navigation côtière jusqu'à 20 milles d'un abri
+> **B)** Catégorie 4 — navigation jusqu'à 6 milles d'un abri (niveau permis côtier)
+> **C)** Catégorie 5 — navigation en eaux protégées uniquement (rias, lacs)
+> **Réponse:** B — La catégorie 4 couvre jusqu'à 6 milles nautiques d'un abri. C'est le niveau requis pour le permis côtier. La catégorie 3 va jusqu'à 20 milles ; la catégorie 5 est réservée aux eaux abritées et estuaires. À 5 NM d'un abri, le *Deniz Rüzgarı* est en catégorie 4.
 >
-> **Question 2 :** Un gilet gonflable automatique 150N peut-il retourner une personne inconsciente face vers le haut ?
-> **A)** Non — les 100N et 150N ne peuvent pas retourner une personne
-> **B)** Oui — le 150N est conçu pour cela
-> **C)** Seulement en eau calme
-> **Réponse:** B — Le 150N est conçu pour retourner une personne inconsciente face vers le ciel dans des conditions normales. Le 100N ne garantit pas ce retournement.
+> **Question 2 :** Un équipier tombe à l'eau et est inconscient. Quel gilet de sauvetage est capable de le retourner face vers le haut ?
+> **A)** Un gilet 50N (aide à la flottabilité) — suffisant pour les nageurs
+> **B)** Un gilet 100N — il maintient à flot mais ne retourne pas une personne inconsciente
+> **C)** Un gilet 150N — conçu pour retourner une personne inconsciente en toutes conditions
+> **Réponse:** C — Les normes ISO définissent : 50N = aide à la flottabilité (nageurs en eaux calmes), 100N = maintient à flot mais ne garantit pas le retournement, 150N = retourne et maintient une personne inconsciente visage hors de l'eau dans des conditions normales. Pour la navigation en mer, le minimum recommandé est le 150N automatique.
+>
+> **Question 3 :** L'armement de sécurité du *Deniz Rüzgarı* comprend une balise de détresse EPIRB. Sur quelle fréquence émet-elle et vers quel système ?
+> **A)** VHF canal 16 (156,8 MHz) — vers les CROSS côtiers
+> **B)** 406 MHz — vers le système satellitaire COSPAS-SARSAT (MRCC mondial)
+> **C)** 2182 kHz (onde longue) — vers les gardes côtes par radio HF
+> **Réponse:** B — Une EPIRB (Emergency Position Indicating Radio Beacon) émet sur 406 MHz vers le réseau de satellites COSPAS-SARSAT qui retransmet l'alerte aux MRCC (Maritime Rescue Coordination Centre). Elle inclut un GPS intégré pour la position précise. Le VHF 16 est le canal de détresse vocal (MAYDAY) mais ne remplace pas l'EPIRB.
+>
+> **Question 4 :** Combien d'extincteurs minimum un bateau de moins de 7 mètres à moteur doit-il avoir à bord en catégorie 4 ?
+> **A)** Aucun — obligatoire uniquement pour les bateaux de plus de 10 mètres
+> **B)** Un extincteur de type B (feux d'hydrocarbures) ou ABC de 1 kg minimum
+> **C)** Deux extincteurs — un en cockpit, un dans la cabine moteur
+> **Réponse:** B — Pour un bateau à moteur de moins de 7 mètres en catégorie 4, au minimum un extincteur de type B (feux de liquides inflammables) ou ABC est requis. Pour les bateaux plus grands, plusieurs extincteurs sont nécessaires. Sur le *Deniz Rüzgarı* (13,5 m), l'armement est plus complet incluant extincteurs fixes dans la salle des machines.
 
 > [TRANSITION]
 > Lundi matin, William organise un exercice. Il jette une bouteille à la mer et crie "Homme à la mer !" L'équipage, surpris, réagit avec un temps de retard. Exactement ce qu'il voulait tester.

@@ -103,17 +103,29 @@ Voir [[concepts/voile-trim-efficace]].
 > Si l'Imbat force à 20 nœuds : un ris dans la grand-voile avant que ce soit nécessaire. Le gulet reste bien équilibré et la vitesse ne diminue pas beaucoup — la surface réduite est compensée par la pression plus forte.
 
 > [MINI-QUIZ]
-> **Question 1 :** Votre voilier est au près serré, amure tribord. Un autre voilier arrive en face de vous, amure bâbord. Qui est prioritaire ?
-> **A)** Vous — amure tribord est prioritaire
-> **B)** L'autre — il est sur l'amure contraire et a la priorité
-> **C)** Celui qui est le plus près du vent
-> **Réponse:** A — Amure tribord est toujours prioritaire sur amure bâbord entre deux voiliers sous voiles.
+> **Question 1 :** Le *Deniz Rüzgarı* est au près serré, amure tribord. Un autre voilier arrive en sens contraire, amure bâbord. Qui cède le passage ?
+> **A)** L'autre voilier — il est amure bâbord, l'amure tribord est prioritaire
+> **B)** Le *Deniz Rüzgarı* — il est au près, donc il peut facilement lofer
+> **C)** Ni l'un ni l'autre — en situation face à face chacun vire à tribord
+> **Réponse:** A — Entre deux voiliers sous voiles, la règle 12 du RIPAM : l'amure tribord (vent de tribord) est toujours prioritaire sur l'amure bâbord. Le *Deniz Rüzgarı*, amure tribord, est le stand-on vessel. L'autre voilier (amure bâbord) doit s'écarter. C s'applique aux bateaux à moteur en situation face à face, pas aux voiliers sous voiles.
 >
-> **Question 2 :** Vos penons (tell-tales) côté sous le vent s'enroulent vers le bas. Que faites-vous ?
-> **A)** Vous bordez l'écoute (tendez)
-> **B)** Vous choquez l'écoute (libérez)
-> **C)** Vous lofiez légèrement
-> **Réponse:** B — Les penons qui s'enroulent côté sous le vent indiquent une voile trop bordée (angle d'attaque trop grand). Choquez légèrement l'écoute pour que les deux penons volent horizontalement.
+> **Question 2 :** Les deux voiliers de la question précédente sont tous deux amure bâbord, le *Deniz Rüzgarı* étant au vent de l'autre. Qui cède le passage ?
+> **A)** Le *Deniz Rüzgarı* — il est au vent et doit s'écarter pour protéger l'autre
+> **B)** L'autre voilier — il est sous le vent et ne peut pas facilement voir le *Deniz Rüzgarı*
+> **C)** Ni l'un ni l'autre — même amure, il n'y a pas de règle de priorité
+> **Réponse:** A — Règle 12 : même amure → le navire au vent s'écarte. Le *Deniz Rüzgarı* est au vent de l'autre (le vent lui vient d'abord), donc il doit céder. Logique : le bateau sous le vent a moins de visibilité et moins de marge de manœuvre (il ne peut pas lofer sans risquer de chavirer contre l'autre).
+>
+> **Question 3 :** L'Imbat de l'après-midi souffle 15 nœuds du SW. Le *Deniz Rüzgarı* veut rejoindre Göcek qui est droit dans l'axe du vent. Quel est le cap à adopter ?
+> **A)** Cap direct sur Göcek (vent debout) — avec une grand-voile et un génois bien bordés
+> **B)** Tirer des bords au près serré en zigzag, en alternant amure tribord et amure bâbord
+> **C)** Attendre que le vent tourne — il est impossible de progresser face au vent
+> **Réponse:** B — Un voilier ne peut pas naviguer directement face au vent (zone morte : environ 45° de chaque côté de l'axe du vent). Pour remonter au vent, il faut louvoyer (tirer des bords) en alternant les amures au plus près serré. A est impossible ; C est faux — le louvoyage est précisément la technique pour progresser face au vent.
+>
+> **Question 4 :** Les penons (tell-tales) du *Deniz Rüzgarı* côté sous le vent s'enroulent vers le bas. Que doit faire William ?
+> **A)** Border l'écoute (tirer dessus) — la voile est trop libre
+> **B)** Choquer l'écoute (libérer) — la voile est trop bordée, l'angle d'attaque est trop grand
+> **C)** Lofer légèrement — il faut rapprocher l'axe du bateau du vent
+> **Réponse:** B — Penons sous le vent enroulés = signe de décrochage côté sous le vent : la voile est trop bordée (trop tendue par rapport au vent apparent). Choquer légèrement l'écoute réduit l'angle d'attaque et le décrochage disparaît. Border (A) aggraverait le problème. Lofer (C) est utilisé quand les penons AU VENT s'agitent (voile trop abattue).
 
 > [TRANSITION]
 > Le retour vers Göcek sous voile est magnifique. Mais à l'approche de la marina, il faut amener les voiles et manœuvrer au moteur dans l'espace réduit. "Comment on mouille l'ancre dans une crique ? Comment on accoste le long d'un quai ?" demande William.

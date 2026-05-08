@@ -96,17 +96,29 @@ Les **feux d'alignement** (*leading lights*) sont deux phares spécialement plac
 > Si vous voyez le feu rouge : cap trop à l'ouest, danger rocheux. Abattez vers l'est (tribord) jusqu'à retrouver le blanc.
 
 > [MINI-QUIZ]
-> **Question 1 :** La caractéristique `Fl(3)G 10s` signifie :
-> **A)** Trois éclats verts, période de 10 secondes
-> **B)** Trois éclats, fond vert, 10 secondes de portée
-> **C)** Feu vert fixe, groupe de 3, visible 10 milles
-> **Réponse:** A — Fl(3)G = 3 éclats verts, 10s = période totale de 10 secondes. G = Green (vert). La portée serait notée en milles nautiques à la fin (ex: 10M).
+> **Question 1 :** La caractéristique de feu `Fl(3)G 10s 8M` signifie :
+> **A)** Trois éclats verts, période de 10 secondes, portée de 8 milles nautiques
+> **B)** Trois éclats, fond vert, 10 secondes de flash, visible à 8 km
+> **C)** Feu vert fixe, groupe de 3 occultations, portée 10 milles, hauteur 8 mètres
+> **Réponse:** A — Fl = feu à éclats (*flashing*) ; (3) = groupe de 3 éclats par période ; G = vert (*green*) ; 10s = durée totale de la période (éclats + obscurités) ; 8M = portée nominale de 8 milles nautiques. La portée est toujours en milles (M) et la période en secondes (s).
 >
-> **Question 2 :** De nuit, vous approchez un chenal et vous voyez le feu de secteur rouge. Que faites-vous ?
-> **A)** Vous êtes dans le secteur sûr, continuez
-> **B)** Vous êtes trop à bâbord (danger), abattez vers tribord
-> **C)** Vous êtes trop à tribord (danger), abattez vers bâbord
-> **Réponse:** B — Dans la convention des phares sectoriels, rouge = danger à bâbord du chenal (vous êtes trop à gauche). Abattez vers tribord pour revenir dans le blanc.
+> **Question 2 :** De nuit, vous approchez le chenal de Göcek et vous voyez le secteur rouge d'un phare à secteurs. Que faites-vous ?
+> **A)** Continuez — le rouge indique le chenal sûr pour ce type de feu
+> **B)** Abattez vers tribord — le rouge signifie que vous êtes trop à bâbord du chenal (danger)
+> **C)** Abattez vers bâbord — le rouge signifie que vous êtes trop à tribord du chenal
+> **Réponse:** B — Convention des feux à secteurs : blanc = chenal sûr, rouge = vous êtes à bâbord du chenal (trop à gauche — danger côté bâbord), vert = vous êtes à tribord du chenal (trop à droite — danger côté tribord). Pour revenir dans le blanc depuis le rouge, virez à tribord.
+>
+> **Question 3 :** Un phare a une "portée nominale" de 15 milles. Par bonne visibilité (30 milles), combien de milles avant verrez-vous ce phare ?
+> **A)** 15 milles — la portée nominale est la portée réelle en toutes conditions
+> **B)** 30 milles — par excellente visibilité on voit plus loin que la portée nominale
+> **C)** Entre 15 et 30 milles — la portée géographique (liée à la hauteur du phare) peut être limitante
+> **Réponse:** C — La portée nominale est calculée pour une visibilité météorologique de 10 milles nautiques (visibilité de nuit standard). Par visibilité supérieure, la portée réelle peut dépasser la nominale, jusqu'à la portée géographique (distance à laquelle la courbure terrestre cache le phare). En pratique, vérifiez la portée géographique dans l'annuaire des phares.
+>
+> **Question 4 :** Mehmet pointe vers la côte : "Tu vois ce clocher blanc et ce château derrière lui, alignés ?" William les voit superposés. À quoi leur alignement sert-il ?
+> **A)** À identifier le mouillage — chaque mouillage a un amer désigné par convention
+> **B)** À former un transit (alignement) donnant une ligne de position très précise, sans compas
+> **C)** À évaluer la distance à la côte par la méthode des angles
+> **Réponse:** B — Deux amers vus superposés forment un transit (*leading line*) : une ligne de position précise sans utiliser de compas ni de GPS. Il suffit de rester sur l'alignement pour suivre une route déterminée. C'est une technique fondamentale de pilotage côtier, utilisée notamment pour entrer dans un chenal en gardant les amers superposés.
 
 > [TRANSITION]
 > Fethiye au matin ressemble à une carte postale — les tombeaux lyciens orange dans la falaise, les gulets blancs dans le port, les pêcheurs qui rentrent. Mais demain, William doit planifier une route complexe : cap sur Ölüdeniz, à 17 milles au sud-ouest. Il faudra tenir un cap précis, corriger la dérive, penser aux courants.

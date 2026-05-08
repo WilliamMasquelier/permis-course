@@ -129,17 +129,29 @@ Voir [[concepts/marques-de-musoir]], [[concepts/marques-de-plage]], [[concepts/m
 > **Chenal de Fethiye (Fethiye Limanı) :** En approchant de Fethiye depuis le sud-ouest, le chenal est balisé avec des marques latérales IALA A. Les premières bouées rouges cylindriques (bâbord) vous indiquent la limite ouest du chenal. Une cardinale Nord (noire-jaune, topmarks pointes en haut) marque un rocher immergé à l'entrée — vous passez au nord d'elle. Les fonds dans le chenal principal sont de 8–15 m, largement suffisants pour un gulet.
 
 > [MINI-QUIZ]
-> **Question 1 :** Vous approchez d'une marque à corps noir-jaune rayé horizontal avec deux cônes pointes vers le haut. Que signifie-t-elle et de quel côté passez-vous ?
-> **A)** Cardinale Sud — passez au sud
-> **B)** Cardinale Nord — passez au nord
-> **C)** Marque d'eaux saines — passez de n'importe quel côté
-> **Réponse:** B — Corps noir-jaune avec topmarks pointes en haut = Cardinale Nord. Passez au nord de cette marque.
+> **Question 1 :** En entrant dans la marina de Göcek, vous voyez une bouée rouge cylindrique sur votre bâbord (vous venez de la mer). Que signifie-t-elle et que faites-vous ?
+> **A)** Marque bâbord (IALA A) — gardez-la à bâbord en entrant au port
+> **B)** Marque tribord (IALA A) — gardez-la à tribord en entrant au port
+> **C)** Marque cardinale — passez au nord de cette bouée
+> **Réponse:** A — En système IALA région A (Europe, Méditerranée), la marque bâbord est rouge et cylindrique. Elle se laisse à bâbord quand on remonte dans le sens conventionnel (en entrant au port). La règle mnémotechnique : "rouge à gauche en entrant" (IALA A). En système B (Amériques), c'est l'inverse.
 >
-> **Question 2 :** Une marque à bandes verticales rouges et blanches avec une sphère rouge en topmark se trouve devant vous. Quelle est la règle ?
-> **A)** Danger isolé — ne passez pas
-> **B)** Eaux saines — passage possible tout autour
-> **C)** Marque latérale bâbord — gardez-la à gauche
-> **Réponse:** B — Corps rayé rouge-blanc vertical + sphère rouge = marque d'eaux saines. Eaux navigables tout autour. Souvent placée en tête de chenal.
+> **Question 2 :** Une marque avec un corps noir en haut et jaune en bas, surmontée de deux cônes pointes opposées (l'une vers le haut, l'autre vers le bas), indique :
+> **A)** Cardinale Est — passez à l'est de cette marque
+> **B)** Cardinale Ouest — passez à l'ouest de cette marque
+> **C)** Cardinale Sud — passez au sud de cette marque
+> **Réponse:** B — Cardinale Ouest : corps jaune en haut, noir en bas (J-N), topmarks deux cônes pointes opposées ("X" vu de côté, ou sablier). Mémo couleurs : N (nord) = noir au-dessus, S (sud) = jaune au-dessus, E (est) = noir-jaune-noir, W (ouest) = jaune-noir-jaune. Passez toujours du côté indiqué par la marque (ici : à l'ouest).
+>
+> **Question 3 :** Devant vous : une bouée à rayures verticales rouges et blanches, avec une sphère rouge en topmark. Que signifie-t-elle ?
+> **A)** Danger isolé — eau peu profonde tout autour, évitez
+> **B)** Marque d'eaux saines — eau navigable tout autour, souvent placée en tête de chenal
+> **C)** Marque spéciale (travaux, mouillage interdit) — passez au large
+> **Réponse:** B — Corps rayé rouge-blanc vertical + sphère rouge = marque d'eaux saines (*safe water mark*). Les eaux environnantes sont navigables dans toutes les directions. La marque de danger isolé (à éviter) est noire avec bandes horizontales rouges et deux sphères noires en topmark.
+>
+> **Question 4 :** Vous longez la côte et apercevez une marque jaune en forme de croix (topmark X). Quelle est sa signification ?
+> **A)** Cardinale Est — passez à l'est
+> **B)** Marque de danger isolé
+> **C)** Marque spéciale — zone réglementée (mouillage, câble, zone militaire…)
+> **Réponse:** C — La marque spéciale est entièrement jaune avec un topmark en X jaune. Elle délimite une zone à signification particulière (zone de mouillage, câble sous-marin, zone militaire, circuit de course…). Elle n'indique pas de danger de navigation mais une réglementation à respecter. Ne pas confondre avec les cardinales (corps bicolore noir/jaune).
 
 > [TRANSITION]
 > Göcek à Fethiye : 12 milles, 1h45 de route. L'équipage est impressionné par les falaises et les tombeaux lyciens visibles depuis l'eau. William, lui, a maintenant les bouées en tête. Mais ce qu'il doit apprendre ensuite, c'est à lire la carte qui lui permet de *planifier* la route avant de lever l'ancre.

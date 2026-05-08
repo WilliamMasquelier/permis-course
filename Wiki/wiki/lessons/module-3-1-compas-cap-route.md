@@ -128,17 +128,29 @@ Voir [[concepts/navigation-relevements]].
 > Prenez un relèvement sur les falaises de Belcekız (pointe est d'Ölüdeniz) quand vous approchez pour confirmer la position.
 
 > [MINI-QUIZ]
-> **Question 1 :** Votre cap vrai est 090°V, la variation magnétique est +5°E. Quel cap magnétique tenez-vous ?
+> **Question 1 :** Cap vrai 090°V, variation magnétique +5°E. Quel cap magnétique tenez-vous ?
 > **A)** 085°M
 > **B)** 090°M
 > **C)** 095°M
-> **Réponse:** A — Cap magnétique = Cap vrai – Variation Est = 090° – 5° = 085°M. (Règle : "East is least" — une variation Est se soustrait du cap vrai pour donner le cap magnétique.)
+> **Réponse:** A — Cap magnétique = Cap vrai − Variation Est = 090° − 5° = 085°M. Règle mnémotechnique : "East is least, West is best" (une variation Est se soustrait du cap vrai pour obtenir le cap magnétique ; une variation Ouest s'additionne). B serait correct si la variation était nulle ; C correspond à une variation Ouest.
 >
-> **Question 2 :** Le relèvement d'un navire sur votre bâbord reste constant à 285° depuis 5 minutes pendant qu'il s'approche. Que faites-vous ?
-> **A)** Maintenir le cap, vous avez la priorité
-> **B)** Il n'y a pas de risque d'abordage, relèvement constant signifie routes parallèles
-> **C)** Risque d'abordage — appliquer les règles de barre immédiatement
-> **Réponse:** C — Relèvement constant + distance qui diminue = risque d'abordage certain. Appliquez les COLREGs immédiatement. Ne pas attendre.
+> **Question 2 :** Cap magnétique 240°M, déviation du compas −4°. Quel cap indique le compas de bord ?
+> **A)** 244°Cc
+> **B)** 240°Cc
+> **C)** 236°Cc
+> **Réponse:** C — Déviation −4° signifie que le compas lit 4° de MOINS que le magnétique. Cap compas = Cap magnétique + Déviation = 240° + (−4°) = 236°Cc. Piège fréquent : si la déviation est négative, le compas sous-estime la valeur magnétique. A correspond à une déviation de +4°.
+>
+> **Question 3 :** Le relèvement du cap Nord-Ouest de Tersane Island reste constant à 315° depuis 5 minutes, et l'île semble se rapprocher. Que faites-vous ?
+> **A)** Maintenez le cap — un relèvement constant signifie que vous avez la priorité
+> **B)** Ralentissez légèrement pour laisser passer
+> **C)** Danger d'abordage avéré — déterminez qui est prioritaire et manœuvrez immédiatement
+> **Réponse:** C — Relèvement constant + distance décroissante = routes convergentes = collision certaine si aucun n'agit. "Maintenir le cap" (A) est la réaction du stand-on vessel SEULEMENT si une règle de priorité vous le permet — mais il faut d'abord identifier qui est prioritaire. Ralentir seul (B) est insuffisant si les routes se croisent.
+>
+> **Question 4 :** Emmanuel explique à William : "Sur une carte, le nord magnétique est décalé de 4° Est par rapport au nord géographique ici. Mais attention, ça change chaque année." De quoi parle-t-il ?
+> **A)** De la déviation — l'erreur propre au compas du *Deniz Rüzgarı*
+> **B)** De la variation magnétique — le décalage entre nord géographique et nord magnétique, propre à chaque lieu et époque
+> **C)** De la déclinaison astronomique — angle entre l'axe de rotation et le champ magnétique terrestre
+> **Réponse:** B — La variation magnétique (ou déclinaison magnétique) est le décalage entre le nord vrai (géographique) et le nord magnétique, donné par la rose des vents de la carte. Elle est propre à chaque endroit du globe et varie lentement avec le temps (dérive séculaire). La déviation est l'erreur propre au compas du bateau, due aux masses ferriques ou électroniques à bord.
 
 > [TRANSITION]
 > Cap sur Ölüdeniz. À mi-chemin, Emmanuel observe la mer, pensif. "Elle est belle et calme. Mais si on était à Brest, à cette heure-ci, il faudrait vérifier la marée avant de partir..." Rebecca, depuis l'arrière : "Aux Bahamas non plus il n'y a presque pas de marée — la mer des Caraïbes est comme ça." Emmanuel se retourne, surpris. "Vraiment ?" William sourit. "Exactement — première fois depuis le départ que vous trouvez un point commun. Justement. Parlons marées."

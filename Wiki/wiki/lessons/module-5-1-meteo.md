@@ -139,17 +139,29 @@ Comprendre les vents locaux de votre zone de navigation est aussi important que 
 > **Décision correcte.** Un skipper raisonnable part tôt, s'abrite tôt. "Appareiller à l'aube, mouiller avant le vent" — adage méditerranéen.
 
 > [MINI-QUIZ]
-> **Question 1 :** Le baromètre chute de 5 hPa en 3 heures. Qu'anticipez-vous ?
-> **A)** Un temps stable, la pression se stabilise souvent après une chute rapide
-> **B)** Probable coup de vent — la règle est 2 hPa/h pendant 3h → vent force 8+
-> **C)** Une simple dépression de faible intensité
-> **Réponse:** B — Une chute de pression de ≥ 2 hPa/heure pendant 3 heures est associée à des vents de coup de vent (force 8+). 5 hPa en 3h est au-dessus de ce seuil. Cherchez un abri immédiatement.
+> **Question 1 :** Le baromètre chute de 6 hPa en 3 heures à Kızılada. Quelle est votre décision ?
+> **A)** Attendez — une chute de 6 hPa peut être normale en Méditerranée estivale
+> **B)** Cherchez un abri immédiatement — seuil de coup de vent dépassé (≥ 2 hPa/h pendant 3h)
+> **C)** Réduisez la toile mais continuez — 6 hPa en 3h correspond à un vent de force 6
+> **Réponse:** B — Règle météo : ≥ 2 hPa/heure pendant 3 heures consécutives = coup de vent imminent (force 8+, ≥ 34 nœuds). Ici : 6 hPa / 3 h = 2 hPa/h, le seuil est atteint. La décision correcte est de chercher un abri immédiatement, pas d'attendre la confirmation. En Méditerranée, ces coups de vent peuvent se développer en moins d'une heure.
 >
-> **Question 2 :** Vous voyez des cirrus en "queues de jument" tôt le matin, suivis d'une couverture croissante d'alto-stratus. Quelle est la signification météo probable ?
-> **A)** Anticyclone en approche — beau temps pour 48h
-> **B)** Front chaud à 12–24h — dégradation progressive
-> **C)** Brouillard radiatif matinal qui se dissipera
-> **Réponse:** B — La séquence cirrus → cirro-stratus → alto-stratus → nimbo-stratus est la signature classique de l'approche d'un front chaud. Dégradation en 12–24h.
+> **Question 2 :** Tôt le matin, William voit des cirrus en "queues de jument", puis une voile de cirro-stratus qui fait apparaître un halo autour du soleil. Quelle est l'interprétation correcte ?
+> **A)** Anticyclone en formation — beau temps stable pour 48h
+> **B)** Front chaud à 12–24h — dégradation progressive avec pluie continue probable
+> **C)** Brouillard radiatif matinal — se dissipera avant 10h
+> **Réponse:** B — La séquence cirrus → cirro-stratus (halo solaire) → alto-stratus → nimbo-stratus est la signature classique de l'approche d'un front chaud. Ce processus dure 12 à 24h avant les précipitations. Le halo solaire ou lunaire dans les cirro-stratus est un indicateur fiable de dégradation dans les 24h.
+>
+> **Question 3 :** Le bulletin Météo France annonce "vent de NW 20–25 nœuds avec rafales à 35 nœuds". Quelle force Beaufort correspond à 35 nœuds en rafales ?
+> **A)** Force 6 (vent frais)
+> **B)** Force 7 (grand frais)
+> **C)** Force 8 (coup de vent)
+> **Réponse:** C — L'échelle Beaufort : force 6 = 22–27 nœuds, force 7 = 28–33 nœuds, force 8 = 34–40 nœuds. 35 nœuds = force 8 (coup de vent). À cette vitesse, la navigation côtière devient dangereuse pour les plaisanciers non expérimentés. Les 20–25 nœuds de fond correspondent à force 5–6, les rafales à 35 = force 8.
+>
+> **Question 4 :** L'Imbat (brise thermique) du golfe de Göcek souffle tous les après-midis de SW à NW, force 3–5. Quelle en est la cause principale ?
+> **A)** Un phénomène de courants marins locaux qui accélèrent l'air en surface
+> **B)** Le différentiel de température entre la terre (chaude) et la mer (plus fraîche) — la terre chauffe l'air qui monte, la mer aspire l'air frais
+> **C)** Les anticyclones estivaux méditerranéens qui créent un flux régulier du nord
+> **Réponse:** B — La brise thermique (sea breeze) se développe quand la terre se réchauffe plus vite que la mer. L'air chaud au-dessus de la terre monte, créant une dépression locale qui aspire l'air frais de la mer. Elle commence vers 10–11h et atteint son maximum l'après-midi. Prévisible et régulière en été méditerranéen — idéale pour planifier les sorties voile.
 
 > [TRANSITION]
 > La traversée vers Kızılada est belle, mais le vent force à 20 nœuds dès 13h. Ils tiennent deux ris dans la grand-voile. À bord, Christelle cherche la trousse de sécurité. "Où est le gilet de sauvetage ?"

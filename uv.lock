@@ -367,13 +367,13 @@ dependencies = [
     { name = "pyobjc-framework-quartz" },
     { name = "pyobjc-framework-vision" },
     { name = "pypdfium2" },
-    { name = "report-renderer" },
 ]
 
 [package.dev-dependencies]
 dev = [
     { name = "pyright" },
     { name = "pytest" },
+    { name = "report-renderer" },
     { name = "ruff" },
 ]
 
@@ -387,13 +387,13 @@ requires-dist = [
     { name = "pyobjc-framework-quartz", specifier = ">=12.1" },
     { name = "pyobjc-framework-vision", specifier = ">=12.1" },
     { name = "pypdfium2" },
-    { name = "report-renderer", directory = "../stromy-org/libs/report-renderer" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "pyright" },
     { name = "pytest" },
+    { name = "report-renderer", directory = "../stromy-org/libs/report-renderer" },
     { name = "ruff" },
 ]
 

@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1215,19 +1224,39 @@ PM  01h02  5,8 m  (heure légale CEST = UTC+2)
 <p>BM : 0,05 m. PM : 0,28 m. Marnage : 0,23 m. Coefficient équivalent : ~15 (morte-eau extrême).</p>
 <p><strong>Impact pratique :</strong> Nul. Un tirant d'eau de 1,8 m peut entrer dans n'importe quelle crique dont la sonde carte est ≥ 2,0 m à n'importe quelle heure.</p>
 <p><strong>Contraste pédagogique :</strong> À Brest (même semaine), PM : 7,1 m, BM : 1,0 m. Marnage : 6,1 m. Coefficient : 95 (grande vive-eau). Le <em>Deniz Rüzgarı</em> serait échoué dans plusieurs mouillages bretons à marée basse si le skipper ne vérifiait pas l'annuaire.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> À Brest, la BM est à 1,2 m et la PM est à 6,8 m. Le coefficient est 95. Quelle est la hauteur de marée à la 3ème heure après la BM ?
-<strong>A)</strong> 1 m au-dessus de la BM
-<strong>B)</strong> 1,8 m au-dessus de la BM
-<strong>C)</strong> 2,8 m au-dessus de la BM
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — Marnage = 6,8 – 1,2 = 5,6 m. À la 3ème heure : cumul = 1/12 + 2/12 + 3/12 = 6/12 = 1/2 du marnage = 2,8 m au-dessus de la BM. Hauteur d'eau totale = 1,2 + 2,8 = 4,0 m.</p>
-</details><p><strong>Question 2 :</strong> Vous lisez sur votre carte : sonde 3m, et l'annuaire indique une hauteur de marée de 4,5m. Quelle est la profondeur réelle à cet endroit ?
-<strong>A)</strong> 1,5 m
-<strong>B)</strong> 3,0 m
-<strong>C)</strong> 7,5 m
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — Profondeur réelle = Sonde + Hauteur de marée = 3 + 4,5 = 7,5 m.</p>
-</details><p>[TRANSITION]
-Ölüdeniz se dessine à l'horizon — la lagune bleue, les falaises blanches, les parachutes ascensionnels qui décollent du mont Babadağ. William prend son GPS. &quot;On est à 36°34'N, 29°05'E. La bouée d'entrée devrait être à...&quot;</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> À Brest : BM = 1,2 m, PM = 6,8 m. En utilisant la règle des douzièmes, quelle hauteur d'eau (au-dessus du zéro) y a-t-il à la 3ème heure après la BM ?</p>
+<ul>
+<li><strong>A)</strong> 2,4 m au-dessus du zéro hydrographique</li>
+<li><strong>B)</strong> 3,0 m au-dessus du zéro hydrographique</li>
+<li><strong>C)</strong> 4,0 m au-dessus du zéro hydrographique</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — Marnage = 6,8 − 1,2 = 5,6 m. Règle des douzièmes : cumul à la 3ème heure = (1+2+3)/12 = 6/12 = 1/2 du marnage = 2,8 m au-dessus de la BM. Hauteur d'eau totale = BM + 2,8 = 1,2 + 2,8 = <strong>4,0 m</strong>. A correspond à la hauteur à la 2ème heure ; B n'est pas une valeur de douzièmes correcte.</details>
+<p><strong>Question 2 :</strong> Sonde sur la carte : 2,5 m. Annuaire des marées : hauteur de marée 3,8 m. Quel est le fond réel ?</p>
+<ul>
+<li><strong>A)</strong> 1,3 m — tirant d'eau maximum pour ce point</li>
+<li><strong>B)</strong> 3,8 m — la sonde est relative à la hauteur actuelle</li>
+<li><strong>C)</strong> 6,3 m — profondeur réelle sous la quille</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — Profondeur réelle = Sonde (au-dessus du zéro hydrographique) + Hauteur de marée = 2,5 + 3,8 = 6,3 m. La sonde carte représente la hauteur d'eau au zéro hydrographique (marée basse de référence) ; la hauteur de marée s'additionne. A serait la réponse si on soustrayait par erreur.</details>
+<p><strong>Question 3 :</strong> Le golfe de Göcek a une marée de 0,2–0,3 m maximum. Pour un bateau de 1,5 m de tirant d'eau mouillant par sonde 2 m, la marée est-elle un facteur limitant au lever du jour (BM) ?</p>
+<ul>
+<li><strong>A)</strong> Non — la différence de 0,3 m est négligeable, on dispose encore de 0,2 m de marge au moins</li>
+<li><strong>B)</strong> Oui — avec 0,3 m de marée, le fond en BM = 2,0 − 0,3 = 1,7 m, moins que le tirant d'eau</li>
+<li><strong>C)</strong> Oui — il faut toujours utiliser l'annuaire des marées en Méditerranée</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — En Méditerranée, avec un marnage de seulement 0,2–0,3 m, la variation du niveau est quasi négligeable. Avec sonde 2,0 m et tirant 1,5 m, on dispose de 0,5 m de marge ; même en BM (−0,3 m), il reste 0,2 m. En revanche, en Manche ou Atlantique (marnage 4–9 m), ce calcul est critique.</details>
+<p><strong>Question 4 :</strong> Emmanuel dit : &quot;En Bretagne, à coefficient 45, le marnage est bien inférieur à coefficient 100.&quot; Qu'est-ce que le &quot;coefficient&quot; de marée indique ?</p>
+<ul>
+<li><strong>A)</strong> La vitesse du courant de marée en nœuds</li>
+<li><strong>B)</strong> L'intensité de la marée (marnage) par rapport à une marée de référence — 120 = grande vive-eau, 20 = morte-eau faible</li>
+<li><strong>C)</strong> Le nombre d'heures entre la BM et la PM</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Le coefficient de marée est un nombre sans unité (0–120) qui quantifie l'intensité : 95–120 = grande vive-eau, 70–95 = vive-eau, 45–70 = intermédiaire, 20–45 = morte-eau. Il est publié dans l'annuaire des marées et permet d'interpoler les hauteurs pour des ports secondaires.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Ölüdeniz se dessine à l'horizon — la lagune bleue, les falaises blanches, les parachutes ascensionnels qui décollent du mont Babadağ. William prend son GPS. &quot;On est à 36°34'N, 29°05'E. La bouée d'entrée devrait être à...&quot;</p>
 <p><strong>Session 3.3 — Point Estimé et GPS : savoir où vous êtes à tout moment.</strong></p>
 </div></div>
 

@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1147,14 +1156,39 @@
 <p>Route sécurisée : cap 310°V depuis Ölüdeniz jusqu'au waypoint 36°36'N 28°58'E (point au large des hauts-fonds), puis cap 250°V vers l'entrée de Butterfly Valley.</p>
 <p>Détour : +2,3 NM mais sécurité totale.</p>
 <p><strong>Relèvement de sécurité :</strong> Tant que la pointe est d'Ölüdeniz reste à plus de 095°M, vous êtes au-dessus des 10 mètres.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Qu'est-ce qu'un transit ou alignement de navigation ?
-<strong>A)</strong> Un cap vrai calculé à partir de deux amers
-<strong>B)</strong> La ligne définie par deux amers vus superposés — fournit une ligne de position exacte sans compas
-<strong>C)</strong> Un passage balisé entre deux bouées
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Un transit (alignement) est la ligne sur laquelle vous vous trouvez quand deux amers sont vus superposés l'un derrière l'autre. Aucun compas nécessaire, très précis.</p>
-</details><p>[TRANSITION]
-Butterfly Valley : des falaises de 300 mètres, une plage de galets, une cascade dans les rochers. L'équipage nage, mange. Rebecca admet que c'est magnifique — &quot;différent des Caraïbes, mais beau.&quot; Emmanuel marche jusqu'à la cascade. Christelle prend des photos. William est assis sur un rocher avec son MacBook, une réunion Zoom en 4G. Rebecca le regarde. &quot;Sérieusement ?&quot; Il hausse les épaules. &quot;Cinq minutes.&quot; Le vent monte — Mehmet fait remarquer depuis le bateau. &quot;C'est l'Imbat de l'après-midi. Tous les matins calmes, toutes les après-midis qui gonflent. Demain, on profite de ça pour naviguer à la voile.&quot;</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Qu'est-ce qu'un transit (alignement) en navigation côtière ?</p>
+<ul>
+<li><strong>A)</strong> Le cap vrai calculé en combinant deux relèvements gyroscopiques</li>
+<li><strong>B)</strong> La ligne de position obtenue quand deux amers sont vus superposés l'un derrière l'autre</li>
+<li><strong>C)</strong> Un passage balisé entre deux bouées cardinales</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Deux amers superposés définissent une ligne de position précise, sans compas ni GPS. Tant qu'ils restent alignés, vous êtes sur cette ligne. C'est l'outil de pilotage côtier le plus fiable car il ne dépend d'aucun instrument électronique.</details>
+<p><strong>Question 2 :</strong> Un relèvement de sécurité dit : &quot;Tant que le cap de la pointe sud de Tersane reste au-dessus de 095°M, vous êtes en eau profonde.&quot; Vous lisez 098°M au compas. Que faites-vous ?</p>
+<ul>
+<li><strong>A)</strong> Vous êtes en sécurité — 098° &gt; 095°, continuez votre route</li>
+<li><strong>B)</strong> Danger immédiat — virez immédiatement car vous avez dépassé le seuil de 095°</li>
+<li><strong>C)</strong> Vérifiez le GPS avant de décider — le compas seul n'est pas fiable</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Le relèvement de sécurité définit une limite de protection : tant que la valeur lue dépasse 095°M, vous restez du bon côté. Avec 098°, vous avez encore 3° de marge. B serait correct si vous lisiez 093° (inférieur à 095°). C est une mauvaise réflexe : les relèvements compas sont parfaitement valides pour les vérifications de sécurité.</details>
+<p><strong>Question 3 :</strong> Mehmet dit à William : &quot;Pour entrer dans la crique de Hamam Koyu, maintiens le clocher blanc aligné avec le figuier sur la falaise — c'est la seule route sûre.&quot; Quelle est la contrainte de navigation à cet endroit ?</p>
+<ul>
+<li><strong>A)</strong> Un secteur de phare rouge à éviter en approchant de nuit</li>
+<li><strong>B)</strong> Un transit obligatoire qui protège des hauts-fonds de part et d'autre du chenal d'entrée</li>
+<li><strong>C)</strong> Une zone militaire interdite de part et d'autre de l'axe d'entrée</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Maintenir deux amers superposés (ici : clocher + figuier) garantit de rester dans un couloir sûr entre des hauts-fonds. Ce type d'alignement naturel est typique des entrées de criques méditerranéennes et est souvent plus précis que les balises officielles. Si l'alignement casse (l'un se décale de l'autre), il faut corriger immédiatement.</details>
+<p><strong>Question 4 :</strong> Pour tracer une route de Göcek vers Kızılada (cap estimé 180°V) sur la carte, quelle est la première vérification à faire après avoir tracé la route ?</p>
+<ul>
+<li><strong>A)</strong> Vérifier que la route passe au moins à 0,5 NM de tout obstacle et sonde inférieure au tirant d'eau + marge</li>
+<li><strong>B)</strong> Calculer le cap magnétique et vérifier que le moteur a assez de carburant</li>
+<li><strong>C)</strong> Vérifier que la route traverse des zones balisées uniquement</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — La vérification primordiale est la sécurité des fonds : la route doit dégager tous les obstacles avec une marge suffisante (en règle générale, au moins 0,5 NM des dangers répertoriés, davantage en mauvaise visibilité). Le cap magnétique et le carburant (B) sont des étapes suivantes. Les routes non balisées sont parfaitement légales.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Butterfly Valley : des falaises de 300 mètres, une plage de galets, une cascade dans les rochers. L'équipage nage, mange. Rebecca admet que c'est magnifique — &quot;différent des Caraïbes, mais beau.&quot; Emmanuel marche jusqu'à la cascade. Christelle prend des photos. William est assis sur un rocher avec son MacBook, une réunion Zoom en 4G. Rebecca le regarde. &quot;Sérieusement ?&quot; Il hausse les épaules. &quot;Cinq minutes.&quot; Le vent monte — Mehmet fait remarquer depuis le bateau. &quot;C'est l'Imbat de l'après-midi. Tous les matins calmes, toutes les après-midis qui gonflent. Demain, on profite de ça pour naviguer à la voile.&quot;</p>
 <p><strong>Session 4.1 — La Voile : théorie, allures, réglages.</strong></p>
 </div></div>
 

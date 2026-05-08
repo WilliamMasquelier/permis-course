@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1156,26 +1165,47 @@ Objectif : aller droit vers la côte est. Courant : 1,5 nœud vers le nord. Si v
 <p>Voir <span class="wikilink" data-label="Gps Cartographie Electronique">concepts/gps-cartographie-electronique</span>, <span class="wikilink" data-label="Latitude Longitude">concepts/latitude-longitude</span>.</p>
 <div class="callout callout-attention"><div class="callout-label">⚠️ Attention</div><div class="callout-body">
 <p><strong>Ne pas naviguer au GPS seul.</strong> L'examen et la pratique professionnelle requièrent que vous soyez capable de naviguer sans GPS. Tenez toujours un journal de bord avec vos positions et caps — il vous permettra de reconstruire votre route si nécessaire.</p>
-<p>[EXEMPLE GOLFE]
-<strong>Point estimé Göcek → Ölüdeniz (si panne GPS hypothétique) :</strong></p>
+</div></div>
+<div class="callout callout-golfe"><div class="callout-label">🗺️ Exemple — Golfe de Fethiye</div><div class="callout-body">
+<p><strong>Point estimé Göcek → Ölüdeniz (si panne GPS hypothétique) :</strong></p>
 <p>Position de départ connue : Göcek Marina 36°45.3'N 28°57.6'E</p>
 <p>Cap tenu : 245°V, vitesse moyenne 7 nœuds, durée 2h24min</p>
 <p>Distance parcourue : 7 × 2.4 = 16.8 NM</p>
 <p>Courant estimé (quasi-nul en Méditerranée) : négligeable ici</p>
 <p>Point estimé : On trace le cap 245° depuis Göcek sur 16.8 NM → tombe à ~36°33.5'N 29°06.2'E — très proche de l'entrée d'Ölüdeniz. Sans GPS, on aurait la position correcte à ±0.5 NM près.</p>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Quelle est la différence entre COG (Course Over Ground) et Heading (cap) ?
-<strong>A)</strong> COG est la direction de la proue ; Heading est la route fond réelle
-<strong>B)</strong> Heading est la direction de la proue ; COG est la route fond réelle après effet du courant et du vent
-<strong>C)</strong> Ce sont deux termes pour la même mesure
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — Le Heading est ce que vous tenez au compas (direction de la proue). Le COG est ce que le GPS mesure : la direction réelle du déplacement sur le fond, après que vent et courant ont agi.</p>
-</details><p><strong>Question 2 :</strong> Vous prenez trois relèvements simultanés et tracez trois lignes de position. Elles forment un petit triangle. Comment déterminez-vous votre position ?
-<strong>A)</strong> Au centre géométrique du triangle
-<strong>B)</strong> Au sommet du triangle le plus proche du point de départ
-<strong>C)</strong> Au coin du triangle le plus proche du danger, par prudence
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> C — La méthode du &quot;chapeau triangulaire&quot; place votre position au coin le plus proche du danger. Principe de prudence nautique.</p>
-</details><p>[TRANSITION]
-Ölüdeniz est magnifique. La lagune bleue, les klipspringers sur les falaises, les voiles de parachute ascensionnel. Mais pour atteindre Butterfly Valley demain, il va falloir un vrai plan de route qui contourne les bas-fonds.</p>
+</div></div>
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Le GPS du <em>Deniz Rüzgarı</em> affiche COG 245°, mais William tient un cap compas de 250°. Quelle explication est la plus vraisemblable ?</p>
+<ul>
+<li><strong>A)</strong> Erreur GPS — il faut croire le compas</li>
+<li><strong>B)</strong> Un courant ou un vent de travers dérive le bateau de 5° vers bâbord par rapport à son axe</li>
+<li><strong>C)</strong> La variation magnétique entre les deux instruments est de 5°</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — COG (Course Over Ground) = direction réelle du déplacement sur le fond, mesurée par GPS. Heading = direction de la proue, lue au compas. Si COG &lt; Heading, le bateau dérive à bâbord (un courant ou vent vient de tribord). La variation magnétique s'applique aux deux de la même façon — elle n'explique pas cet écart.</details>
+<p><strong>Question 2 :</strong> Vous prenez trois relèvements simultanés sur trois amers. Les trois lignes de position forment un petit triangle (chapeau). Où placez-vous votre point ?</p>
+<ul>
+<li><strong>A)</strong> Au centre géométrique du triangle</li>
+<li><strong>B)</strong> Au coin du triangle le plus proche du danger navigationnel</li>
+<li><strong>C)</strong> Au sommet du triangle le plus proche de votre dernier point estimé</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La règle de prudence nautique : en cas d'incertitude (triangle), on se place au point le plus défavorable, c'est-à-dire le coin du triangle le plus proche du danger (rocher, hauts-fonds). C'est le principe conservateur de la navigation côtière. Le centre géométrique (A) serait statistiquement juste mais négligerait la prudence.</details>
+<p><strong>Question 3 :</strong> William a quitté Göcek il y a 2 heures à 6 nœuds cap 220°V, sans courant. Il n'a plus de GPS. Où se trouve-t-il approximativement ?</p>
+<ul>
+<li><strong>A)</strong> À 12 NM de Göcek, sur le cap 220°V</li>
+<li><strong>B)</strong> À 6 NM de Göcek, sur le cap 220°V</li>
+<li><strong>C)</strong> La vitesse GPS et la vitesse fond sont toujours différentes — impossible d'estimer sans GPS</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — Point estimé simple sans courant : Distance = Vitesse × Temps = 6 × 2 = 12 NM. Cap tenu = 220°V. Position estimée : à 12 NM de Göcek dans la direction 220°V. En présence de courant, il faudrait ajouter la composante de dérive. C est faux : sans courant, vitesse fond ≈ vitesse loch.</details>
+<p><strong>Question 4 :</strong> À quelle fréquence minimum doit-on noter un point estimé sur la carte lors d'un passage côtier à vue ?</p>
+<ul>
+<li><strong>A)</strong> Toutes les 30 minutes minimum — ou plus fréquemment si on approche d'un danger</li>
+<li><strong>B)</strong> Uniquement au départ et à l'arrivée — le GPS remplace le suivi manuel</li>
+<li><strong>C)</strong> Toutes les 4 heures — comme les quarts de navigation hauturière</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> A — En navigation côtière, la règle de bonne pratique est de noter un point toutes les 15 à 30 minutes (ou dès qu'on approche d'un danger ou d'un point tournant). Le GPS peut tomber en panne ou se tromper (mauvaise réception, erreur de carte) — maintenir un point estimé papier est la sécurité fondamentale.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
+<p>Ölüdeniz est magnifique. La lagune bleue, les klipspringers sur les falaises, les voiles de parachute ascensionnel. Mais pour atteindre Butterfly Valley demain, il va falloir un vrai plan de route qui contourne les bas-fonds.</p>
 <p><strong>Session 3.4 — Routage et Pilotage Côtier : planifier une traversée, éviter les dangers.</strong></p>
 </div></div>
 

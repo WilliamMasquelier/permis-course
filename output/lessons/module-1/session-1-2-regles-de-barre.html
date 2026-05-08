@@ -545,14 +545,23 @@
 
     /* === LIGHTBOX === */
     #lightbox {
-      display: none; position: fixed; inset: 0;
+      position: fixed; inset: 0;
       background: rgba(0,0,0,0.92);
       z-index: 1000;
+      display: flex;
       align-items: center; justify-content: center;
       cursor: zoom-out;
-      opacity: 0; transition: opacity 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s, visibility 0s 0.25s;
     }
-    #lightbox.open { display: flex; opacity: 1; }
+    #lightbox.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity 0.25s, visibility 0s 0s;
+    }
     #lightbox-inner {
       position: relative; max-width: 94vw; max-height: 94vh;
       display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -1191,20 +1200,37 @@
 <li><strong>5 sons brefs ou plus</strong> : Signal de doute ou de danger — à utiliser sans hésitation si vous ne comprenez pas l'intention d'un autre navire</li>
 </ul>
 <p>Ces signaux seront développés en détail à la session 1.3 avec les signaux de brume.</p>
-<blockquote>
-<p>[MINI-QUIZ]
-<strong>Question 1 :</strong> Deux bateaux à moteur se croisent en situation de croisement (l'un voit l'autre sur tribord). Qui est prioritaire ?
-<strong>A)</strong> Le bateau qui voit l'autre sur tribord (il doit s'écarter)
-<strong>B)</strong> Le bateau qui est vu par l'autre (il est prioritaire)
-<strong>C)</strong> Le bateau le plus rapide
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — En situation de croisement, le bateau qui a l'autre sur <em>tribord</em> doit s'écarter. Il est &quot;non-prioritaire&quot; (<em>give-way vessel</em>). L'autre, vu sur bâbord, maintient son cap.</p>
-</details><p><strong>Question 2 :</strong> Un voilier sous voiles croise un ferry qui suit un chenal étroit et ne peut pas dévier. Qui s'écarte ?
-<strong>A)</strong> Le ferry, car le voilier est prioritaire
-<strong>B)</strong> Le voilier, car le ferry est contraint dans le chenal (règle 9)
-<strong>C)</strong> Les deux dévient à tribord
-<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La règle 9 du RIPAM oblige tout navire pouvant le faire à ne pas gêner un navire contraint à rester dans le chenal. La priorité générale du voilier ne s'applique pas ici.</p>
-</blockquote>
-<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</details></div><div class="callout-body">
+<div class="callout callout-quiz"><div class="callout-label">📝 Mini-Quiz</div><div class="callout-body">
+<p><strong>Question 1 :</strong> Deux bateaux à moteur se croisent. Le bateau A voit le bateau B sur son tribord. Qui est prioritaire ?</p>
+<ul>
+<li><strong>A)</strong> Le bateau A — il voit l'autre sur tribord, donc il est protégé</li>
+<li><strong>B)</strong> Le bateau B — le bateau A le voit sur tribord et doit s'écarter</li>
+<li><strong>C)</strong> Le plus grand des deux bateaux</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — En croisement, le bateau qui voit l'autre sur son tribord est le <em>give-way vessel</em> (non-prioritaire) : il doit s'écarter. Le bateau B est vu sur le tribord de A, donc B est le <em>stand-on vessel</em> (prioritaire) et maintient son cap. La taille et la vitesse ne jouent aucun rôle dans cette règle.</details>
+<p><strong>Question 2 :</strong> Le <em>Deniz Rüzgarı</em> navigue sous voiles uniquement (moteur coupé) et croise un yacht à moteur. Le yacht est sur tribord du <em>Deniz Rüzgarı</em>. Qui s'écarte ?</p>
+<ul>
+<li><strong>A)</strong> Le <em>Deniz Rüzgarı</em> — il voit le yacht sur tribord, la règle de croisement s'applique</li>
+<li><strong>B)</strong> Le yacht à moteur — la règle 18 oblige un navire à propulsion mécanique à céder au voilier sous voiles</li>
+<li><strong>C)</strong> Ni l'un ni l'autre — ils maintiennent tous les deux leur cap</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La règle 18 du RIPAM hiérarchise les catégories : un navire à moteur doit s'écarter devant un voilier sous voiles. La règle de croisement tribord/bâbord s'applique entre navires de même catégorie. Piège d'examen : si le <em>Deniz Rüzgarı</em> utilise son moteur, même avec les voiles hissées, il devient un navire à moteur et perd la priorité.</details>
+<p><strong>Question 3 :</strong> William rattrape un voilier qui navigue devant lui dans le même sens, légèrement plus lentement. Que dit la règle 13 ?</p>
+<ul>
+<li><strong>A)</strong> William est prioritaire car il rattrape — l'autre doit s'écarter</li>
+<li><strong>B)</strong> Le voilier rattrapé est prioritaire — William (le rattrapant) doit s'écarter</li>
+<li><strong>C)</strong> Les deux virents à tribord pour se séparer</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La règle 13 est absolue : le navire rattrapant (<em>overtaking vessel</em>) doit toujours s'écarter, quelle que soit sa catégorie. Même un voilier rattrapant un moteur doit laisser passer. On est &quot;rattrapant&quot; dès qu'on approche à moins de 22,5° de l'axe de l'arrière de l'autre navire.</details>
+<p><strong>Question 4 :</strong> Le ferry de Göcek suit un chenal étroit et signale qu'il ne peut pas dévier. Le <em>Deniz Rüzgarı</em> sous voiles s'approche. Que doit faire William ?</p>
+<ul>
+<li><strong>A)</strong> Maintenir son cap — le voilier sous voiles est toujours prioritaire sur un navire à moteur</li>
+<li><strong>B)</strong> S'écarter et ne pas gêner le ferry contraint dans le chenal (règle 9)</li>
+<li><strong>C)</strong> Appeler le ferry sur le VHF 16 et attendre ses instructions</li>
+</ul>
+<details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La règle 9 du RIPAM oblige tout navire pouvant manœuvrer librement à ne pas gêner un navire contraint à rester dans le chenal (trop gros pour dévier, fond insuffisant hors chenal). Cette règle prime sur la priorité habituelle du voilier. William doit s'écarter bien avant que le ferry ne soit à portée.</details>
+</div></div>
+<div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
 <p>La traversée jusqu'à Tersane Island prend 45 minutes. Ils arrivent en fin d'après-midi, se retrouvent à l'ancre dans une baie calme. Le soleil se couche derrière les collines. Les lumières s'allument sur l'eau — d'autres bateaux, au loin.</p>
 <p>&quot;Comment on sait ce que c'est, ces lumières ?&quot; demande Christelle.</p>
 <p><strong>Session 1.3 — Feux de Navigation et Signaux : lire la mer la nuit.</strong></p>

@@ -150,17 +150,29 @@ Voir [[concepts/navigation-relevements-et-caps]].
 > Distance Göcek → Tersane : **2,8 NM** (mesurée sur l'échelle de latitude, soit ~3 minutes d'arc).
 
 > [MINI-QUIZ]
-> **Question 1 :** Sur quelle échelle mesurez-vous une distance en milles nautiques sur une carte marine ?
-> **A)** Sur l'échelle des longitudes (axe horizontal)
-> **B)** Sur l'échelle des latitudes (axe vertical)
-> **C)** Indifféremment sur l'une ou l'autre
-> **Réponse:** B — L'échelle des latitudes est la seule valide. 1 minute d'arc = 1 mille nautique. L'échelle des longitudes varie avec la latitude et ne peut pas être utilisée pour mesurer des distances.
+> **Question 1 :** Sur une carte marine, comment mesure-t-on une distance en milles nautiques ?
+> **A)** Sur l'échelle des longitudes (axe horizontal) — 1 degré = 60 NM
+> **B)** Sur l'échelle des latitudes (axe vertical) — 1 minute d'arc = 1 NM
+> **C)** Sur la barre d'échelle graduée imprimée en bas de la carte
+> **Réponse:** B — L'échelle des latitudes (bord gauche/droit de la carte) est la seule valide pour mesurer des distances : 1 minute d'arc de latitude = 1 mille nautique. L'échelle des longitudes se contracte vers les pôles et est inutilisable pour les distances. La barre d'échelle en bas est valide uniquement à la latitude de référence de la carte — moins précise sur les cartes à grande couverture.
 >
-> **Question 2 :** Une sonde notée "~~3~~" (3 barré) sur la carte signifie :
-> **A)** Roche qui découvre à 3 mètres au-dessus du zéro hydrographique
-> **B)** Profondeur de 3 mètres au zéro hydrographique
-> **C)** Erreur de carte corrigée
-> **Réponse:** A — Le nombre barré indique une roche qui *découvre* (emerge at low water), à cette hauteur en mètres au-dessus du zéro hydrographique. C'est un danger à marée haute dans cette zone.
+> **Question 2 :** La sonde "3" soulignée (notation cartographique du SHOM) indique :
+> **A)** Une roche qui découvre à 3 mètres au-dessus du zéro hydrographique (danger à marée haute)
+> **B)** Une profondeur de 3 mètres en dessous du zéro hydrographique (fond peu profond)
+> **C)** Une correction récente de 3 mètres sur la sonde originale
+> **Réponse:** A — Le chiffre souligné (*underlined figure*) signifie que c'est la hauteur en mètres au-dessus du zéro hydrographique à laquelle la roche découvre. C'est un danger : à marée haute ce rocher est immergé mais à marée basse il émerge. Ne pas confondre avec une sonde normale (profondeur sous le zéro hydrographique).
+>
+> **Question 3 :** Quelle est la signification du symbole "Pa" sur une carte marine à proximité d'un fond ?
+> **A)** Passage autorisé à cet endroit
+> **B)** Nature du fond : sable vaseux (*Pasty sand*) — important pour le mouillage
+> **C)** Profondeur approximative — donnée non vérifiée
+> **Réponse:** B — Les abréviations de nature de fond sont standardisées sur les cartes marines : S = sand (sable), M = mud (vase), Sh = shells (coquilles), Rk = rock (roche), Co = coral (corail), Pa = sand mixed with mud. Ces indications sont cruciales pour choisir l'ancre et évaluer la tenue du mouillage dans le golfe de Göcek.
+>
+> **Question 4 :** Sur une carte Mercator, deux points de même latitude mais à 10 degrés de longitude de distance. Peut-on mesurer cette distance en utilisant les 10 degrés de longitude directement ?
+> **A)** Oui — à l'équateur, 1 degré de longitude = 60 NM, quelle que soit la latitude
+> **B)** Non — la longueur d'un degré de longitude diminue avec la latitude (cos de la latitude)
+> **C)** Oui — la projection Mercator conserve les angles et donc toutes les distances
+> **Réponse:** B — En projection Mercator, les méridiens sont des droites parallèles verticales, mais la longueur réelle d'un degré de longitude diminue proportionnellement au cosinus de la latitude. À 36°N (golfe de Göcek), 1 degré de longitude ≈ 60 × cos(36°) ≈ 48,5 NM. On ne peut donc jamais utiliser l'axe horizontal pour mesurer des distances.
 
 > [TRANSITION]
 > Depuis l'ancre, William regarde la baie de Fethiye. Les tombeaux lyciens sont découpés dans la falaise. Un phare clignote à l'entrée de la baie. "Comment on lit la caractéristique d'un phare ?" demande-t-il.
