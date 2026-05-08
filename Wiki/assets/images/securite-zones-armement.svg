@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="Zones basique, côtière et hauturière pour l'armement de sécurité">
+  <rect width="900" height="360" fill="#f8f9fc"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <text x="54" y="48" fill="#1a2e4a" font-size="25" font-weight="700">Armement de sécurité : les zones s'additionnent</text>
+    <line x1="90" y1="250" x2="810" y2="250" stroke="#1a2e4a" stroke-width="3"/>
+    <path d="M100 250 C180 210 260 210 340 250 C420 290 500 290 580 250 C660 210 740 210 820 250" fill="none" stroke="#14a0a5" stroke-width="5"/>
+    <g>
+      <circle cx="260" cy="190" r="64" fill="#0d7377"/>
+      <text x="260" y="180" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">Basique</text>
+      <text x="260" y="205" text-anchor="middle" fill="#fff" font-size="15">≤ 2 M d'un abri</text>
+    </g>
+    <g>
+      <circle cx="470" cy="160" r="76" fill="#f5a623"/>
+      <text x="470" y="150" text-anchor="middle" fill="#1a2e4a" font-size="18" font-weight="700">Côtière</text>
+      <text x="470" y="175" text-anchor="middle" fill="#1a2e4a" font-size="15">≤ 6 M d'un abri</text>
+    </g>
+    <g>
+      <circle cx="690" cy="130" r="88" fill="#1a2e4a"/>
+      <text x="690" y="120" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">Hauturière</text>
+      <text x="690" y="145" text-anchor="middle" fill="#fff" font-size="15">&gt; 6 M</text>
+    </g>
+    <text x="120" y="314" fill="#6b7280" font-size="16">Le permis côtier autorise la navigation jusqu'à 6 milles d'un abri.</text>
+  </g>
+</svg>

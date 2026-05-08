@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Dépression frontale — carte synoptique simplifiée">
+  <rect width="800" height="500" fill="#e8f4e8"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <!-- Title -->
+    <text x="400" y="35" text-anchor="middle" fill="#1a2e4a" font-size="21" font-weight="700">Dépression frontale — schéma synoptique</text>
+
+    <!-- Isobars (concentric ovals around low) -->
+    <ellipse cx="350" cy="260" rx="280" ry="180" fill="none" stroke="#1a2e4a" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <text x="640" y="258" fill="#1a2e4a" font-size="11">988 hPa</text>
+    <ellipse cx="350" cy="260" rx="200" ry="130" fill="none" stroke="#1a2e4a" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <text x="558" y="258" fill="#1a2e4a" font-size="11">992</text>
+    <ellipse cx="350" cy="260" rx="120" ry="80" fill="none" stroke="#1a2e4a" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <text x="478" y="258" fill="#1a2e4a" font-size="11">996</text>
+    <ellipse cx="350" cy="260" rx="55" ry="40" fill="none" stroke="#1a2e4a" stroke-width="1.5"/>
+    <text x="413" y="258" fill="#1a2e4a" font-size="11">1000</text>
+
+    <!-- Low center -->
+    <circle cx="350" cy="260" r="22" fill="#ef4444" opacity="0.15"/>
+    <text x="350" y="256" text-anchor="middle" fill="#ef4444" font-size="20" font-weight="900">D</text>
+    <text x="350" y="276" text-anchor="middle" fill="#ef4444" font-size="11">Dépression</text>
+
+    <!-- Warm front (red with semicircles) -->
+    <path d="M350 260 Q450 200 560 170" fill="none" stroke="#ef4444" stroke-width="4"/>
+    <!-- Semicircle symbols on warm front -->
+    <circle cx="400" cy="235" r="8" fill="#ef4444" opacity="0.7"/>
+    <circle cx="450" cy="210" r="8" fill="#ef4444" opacity="0.7"/>
+    <circle cx="505" cy="190" r="8" fill="#ef4444" opacity="0.7"/>
+    <text x="570" y="162" fill="#ef4444" font-size="13" font-weight="700">Front chaud →</text>
+    <text x="565" y="178" fill="#ef4444" font-size="11">Approche lente</text>
+    <text x="565" y="192" fill="#ef4444" font-size="11">Cirrus → Nimbostratus</text>
+
+    <!-- Cold front (blue with triangles) -->
+    <path d="M350 260 Q300 350 220 420" fill="none" stroke="#2196f3" stroke-width="4"/>
+    <!-- Triangle symbols on cold front -->
+    <polygon points="330,310 316,330 344,330" fill="#2196f3" opacity="0.8"/>
+    <polygon points="293,358 279,378 307,378" fill="#2196f3" opacity="0.8"/>
+    <polygon points="250,397 236,417 264,417" fill="#2196f3" opacity="0.8"/>
+    <text x="130" y="415" fill="#2196f3" font-size="13" font-weight="700">Front froid ↓</text>
+    <text x="130" y="433" fill="#2196f3" font-size="11">Arrivée rapide</text>
+    <text x="130" y="449" fill="#2196f3" font-size="11">Cumulonimbus → grains</text>
+
+    <!-- Wind arrows (counter-clockwise around low) -->
+    <text x="40" y="270" fill="#555" font-size="10">vent →</text>
+    <path d="M60 265 L100 235" stroke="#555" stroke-width="1.5" marker-end="url(#arrThin)"/>
+    <path d="M360 80 L320 100" stroke="#555" stroke-width="1.5" marker-end="url(#arrThin)"/>
+    <path d="M600 280 L570 310" stroke="#555" stroke-width="1.5" marker-end="url(#arrThin)"/>
+    <text x="598" y="295" fill="#555" font-size="10">vent →</text>
+
+    <!-- Sector chaud label -->
+    <text x="450" y="290" fill="#8b4000" font-size="12" font-style="italic">Secteur chaud</text>
+    <text x="450" y="305" fill="#8b4000" font-size="10">(entre fronts)</text>
+
+    <!-- Movement arrow -->
+    <path d="M350 260 L500 100" stroke="#1a2e4a" stroke-width="2" stroke-dasharray="10 5"/>
+    <text x="490" y="85" fill="#1a2e4a" font-size="12">Déplacement</text>
+    <text x="488" y="100" fill="#1a2e4a" font-size="12">de la dépression →</text>
+
+    <!-- Legend -->
+    <rect x="550" y="330" width="220" height="100" rx="6" fill="rgba(255,255,255,0.88)" stroke="#1a2e4a" stroke-width="1"/>
+    <text x="660" y="352" text-anchor="middle" fill="#1a2e4a" font-size="12" font-weight="700">Signes précurseurs</text>
+    <text x="562" y="372" fill="#1a2e4a" font-size="11">☁ Cirrus → cirrostratus → halo</text>
+    <text x="562" y="388" fill="#1a2e4a" font-size="11">📉 Baromètre en chute</text>
+    <text x="562" y="404" fill="#1a2e4a" font-size="11">💨 Vent qui adonne (veer)</text>
+    <text x="562" y="420" fill="#1a2e4a" font-size="11">Règle Buys-Ballot : dos au vent,</text>
+    <text x="562" y="434" fill="#888" font-size="10">bras gauche → centre dépression</text>
+
+    <!-- Footer -->
+    <text x="400" y="490" text-anchor="middle" fill="#888" font-size="10">Source: Complete Yachtmaster ch.32 — raw/books/yachtmaster-chapters/ch32-weather.txt</text>
+
+    <defs>
+      <marker id="arrThin" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#555"/></marker>
+    </defs>
+  </g>
+</svg>

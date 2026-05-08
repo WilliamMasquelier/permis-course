@@ -1,0 +1,154 @@
+---
+title: "Documents, Licence et Réglementation"
+module: 6
+module_title: "Radio et Réglementation"
+session_in_module: 2
+duration_min: 35
+type: lesson
+status: draft
+updated: 2026-05-07
+---
+
+> [SCENE]
+> **Mardi après-midi, quai de la douane, Fethiye.**
+>
+> L'officier douanier turc est aimable mais méticuleux. Il vérifie chaque document. Le *Transit Log* turc (obligation pour les bateaux étrangers navigant en eaux turques), le passeport de chaque passager, la licence radio, le titre de propriété du bateau ou le contrat de charter.
+>
+> Tout est en ordre. Il signe, tamponne, sourit.
+>
+> Quand il repart, Emmanuel dit : "Donc même en vacances, la paperasse nous suit." Rebecca : "En Martinique, c'est beaucoup plus détendu — le gendarme vérifie juste les passeports." William : "Les documents, c'est aussi la sécurité. Le transit log, c'est ce qui permet aux secours de savoir qu'on est dans le coin si on disparaît." Christelle approuve silencieusement.
+
+## Les documents obligatoires du bateau
+
+En France, un bateau de plaisance doit avoir à bord un ensemble de documents qui prouvent son identité légale, la qualification du conducteur, et la conformité aux règles de sécurité. Ces documents sont vérifiés par la Gendarmerie Maritime, les Affaires Maritimes, et les Douanes.
+
+| Document | Obligatoire pour |
+|----------|-----------------|
+| **Acte de francisation** | Bateau > 7m ou moteur > 22 kW |
+| **Titre de navigation** | Bateau inscrit dans un registre |
+| **Assurance responsabilité civile** | Tout bateau à moteur |
+| **Permis du conducteur** | Bateau à moteur > 6 nœuds |
+| **Licence de station radio** | Si équipé d'un VHF |
+| **Carnet de sécurité** | Recommandé |
+
+**L'acte de francisation** est l'équivalent de la carte grise pour un bateau — il prouve que le navire est immatriculé sous pavillon français. Obligatoire pour les bateaux de plus de 7 mètres ou dont le moteur dépasse 22 kW. Il permet d'accéder aux ports français en tant que navire national et facilite les formalités douanières à l'étranger.
+
+**L'assurance responsabilité civile** est obligatoire pour tout bateau à moteur navigant en mer. Elle couvre les dommages causés aux tiers (bateau coulé lors d'une collision, blessure d'un nageur). Sans assurance, vous êtes personnellement responsable sur vos biens propres. Plusieurs compagnies proposent des assurances spécifiques plaisance avec extension "assistance rapatriement" recommandée.
+
+**Le permis du conducteur** (permis côtier ou hauturier selon la zone) doit être présenté sur demande. En cas de contrôle, un défaut de permis entraîne une contravention de 5ème classe (1 500 €).
+
+**La licence de station radio** est attachée au bateau, pas au conducteur. Elle est émise par l'ANFR et attribue le MMSI. Sans elle, utiliser le VHF est une infraction pénale.
+
+**Le carnet de bord** n'est pas légalement obligatoire pour les plaisanciers côtiers, mais il est exigé par certaines assurances et fortement recommandé : en cas d'accident, c'est la preuve de votre navigation (cap, position, météo, manœuvres).
+
+Voir [[concepts/documents-bord]].
+
+## Le permis côtier — structure et validité
+
+Le **Permis Plaisance Option Côtière** permet de conduire un bateau à moteur (y compris voilier avec moteur) dont le moteur > 6 nœuds (4,5 kW), en mer jusqu'à 6 milles d'un abri.
+
+**Qui est concerné :** Tout conducteur d'un bateau à moteur en mer, quelle que soit la nationalité du bateau, dès que la vitesse peut dépasser 6 nœuds. Les voiliers sans moteur auxiliaire ou avec un moteur de moins de 4,5 kW n'en ont pas besoin.
+
+**Validité :** À vie — pas de renouvellement ni de formation continue obligatoire. Recommandation : recyclage tous les 5 ans pour rester à niveau.
+
+**Extension fluviale :** Le permis côtier couvre la mer uniquement. Pour naviguer sur les fleuves et voies navigables, une extension doit être passée. Les deux peuvent être présentés ensemble.
+
+**Age minimum :** 16 ans pour conduire seul (ou 14 ans sous supervision directe d'un adulte titulaire).
+
+**L'option hauturière** est un niveau supérieur au permis côtier, qui n'a pas de limite de distance. Elle nécessite une formation et un examen supplémentaires, incluant notamment la navigation astronomique et météorologique approfondie.
+
+Pour naviguer avec une radio VHF, il faut également le **CRR** (Certificat Restreint de Radiotéléphoniste) — c'est le deuxième volet du cursus qui accompagne souvent le permis côtier.
+
+## La licence radio ANFR
+
+La **licence de station radio** est délivrée par l'**ANFR** (Agence Nationale des Fréquences). Elle est attachée au bateau, pas au conducteur. Elle attribue un **MMSI** (Maritime Mobile Service Identity) — le numéro d'identité du bateau sur le réseau radio.
+
+**Comment l'obtenir :** Dossier à déposer sur anfr.fr ou par courrier. Pièces requises : justificatif d'identité, justificatif d'immatriculation du navire (acte de francisation ou équivalent). Coût : environ 80–120 €. Traitement en quelques semaines.
+
+**Ce qu'elle couvre :** Autorisation d'émettre sur toutes les fréquences maritimes VHF à bord du navire désigné. Sans elle, l'utilisation du VHF est une infraction pénale sanctionnée par le Code des postes et communications électroniques.
+
+**Le MMSI** est permanent et lié au navire. Si le bateau est vendu, le nouveau propriétaire doit re-enregistrer le MMSI à son nom auprès de l'ANFR.
+
+**Le CRR** (Certificat Restreint de Radiotéléphoniste) est le brevet de l'opérateur — c'est vous, pas le bateau. Il autorise l'utilisation du VHF maritime en général, les procédures MAYDAY, PAN PAN, SÉCURITÉ, et le DSC. L'examen se passe auprès d'organismes agréés ANFR.
+
+Voir [[concepts/licence-anfr]], [[concepts/mmsi]].
+
+## Les infractions et zones réglementées
+
+La réglementation maritime française est sérieuse, avec des sanctions allant de l'amende à l'emprisonnement pour les infractions graves.
+
+**Barème des principales infractions :**
+
+| Infraction | Sanction |
+|------------|----------|
+| Conduite sans permis | 1 500 € |
+| Défaut de documents ou matériel | 1 500 € |
+| Défaut d'extincteur ou signaux de détresse | 1 500 € |
+| **Vitesse excessive dans la bande des 300 m** | **3 750 € + 6 mois d'emprisonnement** |
+| Défaut d'allumage des feux la nuit | 3 750 € + 3 mois d'emprisonnement |
+| Non-assistance à personne en danger | 3 750 € + 2 ans d'emprisonnement |
+
+**Zone des 300 mètres :** Dans les 300 mètres des rivages non aménagés, la vitesse est limitée à **5 nœuds**. Cette règle protège les nageurs et les activités nautiques douces. Les plages organisées (chenaux de mise à l'eau, zones de baignade) peuvent avoir des règlements encore plus restrictifs, signalés par un balisage jaune.
+
+**Dans les zones de baignade balisées** (zone délimitée par des bouées jaunes) : accès **interdit** aux bateaux à moteur. Seules les embarcations à propulsion humaine (kayak, paddle) sont tolérées.
+
+**Zones militaires et réserves :** Balisées sur les cartes marines avec des hachures bleues ou roses. Accès interdit sans autorisation. En Turquie, plusieurs zones militaires sur la côte (notamment près des bases navales) sont strictement interdites.
+
+**Vitesse dans les ports :** Généralement 3 à 5 nœuds. La vague créée par un bateau rapide peut blesser des personnes dans l'eau et endommager les bateaux amarrés.
+
+Voir [[concepts/infractions]], [[concepts/pratique-environnement-et-infractions]], [[concepts/bande-300m]], [[concepts/zone-large]].
+
+## Protection de l'environnement
+
+Les mers et les côtes sont un patrimoine fragile. La réglementation maritime traite leur protection comme une obligation, non comme un conseil.
+
+**Ce qu'il est interdit de rejeter en mer :**
+
+- **Plastiques** — interdits à toute distance, quelle que soit la taille. Un sac plastique peut tuer une tortue en 15 minutes. Chaque objet flotté doit être récupéré ou ramené au port.
+- **Hydrocarbures et huiles** — interdits à toute distance. L'huile de vidange d'un moteur rejetée à la mer forme un film qui asphyxie toute vie marine sur des hectares. Utilisez les points de collecte des marinas.
+- **Eaux noires** (WC) — interdites dans les eaux intérieures et à moins de 3 milles des côtes en zone côtière. Utilisez les réservoirs de rétention ou les pompes à la marina.
+- **Eaux grises** (lavabos, cuisine) — légalement permises au large, mais déconseillées dans les zones protégées et les mouillages fermés.
+- **Avitaillement :** Un déversement de carburant lors du remplissage est considéré comme pollution — utilisez des absorbants, ne remplissez jamais à ras bord avec de la houle.
+
+**Principe pollueur-payeur :** Toute pollution dont vous êtes responsable vous expose à prendre en charge les frais de nettoyage — qui peuvent être considérables (nettoyage d'une plage polluée par votre carburant).
+
+En Turquie, les parcs naturels côtiers (Ölüdeniz, golfe de Göcek) appliquent des règles strictes : mouillage interdit sur certaines herbiers, zones de collecte des déchets obligatoires.
+
+Voir [[concepts/pollution-dechets]].
+
+## Navigation de nuit et signaux particuliers
+
+La bande des 300 mètres reste réglementée la nuit — la vitesse limite de 5 nœuds s'applique 24h/24. Les zones de baignade, en revanche, ne sont généralement pas balisées la nuit car les baigneurs ne sont pas présents.
+
+**Heures calmes en marina :** La plupart des marinas imposent le silence entre 22h et 7h. Pas de moteur au-dessus du ralenti, pas de musique extérieure, pas de mouvements de bateaux bruyants. C'est une règle de courtoisie autant que de réglementation.
+
+**Feux de navigation nocturnes :** L'obligation d'avoir les feux allumés entre le coucher et le lever du soleil, et par visibilité réduite de jour, est une règle RIPAM. L'infraction (défaut de feux la nuit) peut être sanctionnée de 3 750 € et 3 mois d'emprisonnement.
+
+**Zones de mouillage nocturne :** Dans certains parcs naturels marins, des zones de mouillage nocturne sont désignées et délimitées. Mouiller en dehors de ces zones dans un parc est une infraction.
+
+> [EXEMPLE GOLFE]
+> **Documents requis pour un bateau français en Turquie :**
+>
+> En Turquie, les bateaux étrangers doivent obtenir un **Transit Log** (carnet de passage) à l'entrée dans les eaux turques (en général au premier port d'entrée). Il liste tous les passagers et escales.
+>
+> Pour louer un charter en Turquie (comme notre gulet) : le contrat de charter remplace le titre de propriété. La licence radio turque est fournie avec le bateau par l'armateur.
+>
+> **Si vous naviguez en France à votre retour** : permis côtier obligatoire + CRR si VHF à bord + acte de francisation + assurance RC.
+
+> [MINI-QUIZ]
+> **Question 1 :** Quelle est la limite de vitesse dans la bande des 300 mètres pour un bateau à moteur ?
+> **A)** 3 nœuds
+> **B)** 5 nœuds
+> **C)** 8 nœuds
+> **Réponse:** B — La vitesse est limitée à 5 nœuds dans la bande des 300 mètres des rivages non organisés. Cette règle vise à protéger les nageurs et la faune côtière.
+>
+> **Question 2 :** Le CRR (Certificat Restreint de Radiotéléphoniste) permet de :
+> **A)** Conduire un bateau à moteur jusqu'à 6 milles
+> **B)** Utiliser la radio VHF de bord, émettre des appels MAYDAY, utiliser le DSC
+> **C)** Naviguer jusqu'à 20 milles des côtes
+> **Réponse:** B — Le CRR est le brevet radio qui autorise l'utilisation du VHF maritime, y compris les procédures MAYDAY, PAN PAN, et le DSC. Il est distinct du permis côtier mais souvent enseigné en même temps.
+
+> [TRANSITION]
+> Mercredi matin, dernier jour. Dernier mouillage avant le retour à Fethiye puis Göcek. L'ancre remonte dans la lumière du matin. Une semaine de navigation. William est à la barre. Rebecca, à côté de lui pour la première fois, tient le winch. Elle n'a rien demandé — elle a juste attrapé la manivelle. Emmanuel remarque, ne dit rien. Christelle prend une photo. Tout ce que William a appris, il l'a vécu. Il reste une chose à faire : l'examen blanc.
+>
+> **Session 7.0 — Épilogue et Examen Blanc : récapitulatif du voyage et 40 questions.**
