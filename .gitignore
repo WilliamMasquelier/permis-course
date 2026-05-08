@@ -21,6 +21,7 @@ raw/course-1/
 raw/course-2/
 raw/extracted-text/
 raw/private/
+raw/
 
 # Password / Office docs — keep out of git
 *.doc
