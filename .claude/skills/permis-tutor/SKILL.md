@@ -76,29 +76,27 @@ Execute these steps in order. Do not skip steps; do not reorder.
 - Save `student-progress.json` after each card (resilient to crashes).
 - Cap the round at 10 cards even if more are due.
 
-### 3. Start the local HTTP server
+### 3. Present the lesson visually
 
-Try ports in order: 8080, 8081, 8082. For the first available port:
+Derive the HTML path from `current_lesson` using the slug convention above.
+Build the full filesystem path: `output/lessons/<module-N>/session-N-M-slug.html`.
+
+If the HTML file does not exist, run `uv run python scripts/render_course.py` once to generate it.
+
+**Cowork / Desktop mode (preferred):**
+Read the rendered HTML file and output its full contents as an HTML artifact. Cowork and Claude Desktop render HTML artifacts inline — the student sees the styled lesson (callouts, images, wikilinks, mini-quizzes) directly in the conversation alongside the tutor chat. Do not start an HTTP server or use Playwright.
+
+**CLI fallback (terminal-only sessions):**
+If the environment does not support artifacts (pure terminal / Claude Code CLI), start a local HTTP server instead:
 
 ```bash
-python -m http.server <port> --directory output/lessons/ > /tmp/permis-server.log 2>&1 &
+python -m http.server 8080 --directory output/lessons/ > /tmp/permis-server.log 2>&1 &
 echo $! > /tmp/permis-server.pid
+for i in $(seq 1 10); do nc -z localhost 8080 && break || sleep 0.5; done
 ```
 
-Wait for the port to be ready:
-
-```bash
-for i in $(seq 1 10); do nc -z localhost <port> && break || sleep 0.5; done
-```
-
-If all three ports are busy, print the file URL (`file:///<absolute-path>/output/lessons/<html-path>`) and ask the student to open it manually. Continue without a server.
-
-### 4. Open the lesson in the browser
-
-- Derive the HTML path from `current_lesson` using the slug convention above.
-- Build the URL: `http://localhost:<port>/<module-N>/session-N-M-slug.html`
-- Open via Playwright MCP: call `browser_navigate` with that URL.
-- If Playwright fails, print the URL and instruct the student to open it manually. Continue.
+Then open via Playwright MCP: `browser_navigate` to `http://localhost:8080/<module-N>/session-N-M-slug.html`.
+If Playwright is unavailable, print the URL and continue chat-only.
 
 ### 5. Load lesson content + linked concepts + RTRI prompt
 
@@ -136,10 +134,10 @@ When you have verified that the student understands the 3–5 key concepts you i
      ```
    - Set `current_lesson` to the next `module-*.md` in alphabetical order from `Wiki/wiki/lessons/`, or `null` if all lessons are done.
    - Save the file.
-3. Kill the HTTP server: `kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid`
+3. If running an HTTP server (CLI fallback): `kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid`
 4. If a next lesson exists:
    - Announce: « Session terminée — on enchaîne sur la suivante. »
-   - Start a new HTTP server for the next lesson (step 3) and open it with `browser_navigate`.
+   - Present the next lesson visually (step 3 — artifact or HTTP server depending on mode).
 5. If no lessons remain:
    - Congratulate the student in French.
    - Suggest `/permis-exam` for the mock exam.
@@ -149,10 +147,8 @@ When you have verified that the student understands the 3–5 key concepts you i
 ### 8. Cleanup on session end
 
 On any user exit (`/exit`, "stop", "j'arrête"), or abnormal termination:
-```bash
-kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid
-```
-Save `student-progress.json` one final time.
+- If running an HTTP server (CLI fallback): `kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid`
+- Save `student-progress.json` one final time.
 
 ## Error handling
 
