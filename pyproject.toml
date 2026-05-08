@@ -4,10 +4,18 @@ version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
     "fsrs",
+    "jinja2",
+    "markdown-it-py",
+    "pdf2image>=1.17.0",
     "pdfplumber",
+    "pyobjc-framework-quartz>=12.1",
+    "pyobjc-framework-vision>=12.1",
     "pypdfium2",
     "report-renderer @ file:///Users/williammasquelier/Repositories/stromy-org/libs/report-renderer",
 ]
 
-[tool.uv]
-dev-dependencies = ["pytest", "ruff", "pyright"]
+[dependency-groups]
+dev = ["pytest", "ruff", "pyright"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
