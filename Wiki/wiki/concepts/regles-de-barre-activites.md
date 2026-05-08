@@ -4,6 +4,10 @@ title: "Activités spécifiques : Ski nautique, Plongée, Mouillage"
 theme: "Règles de barre"
 type: concept
 tags: [ski-nautique, plongee, mouillage, pavillon-alpha]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Règles pour les activités spécifiques

@@ -2,7 +2,7 @@
 title: Bouée cardinale Est
 type: entity
 tags: [balisage]
-sources: [../../Cours 2/1-Les balises_RECTO.pdf]
+sources: [raw/course-2/1-Les balises_RECTO.pdf]
 related: [[../concepts/marques-cardinales]]
 status: draft
 updated: 2026-05-01

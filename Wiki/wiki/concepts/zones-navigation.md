@@ -2,7 +2,7 @@
 title: Zones de navigation et catégories de conception
 type: concept
 tags: [securite]
-sources: [../../Cours 2/5-securite-RECTO.pdf]
+sources: [raw/course-2/5-securite-RECTO.pdf]
 related: [[equipement-obligatoire]], [[gilet-sauvetage]]
 status: draft
 updated: 2026-05-01

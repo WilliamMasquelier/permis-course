@@ -2,7 +2,7 @@
 title: Marques cardinales — principe et identification
 type: concept
 tags: [balisage]
-sources: [../../Cours 2/1-Les balises_RECTO.pdf]
+sources: [raw/course-2/1-Les balises_RECTO.pdf]
 related: [[../entities/bouee-cardinale-nord]], [[../entities/bouee-cardinale-sud]], [[../entities/bouee-cardinale-est]], [[../entities/bouee-cardinale-ouest]], [[balisage-iala-region-a]]
 status: draft
 updated: 2026-05-01

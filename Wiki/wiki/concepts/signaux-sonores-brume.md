@@ -4,6 +4,10 @@ title: "Signaux sonores par visibilité réduite (brume)"
 theme: "Signaux"
 type: concept
 tags: [brume, brouillard, signaux-sonores, visibilite-reduite]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Signaux par temps de brume

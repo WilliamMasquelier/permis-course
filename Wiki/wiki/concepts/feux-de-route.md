@@ -4,6 +4,10 @@ title: "Feux de route et leurs secteurs"
 theme: "Feux"
 type: concept
 tags: [feux-de-route, secteurs, portee, nuit]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Les feux de route des navires

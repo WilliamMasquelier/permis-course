@@ -2,7 +2,7 @@
 title: Gestion du moteur — types, dépannage et trim
 type: concept
 tags: [pratique]
-sources: [../../Cours 2/5-securite-RECTO.pdf, ../../Cours 2/7-La_pratique-RECTO.pdf]
+sources: [raw/course-2/5-securite-RECTO.pdf, raw/course-2/7-La_pratique-RECTO.pdf]
 related: [[checklist-depart], [[../themes/07-pratique]]]
 status: draft
 updated: 2026-05-01

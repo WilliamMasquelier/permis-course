@@ -1,10 +1,15 @@
 ---
 title: "Session 1 : Le Langage de la Mer"
+type: lesson
 lesson_order: 1
 prerequisites: []
 difficulty: beginner
 dark_mode: false
 exam_mode: false
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 ## CONCEPT
@@ -22,6 +27,17 @@ Le balisage maritime utilise le système IALA Région A en Europe. Il existe cin
 **Marques latérales** — balisent les chenaux :
 - Bâbord (gauche en entrant) : rouge, cylindrique, feux rouge
 - Tribord (droit en entrant) : vert, conique, feux vert
+
+![[bouee-eaux-saines.png]]
+
+**Marques d'eaux saines, danger isolé et spéciales** — les trois pièges visuels :
+- Eaux saines : bandes verticales rouges et blanches, passage possible tout autour.
+- Danger isolé : noir-rouge-noir, deux boules noires, danger ponctuel avec eaux navigables autour.
+- Spéciales : jaunes, souvent liées à une zone réglementée, travaux, câble ou activité particulière.
+
+![[bouee-danger-isole.png]]
+
+![[bouee-speciales.png]]
 
 Voir aussi [[concepts/balisage-iala-region-a]], [[concepts/marques-cardinales]].
 
@@ -52,4 +68,4 @@ Les étudiants confondent souvent rouge/vert avec danger/sécurité. Rouge = bâ
 
 ## MOTIVATION
 
-Jusqu'à 6 questions d'examen portent sur les marques cardinales. Les rater, c'est rater l'examen.
+Le balisage est une des familles les plus rentables à maîtriser : beaucoup de questions d'examen sont purement visuelles. Les cardinales, latérales, eaux saines, danger isolé et spéciales doivent être reconnues sans hésitation.

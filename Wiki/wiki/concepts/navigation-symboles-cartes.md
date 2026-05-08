@@ -4,6 +4,10 @@ title: "Symboles des cartes marines"
 theme: "Navigation"
 type: concept
 tags: [carte, symboles, sondes, epaves, roches]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Lecture des symboles de la carte marine

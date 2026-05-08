@@ -4,6 +4,10 @@ title: "Météo et Pression Atmosphérique"
 theme: "Sécurité"
 type: concept
 tags: [meteo, pression, anticyclone, depression, vent]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Météo et Pression Atmosphérique

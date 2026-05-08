@@ -58,9 +58,9 @@ For an instructor running a class:
 - **Per-student dashboards**: maintain `meta/students/<name>.md` with
   weak-link tags; the LLM produces individualized homework from
   `wiki/questions/`.
-- **Mock exam**: ask for "30 questions stratified across the 9 themes,
-  matching the official Permis Côtier distribution." The wiki gives
-  it the tag structure to do this deterministically.
+- **Mock exam**: ask for "40 questions, strict exam mode, maximum 5
+  errors." The wiki gives it the tag structure to sample deterministically
+  from the local question bank.
 
 ## 5. Re-use as a downstream skill (Stromy/Cowork pattern)
 
@@ -90,14 +90,14 @@ Strong fit because:
   CFA prep, sailing logbook, language certifications) can use the same
   vault layout — fork this vault, swap `raw/`, regenerate `wiki/`.
 
-## 6. Multi-modal extension (Cours 2 audio)
+## 6. Multi-modal extension
 
-The 139 `.mp3` files in `Cours 2/` look like an oral question bank.
-A natural pipeline:
+The `raw/course-2/Q-eval/` slide images and any future audio transcripts can
+be turned into an oral/visual question bank. A natural pipeline:
 
-1. Whisper-transcribe each clip → `raw/audio-transcripts/<n>.md`.
-2. LLM ingests transcripts, classifies each by theme tag, writes one
-   `questions/<theme>-aud-<n>.md` per item.
+1. OCR or transcribe each item → `raw/extracted-text/` or `raw/audio-transcripts/<n>.md`.
+2. LLM ingests each transcript, classifies it by theme tag, writes one
+   `questions/<theme>-<n>.md` per item.
 3. Auto-link to the concept note that justifies the answer.
 
 Result: a question bank cross-referenced to the wiki — the student can

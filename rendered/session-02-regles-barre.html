@@ -529,27 +529,7 @@
     }
     @keyframes flash { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
-    /* === SCORE CARD === */
-    #score-card {
-      max-width: 720px;
-      margin: 48px auto;
-      background: var(--surface);
-      border-radius: var(--radius-lg);
-      padding: 40px;
-      box-shadow: var(--shadow-lg);
-    }
-    #score-card.hidden { display: none; }
-    #result-banner {
-      padding: 20px 28px;
-      border-radius: var(--radius-md);
-      font-family: var(--font-ui);
-      font-weight: 700;
-      font-size: 22px;
-      text-align: center;
-      margin-bottom: 28px;
-    }
-    #result-banner.pass { background: var(--teal); color: #fff; }
-    #result-banner.fail { background: var(--amber); color: var(--navy); }
+
 
     main.exam-mode {
       max-width: 860px;
@@ -596,12 +576,15 @@
         <li data-slug="session-02-regles-barre"><span class="dot locked">·</span><span><span class="num">Session 02</span><span class="name">Priorités et Manœuvres</span></span></li>
         <li data-slug="session-03-feux-signaux"><span class="dot locked">·</span><span><span class="num">Session 03</span><span class="name">La Nuit et la Brume</span></span></li>
         <li data-slug="session-04-securite"><span class="dot locked">·</span><span><span class="num">Session 04</span><span class="name">La Sécurité et l'Équipement</span></span></li>
-        <li data-slug="session-05-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">L'Examen Blanc</span></span></li>
+        <li data-slug="session-05-navigation"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">Carte, Cap et Météo</span></span></li>
+        <li data-slug="session-06-pratique-reglementation"><span class="dot locked">·</span><span><span class="num">Session 06</span><span class="name">Départ, Zones et Conduite</span></span></li>
+        <li data-slug="session-07-radio-vhf"><span class="dot locked">·</span><span><span class="num">Session 07</span><span class="name">VHF, CROSS et Alertes</span></span></li>
+        <li data-slug="session-08-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 08</span><span class="name">L'Examen Blanc</span></span></li>
       </ul>
       <div class="progress-wrap">
         <div class="progress-label">
           <span>Progression</span>
-          <span id="progress-count">0 / 5</span>
+          <span id="progress-count">0 / 8</span>
         </div>
         <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
       </div>
@@ -613,6 +596,7 @@
         <h2>CONCEPT</h2>
 <p>En mer, le navire le moins manœuvrant est privilégié — c'est le principe directeur de toutes les règles de barre (RIPAM). Plus un navire a de mal à modifier sa route, plus les autres doivent s'écarter de lui. Le mnémonique descendant à retenir est <strong>NMSP-VRP-V-M</strong> : Non maître de sa manœuvre, Manœuvre Restreinte, handicapé par son tirant d'eau, Pêche, Voilier, Moteur.</p>
 <p>Voir <span class="wikilink" data-label="Regle De Barre Priorite">concepts/regle-de-barre-priorite</span> pour la hiérarchie complète.</p>
+<div class="wiki-image-wrap"><img class="wiki-image" src="assets/regles-croisement-rattrapage.svg" alt="regles-croisement-rattrapage.svg"></div>
 <h3>Trois cas qu'il faut savoir trancher en une seconde</h3>
 <p><strong>1. Voilier contre voilier — la règle des amures.</strong></p>
 <ul>
@@ -647,12 +631,10 @@
     <button class="btn-hint" onclick="showHint(this)" data-hint-level="0">Indice 💡</button>
     <button class="btn-reset" onclick="resetTask(this)">Recommencer ↺</button>
   </div>
+  <div class="hint-text hidden"><p>Pour chaque cas, posez-vous la même question dans cet ordre : qui peut le mieux manœuvrer ? Pour les deux voiliers, regardez le côté d'où vient le vent.</p></div>
+<div class="hint-text hidden"><p>Voilier-voilier : le mot-clé est <strong>amure</strong> — quel bord reçoit le vent. Voilier-moteur : qui est libre de zigzaguer. Rattrapage : le verbe « rattraper » contient déjà la réponse — celui qui agit, c'est celui qui rejoint l'autre.</p></div>
   <div class="task-feedback hidden"></div>
-</div><h2>HINT_1</h2>
-<p>Pour chaque cas, posez-vous la même question dans cet ordre : qui peut le mieux manœuvrer ? Pour les deux voiliers, regardez le côté d'où vient le vent.</p>
-<h2>HINT_2</h2>
-<p>Voilier-voilier : le mot-clé est <strong>amure</strong> — quel bord reçoit le vent. Voilier-moteur : qui est libre de zigzaguer. Rattrapage : le verbe « rattraper » contient déjà la réponse — celui qui agit, c'est celui qui rejoint l'autre.</p>
-<h2>MISCONCEPTION</h2>
+</div><h2>MISCONCEPTION</h2>
 <ul>
 <li>Beaucoup pensent qu'un voilier est <strong>toujours</strong> prioritaire. Faux : il cède devant la pêche, devant un navire à manœuvre restreinte, et même devant un moteur <strong>s'il est en train de le rattraper</strong>.</li>
 <li>Confusion fréquente entre « bâbord amure » (vent venant de bâbord) et « passer à bâbord ». Ce sont deux choses différentes.</li>
@@ -694,7 +676,7 @@
 </table>
 </div>
 </details><h2>MOTIVATION</h2>
-<p>Jusqu'à <strong>5 questions</strong> sur les règles de barre tombent à l'examen officiel. Sur 30 questions et un seuil à 18, ces 5 points pèsent lourd. Et au-delà de l'examen : ces règles existent parce que la mer est un espace partagé sans ligne blanche au sol. Bien les connaître, c'est savoir lire l'intention de l'autre — et c'est ce qui distingue un plaisancier d'un danger flottant.</p>
+<p>Les règles de barre pèsent lourd dans l'examen, mais elles servent surtout à éviter l'hésitation en situation réelle. En mer, il n'y a ni ligne blanche ni priorité routière universelle : la bonne décision dépend du type de navire, de l'angle de rencontre et de la capacité de manœuvre.</p>
 <h2>PREREQUISITES</h2>
 <ul>
 <li><span class="wikilink" data-label="Session 01 Balisage">lessons/session-01-balisage</span></li>
@@ -737,8 +719,9 @@
         });
         const cEl = document.getElementById('progress-count');
         const fEl = document.getElementById('progress-fill');
-        if (cEl) cEl.textContent = completed.length + ' / 5';
-        if (fEl) fEl.style.width = (completed.length * 20) + '%';
+        const totalSessions = 8;
+        if (cEl) cEl.textContent = completed.length + ' / ' + totalSessions;
+        if (fEl) fEl.style.width = Math.min(100, (completed.length / totalSessions) * 100) + '%';
       } catch(e) { console.warn('progress init failed', e); }
       if (typeof window._examInit === 'function') window._examInit();
     })();

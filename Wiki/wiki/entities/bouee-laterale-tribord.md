@@ -2,7 +2,7 @@
 title: Bouée latérale tribord
 type: entity
 tags: [balisage]
-sources: [../../Cours 2/1-Les balises_RECTO.pdf]
+sources: [raw/course-2/1-Les balises_RECTO.pdf]
 related: [[../concepts/marques-laterales]], [[bouee-laterale-babord]]
 status: draft
 updated: 2026-05-01

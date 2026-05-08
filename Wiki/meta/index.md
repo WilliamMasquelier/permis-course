@@ -6,7 +6,7 @@ updated: 2026-05-01
 # Permis Bateau — Wiki Index
 
 > Coastal boat license (*Permis Plaisance Option Côtière*) + CRR radio cert.
-> Source: `../Cours 1/`, `../Cours 2/`. Schema: [[SCHEMA]].
+> Source: `raw/course-1/`, `raw/course-2/`. Schema: [[SCHEMA]].
 
 ## Themes (Maps of Content)
 

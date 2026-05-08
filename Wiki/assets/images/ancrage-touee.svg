@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-label="Calcul de la touée au mouillage — rapport 3:1 chaîne et 5:1 câblot">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1a2e4a"/></marker>
+  </defs>
+  <rect width="800" height="460" fill="#d4ecf7"/>
+  <!-- Sea floor -->
+  <path d="M0 360 Q200 350 400 365 Q600 380 800 360 L800 460 L0 460 Z" fill="#d8c48f"/>
+  <text x="400" y="420" text-anchor="middle" fill="#8b6914" font-size="12" font-style="italic">Fond (sable)</text>
+
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <!-- Title -->
+    <text x="400" y="35" text-anchor="middle" fill="#1a2e4a" font-size="21" font-weight="700">Touée au mouillage</text>
+    <text x="400" y="55" text-anchor="middle" fill="#1a2e4a" font-size="13">Longueur de câble à filer selon le type</text>
+
+    <!-- Water surface line -->
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#0d7377" stroke-width="1" stroke-dasharray="6 4" opacity="0.5"/>
+    <text x="760" y="196" fill="#0d7377" font-size="11">Surface</text>
+
+    <!-- Depth indicator -->
+    <line x1="100" y1="200" x2="100" y2="360" stroke="#1a2e4a" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <line x1="92" y1="200" x2="108" y2="200" stroke="#1a2e4a" stroke-width="1.5"/>
+    <line x1="92" y1="360" x2="108" y2="360" stroke="#1a2e4a" stroke-width="1.5"/>
+    <text x="60" y="285" fill="#1a2e4a" font-size="12" text-anchor="middle" transform="rotate(-90,60,285)">Prof. (H)</text>
+
+    <!-- Boat (both scenarios same position) -->
+    <path d="M620 170 L680 170 L690 185 L680 195 L620 195 L610 185 Z" fill="#fff" stroke="#1a2e4a" stroke-width="2"/>
+    <text x="645" y="187" text-anchor="middle" fill="#1a2e4a" font-size="11" font-weight="700">⚓</text>
+
+    <!-- Anchor at seabed -->
+    <text x="200" y="380" text-anchor="middle" fill="#1a2e4a" font-size="20">⚓</text>
+
+    <!-- Chain scenario (3:1) — dark curved catenary -->
+    <path d="M200 365 Q280 340 380 240 Q480 190 615 185"
+          fill="none" stroke="#1a2e4a" stroke-width="3"/>
+    <!-- Chain link visual hint -->
+    <text x="380" y="230" fill="#1a2e4a" font-size="11">⛓ Chaîne</text>
+    <text x="380" y="244" fill="#1a2e4a" font-size="11" font-weight="700">Touée min. 3 × H</text>
+
+    <!-- Rope scenario (5:1) — lighter dashed rope -->
+    <path d="M200 365 Q340 350 480 310 Q570 260 615 195"
+          fill="none" stroke="#f5a623" stroke-width="3" stroke-dasharray="8 4"/>
+    <text x="440" y="302" fill="#9a6400" font-size="11">〰 Câblot nylon</text>
+    <text x="440" y="316" fill="#9a6400" font-size="11" font-weight="700">Touée min. 5 × H</text>
+
+    <!-- Labels box -->
+    <rect x="40" y="75" width="290" height="105" rx="6" fill="rgba(255,255,255,0.88)" stroke="#1a2e4a" stroke-width="1"/>
+    <text x="185" y="97" text-anchor="middle" fill="#1a2e4a" font-size="13" font-weight="700">Règle de la touée</text>
+    <text x="55" y="118" fill="#1a2e4a" font-size="12">⛓ Chaîne : min. <tspan font-weight="700">3 × profondeur</tspan></text>
+    <text x="55" y="138" fill="#1a2e4a" font-size="12">〰 Câblot : min. <tspan font-weight="700">5 × profondeur</tspan></text>
+    <text x="55" y="158" fill="#ef4444" font-size="11">Par mauvais temps : 5:1 à 7:1 (chaîne)</text>
+    <text x="55" y="172" fill="#888" font-size="10">Profondeur = sonde actuelle + marnage prévu</text>
+
+    <!-- Catenary benefit note -->
+    <text x="250" y="140" fill="#1a2e4a" font-size="10" font-style="italic">Caténaire = courbe naturelle</text>
+    <text x="250" y="153" fill="#1a2e4a" font-size="10" font-style="italic">de la chaîne → amortit les chocs</text>
+
+    <!-- Footer -->
+    <text x="400" y="450" text-anchor="middle" fill="#444" font-size="10">Source: Complete Yachtmaster ch.8 — raw/books/yachtmaster-chapters/ch08-anchoring.txt</text>
+  </g>
+</svg>

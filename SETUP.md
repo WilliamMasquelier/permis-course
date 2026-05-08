@@ -38,7 +38,7 @@ Le tuteur ouvrira la première leçon dans votre navigateur et commencera à vou
 |----------|-------------|
 | /permis-tutor | Démarrer ou reprendre une session d’enseignement |
 | /permis-scenario | Exercice pratique de navigation |
-| /permis-exam | Examen blanc (30 questions, 45 min) |
+| /permis-exam | Examen blanc (40 questions, objectif 35/40) |
 | /permis-render | Mettre à jour les pages HTML |
 | /permis-setup | Vérifier l’installation |
 

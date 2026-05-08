@@ -4,6 +4,10 @@ title: "Environnement et infractions"
 theme: "La pratique"
 type: concept
 tags: [environnement, pollution, infractions, amendes]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Protection de l'environnement et infractions

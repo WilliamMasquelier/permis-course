@@ -1,7 +1,12 @@
 ---
+title: Question Regles Barre 02
 id: regles-barre-02
 theme: "Règles de barre"
 type: question
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Question

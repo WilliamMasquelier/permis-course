@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" role="img" aria-label="Phare à secteurs colorés — vue du dessus">
+  <rect width="700" height="500" fill="#d4ecf7"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <!-- Title -->
+    <text x="350" y="35" text-anchor="middle" fill="#1a2e4a" font-size="21" font-weight="700">Phare à secteurs colorés — vue du dessus</text>
+
+    <!-- Sea / land -->
+    <path d="M0 250 Q175 230 350 250 Q525 270 700 250 L700 500 L0 500 Z" fill="#d8c48f" opacity="0.5"/>
+    <text x="350" y="470" text-anchor="middle" fill="#8b6914" font-size="12" font-style="italic">Côte / zone terrestre</text>
+
+    <!-- Danger zone (rocks) -->
+    <ellipse cx="500" cy="290" rx="50" ry="30" fill="#ef4444" opacity="0.15" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <text x="500" y="288" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="700">Danger</text>
+    <text x="500" y="302" text-anchor="middle" fill="#ef4444" font-size="10">(écueil)</text>
+
+    <!-- Lighthouse position -->
+    <circle cx="350" cy="250" r="10" fill="#1a2e4a"/>
+    <text x="330" y="240" fill="#1a2e4a" font-size="11" font-weight="700">Phare</text>
+
+    <!-- Sector arcs (viewed from above, lighthouse at 350,250) -->
+    <!-- White sector: safe approach (roughly N to NW) -->
+    <path d="M350 250 L350 70 A180 180 0 0 0 160 160 Z" fill="rgba(255,255,255,0.55)" stroke="#888" stroke-width="0.5"/>
+    <text x="250" y="130" text-anchor="middle" fill="#555" font-size="13" font-weight="700">BLANC</text>
+    <text x="250" y="147" text-anchor="middle" fill="#555" font-size="11">Zone sûre</text>
+
+    <!-- Green sector: safe to the NE -->
+    <path d="M350 250 L520 90 A180 180 0 0 1 350 70 Z" fill="rgba(76,175,80,0.45)" stroke="#4caf50" stroke-width="0.5"/>
+    <text x="455" y="105" text-anchor="middle" fill="#1b5e20" font-size="13" font-weight="700">VERT</text>
+    <text x="455" y="122" text-anchor="middle" fill="#1b5e20" font-size="11">Zone sûre (tribord)</text>
+
+    <!-- Red sector: danger zone (towards the rocks, roughly E) -->
+    <path d="M350 250 L520 90 A180 180 0 0 1 530 270 Z" fill="rgba(244,67,54,0.4)" stroke="#f44336" stroke-width="0.5"/>
+    <text x="520" y="185" text-anchor="middle" fill="#b71c1c" font-size="13" font-weight="700">ROUGE</text>
+    <text x="520" y="202" text-anchor="middle" fill="#b71c1c" font-size="11">Zone danger</text>
+    <text x="520" y="218" text-anchor="middle" fill="#b71c1c" font-size="10">(écueil dans ce secteur)</text>
+
+    <!-- Obscured sector (solid fill - no light) -->
+    <path d="M350 250 L530 270 A180 180 0 0 1 160 160 Z" fill="rgba(0,0,0,0.12)" stroke="#888" stroke-width="0.5"/>
+    <text x="200" y="340" text-anchor="middle" fill="#555" font-size="12">Masqué</text>
+    <text x="200" y="356" text-anchor="middle" fill="#555" font-size="10">(par la côte)</text>
+
+    <!-- North indicator -->
+    <circle cx="620" cy="90" r="35" fill="rgba(255,255,255,0.8)" stroke="#1a2e4a" stroke-width="1.5"/>
+    <text x="620" y="62" text-anchor="middle" fill="#ef4444" font-size="14" font-weight="700">N</text>
+    <path d="M620 90 L620 65" stroke="#ef4444" stroke-width="3"/>
+    <path d="M620 90 L620 115" stroke="#888" stroke-width="2"/>
+
+    <!-- Legend box -->
+    <rect x="30" y="380" width="300" height="95" rx="6" fill="rgba(255,255,255,0.88)" stroke="#1a2e4a" stroke-width="1"/>
+    <text x="180" y="400" text-anchor="middle" fill="#1a2e4a" font-size="13" font-weight="700">Lecture d'un feu à secteurs</text>
+    <rect x="45" y="410" width="14" height="14" fill="rgba(255,255,255,0.8)" stroke="#888"/>
+    <text x="65" y="421" fill="#1a2e4a" font-size="11">Blanc → route sûre</text>
+    <rect x="45" y="428" width="14" height="14" fill="rgba(76,175,80,0.6)"/>
+    <text x="65" y="439" fill="#1a2e4a" font-size="11">Vert → abord sûr côté tribord</text>
+    <rect x="45" y="446" width="14" height="14" fill="rgba(244,67,54,0.6)"/>
+    <text x="65" y="457" fill="#1a2e4a" font-size="11">Rouge → danger dans ce secteur</text>
+    <text x="45" y="470" fill="#888" font-size="10">Les limites de secteur sont tracées sur la carte</text>
+
+    <!-- Footer -->
+    <text x="350" y="492" text-anchor="middle" fill="#888" font-size="10">Source: Complete Yachtmaster ch.13 — raw/books/yachtmaster-chapters/ch13-aids-to-navigation.txt</text>
+  </g>
+</svg>

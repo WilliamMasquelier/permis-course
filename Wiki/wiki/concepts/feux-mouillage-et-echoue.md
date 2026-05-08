@@ -4,6 +4,10 @@ title: "Navires au mouillage et échoués"
 theme: "Feux"
 type: concept
 tags: [mouillage, echouement, feux]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Navires au mouillage et échoués

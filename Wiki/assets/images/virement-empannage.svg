@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="900" height="500" fill="#f0f7ff"/>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#0d7377"/>
+    </marker>
+    <marker id="arr-boat" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1a2e4a"/>
+    </marker>
+    <marker id="arr-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <!-- Divider line -->
+  <line x1="450" y1="30" x2="450" y2="470" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- ===== LEFT PANEL: VIREMENT DE BORD (TACKING) ===== -->
+  <text x="225" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#1a2e4a">Virement de Bord</text>
+  <text x="225" y="58" text-anchor="middle" font-size="12" fill="#0d7377">(Tacking — passe par le vent debout)</text>
+
+  <!-- Wind arrows from top-left -->
+  <text x="60" y="82" font-size="12" font-weight="700" fill="#0d7377">VENT</text>
+  <line x1="55" y1="88" x2="120" y2="120" stroke="#0d7377" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <line x1="80" y1="78" x2="145" y2="110" stroke="#0d7377" stroke-width="1.5" marker-end="url(#arr)" opacity="0.5"/>
+  <line x1="105" y1="70" x2="170" y2="102" stroke="#0d7377" stroke-width="1.5" marker-end="url(#arr)" opacity="0.3"/>
+
+  <!-- BOAT 1: Amures bâbord (vent à gauche) -->
+  <g transform="translate(110, 180) rotate(-40)">
+    <ellipse cx="0" cy="0" rx="12" ry="22" fill="#1a2e4a"/>
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#fff" stroke-width="2"/>
+    <!-- Sail on port side -->
+    <path d="M 0,-20 C -18,-10 -20,6 0,14" fill="#14a0a5" stroke="#0d7377" stroke-width="1.5" opacity="0.85"/>
+  </g>
+  <text x="75" y="240" font-size="11" font-weight="600" fill="#1a2e4a">① Amures bâbord</text>
+  <text x="75" y="254" font-size="10" fill="#0d7377">vent par babord</text>
+
+  <!-- Arrow showing path: boat curves through wind -->
+  <path d="M 155,195 Q 225,140 295,190" fill="none" stroke="#1a2e4a" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-boat)"/>
+
+  <!-- BOAT 2: Vent debout (passing through) -->
+  <g transform="translate(225, 160)">
+    <ellipse cx="0" cy="0" rx="12" ry="22" fill="#64748b"/>
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#fff" stroke-width="2"/>
+    <!-- Sails luffing (no sail) -->
+    <text x="0" y="-30" text-anchor="middle" font-size="10" fill="#dc2626" font-weight="700">Vent debout !</text>
+  </g>
+  <text x="180" y="210" font-size="10" fill="#dc2626">② Passage par le vent</text>
+  <text x="180" y="222" font-size="10" fill="#dc2626">debout (perte de vitesse)</text>
+
+  <!-- Arrow continuing -->
+  <path d="M 270,175 Q 340,145 380,190" fill="none" stroke="#1a2e4a" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-boat)"/>
+
+  <!-- BOAT 3: Amures tribord -->
+  <g transform="translate(370, 185) rotate(40)">
+    <ellipse cx="0" cy="0" rx="12" ry="22" fill="#1a2e4a"/>
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#fff" stroke-width="2"/>
+    <!-- Sail on starboard side -->
+    <path d="M 0,-20 C 18,-10 20,6 0,14" fill="#14a0a5" stroke="#0d7377" stroke-width="1.5" opacity="0.85"/>
+  </g>
+  <text x="310" y="245" font-size="11" font-weight="600" fill="#1a2e4a">③ Amures tribord</text>
+  <text x="310" y="259" font-size="10" fill="#0d7377">vent par tribord</text>
+
+  <!-- Step annotations -->
+  <rect x="55" y="290" width="370" height="120" rx="8" fill="rgba(26,46,74,0.04)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="75" y="312" font-size="12" font-weight="700" fill="#1a2e4a">Commandes :</text>
+  <text x="75" y="330" font-size="11" fill="#18202e">1. « Paré à virer ? » — équipier : « Paré ! »</text>
+  <text x="75" y="346" font-size="11" fill="#18202e">2. « Vire ! » — barre poussée sous le vent</text>
+  <text x="75" y="362" font-size="11" fill="#18202e">3. Larguer l'écoute de foc (bord actuel)</text>
+  <text x="75" y="378" font-size="11" fill="#18202e">4. Border l'écoute de foc (nouveau bord)</text>
+  <text x="75" y="394" font-size="11" fill="#dc2626" font-weight="600">⚠ La bôme passe au-dessus du cockpit — baissez la tête !</text>
+
+  <!-- ===== RIGHT PANEL: EMPANNAGE (GYBING) ===== -->
+  <text x="675" y="40" text-anchor="middle" font-size="18" font-weight="700" fill="#1a2e4a">Empannage</text>
+  <text x="675" y="58" text-anchor="middle" font-size="12" fill="#dc2626">(Gybing — passe par le vent arrière ⚠ danger !)</text>
+
+  <!-- Wind arrows from top -->
+  <text x="810" y="82" font-size="12" font-weight="700" fill="#0d7377">VENT</text>
+  <line x1="720" y1="70" x2="680" y2="105" stroke="#0d7377" stroke-width="1.5" marker-end="url(#arr)" opacity="0.7"/>
+  <line x1="760" y1="70" x2="720" y2="105" stroke="#0d7377" stroke-width="1.5" marker-end="url(#arr)" opacity="0.5"/>
+  <line x1="800" y1="70" x2="760" y2="105" stroke="#0d7377" stroke-width="1.5" marker-end="url(#arr)" opacity="0.3"/>
+
+  <!-- BOAT 1: Grand-largue tribord -->
+  <g transform="translate(510, 185) rotate(-130)">
+    <ellipse cx="0" cy="0" rx="12" ry="22" fill="#1a2e4a"/>
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#fff" stroke-width="2"/>
+    <path d="M 0,-20 C 18,-10 20,6 0,14" fill="#14a0a5" stroke="#0d7377" stroke-width="1.5" opacity="0.85"/>
+  </g>
+  <text x="470" y="248" font-size="11" font-weight="600" fill="#1a2e4a">① Grand-largue</text>
+  <text x="470" y="262" font-size="10" fill="#0d7377">amures tribord</text>
+
+  <!-- Arc path of gybing boat -->
+  <path d="M 545,190 Q 640,160 700,190" fill="none" stroke="#1a2e4a" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arr-boat)"/>
+
+  <!-- Danger warning in center -->
+  <g transform="translate(645, 165)">
+    <circle cx="0" cy="0" r="22" fill="rgba(220,38,38,0.15)" stroke="#dc2626" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-size="14" font-weight="700" fill="#dc2626">⚠</text>
+  </g>
+  <text x="645" y="200" text-anchor="middle" font-size="10" fill="#dc2626" font-weight="700">Bôme qui part !</text>
+
+  <!-- Boom arc indicator (danger) -->
+  <path d="M 618,155 Q 645,130 672,155" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="4,2"/>
+
+  <!-- BOAT 2: Vent arrière - mid-gybe -->
+  <g transform="translate(645, 165)">
+    <ellipse cx="0" cy="0" rx="14" ry="22" fill="#64748b" opacity="0.7"/>
+  </g>
+
+  <!-- BOAT 3: Grand-largue bâbord -->
+  <g transform="translate(750, 185) rotate(130)">
+    <ellipse cx="0" cy="0" rx="12" ry="22" fill="#1a2e4a"/>
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#fff" stroke-width="2"/>
+    <path d="M 0,-20 C -18,-10 -20,6 0,14" fill="#14a0a5" stroke="#0d7377" stroke-width="1.5" opacity="0.85"/>
+  </g>
+  <text x="710" y="248" font-size="11" font-weight="600" fill="#1a2e4a">③ Grand-largue</text>
+  <text x="710" y="262" font-size="10" fill="#0d7377">amures bâbord</text>
+
+  <!-- Step annotations -->
+  <rect x="465" y="290" width="420" height="140" rx="8" fill="rgba(220,38,38,0.04)" stroke="#dc2626" stroke-width="1"/>
+  <text x="485" y="312" font-size="12" font-weight="700" fill="#dc2626">⚠ Empannage contrôlé :</text>
+  <text x="485" y="330" font-size="11" fill="#18202e">1. Border la grand-voile à mi-cours d'abord</text>
+  <text x="485" y="346" font-size="11" fill="#18202e">2. « Paré à empanner ? » — « Paré ! »</text>
+  <text x="485" y="362" font-size="11" fill="#18202e">3. « Empanne ! » — barre poussée doucement</text>
+  <text x="485" y="378" font-size="11" fill="#18202e">4. La bôme passe — équipiers en dessous !</text>
+  <text x="485" y="394" font-size="11" fill="#18202e">5. Choquer l'écoute pour ouvrir sur nouveau bord</text>
+  <text x="485" y="412" font-size="11" fill="#dc2626" font-weight="600">⚠ Empannage involontaire = accident possible. Toujours contrôler.</text>
+
+  <!-- Footer -->
+  <text x="450" y="480" text-anchor="middle" font-size="11" fill="#64748b" font-style="italic">Virement de bord = cap vers le vent · Empannage = cap sous le vent</text>
+</svg>

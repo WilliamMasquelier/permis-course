@@ -8,7 +8,7 @@ updated: 2026-05-01
 Source material lives one level up to avoid duplicating large PDFs.
 LLM and humans **read** these paths; **never modify** them.
 
-## Course 1 — `../Cours 1/`
+## Course 1 — `raw/course-1/`
 Theory PDFs for the *Permis Côtier* (chapters 1–7), plus annexes.
 
 | File | Topic | Maps to theme |
@@ -26,9 +26,9 @@ Theory PDFs for the *Permis Côtier* (chapters 1–7), plus annexes.
 | `1-Ex_candidat.pdf` | Sample exam | [[../wiki/questions]] |
 | `anfr-licence.pdf`, `anfr-manuel_crr.pdf` | Radio / CRR | [[../wiki/themes/08-radio-crr]] |
 
-## Course 2 — `../Cours 2/`
-Same chapter PDFs + 8 thematic RECTO/VERSO summary cards (most useful for
-distilling) + 139 audio files (oral practice) + `Q-eval.pdf` (mock exam).
+## Course 2 — `raw/course-2/`
+Same chapter PDFs + thematic RECTO/VERSO summary cards (most useful for
+distilling) + `Q-eval.pdf` and extracted slide images for mock-exam practice.
 
 | File | Maps to theme |
 |------|---------------|
@@ -40,11 +40,10 @@ distilling) + 139 audio files (oral practice) + `Q-eval.pdf` (mock exam).
 | `6-La_navigation-*.pdf` | [[../wiki/themes/06-navigation]] |
 | `7-La_pratique-*.pdf` | [[../wiki/themes/07-pratique]] |
 | `Q-eval.pdf` | source for [[../wiki/questions]] |
-| `*.mp3` (139 files) | oral drill set — transcribe into `questions/` |
 | `RECTO-MER_COTIER.pdf`, `VERSO-MER_COTIER.pdf` | global cheat sheet |
 
 ## Ingest priority
-1. Cours 2 RECTO/VERSO cards (highest signal-to-noise).
-2. Cours 1 chapter PDFs (1–7) — fill in detail.
+1. `raw/course-2` RECTO/VERSO cards (highest signal-to-noise).
+2. `raw/course-1` chapter PDFs (1–7) — fill in detail.
 3. CRR manual (separate cert track).
 4. Q-eval + audio drills → `questions/`.

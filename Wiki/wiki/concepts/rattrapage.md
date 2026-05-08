@@ -2,7 +2,7 @@
 title: Rattrapage — règle du navire rattrapant
 type: concept
 tags: [regles-de-barre, colreg]
-sources: [../../Cours 2/2-regle_de_barre-RECTO.pdf]
+sources: [raw/course-2/2-regle_de_barre-RECTO.pdf]
 related: [[../themes/02-regles-de-barre]], [[regle-de-barre-priorite]], [[route-directe-croisement]]
 status: draft
 updated: 2026-05-01

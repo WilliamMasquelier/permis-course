@@ -2,7 +2,7 @@
 title: Canaux VHF maritimes — attribution et usage
 type: concept
 tags: [radio, crr, vhf]
-sources: [../../Cours 1/anfr-manuel_crr.pdf]
+sources: [raw/course-1/anfr-manuel_crr.pdf]
 related: [[../themes/08-radio-crr]], [[procedure-mayday]], [[procedure-pan-pan]], [[asn-dsc]], [[securite-vhf-et-cross]]
 status: draft
 updated: 2026-05-06

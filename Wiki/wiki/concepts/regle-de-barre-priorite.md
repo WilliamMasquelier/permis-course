@@ -2,7 +2,7 @@
 title: Hiérarchie de priorité (qui s'écarte de qui)
 type: concept
 tags: [regles-de-barre, colreg]
-sources: [../../Cours 2/2-regle_de_barre-RECTO.pdf, ../../Cours 1/Prevenir_Abordages.pdf]
+sources: [raw/course-2/2-regle_de_barre-RECTO.pdf, raw/course-1/Prevenir_Abordages.pdf]
 related: [[../themes/02-regles-de-barre]]
 status: draft
 updated: 2026-05-01

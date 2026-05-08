@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="fr" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session 7 : VHF, CROSS et Alertes — Permis Côtier</title>
+  <style>
+    /* === DESIGN SYSTEM TOKENS === */
+    :root {
+      --navy: #1a2e4a;
+      --navy-deep: #122038;
+      --teal: #0d7377;
+      --teal-lt: #14a0a5;
+      --amber: #f5a623;
+      --amber-soft: #fbe4b6;
+      --bg: #f8f9fc;
+      --surface: #ffffff;
+      --text: #1a1a2e;
+      --muted: #6b7280;
+      --border: #e2e8f0;
+      --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 12px 40px rgba(15, 23, 42, 0.12);
+      --font-body: Georgia, 'Times New Roman', serif;
+      --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'SF Mono', 'Courier New', Courier, monospace;
+      --radius-sm: 6px;
+      --radius-md: 8px;
+      --radius-lg: 14px;
+    }
+
+    html.dark {
+      --bg: #0a0f14;
+      --surface: #111827;
+      --text: #e0e8f0;
+      --muted: #9ca3af;
+      --border: #1f2937;
+    }
+
+    /* === RESET === */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+    }
+    a { color: var(--teal); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s ease; }
+    a:hover { border-bottom-color: var(--teal); }
+    img { max-width: 100%; height: auto; display: block; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
+
+    /* === LAYOUT === */
+    .layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      min-height: 100vh;
+    }
+
+    /* === SIDEBAR === */
+    #sidebar {
+      background: var(--navy);
+      color: #cbd5e1;
+      padding: 28px 22px 24px;
+      position: sticky;
+      top: 0;
+      align-self: start;
+      height: 100vh;
+      overflow-y: auto;
+      font-family: var(--font-ui);
+      display: flex;
+      flex-direction: column;
+    }
+    #sidebar .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 36px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    #sidebar .brand .anchor { font-size: 26px; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3)); }
+    #sidebar .brand .title {
+      color: var(--teal-lt);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    #sidebar .brand .subtitle {
+      color: rgba(255,255,255,0.45);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .session-list { list-style: none; padding: 0; margin: 0 0 auto 0; }
+    .session-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 11px 10px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      color: rgba(255, 255, 255, 0.78);
+    }
+    .session-list li:hover { background: rgba(255, 255, 255, 0.05); }
+    .session-list li.locked { color: rgba(255, 255, 255, 0.32); cursor: not-allowed; }
+    .session-list li.current {
+      background: rgba(20, 160, 165, 0.14);
+      color: #fff;
+      box-shadow: inset 3px 0 0 var(--teal-lt);
+    }
+    .session-list .dot {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+    .session-list .dot.done { background: var(--teal); color: #fff; }
+    .session-list .dot.current { background: var(--amber); color: var(--navy); }
+    .session-list .dot.locked { background: rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.4); }
+    .session-list .num {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.4);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .session-list .name { display: block; line-height: 1.3; }
+
+    .progress-wrap {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .progress-bar {
+      height: 4px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--teal) 0%, var(--teal-lt) 100%);
+      transition: width 0.4s ease;
+    }
+
+    /* === MAIN CONTENT === */
+    main#content {
+      padding: 56px clamp(28px, 6vw, 80px) 96px;
+      max-width: 980px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .content-card {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      padding: 56px clamp(28px, 5vw, 64px);
+      max-width: 860px;
+      overflow: hidden;
+    }
+    .breadcrumb {
+      font-family: var(--font-ui);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .breadcrumb .sep { margin: 0 8px; opacity: 0.5; }
+
+    /* === TYPOGRAPHY === */
+    h1 {
+      font-family: var(--font-ui);
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--navy);
+      margin: 0 0 32px 0;
+    }
+    html.dark h1 { color: var(--teal-lt); }
+    h2 {
+      font-family: var(--font-ui);
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 1.3;
+      color: var(--teal);
+      border-left: 3px solid var(--teal);
+      padding-left: 14px;
+      margin: 48px 0 16px 0;
+    }
+    h3 {
+      font-family: var(--font-ui);
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--navy);
+      margin: 32px 0 12px 0;
+    }
+    html.dark h3 { color: var(--teal-lt); }
+    p { margin: 0 0 1.1em 0; }
+    strong { color: var(--navy); }
+    html.dark strong { color: #fff; }
+    em { color: var(--teal); font-style: italic; }
+    blockquote {
+      margin: 1.5em 0;
+      padding: 16px 22px;
+      border-left: 4px solid var(--amber);
+      background: linear-gradient(90deg, rgba(245, 166, 35, 0.08), transparent);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      color: var(--text);
+      font-style: italic;
+    }
+    blockquote p:last-child { margin-bottom: 0; }
+    ul, ol { padding-left: 1.6em; margin: 0 0 1.2em 0; }
+    li { margin-bottom: 0.4em; }
+    li::marker { color: var(--teal); }
+
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.9em;
+      padding: 2px 6px;
+      background: rgba(13, 115, 119, 0.08);
+      color: var(--teal);
+      border-radius: 4px;
+    }
+    pre {
+      background: var(--navy-deep);
+      color: #e0e8f0;
+      padding: 18px 22px;
+      border-radius: var(--radius-md);
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 14px;
+      line-height: 1.55;
+      box-shadow: var(--shadow-sm);
+      border-left: 3px solid var(--amber);
+    }
+    pre code { background: transparent; color: inherit; padding: 0; }
+
+    /* === TABLES === */
+    .content-card { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-family: var(--font-ui);
+      font-size: 15px;
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    thead { background: var(--teal); color: #fff; }
+    th {
+      text-align: left;
+      padding: 12px 16px;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tbody tr:nth-child(even) { background: rgba(13, 115, 119, 0.025); }
+    tbody tr:hover { background: rgba(13, 115, 119, 0.06); }
+    tbody tr:last-child td { border-bottom: none; }
+
+    /* === CALLOUT CARDS (<details>) === */
+    details {
+      margin: 22px 0;
+      border-left: 3px solid var(--teal);
+      background: rgba(13, 115, 119, 0.06);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: box-shadow 0.2s ease;
+    }
+    details[open] { box-shadow: var(--shadow-sm); }
+    details summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 14px 18px;
+      font-family: var(--font-ui);
+      font-weight: 600;
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      user-select: none;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::before {
+      content: "▶";
+      font-size: 10px;
+      color: var(--teal);
+      transition: transform 0.2s ease;
+      display: inline-block;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    details > *:not(summary) { padding: 0 18px 14px 18px; }
+
+    /* === WIKI IMAGES === */
+    .wiki-image-wrap {
+      display: block;
+      margin: 28px 0;
+      overflow: hidden;
+    }
+    .wiki-image {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
+    html.dark .wiki-image { filter: brightness(0.9); }
+    .wiki-image-caption {
+      text-align: center;
+      font-family: var(--font-ui);
+      font-size: 13px;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: -18px;
+      margin-bottom: 28px;
+    }
+
+    /* === WIKILINK BADGES === */
+    .wikilink {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      padding: 1px 8px;
+      background: rgba(13, 115, 119, 0.1);
+      color: var(--teal);
+      border: 1px solid rgba(13, 115, 119, 0.3);
+      border-radius: 999px;
+      vertical-align: baseline;
+      line-height: 1.6;
+      margin: 0 2px;
+      transition: background 0.15s ease;
+    }
+    .wikilink:hover { background: rgba(13, 115, 119, 0.18); }
+
+
+    /* === LIGHTBOX (zoomable images) === */
+    .wiki-image { cursor: zoom-in; }
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.88);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    #lightbox.open { display: flex; }
+    #lightbox img {
+      max-width: 92vw;
+      max-height: 92vh;
+      border-radius: 8px;
+      box-shadow: 0 8px 48px rgba(0,0,0,0.6);
+      object-fit: contain;
+    }
+
+    /* === WIKILINK TOOLTIP === */
+    .wikilink { position: relative; }
+    .wikilink::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--navy);
+      color: #fff;
+      font-family: var(--font-ui);
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+      z-index: 10;
+    }
+    .wikilink:hover::after { opacity: 1; }
+
+    /* === INTERACTIVE TASK BLOCK === */
+    .task-block {
+      background: rgba(13, 115, 119, 0.05);
+      border: 1px solid rgba(13, 115, 119, 0.2);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      margin: 16px 0 24px;
+    }
+    .task-prompt { margin-bottom: 14px; font-weight: 500; }
+    .task-input {
+      width: 100%;
+      min-height: 90px;
+      padding: 10px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      resize: vertical;
+      transition: border-color 0.15s ease;
+      background: var(--surface);
+      color: var(--text);
+    }
+    .task-input:focus { outline: none; border-color: var(--teal); }
+    .task-actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+    .btn-check, .btn-hint, .btn-reset {
+      padding: 8px 18px;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-ui);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-check { background: var(--teal); color: #fff; }
+    .btn-check:hover { background: var(--teal-lt); }
+    .btn-hint { background: rgba(245, 166, 35, 0.15); color: #b07d10; border: 1px solid rgba(245, 166, 35, 0.4); }
+    .btn-hint:hover { background: rgba(245, 166, 35, 0.25); }
+    .btn-reset { background: rgba(0,0,0,0.05); color: var(--muted); }
+    .btn-reset:hover { background: rgba(0,0,0,0.1); }
+    .task-feedback {
+      margin-top: 14px;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-ui);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .task-feedback.hidden { display: none; }
+    .task-feedback.correct { background: rgba(13, 115, 119, 0.1); border-left: 3px solid var(--teal); color: var(--teal); }
+    .task-feedback.partial { background: rgba(245, 166, 35, 0.1); border-left: 3px solid var(--amber); color: #8a6000; }
+    .task-feedback.incorrect { background: rgba(220, 38, 38, 0.06); border-left: 3px solid #dc2626; color: #991b1b; }
+
+    /* === SOLUTION BLOCK (collapsible) === */
+    .solution-block { border-left-color: var(--amber); background: rgba(245,166,35,0.05); }
+    .solution-block summary { color: #8a6000; }
+    .solution-block summary::before { color: #8a6000; }
+    .solution-content { padding: 0 18px 14px; }
+
+    /* === EXAM MODE === */
+    #exam-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--navy);
+      color: #fff;
+      padding: 14px 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      box-shadow: var(--shadow-md);
+      font-family: var(--font-ui);
+    }
+    .exam-label {
+      color: var(--amber);
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    #timer {
+      font-family: var(--font-mono);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--amber);
+      padding: 4px 14px;
+      background: rgba(245, 166, 35, 0.1);
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(245, 166, 35, 0.3);
+      letter-spacing: 0.05em;
+    }
+    #exam-progress-bar {
+      flex: 1;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 3px;
+      overflow: hidden;
+      max-width: 360px;
+    }
+    #exam-progress-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--teal), var(--teal-lt));
+      transition: width 0.3s ease;
+    }
+    body.time-expired #timer {
+      color: #fff;
+      background: var(--amber);
+      animation: flash 0.6s 3;
+    }
+    @keyframes flash { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+
+
+    main.exam-mode {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 32px 96px;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      #sidebar { position: relative; height: auto; padding: 16px 18px; }
+      #sidebar .brand { margin-bottom: 14px; padding-bottom: 12px; }
+      .session-list { display: flex; flex-wrap: wrap; gap: 6px; }
+      .session-list li { flex: 0 0 auto; padding: 6px 10px; font-size: 12px; }
+      .session-list .num { display: none; }
+      .progress-wrap { display: none; }
+      main#content { padding: 24px 16px 64px; }
+      .content-card { padding: 28px 20px; }
+      h1 { font-size: 28px; }
+    }
+
+    /* === PRINT === */
+    @media print {
+      #sidebar, #exam-header { display: none; }
+      .layout { grid-template-columns: 1fr; }
+      .content-card { box-shadow: none; padding: 0; }
+    }
+  </style>
+  
+</head>
+<body class="">
+  
+  <div class="layout">
+    <nav id="sidebar">
+      <div class="brand">
+        <span class="anchor">⚓</span>
+        <div>
+          <div class="title">Permis Côtier</div>
+          <div class="subtitle">Classroom</div>
+        </div>
+      </div>
+      <ul class="session-list" id="session-list">
+        <li data-slug="session-01-balisage"><span class="dot locked">·</span><span><span class="num">Session 01</span><span class="name">Le Langage de la Mer</span></span></li>
+        <li data-slug="session-02-regles-barre"><span class="dot locked">·</span><span><span class="num">Session 02</span><span class="name">Priorités et Manœuvres</span></span></li>
+        <li data-slug="session-03-feux-signaux"><span class="dot locked">·</span><span><span class="num">Session 03</span><span class="name">La Nuit et la Brume</span></span></li>
+        <li data-slug="session-04-securite"><span class="dot locked">·</span><span><span class="num">Session 04</span><span class="name">La Sécurité et l'Équipement</span></span></li>
+        <li data-slug="session-05-navigation"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">Carte, Cap et Météo</span></span></li>
+        <li data-slug="session-06-pratique-reglementation"><span class="dot locked">·</span><span><span class="num">Session 06</span><span class="name">Départ, Zones et Conduite</span></span></li>
+        <li data-slug="session-07-radio-vhf"><span class="dot locked">·</span><span><span class="num">Session 07</span><span class="name">VHF, CROSS et Alertes</span></span></li>
+        <li data-slug="session-08-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 08</span><span class="name">L'Examen Blanc</span></span></li>
+      </ul>
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span>Progression</span>
+          <span id="progress-count">0 / 8</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
+      </div>
+    </nav>
+    <main id="content">
+      <div class="content-card">
+        <div class="breadcrumb"><span id="breadcrumb-session">Session 01</span><span class="sep">·</span><span>Session 7 : VHF, CROSS et Alertes</span></div>
+        <h1>Session 7 : VHF, CROSS et Alertes</h1>
+        <h2>CONCEPT</h2>
+<p>La VHF est un outil de sécurité, pas un téléphone de confort. Le permis plaisance permet l'usage d'une VHF dans les eaux territoriales françaises ; le CRR reste le cadre radio plus large, notamment hors de ce périmètre. Voir <span class="wikilink" data-label="Canaux Vhf">concepts/canaux-vhf</span>, <span class="wikilink" data-label="Securite Vhf Et Cross">concepts/securite-vhf-et-cross</span>, <span class="wikilink" data-label="Asn Dsc">concepts/asn-dsc</span>, <span class="wikilink" data-label="Mmsi">concepts/mmsi</span>, <span class="wikilink" data-label="Procedure Mayday">concepts/procedure-mayday</span> et <span class="wikilink" data-label="Procedure Pan Pan">concepts/procedure-pan-pan</span>.</p>
+<div class="wiki-image-wrap"><img class="wiki-image" src="assets/vhf-mayday-flow.svg" alt="vhf-mayday-flow.svg"></div>
+<h3>Les canaux à connaître</h3>
+<ul>
+<li><strong>16</strong> : veille, appel et détresse en phonie.</li>
+<li><strong>70</strong> : ASN/DSC, appels numériques de détresse ou sélectifs.</li>
+<li><strong>6, 8, 72, 77</strong> : communications inter-navires selon usage.</li>
+<li><strong>13</strong> : sécurité de navigation dans certains contextes.</li>
+</ul>
+<p>Voir <span class="wikilink" data-label="Canaux Vhf">concepts/canaux-vhf</span>.</p>
+<h3>MAYDAY, PAN-PAN, SÉCURITÉ</h3>
+<p><strong>MAYDAY</strong> : danger grave et imminent, vie en jeu.<br />
+<strong>PAN-PAN</strong> : urgence réelle sans péril vital immédiat.<br />
+<strong>SÉCURITÉ</strong> : message concernant la sécurité de navigation ou la météo.</p>
+<p>Un MAYDAY commence strictement :</p>
+<pre><code>MAYDAY MAYDAY MAYDAY
+ICI
+[Nom du navire]
+</code></pre>
+<p>Puis : position, nature de la détresse, assistance demandée, nombre de personnes, intentions, informations utiles, « À vous ».</p>
+<h3>ASN, MMSI et position</h3>
+<p>L'ASN sur canal 70 transmet une alerte numérique. Si la VHF est reliée au GPS, l'alerte contient l'identité MMSI et la position. Le bouton rouge ne remplace pas la phonie : après l'alerte, il faut parler sur le canal 16 si possible.</p>
+<h3>Le CROSS</h3>
+<p>Le CROSS coordonne les secours en mer en France. Il écoute, qualifie la situation et engage les moyens adaptés. Voir <span class="wikilink" data-label="Cross Sauvetage">concepts/cross-sauvetage</span>.</p>
+<h2>TASK</h2>
+
+<div class="task-block">
+  <div class="task-prompt"><p>Expliquez la différence entre MAYDAY et PAN-PAN, citez les canaux 16 et 70, puis donnez les trois premières informations à transmettre après l'identification du navire.</p></div>
+  <textarea class="task-input" rows="4" placeholder="Écrivez votre réponse ici…" aria-label="Votre réponse"></textarea>
+  <div class="task-actions">
+    <button class="btn-check" onclick="checkTask(this)">Vérifier ✓</button>
+    <button class="btn-hint" onclick="showHint(this)" data-hint-level="0">Indice 💡</button>
+    <button class="btn-reset" onclick="resetTask(this)">Recommencer ↺</button>
+  </div>
+  <div class="hint-text hidden"><p>MAYDAY = vie en danger. PAN-PAN = urgence sans péril vital immédiat. Les canaux se répartissent entre voix et numérique.</p></div>
+<div class="hint-text hidden"><p>Après le nom du navire, le sauveteur a besoin de savoir où aller, ce qui se passe, et quel type d'aide envoyer.</p></div>
+  <div class="task-feedback hidden"></div>
+</div><h2>MISCONCEPTION</h2>
+<ul>
+<li>Appuyer sur le bouton ASN puis se taire : l'alerte numérique doit être complétée par un message vocal si possible.</li>
+<li>Utiliser le canal 16 pour discuter après contact : on bascule sur un canal de travail.</li>
+<li>Confondre urgence et détresse : PAN-PAN n'est pas banal, MAYDAY est vital.</li>
+</ul>
+<details class="solution-block">
+  <summary>🔍 Voir la solution (après avoir essayé)</summary>
+  <div class="solution-content"><h2>SOLUTION</h2>
+<p>MAYDAY signale un danger grave et imminent avec vie en jeu. PAN-PAN signale une urgence sans péril vital immédiat. Le canal <strong>16</strong> sert à la veille, l'appel et la détresse en phonie ; le canal <strong>70</strong> sert à l'ASN/DSC.</p>
+<p>Après l'identification, les premières informations utiles sont : <strong>position</strong>, <strong>nature de la détresse ou de l'urgence</strong>, <strong>assistance demandée</strong>. Viennent ensuite le nombre de personnes à bord, les intentions et toute information utile.</p>
+</div>
+</details><h2>MOTIVATION</h2>
+<p>La radio est l'un des rares outils qui transforment une situation isolée en secours coordonné. Bien choisir MAYDAY ou PAN-PAN, donner une position claire, et garder le canal 16 propre peut changer l'issue d'un incident.</p>
+<h2>PREREQUISITES</h2>
+<ul>
+<li><span class="wikilink" data-label="Session 06 Pratique Reglementation">lessons/session-06-pratique-reglementation</span></li>
+</ul>
+
+      </div>
+    </main>
+  </div>
+  
+
+  <script>
+    (function() {
+      try {
+        const PROGRESS_KEY = 'permis_progress';
+        let completed = [];
+        try { const r = localStorage.getItem(PROGRESS_KEY); if (r) completed = JSON.parse(r) || []; } catch(e) {}
+        const currentSlug = (window.location.pathname.split('/').pop() || '').replace('.html', '');
+        const items = document.querySelectorAll('#session-list li');
+        let prevDone = true, currentFound = false;
+        items.forEach((li, idx) => {
+          const slug = li.dataset.slug;
+          const dot = li.querySelector('.dot');
+          if (!dot) return;
+          if (completed.indexOf(slug) !== -1) {
+            dot.className = 'dot done'; dot.textContent = '✓'; prevDone = true;
+          } else if (slug === currentSlug || (idx === 0 && !currentFound)) {
+            dot.className = 'dot current'; dot.textContent = '→';
+            li.classList.add('current'); currentFound = true;
+            const bc = document.getElementById('breadcrumb-session');
+            if (bc) bc.textContent = li.querySelector('.num').textContent;
+            prevDone = false;
+          } else if (prevDone && idx > 0) {
+            dot.className = 'dot'; dot.textContent = '○';
+            dot.style.background = 'rgba(255,255,255,0.15)';
+            dot.style.color = 'rgba(255,255,255,0.7)';
+            prevDone = false;
+          } else {
+            dot.className = 'dot locked'; dot.textContent = '·'; li.classList.add('locked');
+          }
+        });
+        const cEl = document.getElementById('progress-count');
+        const fEl = document.getElementById('progress-fill');
+        const totalSessions = 8;
+        if (cEl) cEl.textContent = completed.length + ' / ' + totalSessions;
+        if (fEl) fEl.style.width = Math.min(100, (completed.length / totalSessions) * 100) + '%';
+      } catch(e) { console.warn('progress init failed', e); }
+      if (typeof window._examInit === 'function') window._examInit();
+    })();
+  </script>
+
+  <script>
+    // Lightbox
+    document.addEventListener('click', function(e) {
+      const img = e.target.closest('.wiki-image');
+      if (img) {
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        if (lb && lbImg) {
+          lbImg.src = img.src;
+          lbImg.alt = img.alt || '';
+          lb.classList.add('open');
+        }
+        return;
+      }
+      const lb = document.getElementById('lightbox');
+      if (lb && e.target.closest('#lightbox')) {
+        lb.classList.remove('open');
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const lb = document.getElementById('lightbox');
+        if (lb) lb.classList.remove('open');
+      }
+    });
+
+    // Task block interactions
+    function checkTask(btn) {
+      const block = btn.closest('.task-block');
+      const input = block.querySelector('.task-input');
+      const feedback = block.querySelector('.task-feedback');
+      const answer = input.value.trim();
+      if (!answer) {
+        feedback.className = 'task-feedback partial';
+        feedback.textContent = 'Écrivez quelque chose avant de vérifier.';
+        feedback.classList.remove('hidden');
+        return;
+      }
+      feedback.className = 'task-feedback partial';
+      feedback.innerHTML = '✓ Réponse enregistrée. Le professeur évaluera votre réponse dans le chat.';
+      feedback.classList.remove('hidden');
+      input.style.borderColor = 'var(--teal)';
+    }
+    function showHint(btn) {
+      const block = btn.closest('.task-block');
+      const feedback = block.querySelector('.task-feedback');
+      const level = parseInt(btn.dataset.hintLevel || '0');
+      const hints = block.querySelectorAll('.hint-text');
+      feedback.classList.remove('hidden');
+      if (level < hints.length) {
+        feedback.className = 'task-feedback partial';
+        feedback.innerHTML = '💡 ' + hints[level].innerHTML;
+        btn.dataset.hintLevel = level + 1;
+        if (level + 1 >= hints.length) btn.textContent = "Plus d'indices";
+      } else {
+        feedback.className = 'task-feedback partial';
+        feedback.textContent = 'Tous les indices ont été affichés. Consultez le professeur dans le chat.';
+      }
+    }
+    function resetTask(btn) {
+      const block = btn.closest('.task-block');
+      const input = block.querySelector('.task-input');
+      const feedback = block.querySelector('.task-feedback');
+      const hintBtn = block.querySelector('.btn-hint');
+      input.value = '';
+      input.style.borderColor = '';
+      feedback.className = 'task-feedback hidden';
+      feedback.textContent = '';
+      if (hintBtn) { hintBtn.dataset.hintLevel = '0'; hintBtn.textContent = 'Indice 💡'; }
+    }
+  </script>
+
+  <div id="lightbox" role="dialog" aria-modal="true">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+</body>
+</html>

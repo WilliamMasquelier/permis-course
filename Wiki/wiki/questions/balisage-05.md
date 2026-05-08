@@ -2,7 +2,7 @@
 title: QCM Balisage 05 — Bouée sphérique jaune bande 300m
 type: question
 tags: [balisage, reglementation]
-sources: [../../Cours 2/RECTO-MER_COTIER.pdf]
+sources: [raw/course-2/RECTO-MER_COTIER.pdf]
 related: [[../concepts/marques-speciales], [[../concepts/zones-navigation]]]
 status: draft
 updated: 2026-05-01

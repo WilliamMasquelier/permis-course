@@ -4,6 +4,10 @@ title: "Feux de travail et navires privilégiés"
 theme: "Feux"
 type: concept
 tags: [feux-de-travail, peche, nmm, cmr, tirant-d-eau]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Feux de travail (visibles sur 360°)

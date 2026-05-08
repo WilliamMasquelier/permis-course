@@ -2,7 +2,7 @@
 title: Marque spéciale (hors groupe)
 type: concept
 tags: [balisage]
-sources: [../../Cours 2/1-Les balises_RECTO.pdf]
+sources: [raw/course-2/1-Les balises_RECTO.pdf]
 related: [[../themes/01-balisage]], [[balisage-iala-region-a]]
 status: draft
 updated: 2026-05-01

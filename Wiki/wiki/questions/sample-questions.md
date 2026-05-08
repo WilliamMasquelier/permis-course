@@ -2,14 +2,14 @@
 title: Sample exam questions (pattern reference)
 type: question
 tags: [regles-de-barre, balisage, feux]
-sources: [../../Cours 1/1-Ex_candidat.pdf, ../../Cours 2/Q-eval.pdf]
+sources: [raw/course-1/1-Ex_candidat.pdf, raw/course-2/Q-eval.pdf]
 related: [[../themes/02-regles-de-barre]], [[../themes/04-feux]]
 status: draft
 updated: 2026-05-01
 ---
 
 **Summary:** Demonstrates the Q/A/Why/Source pattern. The full question
-bank should be derived from `Cours 2/Q-eval.pdf` and the 139 audio drills.
+bank should be derived from `raw/course-2/Q-eval.pdf` and the 139 audio drills.
 
 ---
 
@@ -26,7 +26,7 @@ navire à moteur s'écarte d'un voilier sous voile seule, **quel que soit le
 côté** d'où vient le voilier. La règle de croisement (priorité tribord) ne
 s'applique qu'**entre navires de même catégorie**.
 
-**Source :** `Cours 1/Prevenir_Abordages.pdf`, RIPAM règle 18.
+**Source :** `raw/course-1/Prevenir_Abordages.pdf`, RIPAM règle 18.
 
 ---
 
@@ -41,7 +41,7 @@ s'applique qu'**entre navires de même catégorie**.
 définissent pas un côté à laisser ; il faut consulter la carte pour
 connaître la nature exacte.
 
-**Source :** `Cours 2/1-Les balises_RECTO.pdf`.
+**Source :** `raw/course-2/1-Les balises_RECTO.pdf`.
 
 ---
 
@@ -57,4 +57,4 @@ tribord). Voir [[../concepts/route-directe-croisement|croisement face à face]].
 **Why :** Feu blanc de tête de mât + les **deux** feux de côté visibles
 ensemble = navire venant droit sur vous. RIPAM règle 14.
 
-**Source :** `Cours 2/4-Feux-RECTO.pdf`.
+**Source :** `raw/course-2/4-Feux-RECTO.pdf`.

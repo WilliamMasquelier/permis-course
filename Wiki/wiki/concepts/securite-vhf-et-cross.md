@@ -4,6 +4,10 @@ title: "Communications : VHF et CROSS"
 theme: "Sécurité"
 type: concept
 tags: [vhf, cross, detresse, urgence, securite]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Les communications de secours (VHF et CROSS)

@@ -4,6 +4,10 @@ title: "Pêche de loisir et plongée"
 theme: "Sécurité"
 type: concept
 tags: [peche, loisir, plongee, infractions]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Pêche de loisir et Plongée

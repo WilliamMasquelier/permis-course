@@ -4,6 +4,10 @@ title: "Manœuvre d'homme à la mer"
 theme: "La pratique"
 type: concept
 tags: [homme-a-la-mer, hlm, sauvetage, manoeuvre]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Manœuvre de récupération d'un homme à la mer (HLM)

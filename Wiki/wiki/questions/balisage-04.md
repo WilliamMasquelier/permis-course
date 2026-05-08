@@ -2,7 +2,7 @@
 title: QCM Balisage 04 — Chenal préféré tribord, feu vert 2+1
 type: question
 tags: [balisage]
-sources: [../../Cours 2/RECTO-MER_COTIER.pdf]
+sources: [raw/course-2/RECTO-MER_COTIER.pdf]
 related: [[../concepts/marques-laterales]]
 status: draft
 updated: 2026-05-01

@@ -4,6 +4,10 @@ title: "Signaux d'entrée de port et de marée"
 theme: "Signaux"
 type: concept
 tags: [port, maree, feux-de-port, signaux-visuels]
+sources: []
+related: []
+status: draft
+updated: 2026-05-07
 ---
 
 # Signaux de trafic portuaire et de marée

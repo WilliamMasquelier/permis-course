@@ -2,7 +2,7 @@
 title: QCM Balisage 13 — Vers le large, feu vert isophase
 type: question
 tags: [balisage, feux]
-sources: [../../Cours 2/1-Les_balises-VERSO.pdf]
+sources: [raw/course-2/1-Les_balises-VERSO.pdf]
 related: [[../concepts/marques-laterales], [[../concepts/feux-base]]]
 status: draft
 updated: 2026-05-04

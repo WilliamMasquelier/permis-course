@@ -1,0 +1,85 @@
+---
+title: "Bienvenue à Göcek"
+module: 0
+module_title: "Prologue — Le Départ"
+session_in_module: 0
+duration_min: 20
+type: lesson
+status: draft
+updated: 2026-05-07
+---
+
+> [SCENE]
+> **Samedi 4 juillet 2026. 14h30. Marina de Fethiye, Turquie.**
+>
+> Le taxi nous dépose devant les portiques de la marina. La chaleur est sèche — trente-huit degrés. L'odeur de résine de pin descend des collines qui cerclent la baie. Et là, au fond du ponton F, notre gulet : quarante-quatre pieds d'acajou verni, deux mâts, une voile d'artimon crème. *Deniz Rüzgarı* — le Vent de Mer.
+>
+> Emmanuel pose ses bagages et regarde autour de lui, les mains sur les hanches. "On est bien là !" dit-il. Christelle sort déjà l'appareil photo. Rebecca, elle, descend dans le carré, jette un œil par-dessus bord et annonce : "C'est petit. En baie des Cochons, les catamarans faisaient le double." Elle trouve quand même la glacière et annonce qu'il y a du raki.
+>
+> William, lui, tient son carnet de notes — son MacBook est déjà ouvert en cabine arrière, avec une réunion client reportée à demain. Il a une semaine pour transformer tout ce qu'il a lu en réflexes marins. Et peut-être convaincre Rebecca que la Méditerranée, c'est beau aussi, même sans ouragan.
+>
+> Ce cours est le récit de ce voyage.
+
+## Qu'est-ce que le Permis Côtier ?
+
+Le **Permis Plaisance Option Côtière** est le titre de conduite de base pour naviguer en mer à bord d'un bateau à moteur ou d'un voilier motorisé en France et dans les eaux européennes. Il autorise la navigation jusqu'à **6 milles nautiques d'un abri** — soit environ 11 kilomètres au-delà de la côte la plus proche.
+
+C'est à la fois un minimum légal et un premier pas vers la compétence maritime. Le permis côtier prouve que son titulaire connaît les règles de la route en mer, sait identifier les balises, comprend les bases de la navigation et de la météorologie, et peut réagir aux urgences à bord.
+
+**Qui doit l'avoir ?** En France, le permis côtier est obligatoire pour conduire tout bateau à moteur dont la puissance dépasse 4,5 kW (6 chevaux) ou dont la vitesse peut dépasser 6 nœuds, en eaux maritimes. Les voiliers sans moteur ou avec un moteur auxiliaire de faible puissance y échappent, mais leurs skippers gagnent à le passer pour la culture maritime qu'il apporte.
+
+**En Turquie**, où se déroule notre voyage, la réglementation locale prévoit son propre système de brevets. Mais les règles de navigation internationale (COLREGs — Convention on the International Regulations for Preventing Collisions at Sea) s'appliquent identiquement. Un marin qui maîtrise le permis côtier français est immédiatement opérationnel dans le golfe de Göcek.
+
+## Ce que ce cours vous apportera
+
+La plupart des préparations au permis côtier ressemblent à un manuel de code de la route : des règles à mémoriser, des tableaux à retenir, des questions-pièges à déjouer. C'est efficace, mais sec.
+
+Ce cours choisit une approche différente. Chaque concept est ancré dans une situation réelle de notre voyage dans le golfe de Fethiye. Les règles de priorité ? On les apprendra en sortant du chenal de Göcek avec un ferry qui arrive. Les marées ? On comprendra leur logique en comparant la Méditerranée quasi-sans-marée à la Bretagne atlantique. Le MAYDAY ? William l'appellera (en exercice) depuis la baie de Kızılada.
+
+L'apprentissage par le concret s'installe plus profondément. Et si, dans dix ans, vous êtes en Bretagne et que la question "qui passe en premier ?" se pose, c'est le chenal de Göcek que vous visualiserez — et la réponse viendra naturellement.
+
+## La structure du cours
+
+Le cours est organisé en **7 modules** qui suivent la progression logique d'un marin débutant, du vocabulaire de base jusqu'à la pratique radio et la réglementation :
+
+| Module | Thème | Sessions |
+|--------|-------|----------|
+| 1 | Le Bateau et ses Règles | 1.1 → 1.3 |
+| 2 | Lire la Mer | 2.1 → 2.3 |
+| 3 | Naviguer | 3.1 → 3.4 |
+| 4 | Manœuvrer | 4.1 → 4.3 |
+| 5 | Sécurité | 5.1 → 5.4 |
+| 6 | Radio et Réglementation | 6.1 → 6.2 |
+| 7 | Épilogue et Examen Blanc | — |
+
+Chaque session prend de 20 à 45 minutes. Le cours complet représente environ 13 heures d'étude, réparties sur autant de séances que vous le souhaitez.
+
+## Le bateau et l'équipage
+
+**Le *Deniz Rüzgarı*** est un gulet en bois de 13,5 mètres (44 pieds). Gréé en ketch — deux mâts, le mât de misaine et le mât d'artimon — il est typique des bateaux de charter turcs du golfe de Göcek. Son moteur diesel de 75 chevaux lui permet de naviguer à 7 nœuds, et ses voiles (grand-voile + génois + voile d'artimon) lui offrent une excellente allure au largue dans la brise de mer après-midi.
+
+**L'équipage pour une semaine (samedi à samedi) :**
+- **William** (30 ans, skipper en formation) — le narrateur, celui qui apprend. Consultant en adoption et stratégie IA, il répond à des e-mails depuis le cockpit entre deux manœuvres. Novice complet en marine.
+- **Rebecca** — la compagne de William, originaire de la Dominique, habituée aux Caraïbes et aux Bahamas. Elle est en vacances, pas en cours. Elle fait remarquer régulièrement que "aux Bahamas, l'eau est plus transparente." Elle a raison, mais on ne le dira pas.
+- **Emmanuel** — le père de William, le seul marin expérimenté du bord. C'est lui qui dirige en fait la navigation. Bretagne, Brest, vingt ans de voile. Le golfe de Fethiye l'enchante.
+- **Christelle** — la mère de William, également en formation aux côtés de son fils. Elle pose les questions que William n'ose pas poser.
+
+**Le capitaine local :** Mehmet, qui connaît chaque crique du golfe de Göcek depuis trente ans, sera présent dans les premières sessions pour guider l'apprentissage. À partir du milieu du voyage, William prend les décisions seul.
+
+## Le golfe de Göcek — votre terrain d'apprentissage
+
+**Skopea Limanı** (golfe de Göcek) est l'un des plus beaux mouillages de Méditerranée orientale. Protégé par les collines du Taurus à l'est et au nord, il abrite une douzaine d'îles à moins de 10 milles nautiques de la marina.
+
+> [EXEMPLE GOLFE]
+> **Coordonnées de départ :** Marina de Fethiye, **36°39'N 29°07'E** — Göcek se trouve à 12 milles au SW, première étape du voyage.
+>
+> **Les mouillages du voyage :** Tersane Island (ancienne cantine byzantine, ~3NM au SE), Fethiye (ville, tombeaux lyciens, ~12NM au NE), Ölüdeniz (Blue Lagoon, ~17NM au SW), Butterfly Valley (accessible seulement par la mer, ~23NM au SW), Hamam Koyu (source thermale naturelle, ~5NM au SE), Kızılada (Red Island, ~6NM au S).
+>
+> **Le temps :** Étés turcs = matin calme, après-midi brise de mer (Imbat) de 10-18 nœuds du SW/NW. Marée quasi-nulle (0,2-0,3 m). Températures 35-40°C à terre, 28-30°C sur l'eau.
+
+Les conditions méditerranéennes rendent ce golfe idéal pour l'apprentissage : peu de marée (on le soulignera comme enseignement), visibilité excellente, trafic modéré, fonds repérables à la couleur de l'eau.
+
+> [TRANSITION]
+> William pose son carnet — Rebecca est déjà allongée sur le pont avant avec un livre. "Par où on commence ?" demande-t-il. Emmanuel, qui a déjà fait le tour du bateau deux fois, sourit. Mehmet montre le pont. "Par le bateau lui-même. Un bon marin connaît son bateau avant de connaître la mer."
+>
+> **Session 1.1 — Le Voilier : vocabulaire, parties du bateau, gréement.**

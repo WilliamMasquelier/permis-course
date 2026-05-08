@@ -2,7 +2,7 @@
 title: Moyens individuels de repérage
 type: concept
 tags: [securite]
-sources: [../../Cours 2/5-securite-RECTO.pdf]
+sources: [raw/course-2/5-securite-RECTO.pdf]
 related: [[equipement-obligatoire], [[gilet-sauvetage]]]
 status: draft
 updated: 2026-05-01

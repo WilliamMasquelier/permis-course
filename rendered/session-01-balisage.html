@@ -529,27 +529,7 @@
     }
     @keyframes flash { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
-    /* === SCORE CARD === */
-    #score-card {
-      max-width: 720px;
-      margin: 48px auto;
-      background: var(--surface);
-      border-radius: var(--radius-lg);
-      padding: 40px;
-      box-shadow: var(--shadow-lg);
-    }
-    #score-card.hidden { display: none; }
-    #result-banner {
-      padding: 20px 28px;
-      border-radius: var(--radius-md);
-      font-family: var(--font-ui);
-      font-weight: 700;
-      font-size: 22px;
-      text-align: center;
-      margin-bottom: 28px;
-    }
-    #result-banner.pass { background: var(--teal); color: #fff; }
-    #result-banner.fail { background: var(--amber); color: var(--navy); }
+
 
     main.exam-mode {
       max-width: 860px;
@@ -596,12 +576,15 @@
         <li data-slug="session-02-regles-barre"><span class="dot locked">·</span><span><span class="num">Session 02</span><span class="name">Priorités et Manœuvres</span></span></li>
         <li data-slug="session-03-feux-signaux"><span class="dot locked">·</span><span><span class="num">Session 03</span><span class="name">La Nuit et la Brume</span></span></li>
         <li data-slug="session-04-securite"><span class="dot locked">·</span><span><span class="num">Session 04</span><span class="name">La Sécurité et l'Équipement</span></span></li>
-        <li data-slug="session-05-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">L'Examen Blanc</span></span></li>
+        <li data-slug="session-05-navigation"><span class="dot locked">·</span><span><span class="num">Session 05</span><span class="name">Carte, Cap et Météo</span></span></li>
+        <li data-slug="session-06-pratique-reglementation"><span class="dot locked">·</span><span><span class="num">Session 06</span><span class="name">Départ, Zones et Conduite</span></span></li>
+        <li data-slug="session-07-radio-vhf"><span class="dot locked">·</span><span><span class="num">Session 07</span><span class="name">VHF, CROSS et Alertes</span></span></li>
+        <li data-slug="session-08-examen-blanc"><span class="dot locked">·</span><span><span class="num">Session 08</span><span class="name">L'Examen Blanc</span></span></li>
       </ul>
       <div class="progress-wrap">
         <div class="progress-label">
           <span>Progression</span>
-          <span id="progress-count">0 / 5</span>
+          <span id="progress-count">0 / 8</span>
         </div>
         <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
       </div>
@@ -625,6 +608,15 @@
 <li>Bâbord (gauche en entrant) : rouge, cylindrique, feux rouge</li>
 <li>Tribord (droit en entrant) : vert, conique, feux vert</li>
 </ul>
+<div class="wiki-image-wrap"><img class="wiki-image" src="assets/bouee-eaux-saines.png" alt="bouee-eaux-saines.png"></div>
+<p><strong>Marques d'eaux saines, danger isolé et spéciales</strong> — les trois pièges visuels :</p>
+<ul>
+<li>Eaux saines : bandes verticales rouges et blanches, passage possible tout autour.</li>
+<li>Danger isolé : noir-rouge-noir, deux boules noires, danger ponctuel avec eaux navigables autour.</li>
+<li>Spéciales : jaunes, souvent liées à une zone réglementée, travaux, câble ou activité particulière.</li>
+</ul>
+<div class="wiki-image-wrap"><img class="wiki-image" src="assets/bouee-danger-isole.png" alt="bouee-danger-isole.png"></div>
+<div class="wiki-image-wrap"><img class="wiki-image" src="assets/bouee-speciales.png" alt="bouee-speciales.png"></div>
 <p>Voir aussi <span class="wikilink" data-label="Balisage Iala Region A">concepts/balisage-iala-region-a</span>, <span class="wikilink" data-label="Marques Cardinales">concepts/marques-cardinales</span>.</p>
 <h2>TASK</h2>
 
@@ -636,12 +628,10 @@
     <button class="btn-hint" onclick="showHint(this)" data-hint-level="0">Indice 💡</button>
     <button class="btn-reset" onclick="resetTask(this)">Recommencer ↺</button>
   </div>
+  <div class="hint-text hidden"><p>Pensez aux points cardinaux de la boussole. Le nom de chaque marque indique de quel côté du danger elle se trouve.</p></div>
+<div class="hint-text hidden"><p>Les topmarks sont toujours deux cônes. La direction des pointes vous dit tout : Nord = pointes en haut (comme N), Sud = pointes en bas.</p></div>
   <div class="task-feedback hidden"></div>
-</div><h2>HINT_1</h2>
-<p>Pensez aux points cardinaux de la boussole. Le nom de chaque marque indique de quel côté du danger elle se trouve.</p>
-<h2>HINT_2</h2>
-<p>Les topmarks sont toujours deux cônes. La direction des pointes vous dit tout : Nord = pointes en haut (comme N), Sud = pointes en bas.</p>
-<h2>MISCONCEPTION</h2>
+</div><h2>MISCONCEPTION</h2>
 <p>Les étudiants confondent souvent rouge/vert avec danger/sécurité. Rouge = bâbord (gauche en entrant), pas forcément danger.</p>
 <details class="solution-block">
   <summary>🔍 Voir la solution (après avoir essayé)</summary>
@@ -684,7 +674,7 @@
 </table>
 </div>
 </details><h2>MOTIVATION</h2>
-<p>Jusqu'à 6 questions d'examen portent sur les marques cardinales. Les rater, c'est rater l'examen.</p>
+<p>Le balisage est une des familles les plus rentables à maîtriser : beaucoup de questions d'examen sont purement visuelles. Les cardinales, latérales, eaux saines, danger isolé et spéciales doivent être reconnues sans hésitation.</p>
 
       </div>
     </main>
@@ -723,8 +713,9 @@
         });
         const cEl = document.getElementById('progress-count');
         const fEl = document.getElementById('progress-fill');
-        if (cEl) cEl.textContent = completed.length + ' / 5';
-        if (fEl) fEl.style.width = (completed.length * 20) + '%';
+        const totalSessions = 8;
+        if (cEl) cEl.textContent = completed.length + ' / ' + totalSessions;
+        if (fEl) fEl.style.width = Math.min(100, (completed.length / totalSessions) * 100) + '%';
       } catch(e) { console.warn('progress init failed', e); }
       if (typeof window._examInit === 'function') window._examInit();
     })();
