@@ -15,8 +15,11 @@ Usage:
 
 from __future__ import annotations
 
+import base64
 import html
 import json
+import mimetypes
+import re
 import shutil
 from pathlib import Path
 
@@ -526,6 +529,36 @@ details>*:not(summary){padding:0 16px 14px}
 """
 
 
+def _inline_assets(html_str: str, assets_dir: Path, max_bytes: int = 1_000_000) -> tuple[str, int, int]:
+    """Replace src="assets/filename" with base64 data URIs for Cowork artifact self-containment.
+
+    Files larger than max_bytes are left as-is (will be broken in sandboxed iframe but alt text
+    remains visible). Returns (new_html, inlined_count, skipped_count).
+    """
+    inlined = 0
+    skipped = 0
+
+    def replace_src(match: re.Match) -> str:
+        nonlocal inlined, skipped
+        filename = match.group(1)
+        asset_path = assets_dir / filename
+        if not asset_path.exists():
+            skipped += 1
+            return match.group(0)
+        if asset_path.stat().st_size > max_bytes:
+            skipped += 1
+            return match.group(0)
+        mime_type, _ = mimetypes.guess_type(str(asset_path))
+        if not mime_type:
+            mime_type = "application/octet-stream"
+        data = base64.b64encode(asset_path.read_bytes()).decode("ascii")
+        inlined += 1
+        return f'src="data:{mime_type};base64,{data}"'
+
+    new_html = re.sub(r'src="assets/([^"]+)"', replace_src, html_str)
+    return new_html, inlined, skipped
+
+
 def main() -> None:
     all_modules, all_sessions = build_manifest()
     if not all_sessions:
@@ -608,12 +641,17 @@ def main() -> None:
 </body>
 </html>"""
 
+    # Inline assets as base64 data URIs so the SPA works as a self-contained Cowork artifact.
+    # Files > 1 MB are left as relative paths (broken in artifact iframe, alt text still visible).
+    full_html, inlined_count, skipped_count = _inline_assets(full_html, ASSETS_DST)
+
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(full_html, encoding="utf-8")
 
     size_kb = OUTPUT_FILE.stat().st_size / 1024
     total_sessions = sum(len(m["sessions"]) for m in modules_data)
     print(f"Assets: {asset_count} file(s) copied to {ASSETS_DST.relative_to(REPO)}")
+    print(f"Inlined: {inlined_count} image(s) as base64 data URIs ({skipped_count} large file(s) skipped)")
     print(f"Generated: {OUTPUT_FILE.relative_to(REPO)} ({size_kb:.0f} KB, {total_sessions} sessions)")
 
 
