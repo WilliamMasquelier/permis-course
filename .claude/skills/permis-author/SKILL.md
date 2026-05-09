@@ -167,11 +167,11 @@ After any substantive changes to lesson files:
 
 1. Run the renderer to verify the new/modified lesson renders cleanly:
    ```bash
-   uv run python scripts/render_course.py
+   .venv/bin/python scripts/render_course.py
    ```
    For a single session (e.g. module 1, session 2):
    ```bash
-   uv run python scripts/render_course.py 1-2
+   .venv/bin/python scripts/render_course.py 1-2
    ```
 2. If the render fails, fix the issue (usually frontmatter or broken wikilink syntax) before reporting done.
 3. Optionally open the rendered page via Playwright to visually confirm layout — especially for lessons with complex callouts, tables, or image embeds.
@@ -219,7 +219,7 @@ When moving or renumbering sessions:
 - [ ] Rename source files
 - [ ] Update `module`, `session_in_module` frontmatter in moved files
 - [ ] Update `prev`/`next` references if any exist in the lesson body
-- [ ] Run full render: `uv run python scripts/render_course.py`
+- [ ] Run full render: `.venv/bin/python scripts/render_course.py`
 - [ ] Verify `output/lessons/index.html` reflects the new order
 - [ ] Check `Wiki/meta/student-progress.json` — if the student has completed moved lessons, the slugs in `completed_lessons` will need updating
 

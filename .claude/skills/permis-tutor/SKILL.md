@@ -106,7 +106,7 @@ Store the result as `$REPO_ROOT` for use in links below.
 ls output/permis-cours-complet.html
 ```
 - **If it exists:** use it as-is. **Do NOT re-run any render script** — the file is already compiled.
-- **If missing:** run once: `uv run python scripts/render_complete.py`, then proceed.
+- **If missing:** run once: `.venv/bin/python scripts/render_complete.py`, then proceed.
 
 **Step 3c — present it in two ways (both every time):**
 1. Output the full file contents as a Cowork **HTML artifact** so the lesson panel opens automatically.
@@ -123,7 +123,7 @@ Do not start an HTTP server or use Playwright in Cowork mode.
 **CLI fallback (terminal-only sessions):**
 Derive the per-lesson HTML path from `current_lesson` using the slug convention above.
 Build the full filesystem path: `output/lessons/<module-N>/session-N-M-slug.html`.
-If the HTML file does not exist, run `uv run python scripts/render_course.py` once to generate it.
+If the HTML file does not exist, run `.venv/bin/python scripts/render_course.py` once to generate it.
 Start a local HTTP server:
 ```bash
 python -m http.server 8080 --directory output/lessons/ > /tmp/permis-server.log 2>&1 &
@@ -197,10 +197,10 @@ On any user exit (`/exit`, "stop", "j'arrête"), or abnormal termination:
 
 ## Error handling
 
-- **SPA missing** (`output/permis-cours-complet.html`) → run `uv run python scripts/render_complete.py` once, then output as artifact.
-- **Per-lesson HTML missing** (CLI fallback) → run `uv run python scripts/render_course.py` automatically once, then retry.
+- **SPA missing** (`output/permis-cours-complet.html`) → run `.venv/bin/python scripts/render_complete.py` once, then output as artifact.
+- **Per-lesson HTML missing** (CLI fallback) → run `.venv/bin/python scripts/render_course.py` automatically once, then retry.
 - **`student-progress.json` missing** → create it with the default state shown in step 1.
-- **Lesson file missing** → halt, report which slug failed, suggest running `uv run python scripts/render_course.py` and verifying `Wiki/wiki/lessons/`.
+- **Lesson file missing** → halt, report which slug failed, suggest running `.venv/bin/python scripts/render_course.py` and verifying `Wiki/wiki/lessons/`.
 - **CLI fallback: port busy** → try 8080, 8081, 8082 in order; if all busy, print `file://` URL.
 - **CLI fallback: Playwright unavailable** → print the localhost URL and continue chat-only.
 

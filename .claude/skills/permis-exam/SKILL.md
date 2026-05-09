@@ -85,17 +85,15 @@ If fewer than 7 teaching sessions completed, warn the student:
 
 Wait for confirmation. If "non", stop.
 
-### 2. Open exam page in browser
+### 2. Open the course SPA in Cowork
 
-Start the HTTP server and open the exam session page:
+Resolve the absolute repo path with `pwd`. Then output the compiled SPA as a Cowork HTML artifact and a clickable link:
 
-```bash
-python -m http.server 8080 --directory rendered/ > /tmp/permis-server.log 2>&1 &
-echo $! > /tmp/permis-server.pid
-for i in $(seq 1 10); do nc -z localhost 8080 && break || sleep 0.5; done
+```
+[📖 Cours complet — référence pendant l'examen]($REPO_ROOT/output/permis-cours-complet.html)
 ```
 
-Navigate to `http://localhost:8080/session-08-examen-blanc.html` with `browser_navigate`. Take a screenshot to confirm the exam page is visible.
+If `output/permis-cours-complet.html` is missing, run `.venv/bin/python scripts/render_complete.py` once to generate it. Do not start an HTTP server.
 
 ### 3. Build the question set
 
@@ -129,14 +127,7 @@ Do not provide any feedback, hints, or corrections during the exam. If the stude
 
 ### 5. Calculate results
 
-After question 40:
-
-Kill the server:
-```bash
-kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid
-```
-
-Calculate:
+After question 40, calculate:
 - Total score (N/40)
 - Per-theme score: correct/total for each category
 - Pass: score >= 35/40
@@ -178,30 +169,9 @@ Pour chaque mauvaise réponse, liste :
 (If all correct in a theme, write: « Excellent ! Rien à réviser dans ce thème. »)
 ```
 
-### 7. Render and display the score report
+### 7. Display the score report
 
-Render the score report to HTML:
-
-```bash
-source .venv/bin/activate && python -c "
-import sys; sys.path.insert(0,'scripts')
-from render_lessons import render_lesson
-from pathlib import Path
-render_lesson(Path('/tmp/permis-score-report.md'), Path('rendered'))
-"
-```
-
-Start the server again briefly:
-```bash
-python -m http.server 8080 --directory rendered/ > /tmp/permis-server.log 2>&1 &
-echo $! > /tmp/permis-server.pid
-for i in $(seq 1 10); do nc -z localhost 8080 && break || sleep 0.5; done
-```
-
-Navigate to `http://localhost:8080/permis-score-report.html` with `browser_navigate`. Take a screenshot. Then kill the server:
-```bash
-kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid
-```
+Output the score report markdown content as a Cowork artifact (type: `text/markdown`) so it displays cleanly in the side panel. No HTTP server or browser navigation needed.
 
 ### 8. Update progress
 
