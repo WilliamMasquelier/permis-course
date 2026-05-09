@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 460" role="img" aria-label="Règle des douzièmes — élévation de la marée par heure">
+  <rect width="700" height="460" fill="#eef6fb"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <!-- Title -->
+    <text x="350" y="35" text-anchor="middle" fill="#1a2e4a" font-size="21" font-weight="700">Règle des douzièmes</text>
+    <text x="350" y="58" text-anchor="middle" fill="#1a2e4a" font-size="14">Élévation de la marée par heure (% du marnage total)</text>
+
+    <!-- Axes -->
+    <line x1="80" y1="80" x2="80" y2="380" stroke="#1a2e4a" stroke-width="2"/>
+    <line x1="80" y1="380" x2="650" y2="380" stroke="#1a2e4a" stroke-width="2"/>
+
+    <!-- Y axis labels (douzièmes) -->
+    <text x="70" y="385" text-anchor="end" fill="#888" font-size="11">0</text>
+    <text x="70" y="340" text-anchor="end" fill="#888" font-size="11">1/12</text>
+    <text x="70" y="298" text-anchor="end" fill="#888" font-size="11">2/12</text>
+    <text x="70" y="255" text-anchor="end" fill="#888" font-size="11">3/12</text>
+    <text x="70" y="213" text-anchor="end" fill="#888" font-size="11">4/12</text>
+
+    <!-- Grid lines -->
+    <line x1="80" y1="340" x2="650" y2="340" stroke="#ddd" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="80" y1="298" x2="650" y2="298" stroke="#ddd" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="80" y1="255" x2="650" y2="255" stroke="#ddd" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="80" y1="213" x2="650" y2="213" stroke="#ddd" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- Bars (1-2-3-3-2-1) — heights proportional to 1,2,3,3,2,1 out of 12 -->
+    <!-- Bar height = fraction * 250px (total chart height from 380 to 130) -->
+    <!-- 1/12 = 20.8px, 2/12 = 41.7px, 3/12 = 62.5px -->
+    <!-- BM to PM: 1 2 3 3 2 1 -->
+    <!-- Colors: gradient from light to dark blue -->
+
+    <!-- Bar 1: H1 = 1/12 (20.8px) -->
+    <rect x="100" y="358" width="75" height="22" fill="#64b5f6" stroke="#fff" stroke-width="1" rx="2"/>
+    <text x="137" y="373" text-anchor="middle" fill="#1a2e4a" font-size="13" font-weight="700">1</text>
+    <text x="137" y="395" text-anchor="middle" fill="#1a2e4a" font-size="11">H1</text>
+
+    <!-- Bar 2: H2 = 2/12 (41.7px) -->
+    <rect x="190" y="338" width="75" height="42" fill="#42a5f5" stroke="#fff" stroke-width="1" rx="2"/>
+    <text x="227" y="362" text-anchor="middle" fill="#1a2e4a" font-size="13" font-weight="700">2</text>
+    <text x="227" y="395" text-anchor="middle" fill="#1a2e4a" font-size="11">H2</text>
+
+    <!-- Bar 3: H3 = 3/12 (62.5px) -->
+    <rect x="280" y="317" width="75" height="63" fill="#1e88e5" stroke="#fff" stroke-width="1" rx="2"/>
+    <text x="317" y="352" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">3</text>
+    <text x="317" y="395" text-anchor="middle" fill="#1a2e4a" font-size="11">H3</text>
+
+    <!-- Bar 4: H4 = 3/12 (62.5px) -->
+    <rect x="370" y="317" width="75" height="63" fill="#1e88e5" stroke="#fff" stroke-width="1" rx="2"/>
+    <text x="407" y="352" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">3</text>
+    <text x="407" y="395" text-anchor="middle" fill="#1a2e4a" font-size="11">H4</text>
+
+    <!-- Bar 5: H5 = 2/12 (41.7px) -->
+    <rect x="460" y="338" width="75" height="42" fill="#42a5f5" stroke="#fff" stroke-width="1" rx="2"/>
+    <text x="497" y="362" text-anchor="middle" fill="#1a2e4a" font-size="13" font-weight="700">2</text>
+    <text x="497" y="395" text-anchor="middle" fill="#1a2e4a" font-size="11">H5</text>
+
+    <!-- Bar 6: H6 = 1/12 (20.8px) -->
+    <rect x="550" y="358" width="75" height="22" fill="#64b5f6" stroke="#fff" stroke-width="1" rx="2"/>
+    <text x="587" y="373" text-anchor="middle" fill="#1a2e4a" font-size="13" font-weight="700">1</text>
+    <text x="587" y="395" text-anchor="middle" fill="#1a2e4a" font-size="11">H6</text>
+
+    <!-- Cumulative height labels on top of bars -->
+    <text x="137" y="350" text-anchor="middle" fill="#ef4444" font-size="10">1/12</text>
+    <text x="227" y="330" text-anchor="middle" fill="#ef4444" font-size="10">3/12</text>
+    <text x="317" y="310" text-anchor="middle" fill="#ef4444" font-size="10">6/12</text>
+    <text x="407" y="310" text-anchor="middle" fill="#ef4444" font-size="10">9/12</text>
+    <text x="497" y="330" text-anchor="middle" fill="#ef4444" font-size="10">11/12</text>
+    <text x="587" y="350" text-anchor="middle" fill="#ef4444" font-size="10">12/12</text>
+
+    <!-- BM / PM labels -->
+    <text x="80" y="425" text-anchor="middle" fill="#0d7377" font-size="12" font-weight="700">BM</text>
+    <text x="640" y="425" text-anchor="middle" fill="#0d7377" font-size="12" font-weight="700">PM</text>
+    <path d="M90 418 L630 418" stroke="#0d7377" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- Summary formula -->
+    <rect x="80" y="100" width="280" height="70" rx="6" fill="rgba(255,255,255,0.9)" stroke="#1a2e4a" stroke-width="1"/>
+    <text x="220" y="122" text-anchor="middle" fill="#1a2e4a" font-size="14" font-weight="700">Formule mnémotechnique</text>
+    <text x="220" y="145" text-anchor="middle" fill="#0d7377" font-size="20" font-weight="900">1 — 2 — 3 — 3 — 2 — 1</text>
+    <text x="220" y="163" text-anchor="middle" fill="#888" font-size="11">sur 12 douzièmes du marnage</text>
+
+    <!-- Footer -->
+    <text x="350" y="450" text-anchor="middle" fill="#888" font-size="10">Source: Complete Yachtmaster ch.14 — raw/books/yachtmaster-chapters/ch14-tidal-heights.txt</text>
+  </g>
+</svg>

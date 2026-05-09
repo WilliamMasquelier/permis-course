@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="Trois situations de règles de barre: croisement, face à face et rattrapage">
+  <rect width="900" height="360" fill="#f8f9fc"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" fill="#1a2e4a">
+    <text x="60" y="42" font-size="24" font-weight="700">Règles de barre à reconnaître instantanément</text>
+    <text x="90" y="92" font-size="16" font-weight="700">Croisement moteurs</text>
+    <path d="M80 230 L220 130" stroke="#0d7377" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M225 235 L115 125" stroke="#f5a623" stroke-width="5" marker-end="url(#arrowAmber)"/>
+    <text x="74" y="258" font-size="14">Je vois l'autre à tribord</text>
+    <text x="95" y="278" font-size="14" fill="#9a6400">je m'écarte tôt</text>
+    <text x="350" y="92" font-size="16" font-weight="700">Face à face</text>
+    <path d="M360 210 L470 210" stroke="#0d7377" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M565 210 L455 210" stroke="#0d7377" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M412 204 C410 172 430 154 455 146" stroke="#f5a623" stroke-width="4" fill="none" marker-end="url(#arrowAmber)"/>
+    <path d="M512 216 C516 250 490 270 465 278" stroke="#f5a623" stroke-width="4" fill="none" marker-end="url(#arrowAmber)"/>
+    <text x="366" y="258" font-size="14">Les deux viennent sur tribord</text>
+    <text x="640" y="92" font-size="16" font-weight="700">Rattrapage</text>
+    <path d="M665 220 L780 220" stroke="#0d7377" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M610 220 L720 220" stroke="#f5a623" stroke-width="5" stroke-dasharray="12 8" marker-end="url(#arrowAmber)"/>
+    <text x="640" y="258" font-size="14">Le rattrapant s'écarte</text>
+    <text x="640" y="278" font-size="14" fill="#6b7280">même s'il est voilier</text>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0d7377"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#f5a623"/>
+    </marker>
+  </defs>
+</svg>
