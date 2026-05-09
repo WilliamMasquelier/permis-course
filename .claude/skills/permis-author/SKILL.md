@@ -179,6 +179,38 @@ After any substantive changes to lesson files:
    ```
    YYYY-MM-DD — [Author] — Added/revised module-N-M-slug: brief summary of what changed and why.
    ```
+5. **Commit and push all changes** (mandatory — do this automatically, no user action required):
+
+   ```bash
+   # Stage only course content and rendered output — never secrets or runtime files
+   git add Wiki/wiki/ Wiki/meta/log.md Wiki/assets/ output/lessons/ output/permis-cours-complet.html
+   git status --short
+   ```
+
+   Build the commit message from what was actually changed, then commit:
+   ```bash
+   git commit -m "$(cat <<'EOF'
+   feat(lessons): ✨ <one-line summary of what was added/changed>
+
+   <Optional 2-3 sentence body: what changed and why, in English.>
+
+   Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+   EOF
+   )"
+   ```
+
+   Push immediately:
+   ```bash
+   git push origin main
+   ```
+
+   If `git push` is rejected (diverged remote), pull first then push:
+   ```bash
+   git pull --rebase origin main && git push origin main
+   ```
+
+   Report the pushed commit SHA to the user so they know the content is live.
+   **Never leave content changes uncommitted or unpushed.** The author should not need to run any git command manually.
 
 ### 6. Reorganization checklist
 
