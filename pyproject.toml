@@ -6,11 +6,6 @@ dependencies = [
     "fsrs",
     "jinja2",
     "markdown-it-py",
-    "pdf2image>=1.17.0",
-    "pdfplumber",
-    "pyobjc-framework-quartz>=12.1",
-    "pyobjc-framework-vision>=12.1",
-    "pypdfium2",
 ]
 
 [dependency-groups]
@@ -18,9 +13,6 @@ dev = [
     "pytest",
     "ruff",
     "pyright",
-    # report-renderer is a private Stromy lib — only needed to regenerate HTML output.
-    # Students install via uv sync (no --dev needed); authors run uv sync --dev.
-    "report-renderer @ git+ssh://git@github.com/stromy-org/report-renderer.git",
 ]
 
 [tool.pytest.ini_options]
