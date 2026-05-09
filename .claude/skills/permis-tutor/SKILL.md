@@ -24,7 +24,8 @@ Trigger when the student types `/permis-tutor`, asks to "start the lesson", "lan
   }
   ```
 - `Wiki/wiki/lessons/<slug>.md` — current lesson source (read into context before teaching).
-- `output/lessons/<module-N>/session-N-M-slug.html` — pre-rendered lesson page (created by `scripts/render_course.py`).
+- `output/permis-cours-complet.html` — monolithic SPA with all 21 lessons (Cowork mode, created by `scripts/render_complete.py`).
+- `output/lessons/<module-N>/session-N-M-slug.html` — per-lesson rendered page (CLI fallback, created by `scripts/render_course.py`).
 - `.claude/skills/permis-tutor/prompts/tutor-system-prompt.md` — RTRI system prompt template.
 
 ## Slug conventions
@@ -78,13 +79,20 @@ Execute these steps in order. Do not skip steps; do not reorder.
 
 ### 3. Present the lesson visually
 
-Derive the HTML path from `current_lesson` using the slug convention above.
-Build the full filesystem path: `output/lessons/<module-N>/session-N-M-slug.html`.
-
-If the HTML file does not exist, run `uv run python scripts/render_course.py` once to generate it.
-
 **Cowork / Desktop mode (preferred):**
-Read the rendered HTML file and output its full contents as an HTML artifact. Cowork and Claude Desktop render HTML artifacts inline — the student sees the styled lesson (callouts, images, wikilinks, mini-quizzes) directly in the conversation alongside the tutor chat. Do not start an HTTP server or use Playwright.
+Use the monolithic SPA at `output/permis-cours-complet.html`. This single file contains all 21 lessons with sidebar navigation — the student can jump between sessions directly in the artifact panel without re-renders between lessons.
+
+- If `output/permis-cours-complet.html` exists: read it and output its full contents as an HTML artifact.
+- If it is missing: run `uv run python scripts/render_complete.py` once to generate it, then output it as the artifact.
+
+Output the artifact only once per session (first lesson or on explicit student request). Do not re-output it when advancing to the next lesson — the SPA stays open in the artifact panel.
+
+Do not start an HTTP server or use Playwright in Cowork mode.
+
+**CLI fallback (terminal-only sessions):**
+Derive the per-lesson HTML path from `current_lesson` using the slug convention above.
+Build the full filesystem path: `output/lessons/<module-N>/session-N-M-slug.html`.
+If the HTML file does not exist, run `uv run python scripts/render_course.py` once to generate it.
 
 **CLI fallback (terminal-only sessions):**
 If the environment does not support artifacts (pure terminal / Claude Code CLI), start a local HTTP server instead:
@@ -152,7 +160,8 @@ On any user exit (`/exit`, "stop", "j'arrête"), or abnormal termination:
 
 ## Error handling
 
-- **HTML file missing** → run `uv run python scripts/render_course.py` automatically once, then retry.
+- **SPA missing** (`output/permis-cours-complet.html`) → run `uv run python scripts/render_complete.py` once, then output as artifact.
+- **Per-lesson HTML missing** (CLI fallback) → run `uv run python scripts/render_course.py` automatically once, then retry.
 - **`student-progress.json` missing** → create it with the default state shown in step 1.
 - **Lesson file missing** → halt, report which slug failed, suggest running `uv run python scripts/render_course.py` and verifying `Wiki/wiki/lessons/`.
 - **CLI fallback: port busy** → try 8080, 8081, 8082 in order; if all busy, print `file://` URL.
