@@ -24,7 +24,7 @@ Execute all five steps in order. Collect results, then produce the final status 
 
 Results:
 - Python 3.13+ and OK → pass
-- MISSING or import fails → instruct user: `uv sync` (note: requires SSH access for private deps; only `jinja2` and `markdown_it` are needed for rendering)
+- MISSING or import fails → instruct user to run `bash install.sh` from the repo root (installs uv + Python 3.13 + deps automatically)
 
 ### Step 2 - Check Playwright MCP
 
