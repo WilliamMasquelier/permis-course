@@ -5,76 +5,85 @@ description: Verify prerequisites for the Permis Côtier course. Triggers on /pe
 
 # permis-setup
 
-First-run verification skill. Checks Python venv, dependencies, Playwright MCP, rendered HTML files, and student progress file.
+First-run verification skill. Checks Python venv, dependencies, rendered HTML files, and student progress file.
 
 ## When to use
 
-Trigger on /permis-setup, vérifier l’installation, setup check, check prerequisites.
+Trigger on /permis-setup, vérifier l'installation, setup check, check prerequisites.
 
 ## Workflow
 
 Execute all five steps in order. Collect results, then produce the final status table.
 
-### Step 1 - Check Python 3.13+ and virtual environment
+### Step 1 - Check Python venv and dependencies
 
-Run these shell checks:
-
-    python3 --version 2>&1
-    ls .venv/bin/python 2>/dev/null || echo MISSING
-    source .venv/bin/activate && python -c "import jinja2, markdown_it, fsrs; print(OK)" 2>&1
+```bash
+.venv/bin/python --version 2>&1
+.venv/bin/python -c "import jinja2, markdown_it; print('OK')" 2>&1
+```
 
 Results:
-- python3 3.13+ -> OK
-- MISSING -> run uv sync
-- import fails -> run uv sync
+- Python 3.13+ and OK → pass
+- MISSING or import fails → instruct user: `uv sync` (note: requires SSH access for private deps; only `jinja2` and `markdown_it` are needed for rendering)
 
 ### Step 2 - Check Playwright MCP
 
-Call browser_navigate with URL about:blank.
-- Succeeds -> Playwright OK
-- Tool unavailable -> show in French:
+Call `browser_navigate` with URL `about:blank`.
+- Succeeds → Playwright OK
+- Tool unavailable → show in French:
 
-Le MCP Playwright n’est pas configuré. Pour l’activer :
-1. Ouvrez les paramètres de Claude Code
-2. Ajoutez ce serveur MCP : npx @playwright/mcp@latest
-3. Redémarrez Claude Code
+> Le MCP Playwright n'est pas configuré. Pour l'activer :
+> 1. Ouvrez les paramètres de Claude Code
+> 2. Ajoutez ce serveur MCP : `npx @playwright/mcp@latest`
+> 3. Redémarrez Claude Code
+>
+> Si vous préférez ne pas configurer Playwright, le cours fonctionne en mode texte uniquement.
 
-Si vous préférez ne pas configurer Playwright, le cours fonctionne en mode texte uniquement.
+Mark as warning (non-blocking) — course works without Playwright.
 
-Mark as warning (non-blocking) - course works without Playwright.
+### Step 3 - Check rendered HTML output
 
-### Step 3 - Check rendered HTML files
+Check that the compiled SPA and per-lesson files exist:
 
-Check that all 8 session HTML files exist in rendered/:
-session-01-balisage.html, session-02-regles-barre.html, session-03-feux-signaux.html,
-session-04-securite.html, session-05-navigation.html, session-06-pratique-reglementation.html,
-session-07-radio-vhf.html, session-08-examen-blanc.html
+```bash
+ls output/permis-cours-complet.html 2>/dev/null && echo "SPA OK" || echo "SPA MISSING"
+ls output/lessons/index.html 2>/dev/null && echo "INDEX OK" || echo "INDEX MISSING"
+ls output/lessons/module-*/session-*.html 2>/dev/null | wc -l
+```
 
-If any missing: tell user to run /permis-render first.
+Expected: `output/permis-cours-complet.html` exists, `output/lessons/index.html` exists, and at least 21 session HTML files present across all modules.
+
+If SPA or sessions missing: tell user to run `/permis-render` first (which runs `.venv/bin/python scripts/render_complete.py` and `.venv/bin/python scripts/render_course.py`).
 
 ### Step 4 - Check student-progress.json
 
-Read Wiki/meta/student-progress.json.
-- Missing -> offer to create default: {learner: local-user, current_lesson: session-01-balisage.md, completed_lessons: [], flashcards: {}, review_log: []}
-- JSON corrupt -> offer to reset to default
-- Valid -> OK
+Read `Wiki/meta/student-progress.json`.
+- Missing → offer to create default:
+  ```json
+  { "learner": "local-user", "current_lesson": "module-0-0-prologue.md", "completed_lessons": [], "flashcards": {}, "review_log": [] }
+  ```
+- JSON corrupt → offer to reset to default
+- Valid → OK
 
 ### Step 5 - Status report
 
 Print in French using check/warn/cross emoji:
 
-✅ Python 3.13 - OK
-✅ Dépendances Python (jinja2, markdown_it, fsrs) - OK
-⚠️ Playwright MCP - Non configuré (mode texte uniquement)
-✅ Fichiers HTML pré-rendus - 8 sessions présentes
-✅ Progression étudiant - Prêt (session 1)
+```
+✅ Python + dépendances (jinja2, markdown_it) - OK
+⚠️  Playwright MCP - Non configuré (mode texte uniquement)
+✅ SPA cours complet (output/permis-cours-complet.html) - OK
+✅ Sessions HTML (21 sessions dans output/lessons/) - OK
+✅ Progression étudiant - Prêt (module-0-0-prologue)
+```
 
 If all OK or only Playwright warning:
-  Tout est en ordre ! Tapez /permis-tutor pour commencer votre première leçon.
-If any blocking failure: walk through fixes first.
+> Tout est en ordre ! Tapez `/permis-tutor` pour commencer votre première leçon.
+
+If any blocking failure: walk through fixes before reporting done.
 
 ## Notes
 
-- Idempotent - safe to run multiple times.
+- Idempotent — safe to run multiple times.
 - Playwright warning is expected. Never block on it.
 - Do not modify lesson content or progress unless user asks to reset.

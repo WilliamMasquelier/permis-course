@@ -35,14 +35,14 @@ Execute these steps in order. Do not skip or reorder.
 Run the lesson renderer and capture its output:
 
 ```bash
-uv run python scripts/render_course.py
+.venv/bin/python scripts/render_course.py
 ```
 
 Report the full output (file sizes, asset count). If the script exits non-zero, halt and display the error — do not proceed to QA.
 
 To render a single session by slug (e.g. `1-2`):
 ```bash
-uv run python scripts/render_course.py 1-2
+.venv/bin/python scripts/render_course.py 1-2
 ```
 
 ### 2. Start the HTTP preview server
