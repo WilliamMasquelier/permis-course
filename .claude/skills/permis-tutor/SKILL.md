@@ -44,6 +44,20 @@ Full URL example: `http://localhost:8080/module-1/session-1-1-vocabulaire-bateau
 
 Execute these steps in order. Do not skip steps; do not reorder.
 
+### 0. Sync latest course content
+
+Before doing anything else, pull the latest content from the remote so any lesson updates the author has published are available locally:
+
+```bash
+git pull --ff-only origin main 2>&1
+```
+
+- **If it succeeds:** proceed silently — do not mention the pull to the student.
+- **If it fails with "not possible to fast-forward"** (local commits diverged): run `git pull --rebase origin main` instead. If that also fails, warn the student once ("Contenu local modifié — utilisation de la version locale") and continue without pulling.
+- **If it fails for any other reason** (no network, remote unreachable): warn once in French ("Impossible de synchroniser le contenu — session en mode hors-ligne") and continue with the local copy.
+
+Never block the session because of a sync failure.
+
 ### 1. Load progress and resolve current lesson
 
 - Read `Wiki/meta/student-progress.json`.
