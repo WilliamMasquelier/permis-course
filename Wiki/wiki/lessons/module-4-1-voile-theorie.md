@@ -40,7 +40,20 @@ Voir [[concepts/voile-theorie-base]].
 
 ![[allures-points-de-voile.svg|Les allures — du près au vent arrière]]
 
-L'**allure** est l'angle entre l'axe du bateau et la direction du vent réel.
+L'**allure** est l'angle entre l'axe du bateau et la direction du vent réel. Le schéma ci-dessous est l'une des images les plus importantes de tout le cours : il représente un voilier dans chacune des positions possibles par rapport au vent, disposées en arc de cercle autour de la direction du vent.
+
+![[points-of-sail.svg|Les allures du voilier — du près serré au vent arrière]]
+
+En partant de la zone face au vent et en tournant progressivement, voici chaque allure :
+
+- **Près serré** (30–45° du vent) — L'allure la plus serrée possible. Les voiles sont bordées au maximum, presque dans l'axe du bateau. La gîte est forte, le bateau tape dans le clapot. C'est l'allure du louvoyage, quand on doit remonter au vent. Le barreur surveille en permanence les penons et le faseyement du guindant.
+- **Près** (ou près bon plein, 45–60°) — On relâche légèrement les voiles. Le bateau accélère, gîte moins, et le cap remonte moins au vent. C'est souvent l'allure la plus efficace en VMG (vitesse réelle vers l'objectif au vent).
+- **Bon plein / Travers** (~60–90°) — Le vent arrive sur le côté du bateau. Les voiles sont bien ouvertes. C'est généralement l'allure la plus rapide en vitesse pure : le flux aérodynamique sur la voile est optimal, le bateau est relativement à plat.
+- **Largue** (120–150°) — Le vent vient de l'arrière du travers. Allure très confortable : peu de gîte, bonne vitesse, mer agréable. Les passagers adorent le largue. Les voiles sont bien choquées.
+- **Grand largue** (150–170°) — Le vent est presque dans le dos. Attention au risque d'empannage involontaire (la bôme qui passe brutalement de l'autre côté). Le barreur doit rester vigilant et peut installer un tangon pour stabiliser le génois.
+- **Vent arrière** (~180°) — Le vent souffle exactement dans le dos du bateau. Paradoxalement, c'est l'une des allures les plus lentes : la voile ne fonctionne plus par portance aérodynamique mais par simple poussée (traînée). On peut naviguer en "ciseaux" (*wing-and-wing*), grand-voile d'un côté et génois de l'autre, mais c'est instable.
+
+**La zone interdite (no-go zone)** se trouve en haut du diagramme : environ 35–40° de chaque côté du lit du vent. Dans cette zone, aucun réglage de voile ne permet d'avancer — les voiles faseyent, le bateau s'arrête. C'est pour contourner cette zone qu'on louvoie.
 
 | Allure | Angle vent | Description | Sensation |
 |--------|-----------|-------------|-----------|
@@ -50,8 +63,6 @@ L'**allure** est l'angle entre l'axe du bateau et la direction du vent réel.
 | Largue | 120–150° | Vent sur l'arrière du travers | Très confortable. Passagers heureux. Vitesse bonne sans efforts |
 | Grand largue | 150–170° | Vent presque arrière | Risque d'empannage involontaire si barre non tenue |
 | Vent arrière | ~180° | Vent exactement en poupe | Plus lent que le largue. Navigation wing-and-wing possible mais instable |
-
-**La zone interdite** : environ 35–40° de chaque côté de l'axe face au vent. Dans cette zone, les voiles ne peuvent pas fonctionner.
 
 **Louvoyage :** Pour atteindre un point qui se trouve dans la zone interdite (directement au vent), il faut naviguer en **bords** successifs (bord tribord, bord bâbord, etc.) en faisant des zigzags. C'est le louvoyage (*beating*). La VMG (Velocity Made Good) mesure la vitesse réelle vers l'objectif — parfois un bord plus large est plus rapide que le près serré dur.
 
@@ -81,6 +92,19 @@ Les **penons** (tell-tales) sont de petits fils de laine ou de ruban plastique f
 | Penon au vent (face au vent) qui se lève | Allure trop près, voile pas assez choquée | Abattez légèrement ou choquéz l'écoute |
 | Penon sous le vent (face sous le vent) qui danse | Voile trop bordée (sur-choquée) | Choquéz légèrement l'écoute |
 | Les deux penons s'enroulent | Vous êtes dans la zone interdite | Abattez |
+
+**Lecture rapide des penons — schéma visuel :**
+
+```
+   VENT ──►
+
+   [Au vent] horizontal  + [Sous le vent] horizontal  = PARFAIT ✓
+   [Au vent] monte ↗     + [Sous le vent] horizontal  = Trop près / choquer
+   [Au vent] horizontal  + [Sous le vent] s'enroule ↺  = Trop bordé / lofer
+   [Au vent] s'enroule   + [Sous le vent] s'enroule    = Zone morte / abattre
+```
+
+*Les penons sont votre tableau de bord le plus fiable — plus direct qu'un anémomètre, plus honnête qu'un GPS. En un coup d'œil, ils vous disent si la voile travaille ou si elle se bat contre le vent.*
 
 **Les trois contrôles de forme de la grand-voile :**
 - **Écoute** (mainsheet) : contrôle l'angle de la voile par rapport au vent, et indirectement la gîte.

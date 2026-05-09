@@ -28,6 +28,10 @@ updated: 2026-05-07
 
 Contrairement à une carte routière qui montre ce qui est à la surface, la carte marine montre avant tout ce qui est **en dessous** : les profondeurs, les rochers submergés, les hauts-fonds, les épaves. C'est votre contrat avec la réalité sous-marine — une réalité que vous ne pourrez jamais vérifier à l'œil, sauf quand il est trop tard.
 
+![[admiralty-chart-fethiye-1886.jpg|Carte Admiralty de la baie de Fethiye, levée en 1886 par la Royal Navy]]
+
+*Une carte Admiralty historique de la baie de Fethiye, levée par la Royal Navy en 1886. Les conventions de symboles et de sondes étaient déjà standardisées à l'époque — la cartographie marine moderne en est l'héritière directe. Les mêmes rochers signalés il y a 140 ans figurent toujours sur votre carte Imray actuelle.*
+
 En France, les cartes marines officielles sont publiées par le **SHOM** (Service Hydrographique et Océanographique de la Marine). Imray, l'éditeur britannique, publie des séries régionales très utilisées en Méditerranée (dont la T1 pour les eaux turques). Toutes les cartes sérieuses partagent les mêmes conventions IALA et les mêmes symboles internationaux du SHOM/IHO.
 
 Les profondeurs sont données par rapport au **zéro hydrographique** (*lowest astronomical tide*, LAT) — le niveau le plus bas que la mer peut théoriquement atteindre. Cela signifie que les sondes imprimées sur la carte sont des **minimums garantis** : la profondeur réelle sera toujours égale ou supérieure à la sonde, sauf en cas d'erreur de sondage. Les hauteurs à terre (falaises, phares) sont mesurées par rapport au niveau moyen de la mer ou à la pleine mer de vive-eau.
@@ -119,6 +123,27 @@ Pour mesurer des routes longues sur des cartes de petite échelle, mesurez en se
 | Flèche pointillée | Courant (avec force en nœuds) |
 | Étoile avec liseré magenta | Feu de navigation (phare ou balise lumineuse) |
 
+**Regroupement des symboles par niveau de danger :**
+
+```
+🔴 DANGER IMMÉDIAT
+   + (croix)     Roche couverte < 2 m
+   * (astérisque) Roche dangereuse, profondeur inconnue
+   ED            Existence douteuse — le danger existe peut-être
+
+🟡 ATTENTION
+   Teinte bleue  Profondeurs < 10 m (zone de danger côtier)
+   Teinte verte  Estran (zone découvrant à marée basse)
+   Zones hachurées  Câbles, zones interdites
+
+🟢 INFORMATION
+   Ancre + cercle  Mouillage recommandé
+   Ancre barrée    Mouillage interdit
+   Flèche pointillée  Courant (avec force en nœuds)
+```
+
+*À l'examen, la lecture des symboles est une compétence testée systématiquement. Classez-les mentalement par gravité : une croix (+) exige une réaction immédiate (changement de cap), une teinte bleue appelle la prudence, une ancre est une information de planification.*
+
 Voir [[concepts/navigation-symboles-cartes]], [[concepts/carte-marine]].
 
 ## Les projections et l'échelle
@@ -136,9 +161,21 @@ Utiliser une carte trop petite dans des eaux dangereuses est une faute professio
 
 ## La rose des vents et le compas
 
+Sur chaque carte marine, vous trouverez une ou plusieurs roses des vents imprimées. Cette figure circulaire, héritée de la tradition cartographique médiévale, reste un outil de navigation essentiel. Elle divise l'horizon en 360 degrés et traditionnellement en 32 rumbs (directions nommées : Nord, Nord-Nord-Est, Nord-Est, etc.). Sur la carte, elle sert à la fois de référence visuelle pour orienter rapidement le regard et d'outil pratique pour tracer ou lire des caps à l'aide d'une règle Cras ou d'un rapporteur.
+
+![[compass-card.svg|Rose des vents — les 32 rumbs du compas]]
+
+*La rose des vents telle qu'elle apparaît sur les cartes marines. Le cercle extérieur indique le nord vrai (géographique), le cercle intérieur le nord magnétique. L'écart entre les deux est la déclinaison (ou variation) magnétique de la zone, indispensable pour convertir les caps entre compas et carte.*
+
 La rose des vents sur une carte marine comporte généralement **deux cercles concentriques**. Le cercle extérieur est orienté sur le **nord vrai** (Nord géographique, aligné avec les méridiens de la carte). Le cercle intérieur est orienté sur le **nord magnétique** de la zone, avec une notation indiquant la variation magnétique et son taux de changement annuel (ex : *Var 4°E (2024) diminuant 7' par an*).
 
 Pour tracer ou lire un cap magnétique, utilisez le cercle intérieur. Pour un cap vrai (coordonné avec les méridiens de la carte), utilisez le cercle extérieur. En pratique sur un voilier moderne, votre compas lit le nord magnétique — donc les caps que vous tenez sont magnétiques, et doivent être convertis en vrais avant d'être tracés sur la carte (ou vice versa).
+
+Le schéma ci-dessous illustre les symboles utilisés sur les cartes marines pour représenter les routes planifiées et les caps suivis par un navire. Ces notations standardisées permettent au navigateur de tracer sa route à l'avance sur la carte, en indiquant le cap vrai (Cv), le cap magnétique (Cm), la distance à parcourir, et les waypoints intermédiaires.
+
+![[course-navigation.svg|Symboles de route et de cap sur carte marine]]
+
+*Symboles de route et de navigation sur une carte marine : la ligne de route est tracée avec le cap vrai inscrit au-dessus et la distance en milles nautiques en dessous. Les waypoints sont marqués par des cercles ou des croix. Ces conventions permettent de préparer et de vérifier une traversée avant le départ.*
 
 Voir [[concepts/navigation-relevements-et-caps]].
 

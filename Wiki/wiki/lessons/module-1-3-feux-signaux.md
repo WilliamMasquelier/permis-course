@@ -32,6 +32,12 @@ Les feux de navigation permettent d'identifier, de nuit ou par visibilité rédu
 
 Les feux de route sont les feux que porte tout navire faisant route (en déplacement). Leur géométrie est conçue pour permettre à un observateur de déduire l'orientation du navire depuis n'importe quel angle.
 
+Le schéma ci-dessous montre les secteurs angulaires des quatre feux de navigation vus de dessus. Chaque secteur est calibré pour qu'un observateur, quelle que soit sa position autour du navire, voie une combinaison unique de couleurs. Le feu rouge de bâbord couvre 112,5° sur le côté gauche du navire, le feu vert de tribord couvre 112,5° sur le côté droit, le feu blanc de tête de mât balaie 225° vers l'avant (englobant les deux secteurs de côté), et le feu blanc de poupe couvre les 135° restants à l'arrière. Cette répartition angulaire est la raison pour laquelle les feux fonctionnent : en voyant uniquement du rouge, vous savez que vous êtes dans le secteur bâbord de l'autre navire ; en voyant rouge et vert simultanément, vous êtes face à lui ; en ne voyant que du blanc arrière, vous êtes en situation de rattrapage.
+
+![[ship-position-lights.svg|Configuration des feux de navigation vue de dessus — secteurs et couleurs]]
+
+*Secteurs angulaires des feux de navigation vus de dessus. La couverture angulaire de chaque feu est fixée par le RIPAM : elle garantit qu'un observateur peut toujours déduire l'orientation relative du navire à partir des couleurs visibles, de nuit comme par visibilité réduite.*
+
 ### Feux de route (tous les bateaux de plus de 7m sous propulsion)
 
 ![[feux-secteurs-route.svg]]
@@ -86,6 +92,20 @@ Certains navires exercent des activités spéciales qui limitent leur manœuvrab
 **Bateau au mouillage :** Un seul feu blanc tout-horizon (visible de tous les côtés) à l'avant du bateau. Ce feu ne bouge pas comme les feux de route — il reste fixe parce que le bateau tourne autour de son ancre. Si vous voyez ce feu blanc seul sans feux de côté, le bateau est ancré.
 
 **Pêche au chalut :** Le chalutier montre un **feu vert au-dessus d'un feu rouge** — mémorisez-le avec la phrase "le vert domine le rouge = pêcheur dangereux sous l'eau". Ce navire a des filets déployés derrière lui, potentiellement sur plusieurs centaines de mètres. Il est contraint dans sa manœuvre et prioritaire sur les navires à moteur.
+
+**Correspondance entre marques de jour et feux de nuit :**
+
+| Situation | Marque de jour | Feux de nuit |
+|-----------|---------------|--------------|
+| Voilier sous moteur | Cône noir pointe en bas | + Feu de tête de mât blanc (225°) |
+| Mouillage | 1 boule noire | 1 blanc tout-horizon (360°) |
+| NUC (non-maître de sa route) | 2 boules noires | 2 rouges tout-horizon |
+| Échoué | 3 boules noires | 2 rouges + feux mouillage |
+| Remorquage > 200 m | Losange noir | Feux de tête de mât spéciaux |
+| Contraint par tirant d'eau | Cylindre noir | 3 rouges verticaux tout-horizon |
+| Pêche (chalut) | 2 cônes pointe à pointe | Vert sur blanc (360°) |
+
+*Chaque situation a un signal diurne et un signal nocturne — apprenez les deux en parallèle. À l'examen, les questions portent souvent sur l'identification croisée : « Vous voyez deux boules noires — que signifient-elles ? Quels feux verriez-vous de nuit ? »*
 
 **Remorquage :** Un remorqueur avec une remorque de plus de 200 mètres montre un **losange de jour** (losange noir) et des feux de tête de mât particuliers. La remorque elle-même, entre les deux navires, est invisible de nuit — mais elle représente un obstacle mortel pour un navire qui passerait entre les deux.
 

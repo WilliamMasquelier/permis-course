@@ -32,6 +32,28 @@ Mais le PE seul est insuffisant car il ignore deux perturbateurs : la **dérive 
 2. **Appliquer la dérive** : écarter légèrement vers le côté sous-le-vent de quelques degrés → on obtient la route dans l'eau (une flèche sur la ligne).
 3. **Appliquer le courant** : depuis l'extrémité de la route dans l'eau, tracer le vecteur courant (direction + distance parcourue pendant la même période, trois flèches) → l'extrémité est le PE (symbolisé par un triangle avec l'heure).
 
+**Schéma du tracé d'estime :**
+
+```
+Position connue (A)
+       |
+       | Cap barré × distance = Route dans l'eau (1 flèche)
+       |
+       B' (+ dérive vent = route dans l'eau corrigée)
+       |
+       | Vecteur courant — direction × vitesse × durée (3 flèches)
+       |
+       C = Point Estimé (△ + heure)
+```
+
+*Le point estimé intègre trois composantes successives : le cap barré, la dérive de vent, et le courant. Le symbole sur la carte est un triangle (△) accompagné de l'heure. Chaque composante ajoute une source d'erreur — d'où la nécessité de confirmer régulièrement par des relèvements sur amers.*
+
+Le diagramme suivant montre comment ces trois composantes se combinent sur une carte réelle. Le cap (heading) est la direction dans laquelle pointe la proue. La dérive de vent écarte légèrement la trajectoire sous le vent, donnant la route surface. Enfin, le courant déplace l'ensemble, produisant la route fond — la trajectoire réelle sur la carte, celle que mesure le GPS comme COG.
+
+![[course-navigation.svg|Tracé de route sur carte — cap, route fond, dérive]]
+
+*Sur ce tracé, l'écart entre le cap barré et la route fond illustre pourquoi un navigateur qui ne corrige pas pour le vent et le courant finit par manquer sa destination. Plus la traversée est longue, plus l'écart se creuse.*
+
 **L'erreur s'accumule** : chaque PE repose sur le précédent. Une petite erreur de cap ou de vitesse sur la première heure se retrouve amplifiée après 6 heures. C'est pourquoi le PE doit être mis à jour régulièrement par des observations extérieures : relèvement d'un phare, transit visuel, ou fix GPS.
 
 **Bonnes pratiques :** Tenir un carnet de bord avec position, cap, vitesse, heure à chaque changement significatif. En navigation côtière : toutes les 30 minutes près des dangers, toutes les heures au large.
@@ -73,6 +95,17 @@ Voir [[concepts/navigation-relevements]], [[concepts/pilotage-cotier]].
 ## Le GPS — outil essentiel, pas substitut
 
 Le GPS fonctionne par **trilatération** : votre récepteur mesure le temps de transit des signaux radio venant d'au moins 4 satellites. Chaque mesure définit une sphère de position. L'intersection de ces sphères donne votre position en 3D avec une précision théorique de ±5 mètres.
+
+**Comparaison des instruments de navigation :**
+
+| Instrument | Mesure | Référence | Fiabilité |
+|-----------|--------|-----------|-----------|
+| Compas de bord | Heading (direction proue) | Nord magnétique + déviation | Toujours disponible |
+| GPS | COG (direction déplacement) | Nord vrai | Dépend des satellites |
+| GPS | SOG (vitesse fond) | Fond marin | Dépend des satellites |
+| Loch | Vitesse surface | Eau environnante | Mécanique, toujours dispo |
+
+*Le compas dit où vous pointez ; le GPS dit où vous allez. Les deux informations sont complémentaires et peuvent diverger de 10 à 20 degrés par courant ou vent fort. Le loch mesure votre vitesse dans l'eau — pas sur le fond. Si le courant est de 2 nœuds, la différence entre SOG et loch vous donne directement la force du courant.*
 
 En pratique, le GPS de bord donne :
 - **COG** (Course Over Ground) — la direction réelle de votre déplacement par rapport au fond.

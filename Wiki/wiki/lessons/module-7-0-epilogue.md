@@ -22,6 +22,10 @@ updated: 2026-05-07
 >
 > La marina de Göcek apparaît à tribord. Encore une heure. William sort son carnet et commence à relire ses notes.
 
+![[turkey-gulet-2023.png|Un gulet turc dans les eaux cristallines du golfe de Göcek]]
+
+*Le* Deniz Rüzgarı *dans les eaux du golfe de Göcek — une semaine de navigation, vingt et une sessions d'apprentissage, et un marin en devenir. Les connaissances acquises ne sont pas abstraites : chaque règle a été vécue dans une situation réelle, chaque concept est associé à un mouillage, un chenal, une décision.*
+
 ## Ce que vous avez appris — récapitulatif du voyage
 
 Ce voyage dans le golfe de Göcek n'était pas qu'un voyage de vacances. Chaque situation a été un cours en action — les règles de barre ont pris vie dans le chenal de Göcek, la météo s'est concrétisée dans la décision du dimanche matin, le MAYDAY a été répété face à la capitainerie de Fethiye. Voici comment les modules se sont tissés dans le récit.
@@ -87,6 +91,20 @@ Cette session se termine par un examen blanc complet — 40 questions, dans les 
 **Seuil de passage officiel :** 35/40 (87,5%). Si vous atteignez ce score sur l'examen blanc, vous êtes prêt pour l'examen officiel. Si vous avez 30-34, ciblez les thèmes manquants. En dessous de 30 : révisez toutes les sessions avant de vous présenter.
 
 L'examen du permis côtier comporte **40 questions** à choix multiples. Durée officielle : **1h45**. Seuil de réussite : **35/40** (87,5%).
+
+**Structure de l'examen — répartition par thème :**
+
+```
+40 questions │ 1h45 │ Seuil : 35/40 (87,5%)
+
+Balisage IALA            ██████████░  7–10 questions
+Règles de barre / feux   █████████████ 10–12 questions
+Navigation               ████████░░░  6–8 questions
+Sécurité / météo         █████████░░  7–9 questions
+Radio / réglementation   ██████░░░░░  4–6 questions
+```
+
+*Les règles de barre et les feux représentent le quart de l'examen — c'est le bloc le plus lourd. Le balisage est le deuxième thème critique. Concentrez vos dernières révisions sur ces deux domaines si le temps manque.*
 
 Les questions couvrent l'ensemble des modules :
 - **Balisage** : 7–10 questions

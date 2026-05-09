@@ -76,6 +76,25 @@ La règle cardinale de toute manœuvre en marina : **approchez toujours contre l
 
 Si le vent vous pousse sur le quai (*lee shore*) : approchez prow-first (poupe vers le quai) pour avoir le vent dans le dos pendant l'approche, puis virer lentement.
 
+**Schéma de l'amarrage méditerranéen (stern-to) :**
+
+```
+   QUAI ════════════════════════════════════
+        │─── amarre poupe ───│─── amarre poupe ───│
+        ▼                    ▼
+      [POUPE]              [POUPE]
+        │                    │
+      [BATEAU]             [BATEAU]
+        │                    │
+      [PROUE]              [PROUE]
+        │                    │
+     ~~~chaîne~~~         ~~~chaîne~~~
+        │                    │
+       ANCRE                ANCRE
+```
+
+*En amarrage méditerranéen, la poupe est au quai et l'ancre maintient la proue au large. C'est la technique standard dans les marinas de Göcek et de toute la Méditerranée — elle permet d'embarquer et débarquer directement depuis la poupe, et de maximiser le nombre de bateaux le long du quai.*
+
 Voir [[concepts/accostage-amarrage]].
 
 ## Manœuvre au moteur — effets du gouvernail et de l'hélice

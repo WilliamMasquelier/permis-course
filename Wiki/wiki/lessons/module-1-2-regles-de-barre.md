@@ -34,6 +34,25 @@ La logique de base du RIPAM est que **le navire le plus manœuvrant cède le pas
 | 4 | Voiliers | Sous voiles uniquement |
 | 5 | Bateaux à moteur | La règle générale |
 
+**Pyramide de priorité RIPAM (du plus au moins prioritaire) :**
+
+```
+          ┌─────────────────────────┐
+          │    NUC (non-maître      │ ← Priorité maximale
+          │    de sa route)         │
+          ├─────────────────────────┤
+          │ CMR (manœuvre restreinte)│
+          ├─────────────────────────┤
+          │  Pêche avec engins      │
+          ├─────────────────────────┤
+          │   Voilier (sous voiles) │
+          ├─────────────────────────┤
+          │    Bateau à moteur      │ ← Le plus manœuvrant = le moins prioritaire
+          └─────────────────────────┘
+```
+
+*Plus un navire est haut dans la pyramide, plus les autres doivent s'en écarter. Cette hiérarchie repose sur un principe simple : celui qui peut manœuvrer le plus facilement doit laisser passer celui qui ne le peut pas.*
+
 **NUC** (*Not Under Command*) : un navire qui a perdu sa capacité de manœuvre (avarie de gouvernail, panne moteur, etc.) signale son état par deux boules noires superposées le jour et deux feux rouges tout-horizon la nuit. Tout le monde doit s'en écarter.
 
 **CMR** (Capacité de Manœuvre Restreinte) : un navire en dragage, posant un câble sous-marin, ou effectuant des travaux hydrographiques ne peut pas dévier librement. Il affiche le signal approprié et les autres navires doivent le respecter.
@@ -80,6 +99,14 @@ Le rattrapant doit s'écarter jusqu'à ce qu'il soit clairement dégagé. Il ne 
 
 Voir [[concepts/rattrapage]].
 
+### Comprendre les secteurs de feux pour identifier la situation
+
+Pour appliquer correctement les règles de croisement et de rattrapage, il faut comprendre comment les feux de navigation découpent l'horizon autour d'un navire en secteurs angulaires précis. Chaque feu couvre un arc défini par le RIPAM, et c'est la combinaison de feux que vous percevez qui vous indique votre position relative par rapport à l'autre navire — et donc quelle règle de barre appliquer. Le feu rouge (bâbord) couvre 112,5° sur le côté gauche, le feu vert (tribord) couvre 112,5° sur le côté droit, le feu blanc de tête de mât éclaire 225° vers l'avant, et le feu blanc de poupe couvre les 135° restants à l'arrière. Si vous ne voyez que le feu de poupe blanc d'un navire, vous êtes dans son secteur arrière — vous êtes en situation de rattrapage.
+
+![[ship-position-lights.svg|Feux de position d'un navire — vue de dessus montrant les secteurs]]
+
+*Vue de dessus des secteurs de feux de navigation : rouge à bâbord (112,5°), vert à tribord (112,5°), blanc de tête de mât vers l'avant (225°), et blanc de poupe vers l'arrière (135°). Ces secteurs sont la clé pour identifier la situation de rencontre de nuit — croisement, face-à-face ou rattrapage.*
+
 ## Voilier contre voilier
 
 Les règles entre voiliers sous voiles s'appliquent uniquement quand les deux navires naviguent à la voile sans moteur. Elles sont organisées en trois cas :
@@ -118,6 +145,21 @@ Les signaux sonores de manœuvre sont des communications obligatoires entre navi
 - **2 sons brefs** : "Je viens sur bâbord" (j'abats à gauche)
 - **3 sons brefs** : "Je bats en arrière" (marche arrière engagée)
 - **5 sons brefs ou plus** : Signal de doute ou de danger — à utiliser sans hésitation si vous ne comprenez pas l'intention d'un autre navire
+
+**Aide-mémoire des signaux sonores de manœuvre :**
+
+```
+· = son bref      ─ = son long
+
+·               →  Je gouverne à TRIBORD (droite)
+· ·             →  Je gouverne à BÂBORD (gauche)
+· · ·           →  Mes machines sont en marche ARRIÈRE
+· · · · · (+)   →  DANGER / DOUTE — « Je ne comprends pas votre manœuvre »
+─               →  Signal de brume (moteur en route)
+─ · ·           →  Signal de brume (voilier en route)
+```
+
+*Le signal de 5 sons brefs (ou plus) est le klaxon de la mer : utilisez-le sans hésitation dès que vous ne comprenez pas l'intention d'un autre navire. C'est à la fois un avertissement et une demande de clarification.*
 
 Ces signaux seront développés en détail à la session 1.3 avec les signaux de brume.
 

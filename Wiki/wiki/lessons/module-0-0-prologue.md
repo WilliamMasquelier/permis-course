@@ -20,6 +20,10 @@ updated: 2026-05-07
 >
 > Ce cours est le récit de ce voyage.
 
+![[fethiye-gulf-panoramio.jpg|Vue panoramique du golfe de Fethiye depuis les collines du Taurus]]
+
+*Le golfe de Fethiye vu depuis les hauteurs — les eaux turquoise de Skopea Limanı s'étendent entre les îles boisées du Taurus. C'est dans ce décor que commence notre apprentissage de la navigation côtière.*
+
 ## Qu'est-ce que le Permis Côtier ?
 
 Le **Permis Plaisance Option Côtière** est le titre de conduite de base pour naviguer en mer à bord d'un bateau à moteur ou d'un voilier motorisé en France et dans les eaux européennes. Il autorise la navigation jusqu'à **6 milles nautiques d'un abri** — soit environ 11 kilomètres au-delà de la côte la plus proche.
@@ -56,6 +60,10 @@ Chaque session prend de 20 à 45 minutes. Le cours complet représente environ 1
 
 ## Le bateau et l'équipage
 
+![[gulet-fethiye-sailing.jpg|Un gulet traditionnel turc naviguant dans le golfe de Fethiye]]
+
+*Un gulet turc typique sous voiles dans le golfe de Göcek — coque en bois vernie, deux mâts, voile d'artimon crème. Le* Deniz Rüzgarı *ressemble à celui-ci : 44 pieds d'acajou, gréé en ketch, conçu pour les navigations côtières de Méditerranée orientale.*
+
 **Le *Deniz Rüzgarı*** est un gulet en bois de 13,5 mètres (44 pieds). Gréé en ketch — deux mâts, le mât de misaine et le mât d'artimon — il est typique des bateaux de charter turcs du golfe de Göcek. Son moteur diesel de 75 chevaux lui permet de naviguer à 7 nœuds, et ses voiles (grand-voile + génois + voile d'artimon) lui offrent une excellente allure au largue dans la brise de mer après-midi.
 
 **L'équipage pour une semaine (samedi à samedi) :**
@@ -68,6 +76,10 @@ Chaque session prend de 20 à 45 minutes. Le cours complet représente environ 1
 
 ## Le golfe de Göcek — votre terrain d'apprentissage
 
+![[gocek-hafen.jpg|La marina de Göcek vue depuis la mer]]
+
+*La marina de Göcek, point de départ et d'arrivée de notre semaine de navigation. Les pontons accueillent gulets, voiliers et bateaux à moteur dans un cadre protégé par les collines du Taurus. C'est ici que William apprendra ses premiers nœuds de taquet.*
+
 **Skopea Limanı** (golfe de Göcek) est l'un des plus beaux mouillages de Méditerranée orientale. Protégé par les collines du Taurus à l'est et au nord, il abrite une douzaine d'îles à moins de 10 milles nautiques de la marina.
 
 > [EXEMPLE GOLFE]
@@ -76,6 +88,10 @@ Chaque session prend de 20 à 45 minutes. Le cours complet représente environ 1
 > **Les mouillages du voyage :** Tersane Island (ancienne cantine byzantine, ~3NM au SE), Fethiye (ville, tombeaux lyciens, ~12NM au NE), Ölüdeniz (Blue Lagoon, ~17NM au SW), Butterfly Valley (accessible seulement par la mer, ~23NM au SW), Hamam Koyu (source thermale naturelle, ~5NM au SE), Kızılada (Red Island, ~6NM au S).
 >
 > **Le temps :** Étés turcs = matin calme, après-midi brise de mer (Imbat) de 10-18 nœuds du SW/NW. Marée quasi-nulle (0,2-0,3 m). Températures 35-40°C à terre, 28-30°C sur l'eau.
+
+![[fethiye-gulf-korfezi.jpg|Le golfe de Fethiye et ses îles]]
+
+*Skopea Limanı abrite une douzaine d'îles à moins de 10 milles de la marina — un terrain d'apprentissage idéal par sa diversité de situations nautiques : chenaux étroits, mouillages forains, passages entre îles, et traversées au large.*
 
 Les conditions méditerranéennes rendent ce golfe idéal pour l'apprentissage : peu de marée (on le soulignera comme enseignement), visibilité excellente, trafic modéré, fonds repérables à la couleur de l'eau.
 

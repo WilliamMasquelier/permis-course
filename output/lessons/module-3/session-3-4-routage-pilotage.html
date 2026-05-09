@@ -1117,6 +1117,18 @@
 <p><strong>3. Identification des dangers.</strong> Pour chaque segment de la route, noter les sondes critiques, les roches, les zones réglementées, les zones de pêche avec casiers. Calculer les marges de sécurité (tirant d'eau + 50% minimum).</p>
 <p><strong>4. Mesures d'atténuation.</strong> Relèvements de sécurité (clearing bearings), amers d'entrée, profondeur minimale de sécurité au sondeur, chenaux de repli si les conditions se dégradent, ancrage de secours le plus proche à chaque point.</p>
 <p><strong>5. Vérification.</strong> Relire le plan à deux si possible. Le second regard détecte toujours quelque chose.</p>
+<p><strong>Les 5 étapes du plan de navigation — vue d'ensemble :</strong></p>
+<pre><code>1. COLLECTE    ─── [Météo] [AVURNAV] [Guide nautique] [Info locale]
+      │
+2. TRACÉ       ─── [Waypoints] [Distances] [ETA à chaque point]
+      │
+3. DANGERS     ─── [Sondes] [Roches] [Zones interdites] [Marge tirant d'eau +50%]
+      │
+4. ATTÉNUATION ─── [Clearing bearings] [Amers d'entrée] [Abris de secours]
+      │
+5. VÉRIFICATION ── [Relecture à deux] [Carburant suffisant?] [Météo reconfirmée?]
+</code></pre>
+<p><em>Ce schéma résume la méthode systématique de planification d'une traversée. Chaque étape alimente la suivante — sauter l'étape « dangers » revient à planifier un accident. La planification se fait au calme, à table, avant de lever l'ancre.</em></p>
 <p>Voir <span class="wikilink" data-label="Planification Traversee">concepts/planification-traversee</span>.</p>
 <h2>Relèvements de sécurité</h2>
 <p>Un <strong>relèvement de sécurité</strong> (<em>clearing bearing</em>) est un angle qui vous sépare d'un danger. Il ne vous dit pas où vous êtes — il vous dit de quel côté vous devez rester.</p>
@@ -1148,6 +1160,17 @@
 <li>Faites coïncider cet arc avec la route de fond : le point D est l'intersection.</li>
 <li>La ligne C→D est votre <strong>cap à tenir</strong> (une flèche). Mesurez-le.</li>
 </ol>
+<p><strong>Construction vectorielle du cap à tenir :</strong></p>
+<pre><code>       Route fond souhaitée (2 flèches)
+A ─────────────────────────────────────────── B
+│                                            ╱
+│ Vecteur courant (3 flèches)              ╱
+│ direction + vitesse × durée            ╱  Cap à tenir (1 flèche)
+│                                      ╱
+C · · · · · · · · · · · · · · · · · D
+    Distance bateau (arc de compas)
+</code></pre>
+<p><em>Depuis A (position de départ), tracez le vecteur courant vers C. Depuis C, ouvrez le compas à la distance que parcourt votre bateau pendant la même durée. L'intersection de cet arc avec la ligne de route fond (A→B) donne le point D. Le cap à tenir est la direction C→D — ce cap compense exactement le courant pour que votre trajectoire réelle suive la route fond souhaitée.</em></p>
 <p>Vitesse fond = longueur de la ligne A→D divisée par la durée.</p>
 <p>Voir <span class="wikilink" data-label="Routage Navigation">concepts/routage-navigation</span>, <span class="wikilink" data-label="Pilotage Cotier">concepts/pilotage-cotier</span>.</p>
 <div class="callout callout-golfe"><div class="callout-label">🗺️ Exemple — Golfe de Fethiye</div><div class="callout-body">

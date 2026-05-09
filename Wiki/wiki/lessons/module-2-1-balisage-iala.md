@@ -32,6 +32,10 @@ La France et la Turquie sont toutes deux en **Région A**. Le balisage du golfe 
 
 Le système IALA Région A comprend cinq familles de marques : latérales, cardinales, eaux saines, danger isolé, et spéciales. Chaque famille a un rôle distinct, une couleur propre, et un feu nocturne caractéristique.
 
+![[iala-regions-map.svg|Carte mondiale des régions IALA — Région A (Europe, Afrique, Asie, Océanie) et Région B (Amériques, Japon, Philippines)]]
+
+*Les deux régions IALA dans le monde. La France et la Turquie sont en Région A : en entrant dans un port, le rouge est à bâbord (à gauche). Aux États-Unis et au Japon (Région B), les couleurs sont inversées — « red right returning ». Un marin qui change de région doit consciemment inverser ses réflexes de balisage latéral.*
+
 ## Famille 1 : Marques latérales
 
 Les marques latérales balisent les bords d'un chenal navigable. Elles indiquent de quel côté vous pouvez passer en toute sécurité. La règle de base est simple : en entrant dans le port (sens conventionnel), gardez le **rouge à bâbord** (à gauche) et le **vert à tribord** (à droite).
@@ -44,6 +48,10 @@ La convention s'applique **en entrant dans le chenal** (sens conventionnel, gén
 |------|---------|-------|----------|
 | Bâbord (gauche en entrant) | Rouge | Cylindrique (boîte) | Rouge — rythme quelconque |
 | Tribord (droit en entrant) | Vert | Conique | Vert — rythme quelconque |
+
+![[iala-green-lateral-buoy.jpg|Bouée latérale verte conique IALA — marque tribord en Région A]]
+
+*Une bouée latérale verte conique (marque tribord) en situation réelle. En entrant dans un port en Région A, gardez-la à tribord (à droite). Sa forme conique la distingue immédiatement de la cylindrique rouge de bâbord — même de loin, même par mauvaise visibilité, la silhouette suffit à identifier le côté du chenal.*
 
 Si le sens conventionnel n'est pas évident (estuaire sans flèche, rade ouverte), la règle de fond est de suivre le sens du flot de marée montante ou de se référer à la carte. En sortant du port, les marques passent de l'autre côté du bateau : ce qui était à bâbord est maintenant à tribord de votre perspective — mais la marque elle-même n'a pas bougé.
 
@@ -74,6 +82,32 @@ Les feux nocturnes suivent un système mémorable basé sur l'horloge. Imaginez 
 
 **Danger nouveau** : une épave récente ou un haut-fond non encore inscrit sur les cartes est signalé par deux marques cardinales identiques superposées, avec un feu à scintillements très rapides. C'est le signal d'alerte maximale.
 
+Les quatre illustrations ci-dessous détaillent chaque marque cardinale individuellement, avec son voyant, ses couleurs et son feu nocturne.
+
+**Marque cardinale Nord** — Le voyant porte deux cônes noirs pointes en haut (↑↑), rappelant la lettre N tracée à la main. Le corps est noir en haut, jaune en bas. Le feu nocturne est un scintillement continu (Q ou VQ) — pas de groupe à compter, il clignote sans interruption. La règle : passez au **nord** de cette marque, le danger est au sud.
+
+![[iala-cardinal-north.svg|Marque cardinale Nord — cônes pointe en haut]]
+
+*Marque cardinale Nord : voyant deux cônes pointes en haut, corps noir sur jaune, feu scintillant continu. Passez toujours au nord de cette marque.*
+
+**Marque cardinale Est** — Le voyant montre deux cônes base contre base (◇), évoquant un E couché ou un losange. Le corps est noir-jaune-noir (bande jaune au milieu). Le feu nocturne produit 3 éclats groupés (Q(3) ou VQ(3)) — 3 comme 3 heures sur le cadran de l'horloge, position de l'Est. Passez à l'**est** de la marque.
+
+![[iala-cardinal-east.svg|Marque cardinale Est — cônes base contre base]]
+
+*Marque cardinale Est : voyant deux cônes base contre base, corps noir-jaune-noir, feu à 3 éclats. Passez à l'est de cette marque.*
+
+**Marque cardinale Sud** — Le voyant porte deux cônes pointes en bas (↓↓), l'inverse exact de la Nord. Le corps est jaune en haut, noir en bas. Le feu nocturne produit 6 éclats suivis d'un éclat long (Q(6)+LFl ou VQ(6)+LFl) — 6 comme 6 heures sur le cadran. Passez au **sud** de la marque.
+
+![[iala-cardinal-south.svg|Marque cardinale Sud — cônes pointe en bas]]
+
+*Marque cardinale Sud : voyant deux cônes pointes en bas, corps jaune sur noir, feu à 6 éclats + un long. Passez au sud de cette marque.*
+
+**Marque cardinale Ouest** — Le voyant montre deux cônes pointe contre pointe (✦), formant une sorte de sablier ou de W vu de côté. Le corps est jaune-noir-jaune (bande noire au milieu). Le feu nocturne produit 9 éclats (Q(9) ou VQ(9)) — 9 comme 9 heures, position de l'Ouest sur le cadran. Passez à l'**ouest** de la marque.
+
+![[iala-cardinal-west.svg|Marque cardinale Ouest — cônes pointe contre pointe]]
+
+*Marque cardinale Ouest : voyant deux cônes pointe contre pointe, corps jaune-noir-jaune, feu à 9 éclats. Passez à l'ouest de cette marque.*
+
 Voir [[concepts/marques-cardinales]].
 
 ## Famille 3 : Marques d'eaux saines
@@ -85,6 +119,10 @@ Son identification est fiable et mémorable : **corps rayé verticalement rouge 
 À l'examen, le piège classique est de confondre la marque d'eaux saines avec le danger isolé (également blanc nocturne) : la différence tient au voyant — sphère rouge unique = eaux saines, deux boules noires = danger isolé.
 
 Corps à bandes verticales rouges et blanches. Topmark : sphère rouge. Feu : Iso, Oc, 1 éclat long. **Passage possible tout autour** — souvent en tête de chenal.
+
+![[bouee-eaux-saines.png|Bouée d'eaux saines — bandes verticales rouges et blanches, topmark sphère rouge]]
+
+*La marque d'eaux saines avec ses bandes verticales rouges et blanches et son voyant sphérique rouge. On la reconnaît de loin grâce à ses rayures verticales — la seule bouée du système IALA avec ce motif. Passage possible de tous les côtés : elle indique l'absence de danger dans les eaux environnantes.*
 
 Voir [[concepts/marques-eaux-saines]].
 
@@ -98,6 +136,10 @@ La logique est cohérente avec son nom : "danger *isolé*" — il y a un seul da
 
 Corps noir-rouge-noir. Topmark : deux sphères noires superposées. Feu : Fl(2). **Danger ponctuel** — les eaux navigables tout autour, mais ne passez pas dessus.
 
+![[bouee-danger-isole.png|Bouée de danger isolé — corps noir à bandes rouges, topmark deux boules noires superposées]]
+
+*La marque de danger isolé signale un écueil ponctuel (rocher, épave) entouré d'eaux navigables. Les deux boules noires superposées sont son signe distinctif — ne les confondez pas avec la sphère rouge unique de la marque d'eaux saines. Contournez de tous les côtés en gardant vos distances, mais ne passez jamais directement au-dessus.*
+
 Voir [[concepts/marques-danger-isole]].
 
 ## Famille 5 : Marques spéciales
@@ -109,6 +151,10 @@ Exemples d'utilisations courantes : câbles sous-marins (défense d'ancrer), zon
 La règle pratique : quand vous voyez du jaune, consultez la carte avant de pénétrer dans la zone. La marque ne précise pas pourquoi la zone est délimitée — c'est la carte ou le portulan local qui le dit.
 
 Corps jaune, forme quelconque. Feu jaune. Indiquent des zones réglementées, câbles, activités spéciales, zones de baignade.
+
+![[bouee-speciales.png|Bouée spéciale jaune avec topmark en croix — zone réglementée]]
+
+*La marque spéciale est entièrement jaune avec un topmark en croix (×). Elle délimite des zones à signification particulière : câbles sous-marins (interdiction d'ancrer), zones de baignade, aires de mouillage réglementées, zones militaires. Quand vous voyez du jaune, consultez la carte pour connaître la restriction applicable.*
 
 Voir [[concepts/marques-speciales]].
 

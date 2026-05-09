@@ -34,6 +34,12 @@ En navigation maritime, il existe trois références nord distinctes. Confondre 
 
 ![[navigation-carte-cap.svg]]
 
+Pour se repérer sur un compas, il faut d'abord comprendre la rose des vents. Le cercle complet de l'horizon est divisé en 360 degrés, à partir du Nord (0° / 360°). Les quatre points cardinaux — Nord (000°), Est (090°), Sud (180°), Ouest (270°) — découpent le cercle en quadrants. Entre eux, les points intercardinaux (NE à 045°, SE à 135°, SW à 225°, NW à 315°) permettent de nommer rapidement une direction sans donner le cap exact.
+
+![[compass-rose.svg|Rose des vents avec les points cardinaux et intercardinaux]]
+
+*La rose des vents traditionnelle : 360° autour du cercle, les quatre cardinaux en gras, les intercardinaux entre eux. En navigation, on exprime toujours les caps en trois chiffres (045°, pas 45°).*
+
 Le **Nord Vrai** est le pôle géographique de la Terre — le point autour duquel elle tourne. C'est la référence des cartes marines et de tous les caps vrais que vous tracez avec un rapporteur. Il est parfaitement stable.
 
 Le **Nord Magnétique** est là où pointent les aiguilles de boussole sous l'effet du champ magnétique terrestre. Il se déplace lentement — d'environ 50 km par an — ce qui signifie que la correction à appliquer change légèrement chaque année. C'est ce que lit n'importe quelle boussole ou compas magnétique sans être perturbé par les masses métalliques.
@@ -49,6 +55,12 @@ Voir [[concepts/navigation-relevements-et-caps]], [[concepts/cap-route-derive]].
 La **variation magnétique** (aussi appelée déclinaison) est l'angle entre le nord vrai (carte) et le nord magnétique (boussole). Elle dépend de votre position géographique et change légèrement chaque année.
 
 Chaque carte marine imprime la variation sur sa rose des vents, avec l'année de référence et le taux annuel de changement. Par exemple : *"Var. 4°E (2024), augmente de 0°08'/an"*. Vous calculez la variation actuelle en appliquant ce taux.
+
+Le cadran ci-dessous montre comment les degrés sont disposés sur un compas de bord. Le cercle est gradué de 0° à 360°, avec des repères tous les 5° ou 10° selon les modèles. La ligne de foi (le trait fixe sur le boîtier) indique le cap du bateau : c'est le degré qu'elle coupe sur le cadran mobile qui donne le cap compas.
+
+![[compass-card.svg|Cadran du compas — graduation en degrés]]
+
+*Le cadran du compas tourne librement sous l'effet du champ magnétique. La ligne de foi, solidaire du bateau, coupe le cadran au cap actuel. Lisez toujours le chiffre côté ligne de foi, pas côté opposé.*
 
 Une variation **Est** signifie que le nord magnétique est à l'est du nord vrai — votre compas non corrigé donne un cap inférieur au cap vrai. Une variation **Ouest** donne l'inverse.
 
@@ -75,6 +87,15 @@ En pratique pour le permis côtier : si la déviation est inconnue, utilisez le 
 **Total :** `Cap Vrai = Cap Compas + Déviation + Variation`
 
 Ou avec le moyen mnémotechnique : **CanDéVier** (Compas → Déviation → Variation → Vrai).
+
+**Schéma de conversion CanDéVier :**
+
+```
+Compas (Cc) ──[+Déviation]──► Magnétique (Cm) ──[+Variation]──► Vrai (Cv)
+     ◄──[−Déviation]──              ◄──[−Variation]──
+```
+
+*De gauche à droite (compas → vrai) : on AJOUTE les corrections. De droite à gauche (vrai → compas) : on les SOUSTRAIT. Attention au signe : Est = positif, Ouest = négatif. Exemple Göcek : Cap compas 238°, déviation +2°, variation +4°E → Cap vrai = 238 + 2 + 4 = 244°V.*
 
 ## Cap, route fond, route surface
 
