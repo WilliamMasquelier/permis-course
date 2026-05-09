@@ -62,6 +62,40 @@ The teacher may provide additional source material in any of these ways:
 
 **Never invent regulations, distances, or signal specifications.** If uncertain, mark the note `status: stub` and add a gap note to `Wiki/meta/log.md`.
 
+#### 3a. Finding diagrams and illustrations
+
+When a lesson would benefit from a visual aid (buoy shapes, light sectors, tacking diagram, tide curve, etc.):
+
+1. Use `WebSearch` with terms like `"IALA lateral marks diagram site:shom.fr"` or `"règles de barre COLREGs schéma"`. Prefer official sources (SHOM, IALA, legifrance, Météo-France, recognised navigation publishers).
+2. Fetch the page with `WebFetch` to confirm the image is publicly accessible and correctly described.
+3. **If a suitable freely-licensed or official image is found:** embed it as a markdown link in the lesson body (do not copy the binary into the repo unless it is clearly public domain):
+   ```markdown
+   [![Description de l'image](URL_de_l_image)](URL_de_la_page_source)
+   *Source : [Nom de la source](URL_de_la_page_source)*
+   ```
+4. **If no suitable image is found online:** create an SVG diagram in `Wiki/assets/images/` using standard shapes and embed with `![[image-name.svg|Alt text]]`.
+
+Never hotlink images from sources that forbid it. When in doubt, link to the page rather than the image directly.
+
+#### 3b. Finding and embedding YouTube videos
+
+When a short video could reinforce a concept (e.g. a knot tutorial, a marina manoeuvre demonstration, a meteorology explainer):
+
+1. Use `WebSearch` to find candidate videos: e.g. `"site:youtube.com permis côtier balises IALA"` or `"youtube.com/watch matelotage nœud de cabestan"`.
+2. **Relevance check — all three criteria must pass before embedding:**
+   - The video is in French (or clearly subtitled) and at the appropriate level (recreational sailor, not professional mariner).
+   - The video content directly covers the lesson concept — not just tangentially related.
+   - The channel is credible: official maritime authority, recognised sailing school, or established sailing/navigation publisher. Avoid anonymous uploads with no description.
+3. Fetch the YouTube page with `WebFetch` to confirm the title, channel, and approximate duration.
+4. **If the video passes all three checks:** embed a clearly labelled markdown link in the lesson body inside a `> [SCENE]` or dedicated callout, e.g.:
+   ```markdown
+   > [VIDÉO] **Comprendre le balisage IALA en 5 minutes**
+   > [▶ Regarder sur YouTube](https://www.youtube.com/watch?v=XXXXXX) — *Chaîne : École de voile XYZ (5 min)*
+   ```
+5. **If no video passes the relevance check:** skip the embed. Never embed a video just because it vaguely matches the topic.
+
+Limit to **one YouTube embed per lesson section** to avoid cluttering the lesson flow.
+
 ### 4. Authoring rules
 
 #### Lesson file format (`Wiki/wiki/lessons/module-N-M-slug.md`)

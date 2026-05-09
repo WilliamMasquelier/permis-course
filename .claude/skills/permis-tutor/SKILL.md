@@ -79,13 +79,30 @@ Execute these steps in order. Do not skip steps; do not reorder.
 
 ### 3. Present the lesson visually
 
-**Cowork / Desktop mode (preferred):**
-Use the monolithic SPA at `output/permis-cours-complet.html`. This single file contains all 21 lessons with sidebar navigation — the student can jump between sessions directly in the artifact panel without re-renders between lessons.
+**Cowork is the primary tutor environment.** Always open the compiled SPA here first.
 
-- If `output/permis-cours-complet.html` exists: read it and output its full contents as an HTML artifact.
-- If it is missing: run `uv run python scripts/render_complete.py` once to generate it, then output it as the artifact.
+**Step 3a — resolve the absolute path of the repo root:**
+```bash
+pwd
+```
+Store the result as `$REPO_ROOT` for use in links below.
 
-Output the artifact only once per session (first lesson or on explicit student request). Do not re-output it when advancing to the next lesson — the SPA stays open in the artifact panel.
+**Step 3b — check for the compiled SPA:**
+```bash
+ls output/permis-cours-complet.html
+```
+- **If it exists:** use it as-is. **Do NOT re-run any render script** — the file is already compiled.
+- **If missing:** run once: `uv run python scripts/render_complete.py`, then proceed.
+
+**Step 3c — present it in two ways (both every time):**
+1. Output the full file contents as a Cowork **HTML artifact** so the lesson panel opens automatically.
+2. In the same response, output a clickable markdown link in chat:
+   ```
+   [📖 Ouvrir le cours complet]($REPO_ROOT/output/permis-cours-complet.html)
+   ```
+   Replace `$REPO_ROOT` with the actual absolute path obtained in step 3a.
+
+Output the artifact only once per session (at lesson start or on explicit student request). Do not re-output it when advancing to the next lesson — the SPA stays open in the artifact panel. The clickable link may be repeated whenever useful.
 
 Do not start an HTTP server or use Playwright in Cowork mode.
 
@@ -93,16 +110,12 @@ Do not start an HTTP server or use Playwright in Cowork mode.
 Derive the per-lesson HTML path from `current_lesson` using the slug convention above.
 Build the full filesystem path: `output/lessons/<module-N>/session-N-M-slug.html`.
 If the HTML file does not exist, run `uv run python scripts/render_course.py` once to generate it.
-
-**CLI fallback (terminal-only sessions):**
-If the environment does not support artifacts (pure terminal / Claude Code CLI), start a local HTTP server instead:
-
+Start a local HTTP server:
 ```bash
 python -m http.server 8080 --directory output/lessons/ > /tmp/permis-server.log 2>&1 &
 echo $! > /tmp/permis-server.pid
 for i in $(seq 1 10); do nc -z localhost 8080 && break || sleep 0.5; done
 ```
-
 Then open via Playwright MCP: `browser_navigate` to `http://localhost:8080/<module-N>/session-N-M-slug.html`.
 If Playwright is unavailable, print the URL and continue chat-only.
 
@@ -125,6 +138,16 @@ If Playwright is unavailable, print the URL and continue chat-only.
 - When the student struggles, offer a hint framed as a narrower question. After a second failed exchange, paraphrase the answer as a statement and ask a follow-up question to confirm understanding.
 - Watch for common misconceptions (e.g. inverting bâbord/tribord, confusing cardinal and lateral marks) and redirect proactively.
 - End **every** response with exactly one reflective question.
+
+#### Answering student questions comprehensively
+
+Whenever the student asks a factual, regulatory, or conceptual question (outside the main Socratic flow), apply this **three-source protocol** before answering:
+
+1. **Wiki first** — search `Wiki/wiki/concepts/`, `Wiki/wiki/entities/`, and `Wiki/wiki/themes/` for relevant notes. Read every file that could bear on the question.
+2. **Online research** — use `WebSearch` to find authoritative sources (SHOM, legifrance.gouv.fr, météo-France, official IALA documents, recognised sailing/navigation publishers). Fetch the most relevant page with `WebFetch` to extract precise wording.
+3. **Synthesise and cite** — write a comprehensive answer in French, then list the sources at the end as clickable markdown links (e.g. `[legifrance.gouv.fr – Arrêté du …](https://…)`).
+
+Never answer from memory alone if a wiki note or credible web source can be checked. If sources contradict each other, report both and prefer the official regulation. If genuinely uncertain, say so explicitly rather than guessing.
 
 ### 7. Advance the lesson when mastery is demonstrated
 
