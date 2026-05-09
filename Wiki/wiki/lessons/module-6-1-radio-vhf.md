@@ -30,6 +30,10 @@ Le **VHF maritime** (Very High Frequency, 156–174 MHz) est le moyen de communi
 
 **Principe de propagation :** Le VHF se propage en ligne droite (*ligne de visée*). La portée dépend de la hauteur des antennes — une antenne montée en tête de mât à 15 m offre une portée de 20–25 milles vers une station côtière en hauteur, et 10–15 milles vers un autre bateau à flottaison. Les obstacles (collines, falaises) coupent la propagation.
 
+![[vhf-handheld-maritime.jpg|VHF portatif maritime — équipement de secours indispensable]]
+
+*Un VHF portatif maritime (5–6 W) : compact, étanche, autonome sur batterie. C'est l'équipement à emporter dans le gilet de sauvetage en cas d'abandon du navire. Sa portée réduite (5–10 NM) en fait un complément du VHF fixe, pas un remplacement — mais en radeau de survie, c'est votre seul lien radio avec les secours.*
+
 **Puissance :**
 - **VHF fixe (25W)** : portée maximale, antenne déportée en hauteur, DSC intégré. L'équipement de référence pour la navigation en mer.
 - **VHF portatif (5–6W)** : portée 5–10 milles. Portable sur soi, résistant à l'eau, indispensable comme backup ou pour communiquer depuis l'annexe. En cas d'abandon du navire, emportez le portatif dans le gilet.
@@ -72,7 +76,44 @@ Voir [[concepts/alphabet-oaci]].
 **Alphabet phonétique OACI :**
 Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.
 
+### Le Code International de Signaux — les pavillons
+
+Bien avant la radio, les navires communiquaient par pavillons. Le Code International de Signaux (CIS) attribue à chacune des 26 lettres de l'alphabet un pavillon de forme et de couleur distinctes, chacun portant une signification propre lorsqu'il est hissé seul. Plusieurs de ces pavillons sont des questions récurrentes à l'examen du permis côtier :
+
+![[signal-flags-chart.svg|Code International de Signaux — les 26 pavillons alphabétiques]]
+
+*Les 26 pavillons du Code International de Signaux. Chaque pavillon, hissé seul, transmet un message standardisé compris par tous les navigateurs du monde, quelle que soit leur langue.*
+
+**Les pavillons essentiels pour l'examen :**
+
+![[flag-alpha.svg|Pavillon Alpha — "J'ai un plongeur en immersion"]]
+
+Le pavillon **Alpha** (blanc et bleu, à deux pointes) signifie : "J'ai un plongeur en immersion — tenez-vous à distance et passez à vitesse réduite." Vous le verrez hissé sur les bateaux de plongée et les clubs de plongée côtiers. Obligation de passer à distance et à vitesse réduite (moins de 3 nœuds dans un rayon de 100 mètres).
+
+![[flag-oscar.svg|Pavillon Oscar — "Homme à la mer"]]
+
+Le pavillon **Oscar** (jaune et rouge, divisé en diagonale) signifie : "Homme à la mer." Hissé pour alerter visuellement les navires environnants qu'une personne est tombée à l'eau et qu'une opération de récupération est en cours. Il complète l'alerte radio.
+
+**Autres pavillons fréquents à l'examen :**
+- **Bravo** (rouge) : "Je charge ou décharge des matières dangereuses" — restez à distance.
+- **November-Charlie** (N+C hissés ensemble) : signal de détresse visuel — "Je suis en détresse et j'ai besoin d'assistance immédiate." C'est l'un des signaux de détresse reconnus par le RIPAM.
+- **Quebec** (jaune) : "Mon navire est indemne et je demande la libre pratique" — utilisé à l'entrée d'un port étranger pour les formalités sanitaires.
+- **Hotel** (blanc et rouge, divisé verticalement) : "J'ai un pilote à bord."
+
 **Quand épeler :** Toujours pour les noms propres, immatriculations, MMSI. Utiles pour les lettres ambiguës en radio : B (Bravo, pas Sierra), D (Delta, pas Tango), M (Mike, pas November), P (Papa, pas Bravo).
+
+**Lettres les plus confondues en radio — aide-mémoire :**
+
+| Lettre | Code phonétique | Confusion fréquente | Astuce |
+|--------|----------------|-------------------|--------|
+| B | **Bravo** | vs D (Delta), P (Papa) | « Bravo ! » → applaudissement |
+| D | **Delta** | vs B (Bravo), T (Tango) | Triangle du Nil |
+| M | **Mike** | vs N (November) | Prénom court |
+| N | **November** | vs M (Mike) | Mois long |
+| P | **Papa** | vs B (Bravo) | Famille |
+| S | **Sierra** | vs F (Foxtrot) | Montagne |
+
+*L'alphabet phonétique OACI/NATO a été conçu en 1957 pour maximiser la distinction acoustique entre lettres — chaque mot a été testé dans des dizaines d'accents. En mer, avec du bruit moteur et des grésillements radio, ces mots sont votre seule garantie d'être compris.*
 
 **Terminologie standard :**
 - "Ici" / "De" = identification de l'émetteur

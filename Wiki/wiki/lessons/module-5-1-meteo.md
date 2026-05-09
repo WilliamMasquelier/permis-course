@@ -38,6 +38,28 @@ Le front chaud arrive progressivement, sur 200 à 300 km. Depuis le bateau, vous
 
 Le front froid suit avec une brutalité caractéristique. Un **cumulonimbus** en enclume peut atteindre 9 000 mètres. Le grain associé est violent — vents sautants, possibilité de grêle, forte mer brève — mais la durée est courte (30 à 60 minutes). Après le passage : éclaircie, baromètre qui remonte, visibilité excellente.
 
+### Observer les nuages — les 10 genres par altitude
+
+Savoir identifier les nuages est l'un des outils les plus anciens et les plus fiables du marin. L'Organisation Météorologique Mondiale classe les nuages en 10 genres répartis sur trois étages d'altitude. Le schéma ci-dessous présente cette classification complète :
+
+![[cloud-types.svg|Classification des nuages — les 10 genres de nuages par altitude]]
+
+*Les 10 genres de nuages classés par altitude : étage supérieur (cirrus, cirro-stratus, cirro-cumulus), étage moyen (alto-stratus, alto-cumulus), étage inférieur (stratus, strato-cumulus, nimbo-stratus) et nuages à développement vertical (cumulus, cumulonimbus).*
+
+**Ce que chaque type de nuage vous dit en tant que skipper :**
+
+- **Cirrus** (6 000–12 000 m) : filaments blancs et fins, les "queues de jument". Isolés par beau temps, ils sont inoffensifs. Mais s'ils s'épaississent progressivement et se multiplient en venant de l'ouest, c'est le premier signe d'un **front chaud en approche** — dégradation dans les 12 à 24 heures. C'est le signal d'alerte le plus précoce que la nature vous offre.
+
+- **Cirro-stratus** (5 000–10 000 m) : voile blanchâtre qui crée un **halo** autour du soleil ou de la lune. Confirmation de l'approche du front chaud. Si vous voyez un halo après des cirrus, la dégradation est quasi certaine sous 12 à 18 heures.
+
+- **Cumulus** (500–2 000 m) : les "moutons du beau temps" — nuages blancs à base plate et sommet arrondi, bien séparés les uns des autres. Tant qu'ils restent petits et ne grossissent pas dans l'après-midi, le temps est stable. Excellent signe pour une sortie en mer.
+
+- **Cumulonimbus** (base 500 m, sommet jusqu'à 12 000 m) : le nuage le plus dangereux pour le navigateur. En forme d'enclume au sommet, il signale un **orage ou un grain violent**. Vents pouvant passer de force 3 à force 8 en quelques minutes, pluie torrentielle, grêle possible, éclairs. Si vous voyez une enclume se développer dans votre direction, cherchez un abri immédiatement ou préparez-vous à affaler et courir devant le grain.
+
+- **Stratus** (0–500 m) : couche grise uniforme, très basse, souvent confondue avec le brouillard en mer. Associé à la bruine et à une visibilité médiocre. Pas de vent violent, mais la navigation devient difficile par manque de visibilité.
+
+- **Nimbo-stratus** (500–3 000 m) : masse grise épaisse qui occulte complètement le soleil. C'est le nuage de la pluie continue, souvent associé au passage du front chaud. Pluie régulière, parfois pendant des heures.
+
 **Règle de Buys-Ballot :** Tournez le dos au vent dans l'hémisphère nord → le centre de la dépression est à votre gauche.
 
 ![[meteo-depression-frontale.svg]]
@@ -60,11 +82,42 @@ L'échelle de Beaufort, créée en 1805 par l'amiral britannique Francis Beaufor
 | 7 | 28–33 | Grand frais | Naviguation sportive |
 | 8–9 | 34–47 | **Coup de vent** | Navigation dangereuse |
 
+**Progression visuelle — de la mer d'huile à l'ouragan :**
+
+La meilleure façon de comprendre l'échelle de Beaufort est de voir ce que chaque force produit réellement sur la surface de la mer. Les quatre photos ci-dessous montrent l'évolution dramatique entre le calme absolu et les conditions extrêmes :
+
+![[beaufort-force-0.jpg|Force 0 — mer d'huile, calme plat]]
+
+*Force 0 (0 nœud) — la mer est un miroir parfait, sans la moindre ride. Pas un souffle de vent. Le bateau ne peut avancer qu'au moteur. C'est le calme idéal pour se baigner, plonger, et profiter du mouillage. En Méditerranée estivale, ces conditions sont fréquentes tôt le matin avant l'installation de la brise thermique.*
+
+![[beaufort-force-4.jpg|Force 4 — jolie brise, petites vagues avec moutons]]
+
+*Force 4 (11-16 nœuds) — les premières vagues d'un mètre se forment, et les "moutons" (crêtes blanches d'écume) apparaissent. C'est la force typique de l'Imbat à Göcek l'après-midi. Le bateau gîte agréablement sous voiles, la navigation est sportive mais confortable. Le skipper doit commencer à surveiller les rafales et s'assurer que l'équipage porte un gilet.*
+
+![[beaufort-force-9.jpg|Force 9 — fort coup de vent, vagues déferlantes]]
+
+*Force 9 (41-47 nœuds) — fort coup de vent. Les vagues atteignent 7 à 10 mètres, les crêtes basculent et déferlent, les embruns denses réduisent la visibilité. La mer est blanche d'écume sur de grandes surfaces. Un plaisancier côtier ne devrait jamais se trouver dans ces conditions. Si vous y êtes pris, la cape ou la fuite devant la tempête sont vos seules options. Toute manœuvre en marina est impossible.*
+
+![[beaufort-force-12.jpg|Force 12 — ouragan, mer blanche d'écume]]
+
+*Force 12 (64+ nœuds) — ouragan. L'air est saturé d'embruns et d'écume, la surface de la mer est entièrement blanche, les vagues dépassent 14 mètres. La visibilité est quasi nulle. Aucun plaisancier ne navigue par ces conditions — même les navires professionnels cherchent à les éviter. Heureusement, ces conditions sont extrêmement rares en Méditerranée.*
+
 **Ce que chaque force signifie en pratique :**
 
 La **force 3** (7–10 nœuds) est la brise idéale pour le débutant — le bateau avance bien sous voiles, les vagues sont légères, la mer reste maniable. La **force 4** (11–16 nœuds) représente la première limite confortable : les moutons commencent à apparaître, le bateau gîte légèrement mais reste pleinement maniable pour un skipper expérimenté. C'est la force de l'Imbat à Göcek — agréable et sportive.
 
 La **force 5** (17–21 nœuds) devient exigeante. Les vagues atteignent 2 mètres, les embruns mouillent le cockpit, un ris dans la grand-voile devient recommandé. La **force 6** (22–27 nœuds) représente la limite haute recommandée pour les plaisanciers côtiers — la mer est véritablement agitée, les vagues peuvent être croisées, la manœuvre en marina devient délicate.
+
+**Seuils pratiques pour le plaisancier côtier :**
+
+```
+Force 3–4  :  Navigation idéale — débutants OK, apprentissage voile
+Force 5    :  Expérience requise — premier ris, embruns, mer formée
+Force 6    :  Limite haute côtier — marina délicate, réduction de voilure
+Force 7+   :  RESTEZ AU PORT — navigation dangereuse pour la plaisance
+```
+
+*Ces seuils ne sont pas des limites théoriques — ce sont les retours d'expérience de milliers de navigateurs côtiers. À Göcek, l'Imbat standard est force 3–4. Les jours de force 5, Mehmet surveille les rafales. Au-delà, on reste au mouillage.*
 
 Au-delà de **force 7**, la navigation devient dangereuse pour un bateau côtier standard. Les coups de vent de force 8–9 peuvent générer des vagues de 4 à 6 mètres. La règle empirique du plaisancier raisonnable : si le bulletin annonce de la force 7, vous attendez au port.
 

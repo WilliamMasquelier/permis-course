@@ -51,6 +51,20 @@ Ces signaux ont deux fonctions : indiquer votre **présence** aux autres navires
 | Au mouillage (< 100m) | Cloche agitée ~5s | ≤ 1 min |
 | Échoué | 3 coups de cloche + 5 coups rapides | ≤ 1 min |
 
+**Aide-mémoire des signaux sonores de brume :**
+
+```
+─ = son long (≥ 4 secondes)     · = son bref     ♪ = cloche
+
+MOTEUR en route :       ─                  (toutes les ≤ 2 min)
+VOILIER en route :      ─ · ·              (toutes les ≤ 2 min)
+NUC / CMR / pêche :     ─ · ·              (toutes les ≤ 2 min)
+AU MOUILLAGE :          ♪♪♪♪♪              (cloche ~5s, toutes les ≤ 1 min)
+ÉCHOUÉ :                ♪♪♪ · · · · ·      (3 coups cloche + 5 rapides)
+```
+
+*En Méditerranée, le brouillard est rare en été. En Manche et en Atlantique, ces signaux peuvent être votre seul moyen de détecter un navire à 200 mètres. Apprenez-les par cœur — à l'examen, ils reviennent systématiquement.*
+
 Un navire en route sous moteur émet **1 son long** (4 secondes minimum) au moins toutes les 2 minutes. Vous devez l'émettre même si vous pensez être seul — dans le brouillard, on ne sait jamais.
 
 Un voilier sous voiles seules émet **1 son long + 2 sons brefs** : c'est le signal qui distingue le voilier du bateau à moteur dans l'obscurité sonore du brouillard.
@@ -69,9 +83,37 @@ Un navire échoué émet les 3 coups de cloche pour signaler son immobilité —
 
 **SART (Search And Rescue Transponder) :** Répond aux émissions radar standard en générant une trace de 12 points sur l'écran radar du chercheur, dans un rayon de 5–10 milles. Utile pour se faire trouver par un hélicoptère de secours ou un garde-côte équipé radar.
 
+**Comparaison des systèmes de détection :**
+
+| Système | Type | Portée | Détecte quoi | Limitation |
+|---------|------|--------|-------------|------------|
+| Radar actif | Émission/réception | 8–48 NM | Tout obstacle solide | Coûteux, énergie |
+| Réflecteur radar | Passif | — | Amplifie votre écho | Ne détecte rien seul |
+| AIS Classe B | Transpondeur | 5–15 NM | Navires équipés AIS | Invisibles : épaves, kayaks |
+| SART | Répondeur détresse | 5–10 NM | Signal aux sauveteurs | Usage d'urgence uniquement |
+
+*Aucun système n'est suffisant seul. Le radar détecte les épaves sans AIS ; l'AIS identifie les navires commerciaux invisibles au radar d'un petit voilier. Le réflecteur radar est votre assurance passive : hissez-le en tête de mât dès que la visibilité diminue.*
+
 ## Navigation nocturne
 
 La nuit n'est pas le brouillard — la visibilité peut être excellente. Ce qui change, c'est la façon dont vous percevez les informations.
+
+### Identifier les navires par leurs feux
+
+De nuit, les feux de navigation sont votre seul moyen d'identifier le type de navire que vous croisez et de déterminer sa direction de route. Le schéma ci-dessous montre la configuration typique des feux visibles sur un navire en route :
+
+![[ship-position-lights.svg|Feux de navigation — configuration visible de nuit]]
+
+*Configuration des feux de navigation : feu de tête de mât (blanc, 225°, visible de l'avant), feu de côté tribord (vert, 112,5°), feu de côté bâbord (rouge, 112,5°), feu de poupe (blanc, 135°, visible de l'arrière). La combinaison de feux visibles vous indique instantanément si le navire vient vers vous, s'éloigne, ou croise votre route.*
+
+**Comment "lire" les feux d'un navire la nuit :**
+- **Vous voyez rouge + vert + blanc (tête de mât)** : le navire vient droit sur vous — risque de collision. Manœuvrez immédiatement selon les règles de barre.
+- **Vous voyez uniquement le feu vert** : vous voyez son flanc tribord — il croise de droite à gauche devant vous. Vous êtes probablement le navire privilégié.
+- **Vous voyez uniquement le feu rouge** : vous voyez son flanc bâbord — il croise de gauche à droite. Vous êtes probablement le navire non privilégié et devez manœuvrer.
+- **Vous voyez uniquement un feu blanc** : c'est son feu de poupe — il s'éloigne de vous ou vous le rattrapez.
+- **Deux feux de tête de mât blancs verticaux** : navire à propulsion mécanique de plus de 50 mètres. Plus le navire est grand, plus les feux de mât sont espacés verticalement.
+
+*Les feux de navigation sont traités en détail dans la session 1.3 (Feux et Signaux). En navigation nocturne, la capacité à identifier instantanément les feux est une compétence de survie — entrainez-vous avec des photos et des quizz avant de naviguer de nuit.*
 
 **La vision nocturne :** La rétine comporte deux types de cellules : les **cônes** (couleur, détail fin — actifs en pleine lumière) et les **bâtonnets** (nuances de gris, faible lumière). Les bâtonnets sont environ 1000× plus sensibles que les cônes, mais ils s'adaptent lentement à l'obscurité — **20 à 30 minutes** pour une adaptation complète.
 

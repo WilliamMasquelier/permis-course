@@ -22,7 +22,13 @@ updated: 2026-05-07
 
 ## Types d'ancres
 
-Le choix de l'ancre dépend du type de fond, de la taille du bateau, et des conditions prévisibles. Il n'existe pas d'ancre universelle parfaite.
+Le choix de l'ancre dépend du type de fond, de la taille du bateau, et des conditions prévisibles. Il n'existe pas d'ancre universelle parfaite. Le diagramme ci-dessous présente les principales familles d'ancres utilisées en plaisance, avec leurs formes caractéristiques.
+
+![[anchor-diagram.png|Types d'ancres — formes et caractéristiques]]
+
+*De gauche à droite : l'ancre charrue (CQR), l'ancre plate (Danforth) et l'ancre griffe (Bruce/Rocna). Chacune a un mécanisme de pénétration différent dans le fond marin. La forme du soc, de la patte ou de la griffe détermine dans quels types de fonds l'ancre s'accroche le mieux.*
+
+En plaisance côtière, trois grandes familles dominent. L'ancre **charrue** (type CQR ou Delta) est la plus polyvalente : son soc unique pivote pour s'aligner avec la traction puis s'enfonce progressivement. Elle convient au sable et à la vase. L'ancre **plate** (type Danforth) a deux grandes pattes articulées qui offrent une surface d'accroche importante dans le sable fin et la vase molle ; son avantage est qu'elle se range à plat, idéale comme ancre de seconde (kedge). Enfin, l'ancre **griffe** (type Bruce ou les modèles modernes Rocna, Mantus) possède une patte concave qui mord rapidement et se ré-enfonce automatiquement si le vent tourne — c'est la famille la plus performante sur fonds variés.
 
 | Type | Points forts | Fond idéal |
 |------|-------------|-----------|
@@ -64,6 +70,28 @@ Ancré, votre bateau n'est pas fixe : il tourne autour de l'ancre selon la direc
 **Calcul du rayon :** Longueur de chaîne filée + longueur du bateau. Exemple : 30 m de chaîne + 13 m de bateau = cercle de rayon 43 m. Mais en pratique, on dessine un cercle de **50 m** pour les incertitudes.
 
 **Implications pour l'espace :** Votre cercle ne doit empiéter ni sur un obstacle (côte, roche) ni sur le cercle d'évitage d'un voisin. Problem : vos voisins peuvent avoir des rapports chaîne/profondeur différents. Un voilier avec 20 m de chaîne et un autre avec 50 m auront des cercles très différents — et selon le vent, leurs cercles peuvent se chevaucher.
+
+**Schéma du cercle d'évitage :**
+
+```
+               vent dominant
+                    │
+                    ▼
+             · · · · · · · ·
+          ·                    ·
+        ·         ANCRE          ·
+       ·            │             ·
+      ·    chaîne   │              ·
+      ·    (30 m)   │              ·
+       ·            ▼             ·
+        ·       BATEAU (13 m)   ·
+          ·                    ·
+             · · · · · · · ·
+
+       Rayon = 30 m chaîne + 13 m bateau = 43 m
+```
+
+*Le cercle d'évitage est la zone dans laquelle votre bateau peut pivoter autour de son ancre quand le vent ou le courant tourne. Aucun obstacle ni bateau voisin ne doit se trouver dans ce cercle. Si un voisin a un rapport chaîne/profondeur différent du vôtre, vos cercles ne tournent pas de façon synchrone — risque de contact.*
 
 **La règle sociale :** Arriver le dernier au mouillage signifie que vous choisissez votre poste en respectant ceux qui sont déjà là. Si vous draggez et touchez le bateau d'un voisin, vous êtes responsable même si vous étiez là avant lui. Ne discutez pas — évitez le problème en choisissant votre poste avec soin.
 

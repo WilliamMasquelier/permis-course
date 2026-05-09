@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 520" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="780" height="520" fill="#f0f7ff"/>
+  <text x="390" y="35" text-anchor="middle" font-size="19" font-weight="700" fill="#1a2e4a">Triangle de Navigation — Cap, Route et Courant</text>
+  <text x="390" y="54" text-anchor="middle" font-size="13" fill="#0d7377">Calculer la route fond quand il y a un courant</text>
+
+  <defs>
+    <marker id="arr-b" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#1a2e4a"/>
+    </marker>
+    <marker id="arr-t" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <marker id="arr-g" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- North indicator -->
+  <text x="80" y="90" text-anchor="middle" font-size="22" fill="#1a2e4a" font-weight="700">N</text>
+  <line x1="80" y1="95" x2="80" y2="145" stroke="#1a2e4a" stroke-width="2" marker-end="url(#arr-b)"/>
+  <circle cx="80" cy="85" r="3" fill="#1a2e4a"/>
+
+  <!-- ===== TRIANGLE DIAGRAM ===== -->
+  <!-- Point A: departure (left center) -->
+  <!-- Point B: cap/cap compass heading endpoint (upper right) — where boat aims -->
+  <!-- Point C: actual endpoint after current -->
+
+  <!-- Coordinates -->
+  <!-- A = 200, 320 (departure point) -->
+  <!-- B = 480, 160 (cap/heading endpoint = where boat aims) -->
+  <!-- C = 580, 260 (actual position after current) -->
+
+  <!-- DEPARTURE dot -->
+  <circle cx="200" cy="320" r="8" fill="#1a2e4a"/>
+  <text x="172" y="338" font-size="13" font-weight="700" fill="#1a2e4a">Départ</text>
+
+  <!-- Vector 1: Cap du bateau (navy blue, thick) — A to B -->
+  <!-- This is the heading: boat aims at B but current pushes it -->
+  <line x1="200" y1="320" x2="476" y2="163" stroke="#1a2e4a" stroke-width="3" marker-end="url(#arr-b)"/>
+  <text x="300" y="218" text-anchor="middle" font-size="13" font-weight="700" fill="#1a2e4a" transform="rotate(-28, 300, 218)">Cap compas (Cv)</text>
+  <text x="300" y="234" text-anchor="middle" font-size="11" fill="#1a2e4a" transform="rotate(-28, 300, 234)">direction où pointe le bateau</text>
+  <!-- Speed label -->
+  <text x="338" y="285" font-size="11" fill="#64748b" transform="rotate(-28, 338, 285)">vitesse propre (Vp)</text>
+
+  <!-- Vector 2: Current (red, dashed) — B to C (current pushes endpoint) -->
+  <line x1="480" y1="163" x2="580" y2="260" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arr-t)" stroke-dasharray="8,4"/>
+  <text x="570" y="200" font-size="13" font-weight="700" fill="#dc2626">Courant</text>
+  <text x="570" y="214" font-size="11" fill="#dc2626">(Vc, direction)</text>
+
+  <!-- Vector 3: Route fond (green, thick) — A to C -->
+  <line x1="200" y1="320" x2="576" y2="263" stroke="#059669" stroke-width="3" marker-end="url(#arr-g)"/>
+  <text x="400" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">Route fond (Rf)</text>
+  <text x="400" y="338" text-anchor="middle" font-size="11" fill="#059669">trajectoire réelle sur la carte</text>
+
+  <!-- Destination point -->
+  <circle cx="580" cy="260" r="8" fill="#059669"/>
+  <text x="598" y="264" font-size="13" font-weight="700" fill="#059669">Arrivée réelle</text>
+
+  <!-- Imaginary endpoint B -->
+  <circle cx="480" cy="163" r="6" fill="#1a2e4a" opacity="0.5"/>
+  <text x="488" y="150" font-size="11" fill="#1a2e4a" opacity="0.6">(sans courant)</text>
+
+  <!-- Angle indicators -->
+  <!-- Angle between Cap and Route fond at departure -->
+  <path d="M 230,305 Q 245,293 232,285" fill="none" stroke="#0d7377" stroke-width="1.5"/>
+  <text x="248" y="295" font-size="11" fill="#0d7377" font-weight="600">angle dérive</text>
+
+  <!-- ===== FORMULA BOX ===== -->
+  <rect x="80" y="370" width="580" height="110" rx="10" fill="rgba(13,115,119,0.06)" stroke="#0d7377" stroke-width="1.5"/>
+  <text x="370" y="394" text-anchor="middle" font-size="14" font-weight="700" fill="#0d7377">Résolution graphique :</text>
+  <text x="100" y="416" font-size="13" fill="#1a2e4a">① Depuis le départ, tracer le vecteur <tspan font-weight="700">Cap (Cv)</tspan> à la vitesse propre du bateau (Vp)</text>
+  <text x="100" y="436" font-size="13" fill="#1a2e4a">② Depuis la pointe, tracer le vecteur <tspan font-weight="700">Courant (Vc)</tspan> à la vitesse/direction du courant</text>
+  <text x="100" y="456" font-size="13" fill="#1a2e4a">③ La <tspan font-weight="700" fill="#059669">Route fond (Rf)</tspan> va du départ à la pointe finale — c'est votre trajectoire réelle</text>
+  <text x="100" y="476" font-size="11" fill="#64748b" font-style="italic">En Méditerranée : courant faible (0,2–0,5 kts). En Manche : courant fort (jusqu'à 5 kts) — crucial !</text>
+
+  <!-- Legend -->
+  <line x1="100" y1="500" x2="140" y2="500" stroke="#1a2e4a" stroke-width="2.5"/>
+  <text x="148" y="504" font-size="12" fill="#1a2e4a">Cap (Cv)</text>
+  <line x1="240" y1="500" x2="280" y2="500" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6,3"/>
+  <text x="288" y="504" font-size="12" fill="#dc2626">Courant (Vc)</text>
+  <line x1="390" y1="500" x2="430" y2="500" stroke="#059669" stroke-width="2.5"/>
+  <text x="438" y="504" font-size="12" fill="#059669">Route fond réelle (Rf)</text>
+</svg>

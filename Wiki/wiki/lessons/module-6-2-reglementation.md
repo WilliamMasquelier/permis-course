@@ -31,6 +31,20 @@ En France, un bateau de plaisance doit avoir à bord un ensemble de documents qu
 | **Licence de station radio** | Si équipé d'un VHF |
 | **Carnet de sécurité** | Recommandé |
 
+**Check-list documents avant appareillage :**
+
+```
+[  ] Acte de francisation (ou contrat de charter)
+[  ] Permis côtier du skipper
+[  ] CRR (si VHF à bord)
+[  ] Licence de station radio ANFR (+ MMSI programmé)
+[  ] Attestation d'assurance RC
+[  ] Pièces d'identité de l'équipage
+[  ] Carte marine à jour de la zone
+```
+
+*En cas de contrôle par la Gendarmerie Maritime, tous ces documents doivent être présentés. Défaut de permis ou de documents = contravention de 5ᵉ classe (1 500 €). Rangez-les dans une pochette étanche accessible depuis le cockpit.*
+
 **L'acte de francisation** est l'équivalent de la carte grise pour un bateau — il prouve que le navire est immatriculé sous pavillon français. Obligatoire pour les bateaux de plus de 7 mètres ou dont le moteur dépasse 22 kW. Il permet d'accéder aux ports français en tant que navire national et facilite les formalités douanières à l'étranger.
 
 **L'assurance responsabilité civile** est obligatoire pour tout bateau à moteur navigant en mer. Elle couvre les dommages causés aux tiers (bateau coulé lors d'une collision, blessure d'un nageur). Sans assurance, vous êtes personnellement responsable sur vos biens propres. Plusieurs compagnies proposent des assurances spécifiques plaisance avec extension "assistance rapatriement" recommandée.
@@ -95,6 +109,21 @@ La réglementation maritime française est sérieuse, avec des sanctions allant 
 **Zones militaires et réserves :** Balisées sur les cartes marines avec des hachures bleues ou roses. Accès interdit sans autorisation. En Turquie, plusieurs zones militaires sur la côte (notamment près des bases navales) sont strictement interdites.
 
 **Vitesse dans les ports :** Généralement 3 à 5 nœuds. La vague créée par un bateau rapide peut blesser des personnes dans l'eau et endommager les bateaux amarrés.
+
+**Schéma des zones côtières et catégories de navigation :**
+
+```
+TERRE  │  0m  │   300m   │    2 NM    │    6 NM    │   20 NM   │
+       │      │          │            │            │           │
+       │ 5 nd │  Cat. 5  │   Cat. 4   │   Cat. 3   │  Cat. 2   │
+       │ max  │ (basique)│  (PERMIS   │(hauturière │           │
+       │      │          │  CÔTIER)   │  côtière)  │           │
+       │      │  Bande   │            │            │           │
+       │      │  300 m   │            │            │           │
+       │      │ baignade │            │            │           │
+```
+
+*La bande des 300 mètres impose une vitesse maximale de 5 nœuds pour protéger les baigneurs. Le permis côtier autorise la navigation jusqu'à 6 milles d'un abri (catégorie 4). Au-delà, il faut l'extension hauturière. Un « abri » est tout lieu protégé — port, rade, rivière — pas simplement la côte la plus proche.*
 
 Voir [[concepts/infractions]], [[concepts/pratique-environnement-et-infractions]], [[concepts/bande-300m]], [[concepts/zone-large]].
 

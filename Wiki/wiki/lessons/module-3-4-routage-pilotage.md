@@ -36,6 +36,22 @@ Le **chapitre V de la Convention SOLAS** (*Safety of Life at Sea*, Règle 34) im
 
 **5. Vérification.** Relire le plan à deux si possible. Le second regard détecte toujours quelque chose.
 
+**Les 5 étapes du plan de navigation — vue d'ensemble :**
+
+```
+1. COLLECTE    ─── [Météo] [AVURNAV] [Guide nautique] [Info locale]
+      │
+2. TRACÉ       ─── [Waypoints] [Distances] [ETA à chaque point]
+      │
+3. DANGERS     ─── [Sondes] [Roches] [Zones interdites] [Marge tirant d'eau +50%]
+      │
+4. ATTÉNUATION ─── [Clearing bearings] [Amers d'entrée] [Abris de secours]
+      │
+5. VÉRIFICATION ── [Relecture à deux] [Carburant suffisant?] [Météo reconfirmée?]
+```
+
+*Ce schéma résume la méthode systématique de planification d'une traversée. Chaque étape alimente la suivante — sauter l'étape « dangers » revient à planifier un accident. La planification se fait au calme, à table, avant de lever l'ancre.*
+
 Voir [[concepts/planification-traversee]].
 
 ## Relèvements de sécurité
@@ -83,6 +99,21 @@ Avec un courant de traversée, la méthode vectorielle graphique donne le cap à
 3. Depuis l'extrémité du vecteur courant (point C), ouvrez votre compas à la **distance que parcourt votre bateau** pendant la même durée (vitesse × durée).
 4. Faites coïncider cet arc avec la route de fond : le point D est l'intersection.
 5. La ligne C→D est votre **cap à tenir** (une flèche). Mesurez-le.
+
+**Construction vectorielle du cap à tenir :**
+
+```
+       Route fond souhaitée (2 flèches)
+A ─────────────────────────────────────────── B
+│                                            ╱
+│ Vecteur courant (3 flèches)              ╱
+│ direction + vitesse × durée            ╱  Cap à tenir (1 flèche)
+│                                      ╱
+C · · · · · · · · · · · · · · · · · D
+    Distance bateau (arc de compas)
+```
+
+*Depuis A (position de départ), tracez le vecteur courant vers C. Depuis C, ouvrez le compas à la distance que parcourt votre bateau pendant la même durée. L'intersection de cet arc avec la ligne de route fond (A→B) donne le point D. Le cap à tenir est la direction C→D — ce cap compense exactement le courant pour que votre trajectoire réelle suive la route fond souhaitée.*
 
 Vitesse fond = longueur de la ligne A→D divisée par la durée.
 

@@ -3,5 +3,10 @@
   "current_lesson": "module-0-0-prologue.md",
   "completed_lessons": [],
   "flashcards": {},
-  "review_log": []
+  "review_log": [],
+  "cowork": {
+    "artifact_id": "permis-cours-complet",
+    "artifact_file": "output/permis-cours-complet.html",
+    "note": "Single-file SPA with all 21 sessions. Update with: python3 scripts/render_course.py && rebuild SPA script in permis-tutor skill. Artifact persists in Cowork sidebar."
+  }
 }

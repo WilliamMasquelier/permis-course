@@ -88,7 +88,15 @@ Voir [[concepts/equipement-obligatoire]], [[concepts/gilet-sauvetage]], [[concep
 
 ## Les gilets de sauvetage — types et utilisation
 
-Le choix du gilet est critique. Un gilet inadapté peut être aussi dangereux que l'absence de gilet.
+Le choix du gilet est critique. Un gilet inadapté peut être aussi dangereux que l'absence de gilet. L'image ci-dessous montre un gilet de sauvetage gonflable moderne, le type d'équipement que tout navigateur côtier doit connaître intimement :
+
+![[life-jacket.jpg|Gilet de sauvetage — équipement de sécurité individuel obligatoire]]
+
+*Gilet de sauvetage gonflable avec harnais intégré. Notez la poignée de déclenchement manuel, le tube de gonflage oral (backup), et la lumière de détresse automatique. Un gilet par personne à bord est obligatoire — pas dans le coffre, mais accessible en moins de 10 secondes.*
+
+La réglementation française impose **un gilet par personne embarquée**, adapté à la morphologie du porteur (taille adulte, enfant, nourrisson). En navigation côtière (catégorie 4), le minimum réglementaire est un gilet de **100 Newtons**. En pratique, les skippers expérimentés choisissent systématiquement des gilets **150N** qui offrent la capacité de retourner une personne inconsciente face vers le haut. Pour la navigation hauturière ou par gros temps, les gilets **275N** sont recommandés car ils compensent le poids des vêtements imperméables épais.
+
+Les gilets se divisent en deux grandes familles : les gilets **mousse** (flottabilité permanente, aucun mécanisme, insubmersibles mais encombrants) et les gilets **auto-gonflants** (compacts quand non déclenchés, gonflés par une cartouche de CO2 au contact de l'eau via une pastille hydrostatique). Les auto-gonflants sont plus confortables au quotidien mais exigent un entretien annuel rigoureux : vérification de la pastille, de la cartouche, et test de gonflage buccal pour détecter les fuites.
 
 **Flottabilité :**
 - **100N** — eaux protégées, nageur averti. Aide à la flottaison mais ne retourne pas forcément une personne inconsciente. Adapté aux sports nautiques en eaux calmes.
@@ -124,11 +132,31 @@ Les signaux de détresse ne sont utilisés qu'en cas de **danger grave et immine
 
 **Séquence recommandée :** D'abord MAYDAY sur VHF (portée 20–40 milles), puis fusées parachutes quand les secours sont visibles à l'horizon, puis feux à main pour guider l'approche.
 
+**Séquence d'utilisation des signaux de détresse — du plus lointain au plus proche :**
+
+```
+1. VHF MAYDAY (canal 16)         → portée 20–40 NM (voix)
+2. DSC bouton rouge (canal 70)   → automatique, position GPS incluse
+3. EPIRB 406 MHz                 → satellite mondial, ±100 m avec GPS
+4. Fusée parachute rouge         → visible 25–30 NM, quand secours à l'horizon
+5. Feu à main rouge              → portée 3–5 NM, guider l'approche finale
+6. Fumigène orange (JOUR)        → visible 3–5 NM depuis hélicoptère
+7. Miroir de signalisation       → par soleil, portée illimitée, gratuit
+```
+
+*Cette séquence est logique : commencez par alerter au maximum de portée (VHF, satellite), puis guidez visuellement les secours quand ils s'approchent. Ne gaspillez pas vos feux pyrotechniques quand personne n'est en vue — ils durent moins d'une minute chacun.*
+
 Voir [[concepts/signaux-detresse]].
 
 ## Moyens individuels de repérage
 
 Au-delà des signaux de détresse collectifs, des équipements individuels permettent de localiser une personne à l'eau ou un navire en détresse via des systèmes satellites ou radar.
+
+La balise EPIRB est l'un des équipements les plus efficaces pour être secouru en mer. Voici à quoi ressemble cet appareil qui peut vous sauver la vie :
+
+![[epirb-beacon.jpg|Balise EPIRB 406 MHz — signal de détresse par satellite]]
+
+*Balise EPIRB 406 MHz dans son support de largage. En cas de naufrage, elle se libère automatiquement et flotte à la surface en émettant un signal capté par les satellites COSPAS-SARSAT. Les secours reçoivent votre identité (MMSI) et votre position GPS en moins de 5 minutes, partout dans le monde.*
 
 **EPIRB (Emergency Position Indicating Radio Beacon)** : balise de détresse 406 MHz reliée au réseau de satellites COSPAS-SARSAT. Déclenchement automatique à l'immersion ou manuel. Transmet le MMSI du navire et la position GPS (si couplée) aux centres de secours mondiaux. Les secours reçoivent l'alerte en moins de 5 minutes avec une position à ±5 km (±100 m avec GPS intégré). **Obligation d'enregistrement** auprès des autorités maritimes nationales — une EPIRB non enregistrée génère une fausse alerte impossible à identifier.
 

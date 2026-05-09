@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" font-family="'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="640" fill="#f0f7ff"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1a2e4a">Les Allures — Points de Voile</text>
+
+  <!-- Wind direction arrow (from top) -->
+  <defs>
+    <marker id="arrow-wind" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0d7377"/>
+    </marker>
+    <marker id="arrow-boat" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#1a2e4a"/>
+    </marker>
+  </defs>
+
+  <!-- Wind label and arrows -->
+  <text x="400" y="72" text-anchor="middle" font-size="14" font-weight="700" fill="#0d7377">VENT</text>
+  <line x1="360" y1="60" x2="320" y2="90" stroke="#0d7377" stroke-width="2" marker-end="url(#arrow-wind)" opacity="0.6"/>
+  <line x1="400" y1="60" x2="400" y2="90" stroke="#0d7377" stroke-width="2" marker-end="url(#arrow-wind)" opacity="0.6"/>
+  <line x1="440" y1="60" x2="480" y2="90" stroke="#0d7377" stroke-width="2" marker-end="url(#arrow-wind)" opacity="0.6"/>
+
+  <!-- Center boat (reference, vent arrière) -->
+  <!-- The diagram shows a compass of wind angles around a center point -->
+
+  <!-- Color zones -->
+  <!-- No-go zone (center top, ~0-45°) -->
+  <path d="M 400 320 L 340 110 L 460 110 Z" fill="rgba(220,38,38,0.15)" stroke="none"/>
+  <path d="M 400 320 L 460 110 L 400 110 Z" fill="rgba(220,38,38,0.15)" stroke="none"/>
+
+  <!-- Zone labels on arcs -->
+
+  <!-- === BOAT ICONS at each position === -->
+  <!-- We'll draw simplified boat shapes (hull + mast + sail) at each position -->
+
+  <!-- 1. VENT DEBOUT (directly into wind) - top center -->
+  <g transform="translate(400, 140)">
+    <ellipse cx="0" cy="0" rx="14" ry="22" fill="#64748b" stroke="#1a2e4a" stroke-width="1.5"/>
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#1a2e4a" stroke-width="2"/>
+    <!-- No sail (luffing) -->
+    <path d="M 0,-18 L -2,-5 L 0,5" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+    <path d="M 0,-18 L 2,-5 L 0,5" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+    <!-- Red X -->
+    <text x="0" y="38" text-anchor="middle" font-size="10" fill="#dc2626" font-weight="700">✕ ZONE INTERDITE</text>
+    <text x="0" y="50" text-anchor="middle" font-size="9" fill="#dc2626">~45° de chaque côté</text>
+  </g>
+
+  <!-- Red no-go zone arc label -->
+  <text x="400" y="100" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="700">VENT DEBOUT</text>
+
+  <!-- 2. PRÈS (close-hauled) - ~45°, upper left and right -->
+  <!-- Left (port tack) -->
+  <g transform="translate(195, 215)">
+    <ellipse cx="0" cy="0" rx="13" ry="20" fill="#1a2e4a" stroke="#1a2e4a" stroke-width="1" transform="rotate(-45)"/>
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="#fff" stroke-width="1.5" transform="rotate(-45)"/>
+    <path d="M 0,-20 C -12,-10 -14,5 0,12" fill="rgba(13,115,119,0.7)" stroke="#0d7377" stroke-width="1.5" transform="rotate(-45)"/>
+    <text x="0" y="35" text-anchor="middle" font-size="11" fill="#1a2e4a" font-weight="700">PRÈS</text>
+    <text x="0" y="47" text-anchor="middle" font-size="10" fill="#0d7377">(amures bâbord)</text>
+  </g>
+  <!-- Right (starboard tack) -->
+  <g transform="translate(605, 215)">
+    <ellipse cx="0" cy="0" rx="13" ry="20" fill="#1a2e4a" stroke="#1a2e4a" stroke-width="1" transform="rotate(45)"/>
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="#fff" stroke-width="1.5" transform="rotate(45)"/>
+    <path d="M 0,-20 C 12,-10 14,5 0,12" fill="rgba(13,115,119,0.7)" stroke="#0d7377" stroke-width="1.5" transform="rotate(45)"/>
+    <text x="0" y="35" text-anchor="middle" font-size="11" fill="#1a2e4a" font-weight="700">PRÈS</text>
+    <text x="0" y="47" text-anchor="middle" font-size="10" fill="#0d7377">(amures tribord)</text>
+  </g>
+
+  <!-- 3. TRAVERS (beam reach) - 90°, left and right -->
+  <!-- Left -->
+  <g transform="translate(120, 320)">
+    <ellipse cx="0" cy="0" rx="20" ry="13" fill="#1a2e4a" stroke="#1a2e4a" stroke-width="1"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#fff" stroke-width="1.5"/>
+    <path d="M 20,0 C 10,-14 -5,-16 -12,0" fill="rgba(13,115,119,0.7)" stroke="#0d7377" stroke-width="1.5"/>
+    <text x="0" y="32" text-anchor="middle" font-size="11" fill="#1a2e4a" font-weight="700">TRAVERS</text>
+    <text x="0" y="44" text-anchor="middle" font-size="10" fill="#0d7377">(90° du vent)</text>
+  </g>
+  <!-- Right -->
+  <g transform="translate(680, 320)">
+    <ellipse cx="0" cy="0" rx="20" ry="13" fill="#1a2e4a" stroke="#1a2e4a" stroke-width="1"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#fff" stroke-width="1.5"/>
+    <path d="M -20,0 C -10,-14 5,-16 12,0" fill="rgba(13,115,119,0.7)" stroke="#0d7377" stroke-width="1.5"/>
+    <text x="0" y="32" text-anchor="middle" font-size="11" fill="#1a2e4a" font-weight="700">TRAVERS</text>
+    <text x="0" y="44" text-anchor="middle" font-size="10" fill="#0d7377">(90° du vent)</text>
+  </g>
+
+  <!-- 4. LARGUE (broad reach) - ~135°, lower left and right -->
+  <!-- Left -->
+  <g transform="translate(195, 430)">
+    <ellipse cx="0" cy="0" rx="13" ry="20" fill="#1a2e4a" stroke="#1a2e4a" stroke-width="1" transform="rotate(45)"/>
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="#fff" stroke-width="1.5" transform="rotate(45)"/>
+    <path d="M 0,-20 C -16,-8 -18,8 0,16" fill="rgba(13,115,119,0.85)" stroke="#0d7377" stroke-width="1.5" transform="rotate(45)"/>
+    <text x="0" y="35" text-anchor="middle" font-size="11" fill="#1a2e4a" font-weight="700">LARGUE</text>
+    <text x="0" y="47" text-anchor="middle" font-size="10" fill="#0d7377">(allure favorite)</text>
+  </g>
+  <!-- Right -->
+  <g transform="translate(605, 430)">
+    <ellipse cx="0" cy="0" rx="13" ry="20" fill="#1a2e4a" stroke="#1a2e4a" stroke-width="1" transform="rotate(-45)"/>
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="#fff" stroke-width="1.5" transform="rotate(-45)"/>
+    <path d="M 0,-20 C 16,-8 18,8 0,16" fill="rgba(13,115,119,0.85)" stroke="#0d7377" stroke-width="1.5" transform="rotate(-45)"/>
+    <text x="0" y="35" text-anchor="middle" font-size="11" fill="#1a2e4a" font-weight="700">LARGUE</text>
+    <text x="0" y="47" text-anchor="middle" font-size="10" fill="#0d7377">(allure favorite)</text>
+  </g>
+
+  <!-- 5. VENT ARRIÈRE (running) - bottom center -->
+  <g transform="translate(400, 510)">
+    <ellipse cx="0" cy="0" rx="14" ry="22" fill="#1a2e4a" stroke="#1a2e4a" stroke-width="1"/>
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#fff" stroke-width="1.5"/>
+    <!-- Sail out to side -->
+    <path d="M 0,-18 C -22,-8 -24,8 0,16" fill="rgba(13,115,119,0.8)" stroke="#0d7377" stroke-width="1.5"/>
+    <text x="0" y="38" text-anchor="middle" font-size="11" fill="#1a2e4a" font-weight="700">VENT ARRIÈRE</text>
+    <text x="0" y="50" text-anchor="middle" font-size="10" fill="#0d7377">(risque d'empannage)</text>
+  </g>
+
+  <!-- Central compass circle -->
+  <circle cx="400" cy="320" r="155" fill="none" stroke="#1a2e4a" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.3"/>
+  <!-- No-go zone arc (red) -->
+  <path d="M 400,165 A 155,155 0 0,1 510,182" fill="none" stroke="#dc2626" stroke-width="3" opacity="0.5"/>
+  <path d="M 400,165 A 155,155 0 0,0 290,182" fill="none" stroke="#dc2626" stroke-width="3" opacity="0.5"/>
+
+  <!-- Angle indicators -->
+  <text x="315" y="178" font-size="11" fill="#dc2626" font-weight="600">~45°</text>
+  <text x="460" y="178" font-size="11" fill="#dc2626" font-weight="600">~45°</text>
+
+  <!-- Wind arrow from center -->
+  <line x1="400" y1="175" x2="400" y2="280" stroke="#0d7377" stroke-width="2.5" marker-end="url(#arrow-wind)" opacity="0.4" stroke-dasharray="5,3"/>
+
+  <!-- Speed/comfort gradient legend -->
+  <rect x="30" y="580" width="14" height="14" fill="rgba(13,115,119,0.4)" rx="2"/>
+  <text x="50" y="591" font-size="11" fill="#1a2e4a">Vitesse croissante avec l'angle</text>
+  <rect x="250" y="580" width="14" height="14" fill="rgba(220,38,38,0.3)" rx="2"/>
+  <text x="270" y="591" font-size="11" fill="#1a2e4a">Zone sans propulsion à la voile</text>
+  <text x="400" y="620" text-anchor="middle" font-size="11" fill="#64748b" font-style="italic">Bâbord = vent vient de gauche · Tribord = vent vient de droite</text>
+</svg>

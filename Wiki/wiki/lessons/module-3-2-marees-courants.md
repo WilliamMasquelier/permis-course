@@ -56,6 +56,12 @@ Pour un **port secondaire** non listé, l'annuaire donne des *corrections* (diff
 ![[marees-courbe-type.svg]]
 ![[marees-regle-douziemes.svg]]
 
+La courbe ci-dessous illustre la variation de la hauteur d'eau au cours d'un cycle de marée. Entre la basse mer (BM) et la pleine mer (PM), le niveau monte selon une forme approximativement sinusoïdale : lente au début, rapide au milieu, puis lente à nouveau à l'approche du sommet. Le **marnage** est la différence de hauteur entre PM et BM — c'est l'amplitude totale du cycle. Plus le coefficient de marée est élevé, plus le marnage est grand et plus la courbe est "étirée" verticalement.
+
+![[tidal-curve.svg|Courbe de marée — variation sinusoïdale de la hauteur d'eau sur un cycle]]
+
+*La forme sinusoïdale de la marée semi-diurne : la montée est symétrique à la descente. PM = pleine mer (sommet), BM = basse mer (creux). Le marnage est la différence verticale entre les deux.*
+
 La montée de la marée ne se fait pas à vitesse constante. Elle est lente au début, s'accélère, puis ralentit à l'approche de la pleine mer — suivant approximativement une courbe sinusoïdale. La **règle des douzièmes** simplifie ce calcul en 6 étapes mémorables :
 
 | Heure après BM | Fraction du marnage montant |
@@ -68,6 +74,12 @@ La montée de la marée ne se fait pas à vitesse constante. Elle est lente au d
 | 6ème heure | 1/12 |
 
 Mnémotechnique : **1-2-3-3-2-1**. La marée monte d'abord lentement (1/12 puis 2/12), puis très vite à mi-marée (3/12 + 3/12 = la moitié du marnage en seulement 2 heures), puis ralentit de nouveau.
+
+Le schéma suivant visualise cette distribution heure par heure. Remarquez que les heures centrales (3e et 4e) cumulent à elles seules 6/12 — soit la moitié du marnage total. C'est pendant ces deux heures que le niveau change le plus vite, que les courants sont les plus forts, et que les erreurs de timing coûtent le plus cher.
+
+![[rule-of-twelfths.svg|Règle des douzièmes — répartition du marnage par heure]]
+
+*La règle des douzièmes : 1/12, 2/12, 3/12, 3/12, 2/12, 1/12 du marnage à chaque heure successive. Retenir "1-2-3-3-2-1" suffit pour calculer la hauteur d'eau à n'importe quel moment du cycle.*
 
 **Exemple avec les données Brest :** BM à 06h12 = 1,2 m, PM à 12h45 = 6,3 m. Marnage = 5,1 m. Quelle hauteur à 10h12 (4 heures après BM) ?
 

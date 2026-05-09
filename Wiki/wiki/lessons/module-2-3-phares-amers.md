@@ -69,6 +69,10 @@ Un **amer** (*landmark*) est tout objet à terre reconnaissable visuellement, id
 
 Un bon amer doit réunir plusieurs qualités : être **unique** dans un secteur d'observation donné (pas de doute possible sur son identification), être clairement représenté sur la carte, être **visible dans les conditions de navigation prévues** (distance, visibilité, angle solaire), et être assez éloigné pour que le relèvement soit précis.
 
+![[point-sur-lighthouse.jpg|Phare côtier — exemple d'amer lumineux identifiable depuis le large]]
+
+*Un phare côtier typique, visible à plusieurs milles de distance. De jour, sa silhouette unique sert d'amer pour les relèvements. De nuit, sa caractéristique lumineuse (nombre d'éclats, couleur, période) permet une identification certaine — chaque phare d'une même zone a un rythme distinct pour éviter toute confusion.*
+
 Types d'amers courants :
 - Phares et balises
 - Tours, châteaux d'eau

@@ -1133,6 +1133,9 @@ PM  01h02  5,8 m  (heure légale CEST = UTC+2)
 <h2>Calculer une hauteur de marée — Courbe type et règle des douzièmes</h2>
 <div class="wiki-image-wrap"><img class="wiki-image" src="../assets/marees-courbe-type.svg" alt="marees-courbe-type.svg"></div>
 <div class="wiki-image-wrap"><img class="wiki-image" src="../assets/marees-regle-douziemes.svg" alt="marees-regle-douziemes.svg"></div>
+<p>La courbe ci-dessous illustre la variation de la hauteur d'eau au cours d'un cycle de marée. Entre la basse mer (BM) et la pleine mer (PM), le niveau monte selon une forme approximativement sinusoïdale : lente au début, rapide au milieu, puis lente à nouveau à l'approche du sommet. Le <strong>marnage</strong> est la différence de hauteur entre PM et BM — c'est l'amplitude totale du cycle. Plus le coefficient de marée est élevé, plus le marnage est grand et plus la courbe est &quot;étirée&quot; verticalement.</p>
+<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/tidal-curve.svg" alt="Courbe de marée — variation sinusoïdale de la hauteur d'eau sur un cycle"></div>
+<p><em>La forme sinusoïdale de la marée semi-diurne : la montée est symétrique à la descente. PM = pleine mer (sommet), BM = basse mer (creux). Le marnage est la différence verticale entre les deux.</em></p>
 <p>La montée de la marée ne se fait pas à vitesse constante. Elle est lente au début, s'accélère, puis ralentit à l'approche de la pleine mer — suivant approximativement une courbe sinusoïdale. La <strong>règle des douzièmes</strong> simplifie ce calcul en 6 étapes mémorables :</p>
 <table>
 <thead>
@@ -1169,6 +1172,9 @@ PM  01h02  5,8 m  (heure légale CEST = UTC+2)
 </tbody>
 </table>
 <p>Mnémotechnique : <strong>1-2-3-3-2-1</strong>. La marée monte d'abord lentement (1/12 puis 2/12), puis très vite à mi-marée (3/12 + 3/12 = la moitié du marnage en seulement 2 heures), puis ralentit de nouveau.</p>
+<p>Le schéma suivant visualise cette distribution heure par heure. Remarquez que les heures centrales (3e et 4e) cumulent à elles seules 6/12 — soit la moitié du marnage total. C'est pendant ces deux heures que le niveau change le plus vite, que les courants sont les plus forts, et que les erreurs de timing coûtent le plus cher.</p>
+<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/rule-of-twelfths.svg" alt="Règle des douzièmes — répartition du marnage par heure"></div>
+<p><em>La règle des douzièmes : 1/12, 2/12, 3/12, 3/12, 2/12, 1/12 du marnage à chaque heure successive. Retenir &quot;1-2-3-3-2-1&quot; suffit pour calculer la hauteur d'eau à n'importe quel moment du cycle.</em></p>
 <p><strong>Exemple avec les données Brest :</strong> BM à 06h12 = 1,2 m, PM à 12h45 = 6,3 m. Marnage = 5,1 m. Quelle hauteur à 10h12 (4 heures après BM) ?</p>
 <p>Cumul 1-2-3-3 = 9/12 du marnage = 9/12 × 5,1 = 3,83 m. Hauteur totale = 1,2 + 3,83 = <strong>5,03 m</strong>.</p>
 <p><strong>Limite de la règle :</strong> Elle suppose une marée semi-diurne régulière — valide en Manche et Atlantique. En Méditerranée, avec un marnage de 20 cm, ce calcul est purement théorique. En Méditerranée occidentale (golfe du Lion, côte Provence), la marée peut atteindre 0,3–0,5 m lors de grandes vive-eaux, mais les effets météorologiques (vent, pression) dépassent souvent l'amplitude astronomique.</p>

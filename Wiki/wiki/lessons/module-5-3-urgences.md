@@ -100,6 +100,19 @@ L'incendie à bord est particulièrement dangereux car l'évacuation est limité
 
 **Le triangle du feu** : combustible (carburant, gaz, bois, tissu) + comburant (oxygène) + énergie (chaleur, étincelle). **Supprimer l'un des trois éteint le feu.**
 
+Le schéma ci-dessous illustre le principe fondamental de tout feu : trois éléments sont nécessaires simultanément. Retirer un seul des trois suffit à éteindre l'incendie.
+
+![[fire-triangle.svg|Triangle du feu — les trois éléments nécessaires à la combustion]]
+
+*Le triangle du feu : chaleur (énergie d'activation), combustible (carburant, gaz, bois, tissu) et comburant (oxygène de l'air). Chaque type d'extincteur agit sur un côté différent : le CO2 supprime l'oxygène en le remplaçant par un gaz inerte, l'eau et la mousse absorbent la chaleur, et couper l'alimentation en carburant supprime le combustible.*
+
+**Comment chaque extincteur exploite le triangle :**
+- **Extincteur CO2** : projette du dioxyde de carbone qui **chasse l'oxygène** autour du foyer. Idéal pour les feux électriques (classe C) et les espaces confinés comme la salle des machines. Attention : risque d'asphyxie dans un local fermé.
+- **Couper le carburant** : fermer la vanne d'alimentation **supprime le combustible**. C'est pourquoi la première action en cas d'incendie moteur est toujours de couper l'arrivée de carburant.
+- **Eau / mousse** : **absorbe la chaleur** et refroidit le combustible en dessous de sa température d'inflammation. Efficace sur les feux secs (classe A) mais jamais sur les feux d'hydrocarbures (l'eau projette le carburant enflammé) ni sur les feux électriques (risque d'électrocution).
+
+*En salle des machines, couper le carburant et fermer les orifices d'aération attaquent deux côtés du triangle simultanément — c'est pourquoi cette double action est toujours la première priorité.*
+
 **Les trois classes de feux à bord :**
 - **Classe A** (feux secs — bois, tissu) : extincteur eau ou poudre ABC
 - **Classe B** (feux liquides — carburant, huile) : CO2, poudre ABC, mousse
