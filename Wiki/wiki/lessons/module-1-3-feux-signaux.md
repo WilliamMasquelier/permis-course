@@ -12,7 +12,7 @@ updated: 2026-05-07
 > [SCENE]
 > **Lundi soir, ancré au large de Tersane Island. 21h30.**
 >
-> La baie est noire. Les étoiles turques sont extraordinairement proches — pas de pollution lumineuse à vingt milles de la côte habitée. Rebecca est allongée sur le pont avant, regardant le ciel. "Les étoiles ici sont différentes de Nassau," dit-elle. Mais William, lui, regarde l'horizon.
+> La baie est noire. Les étoiles turques sont extraordinairement proches — pas de pollution lumineuse à vingt milles de la côte habitée. Rebeca est allongée sur le pont avant, regardant le ciel. "Les étoiles ici sont différentes de Nassau," dit-elle. Mais William, lui, regarde l'horizon.
 >
 > Trois jeux de lumières. Un rouge fixe, un vert, un blanc qui pulse. Un rouge et un vert côte à côte avec deux blancs au-dessus. Et très loin, à bâbord, un feu tournant : le phare de Fethiye.
 >
@@ -180,6 +180,6 @@ Le **cône black pointe en bas** est la marque la plus fréquente à l'examen et
 > **Réponse:** B — Un voilier sous voiles seules montre uniquement ses feux de côté (rouge + vert) et éventuellement un feu de poupe blanc. S'il montre en plus un feu blanc de tête de mât (masthead light), c'est qu'il utilise son moteur — il est alors classé comme navire à propulsion mécanique et perd sa priorité sur les navires à moteur.
 
 > [TRANSITION]
-> La nuit à Tersane est douce — la Coupe du Monde passe sur le téléphone d'Emmanuel depuis le cockpit. William note les feux dans son carnet. Demain matin, départ vers Fethiye — 12 milles au nord-est. Pour y entrer, il faudra lire les bouées. Rebecca, depuis la cabine arrière : "Vous ne pouvez pas juste suivre les autres bateaux ?" Silence. Mais comment lire ces bouées rouges et vertes ? Et cette bizarre marque jaune avec une croix ?
+> La nuit à Tersane est douce — la Coupe du Monde passe sur le téléphone d'Emmanuel depuis le cockpit. William note les feux dans son carnet. Demain matin, départ vers Fethiye — 12 milles au nord-est. Pour y entrer, il faudra lire les bouées. Rebeca, depuis la cabine arrière : "Vous ne pouvez pas juste suivre les autres bateaux ?" Silence. Mais comment lire ces bouées rouges et vertes ? Et cette bizarre marque jaune avec une croix ?
 >
 > **Session 2.1 — Le Balisage IALA : marques latérales, cardinales, et les cinq familles.**

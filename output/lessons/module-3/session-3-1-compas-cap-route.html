@@ -1106,7 +1106,7 @@
 <p><strong>Mercredi matin, 8h00. À bord, ancré baie de Fethiye.</strong></p>
 <p>William a étalé la carte et son rapporteur — son café d'une main, le crayon de l'autre. Il veut tracer la route vers Ölüdeniz : cap 245, d'après ses calculs. Mais le compas de bord indique 238 quand il met le bateau dans le sens qu'il pense être le bon.</p>
 <p>&quot;Il y a un problème avec le compas ?&quot; dit-il à Emmanuel qui arrive avec son propre café.</p>
-<p>&quot;Non. Le problème, c'est que tu as oublié que le nord magnétique et le nord de ta carte ne sont pas au même endroit.&quot; William fronce les sourcils. &quot;Il y a plusieurs Nords ?&quot; Christelle, qui a entendu depuis la descente : &quot;Ah oui — ça, c'est dans le livre. Trois Nords.&quot; Rebecca, depuis la cabine : &quot;Réveillez-moi quand vous avez un seul Nord.&quot;</p>
+<p>&quot;Non. Le problème, c'est que tu as oublié que le nord magnétique et le nord de ta carte ne sont pas au même endroit.&quot; William fronce les sourcils. &quot;Il y a plusieurs Nords ?&quot; Christelle, qui a entendu depuis la descente : &quot;Ah oui — ça, c'est dans le livre. Trois Nords.&quot; Rebeca, depuis la cabine : &quot;Réveillez-moi quand vous avez un seul Nord.&quot;</p>
 <p>William fronce les sourcils. &quot;Il y a plusieurs Nords ?&quot;</p>
 <p>&quot;Trois. Et le permis côtier veut que tu les connaisses tous.&quot;</p>
 </div></div>
@@ -1165,6 +1165,10 @@ Cap Magnétique = Cap Vrai + Variation Ouest
 <p>Les causes de déviation sont nombreuses à bord : le bloc-moteur est la source la plus importante, mais la chaîne d'ancre stockée dans la jupe avant, le tableau de bord électronique, les haut-parleurs (qui contiennent des aimants), les câbles d'alimentation courant fort et même les boîtes de conserve stockées dans le carré peuvent perturber le compas. Cette perturbation n'est pas constante : elle change selon la direction dans laquelle pointe le bateau, ce qui rend la déviation spécifique à chaque cap.</p>
 <p>Pour cartographier la déviation, on crée une <strong>table de déviation</strong> (courbe de déviation) : on note l'écart entre ce que lit le compas et la direction réelle (obtenue par GPS ou par un alignement connu) pour une douzaine de caps différents. Cette table est valable pour un bateau donné, dans une configuration d'équipement stable.</p>
 <p>En pratique pour le permis côtier : si la déviation est inconnue, utilisez le COG (Course Over Ground) de votre GPS en ligne droite pour comparer avec votre cap compas sur plusieurs caps — cela vous donne une estimation utile.</p>
+<h3>Construire une courbe de déviation — la méthode du tour</h3>
+<p>Pour produire une vraie courbe de déviation, on fait <em>tourner</em> le bateau sur lui-même par mer calme et on compare le compas à une référence connue à chaque cap : on aligne le bateau sur deux amers en transit (la référence vraie), on lit le compas (la référence magnétique avec déviation), et la différence donne la déviation à ce cap. On répète tous les 30° (12 points autour de la rose) — l'ensemble produit une courbe ou un tableau qu'on garde près du compas.</p>
+<p>La méthode &quot;GPS COG vs cap compas&quot; donne une approximation acceptable en croisière côtière mais ne remplace pas un swing par mer plate. Sur le <em>Deniz Rüzgarı</em>, Emmanuel avait fait ce relevé dans le port de Göcek le premier matin — la déviation maximale était de +3° par le cap 045°, nulle par le cap 180°.</p>
+<p>Voir <span class="wikilink" data-label="Compas Deviation">concepts/compas-deviation</span>.</p>
 <p><strong>Total :</strong> <code>Cap Vrai = Cap Compas + Déviation + Variation</code></p>
 <p>Ou avec le moyen mnémotechnique : <strong>CanDéVier</strong> (Compas → Déviation → Variation → Vrai).</p>
 <p><strong>Schéma de conversion CanDéVier :</strong></p>
@@ -1254,7 +1258,7 @@ Cap Magnétique = Cap Vrai + Variation Ouest
 <details class="quiz-answer"><summary>Voir la réponse</summary><strong>Réponse :</strong> B — La variation magnétique (ou déclinaison magnétique) est le décalage entre le nord vrai (géographique) et le nord magnétique, donné par la rose des vents de la carte. Elle est propre à chaque endroit du globe et varie lentement avec le temps (dérive séculaire). La déviation est l'erreur propre au compas du bateau, due aux masses ferriques ou électroniques à bord.</details>
 </div></div>
 <div class="callout callout-transition"><div class="callout-label">→ Cap sur la suite</div><div class="callout-body">
-<p>Cap sur Ölüdeniz. À mi-chemin, Emmanuel observe la mer, pensif. &quot;Elle est belle et calme. Mais si on était à Brest, à cette heure-ci, il faudrait vérifier la marée avant de partir...&quot; Rebecca, depuis l'arrière : &quot;Aux Bahamas non plus il n'y a presque pas de marée — la mer des Caraïbes est comme ça.&quot; Emmanuel se retourne, surpris. &quot;Vraiment ?&quot; William sourit. &quot;Exactement — première fois depuis le départ que vous trouvez un point commun. Justement. Parlons marées.&quot;</p>
+<p>Cap sur Ölüdeniz. À mi-chemin, Emmanuel observe la mer, pensif. &quot;Elle est belle et calme. Mais si on était à Brest, à cette heure-ci, il faudrait vérifier la marée avant de partir...&quot; Rebeca, depuis l'arrière : &quot;Aux Bahamas non plus il n'y a presque pas de marée — la mer des Caraïbes est comme ça.&quot; Emmanuel se retourne, surpris. &quot;Vraiment ?&quot; William sourit. &quot;Exactement — première fois depuis le départ que vous trouvez un point commun. Justement. Parlons marées.&quot;</p>
 <p><strong>Session 3.2 — Marées et Courants : hauteurs, règle des douzièmes, losanges de courant.</strong></p>
 </div></div>
 

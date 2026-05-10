@@ -14,7 +14,7 @@ updated: 2026-05-07
 >
 > Le taxi nous dépose devant les portiques de la marina. La chaleur est sèche — trente-huit degrés. L'odeur de résine de pin descend des collines qui cerclent la baie. Et là, au fond du ponton F, notre gulet : quarante-quatre pieds d'acajou verni, deux mâts, une voile d'artimon crème. *Deniz Rüzgarı* — le Vent de Mer.
 >
-> Emmanuel pose ses bagages et regarde autour de lui, les mains sur les hanches. "On est bien là !" dit-il. Christelle sort déjà l'appareil photo. Rebeca, elle, descend dans le carré, jette un œil par-dessus bord et annonce : "C'est petit. En baie des Cochons, les catamarans faisaient le double." Elle trouve quand même la glacière et annonce qu'il y a du raki.
+> Emmanuel pose ses bagages et regarde autour de lui, les mains sur les hanches. "On est bien là !" dit-il. Christelle sort déjà l'appareil photo. Rebeca, elle, descend dans le carré et en ressort immédiatement. "*Mira* — regarde le bois dans cette lumière. Il est presque rouge-or. Il faut que je peigne ça avant qu'on parte." Elle trouve quand même la glacière et annonce qu'il y a du raki.
 >
 > William, lui, tient son carnet de notes — son MacBook est déjà ouvert en cabine arrière, avec une réunion client reportée à demain. Il a une semaine pour transformer tout ce qu'il a lu en réflexes marins. Et peut-être apprendre à regarder l'eau sans en calculer immédiatement la bathymétrie.
 >
