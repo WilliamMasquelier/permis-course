@@ -116,13 +116,25 @@ Cinq nœuds sont indispensables à maîtriser pour le permis côtier et la navig
 
 **1. Nœud de cabestan** (*clove hitch*) : Nœud rapide pour amarrer une défense à une filière ou un cordage à un anneau provisoirement. Il se réalise en passant deux tours croisés autour d'un cylindre. Avantage : rapide à faire et à défaire. Limite : peut se desserrer si l'effort est variable — doublez-le d'un tour mort pour les amarrages prolongés.
 
+> [VIDÉO]
+> **Nœud de cabestan — animation pas-à-pas :** [Animated Knots — Clove Hitch](https://www.animatedknots.com/clove-hitch-knot)
+
 **2. Nœud de taquet** (*cleat hitch*, séquence OXO) : Indispensable pour sécuriser une écoute ou une amarre sur un taquet. La séquence est : un tour complet autour de la base du taquet, puis alternance de passes en 8 (deux tours croisés), et enfin un demi-nœud de blocage final. L'astuce "OXO" décrit la forme vue de dessus : tour-rond (O), croix (X), tour final bloquant (O).
 
-**3. Nœud plat** (*reef knot*) : Nœud symétrique utilisé pour nouer les garcettes de ris (les cordages qui maintiennent la voile affalée sous la bôme lors d'une réduction de voile). Se reconnaît à ses deux boucles croisées symétriquement. Attention : il n'est pas fiable comme nœud d'amarrage sous effort variable — réservez-le aux garcettes de ris.
+**3. Nœud plat** (*reef knot*) : Nœud symétrique utilisé pour nouer les garcettes de ris
 
-**4. Nœud de chaise** (*bowline*) : Le nœud le plus polyvalent de la marine — il forme une boucle fixe non coulissante qui ne se serre pas sous la charge et reste facile à larguer après un effort important. Utilisé pour fixer une écoute à un point d'écoute de voile, pour passer une amarre dans un anneau de quai, ou pour réaliser une boucle de sauvetage. À maîtriser parfaitement.
+> [VIDÉO]
+> **Nœud plat — animation pas-à-pas :** [Animated Knots — Reef Knot](https://www.animatedknots.com/reef-knot) (les cordages qui maintiennent la voile affalée sous la bôme lors d'une réduction de voile). Se reconnaît à ses deux boucles croisées symétriquement. Attention : il n'est pas fiable comme nœud d'amarrage sous effort variable — réservez-le aux garcettes de ris.
 
-**5. Tour mort et deux demi-clés** (*round turn and two half-hitches*) : Pour amarrer solidement un cordage à un anneau, une bitte ou un bollard. Le tour complet d'abord absorbe la charge, puis les deux demi-clés bloquent l'ensemble. Très sûr, facile à ajuster, résiste bien sous effort.
+**4. Nœud de chaise** (*bowline*) : Le nœud le plus polyvalent de la marine
+
+> [VIDÉO]
+> **Nœud de chaise — animation pas-à-pas :** [Animated Knots — Bowline](https://www.animatedknots.com/bowline-knot) — il forme une boucle fixe non coulissante qui ne se serre pas sous la charge et reste facile à larguer après un effort important. Utilisé pour fixer une écoute à un point d'écoute de voile, pour passer une amarre dans un anneau de quai, ou pour réaliser une boucle de sauvetage. À maîtriser parfaitement.
+
+**5. Tour mort et deux demi-clés** (*round turn and two half-hitches*) : Pour amarrer solidement un cordage à un anneau, une bitte ou un bollard.
+
+> [VIDÉO]
+> **Tour mort et deux demi-clés — animation pas-à-pas :** [Animated Knots — Round Turn and Two Half Hitches](https://www.animatedknots.com/round-turn-and-two-half-hitches-knot) Le tour complet d'abord absorbe la charge, puis les deux demi-clés bloquent l'ensemble. Très sûr, facile à ajuster, résiste bien sous effort.
 
 Voir [[concepts/cordages-noeuds]], [[concepts/pratique-noeuds-marins]], [[concepts/accostage-amarrage]], [[entities/ancre-delta]], [[entities/ancre-cqr]].
 

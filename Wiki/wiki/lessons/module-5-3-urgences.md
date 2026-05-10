@@ -36,8 +36,13 @@ Les **actions immédiates** (dans les 5 premières secondes) :
 4. **MOB GPS** — appuyer sur le bouton MOB de votre GPS/chartploteur
 5. Mettre le moteur au ralenti — **ne jamais engager en marche arrière** si la personne est proche de l'hélice
 
-![[mob-reach-turn-reach.svg]]
-![[mob-crash-stop.svg]]
+![[mob-reach-turn-reach.svg|Manœuvre HAM méthode Reach-Turn-Reach — séquence en trois phases au près abattu]]
+
+*Méthode Reach-Turn-Reach : (1) lofer immédiatement au travers, (2) virer de bord, (3) revenir en près abattu vers la victime en contrôlant la vitesse par le choquage progressif des voiles. Stoppez sous le vent de la victime.*
+
+![[mob-crash-stop.svg|Manœuvre HAM méthode Crash Stop — arrêt immédiat en cape]]
+
+*Méthode Crash Stop : barre franchement au vent, foc maintenu en place — le bateau se met en panne en 15 à 30 secondes. La victime est à quelques longueurs de bateau côté sous-le-vent. Méthode préférable de nuit ou par visibilité réduite.*
 
 Voir [[concepts/homme-a-la-mer-manoeuvres]], [[concepts/pratique-homme-a-la-mer]].
 
