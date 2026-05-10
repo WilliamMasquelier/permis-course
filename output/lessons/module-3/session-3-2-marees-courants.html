@@ -1106,7 +1106,7 @@
 <p><strong>Mercredi matin, 9h30. En route vers Ölüdeniz.</strong></p>
 <p>Emmanuel est pensif. &quot;En Bretagne, à Brest, il y a parfois 8 mètres de marée. On attendait des heures pour entrer dans certains ports. Je me souviens d'un matin où on était échoués sur la grève pendant six heures.&quot;</p>
 <p>Christelle rit. &quot;C'était les vacances 1988. Tu avais mal lu le tableau des marées.&quot;</p>
-<p>Rebecca, qui a entendu depuis le cockpit, s'approche, intéressée. &quot;Échoués six heures ? Vraiment ? Aux Bahamas, quand ça arrive, le bateau repart deux heures plus tard.&quot; William : &quot;Parce qu'il y a quasiment pas de marée là-bas non plus, comme ici.&quot; Rebecca, soudain curieuse : &quot;Alors pourquoi la Bretagne c'est différent ?&quot;</p>
+<p>Rebeca, qui a entendu depuis le cockpit, s'approche, intéressée. &quot;Échoués six heures ? Vraiment ? Aux Bahamas, quand ça arrive, le bateau repart deux heures plus tard.&quot; William : &quot;Parce qu'il y a quasiment pas de marée là-bas non plus, comme ici.&quot; Rebeca, soudain curieuse : &quot;Alors pourquoi la Bretagne c'est différent ?&quot;</p>
 <p>&quot;Ici,&quot; dit William, &quot;la Méditerranée a une marée de... 20 centimètres.&quot;</p>
 <p>Emmanuel se retourne, regard malicieux. &quot;Vingt centimètres ? Pour quoi faire ?&quot;</p>
 <p>&quot;Pour apprendre le concept avant de le faire pour de vrai. L'examen pose des questions sur les marées atlantiques. Donc on va les apprendre — même si ici, la marée ne change rien à notre navigation.&quot;</p>
@@ -1131,10 +1131,8 @@ PM  01h02  5,8 m  (heure légale CEST = UTC+2)
 <p><strong>Attention aux heures :</strong> les tables SHOM sont souvent en Temps Universel (UTC). En France, ajoutez +1 h en hiver et +2 h en été (CEST) pour obtenir l'heure légale.</p>
 <p>Pour un <strong>port secondaire</strong> non listé, l'annuaire donne des <em>corrections</em> (différences de temps et de hauteur) à appliquer aux données du port de référence le plus proche. Ces corrections varient parfois selon le niveau de marée — une interpolation est nécessaire.</p>
 <h2>Calculer une hauteur de marée — Courbe type et règle des douzièmes</h2>
-<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/marees-courbe-type.svg" alt="marees-courbe-type.svg"></div>
-<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/marees-regle-douziemes.svg" alt="marees-regle-douziemes.svg"></div>
 <p>La courbe ci-dessous illustre la variation de la hauteur d'eau au cours d'un cycle de marée. Entre la basse mer (BM) et la pleine mer (PM), le niveau monte selon une forme approximativement sinusoïdale : lente au début, rapide au milieu, puis lente à nouveau à l'approche du sommet. Le <strong>marnage</strong> est la différence de hauteur entre PM et BM — c'est l'amplitude totale du cycle. Plus le coefficient de marée est élevé, plus le marnage est grand et plus la courbe est &quot;étirée&quot; verticalement.</p>
-<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/tidal-curve.svg" alt="Courbe de marée — variation sinusoïdale de la hauteur d'eau sur un cycle"></div>
+<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/marees-courbe-type.svg" alt="Courbe de marée — variation sinusoïdale de la hauteur d'eau sur un cycle"></div>
 <p><em>La forme sinusoïdale de la marée semi-diurne : la montée est symétrique à la descente. PM = pleine mer (sommet), BM = basse mer (creux). Le marnage est la différence verticale entre les deux.</em></p>
 <p>La montée de la marée ne se fait pas à vitesse constante. Elle est lente au début, s'accélère, puis ralentit à l'approche de la pleine mer — suivant approximativement une courbe sinusoïdale. La <strong>règle des douzièmes</strong> simplifie ce calcul en 6 étapes mémorables :</p>
 <table>
@@ -1173,14 +1171,13 @@ PM  01h02  5,8 m  (heure légale CEST = UTC+2)
 </table>
 <p>Mnémotechnique : <strong>1-2-3-3-2-1</strong>. La marée monte d'abord lentement (1/12 puis 2/12), puis très vite à mi-marée (3/12 + 3/12 = la moitié du marnage en seulement 2 heures), puis ralentit de nouveau.</p>
 <p>Le schéma suivant visualise cette distribution heure par heure. Remarquez que les heures centrales (3e et 4e) cumulent à elles seules 6/12 — soit la moitié du marnage total. C'est pendant ces deux heures que le niveau change le plus vite, que les courants sont les plus forts, et que les erreurs de timing coûtent le plus cher.</p>
-<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/rule-of-twelfths.svg" alt="Règle des douzièmes — répartition du marnage par heure"></div>
+<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/marees-regle-douziemes.svg" alt="Règle des douzièmes — répartition du marnage par heure"></div>
 <p><em>La règle des douzièmes : 1/12, 2/12, 3/12, 3/12, 2/12, 1/12 du marnage à chaque heure successive. Retenir &quot;1-2-3-3-2-1&quot; suffit pour calculer la hauteur d'eau à n'importe quel moment du cycle.</em></p>
 <p><strong>Exemple avec les données Brest :</strong> BM à 06h12 = 1,2 m, PM à 12h45 = 6,3 m. Marnage = 5,1 m. Quelle hauteur à 10h12 (4 heures après BM) ?</p>
 <p>Cumul 1-2-3-3 = 9/12 du marnage = 9/12 × 5,1 = 3,83 m. Hauteur totale = 1,2 + 3,83 = <strong>5,03 m</strong>.</p>
 <p><strong>Limite de la règle :</strong> Elle suppose une marée semi-diurne régulière — valide en Manche et Atlantique. En Méditerranée, avec un marnage de 20 cm, ce calcul est purement théorique. En Méditerranée occidentale (golfe du Lion, côte Provence), la marée peut atteindre 0,3–0,5 m lors de grandes vive-eaux, mais les effets météorologiques (vent, pression) dépassent souvent l'amplitude astronomique.</p>
 <p>Voir <span class="wikilink" data-label="Marees Hauteurs">concepts/marees-hauteurs</span>.</p>
 <h2>Les courants de marée</h2>
-<div class="wiki-image-wrap"><img class="wiki-image" src="../assets/ancrage-touee.svg" alt="ancrage-touee.svg"></div>
 <p>Les <strong>courants de marée</strong> (ou <em>tidal streams</em>) sont les mouvements horizontaux de l'eau créés par le remplissage et la vidange des mers lors des marées. Ils sont distincts des hauteurs de marée : pendant que la mer monte, l'eau se déplace horizontalement vers la côte (<strong>flot</strong>) ; pendant qu'elle descend, elle s'en éloigne (<strong>jusant</strong>).</p>
 <p>Ces courants peuvent atteindre 3 à 5 nœuds dans les passages étroits (Raz de Sein, Alderney Race, raz Blanchard), rendant la navigation extrêmement délicate. Un bateau à 6 nœuds contre 4 nœuds de courant n'avance qu'à 2 nœuds sur le fond — 12h pour 24 milles. Avec le courant, il file à 10 nœuds.</p>
 <p><strong>Sources d'information sur les courants :</strong></p>

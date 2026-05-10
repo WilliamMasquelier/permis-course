@@ -17,15 +17,27 @@ Trigger when the student types `/permis-scenario`, asks for "un scénario", "exe
 
 ## Session → Domain mapping
 
-| Session file | Concept domain slug |
+| Lesson file | Concept domain slug |
 |---|---|
-| `session-01-balisage.md` | `balisage` |
-| `session-02-regles-barre.md` | `regles-barre` |
-| `session-03-feux-signaux.md` | `feux` |
-| `session-04-securite.md` | `securite` |
-| `session-05-navigation.md` | `navigation` |
-| `session-06-pratique-reglementation.md` | `pratique` |
-| `session-07-radio-vhf.md` | `radio-vhf` |
+| `module-1-1-vocabulaire-bateau.md` | `vocabulaire` |
+| `module-1-2-regles-de-barre.md` | `regles-barre` |
+| `module-1-3-feux-signaux.md` | `feux-signaux` |
+| `module-2-1-balisage-iala.md` | `balisage` |
+| `module-2-2-carte-marine.md` | `carte` |
+| `module-2-3-phares-amers.md` | `phares` |
+| `module-3-1-compas-cap-route.md` | `compas` |
+| `module-3-2-marees-courants.md` | `marees` |
+| `module-3-3-point-estime-gps.md` | `navigation-position` |
+| `module-3-4-routage-pilotage.md` | `pilotage` |
+| `module-4-1-voile-theorie.md` | `voile` |
+| `module-4-2-manoeuvres.md` | `manoeuvres` |
+| `module-4-3-mouillage.md` | `mouillage` |
+| `module-5-1-meteo.md` | `meteo` |
+| `module-5-2-securite-equipement.md` | `securite-equipement` |
+| `module-5-3-urgences.md` | `urgences` |
+| `module-5-4-visibilite-reduite.md` | `visibilite-reduite` |
+| `module-6-1-radio-vhf.md` | `radio-vhf` |
+| `module-6-2-reglementation.md` | `reglementation` |
 
 ## Workflow
 
@@ -43,7 +55,7 @@ Then stop — do not proceed.
 
 ### 2. Select concept domains
 
-Map each completed session filename or slug to its concept domain using the table above. Accept both `session-01-balisage.md` and `session-01-balisage` because older progress ledgers may omit the extension. You now have a list of available domains.
+Map each completed lesson filename or slug to its concept domain using the table above. Accept both filename forms (`module-1-1-vocabulaire-bateau.md` and `module-1-1-vocabulaire-bateau`) since progress ledgers may omit the `.md` extension. You now have a list of available domains.
 
 Pick 2–3 concept slugs from **different** completed domains:
 - If 2 domains available: use both
