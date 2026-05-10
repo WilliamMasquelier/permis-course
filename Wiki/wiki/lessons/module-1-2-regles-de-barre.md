@@ -163,6 +163,16 @@ Les signaux sonores de manœuvre sont des communications obligatoires entre navi
 
 Ces signaux seront développés en détail à la session 1.3 avec les signaux de brume.
 
+## La règle du tonnage — la réalité au-delà du RIPAM
+
+Le RIPAM ne reconnaît pas la taille comme critère de priorité. Mais en mer, un cargo de 50 000 tonnes met **2 NM à s'arrêter** et ne peut pas manœuvrer dans un chenal pour éviter un voilier de 8 mètres. La règle de fait : **un petit bateau s'écarte toujours d'un grand**, indépendamment du RIPAM. C'est un principe de prudence, pas une règle écrite.
+
+À ajouter à votre liste mentale : règle 9 (chenal étroit) + règle 18 (priorités) + *"bon sens face au tonnage"*. Un ferry de 80 mètres dans le chenal de Göcek a peut-être la priorité réglementaire sur votre gulet — il l'a certainement en termes de physique. Céder à temps n'est pas une faiblesse : c'est exactement ce que le RIPAM attend d'un navire qui peut manœuvrer librement.
+
+Le bon sens n'est pas dans l'examen mais a sauvé plus de vies que les feux de mâture.
+
+Voir [[concepts/regles-de-barre-priorites-moteur]], [[concepts/regles-de-barre-navires-privilegies]].
+
 > [MINI-QUIZ]
 > **Question 1 :** Deux bateaux à moteur se croisent. Le bateau A voit le bateau B sur son tribord. Qui est prioritaire ?
 > **A)** Le bateau A — il voit l'autre sur tribord, donc il est protégé

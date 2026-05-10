@@ -45,6 +45,12 @@ PM  01h02  5,8 m  (heure légale CEST = UTC+2)
 
 Pour un **port secondaire** non listé, l'annuaire donne des *corrections* (différences de temps et de hauteur) à appliquer aux données du port de référence le plus proche. Ces corrections varient parfois selon le niveau de marée — une interpolation est nécessaire.
 
+**Exemple — port secondaire de Roscoff par rapport à Brest (port standard) :**
+Corrections Roscoff : PM −0h27, BM −0h35, PM hauteur ×0,87, BM hauteur +0,3 m.
+Le 14 juillet à Brest : PM 12h45 hauteur 6,3 m.
+Roscoff : PM = 12h45 − 0h27 = **12h18**, hauteur = 6,3 × 0,87 = **5,48 m**.
+*(Méthode SHOM. Pour les corrections variant selon le coefficient, l'annuaire fournit deux jeux : VE et ME — interpoler.)*
+
 ## Calculer une hauteur de marée — Courbe type et règle des douzièmes
 
 La courbe ci-dessous illustre la variation de la hauteur d'eau au cours d'un cycle de marée. Entre la basse mer (BM) et la pleine mer (PM), le niveau monte selon une forme approximativement sinusoïdale : lente au début, rapide au milieu, puis lente à nouveau à l'approche du sommet. Le **marnage** est la différence de hauteur entre PM et BM — c'est l'amplitude totale du cycle. Plus le coefficient de marée est élevé, plus le marnage est grand et plus la courbe est "étirée" verticalement.
