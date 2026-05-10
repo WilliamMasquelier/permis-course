@@ -184,3 +184,11 @@ Tous les chapitres extraits via pdfplumber → `raw/books/yachtmaster-chapters/`
 - Tous les MOCs mis à jour avec liens vers nouveaux concepts
 - Audit doublons effectué — aucune dépréciation requise
 - 7 SVGs créés pour les visuels HIGH priority de visual-assets-needed.md
+
+## REWORK 2026-05-10 (Improvement plan execution — Phases 1–5)
+- Phase 0: 3 critical bugs fixed (IALA epilogue Q1, scenario skill stale mapping, image dups in 3-2) — committed in prior session
+- Phase 1: Character bible refresh — Mehmet fully removed (20 occurrences across 14 lessons). Rebeca rewritten in Painter/Crew/Swimmer rotation. Christelle voice tightened with sensory observations and photo motif. William's analytical modelling-aloud tic added (~5 instances). Emmanuel electronics-impatience flaw added (chartplotter freeze in 3-3, DSC admission in 6-1). Anonymous female Turkish coastguard officer in 5-3. "Ce qui aurait pu mal tourner" section in epilogue.
+- Phase 2: 3 narrative landmines planted and detonated: A (IALA inversion Trébeurden 91 in 2-1 → detonated 3-4), B (GPS waypoint error in 3-3 → detonated epilogue), C (anchor drag at Hamam Koyu 4-3 → referenced 5-1). Emmanuel's logbook callbacks (4-3, 5-2). French solo sailor at Hamam Koyu (4-3).
+- Phase 3: 3-2 opening scene compressed to 8 lines. 3-4 expanded to 12 lines with Butterfly Valley approach. [ATTENTION] callouts added to 5-3 (MAYDAY n'attend pas) and 6-2 (défaut de papiers). 3–5 wikilinks added to low-density lessons (1-1, 4-1, 4-2, 5-2, 6-2).
+- Phase 4: 4.1 Compass deviation procedure subsection in 3-1 + compas-deviation.md stub. 4.2 Heavy weather tactics (mise à la cape + fuite devant) in 5-3 replaced with ≤200 word paragraphs. 4.3 Tonnage rule subsection in 1-2. 4.4 Roscoff port secondaire worked example in 3-2.
+- Phase 5: V4 done (5 Animated Knots links in 1-1). V7 done (MOB SVG captions in 5-3). V1–V3, V5–V6 documented as TODO in visual-assets-needed.md with sourcing playbook.
