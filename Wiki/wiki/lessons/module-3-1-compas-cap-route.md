@@ -16,7 +16,7 @@ updated: 2026-05-07
 >
 > "Il y a un problème avec le compas ?" dit-il à Emmanuel qui arrive avec son propre café.
 >
-> "Non. Le problème, c'est que tu as oublié que le nord magnétique et le nord de ta carte ne sont pas au même endroit." William fronce les sourcils. "Il y a plusieurs Nords ?" Christelle, qui a entendu depuis la descente : "Ah oui — ça, c'est dans le livre. Trois Nords." Rebecca, depuis la cabine : "Réveillez-moi quand vous avez un seul Nord."
+> "Non. Le problème, c'est que tu as oublié que le nord magnétique et le nord de ta carte ne sont pas au même endroit." William fronce les sourcils. "Il y a plusieurs Nords ?" Christelle, qui a entendu depuis la descente : "Ah oui — ça, c'est dans le livre. Trois Nords." Rebeca, depuis la cabine : "Réveillez-moi quand vous avez un seul Nord."
 >
 > William fronce les sourcils. "Il y a plusieurs Nords ?"
 >
@@ -83,6 +83,14 @@ Les causes de déviation sont nombreuses à bord : le bloc-moteur est la source 
 Pour cartographier la déviation, on crée une **table de déviation** (courbe de déviation) : on note l'écart entre ce que lit le compas et la direction réelle (obtenue par GPS ou par un alignement connu) pour une douzaine de caps différents. Cette table est valable pour un bateau donné, dans une configuration d'équipement stable.
 
 En pratique pour le permis côtier : si la déviation est inconnue, utilisez le COG (Course Over Ground) de votre GPS en ligne droite pour comparer avec votre cap compas sur plusieurs caps — cela vous donne une estimation utile.
+
+### Construire une courbe de déviation — la méthode du tour
+
+Pour produire une vraie courbe de déviation, on fait *tourner* le bateau sur lui-même par mer calme et on compare le compas à une référence connue à chaque cap : on aligne le bateau sur deux amers en transit (la référence vraie), on lit le compas (la référence magnétique avec déviation), et la différence donne la déviation à ce cap. On répète tous les 30° (12 points autour de la rose) — l'ensemble produit une courbe ou un tableau qu'on garde près du compas.
+
+La méthode "GPS COG vs cap compas" donne une approximation acceptable en croisière côtière mais ne remplace pas un swing par mer plate. Sur le *Deniz Rüzgarı*, Emmanuel avait fait ce relevé dans le port de Göcek le premier matin — la déviation maximale était de +3° par le cap 045°, nulle par le cap 180°.
+
+Voir [[concepts/compas-deviation]].
 
 **Total :** `Cap Vrai = Cap Compas + Déviation + Variation`
 
@@ -174,6 +182,6 @@ Voir [[concepts/navigation-relevements]].
 > **Réponse:** B — La variation magnétique (ou déclinaison magnétique) est le décalage entre le nord vrai (géographique) et le nord magnétique, donné par la rose des vents de la carte. Elle est propre à chaque endroit du globe et varie lentement avec le temps (dérive séculaire). La déviation est l'erreur propre au compas du bateau, due aux masses ferriques ou électroniques à bord.
 
 > [TRANSITION]
-> Cap sur Ölüdeniz. À mi-chemin, Emmanuel observe la mer, pensif. "Elle est belle et calme. Mais si on était à Brest, à cette heure-ci, il faudrait vérifier la marée avant de partir..." Rebecca, depuis l'arrière : "Aux Bahamas non plus il n'y a presque pas de marée — la mer des Caraïbes est comme ça." Emmanuel se retourne, surpris. "Vraiment ?" William sourit. "Exactement — première fois depuis le départ que vous trouvez un point commun. Justement. Parlons marées."
+> Cap sur Ölüdeniz. À mi-chemin, Emmanuel observe la mer, pensif. "Elle est belle et calme. Mais si on était à Brest, à cette heure-ci, il faudrait vérifier la marée avant de partir..." Rebeca, depuis l'arrière : "Aux Bahamas non plus il n'y a presque pas de marée — la mer des Caraïbes est comme ça." Emmanuel se retourne, surpris. "Vraiment ?" William sourit. "Exactement — première fois depuis le départ que vous trouvez un point commun. Justement. Parlons marées."
 >
 > **Session 3.2 — Marées et Courants : hauteurs, règle des douzièmes, losanges de courant.**

@@ -183,17 +183,19 @@ L'échouage (*running aground*) est fréquent et souvent sans conséquence si on
 
 La mer peut toujours vous surprendre. Voici les tactiques de survie par gros temps :
 
-**La cape serrée (*heaving-to*) :** La manœuvre de pause. Barer la foc contre le vent (backed jib), choquer la grand-voile, mettre la barre sous le vent. Le bateau se stabilise à 50–60° du vent, dérivant lentement. Le cockpit est calme, la mer est moins dure. Technique de pause pour manger, réparer, attendre.
+**La mise à la cape (*heaving-to*) :** La manœuvre de pause. Conditions déclenchantes : vent soutenu au-dessus de 30 nœuds, équipage fatigué, cap devenu intenable. Procédure : border le foc à contre (backed jib), choquer la grand-voile partiellement, mettre la barre sous le vent et l'amarrer. Le bateau se stabilise à 50–60° du vent, dérivant sous le vent à 1,5–2 nœuds. Le cockpit est calme, la mer est moins dure. L'équipage peut manger, réparer une avarie, récupérer avant la prochaine décision. C'est la technique de survie élégante du voilier : le bateau travaille pour vous.
 
-**Courir devant la tempête (*running before storm*) :** Mettre le vent arrière avec un minimum de voile (tempête à l'artimon ou étai seul), laisser traîner un filin en boucle pour freiner la vitesse et réduire les risques de surf et d'empannage sauvage.
+**La fuite devant (*running before storm*) :** Conditions déclenchantes : vent arrière trop fort pour la mise à la cape, mer très formée avec risque de déferlement. Procédure : voilure très réduite ou nue, traîner un *drogue* (parachute sous-marin) ou un cordage épais en boucle pour ralentir le bateau en dessous de la vitesse de surf. Risques principaux : départ au lof involontaire sur une vague ou surfing incontrôlé pouvant mener à l'empannage sauvage. Réservé aux équipages expérimentés.
+
+*Pour un permis côtier (max 6 NM d'un abri), la bonne décision est presque toujours de* ne pas sortir *quand un coup de vent est annoncé. Mais ces tactiques se mémorisent — la mer décide parfois pour vous.*
+
+Voir [[concepts/gros-temps-tactique]].
 
 **La touée (*sea anchor*) :** Un parachute sous-marin déployé sur l'avant du bateau, maintenant le nez dans les vagues. Technique sécurisée pour les conditions extrêmes — requiert un équipement spécifique.
 
 **L'abattée (*lying ahull*) :** Toutes voiles amenées, barre libre. Le bateau se met en travers des vagues. Acceptable dans les houles longues, dangereux dans les vagues courtes et creuses (risque de dessalage).
 
 La règle fondamentale par gros temps : **le bateau est plus robuste que vous ne le pensez**. Réduire la voilure tôt, ne pas paniquer, et choisir une tactique active plutôt que de subir.
-
-Voir [[concepts/gros-temps-tactique]].
 
 > [ATTENTION]
 > **L'abandon de navire** est le dernier recours. Un bateau qui flotte est toujours plus visible et plus sûr qu'un radeau de survie. N'abandonnez le bateau que si vous *êtes obligés* de monter dans le radeau — jamais préventivement si le bateau flotte encore.
