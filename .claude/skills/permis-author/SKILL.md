@@ -5,7 +5,59 @@ description: Expert teacher/author tool for the Permis Côtier course — add ne
 
 # permis-author
 
-Expert authoring skill for the Permis Côtier course. Gives the teacher full write access to lesson markdown, wiki notes, and module structure. Draws on existing wiki knowledge, can do web research, and can process user-provided documents. Always triggers a render + QA pass after substantive changes.
+Expert authoring skill for the Permis Côtier course. Gives the teacher full write access to lesson markdown, wiki notes, and module structure. Draws on existing wiki knowledge, can do web research, and can process user-provided documents. Always triggers a render + QA pass after substantive changes, then commits and pushes — the teacher never needs to run git manually.
+
+## Repo orientation (read this if unfamiliar with the codebase)
+
+```
+permis-course/
+├── Wiki/wiki/lessons/       ← 21 lesson source files (module-N-M-slug.md)
+│   ├── module-0-0-prologue.md
+│   ├── module-1-1-vocabulaire-bateau.md
+│   └── … (through module-7-0-epilogue.md)
+├── Wiki/wiki/concepts/      ← Atomic concept notes (one idea per file)
+├── Wiki/wiki/entities/      ← Buoys, lights, specific regulations, etc.
+├── Wiki/wiki/questions/     ← Exam-style Q&A cards
+├── Wiki/wiki/themes/        ← Map-of-Content index files
+├── Wiki/assets/images/      ← Images and SVG diagrams
+├── Wiki/meta/
+│   ├── student-progress.json  ← Learner state (DO NOT touch)
+│   └── log.md                 ← Authoring log (append only)
+├── templates/               ← Jinja2 HTML templates
+├── scripts/render_course.py ← Main renderer (module-*.md → output/lessons/)
+├── output/lessons/          ← Rendered HTML (git-tracked, always rebuild after edits)
+└── raw/                     ← Source PDFs — IMMUTABLE, never touch
+```
+
+The renderer reads `Wiki/wiki/lessons/module-*.md`, processes Obsidian-style `[[wikilinks]]` and `> [CALLOUT]` blocks, and writes per-session HTML to `output/lessons/`. Always re-render after editing any lesson file.
+
+## The Göcek storyline
+
+Every lesson opens with a `> [SCENE]` callout that advances a continuous Mediterranean voyage narrative. **Canonical story elements** — all must stay consistent across all 21 lessons:
+
+| Element | Canonical value |
+|---------|----------------|
+| Boat name | *Deniz Rüzgarı* (le Vent de Mer) |
+| Boat type | Gulet 44 pieds, acajou verni, deux mâts, voile d'artimon crème |
+| Departure marina | Marina de Fethiye, Turquie |
+| Sailing area | Golfe de Göcek / Skopea Limanı |
+| Voyage start | Samedi 4 juillet 2026, 14h30 |
+| Characters | William (learner/narrator), Emmanuel, Christelle, Rebeca |
+
+**Any change to a story element requires a cross-lesson search.** Before editing, run:
+
+```bash
+grep -rn "Deniz Rüzgarı\|Emmanuel\|Christelle\|Rebeca\|Fethiye\|Göcek" Wiki/wiki/lessons/module-*.md
+```
+
+Replace the search terms with whatever element is changing. Apply the change to **every match** across all lesson files. A partial update (some lessons updated, some not) breaks narrative continuity and is worse than no update.
+
+Also check wiki notes:
+```bash
+grep -rn "<element>" Wiki/wiki/concepts/ Wiki/wiki/entities/ Wiki/wiki/themes/
+```
+
+After updating, run a final grep to confirm zero remaining occurrences of the old value.
 
 ## When to use
 
@@ -28,6 +80,18 @@ It must NOT modify:
 
 ## Workflow
 
+### 0. Sync before starting
+
+Always pull the latest before touching any file:
+
+```bash
+git pull --rebase origin main
+```
+
+If the pull reports conflicts, stop and tell the teacher before proceeding. If there are local uncommitted changes (`git status --short` is non-empty), ask the teacher whether to stash them or commit them first.
+
+Report what was pulled (e.g. "Up to date" or "Pulled 3 commits").
+
 ### 1. Establish intent
 
 Ask the teacher (if not already clear) which of these modes applies:
@@ -39,6 +103,7 @@ Ask the teacher (if not already clear) which of these modes applies:
 | **Reorganize** | Move sessions between modules, split/merge sessions, renumber |
 | **Update wiki** | Add or update concept/entity/question notes |
 | **Incorporate source** | Process a user-provided document or URL and extract new content |
+| **Story change** | Modify a character name, boat name, location, or other storyline element |
 
 A single invocation may cover multiple modes (e.g. "add a lesson and update the wiki notes it depends on").
 
@@ -50,6 +115,7 @@ Before writing anything:
 - Read the relevant existing lesson files (if redesigning or reorganizing).
 - Read directly linked wiki concept/entity files.
 - Run `ls Wiki/wiki/lessons/module-*.md | sort` to see the current module structure.
+- For story changes: run the cross-lesson grep described in the "Göcek storyline" section above before touching anything.
 
 ### 3. Source material
 
@@ -167,11 +233,11 @@ After any substantive changes to lesson files:
 
 1. Run the renderer to verify the new/modified lesson renders cleanly:
    ```bash
-   .venv/bin/python scripts/render_course.py
+   uv run python scripts/render_course.py
    ```
    For a single session (e.g. module 1, session 2):
    ```bash
-   .venv/bin/python scripts/render_course.py 1-2
+   uv run python scripts/render_course.py 1-2
    ```
 2. If the render fails, fix the issue (usually frontmatter or broken wikilink syntax) before reporting done.
 3. Optionally open the rendered page via Playwright to visually confirm layout — especially for lessons with complex callouts, tables, or image embeds.
@@ -209,8 +275,8 @@ After any substantive changes to lesson files:
    git pull --rebase origin main && git push origin main
    ```
 
-   Report the pushed commit SHA to the user so they know the content is live.
-   **Never leave content changes uncommitted or unpushed.** The author should not need to run any git command manually.
+   Report the pushed commit SHA to the teacher so they know the content is live.
+   **Never leave content changes uncommitted or unpushed.** The teacher should not need to run any git command manually.
 
 ### 6. Reorganization checklist
 
@@ -219,7 +285,7 @@ When moving or renumbering sessions:
 - [ ] Rename source files
 - [ ] Update `module`, `session_in_module` frontmatter in moved files
 - [ ] Update `prev`/`next` references if any exist in the lesson body
-- [ ] Run full render: `.venv/bin/python scripts/render_course.py`
+- [ ] Run full render: `uv run python scripts/render_course.py`
 - [ ] Verify `output/lessons/index.html` reflects the new order
 - [ ] Check `Wiki/meta/student-progress.json` — if the student has completed moved lessons, the slugs in `completed_lessons` will need updating
 
@@ -229,6 +295,7 @@ When moving or renumbering sessions:
 - **Wiki link target missing** — create a stub note for the missing concept/entity rather than leaving a broken link.
 - **Source document is a PDF** — use the Read tool to extract text; for scanned PDFs (image-only), note the limitation and ask the teacher to paste the relevant text.
 - **Regulatory uncertainty** — always err on the side of `status: stub` + log entry rather than guessing.
+- **Push rejected** — run `git pull --rebase origin main` then retry push. If rebase conflicts appear, resolve them before pushing.
 
 ## Boundaries
 

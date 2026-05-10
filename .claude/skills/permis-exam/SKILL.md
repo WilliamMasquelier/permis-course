@@ -50,10 +50,11 @@ Explanation text (may contain [[concepts/slug]] wikilinks).
 
 When parsing: detect variant by checking for `# Question` section heading. In Variant A, the correct answer is the bolded option with ✓. In Variant B, `## Answer` gives the letter. Extract the `Why:` / `## Explanation` text for the study plan.
 
-## Inputs (state files read/written)
+## Inputs
 
-- `Wiki/meta/student-progress.json` — read `completed_lessons`, write `exam_results`
-- `Wiki/wiki/questions/` — question bank
+- `Wiki/wiki/questions/` — question bank (read only)
+
+**No dependency on student-progress.json** — the exam runs regardless of tracked progress, since students may have completed sessions in the HTML SPA without it being recorded.
 
 ## Exam theme distribution (40 questions)
 
@@ -76,17 +77,7 @@ Exclude `sample-questions.md` — it is not a real question file.
 
 Execute these steps in order. Do not skip or reorder.
 
-### 1. Check prerequisites and confirm
-
-Read `Wiki/meta/student-progress.json`. Count `completed_lessons`.
-
-If fewer than 7 teaching sessions completed, warn the student:
-
-> « Attention : tu n'as complété que N/7 sessions d'apprentissage. L'examen blanc couvre toutes les matières. Veux-tu continuer quand même ? (oui/non) »
-
-Wait for confirmation. If "non", stop.
-
-### 2. Open the course SPA in Cowork
+### 1. Open the course SPA in Cowork
 
 Resolve the absolute repo path with `pwd`. Then output the compiled SPA as a Cowork HTML artifact and a clickable link:
 
@@ -96,7 +87,7 @@ Resolve the absolute repo path with `pwd`. Then output the compiled SPA as a Cow
 
 If `output/permis-cours-complet.html` is missing, run `.venv/bin/python scripts/render_complete.py` once to generate it. Do not start an HTTP server.
 
-### 3. Build the question set
+### 2. Build the question set
 
 Read all files from `Wiki/wiki/questions/`, excluding `sample-questions.md`.
 
@@ -112,7 +103,7 @@ Parse each question file to extract:
 
 Keep the correct answers and explanations internal — do not include them in what you display to the student.
 
-### 4. Run the exam
+### 3. Run the exam
 
 Announce:
 
@@ -126,7 +117,7 @@ For each question (1 to 40):
 
 Do not provide any feedback, hints, or corrections during the exam. If the student asks for the answer, reply: « En mode examen, je ne peux pas te donner les réponses. Continue ! »
 
-### 5. Calculate results
+### 4. Calculate results
 
 After question 40, calculate:
 - Total score (N/40)
@@ -135,7 +126,7 @@ After question 40, calculate:
 
 Identify wrong answers: for each incorrect question, note the theme and the explanation/Why text with any `[[concepts/slug]]` wikilinks.
 
-### 6. Generate score report
+### 5. Generate score report
 
 Write a markdown score report to `/tmp/permis-score-report.md`:
 
@@ -170,31 +161,9 @@ Pour chaque mauvaise réponse, liste :
 (If all correct in a theme, write: « Excellent ! Rien à réviser dans ce thème. »)
 ```
 
-### 7. Display the score report
+### 6. Display the score report
 
 Output the score report markdown content as a Cowork artifact (type: `text/markdown`) so it displays cleanly in the side panel. No HTTP server or browser navigation needed.
-
-### 8. Update progress
-
-Append to `exam_results` in `Wiki/meta/student-progress.json` (create the key as empty array if absent):
-
-```json
-{
-  "date": "<ISO 8601 UTC timestamp>",
-  "score": N,
-  "total": 40,
-  "passed": true|false,
-  "theme_scores": {
-    "balisage": "N/10",
-    "regles-barre": "N/5",
-    "feux": "N/5",
-    "securite": "N/5",
-    "navigation": "N/5",
-    "signaux": "N/5",
-    "pratique": "N/5"
-  }
-}
-```
 
 Announce the final result to the student in French, with the pass/fail banner and a motivational closing line.
 
