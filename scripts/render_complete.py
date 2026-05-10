@@ -529,25 +529,30 @@ details>*:not(summary){padding:0 16px 14px}
 """
 
 
+GITHUB_RAW_BASE = (
+    "https://raw.githubusercontent.com/WilliamMasquelier/permis-course/main/output/assets"
+)
+
+
 def _inline_assets(html_str: str, assets_dir: Path, max_bytes: int = 1_000_000) -> tuple[str, int, int]:
     """Replace src="assets/filename" with base64 data URIs for Cowork artifact self-containment.
 
-    Files larger than max_bytes are left as-is (will be broken in sandboxed iframe but alt text
-    remains visible). Returns (new_html, inlined_count, skipped_count).
+    Files ≤ max_bytes are base64-inlined (works offline, sandboxed iframe).
+    Files > max_bytes fall back to an absolute GitHub raw URL (requires internet, full quality).
+    Returns (new_html, inlined_count, github_url_count).
     """
     inlined = 0
-    skipped = 0
+    remote = 0
 
     def replace_src(match: re.Match) -> str:
-        nonlocal inlined, skipped
+        nonlocal inlined, remote
         filename = match.group(1)
         asset_path = assets_dir / filename
         if not asset_path.exists():
-            skipped += 1
             return match.group(0)
         if asset_path.stat().st_size > max_bytes:
-            skipped += 1
-            return match.group(0)
+            remote += 1
+            return f'src="{GITHUB_RAW_BASE}/{filename}"'
         mime_type, _ = mimetypes.guess_type(str(asset_path))
         if not mime_type:
             mime_type = "application/octet-stream"
@@ -556,7 +561,7 @@ def _inline_assets(html_str: str, assets_dir: Path, max_bytes: int = 1_000_000) 
         return f'src="data:{mime_type};base64,{data}"'
 
     new_html = re.sub(r'src="assets/([^"]+)"', replace_src, html_str)
-    return new_html, inlined, skipped
+    return new_html, inlined, remote
 
 
 def main() -> None:
@@ -651,7 +656,7 @@ def main() -> None:
     size_kb = OUTPUT_FILE.stat().st_size / 1024
     total_sessions = sum(len(m["sessions"]) for m in modules_data)
     print(f"Assets: {asset_count} file(s) copied to {ASSETS_DST.relative_to(REPO)}")
-    print(f"Inlined: {inlined_count} image(s) as base64 data URIs ({skipped_count} large file(s) skipped)")
+    print(f"Inlined: {inlined_count} image(s) as base64 · {skipped_count} large image(s) via GitHub raw URL")
     print(f"Generated: {OUTPUT_FILE.relative_to(REPO)} ({size_kb:.0f} KB, {total_sessions} sessions)")
 
 
