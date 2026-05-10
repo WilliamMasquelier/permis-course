@@ -59,15 +59,16 @@ When parsing: detect variant by checking for `# Question` section heading. In Va
 
 | Category (file prefix) | Target count | Available |
 |---|---|---|
-| `balisage` | 10 | 13 |
-| `regles-barre` | 5 | 5 |
+| `balisage` | 9 | 13 |
+| `regles-barre` | 6 | 5–8 |
 | `feux` | 5 | 5 |
-| `securite` | 5 | 5 |
-| `navigation` | 5 | 5 |
-| `signaux` | 5 | 5 |
-| `pratique` | 5 | 5 |
+| `signaux` | 3 | 5 |
+| `navigation` | 7 | 5+ |
+| `securite` | 7 | 5 |
+| `pratique` | 3 | 5 |
+| **Total** | **40** | |
 
-If a category has fewer files than the target, use all available files from that category and top up from remaining unused question files until the set reaches 40 if possible.
+If a category has fewer files than the target, take all available and top up from the remaining categories proportionally until total = 40.
 
 Exclude `sample-questions.md` — it is not a real question file.
 
