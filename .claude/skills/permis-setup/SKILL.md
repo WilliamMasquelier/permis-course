@@ -13,7 +13,22 @@ Trigger on /permis-setup, vérifier l'installation, setup check, check prerequis
 
 ## Workflow
 
-Execute all five steps in order. Collect results, then produce the final status table.
+Execute all steps in order. Collect results, then produce the final status table.
+
+### Step 0 - Check git sync
+
+```bash
+git fetch origin main 2>&1
+git status --short
+git log --oneline origin/main..HEAD 2>/dev/null | wc -l   # commits ahead
+git log --oneline HEAD..origin/main 2>/dev/null | wc -l   # commits behind
+```
+
+Results:
+- Behind by 0 and ahead by 0 → pass (up to date)
+- Behind by N → warn: "Le dépôt local a N commit(s) de retard sur la branche distante. Lancez `git pull --rebase origin main` pour synchroniser avant de commencer."
+- Uncommitted local changes → warn: list the files with `git status --short` and suggest the teacher commits or stashes them before authoring.
+- `git fetch` fails (no network / no remote) → note as warning (non-blocking for local-only use).
 
 ### Step 1 - Check Python venv and dependencies
 
@@ -70,6 +85,7 @@ Read `Wiki/meta/student-progress.json`.
 Print in French using check/warn/cross emoji:
 
 ```
+✅ Git sync - À jour (ou ⚠️ N commit(s) de retard — lancez git pull --rebase)
 ✅ Python + dépendances (jinja2, markdown_it) - OK
 ⚠️  Playwright MCP - Non configuré (mode texte uniquement)
 ✅ SPA cours complet (output/permis-cours-complet.html) - OK

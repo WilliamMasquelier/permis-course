@@ -1104,12 +1104,9 @@
 
       <div class="callout callout-scene"><div class="callout-label">⚓ Scène</div><div class="callout-body">
 <p><strong>Mercredi matin, 9h30. En route vers Ölüdeniz.</strong></p>
-<p>Emmanuel est pensif. &quot;En Bretagne, à Brest, il y a parfois 8 mètres de marée. On attendait des heures pour entrer dans certains ports. Je me souviens d'un matin où on était échoués sur la grève pendant six heures.&quot;</p>
-<p>Christelle rit. &quot;C'était les vacances 1988. Tu avais mal lu le tableau des marées.&quot;</p>
-<p>Rebeca, qui a entendu depuis le cockpit, s'approche, intéressée. &quot;Échoués six heures ? Vraiment ? Aux Bahamas, quand ça arrive, le bateau repart deux heures plus tard.&quot; William : &quot;Parce qu'il y a quasiment pas de marée là-bas non plus, comme ici.&quot; Rebeca, soudain curieuse : &quot;Alors pourquoi la Bretagne c'est différent ?&quot;</p>
-<p>&quot;Ici,&quot; dit William, &quot;la Méditerranée a une marée de... 20 centimètres.&quot;</p>
-<p>Emmanuel se retourne, regard malicieux. &quot;Vingt centimètres ? Pour quoi faire ?&quot;</p>
-<p>&quot;Pour apprendre le concept avant de le faire pour de vrai. L'examen pose des questions sur les marées atlantiques. Donc on va les apprendre — même si ici, la marée ne change rien à notre navigation.&quot;</p>
+<p>Emmanuel regarde l'horizon, pensif. &quot;8 mètres de marée à Brest. On a passé six heures sur la grève en 88 — mauvaise lecture de l'annuaire.&quot;</p>
+<p>William, au compas : &quot;La Méditerranée fait 0,2 m. Mais l'examen teste l'Atlantique. Donc on apprend.&quot;</p>
+<p>Christelle pose la main sur le bastingage. &quot;C'est étrange de penser que l'eau respire comme ça.&quot; Rebeca, pinceau levé, peint l'horizon depuis le pont avant — elle entend, mais reste dans sa composition.</p>
 </div></div>
 <h2>Pourquoi les marées existent</h2>
 <p>La marée est une conséquence directe de la gravitation. La <strong>Lune</strong> (principalement) et le <strong>Soleil</strong> (dans une moindre mesure) exercent une attraction sur les masses d'eau des océans. Cette force crée deux <em>renflements</em> de la surface de la mer : l'un du côté de la Terre tourné vers la Lune, l'autre du côté opposé (par effet centrifuge). Pendant que la Terre tourne sur elle-même en 24h, chaque point de la surface passe sous ces renflements — produisant <strong>deux hautes mers et deux basses mers toutes les 24 heures et 50 minutes</strong> (le cycle lunaire est légèrement plus long que le jour solaire).</p>
@@ -1130,6 +1127,11 @@ PM  01h02  5,8 m  (heure légale CEST = UTC+2)
 </code></pre>
 <p><strong>Attention aux heures :</strong> les tables SHOM sont souvent en Temps Universel (UTC). En France, ajoutez +1 h en hiver et +2 h en été (CEST) pour obtenir l'heure légale.</p>
 <p>Pour un <strong>port secondaire</strong> non listé, l'annuaire donne des <em>corrections</em> (différences de temps et de hauteur) à appliquer aux données du port de référence le plus proche. Ces corrections varient parfois selon le niveau de marée — une interpolation est nécessaire.</p>
+<p><strong>Exemple — port secondaire de Roscoff par rapport à Brest (port standard) :</strong>
+Corrections Roscoff : PM −0h27, BM −0h35, PM hauteur ×0,87, BM hauteur +0,3 m.
+Le 14 juillet à Brest : PM 12h45 hauteur 6,3 m.
+Roscoff : PM = 12h45 − 0h27 = <strong>12h18</strong>, hauteur = 6,3 × 0,87 = <strong>5,48 m</strong>.
+<em>(Méthode SHOM. Pour les corrections variant selon le coefficient, l'annuaire fournit deux jeux : VE et ME — interpoler.)</em></p>
 <h2>Calculer une hauteur de marée — Courbe type et règle des douzièmes</h2>
 <p>La courbe ci-dessous illustre la variation de la hauteur d'eau au cours d'un cycle de marée. Entre la basse mer (BM) et la pleine mer (PM), le niveau monte selon une forme approximativement sinusoïdale : lente au début, rapide au milieu, puis lente à nouveau à l'approche du sommet. Le <strong>marnage</strong> est la différence de hauteur entre PM et BM — c'est l'amplitude totale du cycle. Plus le coefficient de marée est élevé, plus le marnage est grand et plus la courbe est &quot;étirée&quot; verticalement.</p>
 <div class="wiki-image-wrap"><img class="wiki-image" src="../assets/marees-courbe-type.svg" alt="Courbe de marée — variation sinusoïdale de la hauteur d'eau sur un cycle"></div>

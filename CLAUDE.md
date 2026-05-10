@@ -83,9 +83,15 @@ This repo is a Claude Code plugin distributed via `WilliamMasquelier/permis-cour
 |----------|---------|
 | `.claude-plugin/plugin.json` | Plugin manifest — consumed by Claude Code's plugin system |
 | `skills/permis-*/` | **Plugin skills** — loaded when the plugin is installed in Cowork |
-| `.claude/skills/permis-*/` | Dev copies of the same skills — loaded in local Claude Code CLI sessions |
+| `.claude/skills/permis-*/` | **Dev skills** — loaded in local Claude Code CLI sessions |
 
-The two skill locations are intentionally kept in sync. When updating a skill, update both copies.
+**The two `SKILL.md` files for each skill are hardlinked** (same inode). Writing to either path updates both simultaneously. Never copy between them — `cp` will report "are identical". To add a new skill, create both paths and hardlink them:
+
+```bash
+mkdir -p skills/permis-newskill .claude/skills/permis-newskill
+# write the file once, then hardlink:
+ln .claude/skills/permis-newskill/SKILL.md skills/permis-newskill/SKILL.md
+```
 
 **Installing in Cowork:**
 ```

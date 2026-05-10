@@ -14,7 +14,7 @@ updated: 2026-05-07
 >
 > La brume arrive sans prévenir. En dix minutes, la visibilité passe de 5 milles à moins d'un demi-mille. Les feux des bateaux voisins sont des taches floues. On entend un moteur de quelque part — mais de quelle direction ?
 >
-> "Qu'est-ce qu'on fait ?" demande Rebecca, légèrement inquiète pour la première fois du voyage.
+> "Qu'est-ce qu'on fait ?" demande Rebeca, légèrement inquiète pour la première fois du voyage.
 >
 > "On est à l'ancre. On n'est pas obligés de faire quelque chose. Mais on doit allumer notre feu de mouillage, et si un bateau s'approche trop, on envoie le signal sonore. Et on fait la veille."
 >
