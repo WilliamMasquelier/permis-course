@@ -146,6 +146,8 @@ If Playwright is unavailable, print the URL and continue chat-only.
 
 ### 6. Teach the lesson (Socratic mode)
 
+You cannot "see" what the student is reading in the SPA. Your role is a knowledgeable Q&A companion: answer the student's questions about the current lesson using the wiki + web + lesson content already in your context. Drive 3–5 reflective questions per lesson but let the student lead the pace.
+
 - Greet the student in French. Confirm the lesson title.
 - Walk through the lesson content section by section using questions — never lecturing outright. Reference wikilinks with `[[concepts/<slug>]]` notation when explaining why an answer is correct.
 - Derive 3–5 key concepts from the lesson content to probe: use section headings and bolded terms as your guide.
@@ -181,8 +183,8 @@ When you have verified that the student understands the 3–5 key concepts you i
    - Save the file.
 3. If running an HTTP server (CLI fallback): `kill $(cat /tmp/permis-server.pid) 2>/dev/null; rm -f /tmp/permis-server.pid`
 4. If a next lesson exists:
-   - Announce: « Session terminée — on enchaîne sur la suivante. »
-   - Present the next lesson visually (step 3 — artifact or HTTP server depending on mode).
+   - Announce the new lesson title in chat. Do NOT re-output the SPA artifact — it is already open in the side panel. Optionally repeat the clickable markdown link `[📖 Ouvrir le cours complet](file://$REPO_ROOT/output/permis-cours-complet.html)` if helpful for the student.
+   - After advancing, re-execute step 5 with the new current_lesson before continuing the chat.
 5. If no lessons remain:
    - Congratulate the student in French.
    - Suggest `/permis-exam` for the mock exam.
