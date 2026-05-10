@@ -16,7 +16,7 @@ updated: 2026-05-07
 >
 > Christelle rit. "C'était les vacances 1988. Tu avais mal lu le tableau des marées."
 >
-> Rebecca, qui a entendu depuis le cockpit, s'approche, intéressée. "Échoués six heures ? Vraiment ? Aux Bahamas, quand ça arrive, le bateau repart deux heures plus tard." William : "Parce qu'il y a quasiment pas de marée là-bas non plus, comme ici." Rebecca, soudain curieuse : "Alors pourquoi la Bretagne c'est différent ?"
+> Rebeca, qui a entendu depuis le cockpit, s'approche, intéressée. "Échoués six heures ? Vraiment ? Aux Bahamas, quand ça arrive, le bateau repart deux heures plus tard." William : "Parce qu'il y a quasiment pas de marée là-bas non plus, comme ici." Rebeca, soudain curieuse : "Alors pourquoi la Bretagne c'est différent ?"
 >
 > "Ici," dit William, "la Méditerranée a une marée de... 20 centimètres."
 >
@@ -53,12 +53,9 @@ Pour un **port secondaire** non listé, l'annuaire donne des *corrections* (diff
 
 ## Calculer une hauteur de marée — Courbe type et règle des douzièmes
 
-![[marees-courbe-type.svg]]
-![[marees-regle-douziemes.svg]]
-
 La courbe ci-dessous illustre la variation de la hauteur d'eau au cours d'un cycle de marée. Entre la basse mer (BM) et la pleine mer (PM), le niveau monte selon une forme approximativement sinusoïdale : lente au début, rapide au milieu, puis lente à nouveau à l'approche du sommet. Le **marnage** est la différence de hauteur entre PM et BM — c'est l'amplitude totale du cycle. Plus le coefficient de marée est élevé, plus le marnage est grand et plus la courbe est "étirée" verticalement.
 
-![[tidal-curve.svg|Courbe de marée — variation sinusoïdale de la hauteur d'eau sur un cycle]]
+![[marees-courbe-type.svg|Courbe de marée — variation sinusoïdale de la hauteur d'eau sur un cycle]]
 
 *La forme sinusoïdale de la marée semi-diurne : la montée est symétrique à la descente. PM = pleine mer (sommet), BM = basse mer (creux). Le marnage est la différence verticale entre les deux.*
 
@@ -77,7 +74,7 @@ Mnémotechnique : **1-2-3-3-2-1**. La marée monte d'abord lentement (1/12 puis 
 
 Le schéma suivant visualise cette distribution heure par heure. Remarquez que les heures centrales (3e et 4e) cumulent à elles seules 6/12 — soit la moitié du marnage total. C'est pendant ces deux heures que le niveau change le plus vite, que les courants sont les plus forts, et que les erreurs de timing coûtent le plus cher.
 
-![[rule-of-twelfths.svg|Règle des douzièmes — répartition du marnage par heure]]
+![[marees-regle-douziemes.svg|Règle des douzièmes — répartition du marnage par heure]]
 
 *La règle des douzièmes : 1/12, 2/12, 3/12, 3/12, 2/12, 1/12 du marnage à chaque heure successive. Retenir "1-2-3-3-2-1" suffit pour calculer la hauteur d'eau à n'importe quel moment du cycle.*
 
@@ -90,8 +87,6 @@ Cumul 1-2-3-3 = 9/12 du marnage = 9/12 × 5,1 = 3,83 m. Hauteur totale = 1,2 + 3
 Voir [[concepts/marees-hauteurs]].
 
 ## Les courants de marée
-
-![[ancrage-touee.svg]]
 
 Les **courants de marée** (ou *tidal streams*) sont les mouvements horizontaux de l'eau créés par le remplissage et la vidange des mers lors des marées. Ils sont distincts des hauteurs de marée : pendant que la mer monte, l'eau se déplace horizontalement vers la côte (**flot**) ; pendant qu'elle descend, elle s'en éloigne (**jusant**).
 

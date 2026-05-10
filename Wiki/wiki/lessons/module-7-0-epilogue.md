@@ -18,7 +18,7 @@ updated: 2026-05-07
 >
 > Il sourit. "Je commence à l'être."
 >
-> Rebecca arrive à son tour. Elle s'assoit à côté de lui, sans parler. Elle regarde l'eau. Puis : "La prochaine fois, on va aux Bahamas, et c'est moi qui t'explique les courants." C'est la meilleure chose qu'elle a dite de tout le voyage.
+> Rebeca arrive à son tour. Elle s'assoit à côté de lui, sans parler. Elle regarde l'eau. Puis : "La prochaine fois, on va aux Bahamas, et c'est moi qui t'explique les courants." C'est la meilleure chose qu'elle a dite de tout le voyage.
 >
 > La marina de Göcek apparaît à tribord. Encore une heure. William sort son carnet et commence à relire ses notes.
 
@@ -125,11 +125,11 @@ Voir [[Wiki/wiki/questions/]] pour la banque de questions complète.
 > 5. Les questions de règles de barre ont toujours une logique derrière — retrouvez la règle.
 
 > [MINI-QUIZ]
-> **Question 1 :** En entrant dans le chenal de la marina de Göcek, William voit une bouée rouge conique à droite et une bouée verte cylindrique à gauche. Il vient de la mer. Quel côté garde-t-il chaque bouée ?
+> **Question 1 :** En entrant dans le chenal de la marina de Göcek, William voit une bouée rouge cylindrique à gauche et une bouée verte conique à droite. Il vient de la mer. Comment passe-t-il ?
 > **A)** Bouée rouge à bâbord (gauche), bouée verte à tribord (droite)
 > **B)** Bouée rouge à tribord (droite), bouée verte à bâbord (gauche)
 > **C)** Les deux côtés sont équivalents — choisir le côté le plus large
-> **Réponse:** B — En système IALA A (Méditerranée, Europe) : en entrant dans le port (en remontant dans le sens conventionnel), la marque de tribord est rouge et se garde à tribord (droite). La marque de bâbord est verte et se garde à bâbord (gauche). Mnémotechnique : "rouge à droite en rentrant" (IALA A). En IALA B (Amériques), c'est l'inverse — "red right returning".
+> **Réponse:** A — En système IALA A (Méditerranée, Europe) : en entrant au port (sens conventionnel), la marque de bâbord est rouge cylindrique et se garde à bâbord (gauche). La marque de tribord est verte conique et se garde à tribord (droite). Mnémotechnique : « rouge à gauche en entrant » (IALA A). En IALA B (Amériques), c'est l'inverse — *« red right returning »*.
 >
 > **Question 2 :** La veille du départ de Göcek, William relit ses notes. Parmi ces signaux sonores, lequel est FAUX ?
 > **A)** 1 son long par visibilité réduite (navire à moteur en route) = signal correct
@@ -160,7 +160,7 @@ Voir [[Wiki/wiki/questions/]] pour la banque de questions complète.
 >
 > "Alors ?" dit Emmanuel.
 >
-> William fait le nœud de taquet d'un geste net. "J'ai passé mon examen dans ma tête. Je pense que je suis prêt." Rebecca, depuis le cockpit : "Il a bossé tout le voyage, même à Butterfly Valley." Christelle rit.
+> William fait le nœud de taquet d'un geste net. "J'ai passé mon examen dans ma tête. Je pense que je suis prêt." Rebeca, depuis le cockpit : "Il a bossé tout le voyage, même à Butterfly Valley." Christelle rit.
 >
 > Mehmet sourit. "*İyi yolculuklar.* Bon voyage."
 
