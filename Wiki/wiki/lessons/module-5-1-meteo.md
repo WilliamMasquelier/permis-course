@@ -18,9 +18,13 @@ updated: 2026-05-07
 >
 > Son téléphone : Windfinder indique force 4 cet après-midi, rafales 6 possible en fin de journée. WindyApp confirme. L'application Météo France (pour l'examen, c'est la référence française) afficherait "BMS Var 4 à 7" pour la zone Méditerranée orientale. William note tout dans son carnet — vieille habitude de consultant, documenter avant de décider.
 >
-> Emmanuel le rejoint à 6h30. "Alors ?" "Force 4 cet après-midi, rafales 6 possible." Emmanuel regarde les cirrus. "Je confirme. On part tôt ou on attend demain." Rebecca sort à 7h15 avec son café. "On part où ?" William : "Kızılada. 7 milles. Mais je ne sais pas encore si c'est raisonnable." Rebecca : "En Martinique, les capitaines partent par n'importe quel temps." Emmanuel : "C'est pour ça que les capitaines de Martinique ont des bateaux neufs tous les cinq ans." Christelle rit.
+> Emmanuel le rejoint à 6h30. "Alors ?" "Force 4 cet après-midi, rafales 6 possible." Emmanuel regarde les cirrus. "Je confirme. On part tôt ou on attend demain." Rebeca sort à 7h15 avec son café. "On part où ?" William : "Kızılada. 7 milles. Mais je ne sais pas encore si c'est raisonnable."
 >
-> "On y va ou pas ?" dit finalement William à Mehmet.
+> Christelle est montée sans bruit. Elle tient sa tasse à deux mains et regarde l'horizon vers l'ouest. "Le vent a changé depuis hier soir — tu sens ? Il est plus humide. Et les cirrus là-bas, ils avancent plus vite qu'hier." Elle hésite. "Je dirais qu'on a moins de temps que les applis ne le montrent."
+>
+> William vérifie les GRIBs sur son téléphone. La dégradation est prévue pour 14h00. Il regarde Christelle, regarde les cirrus, regarde Emmanuel. "Les modèles disent 14h. Mon instinct dit qu'elle a raison — peut-être 12h30." Christelle, elle, avait senti ce même glissement de vent la nuit précédente à Hamam Koyu, avant que l'ancre ne chasse.
+>
+> "On y va ou pas ?" dit finalement William à Emmanuel.
 >
 > "Décide. C'est ton bateau."
 
@@ -117,7 +121,7 @@ Force 6    :  Limite haute côtier — marina délicate, réduction de voilure
 Force 7+   :  RESTEZ AU PORT — navigation dangereuse pour la plaisance
 ```
 
-*Ces seuils ne sont pas des limites théoriques — ce sont les retours d'expérience de milliers de navigateurs côtiers. À Göcek, l'Imbat standard est force 3–4. Les jours de force 5, Mehmet surveille les rafales. Au-delà, on reste au mouillage.*
+*Ces seuils ne sont pas des limites théoriques — ce sont les retours d'expérience de milliers de navigateurs côtiers. À Göcek, l'Imbat standard est force 3–4. Les jours de force 5, le skipper surveille les rafales et réduit la voilure tôt. Au-delà, on reste au mouillage.*
 
 Au-delà de **force 7**, la navigation devient dangereuse pour un bateau côtier standard. Les coups de vent de force 8–9 peuvent générer des vagues de 4 à 6 mètres. La règle empirique du plaisancier raisonnable : si le bulletin annonce de la force 7, vous attendez au port.
 

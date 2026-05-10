@@ -12,7 +12,7 @@ updated: 2026-05-07
 > [SCENE]
 > **Mardi soir, ancré baie de Fethiye. 22h00.**
 >
-> William est au quart de nuit — une heure, de 21h à 22h. Emmanuel et Christelle dorment dans la cabine avant. Rebecca dort dans la cabine arrière. William est seul dans le cockpit, pour la première fois vraiment responsable. Il regarde l'entrée de la baie. Le phare de Fethiye envoie ses éclats réguliers : flash, flash, pause. Flash, flash, pause.
+> William est au quart de nuit — une heure, de 21h à 22h. Emmanuel et Christelle dorment dans la cabine avant. Rebeca dort dans la cabine arrière. William est seul dans le cockpit, pour la première fois vraiment responsable. Il regarde l'entrée de la baie. Le phare de Fethiye envoie ses éclats réguliers : flash, flash, pause. Flash, flash, pause.
 >
 > Il prend son Bloc de Phares — le livre de référence des feux des côtes turques — et cherche. "Fl(2) 10s 12m 8M." Deux éclats toutes les 10 secondes, à 12 mètres de hauteur, visible à 8 milles nautiques.
 >
@@ -118,7 +118,7 @@ Les **feux d'alignement** (*leading lights*) sont deux phares spécialement plac
 > **C)** Entre 15 et 30 milles — la portée géographique (liée à la hauteur du phare) peut être limitante
 > **Réponse:** C — La portée nominale est calculée pour une visibilité météorologique de 10 milles nautiques (visibilité de nuit standard). Par visibilité supérieure, la portée réelle peut dépasser la nominale, jusqu'à la portée géographique (distance à laquelle la courbure terrestre cache le phare). En pratique, vérifiez la portée géographique dans l'annuaire des phares.
 >
-> **Question 4 :** Mehmet pointe vers la côte : "Tu vois ce clocher blanc et ce château derrière lui, alignés ?" William les voit superposés. À quoi leur alignement sert-il ?
+> **Question 4 :** Emmanuel pointe vers la côte : "Tu vois ce clocher blanc et ce château derrière lui, alignés ?" William les voit superposés. À quoi leur alignement sert-il ?
 > **A)** À identifier le mouillage — chaque mouillage a un amer désigné par convention
 > **B)** À former un transit (alignement) donnant une ligne de position très précise, sans compas
 > **C)** À évaluer la distance à la côte par la méthode des angles

@@ -14,9 +14,9 @@ updated: 2026-05-07
 >
 > Le taxi nous dépose devant les portiques de la marina. La chaleur est sèche — trente-huit degrés. L'odeur de résine de pin descend des collines qui cerclent la baie. Et là, au fond du ponton F, notre gulet : quarante-quatre pieds d'acajou verni, deux mâts, une voile d'artimon crème. *Deniz Rüzgarı* — le Vent de Mer.
 >
-> Emmanuel pose ses bagages et regarde autour de lui, les mains sur les hanches. "On est bien là !" dit-il. Christelle sort déjà l'appareil photo. Rebecca, elle, descend dans le carré, jette un œil par-dessus bord et annonce : "C'est petit. En baie des Cochons, les catamarans faisaient le double." Elle trouve quand même la glacière et annonce qu'il y a du raki.
+> Emmanuel pose ses bagages et regarde autour de lui, les mains sur les hanches. "On est bien là !" dit-il. Christelle sort déjà l'appareil photo. Rebeca, elle, descend dans le carré, jette un œil par-dessus bord et annonce : "C'est petit. En baie des Cochons, les catamarans faisaient le double." Elle trouve quand même la glacière et annonce qu'il y a du raki.
 >
-> William, lui, tient son carnet de notes — son MacBook est déjà ouvert en cabine arrière, avec une réunion client reportée à demain. Il a une semaine pour transformer tout ce qu'il a lu en réflexes marins. Et peut-être convaincre Rebecca que la Méditerranée, c'est beau aussi, même sans ouragan.
+> William, lui, tient son carnet de notes — son MacBook est déjà ouvert en cabine arrière, avec une réunion client reportée à demain. Il a une semaine pour transformer tout ce qu'il a lu en réflexes marins. Et peut-être apprendre à regarder l'eau sans en calculer immédiatement la bathymétrie.
 >
 > Ce cours est le récit de ce voyage.
 
@@ -68,11 +68,11 @@ Chaque session prend de 20 à 45 minutes. Le cours complet représente environ 1
 
 **L'équipage pour une semaine (samedi à samedi) :**
 - **William** (30 ans, skipper en formation) — le narrateur, celui qui apprend. Consultant en adoption et stratégie IA, il répond à des e-mails depuis le cockpit entre deux manœuvres. Novice complet en marine.
-- **Rebecca** — la compagne de William, originaire de la Dominique, habituée aux Caraïbes et aux Bahamas. Elle est en vacances, pas en cours. Elle fait remarquer régulièrement que "aux Bahamas, l'eau est plus transparente." Elle a raison, mais on ne le dira pas.
+- **Rebeca** — la compagne de William, originaire de la Dominique, à l'aise sur les bateaux à moteur des Caraïbes — mais c'est sa première fois sur un voilier. Elle est en vacances, mais ne tient pas en place. Elle peint des aquarelles à chaque mouillage, saute à l'eau dans chaque crique, et se bat avec le nœud de chaise depuis le premier soir.
 - **Emmanuel** — le père de William, le seul marin expérimenté du bord. C'est lui qui dirige en fait la navigation. Bretagne, Brest, vingt ans de voile. Le golfe de Fethiye l'enchante.
 - **Christelle** — la mère de William, également en formation aux côtés de son fils. Elle pose les questions que William n'ose pas poser.
 
-**Le capitaine local :** Mehmet, qui connaît chaque crique du golfe de Göcek depuis trente ans, sera présent dans les premières sessions pour guider l'apprentissage. À partir du milieu du voyage, William prend les décisions seul.
+**Emmanuel** est le seul marin expérimenté du bord. Bretagne, Brest, vingt ans de voile. Le golfe de Fethiye l'enchante — il reconnaît quelque chose de l'Iroise dans ces criques, mais en plus chaud et sans la marée. C'est lui qui dirige en fait la navigation. À partir du milieu du voyage, William prend les décisions seul.
 
 ## Le golfe de Göcek — votre terrain d'apprentissage
 
@@ -115,6 +115,6 @@ Les conditions méditerranéennes rendent ce golfe idéal pour l'apprentissage :
 > **Réponse:** C — Le mille nautique = 1 852 m, défini comme la longueur d'une minute d'arc de latitude sur un grand cercle terrestre. Cette définition permet une conversion directe sur la carte marine : l'échelle des latitudes, 1 minute = 1 NM. Le mile terrestre (1 609 m) n'a aucun usage en navigation maritime.
 
 > [TRANSITION]
-> William pose son carnet — Rebecca est déjà allongée sur le pont avant avec un livre. "Par où on commence ?" demande-t-il. Emmanuel, qui a déjà fait le tour du bateau deux fois, sourit. Mehmet montre le pont. "Par le bateau lui-même. Un bon marin connaît son bateau avant de connaître la mer."
+> William pose son carnet — Rebeca est déjà sur le pont avant, carnet de croquis ouvert, en train de saisir la lumière du soir sur les mâts. "Par où on commence ?" demande William. Emmanuel, qui a déjà fait le tour du bateau deux fois, sourit. "Par le bateau lui-même. Un bon marin connaît son bateau avant de connaître la mer."
 >
 > **Session 1.1 — Le Voilier : vocabulaire, parties du bateau, gréement.**

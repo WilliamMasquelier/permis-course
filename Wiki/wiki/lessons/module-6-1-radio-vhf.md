@@ -16,9 +16,9 @@ updated: 2026-05-07
 >
 > "Je veux appeler la capitainerie de Fethiye pour confirmer notre poste à quai. Quel canal ?"
 >
-> Mehmet : "Canal 16, c'est le canal de veille et d'appel. Tu les appelles sur le 16, ils te disent de passer sur un canal de travail — souvent le 9, 11, ou 12 ici en Turquie."
+> Emmanuel, depuis la descente : "Canal 16, c'est le canal de veille et d'appel. Tu les appelles sur le 16, ils te disent de passer sur un canal de travail — souvent le 9, 11, ou 12 ici en Turquie."
 >
-> William appuie sur le micro. Sa main tremble légèrement. Derrière lui, Emmanuel observe — silencieux, pour une fois. Rebecca est dans la descente, à portée d'oreille. Premier appel radio officiel.
+> William appuie sur le micro. Sa main tremble légèrement. Derrière lui, Emmanuel observe — silencieux, pour une fois. Rebeca est dans la descente, à portée d'oreille. Premier appel radio officiel.
 >
 > "Fethiye Liman, Fethiye Liman, ici voilier Deniz Rüzgarı, à l'écoute sur le seize, terminé."
 >
@@ -224,6 +224,11 @@ Le **DSC** transforme votre VHF en système de détresse automatique. En cas d'u
 Voir [[concepts/asn-dsc]], [[concepts/mmsi]].
 
 > [EXEMPLE GOLFE]
+> **Premier appel DSC du *Deniz Rüzgarı* :**
+>
+> William ouvre le capot rouge sur la VHF fixe et programme le MMSI du bateau dans les paramètres. Emmanuel observe, les bras croisés. "Ce truc-là, je n'ai jamais su le programmer." William en a pour trois minutes. "C'est fait. Maintenant le GPS est couplé — si tu appuies cinq secondes sur ce bouton rouge, les secours ont ta position instantanément." Emmanuel regarde l'écran. Long silence. "Bon — au moins toi tu sais. Moi j'ai appris à la voix. Canal 16, 'tous navires, tous navires'… ça marchait aussi." Il sourit malgré lui. "Mais je reconnais que c'est mieux comme ça."
+
+> [EXEMPLE GOLFE]
 > **Contact avec les Gardes-Côtes turcs (Sahil Güvenlik) :**
 >
 > En Turquie, la veille du canal 16 est assurée par la **Sahil Güvenlik** (Garde Côtière turque). La procédure est identique aux COLREGs/SOLAS — même langage international.
@@ -258,6 +263,6 @@ Voir [[concepts/asn-dsc]], [[concepts/mmsi]].
 > **Réponse:** B — Si le CROSS ne répond pas dans un délai raisonnable, tout navire entendant un MAYDAY a l'obligation de répondre et d'alerter les secours. La procédure "MAYDAY RELAY" permet de retransmettre un MAYDAY reçu d'un navire en détresse vers le CROSS. La solidarité en mer est une obligation légale et éthique.
 
 > [TRANSITION]
-> À Fethiye, ils amarrent au quai de la douane. L'officier monte à bord pour vérifier les papiers. Il y a le "Carnet de Navigation" (le *Transit Log* en Turquie), le livre de bord, les licences radio. Tout est en ordre. Il signe, tamponne, sourit. Quand il repart, Emmanuel dit : "Donc même en vacances, la paperasse nous suit." Rebecca : "En Martinique, le gendarme maritime venait à bord avec un café." Emmanuel, amusé. "Et pour naviguer en France ?" demande-t-il. "Quels papiers faut-il ?"
+> À Fethiye, ils amarrent au quai de la douane. L'officier monte à bord pour vérifier les papiers. Il y a le "Carnet de Navigation" (le *Transit Log* en Turquie), le livre de bord, les licences radio. Tout est en ordre. Il signe, tamponne, sourit. Quand il repart, Emmanuel dit : "Donc même en vacances, la paperasse nous suit." Rebeca : "En Martinique, le gendarme maritime venait à bord avec un café." Emmanuel, amusé. "Et pour naviguer en France ?" demande-t-il. "Quels papiers faut-il ?"
 >
 > **Session 6.2 — Documents, Licence et Réglementation.**

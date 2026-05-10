@@ -12,13 +12,20 @@ updated: 2026-05-07
 > [SCENE]
 > **Mardi matin, 9h15. En route vers Fethiye — cap 045.**
 >
-> Le *Deniz Rüzgarı* quitte la baie de Tersane par son extrémité nord. William est à la barre, Mehmet à côté. À l'entrée du chenal de Fethiye, une série de bouées commence à apparaître. Rouge à gauche. Verte à droite. Et puis une bizarre : noire et jaune rayée, avec deux triangles au sommet.
+> Le *Deniz Rüzgarı* quitte la baie de Tersane par son extrémité nord. William est à la barre, Emmanuel à côté. À l'entrée du chenal de Fethiye, une série de bouées commence à apparaître. Rouge à gauche. Verte à droite. Et puis une bizarre : noire et jaune rayée, avec deux triangles au sommet.
 >
 > "Ça, c'est quoi ?" dit William en la pointant.
 >
 > "Cardinale Nord. Tu passes au nord d'elle. Et là-bas, la rouge avec les bandes — eaux saines, tu peux passer tout autour. Et cette verte conique à tribord — reste dedans le chenal."
 >
-> William regarde sa carte. "Il y a un système logique là-dedans ?"
+> Christelle, qui a entendu depuis la descente, monte les trois marches. "Donc le rouge, on le garde à droite en rentrant ?" Emmanuel se retourne doucement. "Non — l'inverse. En IALA A, rouge à *gauche* en entrant. Bâbord, côté rouge." Christelle fronce les sourcils. "C'est contre-intuitif." Emmanuel : "C'est pour ça que l'examen le demande tous les ans. Ma sœur s'est échouée à Trébeurden en 91 exactement comme ça — elle avait inversé."
+>
+> William note dans son carnet : *IALA A = rouge à gauche en entrant. Trébeurden 91.*
+>
+> > [ATTENTION]
+> > **Christelle a inversé — c'est exactement le piège classique.** Mémoriser : IALA A = rouge à GAUCHE en entrant. La sœur d'Emmanuel s'est échouée comme ça à Trébeurden en 91. En IALA B (Amériques) : *"red right returning"* — c'est l'inverse. La Turquie est en IALA A.
+>
+> "Il y a un système logique là-dedans ?" dit William en regardant sa carte.
 >
 > "Tout est logique. Il suffit d'apprendre les codes."
 
@@ -136,7 +143,6 @@ La logique est cohérente avec son nom : "danger *isolé*" — il y a un seul da
 
 Corps noir-rouge-noir. Topmark : deux sphères noires superposées. Feu : Fl(2). **Danger ponctuel** — les eaux navigables tout autour, mais ne passez pas dessus.
 
-![[bouee-danger-isole.png|Bouée de danger isolé — corps noir à bandes rouges, topmark deux boules noires superposées]]
 
 *La marque de danger isolé signale un écueil ponctuel (rocher, épave) entouré d'eaux navigables. Les deux boules noires superposées sont son signe distinctif — ne les confondez pas avec la sphère rouge unique de la marque d'eaux saines. Contournez de tous les côtés en gardant vos distances, mais ne passez jamais directement au-dessus.*
 

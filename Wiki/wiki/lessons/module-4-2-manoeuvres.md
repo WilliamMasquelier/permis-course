@@ -12,13 +12,13 @@ updated: 2026-05-07
 > [SCENE]
 > **Vendredi 16h30. Approche de la marina de Göcek.**
 >
-> L'Imbat a forci — 16 nœuds à présent. Il faut amener les voiles, passer au moteur, et entrer dans la marina de Göcek. Emmanuel est à la barre — il a voulu essayer l'entrée en marina. Mehmet le laisse faire mais reste à portée.
+> L'Imbat a forci — 16 nœuds à présent. Il faut amener les voiles, passer au moteur, et entrer dans la marina de Göcek. Emmanuel est à la barre — il a voulu essayer l'entrée en marina lui-même.
 >
 > "Moteur en marche. Lofe un peu — vent de face pour amener les voiles."
 >
-> Emmanuel lofie. La grand-voile faseyait, puis tombe. Mais l'entrée dans la marina est étroite — deux gulets amarrés de chaque côté, un zodiac qui sort. Et le vent pousse de travers. William, depuis le cockpit, regarde son père manœuvrer avec admiration.
+> Emmanuel lofie. La grand-voile faseyait, puis tombe. Rebeca embraie l'écoute du génois côté bâbord et l'enroule proprement — de plus en plus à l'aise sur les lignes. "Comme ça ?" Emmanuel approuve. Mais l'entrée dans la marina est étroite — deux gulets amarrés de chaque côté, un zodiac qui sort. Et le vent pousse de travers. William, depuis le cockpit, regarde son père manœuvrer avec admiration.
 >
-> "Il faut calculer," dit Mehmet. "Le moteur donne le mouvement. Le vent donne la dérive. Toi, tu anticipes les deux."
+> "Il faut anticiper deux choses simultanément," dit Emmanuel. "Le moteur donne le mouvement. Le vent donne la dérive. À toi de les combiner."
 
 ## Le virement de bord (tacking)
 
@@ -132,7 +132,7 @@ Voir [[concepts/moteur-pratique]].
 > **C)** Après que la proue est passée et que la voile commence à se remplir de l'autre côté
 > **Réponse:** C — La séquence correcte : (1) lofer jusqu'à ce que la proue passe dans le lit du vent, (2) la grand-voile passe seule grâce au vent, (3) choquer l'écoute du foc dès que la proue franchit l'axe et border l'écoute de l'autre côté pour remplir la voile. Passer le foc trop tôt (A) le coince contre le mât.
 >
-> **Question 3 :** Mehmet explique l'empannage accidentel à William. Quelle est la manœuvre la plus dangereuse sur un voilier ?
+> **Question 3 :** Emmanuel explique l'empannage accidentel à William. Quelle est la manœuvre la plus dangereuse sur un voilier ?
 > **A)** Le virement de bord au près — la voile peut claquer fortement
 > **B)** L'empannage involontaire au grand largue ou vent arrière — la bôme peut venir en force
 > **C)** La mise en panne — arrêt complet du bateau sous voiles
@@ -145,6 +145,6 @@ Voir [[concepts/moteur-pratique]].
 > **Réponse:** B — La technique correcte du lancer d'amarre : enrouler quelques spires dans la main de lancer, faire tournoyer légèrement pour prendre de l'élan, libérer au sommet du geste lorsque le bras est tendu vers la cible. C est une condition préalable importante mais ne décrit pas le moment du lancer. A décrit une garde, pas un lancer.
 
 > [TRANSITION]
-> Ils sont au mouillage le lendemain dans la crique de Hamam Koyu — Cleopatra's Bath, la source thermale naturelle. Christelle nage jusqu'à la plage. "Cléopâtre a vraiment nagé ici ?" Personne ne sait avec certitude. L'histoire dit que oui. La géographie dit que c'est plausible. Rebecca, dans l'eau : "C'est chaud ! L'eau est plus chaude qu'en surface." Emmanuel : "Source thermale. Quarante degrés." Rebecca : "OK là je valide. Mieux que les Bahamas."
+> Ils mouillent le lendemain dans la crique de Hamam Koyu — Cleopatra's Bath, la source thermale naturelle. À peine l'ancre couchée, Rebeca est sur la filière avant. "La chaîne est posée ? *Vale*, je saute." Elle plonge avant que William ait fini de hocher la tête. Christelle nage plus prudemment jusqu'à la plage. "Cléopâtre a vraiment nagé ici ?" Personne ne sait. L'histoire dit que oui. Rebeca remonte à la surface près de la source : "L'eau est chaude là-dessous ! *Increíble.* C'est parce que c'est une source thermale ?" Emmanuel, depuis le cockpit : "Quarante degrés. Source sous-marine." Rebeca : "Ça, c'est une bonne idée de mouillage."
 >
 > **Session 4.3 — Mouillage, Amarrage et Ancrage : tenir sur son ancre.**
