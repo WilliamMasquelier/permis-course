@@ -34,7 +34,70 @@ C'est ce mécanisme de **portance** qui permet à un voilier de remonter presque
 
 **La zone interdite (no-go zone) :** À moins de 35-40° du vent, l'angle d'attaque devient trop grand, la voile décroche (stall) et ne génère plus de portance. Impossible de remonter plus près du vent — le bateau ralentit et ne répond plus à la barre. Cette zone s'appelle le "près débout" ou simplement "face au vent".
 
-Voir [[concepts/voile-theorie-base]], [[concepts/voile-trim-efficace]], [[concepts/cap-route-derive]], [[concepts/manoeuvre-voile-base]].
+## La quille et la dérive : deux ailes en tandem
+
+La voile fonctionne comme une aile dans l'air — mais ce mécanisme crée un problème inattendu. Au près, la majeure partie de la force générée est **latérale** : elle pousse le bateau sur le côté, pas vers l'avant. Sans contrepoids, le voilier glisserait de travers plutôt que d'avancer.
+
+**La force latérale de la voile**
+
+Au près serré, l'angle entre le vent apparent et l'axe du bateau est d'environ 35–40°. La force totale de la voile pointe perpendiculairement à la voile — donc en oblique, à la fois vers l'avant et vers le côté sous le vent. La composante latérale est bien plus grande que la composante propulsive. C'est elle qui crée la **gîte** et qui tend à faire **dériver** le bateau (le pousser latéralement).
+
+```
+         VENT ──►
+
+    Force totale ↗ (perpendiculaire à la voile)
+         │
+         ├──────────────►  composante propulsive (avance)
+         │
+         ▼
+         composante latérale → dérive potentielle
+```
+
+**La quille comme hydrofoil**
+
+La quille agit comme la voile, mais dans l'eau. Quand le bateau commence à glisser latéralement, la quille se retrouve avec un **angle d'attaque** par rapport à l'eau qui la traverse — elle génère alors une **portance hydrodynamique** qui s'oppose à la dérive.
+
+Voile + quille forment deux ailes en tandem : l'une dans l'air, l'autre dans l'eau, équilibrant leurs forces latérales respectives. Le résultat net est un mouvement vers l'avant.
+
+```
+   AIR  →  force voile  (portance → forward + latérale sous le vent)
+                 ↕  équilibre des composantes latérales
+   EAU  →  force quille (portance → latérale au vent = anti-dérive)
+```
+
+Plus le bateau va vite, plus l'angle d'attaque de la quille est efficace, et moins il dérive. C'est pourquoi un voilier qui perd de la vitesse au près dérive nettement plus — la quille perd son efficacité.
+
+**La dérive résiduelle**
+
+La quille ne peut jamais éliminer totalement la dérive. Le bateau garde toujours un petit **angle de dérive** (*leeway*) — quelques degrés par temps calme, 5 à 8° par mer formée ou vent fort. La proue pointe dans une direction ; le sillage part légèrement sous le vent.
+
+C'est cette dérive résiduelle que le navigateur corrige dans son point estimé (voir [[concepts/cap-route-derive]]) : la route surface n'est pas le cap barré, mais le cap décalé côté sous-le-vent de quelques degrés.
+
+**Le lest : stabilité et couple de redressement**
+
+La quille a un second rôle tout aussi vital. En plomb ou en fonte, le lest représente 30 à 40 % du déplacement du voilier. Cette masse concentrée en bas de la quille abaisse le **centre de gravité (G)** bien en dessous du **centre de carène (C)** — le centre géométrique du volume immergé.
+
+Quand le bateau gîte, deux forces créent un **couple de redressement** :
+- Le poids du lest tire G vers le bas (G reste fixe par rapport au bateau)
+- La poussée d'Archimède pousse C vers le haut du côté immergé (C se déplace)
+
+L'écart entre G et C crée un bras de levier qui rappelle le bateau à la verticale — et ce bras **augmente** avec la gîte (jusqu'à ~120° pour un voilier moderne). C'est ce qui rend un voilier à quille lestée pratiquement inchavirable dans des conditions normales, et fondamentalement différent d'un dériveur léger.
+
+> [ATTENTION]
+> Un voilier à quille lestée est stable — pas invincible. Une **gîte dépassant 90°** (couché sur le côté) peut temporairement inverser le couple de redressement si de l'eau entre par les écoutilles ouvertes. Les marins prudents ferment toujours les panneaux avant une mer forte et **réduisent la voilure tôt** : un bateau bien à plat gîte moins et reste mieux contrôlé.
+
+**Conséquences pratiques**
+
+| | Quille courte / bulbe | Dérive lestée | Quille longue |
+|--|--|--|--|
+| Anti-dérive | Très bonne | Bonne (relevable) | Moyenne |
+| Stabilité | Excellente | Correcte | Très bonne |
+| Tirant d'eau | 1,5–2,5 m | 0,3–0,8 m (relevée) | 1,2–2 m |
+| Accès peu profond | Difficile | Idéal | Limité |
+
+Le tirant d'eau de la quille lestée impose la profondeur minimale de navigation. Sur un gulet comme le *Deniz Rüzgarı*, le tirant d'eau est d'environ 1,6 m — il suffit de le garder en tête en approchant des criques peu profondes du golfe de Göcek.
+
+Voir [[concepts/quille-principe]], [[concepts/voile-theorie-base]], [[concepts/voile-trim-efficace]], [[concepts/cap-route-derive]], [[concepts/manoeuvre-voile-base]].
 
 ## Les allures
 
