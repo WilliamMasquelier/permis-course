@@ -124,7 +124,7 @@ Cinq nœuds sont indispensables à maîtriser pour le permis côtier et la navig
 
 **5. Tour mort et deux demi-clés** (*round turn and two half-hitches*) : Pour amarrer solidement un cordage à un anneau, une bitte ou un bollard. Le tour complet d'abord absorbe la charge, puis les deux demi-clés bloquent l'ensemble. Très sûr, facile à ajuster, résiste bien sous effort.
 
-Voir [[concepts/cordages-noeuds]], [[concepts/pratique-noeuds-marins]].
+Voir [[concepts/cordages-noeuds]], [[concepts/pratique-noeuds-marins]], [[concepts/accostage-amarrage]], [[entities/ancre-delta]], [[entities/ancre-cqr]].
 
 > [MINI-QUIZ]
 > **Question 1 :** Quel côté du bateau s'appelle "bâbord" ?

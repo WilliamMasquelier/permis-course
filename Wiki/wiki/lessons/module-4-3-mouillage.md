@@ -91,6 +91,8 @@ La procédure de mouillage se déroule en 6 étapes. Comprendre le *pourquoi* de
 
 Voir [[concepts/mouillage]], [[concepts/mouillage-technique]], [[concepts/pratique-mouillage]].
 
+Emmanuel sort parfois son vieux carnet de bord lors des mouillages délicats. "Mon père notait le fond, le cap du vent, la longueur de chaîne et l'heure de chaque mouillage depuis 1979. J'ai retrouvé Hamam Koyu dans ses notes — il l'appelait 'la crique thermale'. Il recommandait 5:1 même en été."
+
 ## Le cercle d'évitage
 
 Ancré, votre bateau n'est pas fixe : il tourne autour de l'ancre selon la direction du vent et du courant. Le **cercle d'évitage** est le cercle dans lequel votre bateau peut se déplacer.

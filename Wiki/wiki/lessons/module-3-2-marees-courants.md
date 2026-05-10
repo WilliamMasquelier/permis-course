@@ -12,17 +12,11 @@ updated: 2026-05-07
 > [SCENE]
 > **Mercredi matin, 9h30. En route vers Ölüdeniz.**
 >
-> Emmanuel est pensif. "En Bretagne, à Brest, il y a parfois 8 mètres de marée. On attendait des heures pour entrer dans certains ports. Je me souviens d'un matin où on était échoués sur la grève pendant six heures."
+> Emmanuel regarde l'horizon, pensif. "8 mètres de marée à Brest. On a passé six heures sur la grève en 88 — mauvaise lecture de l'annuaire."
 >
-> Christelle rit. "C'était les vacances 1988. Tu avais mal lu le tableau des marées."
+> William, au compas : "La Méditerranée fait 0,2 m. Mais l'examen teste l'Atlantique. Donc on apprend."
 >
-> Rebeca, qui a entendu depuis le cockpit, s'approche, intéressée. "Échoués six heures ? Vraiment ? Aux Bahamas, quand ça arrive, le bateau repart deux heures plus tard." William : "Parce qu'il y a quasiment pas de marée là-bas non plus, comme ici." Rebeca, soudain curieuse : "Alors pourquoi la Bretagne c'est différent ?"
->
-> "Ici," dit William, "la Méditerranée a une marée de... 20 centimètres."
->
-> Emmanuel se retourne, regard malicieux. "Vingt centimètres ? Pour quoi faire ?"
->
-> "Pour apprendre le concept avant de le faire pour de vrai. L'examen pose des questions sur les marées atlantiques. Donc on va les apprendre — même si ici, la marée ne change rien à notre navigation."
+> Christelle pose la main sur le bastingage. "C'est étrange de penser que l'eau respire comme ça." Rebeca, pinceau levé, peint l'horizon depuis le pont avant — elle entend, mais reste dans sa composition.
 
 ## Pourquoi les marées existent
 

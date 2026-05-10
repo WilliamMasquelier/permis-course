@@ -22,7 +22,7 @@ updated: 2026-05-07
 >
 > Christelle étudie le gilet attentivement. "Je l'avais mis dans le coffre depuis cinq jours."
 >
-> "Je sais. C'est pour ça qu'on fait ce briefing." Emmanuel sort son propre gilet — il l'a déjà vérifié ce matin. Rebecca arrive avec le sien. "Le capitaine de charter aux Bahamas nous avait dit de ne jamais mettre les gilets dans les coffres." Silence. William : "Il avait raison."
+> "Je sais. C'est pour ça qu'on fait ce briefing." Emmanuel sort son propre gilet — il l'a déjà vérifié ce matin. Il sort aussi son vieux carnet de bord, couverture noire abîmée. "Mon père notait chaque vérification d'équipement en 82. 'Gilet SN82-04 : CO2 ok, soupape ok, lumière ok.' Il n'avait jamais eu à les utiliser, mais il savait que le jour où il en aurait besoin, il ne serait pas en train de se demander si ça marchait." Il range le carnet. Rebeca arrive avec son gilet. "Celui-là, je l'essaie vraiment si on saute ?" William : "Pas dans ce port. À Kızılada, dans l'eau, si tu veux." Rebeca : "*Vale.* Je veux voir."
 
 ## Les catégories de navigation
 
@@ -166,7 +166,7 @@ La balise EPIRB est l'un des équipements les plus efficaces pour être secouru 
 
 **SART (Search And Rescue Transponder)** : répond aux émissions radar des navires et hélicoptères en générant une série de 12 points sur leur écran radar, permettant de trouver votre position à 5–10 milles. Déclenché manuellement, placé en hauteur pour maximiser la portée.
 
-Voir [[concepts/moyens-reperage]].
+Voir [[concepts/moyens-reperage]], [[concepts/asn-dsc]], [[entities/epirb]], [[entities/radeau-survie]], [[entities/equipement-vhf]].
 
 > [ATTENTION]
 > **La carte de sécurité.** Avant chaque départ avec passagers non expérimentés, faites un **briefing de sécurité** de 3 minutes :
