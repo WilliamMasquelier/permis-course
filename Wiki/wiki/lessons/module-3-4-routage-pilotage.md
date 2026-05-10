@@ -12,13 +12,23 @@ updated: 2026-05-07
 > [SCENE]
 > **Jeudi matin, 7h00. Ancré devant Ölüdeniz.**
 >
-> La carte est étalée sur la table du carré. William a tracé une route directe vers Butterfly Valley — 6 milles à l'ouest. Mais Mehmet secoue la tête.
+> La carte est étalée sur la table du carré. William a tracé une route directe vers Butterfly Valley — 6 milles à l'ouest. Il la montre à Emmanuel.
 >
-> "Regarde ici. Sonde 1,4 m. Et là — roche isolée à 0,8 m. Et la route directe passe pile entre les deux."
+> Emmanuel pose le doigt sur la carte. "Regarde ici. Sonde 1,4 m. Et là — roche isolée à 0,8 m. Et ta route directe passe pile entre les deux."
 >
 > William regarde. "Je ne les avais pas vus."
 >
 > "C'est ça, le pilotage côtier. Ce n'est pas juste tracer une ligne. C'est lire tout ce qui peut tuer le bateau le long de cette ligne, et choisir autrement."
+>
+> Trois heures plus tard, en approchant de l'entrée de Butterfly Valley, le passage se resserre entre deux falaises calcaires. William est à la barre. Une bouée rouge apparaît à tribord, mal placée selon ses souvenirs — il hésite une seconde.
+>
+> J'ai entendu mon père dire *"Trébeurden 91"* dans ma tête — IALA A, rouge à gauche en entrant. Il abat légèrement à bâbord, laisse la rouge à tribord. Le passage s'ouvre devant lui.
+>
+> Christelle, depuis le cockpit, regarde les parois de la crique se refermer autour d'eux. "Cette entrée me met mal à l'aise, on peut prendre le temps ?" "On a 23 minutes avant que le soleil descende sous 30°, donc visibilité optimale," dit William en surveillant ses amers. Emmanuel, silencieux à l'arrière, observe son fils.
+>
+> À 100 mètres de l'entrée, Emmanuel dit : "Tu prends le reste."
+>
+> William tient la barre.
 
 ## La planification de traversée
 
@@ -143,7 +153,7 @@ Voir [[concepts/routage-navigation]], [[concepts/pilotage-cotier]].
 > **C)** Vérifiez le GPS avant de décider — le compas seul n'est pas fiable
 > **Réponse:** A — Le relèvement de sécurité définit une limite de protection : tant que la valeur lue dépasse 095°M, vous restez du bon côté. Avec 098°, vous avez encore 3° de marge. B serait correct si vous lisiez 093° (inférieur à 095°). C est une mauvaise réflexe : les relèvements compas sont parfaitement valides pour les vérifications de sécurité.
 >
-> **Question 3 :** Mehmet dit à William : "Pour entrer dans la crique de Hamam Koyu, maintiens le clocher blanc aligné avec le figuier sur la falaise — c'est la seule route sûre." Quelle est la contrainte de navigation à cet endroit ?
+> **Question 3 :** Emmanuel dit à William : "Pour entrer dans la crique de Hamam Koyu, maintiens le clocher blanc aligné avec le figuier sur la falaise — c'est la seule route sûre." Quelle est la contrainte de navigation à cet endroit ?
 > **A)** Un secteur de phare rouge à éviter en approchant de nuit
 > **B)** Un transit obligatoire qui protège des hauts-fonds de part et d'autre du chenal d'entrée
 > **C)** Une zone militaire interdite de part et d'autre de l'axe d'entrée
@@ -156,6 +166,6 @@ Voir [[concepts/routage-navigation]], [[concepts/pilotage-cotier]].
 > **Réponse:** A — La vérification primordiale est la sécurité des fonds : la route doit dégager tous les obstacles avec une marge suffisante (en règle générale, au moins 0,5 NM des dangers répertoriés, davantage en mauvaise visibilité). Le cap magnétique et le carburant (B) sont des étapes suivantes. Les routes non balisées sont parfaitement légales.
 
 > [TRANSITION]
-> Butterfly Valley : des falaises de 300 mètres, une plage de galets, une cascade dans les rochers. L'équipage nage, mange. Rebecca admet que c'est magnifique — "différent des Caraïbes, mais beau." Emmanuel marche jusqu'à la cascade. Christelle prend des photos. William est assis sur un rocher avec son MacBook, une réunion Zoom en 4G. Rebecca le regarde. "Sérieusement ?" Il hausse les épaules. "Cinq minutes." Le vent monte — Mehmet fait remarquer depuis le bateau. "C'est l'Imbat de l'après-midi. Tous les matins calmes, toutes les après-midis qui gonflent. Demain, on profite de ça pour naviguer à la voile."
+> Butterfly Valley : des falaises de 300 mètres, une plage de galets, une cascade dans les rochers. L'équipage nage, mange. Rebeca sort ses aquarelles et s'installe sur le pont avant. "J'ai peint Tersane ce matin — le bleu n'était pas le même qu'ici. Ici c'est plus vert, à cause des falaises." Christelle prend des photos depuis le rocher, attentive à la lumière. William est assis avec son MacBook, une réunion Zoom en 4G. Rebeca le regarde. "Sérieusement ?" Il hausse les épaules. "Cinq minutes." Le vent monte — Emmanuel appelle depuis le bateau. "C'est l'Imbat de l'après-midi. Tous les matins calmes, toutes les après-midis qui gonflent. Demain, on profite de ça pour naviguer à la voile."
 >
 > **Session 4.1 — La Voile : théorie, allures, réglages.**

@@ -14,9 +14,9 @@ updated: 2026-05-07
 >
 > "Homme à la mer !" crie William en jetant une bouteille par-dessus bord.
 >
-> Temps de réaction de l'équipage : 4 secondes avant que quelqu'un commence à réagir. Christelle court chercher la bouée-fer à cheval. Emmanuel cherche les yeux la bouteille — déjà à 20 mètres derrière le bateau. Rebecca est figée, les yeux écarquillés.
+> Temps de réaction de l'équipage : 4 secondes avant que quelqu'un commence à réagir. Christelle court chercher la bouée-fer à cheval. Emmanuel cherche les yeux la bouteille — déjà à 20 mètres derrière le bateau. Rebeca est figée, les yeux écarquillés.
 >
-> "Arrêtez." William reprend. "La bouée-fer à cheval est là. Rebecca, tu désignes la bouteille des yeux et tu ne la quittes plus. Emmanuel, tu barres. Christelle, tu notes le MOB GPS. Maintenant on recommence — plus vite." Rebecca, les yeux rivés sur la bouteille : "OK là je comprends pourquoi c'est sérieux."
+> "Arrêtez." William reprend. "La bouée-fer à cheval est là. Rebeca, tu désignes la bouteille des yeux et tu ne la quittes plus. Emmanuel, tu barres. Christelle, tu notes le MOB GPS. Maintenant on recommence — plus vite." Rebeca, les yeux rivés sur la bouteille : "OK là je comprends pourquoi c'est sérieux."
 >
 > Deuxième essai : 1.5 secondes. Beaucoup mieux.
 >
@@ -201,6 +201,8 @@ Voir [[concepts/gros-temps-tactique]].
 > Vitesse au moment de l'exercice : 5 nœuds. En 4 secondes de délai, la "victime" (bouteille) s'est éloignée de ~10 mètres. À 5 nœuds réels (8,5 km/h), un naufragé peut être à 50 mètres en moins d'une minute.
 >
 > Dans le golfe de Göcek, la visibilité est bonne, la houle est faible — conditions favorables. En Atlantique Nord avec une houle de 3 mètres, ce sera beaucoup plus difficile.
+>
+> **Exercice MAYDAY :** En fin d'après-midi, William émet l'exercice MAYDAY depuis le canal 16 en coordonnant avec la capitainerie de Fethiye. Une voix féminine répond, calme et précise : *"Stand by, Deniz Rüzgarı — exercice bien reçu. Confirmez vos cinq personnes fictives à bord."* C'est la Sahil Güvenlik, la garde côtière turque. William confirme. "Reçu. Exercice terminé. Bonne navigation." Il repose le micro. Emmanuel : "Propre."
 
 > [MINI-QUIZ]
 > **Question 1 :** Christelle trébuche et tombe par-dessus bord au large de Kızılada. Quelle est la PREMIÈRE action à effectuer dans les 3 premières secondes ?
@@ -215,7 +217,7 @@ Voir [[concepts/gros-temps-tactique]].
 > **C)** 1. Appeler le CROSS, 2. Couper le carburant, 3. Extincteur
 > **Réponse:** B — Séquence incendie en salle des machines : (1) couper le moteur et l'alimentation en carburant (priver le feu de combustible), (2) fermer les trappes et ouïes d'aération (priver le feu d'oxygène), (3) utiliser l'extincteur ou le système CO2 fixe SANS ouvrir le compartiment si possible (rouvrir alimente le feu). L'appel radio (C) se fait en parallèle mais n'est pas la première priorité.
 >
-> **Question 3 :** Le *Deniz Rüzgarı* a une voie d'eau dans l'avant de la coque. Mehmet indique une pompe de cale qui débite 30 litres par minute. L'eau entre à 50 litres par minute. Quelle est la bonne décision ?
+> **Question 3 :** Le *Deniz Rüzgarı* a une voie d'eau dans l'avant de la coque. Emmanuel indique une pompe de cale qui débite 30 litres par minute. L'eau entre à 50 litres par minute. Quelle est la bonne décision ?
 > **A)** Pomper à fond — la pompe peut ralentir la progression
 > **B)** Boucher la voie d'eau avec tous les moyens disponibles (coussins, étoupe, coins) PENDANT que quelqu'un pompe
 > **C)** Abandonner immédiatement le bateau — la pompe ne peut pas gérer l'entrée d'eau
@@ -228,6 +230,6 @@ Voir [[concepts/gros-temps-tactique]].
 > **Réponse:** A — En mer, l'urgence médicale se gère via le CROSS sur VHF 16 (canal de détresse) : le CROSS coordonne le médecin régulateur et les secours (hélicoptère, vedette SNSM). En haute mer, le service TMAS (Télémedical Assistance Service) offre une consultation médicale à distance. Le SAMU (C) peut être appelé si la couverture mobile est disponible, mais le VHF est le canal principal en mer.
 
 > [TRANSITION]
-> La nuit à Kızılada est étrange — un voile de brume arrive vers 21h, réduisant la visibilité à 400 mètres. Les feux des autres bateaux sont flous. La Coupe du Monde est en quart de finale sur le téléphone d'Emmanuel — mais il éteint l'écran et préfère écouter Mehmet qui explique calmement les règles de navigation par visibilité réduite.
+> La nuit à Kızılada est étrange — un voile de brume arrive vers 21h, réduisant la visibilité à 400 mètres. Les feux des autres bateaux sont flous. La Coupe du Monde est en quart de finale sur le téléphone d'Emmanuel — mais il éteint l'écran. "Si on voit 400 mètres, on commence à parler de brume de navigation. Les règles changent." Il pose son téléphone et regarde l'obscurité.
 >
 > **Session 5.4 — Visibilité Réduite et Navigation Nocturne.**

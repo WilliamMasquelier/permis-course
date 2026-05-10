@@ -10,15 +10,43 @@ updated: 2026-05-07
 ---
 
 > [SCENE]
-> **Samedi matin, 8h00. Hamam Koyu (Cleopatra's Bath), golfe de Göcek.**
+> **Vendredi après-midi, 16h30. Arrivée à Hamam Koyu (Cleopatra's Bath), golfe de Göcek.**
 >
-> William prend son café sur le pont avant. L'ancre a tenu toute la nuit — 6 mètres de fond, fond sableux, 30 mètres de chaîne filée. Le bateau n'a pas bougé d'un mètre. Deux autres voiliers sont mouillés à proximité, espacés de 50 mètres.
+> L'entrée de la crique se fait par l'ouest, vent dans le dos — il faut manœuvrer avec soin. William choisit le poste : sable visible à travers l'eau turquoise, 6 mètres de fond, éloigné d'un Pogo français déjà mouillé à cinquante mètres. Il approche face au vent, moteur au ralenti.
 >
-> Emmanuel sort le premier, avant tout le monde, comme toujours. "L'ancre peut partir si le vent monte ?"
+> "Ancre !" L'ancre tombe. William fait marche arrière lentement, Emmanuel file la chaîne. Trente mètres. Choque-test : deux minutes en marche arrière à mille tours. Les amers à terre ne bougent pas. "Elle tient."
 >
-> "Peut-être. Ça dépend du fond, de la longueur de chaîne, du type d'ancre, et du vent. C'est pour ça qu'on a regardé la météo avant de mouiller ici."
+> Le skipper du Pogo, un Breton solitaire cheveux gris, hoche la tête depuis son cockpit. "Bon poste. Fonds sableux jusqu'au bord. Par contre avec l'Imbat vous voudrez peut-être filer plus de chaîne — 5:1 minimum dans cette crique, le vent peut basculer la nuit." Emmanuel : "On connait." Il file cinq mètres de chaîne supplémentaires sans rien dire.
 >
-> Il indique le fond visible à travers l'eau turquoise. "Sable. Bonne tenue. Fond dur ou herbier : bien moins bon." Christelle arrive avec deux cafés. Rebecca, en nageant vers la source thermale, s'arrête sur le côté. "Vous avez tout un truc avec cette chaîne. Dans les marinas des Bahamas, on met juste des lignes à un ponton."
+> Rebeca regarde la plage depuis l'étrave. Elle a déjà ses palmes à la main. "L'eau est posée ? *Vale*, je vais explorer." Elle saute proprement depuis l'étrave, surfaces, regarde vers la plage. "C'est loin ?" William : "Cinquante mètres." Elle disparaît vers la rive à la crawl.
+>
+> Christelle s'installe dans le cockpit. "C'est calme, ici. Trop calme peut-être." Elle regarde l'horizon. "Le vent vient de tourner — tu sens, plus humide ?"
+>
+> Emmanuel lève la tête. "Possible. On surveille cette nuit."
+
+> [SCENE]
+> **Vendredi 2h00 du matin. Hamam Koyu.**
+>
+> Christelle se réveille la première. Quelque chose dans la qualité du silence l'alerte — pas le silence d'avant, le vent a changé de ton. Elle pose la tête dans la descente. "Emmanuel. Le vent."
+>
+> Il est debout en cinq secondes. Dehors, les amers à terre ont bougé — de huit, dix mètres vers le sud. L'ancre chasse. Trente mètres derrière eux, le Pogo se balance différemment.
+>
+> "Moteur." William est dans le cockpit. Emmanuel lance le diesel. Pendant trente secondes, le bateau dérive encore — puis la chaîne se tend à nouveau. L'ancre reprend dans le sable. Emmanuel file trois mètres de chaîne supplémentaires, met le moteur en veille. Silence.
+>
+> "Elle a chassé de trente mètres ?" dit William. "Un peu plus. Le vent a basculé au nord — on a pris une rafale latérale." Il regarde la chaîne tendue devant eux. "C'est pour ça que 5:1 dans une crique encaissée n'est pas une recommandation. C'est le seuil de sécurité."
+>
+> Ils remettent l'alarme de dragage à quarante mètres. Personne ne se rendort vraiment.
+
+> [SCENE]
+> **Samedi matin, 8h00. Hamam Koyu.**
+>
+> William prend son café sur le pont avant. L'ancre a tenu le reste de la nuit. Deux autres voiliers mouillés à proximité n'ont pas bougé.
+>
+> Emmanuel sort le premier. "L'ancre peut partir si le vent monte ?"
+>
+> "On a eu la réponse cette nuit."
+>
+> Il indique le fond visible à travers l'eau turquoise. "Sable. Bonne tenue. Fond dur ou herbier : bien moins bon." Christelle arrive avec deux cafés. Rebeca nage déjà vers la source thermale.
 
 ## Types d'ancres
 
@@ -137,7 +165,7 @@ Voir [[concepts/cordages-noeuds]], [[concepts/accostage-amarrage]].
 >
 > Fond sableux, 4–8 m. Bonne tenue. Exposition : NE-E uniquement. L'Imbat vient du SW/NW — donc abri excellent.
 >
-> Capacité : une dizaine de bateaux. Convention locale : restez à au moins 50 m les uns des autres. Certains gulets s'amarrent en poupe à un rocher à terre (technique provençale avec une touée) — voir le SVG ![[ancrage-touee.svg]]
+> Capacité : une dizaine de bateaux. Convention locale : restez à au moins 50 m les uns des autres. Certains gulets s'amarrent en poupe à un rocher à terre (technique provençale avec une touée). Touée recommandée dans cette crique encaissée : **5:1 minimum** — une rafale de bascule de nuit peut surprendre même avec un bon poste.
 >
 > La source thermale (40°C) est à 50 mètres à la nage depuis le mouillage.
 
@@ -160,7 +188,7 @@ Voir [[concepts/cordages-noeuds]], [[concepts/accostage-amarrage]].
 > **C)** Un dérapage de votre ancre car la direction de traction change
 > **Réponse:** B — Lorsque le vent tourne, chaque bateau "évite" (pivote autour de son ancre) en suivant la nouvelle direction du vent. Si deux bateaux ont des rayons d'évitage différents (chaîne différente, différence de longueur de bateau), ils peuvent se retrouver en collision. C'est l'un des principaux risques en baie très peuplée.
 >
-> **Question 4 :** Mehmet explique le mouillage méditerranéen "à la turque" (Med-moor). Quelle est sa particularité par rapport au mouillage classique ?
+> **Question 4 :** Emmanuel explique le mouillage méditerranéen "à la turque" (Med-moor). Quelle est sa particularité par rapport au mouillage classique ?
 > **A)** On mouille l'ancre en avant et on recule pour amarrer la poupe au quai
 > **B)** On mouille l'ancre en arrière et on avance pour amarrer la proue au quai
 > **C)** On se place tribord au quai avec une seule amarre de poupe, sans ancre

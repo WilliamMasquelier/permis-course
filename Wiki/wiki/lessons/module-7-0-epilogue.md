@@ -33,7 +33,7 @@ Ce voyage dans le golfe de Göcek n'était pas qu'un voyage de vacances. Chaque 
 | Module | Session | Concept clé | Moment du voyage |
 |--------|---------|------------|-----------------|
 | 0 | Prologue | Qu'est-ce que le permis ? | Arrivée à Göcek |
-| 1 | 1.1 | Vocabulaire du bateau | Visite du gulet avec Mehmet |
+| 1 | 1.1 | Vocabulaire du bateau | Visite du *Deniz Rüzgarı* avec Emmanuel |
 | 1 | 1.2 | Règles de barre | Sortie du chenal de Göcek |
 | 1 | 1.3 | Feux et signaux | Première nuit à Tersane |
 | 2 | 2.1 | Balisage IALA | Chenal de Fethiye |
@@ -76,7 +76,19 @@ Ces dix habitudes ne viennent pas d'un manuel — elles viennent de skippers qui
 
 9. **Humilité** — Un skipper qui dit "je ne sais pas" est plus sûr qu'un skipper qui prétend tout savoir. Reconnaître les limites de ses compétences (la nuit, le gros temps, une manœuvre inconnue) et agir en conséquence — demander de l'aide, attendre, choisir une route moins exigeante — c'est une décision de bon marin, pas un aveu de faiblesse.
 
-10. **Connaissance du bateau** — Avant de partir, vérifiez le moteur, les niveaux, les feux, l'armement, l'ancre. Un gulet qu'on n'a jamais vu trois jours avant le départ n'est pas "votre" bateau — c'est un bateau que vous allez apprivoiser. Mehmet le premier soir à Göcek avait raison : commencer par le bateau, avant la mer.
+10. **Connaissance du bateau** — Avant de partir, vérifiez le moteur, les niveaux, les feux, l'armement, l'ancre. Un gulet qu'on n'a jamais vu trois jours avant le départ n'est pas "votre" bateau — c'est un bateau que vous allez apprivoiser. Emmanuel le premier soir à Göcek avait raison : commencer par le bateau, avant la mer.
+
+## Ce qui aurait pu mal tourner
+
+Trois moments du voyage où une erreur a failli devenir un incident — et où la méthode a sauvé la situation.
+
+**1. Le marqueur de Butterfly Valley (Module 3.4).** Approche à l'entrée d'une crique mal balisée — William hésite sur un rouge ; il se rappelle l'erreur de Christelle au Module 2.1 et la phrase de son père : *"Trébeurden 91"*. Il prend du bon côté. **Leçon :** une règle apprise en 30 secondes peut sauver un voyage 5 jours plus tard.
+
+**2. Le waypoint GPS (Module 3.3).** William entre une coordonnée à un chiffre près. Sans le relèvement croisé d'Emmanuel sur deux amers, le *Deniz Rüzgarı* passait à 50 mètres d'un banc à 1,4 m. **Leçon :** GPS + relèvements visuels, jamais l'un sans l'autre.
+
+**3. L'ancre qui a chassé (Module 4.3).** À 2 h du matin, le vent bascule. Christelle se réveille — *"le vent a changé, je le sens"*. L'ancre dérape 30 m avant de reprendre. **Leçon :** une touée à 5:1 dans une crique encaissée n'est pas une recommandation, c'est le seuil de sécurité.
+
+Trois erreurs, trois rattrapages. C'est exactement ce que mesure l'examen côtier : non pas la perfection, mais la capacité à anticiper, vérifier, corriger.
 
 ## L'examen blanc
 
@@ -156,13 +168,13 @@ Voir [[Wiki/wiki/questions/]] pour la banque de questions complète.
 >
 > William passe son dernier cap. La marina est calme — d'autres bateaux partent pour leur journée. Il voit maintenant chaque détail : les feux de direction à l'entrée du chenal, les marques latérales (verte à tribord en entrant), l'anémomètre qui tourne doucement dans le vent matinal.
 >
-> Emmanuel est sur le ponton — il a sauté à terre à l'approche, comme un marin. Il attrape l'amarre de proue. Mehmet attrape la poupe.
+> Emmanuel est sur le ponton — il a sauté à terre à l'approche, comme un marin. Il attrape l'amarre de proue. Rebeca est à la poupe, amarre prête dans les mains, qu'elle noue au taquet d'un geste propre. Puis elle rit. "Nœud de chaise cette fois !"
 >
-> "Alors ?" dit Emmanuel.
+> "Alors ?" dit Emmanuel en regardant son fils.
 >
-> William fait le nœud de taquet d'un geste net. "J'ai passé mon examen dans ma tête. Je pense que je suis prêt." Rebeca, depuis le cockpit : "Il a bossé tout le voyage, même à Butterfly Valley." Christelle rit.
+> William fait le nœud de taquet sur l'amarre de proue d'un geste net — automatique, sans regarder. "J'ai passé mon examen dans ma tête. Je pense que je suis prêt." Christelle rit. "Moi aussi, je pense."
 >
-> Mehmet sourit. "*İyi yolculuklar.* Bon voyage."
+> Emmanuel tend la main à William. La poignée est franche, courte. "Bien joué, capitaine."
 
 ---
 

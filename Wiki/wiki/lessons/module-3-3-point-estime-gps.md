@@ -18,7 +18,29 @@ updated: 2026-05-07
 >
 > William réfléchit. Il ne connaît pas la réponse.
 >
-> "C'est pour ça qu'on apprend le point estimé," dit Mehmet depuis la plage arrière. "Le GPS, c'est magnifique jusqu'au jour où ce n'est plus là. Un marin qui ne sait pas naviguer sans GPS n'est pas un marin — il est passager d'un appareil électronique." Rebecca, depuis le bain de soleil : "Sur le catamaran en charter aux Bahamas, le capitaine avait deux GPS et un iPad." Mehmet : "Et s'ils tombent tous en panne en même temps ?" Silence de Rebecca.
+> "Et si le GPS tombait là, maintenant — qu'est-ce que tu fais ?" dit Emmanuel, l'œil malicieux, depuis la plage arrière.
+>
+> William réfléchit à voix haute. "Trois variables : dernière position connue, cap barré depuis 35 minutes, vitesse loch 6 nœuds. Ça donne environ 3,5 NM, direction 245°. J'estimerais la position à —"
+>
+> "Tu peux aussi juste *regarder* l'eau, William," coupe Emmanuel. Il désigne la côte. "Le profil de cette falaise. Ce cap là-bas. Deux amers en croix — plus rapide et plus honnête que ton calcul."
+>
+> William rit. "Point pris."
+>
+> Rebeca lève les yeux de son carnet d'aquarelles. "William, regarde la lumière sur ces falaises — le calcaire prend une couleur magnifique à contre-jour. *Qué color.* Tu me dis quand on s'approche, je veux peindre ça depuis le pont avant."
+>
+> C'est au large des Yassıca Adaları, en fin d'après-midi, que se produit l'incident. William entre un waypoint dans le chartplotter — les doigts vont vite, une minute de longitude décimale transposée en degrés-minutes. Résultat : le tracé passe à 200 mètres trop près d'un banc à 1,4 mètre de fond, vers 36°40'N 28°56'E. Emmanuel voit la route s'afficher et fronce les sourcils.
+>
+> "Attends. Prends ton compas de relèvement. Ce rocher à l'est — quel relèvement ?"
+>
+> William prend le relèvement. "092°."
+>
+> "Et la sonde sur ta carte à ce cap-là ?"
+>
+> Silence.
+>
+> "Ton waypoint est faux. Tu aurais passé à 50 mètres d'un haut-fond à 1,4 m. Votre tirant d'eau ?" William pâlit légèrement. "1,8 m." Emmanuel pose la main sur l'épaule de son fils. "Bienvenue dans la navigation réelle. Le GPS est magnifique jusqu'au jour où c'est toi qui entres les mauvais chiffres. Vérifie toujours par un relèvement visuel."
+>
+> Deuxième essai : waypoint corrigé, relèvement confirmé, route dégagée. Le chartplotter, qui avait gelé pendant la correction, redémarre enfin. Emmanuel grommelle. "*Ce truc me sort par les yeux.* Toi tu gardes le compas à main." William sourit en le relançant en trente secondes.
 
 ## Le point estimé (Dead Reckoning / DR)
 

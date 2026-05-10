@@ -12,15 +12,15 @@ updated: 2026-05-07
 > [SCENE]
 > **Vendredi matin, 9h00. Butterfly Valley, départ.**
 >
-> L'Imbat annoncé par Mehmet arrive à l'heure. 10 nœuds d'abord, doux, du sud-ouest. Rebecca est excitée. "On essaie à la voile ?"
+> L'Imbat arrive à l'heure. 10 nœuds d'abord, doux, du sud-ouest. Rebeca est sur le pont avant, prête à haquer la drisse. "On essaie à la voile ?"
 >
-> Mehmet hisse la grand-voile puis déroule le génois. Le *Deniz Rüzgarı* hésite une seconde, puis la toile prend le vent. Le bruit du moteur disparaît. Le bateau glisse. Emmanuel tient la barre en souriant — c'est son moment.
+> "Rebeca, tu tiens cette drisse — ne la lâche qu'à mon ordre," dit Emmanuel. Il oriente le bateau face au vent. Rebeca tire, main sur main, la grand-voile monte. Puis Emmanuel déroule le génois. Le *Deniz Rüzgarı* hésite une seconde, puis la toile prend le vent. Le bruit du moteur disparaît. Le bateau glisse. Emmanuel tient la barre en souriant — c'est son moment.
 >
-> "C'est silencieux," dit Christelle, surprise.
+> "C'est silencieux," dit Christelle, surprise. Elle pose la main sur le bastingage. "On sent le bateau vivre différemment."
 >
-> Rebecca, les bras écartés sur la filière de l'avant : "Maintenant ça ressemble à quelque chose. En Martinique, on avait fait une sortie à la voile — mais on était passagers."
+> Rebeca, les bras écartés, s'appuie sur la filière. "*¡Qué lindo!* — comment on dit ça ? *Comme c'est joli ?*" William, depuis le cockpit : "Exactement ça."
 >
-> "C'est tout l'inverse du moteur," dit Mehmet. "Avec la voile, tu n'avances pas *malgré* le vent. Tu avances *grâce* à lui. Même contre lui — si tu sais comment."
+> "C'est tout l'inverse du moteur," dit Emmanuel. "Avec la voile, tu n'avances pas *malgré* le vent. Tu avances *grâce* à lui. Même contre lui — si tu sais comment."
 
 ## Pourquoi la voile fonctionne
 

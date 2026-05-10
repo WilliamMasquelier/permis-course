@@ -16,7 +16,7 @@ updated: 2026-05-07
 >
 > "Qui passe en premier ?" demande William.
 >
-> Emmanuel croise les bras, satisfait. "C'est exactement la bonne question. Pose le bateau en mode 'attente', observe, et réfléchis. On a le temps." Mehmet approuve d'un signe de tête. Rebecca, depuis le roof : "En Martinique, le bateau de charter faisait juste klaxonner jusqu'à ce que les autres s'écartent." Silence poli du cockpit.
+> Emmanuel croise les bras, satisfait. "C'est exactement la bonne question. Pose le bateau en mode 'attente', observe, et réfléchis. On a le temps." Rebeca est sur le roof, en mode équipière — elle tient le taquet de l'écoute de génois, attentive. "Et si on klaxonne ?" Emmanuel : "On peut. Cinq sons brefs. Mais ça ne remplace pas de savoir qui cède. Le signal, c'est pour dire ce qu'on va faire — pas pour forcer l'autre à réagir." Rebeca hoche la tête. "*Vale.*"
 
 ## Pourquoi des règles de barre ?
 

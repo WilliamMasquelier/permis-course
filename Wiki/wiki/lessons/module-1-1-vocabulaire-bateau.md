@@ -12,9 +12,9 @@ updated: 2026-05-07
 > [SCENE]
 > **Dimanche soir, ponton F, Göcek Marina.**
 >
-> Mehmet, le capitaine du gulet voisin, accepte de faire visiter le *Deniz Rüzgarı*. Il pose la main sur l'étrave et regarde William. "Avant de parler de règles ou de cartes, tu dois connaître ton bateau comme ta maison. Chaque cordage a un nom. Chaque partie a une fonction. Si tu cries le mauvais mot dans une manœuvre, quelqu'un peut se blesser."
+> Emmanuel pose la main sur l'étrave et regarde William. "Avant de parler de règles ou de cartes, tu dois connaître ton bateau comme ta maison. Chaque cordage a un nom. Chaque partie a une fonction. Si tu cries le mauvais mot dans une manœuvre, quelqu'un peut se blesser."
 >
-> Emmanuel lève la main. "Tribord c'est le côté droit ?" Mehmet sourit. "Droit en regardant vers l'avant. Et rouge pour bâbord, vert pour tribord — comme les feux." Il tapote la coque. "Maintenant, montez. On va tout nommer." Rebecca, depuis le cockpit : "Sur les catamarans en charter aux Bahamas, il y a un aide à bord qui explique tout ça." Emmanuel : "Ici, c'est William qui explique."
+> Christelle lève la main. "Tribord c'est le côté droit ?" Emmanuel sourit. "Droit en regardant vers l'avant. Et rouge pour bâbord, vert pour tribord — comme les feux de nuit." Il tapote la coque. "Montez tous. On va tout nommer." Rebeca, depuis le cockpit, lève les yeux de son carnet de croquis. "Emmanuel, tu peux me montrer encore le nœud de chaise ? Je l'ai presque — la boucle, le lapin sort du trou… *espera*, je me trompe à chaque fois sur le 'autour de l'arbre'."
 
 ## Le vocabulaire de base
 
@@ -133,13 +133,13 @@ Voir [[concepts/cordages-noeuds]], [[concepts/pratique-noeuds-marins]].
 > **C)** Le côté gauche en regardant vers l'arrière (la poupe)
 > **Réponse:** B — Bâbord est le côté gauche du bateau quand on regarde vers l'avant (la proue). C est un piège classique : si vous vous retournez, votre gauche devient la droite du bateau — mais bâbord reste fixe, côté gauche de l'axe. Bâbord = rouge ; tribord = vert.
 >
-> **Question 2 :** Mehmet demande à William de "hisser le génois". Quel cordage doit-il manœuvrer ?
+> **Question 2 :** Emmanuel demande à William de "hisser le génois". Quel cordage doit-il manœuvrer ?
 > **A)** L'écoute de génois — elle règle l'orientation de la voile
 > **B)** La drisse de génois — elle monte la voile le long de l'étai
 > **C)** Le cunningham — il règle la tension du guindant de la voile
-> **Réponse:** B — La drisse (du verbe "hisser") monte la voile verticalement. L'écoute règle ensuite l'angle de la voile par rapport au vent. Le cunningham est un contrôle de coupe qui tend le guindant, pas un cordage de levage. Sur le *Deniz Rüzgarı*, chaque voile a sa propre drisse et sa propre écoute.
+> **Réponse:** B — La drisse (du verbe "hisser") monte la voile verticalement. L'écoute règle ensuite l'angle de la voile par rapport au vent. Le cunningham est un contrôle de coupe qui tend le guindant, pas un cordage de levage. Sur le *Deniz Rüzgarı*, chaque voile a sa propre drisse et sa propre écoute. Rebeca, qui avait noté "*driza*" dans son carnet, sourit : "Drisse, *driza*… *tiene sentido*."
 >
-> **Question 3 :** William doit fixer une défense à la filière rapidement. Quel nœud Mehmet lui recommande-t-il pour un usage provisoire ?
+> **Question 3 :** William doit fixer une défense à la filière rapidement. Quel nœud Emmanuel lui recommande-t-il pour un usage provisoire ?
 > **A)** Le nœud de chaise (bowline) — crée une boucle fixe non coulissante
 > **B)** Le nœud de cabestan (clove hitch) — rapide, réglable, facile à défaire
 > **C)** Le tour mort et deux demi-clés — pour les amarrages permanents sous charge
@@ -152,6 +152,6 @@ Voir [[concepts/cordages-noeuds]], [[concepts/pratique-noeuds-marins]].
 > **Réponse:** A — Sur un ketch, le mât d'artimon (mizzenmast) est en avant ou sur l'axe du gouvernail — il est plus grand et plus visible. Sur un yawl, ce mât est en arrière du safran, donc très petit. Le sloop n'a qu'un mât. Sur le *Deniz Rüzgarı*, le mât d'artimon porte la voile d'artimon crème visible depuis le ponton.
 
 > [TRANSITION]
-> "Maintenant tu connais le bateau," dit Mehmet en sautant sur le ponton. "Demain matin, on sort. Et là-bas dans le chenal, il y a des bateaux qui arrivent de partout. Qui passe en premier ?" William note quelque chose sur son téléphone — sa façon de tout documenter, vieille habitude de consultant. Emmanuel : "Bonne question. C'est exactement ce que l'examen va demander."
+> "Maintenant tu connais le bateau," dit Emmanuel. "Demain matin, on sort. Et là-bas dans le chenal, il y a des bateaux qui arrivent de partout. Qui passe en premier ?" William note quelque chose dans son carnet — sa façon de tout documenter, vieille habitude de consultant. Rebeca, depuis le cockpit, tient la cordelette d'une défense. "Nœud de cabestan pour ça, c'est ça ?" Emmanuel approuve d'un signe de tête. "Bonne question. C'est exactement ce que l'examen va demander."
 >
 > **Session 1.2 — Les Règles de Barre : priorités, croisements, rattrapage.**
