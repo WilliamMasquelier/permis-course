@@ -16,7 +16,10 @@ updated: 2026-05-07
 >
 > Tout est en ordre. Il signe, tamponne, sourit.
 >
-> Quand il repart, Emmanuel dit : "Donc même en vacances, la paperasse nous suit." Rebecca : "En Martinique, c'est beaucoup plus détendu — le gendarme vérifie juste les passeports." William : "Les documents, c'est aussi la sécurité. Le transit log, c'est ce qui permet aux secours de savoir qu'on est dans le coin si on disparaît." Christelle approuve silencieusement.
+> Quand il repart, Emmanuel dit : "Donc même en vacances, la paperasse nous suit." Rebeca : "En Martinique, c'est beaucoup plus détendu — le gendarme vérifie juste les passeports." William : "Les documents, c'est aussi la sécurité. Le transit log, c'est ce qui permet aux secours de savoir qu'on est dans le coin si on disparaît." Christelle approuve silencieusement.
+
+> [ATTENTION]
+> **Le défaut de papiers ne pardonne pas.** Le permis, la carte de circulation, l'assurance, le pavillon, la radio (si VHF) — un contrôle en mer qui constate un défaut peut se solder par immobilisation immédiate du bateau et amende jusqu'à 1 500 €. Les originaux ou copies certifiées doivent être à bord. La photocopie pliée dans un sac ziplock est une bonne idée.
 
 ## Les documents obligatoires du bateau
 
@@ -55,7 +58,7 @@ En France, un bateau de plaisance doit avoir à bord un ensemble de documents qu
 
 **Le carnet de bord** n'est pas légalement obligatoire pour les plaisanciers côtiers, mais il est exigé par certaines assurances et fortement recommandé : en cas d'accident, c'est la preuve de votre navigation (cap, position, météo, manœuvres).
 
-Voir [[concepts/documents-bord]].
+Voir [[concepts/documents-bord]], [[concepts/checklist-depart]], [[entities/equipement-gilet]], [[entities/extincteur-co2]].
 
 ## Le permis côtier — structure et validité
 
@@ -190,6 +193,6 @@ La bande des 300 mètres reste réglementée la nuit — la vitesse limite de 5 
 > **Réponse:** B — L'interdiction de circulation des engins à moteur s'applique aux zones de baignade officiellement délimitées et signalisées par des bouées (zones surveillées). Hors de ces zones balisées, la bande des 300 mètres est en "vitesse réduite 5 nœuds" mais pas interdite. La réglementation varie selon les arrêtés préfectoraux locaux.
 
 > [TRANSITION]
-> Mercredi matin, dernier jour. Dernier mouillage avant le retour à Fethiye puis Göcek. L'ancre remonte dans la lumière du matin. Une semaine de navigation. William est à la barre. Rebecca, à côté de lui pour la première fois, tient le winch. Elle n'a rien demandé — elle a juste attrapé la manivelle. Emmanuel remarque, ne dit rien. Christelle prend une photo. Tout ce que William a appris, il l'a vécu. Il reste une chose à faire : l'examen blanc.
+> Mercredi matin, dernier jour. Dernier mouillage avant le retour à Fethiye puis Göcek. L'ancre remonte dans la lumière du matin. Une semaine de navigation. William est à la barre. Rebeca, à côté de lui pour la première fois, tient le winch. Elle n'a rien demandé — elle a juste attrapé la manivelle. Emmanuel remarque, ne dit rien. Christelle prend une photo. Tout ce que William a appris, il l'a vécu. Il reste une chose à faire : l'examen blanc.
 >
 > **Session 7.0 — Épilogue et Examen Blanc : récapitulatif du voyage et 40 questions.**

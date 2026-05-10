@@ -108,7 +108,7 @@ Voir [[concepts/accostage-amarrage]].
 
 **Le pivot point :** À vitesse réduite, le bateau pivote autour d'un point situé environ 1/3 depuis l'avant. Cela signifie que quand la proue tourne à droite, la poupe part à gauche d'une amplitude 2× plus grande. En marina, anticipez toujours le balayage de la poupe.
 
-Voir [[concepts/moteur-pratique]].
+Voir [[concepts/moteur-pratique]], [[concepts/accostage-amarrage]], [[concepts/manoeuvre-voile-base]], [[concepts/voilier-vs-moteur]], [[concepts/securite-carburant-et-moteur]].
 
 > [EXEMPLE GOLFE]
 > **Entrée dans la marina de Göcek (D-Marin Göcek) :**

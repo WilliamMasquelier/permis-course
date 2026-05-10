@@ -34,7 +34,7 @@ C'est ce mécanisme de **portance** qui permet à un voilier de remonter presque
 
 **La zone interdite (no-go zone) :** À moins de 35-40° du vent, l'angle d'attaque devient trop grand, la voile décroche (stall) et ne génère plus de portance. Impossible de remonter plus près du vent — le bateau ralentit et ne répond plus à la barre. Cette zone s'appelle le "près débout" ou simplement "face au vent".
 
-Voir [[concepts/voile-theorie-base]].
+Voir [[concepts/voile-theorie-base]], [[concepts/voile-trim-efficace]], [[concepts/cap-route-derive]], [[concepts/manoeuvre-voile-base]].
 
 ## Les allures
 

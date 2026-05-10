@@ -22,6 +22,9 @@ updated: 2026-05-07
 >
 > "En mer réelle, avec de la houle, c'est encore plus difficile. Votre cerveau panique. D'où les procédures — elles court-circuitent la panique."
 
+> [ATTENTION]
+> **Un MAYDAY n'attend pas.** Hésiter à émettre par peur du ridicule a tué plus de plaisanciers que les fausses alertes. La règle est simple : si vous croyez votre vie, votre bateau ou un équipier en danger immédiat — vous émettez. Les autorités préfèrent 100 fausses alertes à 1 vraie tardive.
+
 ## Homme à la mer (HAM / MOB)
 
 L'homme à la mer (HAM) est l'urgence la plus fréquente en plaisance et l'une des plus mortelles. Les statistiques sont claires : dans la majorité des accidents, la victime était un marin expérimenté, tombé pendant une manœuvre banale. La vigilance permanente, l'utilisation du harnais la nuit et par mer forte, et la connaissance des procédures de récupération sont les trois défenses.
