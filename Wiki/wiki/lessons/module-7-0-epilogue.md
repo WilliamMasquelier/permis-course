@@ -18,7 +18,7 @@ updated: 2026-05-07
 >
 > Il sourit. "Je commence à l'être."
 >
-> Rebeca arrive à son tour. Elle s'assoit à côté de lui, sans parler. Elle regarde l'eau. Puis : "La prochaine fois, on va aux Bahamas, et c'est moi qui t'explique les courants." C'est la meilleure chose qu'elle a dite de tout le voyage.
+> Rebeca arrive à son tour, son carnet de croquis sous le bras. Elle s'assoit à côté de lui et l'ouvre à la dernière page — une aquarelle inachevée du *Deniz Rüzgarı* vu depuis Hamam Koyu, à l'aube. "C'est ton bateau," dit-elle. "*Mira* — je t'ai mis à la barre." Puis, avec un sourire malicieux : "La prochaine fois, on va en République dominicaine — et c'est *toi* qui m'apprends à barrer un voilier."
 >
 > La marina de Göcek apparaît à tribord. Encore une heure. William sort son carnet et commence à relire ses notes.
 

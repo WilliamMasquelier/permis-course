@@ -182,6 +182,6 @@ Voir [[concepts/navigation-relevements]].
 > **Réponse:** B — La variation magnétique (ou déclinaison magnétique) est le décalage entre le nord vrai (géographique) et le nord magnétique, donné par la rose des vents de la carte. Elle est propre à chaque endroit du globe et varie lentement avec le temps (dérive séculaire). La déviation est l'erreur propre au compas du bateau, due aux masses ferriques ou électroniques à bord.
 
 > [TRANSITION]
-> Cap sur Ölüdeniz. À mi-chemin, Emmanuel observe la mer, pensif. "Elle est belle et calme. Mais si on était à Brest, à cette heure-ci, il faudrait vérifier la marée avant de partir..." Rebeca, depuis l'arrière : "Aux Bahamas non plus il n'y a presque pas de marée — la mer des Caraïbes est comme ça." Emmanuel se retourne, surpris. "Vraiment ?" William sourit. "Exactement — première fois depuis le départ que vous trouvez un point commun. Justement. Parlons marées."
+> Cap sur Ölüdeniz. À mi-chemin, Emmanuel observe la mer, pensif. "Elle est belle et calme. Mais si on était à Brest, à cette heure-ci, il faudrait vérifier la marée avant de partir..." Rebeca, pinceau en main sur le pont avant, lève la tête : "*La marée* — c'est *la marea* en espagnol, presque le même mot. Vous avez ça en Bretagne ? Ici, l'eau monte de combien ?" William sourit : "Vingt centimètres ici. Huit mètres à Brest. C'est *exactement* le sujet du jour. Parlons marées."
 >
 > **Session 3.2 — Marées et Courants : hauteurs, règle des douzièmes, losanges de courant.**

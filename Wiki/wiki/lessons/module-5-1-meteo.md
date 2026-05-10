@@ -68,6 +68,12 @@ Savoir identifier les nuages est l'un des outils les plus anciens et les plus fi
 
 ![[meteo-depression-frontale.svg]]
 
+**Sur une carte synoptique — comment ça se lit :**
+
+![[synoptic-chart-fronts.svg|Carte synoptique simplifiée — dépression avec front chaud et front froid]]
+
+*Une carte synoptique condense en un coup d'œil l'état de l'atmosphère. Le **L** marque le centre de la dépression (basse pression). Les **isobares** concentriques montrent le gradient de pression — plus elles sont serrées, plus le vent est fort. Le **front chaud** (ligne rouge à demi-cercles) précède la dépression ; le **front froid** (ligne bleue à triangles) la suit, et rattrape souvent le front chaud pour former une **occlusion**. Entre les deux fronts, le **secteur chaud** apporte un répit relatif. À l'arrière du front froid : air froid, ciel clair, grains résiduels.*
+
 Voir [[concepts/meteorologie-marine]], [[concepts/securite-meteo-et-pression]].
 
 ## L'échelle de Beaufort

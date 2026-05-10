@@ -68,6 +68,12 @@ La règle cardinale de toute manœuvre en marina : **approchez toujours contre l
 
 **Contrôle de la vitesse :** N'entrez jamais dans une marina à plus de 3 nœuds. Des courtes impulsions en marche arrière permettent de contrôler finement la décélération. Un bateau qui stoppe trop vite est difficile à positionner ; un bateau qui arrive trop vite est dangereux.
 
+**Amarrage à couple — les six aussières :** Le cas classique du quai. Six lignes assurent la tenue du bateau dans tous les axes — deux pointes (avant, arrière), deux gardes (montante, descendante), et au besoin deux traversières.
+
+![[amarrage-spring-lines.svg|Amarrage à quai — pointes, gardes montante et descendante]]
+
+*Les pointes empêchent le bateau de s'éloigner du quai. Les **gardes** (springs) empêchent le mouvement avant-arrière le long du quai — c'est ce qui retient le bateau quand vent ou houle poussent dans l'axe. Sans gardes, le bateau « marche » et frappe les voisins. Règle : poser les gardes en premier, juste après le contact avec les défenses.*
+
 **Amarrage méditerranéen (stern-to) :** La technique standard des ports méditerranéens pour optimiser l'espace :
 1. Approchez le poste par l'avant, mouillez l'ancre à 30-40 mètres du quai.
 2. Faites marche arrière lentement vers le quai.
@@ -100,6 +106,10 @@ Voir [[concepts/accostage-amarrage]].
 ## Manœuvre au moteur — effets du gouvernail et de l'hélice
 
 **L'effet de couple (*propeller walk*) :** Une hélice à pas fixe tourne dans un sens. En marche avant, son axe de rotation génère une force latérale négligeable — le gouvernail compense facilement. En **marche arrière**, cette force latérale devient significative : une hélice à rotation droite (la plus commune) pousse la poupe vers **bâbord** quand on recule.
+
+![[prop-walk.svg|Effet de couple — hélice à droite en marche arrière, la poupe descend à bâbord]]
+
+*Vue de dessus : en marche arrière, l'hélice à rotation droite brasse l'eau vers bâbord, ce qui pousse la poupe dans la même direction. L'étrave pivote alors vers tribord. Tournez ce biais en avantage : pour faire demi-tour à droite en espace réduit, alternez court coup d'avant gouvernail à droite + court coup d'arrière (la poupe « tombe » à bâbord, l'étrave continue son virage à tribord).*
 
 **Exploiter l'effet de couple :** Pour tourner en espace réduit tribord :
 - Courte impulsion en marche arrière → la poupe dérive à bâbord → la proue tourne à tribord.

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Effet de couple — la poupe descend à bâbord en marche arrière">
+  <defs>
+    <marker id="pwArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#ef4444"/></marker>
+    <marker id="pwArrTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#0d7377"/></marker>
+    <marker id="pwArrGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#666"/></marker>
+  </defs>
+  <rect width="800" height="500" fill="#d4ecf7"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <text x="400" y="35" text-anchor="middle" fill="#1a2e4a" font-size="22" font-weight="700">Effet de couple — Hélice à droite, marche arrière</text>
+    <text x="400" y="58" text-anchor="middle" fill="#1a2e4a" font-size="14">Vue de dessus — la poupe « descend » à bâbord</text>
+
+    <!-- Compass: bow up = forward -->
+    <g transform="translate(60,90)">
+      <circle r="36" fill="#fff" stroke="#1a2e4a" stroke-width="1.5"/>
+      <text y="-22" text-anchor="middle" fill="#1a2e4a" font-size="11" font-weight="700">Avant</text>
+      <text y="32" text-anchor="middle" fill="#1a2e4a" font-size="11" font-weight="700">Arrière</text>
+      <text x="-30" y="3" fill="#ef4444" font-size="11" font-weight="700">Bâbord</text>
+      <text x="12" y="3" fill="#16a34a" font-size="11" font-weight="700">Tribord</text>
+    </g>
+
+    <!-- Boat hull (top-down, bow up) -->
+    <g transform="translate(400,260)">
+      <!-- Hull outline -->
+      <path d="M -40 -120 Q -50 -60 -45 60 Q -40 110 0 130 Q 40 110 45 60 Q 50 -60 40 -120 Q 0 -135 -40 -120 Z"
+            fill="#fff" stroke="#1a2e4a" stroke-width="2.5"/>
+      <!-- Cockpit -->
+      <rect x="-22" y="40" width="44" height="55" rx="4" fill="#cbd5e1" stroke="#1a2e4a" stroke-width="1"/>
+      <!-- Mast -->
+      <circle cx="0" cy="-30" r="5" fill="#1a2e4a"/>
+      <!-- Rudder -->
+      <rect x="-3" y="125" width="6" height="22" fill="#1a2e4a"/>
+      <!-- Propeller -->
+      <circle cx="0" cy="115" r="9" fill="none" stroke="#0d7377" stroke-width="2"/>
+      <path d="M -7 108 L 7 122 M 7 108 L -7 122" stroke="#0d7377" stroke-width="2"/>
+      <text x="20" y="118" fill="#0d7377" font-size="11" font-weight="700">Hélice</text>
+
+      <!-- Rotation arrow (clockwise viewed from astern = counter-clockwise top-down) -->
+      <path d="M -16 115 A 16 16 0 1 0 16 115" fill="none" stroke="#0d7377" stroke-width="2" stroke-dasharray="3 2" marker-end="url(#pwArrTeal)"/>
+
+      <!-- Stern walks to port (left) -->
+      <path d="M 0 130 L -90 150" stroke="#ef4444" stroke-width="3.5" marker-end="url(#pwArr)"/>
+      <text x="-130" y="170" fill="#ef4444" font-size="13" font-weight="700">Poupe à bâbord</text>
+
+      <!-- Bow swings to starboard (right) -->
+      <path d="M 0 -130 Q 35 -125 60 -100" stroke="#0d7377" stroke-width="3" stroke-dasharray="6 3" marker-end="url(#pwArrTeal)"/>
+      <text x="68" y="-110" fill="#0d7377" font-size="12" font-weight="700">Étrave à tribord</text>
+
+      <!-- Reverse direction arrow (boat moving up on page = astern) -->
+      <path d="M -65 0 L -65 -80" stroke="#666" stroke-width="2" marker-end="url(#pwArrGray)"/>
+      <text x="-115" y="-35" fill="#666" font-size="11" font-weight="700">Marche</text>
+      <text x="-115" y="-22" fill="#666" font-size="11" font-weight="700">arrière</text>
+    </g>
+
+    <!-- Legend / explanation -->
+    <g transform="translate(560,120)">
+      <rect width="220" height="180" rx="6" fill="#fff" stroke="#1a2e4a" stroke-width="1"/>
+      <text x="110" y="22" text-anchor="middle" fill="#1a2e4a" font-size="13" font-weight="700">Pourquoi ?</text>
+      <text x="12" y="45" fill="#1a2e4a" font-size="11">L'hélice tournant à</text>
+      <text x="12" y="60" fill="#1a2e4a" font-size="11">droite (vue de l'arrière)</text>
+      <text x="12" y="75" fill="#1a2e4a" font-size="11">brasse l'eau vers tribord</text>
+      <text x="12" y="90" fill="#1a2e4a" font-size="11">en marche avant.</text>
+      <text x="12" y="115" fill="#1a2e4a" font-size="11" font-weight="700">En marche arrière :</text>
+      <text x="12" y="130" fill="#1a2e4a" font-size="11">elle brasse vers bâbord —</text>
+      <text x="12" y="145" fill="#1a2e4a" font-size="11">la poupe « tombe » à bâbord</text>
+      <text x="12" y="160" fill="#ef4444" font-size="11" font-weight="700">→ utiliser ce biais en marina</text>
+    </g>
+  </g>
+</svg>

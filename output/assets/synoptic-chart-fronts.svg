@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-label="Carte synoptique simplifiée — dépression avec front chaud et front froid">
+  <defs>
+    <marker id="syArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#1a2e4a"/></marker>
+    <!-- Warm front: red semicircles on the line, pointing in direction of travel -->
+    <pattern id="warmFront" patternUnits="userSpaceOnUse" width="30" height="14">
+      <path d="M 0 14 L 30 14" stroke="#ef4444" stroke-width="3" fill="none"/>
+      <path d="M 8 14 A 6 6 0 0 1 22 14" fill="#ef4444" stroke="none"/>
+    </pattern>
+    <pattern id="coldFront" patternUnits="userSpaceOnUse" width="30" height="14">
+      <path d="M 0 14 L 30 14" stroke="#2563eb" stroke-width="3" fill="none"/>
+      <path d="M 10 14 L 16 4 L 22 14 Z" fill="#2563eb" stroke="none"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="540" fill="#d4ecf7"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <text x="400" y="32" text-anchor="middle" fill="#1a2e4a" font-size="22" font-weight="700">Carte synoptique — Dépression frontale</text>
+    <text x="400" y="55" text-anchor="middle" fill="#1a2e4a" font-size="13">Hémisphère nord — vents tournent dans le sens inverse des aiguilles d'une montre autour du « L »</text>
+
+    <!-- Isobars (concentric ovals around L) -->
+    <g fill="none" stroke="#1a2e4a" stroke-width="1.2">
+      <ellipse cx="380" cy="280" rx="60" ry="42"/>
+      <ellipse cx="380" cy="280" rx="105" ry="78"/>
+      <ellipse cx="380" cy="280" rx="160" ry="120"/>
+      <ellipse cx="380" cy="280" rx="225" ry="170"/>
+      <ellipse cx="380" cy="280" rx="290" ry="220"/>
+    </g>
+    <!-- Isobar labels -->
+    <text x="380" y="285" text-anchor="middle" fill="#ef4444" font-size="32" font-weight="700">L</text>
+    <text x="380" y="305" text-anchor="middle" fill="#1a2e4a" font-size="11" font-weight="700">988 hPa</text>
+    <text x="453" y="285" fill="#1a2e4a" font-size="10">992</text>
+    <text x="500" y="285" fill="#1a2e4a" font-size="10">996</text>
+    <text x="555" y="285" fill="#1a2e4a" font-size="10">1000</text>
+    <text x="620" y="285" fill="#1a2e4a" font-size="10">1004</text>
+
+    <!-- Cold front: from L going SW -->
+    <g transform="translate(0,0)">
+      <line x1="380" y1="280" x2="180" y2="430" stroke="#2563eb" stroke-width="3"/>
+      <!-- Triangles along line, pointing perpendicular outward (SE) -->
+      <g fill="#2563eb">
+        <polygon points="345,306 358,316 351,328"/>
+        <polygon points="305,336 318,346 311,358"/>
+        <polygon points="265,366 278,376 271,388"/>
+        <polygon points="225,396 238,406 231,418"/>
+      </g>
+    </g>
+
+    <!-- Warm front: from L going SE -->
+    <g>
+      <line x1="380" y1="280" x2="600" y2="400" stroke="#ef4444" stroke-width="3"/>
+      <!-- Semicircles along line, on outward (SW) side -->
+      <g fill="#ef4444">
+        <circle cx="420" cy="305" r="6"/>
+        <circle cx="465" cy="330" r="6"/>
+        <circle cx="510" cy="356" r="6"/>
+        <circle cx="555" cy="380" r="6"/>
+      </g>
+    </g>
+
+    <!-- High pressure to the east -->
+    <text x="710" y="200" text-anchor="middle" fill="#16a34a" font-size="28" font-weight="700">H</text>
+    <text x="710" y="220" text-anchor="middle" fill="#1a2e4a" font-size="11">1024 hPa</text>
+
+    <!-- Wind arrows around L (counter-clockwise) -->
+    <g stroke="#1a2e4a" stroke-width="2" fill="none">
+      <path d="M 380 130 L 470 145" marker-end="url(#syArr)"/>
+      <path d="M 540 220 L 555 290" marker-end="url(#syArr)"/>
+      <path d="M 540 360 L 460 410" marker-end="url(#syArr)"/>
+      <path d="M 280 425 L 200 380" marker-end="url(#syArr)"/>
+      <path d="M 195 270 L 215 180" marker-end="url(#syArr)"/>
+    </g>
+
+    <!-- Sector labels -->
+    <text x="100" y="200" fill="#2563eb" font-size="12" font-weight="700">Air froid</text>
+    <text x="100" y="216" fill="#2563eb" font-size="10">(arrière du front froid)</text>
+    <text x="600" y="190" fill="#ef4444" font-size="12" font-weight="700">Air chaud</text>
+    <text x="600" y="206" fill="#ef4444" font-size="10">(secteur chaud)</text>
+
+    <!-- Legend -->
+    <g transform="translate(40,460)">
+      <rect width="720" height="60" rx="6" fill="#fff" stroke="#1a2e4a" stroke-width="1"/>
+      <line x1="20" y1="22" x2="80" y2="22" stroke="#ef4444" stroke-width="3"/>
+      <circle cx="35" cy="22" r="5" fill="#ef4444"/>
+      <circle cx="55" cy="22" r="5" fill="#ef4444"/>
+      <text x="92" y="26" fill="#1a2e4a" font-size="11" font-weight="700">Front chaud</text>
+      <text x="92" y="42" fill="#1a2e4a" font-size="10">cirrus → cirro-stratus → alto-stratus → nimbo-stratus, pluie continue</text>
+
+      <line x1="380" y1="22" x2="440" y2="22" stroke="#2563eb" stroke-width="3"/>
+      <polygon points="397,22 405,12 413,22" fill="#2563eb"/>
+      <polygon points="420,22 428,12 436,22" fill="#2563eb"/>
+      <text x="450" y="26" fill="#1a2e4a" font-size="11" font-weight="700">Front froid</text>
+      <text x="450" y="42" fill="#1a2e4a" font-size="10">cumulonimbus, grains, vent fort, bascule brutale du vent</text>
+    </g>
+  </g>
+</svg>

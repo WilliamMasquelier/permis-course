@@ -16,7 +16,7 @@ updated: 2026-05-07
 >
 > Tout est en ordre. Il signe, tamponne, sourit.
 >
-> Quand il repart, Emmanuel dit : "Donc même en vacances, la paperasse nous suit." Rebeca : "En Martinique, c'est beaucoup plus détendu — le gendarme vérifie juste les passeports." William : "Les documents, c'est aussi la sécurité. Le transit log, c'est ce qui permet aux secours de savoir qu'on est dans le coin si on disparaît." Christelle approuve silencieusement.
+> Quand il repart, Emmanuel dit : "Donc même en vacances, la paperasse nous suit." Rebeca, qui a sorti son carnet de croquis pendant l'inspection, montre une esquisse rapide du douanier en uniforme : "Il avait une tête à dessiner, *qué cara tan amable*." William, plus terre-à-terre : "Les documents, c'est aussi la sécurité. Le *transit log*, c'est ce qui permet aux secours de savoir qu'on est dans le coin si on disparaît." Christelle approuve silencieusement.
 
 > [ATTENTION]
 > **Le défaut de papiers ne pardonne pas.** Le permis, la carte de circulation, l'assurance, le pavillon, la radio (si VHF) — un contrôle en mer qui constate un défaut peut se solder par immobilisation immédiate du bateau et amende jusqu'à 1 500 €. Les originaux ou copies certifiées doivent être à bord. La photocopie pliée dans un sac ziplock est une bonne idée.

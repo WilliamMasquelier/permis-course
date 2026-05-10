@@ -148,25 +148,13 @@ Ce fichier recense les diagrammes, schémas et illustrations qui enrichiraient l
 ## Phase 5 — Improvement plan visual gaps (2026-05-10)
 
 ### V1 — Prop-walk diagram (lesson 4-2)
-- **Description**: Top-down view of right-hand propeller in reverse, showing stern walk to port and bow swing to starboard.
-- **Preferred source**: Wikimedia Commons ("propeller walk", "prop walk diagram sailboat"). Check CC-BY/CC-BY-SA licence before embedding.
-- **Fallback**: Author SVG (~200 lines).
-- **Priority**: medium
-- **Status**: TODO — needs online sourcing
+- **Status**: ✅ DONE — `Wiki/assets/images/prop-walk.svg` (authored SVG, embedded in module-4-2 after the *propeller walk* explanation).
 
 ### V2 — Spring-line docking diagram (lesson 4-2)
-- **Description**: Boat at dock showing head spring, stern spring, and breast lines labeled with wind arrow.
-- **Preferred source**: Wikimedia Commons ("spring line docking diagram").
-- **Fallback**: Author SVG.
-- **Priority**: medium
-- **Status**: TODO — needs online sourcing
+- **Status**: ✅ DONE — `Wiki/assets/images/amarrage-spring-lines.svg` (authored SVG, embedded in module-4-2 in the new "Amarrage à couple" section).
 
 ### V3 — Hand-drawn passage plan (lesson 3-4)
-- **Description**: Fethiye–Butterfly Valley route with waypoints, danger circles, and clearing bearings.
-- **Preferred source**: OpenSeaMap CC-BY-SA screenshot of Fethiye area, annotated with SVG overlay.
-- **Fallback**: Author SVG.
-- **Priority**: high
-- **Status**: TODO — needs sourcing/authoring
+- **Status**: ✅ DONE — `Wiki/assets/images/passage-plan-butterfly-valley.svg` (authored SVG showing route Ölüdeniz → Butterfly Valley with 3 waypoints, 2 hazards, clearing bearing; embedded at end of pilotage section).
 
 ### V4 — Knot 3-step sequences (lesson 1-1)
 - **Description**: Step-by-step images for the 5 essential knots.
@@ -174,17 +162,10 @@ Ce fichier recense les diagrammes, schémas et illustrations qui enrichiraient l
 - **Status**: ✅ DONE — links embedded in module-1-1 for all 5 knots (cabestan, plat, chaise, tour mort)
 
 ### V5 — Synoptic chart with fronts (lesson 5-1)
-- **Description**: Surface analysis chart showing warm and cold fronts.
-- **Preferred source**: NOAA public-domain surface analysis (https://ocean.weather.gov/Atl_tab.php) or Wikimedia "synoptic chart".
-- **Priority**: medium
-- **Status**: TODO — needs online sourcing
+- **Status**: ✅ DONE — `Wiki/assets/images/synoptic-chart-fronts.svg` (authored SVG simplifying NOAA surface analysis: L centre, isobares, front chaud + front froid + secteur chaud, embedded in module-5-1 after Buys-Ballot rule).
 
 ### V6 — Skipper POV navigation lights at night (lesson 1-3)
-- **Description**: 4-panel grid showing what nav lights are visible from different relative positions, with COLREGs interpretation.
-- **Preferred source**: Wikimedia "navigation lights at sea night view".
-- **Fallback**: Author SVG 4-panel grid.
-- **Priority**: medium
-- **Status**: TODO — needs online sourcing or SVG authoring
+- **Status**: ✅ DONE — `Wiki/assets/images/feux-vue-skipper.svg` (authored SVG 4-panel grid: red+white, green+white, head-on motor, head-on sailboat, with COLREGs verdict on each panel; embedded in module-1-3 before the technical sector schematic).
 
 ### V7 — MOB diagrams (lesson 5-3)
 - **Status**: ✅ DONE — mob-reach-turn-reach.svg and mob-crash-stop.svg both embedded with captions in module-5-3

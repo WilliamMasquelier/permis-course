@@ -76,6 +76,12 @@ L'avantage du relèvement de sécurité sur le fix : vous n'avez pas besoin de s
 
 Notez tous vos relèvements de sécurité dans votre plan de navigation avant de quitter le port.
 
+**Exemple appliqué — Ölüdeniz → Butterfly Valley :**
+
+![[passage-plan-butterfly-valley.svg|Plan de navigation appliqué — Ölüdeniz vers Butterfly Valley avec waypoints, dangers et alignement de sécurité]]
+
+*Trois waypoints (départ, porte d'approche, mouillage), deux dangers cerclés (banc à 1,4 m sur la route directe, roches près de la côte), un alignement de sécurité tracé au cap 118° sur un pic visible. La route directe ferait passer le *Deniz Rüzgarı* à 50 mètres du banc — d'où l'intérêt du WP1 au large pour contourner. C'est exactement ce travail de tracé qui transforme une bonne intention en navigation sûre.*
+
 Voir [[concepts/pilotage-cotier]].
 
 ## Transits de guidage

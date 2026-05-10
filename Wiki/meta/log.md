@@ -192,3 +192,7 @@ Tous les chapitres extraits via pdfplumber → `raw/books/yachtmaster-chapters/`
 - Phase 3: 3-2 opening scene compressed to 8 lines. 3-4 expanded to 12 lines with Butterfly Valley approach. [ATTENTION] callouts added to 5-3 (MAYDAY n'attend pas) and 6-2 (défaut de papiers). 3–5 wikilinks added to low-density lessons (1-1, 4-1, 4-2, 5-2, 6-2).
 - Phase 4: 4.1 Compass deviation procedure subsection in 3-1 + compas-deviation.md stub. 4.2 Heavy weather tactics (mise à la cape + fuite devant) in 5-3 replaced with ≤200 word paragraphs. 4.3 Tonnage rule subsection in 1-2. 4.4 Roscoff port secondaire worked example in 3-2.
 - Phase 5: V4 done (5 Animated Knots links in 1-1). V7 done (MOB SVG captions in 5-3). V1–V3, V5–V6 documented as TODO in visual-assets-needed.md with sourcing playbook.
+## REWORK 2026-05-10b (Residual cleanup)
+- Rebeca residual deflation lines rewritten in 3-1, 6-1, 6-2, 7-0 (Painter/Crew/swimmer modes; positive voice)
+- Phase 5 visuals completed: V1 prop-walk, V2 spring lines, V3 Butterfly Valley passage plan, V5 synoptic chart, V6 skipper night POV — all authored as SVGs in Wiki/assets/images/ and embedded in respective lessons (4-2, 4-2, 3-4, 5-1, 1-3)
+

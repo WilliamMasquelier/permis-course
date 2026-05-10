@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Amarrage à quai — gardes montante et descendante">
+  <defs>
+    <marker id="slArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#666"/></marker>
+  </defs>
+  <rect width="800" height="500" fill="#d4ecf7"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+    <text x="400" y="32" text-anchor="middle" fill="#1a2e4a" font-size="22" font-weight="700">Amarrage à quai — les six aussières</text>
+    <text x="400" y="55" text-anchor="middle" fill="#1a2e4a" font-size="13">Vue de profil — les gardes (springs) empêchent le bateau d'avancer ou de reculer le long du quai</text>
+
+    <!-- Quay -->
+    <rect x="40" y="350" width="720" height="100" fill="#9ca3af"/>
+    <line x1="40" y1="350" x2="760" y2="350" stroke="#1a2e4a" stroke-width="2"/>
+    <text x="60" y="430" fill="#fff" font-size="13" font-weight="700">QUAI</text>
+
+    <!-- Bollards on quay -->
+    <g fill="#1a2e4a">
+      <circle cx="120" cy="350" r="6"/>
+      <circle cx="280" cy="350" r="6"/>
+      <circle cx="520" cy="350" r="6"/>
+      <circle cx="680" cy="350" r="6"/>
+    </g>
+
+    <!-- Boat hull (side view, bow right) -->
+    <g transform="translate(400,280)">
+      <path d="M -240 0 L 240 0 Q 270 -10 270 -35 L 240 -55 L -200 -55 Q -240 -55 -260 -30 Z"
+            fill="#fff" stroke="#1a2e4a" stroke-width="2.5"/>
+      <!-- Cabin -->
+      <path d="M -120 -55 L -120 -85 L 100 -85 L 130 -55 Z" fill="#cbd5e1" stroke="#1a2e4a" stroke-width="1.5"/>
+      <!-- Mast -->
+      <line x1="-30" y1="-85" x2="-30" y2="-180" stroke="#1a2e4a" stroke-width="2"/>
+      <!-- Cleats on boat (bow / midship / stern) -->
+      <circle cx="-250" cy="-30" r="4" fill="#1a2e4a"/>
+      <circle cx="0" cy="-55" r="4" fill="#1a2e4a"/>
+      <circle cx="240" cy="-30" r="4" fill="#1a2e4a"/>
+      <text x="-265" y="-12" fill="#1a2e4a" font-size="10" font-weight="700">Poupe</text>
+      <text x="225" y="-12" fill="#1a2e4a" font-size="10" font-weight="700">Étrave</text>
+    </g>
+
+    <!-- Lines (drawn from boat to bollards) -->
+    <!-- 1. Bow line: étrave to forward bollard -->
+    <line x1="640" y1="250" x2="680" y2="350" stroke="#0d7377" stroke-width="2.5"/>
+    <text x="650" y="298" fill="#0d7377" font-size="11" font-weight="700">① Pointe</text>
+    <text x="660" y="312" fill="#0d7377" font-size="11" font-weight="700">avant</text>
+
+    <!-- 2. Stern line: poupe to aft bollard -->
+    <line x1="160" y1="250" x2="120" y2="350" stroke="#0d7377" stroke-width="2.5"/>
+    <text x="80" y="298" fill="#0d7377" font-size="11" font-weight="700">② Pointe</text>
+    <text x="85" y="312" fill="#0d7377" font-size="11" font-weight="700">arrière</text>
+
+    <!-- 3. Forward (head) spring: midship cleat -> aft bollard (prevents going forward) -->
+    <line x1="400" y1="225" x2="280" y2="350" stroke="#ef4444" stroke-width="3"/>
+    <text x="310" y="290" fill="#ef4444" font-size="11" font-weight="700">③ Garde</text>
+    <text x="305" y="304" fill="#ef4444" font-size="11" font-weight="700">montante</text>
+    <text x="305" y="318" fill="#ef4444" font-size="10">(empêche</text>
+    <text x="305" y="330" fill="#ef4444" font-size="10">d'avancer)</text>
+
+    <!-- 4. Aft (back) spring: midship cleat -> forward bollard (prevents going aft) -->
+    <line x1="400" y1="225" x2="520" y2="350" stroke="#ef4444" stroke-width="3"/>
+    <text x="430" y="290" fill="#ef4444" font-size="11" font-weight="700">④ Garde</text>
+    <text x="425" y="304" fill="#ef4444" font-size="11" font-weight="700">descendante</text>
+    <text x="425" y="318" fill="#ef4444" font-size="10">(empêche</text>
+    <text x="425" y="330" fill="#ef4444" font-size="10">de reculer)</text>
+
+    <!-- Wind arrow -->
+    <path d="M 720 100 L 620 130" stroke="#666" stroke-width="2.5" marker-end="url(#slArr)"/>
+    <text x="640" y="90" fill="#666" font-size="12" font-weight="700">Vent / courant</text>
+
+    <!-- Legend box -->
+    <g transform="translate(50,80)">
+      <rect width="240" height="130" rx="6" fill="#fff" stroke="#1a2e4a" stroke-width="1"/>
+      <text x="120" y="22" text-anchor="middle" fill="#1a2e4a" font-size="13" font-weight="700">À retenir</text>
+      <text x="14" y="45" fill="#1a2e4a" font-size="11">• Pointes (1, 2) tiennent</text>
+      <text x="14" y="60" fill="#1a2e4a" font-size="11">  le bateau contre le quai.</text>
+      <text x="14" y="80" fill="#ef4444" font-size="11" font-weight="700">• Gardes (3, 4) empêchent</text>
+      <text x="14" y="95" fill="#ef4444" font-size="11" font-weight="700">  le mouvement avant/arrière.</text>
+      <text x="14" y="115" fill="#1a2e4a" font-size="11">• En vent ou houle, les</text>
+      <text x="14" y="128" fill="#1a2e4a" font-size="11">  gardes font tout le travail.</text>
+    </g>
+  </g>
+</svg>

@@ -32,6 +32,12 @@ Les feux de navigation permettent d'identifier, de nuit ou par visibilité rédu
 
 Les feux de route sont les feux que porte tout navire faisant route (en déplacement). Leur géométrie est conçue pour permettre à un observateur de déduire l'orientation du navire depuis n'importe quel angle.
 
+**Vu depuis votre cockpit la nuit — l'interprétation :** Avant le schéma technique des secteurs, mettez-vous dans la peau du skipper qui voit deux ou trois lumières dans le noir. Quatre cas couvrent 90 % des situations.
+
+![[feux-vue-skipper.svg|Vue du skipper la nuit — quatre cas de feux à interpréter]]
+
+*Quatre cas typiques. Mémo central : si vous voyez son feu **rouge** à votre **tribord**, vous êtes le navire prioritaire (il croise par votre droite — règle 15). Si vous voyez son feu **vert**, c'est l'inverse : vous cédez. Si vous voyez les deux feux de côté en même temps, vous êtes face à face — chacun abat à tribord (règle 14). Pas de feu de tête de mât = voilier sous voiles, et vous (au moteur) cédez systématiquement.*
+
 Le schéma ci-dessous montre les secteurs angulaires des quatre feux de navigation vus de dessus. Chaque secteur est calibré pour qu'un observateur, quelle que soit sa position autour du navire, voie une combinaison unique de couleurs. Le feu rouge de bâbord couvre 112,5° sur le côté gauche du navire, le feu vert de tribord couvre 112,5° sur le côté droit, le feu blanc de tête de mât balaie 225° vers l'avant (englobant les deux secteurs de côté), et le feu blanc de poupe couvre les 135° restants à l'arrière. Cette répartition angulaire est la raison pour laquelle les feux fonctionnent : en voyant uniquement du rouge, vous savez que vous êtes dans le secteur bâbord de l'autre navire ; en voyant rouge et vert simultanément, vous êtes face à lui ; en ne voyant que du blanc arrière, vous êtes en situation de rattrapage.
 
 ![[ship-position-lights.svg|Configuration des feux de navigation vue de dessus — secteurs et couleurs]]

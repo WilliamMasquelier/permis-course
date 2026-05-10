@@ -263,6 +263,6 @@ Voir [[concepts/asn-dsc]], [[concepts/mmsi]].
 > **Réponse:** B — Si le CROSS ne répond pas dans un délai raisonnable, tout navire entendant un MAYDAY a l'obligation de répondre et d'alerter les secours. La procédure "MAYDAY RELAY" permet de retransmettre un MAYDAY reçu d'un navire en détresse vers le CROSS. La solidarité en mer est une obligation légale et éthique.
 
 > [TRANSITION]
-> À Fethiye, ils amarrent au quai de la douane. L'officier monte à bord pour vérifier les papiers. Il y a le "Carnet de Navigation" (le *Transit Log* en Turquie), le livre de bord, les licences radio. Tout est en ordre. Il signe, tamponne, sourit. Quand il repart, Emmanuel dit : "Donc même en vacances, la paperasse nous suit." Rebeca : "En Martinique, le gendarme maritime venait à bord avec un café." Emmanuel, amusé. "Et pour naviguer en France ?" demande-t-il. "Quels papiers faut-il ?"
+> À Fethiye, ils amarrent au quai de la douane. L'officier monte à bord pour vérifier les papiers. Il y a le "Carnet de Navigation" (le *Transit Log* en Turquie), le livre de bord, les licences radio. Tout est en ordre. Il signe, tamponne, sourit. Rebeca, qui a passé un quart d'heure à pratiquer son turc avec lui (« *teşekkür ederim* » — merci), revient avec un grand sourire : "Il dit qu'il a un fils qui peint aussi. Je lui ai montré mon carnet." Quand l'officier repart, Emmanuel rit : "Donc même la douane se transforme en vernissage avec toi." Puis, plus sérieux : "Et pour naviguer en France ? Quels papiers faut-il ?"
 >
 > **Session 6.2 — Documents, Licence et Réglementation.**
