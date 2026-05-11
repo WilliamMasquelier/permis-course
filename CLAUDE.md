@@ -71,10 +71,6 @@ Atomic notes following the **Karpathy "LLM Wiki" pattern**:
 
 Every `wiki/` note requires frontmatter: `title`, `type`, `tags`, `sources`, `related`, `status` (`stub | draft | reviewed`), `updated`.
 
-### Learner state
-
-`Wiki/meta/student-progress.json` tracks the current lesson, completed lessons, FSRS flashcard state, and review log. Skills read/write this file to implement spaced-repetition review.
-
 ### Plugin structure
 
 This repo is a Claude Code plugin distributed via `WilliamMasquelier/permis-course-marketplace`.
@@ -104,12 +100,38 @@ cd ~/.claude/plugins/cache/permis-course && uv sync
 
 | Skill | Trigger | What it does |
 |-------|---------|--------------|
-| `permis-tutor` | `/permis-tutor` | Socratic teaching session with FSRS flashcard review |
+| `permis-tutor` | `/permis-tutor` | Socratic teaching session — opens SPA artifact, student picks lesson |
 | `permis-render` | `/permis-render` | Re-render all lessons and run Playwright visual QA |
 | `permis-scenario` | `/permis-scenario` | Branching navigation scenario with COLREGs debrief |
 | `permis-exam` | `/permis-exam` | 40-question mock exam (pass threshold: 35/40) |
 | `permis-setup` | `/permis-setup` | Verify prerequisites |
-| `permis-author` | `/permis-author` | Teacher/author mode — edit lessons and wiki |
+| `permis-author` | `/permis-author` | Teacher/author mode — parallel research, edit lessons, teacher validation before publish |
+
+### Release process (mandatory after any skill or code change)
+
+Every time skills, scripts, templates, or plugin config are modified, the plugin version must be bumped and pushed so Cowork users get the update.
+
+**Version bump rules (semver):**
+- `PATCH` (0.x.**y**) — bug fixes, typo corrections, minor wording tweaks in skills
+- `MINOR` (0.**x**.0) — new features, skill behaviour changes, new lessons or wiki structure
+- `MAJOR` (**x**.0.0) — breaking changes (rename/remove a skill trigger, restructure plugin layout)
+
+**Steps:**
+1. Make and commit all content/skill changes first (using the `conventional-commit` skill).
+2. Bump the version in `.claude-plugin/plugin.json`.
+3. Update the `description` field if the change is user-visible.
+4. Commit the manifest change:
+   ```bash
+   git add .claude-plugin/plugin.json
+   git commit -m "chore(release): 🔖 vX.Y.Z — short summary"
+   ```
+5. Push to `origin/main`:
+   ```bash
+   git push origin main
+   ```
+6. Verify with `git log --oneline -3` that the release commit is the tip.
+
+**Never leave skills changed without a version bump.** Cowork caches the plugin by version — without a bump, installed instances will not pick up the new skill behaviour.
 
 ### Module map
 
