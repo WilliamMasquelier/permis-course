@@ -107,13 +107,13 @@ cd ~/.claude/plugins/cache/permis-course && uv sync
 | `permis-setup` | `/permis-setup` | Verify prerequisites |
 | `permis-author` | `/permis-author` | Teacher/author mode — parallel research, edit lessons, teacher validation before publish |
 
-### Release process (mandatory after any skill or code change)
+### Release process (mandatory after skill changes only)
 
-Every time skills, scripts, templates, or plugin config are modified, the plugin version must be bumped and pushed so Cowork users get the update.
+Only bump the plugin version when **skill files change** (`skills/permis-*/SKILL.md` or `.claude/skills/permis-*/SKILL.md`). Changes to lessons, wiki notes, scripts, templates, or assets do not require a version bump.
 
 **Version bump rules (semver):**
 - `PATCH` (0.x.**y**) — bug fixes, typo corrections, minor wording tweaks in skills
-- `MINOR` (0.**x**.0) — new features, skill behaviour changes, new lessons or wiki structure
+- `MINOR` (0.**x**.0) — new skill behaviour, new skills, or removed skill features
 - `MAJOR` (**x**.0.0) — breaking changes (rename/remove a skill trigger, restructure plugin layout)
 
 **Steps:**
