@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "permis-course",
-  "version": "0.4.0",
-  "description": "Permis Côtier de Plaisance — 21 sessions across 8 modules with Socratic AI tutor, spaced repetition, scenarios, and mock exam. Optimized for Cowork with inline HTML lesson artifacts.",
+  "version": "0.5.0",
+  "description": "Permis Côtier de Plaisance — 21 sessions across 8 modules with Socratic AI tutor, parallel research, teacher validation loop, and mock exam. Optimized for Cowork with inline HTML lesson artifacts.",
   "author": {
     "name": "WilliamMasquelier"
   },
