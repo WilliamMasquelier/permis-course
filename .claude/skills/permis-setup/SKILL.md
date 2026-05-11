@@ -5,7 +5,7 @@ description: Verify prerequisites for the Permis Côtier course. Triggers on /pe
 
 # permis-setup
 
-First-run verification skill. Checks Python venv, dependencies, rendered HTML files, and student progress file.
+First-run verification skill. Checks Python venv, dependencies, and rendered HTML files.
 
 ## When to use
 
@@ -68,19 +68,9 @@ ls output/lessons/module-*/session-*.html 2>/dev/null | wc -l
 
 Expected: `output/permis-cours-complet.html` exists, `output/lessons/index.html` exists, and at least 21 session HTML files present across all modules.
 
-If SPA or sessions missing: tell user to run `/permis-render` first (which runs `.venv/bin/python scripts/render_complete.py` and `.venv/bin/python scripts/render_course.py`).
+If SPA or sessions missing: tell user to run `/permis-render` first (which runs `uv run python scripts/render_complete.py` and `uv run python scripts/render_course.py`).
 
-### Step 4 - Check student-progress.json
-
-Read `Wiki/meta/student-progress.json`.
-- Missing → offer to create default:
-  ```json
-  { "learner": "local-user", "current_lesson": "module-0-0-prologue.md", "completed_lessons": [], "flashcards": {}, "review_log": [] }
-  ```
-- JSON corrupt → offer to reset to default
-- Valid → OK
-
-### Step 5 - Status report
+### Step 4 - Status report
 
 Print in French using check/warn/cross emoji:
 
@@ -90,7 +80,6 @@ Print in French using check/warn/cross emoji:
 ⚠️  Playwright MCP - Non configuré (mode texte uniquement)
 ✅ SPA cours complet (output/permis-cours-complet.html) - OK
 ✅ Sessions HTML (21 sessions dans output/lessons/) - OK
-✅ Progression étudiant - Prêt (module-0-0-prologue)
 ```
 
 If all OK or only Playwright warning:
@@ -102,4 +91,4 @@ If any blocking failure: walk through fixes before reporting done.
 
 - Idempotent — safe to run multiple times.
 - Playwright warning is expected. Never block on it.
-- Do not modify lesson content or progress unless user asks to reset.
+- Do not modify lesson content unless user asks.
